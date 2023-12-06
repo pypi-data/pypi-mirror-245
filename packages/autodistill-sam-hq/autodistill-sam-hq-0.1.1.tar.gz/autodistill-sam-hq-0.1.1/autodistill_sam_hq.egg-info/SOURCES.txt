@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+Makefile
+README.md
+requirements.txt
+setup.py
+autodistill_sam_hq/__init__.py
+autodistill_sam_hq/samhq_model.py
+autodistill_sam_hq.egg-info/PKG-INFO
+autodistill_sam_hq.egg-info/SOURCES.txt
+autodistill_sam_hq.egg-info/dependency_links.txt
+autodistill_sam_hq.egg-info/requires.txt
+autodistill_sam_hq.egg-info/top_level.txt
