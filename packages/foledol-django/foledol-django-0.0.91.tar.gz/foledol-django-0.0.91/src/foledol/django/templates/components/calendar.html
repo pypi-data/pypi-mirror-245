@@ -1,0 +1,125 @@
+{% load form_extras %}
+{% load i18n %}
+
+<style>
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .calendar {
+        position: absolute;
+        border-right-style: solid;
+        border-right-width: thin;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        border-color: #D0D0D0;
+        z-index: 1;
+    }
+    .calendar_column {
+        position: absolute;
+        top: 0px;
+        border-top-style: solid;
+        border-top-width: thin;
+        border-left-style: solid;
+        border-left-width: thin;
+        border-color: #D0D0D0;
+        vertical-align: middle;
+        padding: 4px;
+        text-align: center;
+        z-index: 1;
+    }
+    .calendar_row {
+        position: absolute;
+        left: 0px;
+        border-top-style: solid;
+        border-top-width: thin;
+        border-left-style: solid;
+        border-left-width: thin;
+        border-color: #D0D0D0;
+        z-index: 1;
+    }
+    .calendar_row_hour {
+        position: relative;
+        text-align: right;
+        padding: 4px;
+        z-index: 1;
+    }
+
+    .calendar_event {
+        position: absolute;
+        border-style: solid;
+        border-width: thin;
+        background: #C0C0C0;
+        border-radius: 5px;
+        padding: 2px;
+        z-index: 10;
+    }
+</style>
+
+<div id="calendar" class="calendar"></div>
+
+<script>
+    function drawCalendar(column_width, row_height) {
+        document.getElementById('calendar').innerHTML = "";
+        html = "";
+
+        offset_y = 30;
+        offset_x = 100;
+
+        y = offset_y;
+        x = offset_x;
+
+        width = ({{calendar.days|length}} * column_width) + offset_x;
+        height = ({{calendar.hours|length}} * row_height) + offset_y;
+
+        {% for day in calendar.days %}
+        html += "<div class=\"calendar_column\" style=\"left:" + x + "px; width:" + column_width + "px; height:" + height + "px\">";
+        html += "{{day.label}}";
+        html += "</div>";
+        x += column_width;
+        {% endfor %}
+
+        {% for hour in calendar.hours %}
+        html += "<div class=\"calendar_row\" style=\"top:" + y + "px; width:" + width + "px; height:" + row_height + "px\">";
+        html += "<div class=\"calendar_row_hour\" style=\"width:" + offset_x + "px\">";
+        html += "{{hour.label}}";
+        html += "</div>";
+        html += "</div>";
+        y += row_height;
+        {% endfor %}
+
+        event_width = column_width - 1;
+
+        {% for event in calendar.events %}
+        x = ({{event.day}} * column_width) + offset_x + 1;
+        y = ({{event.hour}} * row_height) + (({{event.minute}} / 60.0) * row_height) + offset_y;
+        duration = ({{event.duration}} / 60.0) * row_height;
+
+        event_css = "calendar_event";
+        {% if event.css %}
+        event_css += " {{event.css}}";
+        {% endif %}
+
+        event_style = "top:" + y + "px; left:" + x + "px; width:" + event_width + "px; height:" + duration + "px";
+        {% if event.onclick %}
+        event_style += "; cursor:pointer"
+        {% endif %}
+
+        html += "<div class=\"" + event_css + "\" style=\"" + event_style + "\"";
+        {% if event.onclick %}
+        html += "onclick=\"{{event.onclick}}\"";
+        {% endif %}
+        html += ">";
+
+        html += "{{event.label}}";
+        html += "</div>";
+        {% endfor %}
+
+        document.getElementById('calendar').innerHTML = html;
+        document.getElementById('calendar').style.width = width + "px";
+        document.getElementById('calendar').style.height = height + "px";
+    }
+</script>
+
