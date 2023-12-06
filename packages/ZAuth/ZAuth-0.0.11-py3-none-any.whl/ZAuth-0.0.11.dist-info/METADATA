@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ZAuth
+Version: 0.0.11
+Summary: Official Z auth
+Home-page: UNKNOWN
+Author: Yogesh Jadhav
+Author-email: support@zvolv.com
+License: MIT
+Project-URL: Source, https://github.com/yogeshjadhav22/python-sdk0.0.1
+Keywords: zvolv,zvolv-api,web-api,sdk,rest-api-client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.0.1
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+

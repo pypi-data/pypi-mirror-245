@@ -1,0 +1,13 @@
+sdkauthentication/__init__.py,sha256=rSb7UpZgUyUf16ezsg3KFFRkF9uDvvb7WItAxY1Rqxo,1061
+sdkauthentication/loggerClass.py,sha256=_5Qoh4pVvRNFjOYdRJldjOuVQjC6vIcz11OjRu--4D0,8444
+sdkauthentication/receiverFunctionCalling.py,sha256=DDtD7McZku6m3ik34i12nU_PYd5cFW45SRyrkxwhyds,854
+sdkauthentication/server_configuration.py,sha256=VUijNINx-cQ0cRIulOKWAQL0uWWv5eNCXWxzaFyRHU0,1966
+sdkauthentication/session1.py,sha256=CtsKW9LdmgIG65FKBNB0i0Tmjhg4IxneyJx63WUZVkU,1584
+sdkauthentication/user_defined_exceptions.py,sha256=ulATep9S3kzS-tq5t6rviLbsHu68hffy_a_kZtAcL2c,4055
+sdkauthentication/zexcute_apis.py,sha256=jg6y4NhOqwrETkQroDyWv2PO6eynPgee7Y3DfksureM,2885
+sdkauthentication/zsession.py,sha256=_7d9WEm-TnS1ivZP9YTI7gjvM6cC8fK6YvkupHkoCoE,4739
+sdkauthentication/zsubmissions.py,sha256=TsfKKnAWXOJ_YdCC5pWf8rLOYXua2QisS5BDvEp6lf0,19193
+ZAuth-0.0.11.dist-info/METADATA,sha256=YckWX8Q7Mzq6Qpw9s7xhUKw0Ikjp8UhK7i4GJImw4pE,973
+ZAuth-0.0.11.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ZAuth-0.0.11.dist-info/top_level.txt,sha256=D6mL3hxEV-Uveyyu3RzmVQNG1m0MEMTihehbVpNiGQs,18
+ZAuth-0.0.11.dist-info/RECORD,,
