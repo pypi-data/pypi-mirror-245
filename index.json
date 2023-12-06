@@ -1,0 +1,377 @@
+{
+  "index": 245,
+  "max_capacity": 50000,
+  "packages": [
+    {
+      "project_name": "combidata",
+      "project_version": "0.2.7",
+      "url": "https://files.pythonhosted.org/packages/f7/d0/3647313c04761ec7d2a4251a88a4bb76eab61d528c46cd3ac32f107acfb2/combidata-0.2.7.tar.gz",
+      "upload_time": "2023-12-06T10:15:38.755535Z",
+      "processed": false
+    },
+    {
+      "project_name": "v2-samplesheet-maker",
+      "project_version": "4.2.4.post20231206211301",
+      "url": "https://files.pythonhosted.org/packages/69/fb/c01ec3539589e3d09f4fd1c5d8b21f180657556ad472a19ce1cf3e6801dc/v2_samplesheet_maker-4.2.4.post20231206211301-py3-none-any.whl",
+      "upload_time": "2023-12-06T10:15:40.137308Z",
+      "processed": false
+    },
+    {
+      "project_name": "tf-nightly",
+      "project_version": "2.16.0.dev20231206",
+      "url": "https://files.pythonhosted.org/packages/3f/ba/70ec4ad133ba17ae135ef617e379e993470ecedca3c7b83ae9c598e2a813/tf_nightly-2.16.0.dev20231206-cp39-cp39-win_amd64.whl",
+      "upload_time": "2023-12-06T10:15:40.528502Z",
+      "processed": false
+    },
+    {
+      "project_name": "tf-nightly",
+      "project_version": "2.16.0.dev20231206",
+      "url": "https://files.pythonhosted.org/packages/a2/0c/51692759d72aaa10420baf81fc6a3c32f585165236864fde8e3795543569/tf_nightly-2.16.0.dev20231206-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "upload_time": "2023-12-06T10:15:41.656731Z",
+      "processed": false
+    },
+    {
+      "project_name": "v2-samplesheet-maker",
+      "project_version": "4.2.4.post20231206211301",
+      "url": "https://files.pythonhosted.org/packages/4e/6c/40c13b9c94f08087240cbc9e5c9f4fc075d74adca5fe4e607413d210dc7d/v2_samplesheet_maker-4.2.4.post20231206211301.tar.gz",
+      "upload_time": "2023-12-06T10:15:41.680Z",
+      "processed": false
+    },
+    {
+      "project_name": "tf-nightly",
+      "project_version": "2.16.0.dev20231206",
+      "url": "https://files.pythonhosted.org/packages/11/fe/e3a0216e9873804e586731c4d20ea433ac8560da04ae7525bc3fd5066c40/tf_nightly-2.16.0.dev20231206-cp311-cp311-macosx_12_0_arm64.whl",
+      "upload_time": "2023-12-06T10:15:43.484296Z",
+      "processed": false
+    },
+    {
+      "project_name": "tf-nightly",
+      "project_version": "2.16.0.dev20231206",
+      "url": "https://files.pythonhosted.org/packages/cb/aa/dae442c300fb3d583e4fa69a3179b0152a045df1d978c655b020fdaa32e5/tf_nightly-2.16.0.dev20231206-cp310-cp310-macosx_12_0_arm64.whl",
+      "upload_time": "2023-12-06T10:15:44.557438Z",
+      "processed": false
+    },
+    {
+      "project_name": "infra-3drc",
+      "project_version": "0.1.0",
+      "url": "https://files.pythonhosted.org/packages/19/d9/6c2ffd6f391df9a9952a27fbaac915613cf017e71cd685093d2cda2e0f87/infra_3drc-0.1.0-py3-none-any.whl",
+      "upload_time": "2023-12-06T10:15:45.208169Z",
+      "processed": false
+    },
+    {
+      "project_name": "tf-nightly",
+      "project_version": "2.16.0.dev20231206",
+      "url": "https://files.pythonhosted.org/packages/54/e1/ce68a380ad9552839742f0e136205320a5492fea8d45af603b20241fa517/tf_nightly-2.16.0.dev20231206-cp311-cp311-win_amd64.whl",
+      "upload_time": "2023-12-06T10:15:46.332445Z",
+      "processed": false
+    },
+    {
+      "project_name": "infra-3drc",
+      "project_version": "0.1.0",
+      "url": "https://files.pythonhosted.org/packages/0d/5d/4883be8f6b4fc9a89978f01af57394d802a2ddffa4b2ad7421340343697d/infra_3drc-0.1.0.tar.gz",
+      "upload_time": "2023-12-06T10:15:47.125683Z",
+      "processed": false
+    },
+    {
+      "project_name": "adaux",
+      "project_version": "3.4.5",
+      "url": "https://files.pythonhosted.org/packages/cc/86/ddeba2db8d45944745b5a186eb12c5b0a22fdca2aed78ca90b09f69e1f91/adaux-3.4.5.tar.gz",
+      "upload_time": "2023-12-06T10:15:51.320673Z",
+      "processed": false
+    },
+    {
+      "project_name": "forestadmin-agent-flask",
+      "project_version": "1.2.0b4",
+      "url": "https://files.pythonhosted.org/packages/9a/ef/d00433c093c9c02bb8441db62763d55bc1c3822daeef22cbfd6d35ef63bd/forestadmin_agent_flask-1.2.0b4-py3-none-any.whl",
+      "upload_time": "2023-12-06T10:15:52.078213Z",
+      "processed": false
+    },
+    {
+      "project_name": "forestadmin-agent-flask",
+      "project_version": "1.2.0b4",
+      "url": "https://files.pythonhosted.org/packages/54/79/acd2de67a6112f50f3692c80fc947525c0a413977aecebd786a57c0b8ee2/forestadmin_agent_flask-1.2.0b4.tar.gz",
+      "upload_time": "2023-12-06T10:15:54.171460Z",
+      "processed": false
+    },
+    {
+      "project_name": "forestadmin-agent-django",
+      "project_version": "1.2.0b4",
+      "url": "https://files.pythonhosted.org/packages/ec/9c/7ac342e89dd06c8b877fc3670ec7f7b35efc89af81c04a17c5c86a6a656d/forestadmin_agent_django-1.2.0b4-py3-none-any.whl",
+      "upload_time": "2023-12-06T10:16:24.853878Z",
+      "processed": false
+    },
+    {
+      "project_name": "forestadmin-agent-django",
+      "project_version": "1.2.0b4",
+      "url": "https://files.pythonhosted.org/packages/6d/e3/06e7f131ae8031818bfe0ee4a58481aec8b0fd407485903b0da7355818d1/forestadmin_agent_django-1.2.0b4.tar.gz",
+      "upload_time": "2023-12-06T10:16:25.761411Z",
+      "processed": false
+    },
+    {
+      "project_name": "foledol-django",
+      "project_version": "0.0.91",
+      "url": "https://files.pythonhosted.org/packages/2c/91/906e8ac35bc6679e58f8447b7c423ef3c33bda8ee8d93943013dbb8d7dc6/foledol_django-0.0.91-py3-none-any.whl",
+      "upload_time": "2023-12-06T10:16:49.373256Z",
+      "processed": false
+    },
+    {
+      "project_name": "autodistill-sam-hq",
+      "project_version": "0.1.1",
+      "url": "https://files.pythonhosted.org/packages/ee/da/72c21fb1431467d9326115084ad0ca359540e3925c681f5365b9bc033c2b/autodistill_sam_hq-0.1.1-py3-none-any.whl",
+      "upload_time": "2023-12-06T10:16:53.807221Z",
+      "processed": false
+    },
+    {
+      "project_name": "autodistill-sam-hq",
+      "project_version": "0.1.1",
+      "url": "https://files.pythonhosted.org/packages/69/5a/42aefd1780f26ae994eca9e3cefff4a7158d977f5de96c1d2db6612f6ba8/autodistill-sam-hq-0.1.1.tar.gz",
+      "upload_time": "2023-12-06T10:16:54.831372Z",
+      "processed": false
+    },
+    {
+      "project_name": "foledol-django",
+      "project_version": "0.0.91",
+      "url": "https://files.pythonhosted.org/packages/18/8c/de767383cfe55cd51eab1eb8df814edbddede278ee605721f519603fd9ee/foledol-django-0.0.91.tar.gz",
+      "upload_time": "2023-12-06T10:16:57.452685Z",
+      "processed": false
+    },
+    {
+      "project_name": "ZAuth",
+      "project_version": "0.0.11",
+      "url": "https://files.pythonhosted.org/packages/ca/16/05a9dbe50fd6ecde95813a8a85a04b2ccc194314cae0cf4f80e6fd1f397a/ZAuth-0.0.11-py3-none-any.whl",
+      "upload_time": "2023-12-06T10:17:00.215466Z",
+      "processed": false
+    },
+    {
+      "project_name": "ZAuth",
+      "project_version": "0.0.11",
+      "url": "https://files.pythonhosted.org/packages/ad/5a/c3d36aa2faba5703173f77629f5b1e1e219ba261cfb2783ab0c4185de3bf/ZAuth-0.0.11.tar.gz",
+      "upload_time": "2023-12-06T10:17:01.633971Z",
+      "processed": false
+    },
+    {
+      "project_name": "apify-client",
+      "project_version": "1.6.1b2",
+      "url": "https://files.pythonhosted.org/packages/6b/0e/b1722fd232a2308d28cc02a4cff9fd27f655bdabe6833323dc8f19c6b729/apify_client-1.6.1b2-py3-none-any.whl",
+      "upload_time": "2023-12-06T10:17:10.403467Z",
+      "processed": false
+    },
+    {
+      "project_name": "apify-client",
+      "project_version": "1.6.1b2",
+      "url": "https://files.pythonhosted.org/packages/a5/07/76392e50d6ff161985adb720e5d8e257026e79d64a95d81d602d760f9355/apify_client-1.6.1b2.tar.gz",
+      "upload_time": "2023-12-06T10:17:12.976179Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/ab/b6/d4ff0e5dd0c7375cae05f3a24430c08cf74728b80784a8f68f778fbd6f8b/symusic-0.1.3-cp310-cp310-macosx_10_9_x86_64.whl",
+      "upload_time": "2023-12-06T10:18:38.740532Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/f4/36/aa3699a0580a4a6f3b8a4f8f1d1dd59323f0e92206bbf4cb43af76a480c2/symusic-0.1.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "upload_time": "2023-12-06T10:18:40.630395Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/58/6c/932e2b9b9ed012f5d3fc4b2d8179223dc762f94f80f0275d832416d39940/symusic-0.1.3-cp310-cp310-musllinux_1_1_x86_64.whl",
+      "upload_time": "2023-12-06T10:18:42.610310Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/64/ae/ffb2df120a153bbdee8f85ab1521d838039b7116f060f0367aca244d54e1/symusic-0.1.3-cp310-cp310-win32.whl",
+      "upload_time": "2023-12-06T10:18:44.508544Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/f5/af/e7989c77985f19e05ebdeb0c8a411eeaacdbe913c349e9f08c28df036d2a/symusic-0.1.3-cp310-cp310-win_amd64.whl",
+      "upload_time": "2023-12-06T10:18:46.216877Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/eb/fa/1e93755b531c095b9f2d67ad7e4ca1cc81e7b7417805c960ceef99fdc3c0/symusic-0.1.3-cp311-cp311-macosx_10_9_x86_64.whl",
+      "upload_time": "2023-12-06T10:18:47.987084Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/2f/8a/04ce8d6946cda21a3fe8f056f4a96394ab5af10b36fd23f51dd82d44648c/symusic-0.1.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "upload_time": "2023-12-06T10:18:49.250672Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/8e/87/37e697eeea53d3c82b9218cea3b6e674d9aa6f98c9ba6010b95d365107dc/symusic-0.1.3-cp311-cp311-musllinux_1_1_x86_64.whl",
+      "upload_time": "2023-12-06T10:18:50.938504Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/9a/77/f4995ff2b07e55b0aade7671dcb269713697fa3d6c0ba5bf91f56f16de0c/symusic-0.1.3-cp311-cp311-win32.whl",
+      "upload_time": "2023-12-06T10:18:52.601675Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/df/44/9046bc73c9d100720af1585773019feaa414ab54c700470f2e19641f6214/symusic-0.1.3-cp311-cp311-win_amd64.whl",
+      "upload_time": "2023-12-06T10:18:53.794069Z",
+      "processed": false
+    },
+    {
+      "project_name": "micromind",
+      "project_version": "0.2.1",
+      "url": "https://files.pythonhosted.org/packages/8a/3e/de8e882b44734e6fab0e209e04aff034afc8e78891b59a0774e3e38c3537/micromind-0.2.1-py3-none-any.whl",
+      "upload_time": "2023-12-06T10:18:55.495287Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/81/91/0f24897e0f6fc28eb00c29df64054b75596b12c3360e0ff3412d37ed9c7d/symusic-0.1.3-cp312-cp312-macosx_10_9_x86_64.whl",
+      "upload_time": "2023-12-06T10:18:55.673071Z",
+      "processed": false
+    },
+    {
+      "project_name": "micromind",
+      "project_version": "0.2.1",
+      "url": "https://files.pythonhosted.org/packages/3c/b6/4b514e7f12c6621a9edb32627a169dfa7e802bc2cbdae69e7390da8d128a/micromind-0.2.1.tar.gz",
+      "upload_time": "2023-12-06T10:18:56.943569Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/b6/9a/0939e9c27c248edc117a734ed4ca8ac10a68a00112d5d313e736cde7d2e7/symusic-0.1.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "upload_time": "2023-12-06T10:18:56.967016Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/36/51/8f25334207321e0553d6a22574a41e1a0ca0fc5bc72cc6b5ebe2fdf8c910/symusic-0.1.3-cp312-cp312-musllinux_1_1_x86_64.whl",
+      "upload_time": "2023-12-06T10:18:59.355352Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/d7/5b/043c8343625b5d31eb0a3fcc973ba2a403f2eaf8bab94a3c8c65f0acb6ad/symusic-0.1.3-cp312-cp312-win32.whl",
+      "upload_time": "2023-12-06T10:19:00.598295Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/9f/6d/871eb7bfc2912cda54646fc08096ff146cd28de3be7429549784176842b9/symusic-0.1.3-cp312-cp312-win_amd64.whl",
+      "upload_time": "2023-12-06T10:19:02.410112Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/5e/5c/2a00cdef23cc4c6b1c4f3bf7c141d5de41a0057d675fe0ae2c18bce649e9/symusic-0.1.3-cp39-cp39-macosx_10_9_x86_64.whl",
+      "upload_time": "2023-12-06T10:19:04.085929Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/a1/e6/86246b2fb56635ae721fc5c4e3f5a447d646efc1a72f0c85f95b91f8763a/symusic-0.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "upload_time": "2023-12-06T10:19:05.854017Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/4b/15/b7998c155019d3ff4ec3779f9d4d45387c76e6f2ea3837a18635a7ba71ca/symusic-0.1.3-cp39-cp39-musllinux_1_1_x86_64.whl",
+      "upload_time": "2023-12-06T10:19:07.022825Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/29/b3/eb2cf4c907841ded54d3706c72d1f61c328bbc2cce3fc17344746853ad06/symusic-0.1.3-cp39-cp39-win32.whl",
+      "upload_time": "2023-12-06T10:19:08.903593Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/98/04/e7bd8cc4c3a4726c474e7b16baec30f34f6d6435d76bfbfa98f79392d4c2/symusic-0.1.3-cp39-cp39-win_amd64.whl",
+      "upload_time": "2023-12-06T10:19:10.674900Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/ed/18/6e10984af016f2f692997ee1b09863a86161d4bd787b573f4879276a0fa9/symusic-0.1.3-pp39-pypy39_pp73-macosx_10_9_x86_64.whl",
+      "upload_time": "2023-12-06T10:19:12.570027Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/d8/64/f2ccd154c418e63c9cb416db3ad6708293db5a17e5a0a540904423c048c2/symusic-0.1.3-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "upload_time": "2023-12-06T10:19:14.293946Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/f4/99/94fa0bceb6c2baa5b5589b28962976fb8a2c4ee3d2eefda04f96b37f464e/symusic-0.1.3-pp39-pypy39_pp73-win_amd64.whl",
+      "upload_time": "2023-12-06T10:19:15.498797Z",
+      "processed": false
+    },
+    {
+      "project_name": "symusic",
+      "project_version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/18/0d/ef40bdb3ec641ca18a02faa76bb900e17b13d21a4f03b380f36e78a149a6/symusic-0.1.3.tar.gz",
+      "upload_time": "2023-12-06T10:19:16.783461Z",
+      "processed": false
+    },
+    {
+      "project_name": "AndN",
+      "project_version": "0.4.6",
+      "url": "https://files.pythonhosted.org/packages/6c/32/7c77b835bdf103c9ed552acd67faba9f9ae75db8089845ad865bdbe7f972/AndN-0.4.6-py3-none-any.whl",
+      "upload_time": "2023-12-06T10:19:22.128821Z",
+      "processed": false
+    },
+    {
+      "project_name": "leadguru-data",
+      "project_version": "0.384.0",
+      "url": "https://files.pythonhosted.org/packages/d2/f2/1e3c81a33f0b3bde82bb26f7d032346badf3c212021b0629ba3742167791/leadguru_data-0.384.0-py3-none-any.whl",
+      "upload_time": "2023-12-06T10:19:22.528611Z",
+      "processed": false
+    },
+    {
+      "project_name": "AndN",
+      "project_version": "0.4.6",
+      "url": "https://files.pythonhosted.org/packages/62/26/7ce384b915ac6a6e63ead0225499f75e849258e91087ec8e6b5f3dd19127/AndN-0.4.6.tar.gz",
+      "upload_time": "2023-12-06T10:19:24.910123Z",
+      "processed": false
+    },
+    {
+      "project_name": "leadguru-data",
+      "project_version": "0.384.0",
+      "url": "https://files.pythonhosted.org/packages/2e/a5/0bf59f15f9ac474e2a8b0e77803dfdcd11a707c5e2acb18583bb09860b20/leadguru_data-0.384.0.tar.gz",
+      "upload_time": "2023-12-06T10:19:26.502868Z",
+      "processed": false
+    }
+  ]
+}
