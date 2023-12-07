@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+streamspeech/__init__.py
+streamspeech/__main__.py
+streamspeech/app.py
+streamspeech/app_main.py
+streamspeech/version.py
+streamspeech.egg-info/PKG-INFO
+streamspeech.egg-info/SOURCES.txt
+streamspeech.egg-info/dependency_links.txt
+streamspeech.egg-info/not-zip-safe
+streamspeech.egg-info/requires.txt
+streamspeech.egg-info/top_level.txt
