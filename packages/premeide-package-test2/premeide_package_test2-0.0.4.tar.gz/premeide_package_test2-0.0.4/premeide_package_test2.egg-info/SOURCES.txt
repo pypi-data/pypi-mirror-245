@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+premeide_package_test2/__init__.py
+premeide_package_test2/example.py
+premeide_package_test2.egg-info/PKG-INFO
+premeide_package_test2.egg-info/SOURCES.txt
+premeide_package_test2.egg-info/dependency_links.txt
+premeide_package_test2.egg-info/top_level.txt
