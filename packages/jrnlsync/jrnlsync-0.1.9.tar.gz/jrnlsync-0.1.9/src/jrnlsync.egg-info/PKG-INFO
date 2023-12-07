@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jrnlsync
+Version: 0.1.9
+Summary: Easily sync jrnl entries between different devices using git
+Home-page: https://github.com/timolesterhuis/jrnlsync/
+Author: Timo Lesterhuis
+Author-email: timolesterhuis@gmail.com
+License: MIT License
+Project-URL: Documentation, https://jrnlsync.readthedocs.io/
+Project-URL: Source, https://github.com/timolesterhuis/jrnlsync
+Project-URL: Issue Tracker, https://github.com/timolesterhuis/diagnostics/issues
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst

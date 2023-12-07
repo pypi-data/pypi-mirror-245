@@ -1,0 +1,13 @@
+README.rst
+setup.py
+src/jrnlsync/__init__.py
+src/jrnlsync/__main__.py
+src/jrnlsync/__version__.py
+src/jrnlsync/config.py
+src/jrnlsync/sync.py
+src/jrnlsync.egg-info/PKG-INFO
+src/jrnlsync.egg-info/SOURCES.txt
+src/jrnlsync.egg-info/dependency_links.txt
+src/jrnlsync.egg-info/entry_points.txt
+src/jrnlsync.egg-info/requires.txt
+src/jrnlsync.egg-info/top_level.txt
