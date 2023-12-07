@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: docent
+Version: 0.0.1a4
+Summary: Zero-dependency Python framework for object oriented development.
+Home-page: https://python.1howardcapital.com/docent
+Download-URL: https://github.com/dan1hc/docent
+Author: Dan
+Author-email: daniel.dube@annalect.com
+Maintainer: Dan
+Maintainer-email: daniel.dube@annalect.com
+License: LGPL
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Typing :: Typed
+License-File: LICENSE
+Provides-Extra: core
+Provides-Extra: docs
+Requires-Dist: commonmark ==0.* ; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme ==0.* ; extra == 'docs'
+Requires-Dist: sphinx ==7.* ; extra == 'docs'
+Provides-Extra: rest
+Requires-Dist: docent[core] ; extra == 'rest'
+Provides-Extra: template
+Requires-Dist: docent[core] ; extra == 'template'
+Requires-Dist: docent[rest] ; extra == 'template'
+
+Zero-dependency Python framework for object oriented development. 
+ A reimagining of a generic framework I originally began work on in-house at Annalect. 
+ Re-imagined and completed as a personal project in an effort to both benefit the widest possible audience and make installations themselves easier across Annalect and all other Omnicom Group subsidiaries via publication to the Python Software Foundation's publicly distributed Python Package Index. 
+ Forces users to adopt best practices in code structure, documentation, object oriented programming, RESTfulness, and the python language.
