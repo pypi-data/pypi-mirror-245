@@ -1,0 +1,3 @@
+[console_scripts]
+train_clip = run_training:main
+
