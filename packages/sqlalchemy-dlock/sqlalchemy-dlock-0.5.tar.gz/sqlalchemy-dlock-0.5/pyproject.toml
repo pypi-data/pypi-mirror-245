@@ -1,0 +1,63 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61", "setuptools_scm>=6.2"]
+
+[project]
+name = "sqlalchemy-dlock"
+readme = {file = 'README.md', content-type = 'text/markdown'}
+authors = [
+  {name = "liu xue yan", email = "liu_xue_yan@foxmail.com"},
+]
+description = "A distributed lock implementation based on SQLAlchemy"
+keywords = ["SQLAlchemy", "lock", "distributed", "distributed lock", "SQL", "database", "DBMS"]
+license = {text = "BSD-3-Clause"}
+classifiers = [
+  "License :: OSI Approved :: BSD License",
+  "Topic :: Database :: Front-Ends",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python",
+]
+dynamic = ["version"]
+
+# requires python version
+requires-python = ">=3.7"
+# requires
+dependencies = [
+  "SQLAlchemy>=1.4,<3.0",
+]
+# extra requires
+[project.optional-dependencies]
+# SQLAlchemy with asyncio, no engines
+asyncio = ["SQLAlchemy[asyncio]>=1.4,<3.0"]
+# MySQL
+mysqlclient = ["mysqlclient"]
+pymysql = ["pymysql"]
+# MySQL asyncio
+aiomysql = ["SQLAlchemy[asyncio]>=1.4,<3.0", "aiomysql"]
+# Postgres
+# psycopg2: sync
+psycopg2 = ["psycopg2>=2.8"] # psycopg2 compiling needed when install
+psycopg2-binary = ["psycopg2-binary>=2.8"] # psycopg2 with pre-compiled C library
+# psycopg3: both sync and asyncio
+psycopg3 = ["SQLAlchemy>=2.0,<3.0", "psycopg"] # psycopg3 dynamik link to libpq
+psycopg3-binary = ["SQLAlchemy>=2.0,<3.0", "psycopg[binary]"] # psycopg3 with pre-compiled C library
+psycopg3-c = ["SQLAlchemy>=2.0,<3.0", "psycopg[c]"] # psycopg3 compiling needed when install
+# Postgres asyncio
+asyncpg = ["SQLAlchemy[asyncio]>=1.4,<3.0", "asyncpg"]
+
+# Project links
+[project.urls]
+homepage = "https://github.com/tanbro/sqlalchemy-dlock"
+documentation = "https://sqlalchemy-dlock.readthedocs.io/"
+repository = "https://github.com/tanbro/sqlalchemy-dlock.git"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
+write_to = "src/sqlalchemy_dlock/version.py"
+
+[tool.black]
+line-length = 128
+[tool.isort]
+profile = "black"
