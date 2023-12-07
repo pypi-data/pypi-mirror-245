@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Speak2Subs
+Version: 1.0
+Summary: TFM
+Home-page: https://github.com/yourusername/my_package
+Author: Julio Antonio Fresneda Garcia
+Author-email: julioantonio.fresnedagarcia@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: moviepy
+Requires-Dist: jiwer
+Requires-Dist: pandas
+Requires-Dist: pydub
+
+# TFM
+Repositorio, por ahora, para pruebas

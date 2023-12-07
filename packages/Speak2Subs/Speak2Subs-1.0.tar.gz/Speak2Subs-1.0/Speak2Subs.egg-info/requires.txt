@@ -1,0 +1,4 @@
+moviepy
+jiwer
+pandas
+pydub
