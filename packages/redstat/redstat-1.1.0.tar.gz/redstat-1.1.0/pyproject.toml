@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "redstat"
+authors = [{ name = "temkuz", email = "temkuz@yandex.ru" }]
+version = "1.1.0"
+description = "Cli tools for parse statistic from reddit"
+dependencies = [
+    "requests==2.31.0",
+    "idna==3.4"
+]
+
+readme = "README.md"
+
+requires-python = ">=3.11"
+keywords = ["cli", "reddit", "parser", "statistic"]
+
+
+[project.scripts]
+redload = "redstat.entrypoints.download:run_download_process"

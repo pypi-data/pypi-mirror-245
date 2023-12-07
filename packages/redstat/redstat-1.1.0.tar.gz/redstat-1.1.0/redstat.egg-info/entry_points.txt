@@ -1,0 +1,2 @@
+[console_scripts]
+redload = redstat.entrypoints.download:run_download_process
