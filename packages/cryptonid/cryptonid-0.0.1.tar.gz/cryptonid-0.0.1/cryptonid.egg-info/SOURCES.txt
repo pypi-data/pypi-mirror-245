@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+cryptonid/__init__.py
+cryptonid/pack.py
+cryptonid.egg-info/PKG-INFO
+cryptonid.egg-info/SOURCES.txt
+cryptonid.egg-info/dependency_links.txt
+cryptonid.egg-info/top_level.txt

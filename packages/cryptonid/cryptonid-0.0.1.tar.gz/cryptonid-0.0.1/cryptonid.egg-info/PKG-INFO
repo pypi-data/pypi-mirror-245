@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cryptonid
+Version: 0.0.1
+Summary: A simple encryption method
+Author: Bency Dsouza
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+#Simple Encrpytion Modules employing MD5 Algorithm,SHA algorithm,etc
