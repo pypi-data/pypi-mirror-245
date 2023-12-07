@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "cucumber-test-release-automation"
+version = "0.0.19"
+description = ""
+authors = ["Matt Wynne <matt@cucumber.io>"]
+readme = "README.md"
+packages = [{include = "cucumber_test_release_automation"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

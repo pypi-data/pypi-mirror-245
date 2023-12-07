@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cucumber-test-release-automation
+Version: 0.0.19
+Summary: 
+Author: Matt Wynne
+Author-email: matt@cucumber.io
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+
