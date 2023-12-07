@@ -1,0 +1,2 @@
+[console_scripts]
+jarvis = jarvis_conversationalist.__main__:main
