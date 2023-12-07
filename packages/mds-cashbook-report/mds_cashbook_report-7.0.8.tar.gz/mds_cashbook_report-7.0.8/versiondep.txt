@@ -1,0 +1,2 @@
+cashbook;7.0.32;7.0.999;mds
+cashbook_bookcategory;7.0.5;7.0.999;mds
