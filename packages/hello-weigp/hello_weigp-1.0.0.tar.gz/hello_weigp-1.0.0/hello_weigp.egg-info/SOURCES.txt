@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+setup.py
+hello_weigp/__init__.py
+hello_weigp/main.py
+hello_weigp.egg-info/PKG-INFO
+hello_weigp.egg-info/SOURCES.txt
+hello_weigp.egg-info/dependency_links.txt
+hello_weigp.egg-info/top_level.txt
