@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/gpt_api/__init__.py
+src/gpt_api/__main__.py
+src/gpt_api/api.py
+src/gpt_api/cli.py
+src/gpt_api_python.egg-info/PKG-INFO
+src/gpt_api_python.egg-info/SOURCES.txt
+src/gpt_api_python.egg-info/dependency_links.txt
+src/gpt_api_python.egg-info/entry_points.txt
+src/gpt_api_python.egg-info/requires.txt
+src/gpt_api_python.egg-info/top_level.txt
