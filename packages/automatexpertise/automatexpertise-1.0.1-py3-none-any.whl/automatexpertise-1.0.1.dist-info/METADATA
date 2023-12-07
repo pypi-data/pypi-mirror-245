@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: automatexpertise
+Version: 1.0.1
+Summary: Utilitaire qui permet de d'automatiser l'initialisation d'AutomateXpertise
+Home-page: UNKNOWN
+Author: sKillseries
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: docker
+Requires-Dist: psutil
+
+UNKNOWN
+
