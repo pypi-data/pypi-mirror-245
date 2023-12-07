@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: xchainpy2-midgard
+Version: 2.17.0
+Summary: Midgard Public API
+Home-page: 
+Author-email: devs@thorchain.org
+Keywords: Swagger,Midgard Public API
+License-File: LICENSE
+Requires-Dist: urllib3>=1.15
+Requires-Dist: six>=1.10
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+Requires-Dist: aiohttp
+
+    The Midgard Public API queries THORChain and any chains linked via the Bifröst and prepares information about the network to be readily available for public users. The API parses transaction event data from THORChain and stores them in a time-series database to make time-dependent queries easy. Midgard does not hold critical information. To interact with THORChain protocol, users should query THORNode directly.  # noqa: E501
+    
