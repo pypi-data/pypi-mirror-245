@@ -1,0 +1,4 @@
+opencv-python<5,>=4.8.1.0
+imageio>=2.9.0
+imageio-ffmpeg>=0.4.7
+loguru>=0.6.0
