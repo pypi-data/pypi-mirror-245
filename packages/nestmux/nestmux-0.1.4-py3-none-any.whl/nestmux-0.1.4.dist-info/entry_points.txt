@@ -1,0 +1,3 @@
+[console_scripts]
+nestmux=nestmux.cli:main
+
