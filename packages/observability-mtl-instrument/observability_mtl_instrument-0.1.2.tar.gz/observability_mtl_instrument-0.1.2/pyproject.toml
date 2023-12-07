@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "observability-mtl-instrument"
+version = "0.1.2"
+description = ""
+authors = ["SergioNascimento07 <sergioricjr7@gmail.com>"]
+readme = "README.md"
+packages = [{include = "observability_mtl_instrument"}]
+classifiers = [
+    "Natural Language :: Portuguese (Brazilian)",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.10",
+    "Intended Audience :: Developers"
+]
+
+[tool.poetry.urls]
+"Documentação" = "https://observability-mtl-instrument.readthedocs.io/pt-br/latest/"
+"Código" = "https://github.com/SergioRicJr/observability-mtl-instrument"
+"Bug Tracker" = "https://github.com/SergioRicJr/observability-mtl-instrument/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytz = "^2023.3.post1"
+opentelemetry-instrumentation-logging = "^0.41b0"
+prometheus-client = "^0.18.0"
+opentelemetry-sdk = "^1.20.0"
+opentelemetry-exporter-otlp-proto-http = "^1.20.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+blue = "^0.9.1"
+isort = "^5.12.0"
+taskipy = "^1.12.0"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.4.8"
+mkdocstrings = "^0.24.0"
+mkdocstrings-python = "^1.7.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "--doctest-modules"
+filterwarnings = "ignore::DeprecationWarning"
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.taskipy.tasks] 
+lint = "blue --check --diff . && isort --check --diff ."
+forcelint = "blue . && isort ."
+docs = "mkdocs serve"
+pre_test = "task forcelint"
+test = "pytest --cov -s -x -vv"
+post_test = "coverage html"
