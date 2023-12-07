@@ -1,0 +1,22 @@
+appdirs<2,>=1
+cryptography<42,>=3.3.2
+names<1,>=0
+progressbar2<5,>=3.20
+pyasn1<1,>=0
+pycryptodome<4,>=3.5
+pyopenssl<24,>=19
+pytz
+rsa<5,>=4
+scapy<3,>=2.4
+service_identity>=18
+twisted>=23
+
+[full]
+wheel>=0.34.2
+av<12,>=8
+PySide6<7,>=6.3
+qimage2ndarray<2,>=1.6
+py-notifier>=0.5.0
+
+[full:platform_system == "Windows"]
+WinToaster>=0.1.0
