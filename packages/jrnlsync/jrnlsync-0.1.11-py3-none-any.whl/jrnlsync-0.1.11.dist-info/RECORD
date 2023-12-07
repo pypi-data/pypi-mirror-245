@@ -1,0 +1,11 @@
+jrnlsync/__init__.py,sha256=Rf9Cyx5XdFKEPChaKQcjB8UiXDNOMoCq5VagFDs5X9s,118
+jrnlsync/__main__.py,sha256=Ik6rrxF2Q7ZfNMhYgRwyweKh7MPp-uc_pbBYhsbKoj0,68
+jrnlsync/__version__.py,sha256=9sUtSSPHCWG5F0Mn31Yam3nn6IHEhhy0J4dxhZeyrc4,124
+jrnlsync/cli.py,sha256=uMSiuKUzEFiYkj4-YmtP0E0F9MuJ0ZFzxE-Z6xXjJyk,2257
+jrnlsync/config.py,sha256=wQmID6R-_zz44KqmBiE8e0Dp-Fb4A0myzwMS7tx8rBs,1246
+jrnlsync/sync.py,sha256=PKfZsg8h5oP50PHcmYRNG5X1xHCg75eQVwS-6Ov1koQ,1622
+jrnlsync-0.1.11.dist-info/METADATA,sha256=gP2bwprX-0iMn-Ul7NNB6ScyzvP9r0sFEtrXBTvlG0c,1106
+jrnlsync-0.1.11.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+jrnlsync-0.1.11.dist-info/entry_points.txt,sha256=GHvgOw1aOwpgTH2irbEmz7POD7Os5iHmugrB2_2MuMM,48
+jrnlsync-0.1.11.dist-info/top_level.txt,sha256=T258rQYfNX4_Ca9Au0_44-SGMmORuhLbTGoJGk3PYi0,9
+jrnlsync-0.1.11.dist-info/RECORD,,
