@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mrml
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: A Python wrapper for MRML (Rust port of MJML).
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/jdrouet/mrml
+Project-URL: Bug Tracker, https://github.com/jdrouet/mrml/issues
+
+# mrml-python
+
