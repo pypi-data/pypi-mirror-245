@@ -1,0 +1,7 @@
+process_nitta/__init__.py,sha256=jxd6ArNmuplaC2wA0LY7ShMc-JQI8G36DOuo3NSgTfU,168
+process_nitta/csv_config.py,sha256=GjQkqPJfZmY30tIlp0vYe2k1fscxN7U09C_eQNu6SHs,1580
+process_nitta/models.py,sha256=S_6kNKwsQEvJ_GzMo1ttLo80s6Bl0yGZn9UZe5WjfAs,167
+process_nitta-0.0.4.dist-info/METADATA,sha256=laye3cY7Kj6KuaOA8IR9yJnxf1u7ep7GXtHTh7zEiQg,632
+process_nitta-0.0.4.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+process_nitta-0.0.4.dist-info/licenses/LICENSE,sha256=lTQa0tWRyNHtytvNCQcVMEeXxjH7TloNrroN0a4WV3A,1074
+process_nitta-0.0.4.dist-info/RECORD,,
