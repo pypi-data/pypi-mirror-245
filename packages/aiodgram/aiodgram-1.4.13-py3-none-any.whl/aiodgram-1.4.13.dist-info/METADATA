@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: aiodgram
+Version: 1.4.13
+Summary: This library from easy work with aiogram
+Author: Darkangel, Arkeep
+Author-email: fvovva@gmail.com
+Keywords: telegram aiogram
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: aiogram <=2.25.2
+Requires-Dist: colorama
+Requires-Dist: pytube
+
+# aiodgram 
+
+## What is this? 
+The module makes it easier for you to use the basic functions of AIOGRAM, such as sending messages/photos/video and start your bot.
+
+
+
+## Using 
+
+Let's import it first:
+First, import class `TgBot and types` from the library (use the 'from `...` import TgBot, types' construct).
+Second, create a object from class `TgBot` (use '`name` = TgBot()' construct)
+Third, You must write arguments to this object, *token*: `string`, *admin_username*: `string`
+
+
+
+## Use in asyng defines
+
+*ONLY AFTER @`object botname`.dispatcher.message_handler*
+
+
+> 	await bot.send_message(`chat id`, `text`)
+
+or:
+
+> 	await bot.send_photo(`chat id`, `photo url`)
+
+or:
+
+> 	await bot.send_video(`chat id`, `video url`)
+
+
+
+## For start your bot, you need
+
+bot.start_polling(dispatcher=`bot Dispatcher`, skip_updates=`True or False`, on_startup=`define for start`, on_shutdown=`define for shutdown`).
+
+
+**ALL PARAMETERS IN start_polling ARE VERY IMPORTANT FOR CORRECT OPERATION YOUR BOT!**
+
+
+
+## Beautiful messages to console 
+
+You can create your beautiful messages to console with color!
+
+First, import class `YourMessages` from the library (use the 'from `...` import MyMessages' construct)
+
+Second, create a object from class `YourMessages` (use '`name` = YourMessage()' construct)
+
+Third, you must use a `message` define based on this object (use, '`name`.message()' construct)
+
+Fourth, You must write arguments to this define, *clear*: `bool`, *message*:`string`, *colors*:`list`.
+
+
+
+## Download a videos from YouTube 
+
+You can download a video from YouTube using this library!
+
+First, import class `DownloadVideo` from the library (use the 'from `...` import DownloadVideo' construct)
+
+Second, create a object from class `DownloadVideo` (use '`name` = DownloadVideo()' construct)
+
+Third, you must use a `Download_This_Video` define based on this object (use, '`name`.Download_This_Video()' construct)
+
+Fourth, you must write arguments to this define, *link_on_video*: `string`, *video_name*: `string`, *resolution*: `int` 
+
+
+
+## Create your buttons 
+
+You can create buttons for your messages!
+
+### For reply_markup
+First, import class `Button` from the library (use 'from `...` import Button' construct)
+
+Second, create a object from class `Button` (use '`name` = Button()' construct)
+
+Third, you must create a keyboard (use '[[`name`.add_button(`text button`)], [`name`.add_button(`text button`)]]' construct)
+
+Fourth, you must create object keyboard (use '`name your keyboard`.`name keyboard from second point`.add_markup(`name keyboard from third point`)' construct)
+
+Fifth, you must add object from fourth point to `send_message` in `reply_markup` argument
+
+
+### For inline_markup
+
+First, import class `Button` from the library (use 'from `...` import Button' construct)
+
+Second, create a object from class `Button` (use '`name` = Button()' construct)
+
+Third, you must create a keyboard (use '[[`name`.add_inline_button(`text button`, `callback_data`)], [`name`.add_button(`text button`, `callback_data`)]]' construct)
+
+Fourth, you must create object keyboard (use '`name your keyboard`.`name keyboard from second point`.add_inline_markup(`name keyboard from third point`)' construct)
+
+Fifth, you must add object from fourth point to `send_message` in `reply_markup` argument
+
+
+## Show loading animation in your bot
+First, you must use a define from TgBot (use '`name your object TgBot`.loading()')
+
+Second, you must write argumets to this define, *chat_id*: `int`, *percentages*: `int`
+
+
+# Developers
+authors: `Darkangel, Arkeep`
+
+authors telegrams: `t.me/darkangel58414` and `t.me/Stillcrayg`
