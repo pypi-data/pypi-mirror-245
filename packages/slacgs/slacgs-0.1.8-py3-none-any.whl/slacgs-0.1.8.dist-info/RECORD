@@ -1,0 +1,14 @@
+slacgs/__init__.py,sha256=VvSpcgYaWKcnqgi8q6nnvwFDmCLJmys1JnyCAn6yHlY,710
+slacgs/demo.py,sha256=DdQw2XyyziEomGDCd38Q3Ez0JczNZnlXTs5qHuvrqzI,72454
+slacgs/enumtypes.py,sha256=W8wdBuNDNhN__H1-yx3s01psYmlSCPpQRbEhP8ez2jo,1790
+slacgs/gdrive_client.py,sha256=sfjvF4qn9MBciyY-WIslJ8rq_u9sROhWzNuRzrVzD0U,20862
+slacgs/gspread_client.py,sha256=bFsutMI8WvwMXZkWuSjXh5q6RjBdz3uqFzdVtmtezso,75981
+slacgs/model.py,sha256=uPZedoGCJAb3L-pr--gPjwgC7nIuLdqvbdbDbU0oW_k,20637
+slacgs/report.py,sha256=tlBjc6gE_5VS9JccdJh_VDZbhqFmHDYjr2pgnO3tv_s,30068
+slacgs/simulator.py,sha256=TNPBp7ECfbYhmpQcu8i0KItfRAjuopr-vqVxyKgE8n4,50156
+slacgs/utils.py,sha256=9oBL8Tai3Gl3uTlqR3SKId2wuL7gvbKe0AS3BtYM0D8,12948
+slacgs-0.1.8.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+slacgs-0.1.8.dist-info/METADATA,sha256=6_xs5gaFf530TKPZVywXiLXviZ7Ohw1IjRWrp2-_uIw,8292
+slacgs-0.1.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+slacgs-0.1.8.dist-info/top_level.txt,sha256=E1nifilgP_joUqegCNbMeRTtutBRCBHJkAI5YESWg6s,7
+slacgs-0.1.8.dist-info/RECORD,,
