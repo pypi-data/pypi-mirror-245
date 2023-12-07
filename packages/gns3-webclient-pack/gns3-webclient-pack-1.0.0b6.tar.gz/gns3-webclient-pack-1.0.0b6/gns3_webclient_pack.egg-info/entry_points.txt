@@ -1,0 +1,3 @@
+[gui_scripts]
+gns3-webclient-config = gns3_webclient_pack.main:main
+gns3-webclient-launcher = gns3_webclient_pack.launcher:main

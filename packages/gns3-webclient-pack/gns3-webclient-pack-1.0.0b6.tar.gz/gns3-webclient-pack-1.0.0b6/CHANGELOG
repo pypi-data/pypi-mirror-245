@@ -1,0 +1,46 @@
+# Change Log
+
+## 1.0.0b5 03/11/2023
+
+* SSL and controller authentication support (for packet captures)
+* Support for tabs when using Gnome-terminal
+* Support to install resources and MIME types from webclient
+* Migrate to pyproject.toml
+* Add Python 3.12 support
+* Add project variable for packet capture command line
+
+## 1.0.0b4 24/01/2023
+
+* Upgrade to PyQt5 version 5.15.7
+* Change WebClient window title and upgrade dependencies. Ref #23
+* Update packages for Fedora installation. Fixes #17
+* Add Python 3.9, 3.10 and 3.11 support
+* Add kitty as an option for Console Applications. Fixes https://github.com/GNS3/gns3-gui/issues/3203
+* Add Windows Terminal as an option for Console Applications. Fixes #20
+* Add ZOC8 console terminal for macOS command line
+
+## 1.0.0b3 29/05/2020
+
+* Change default config & log location.
+* Log to launcher.log and update README.md
+* Fix install script when launched with /bin/sh. Fixes #8
+* Update the MIME and .desktop databases after installing on Linux.
+* New icons for WebClient. Fixes #11
+* Add remote viewer as a VNC console for Linux. Ref GNS3/gns3-gui#2913
+* Install data files (desktop & icons) only on Linux
+* Add 'Royal TS V5' to predefined console list.
+* Add MANIFEST.in and update setup.py. Fixes #9
+* Use GNS3 config directory to store web client pack own config file.
+* Fix issue when host is 0.0.0.0. Fixes #5 #6
+
+## 1.0.0b2 06/11/2019
+
+* Update README and bump version to 1.0.0dev2
+* Release v1.0.0b1
+* Packet capture support.
+* Add gns3-webclient.desktop file in setup.py
+
+## 1.0.0a1 10/09/2019
+
+* First alpha release with Windows support.
+
