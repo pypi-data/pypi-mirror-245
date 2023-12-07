@@ -1,0 +1,11 @@
+gerber_writer/__init__.py,sha256=JyAnCtu8Xckgy97UJ5R1GJtvk9LJi1tW4NjYL4CvA9g,78
+gerber_writer/lutils.py,sha256=7cY4RuGiKk-mokwR09PZJwrA1JrG4XJ1fOAwW5lkJak,168
+gerber_writer/macros.py,sha256=9N3twpJi0glYhwIMEvUnMJI3vfppdAzMS-gd_0NkjLE,2133
+gerber_writer/padmasters.py,sha256=awHBMu4RuOTRb73rwL-q2LPFZLFO9AxzVFfWypswNFI,10964
+gerber_writer/writer.py,sha256=8QwG4wTrW4WzBguK5CuQ5ub7AoCC_8pcpb5N4bj48XI,56389
+gerber_writer/writer_test.py,sha256=v5hfNcaREjCl2jjL6of7tqHo4mXJvwtCCTlZ_PyD7Oo,20619
+gerber_writer-0.4.2.19.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gerber_writer-0.4.2.19.dist-info/METADATA,sha256=fQTm3sRTydFK6Mj24X4Xp6oJetoTKitPBbVbvNeztnQ,2745
+gerber_writer-0.4.2.19.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gerber_writer-0.4.2.19.dist-info/top_level.txt,sha256=o7roUUXmhxCz5XpxImrx1q3HbgX9UVYQNAQagOwgTRg,14
+gerber_writer-0.4.2.19.dist-info/RECORD,,
