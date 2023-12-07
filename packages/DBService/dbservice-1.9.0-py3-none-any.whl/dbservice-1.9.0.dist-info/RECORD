@@ -1,0 +1,7 @@
+src/__init__.py,sha256=ldH7Zp_WL6e3GrBWoH-IUAnHF5kWpETZZfP6yNL4rAQ,192
+src/dbcore.py,sha256=lBUV0kGBw61ARGKYG0iNsvY7FeVWTixECvSZBfy8Pwc,11605
+src/dbcore_old.py,sha256=5iJTSvMdMfXPoNSKcN9QSc_fv9aeFLkh198-jlxW0H4,26315
+dbservice-1.9.0.dist-info/METADATA,sha256=vWWgd1fQYNU7NqtXqaN3ZVEdkVPOuCJh7T0UbwXI8vM,1007
+dbservice-1.9.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+dbservice-1.9.0.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+dbservice-1.9.0.dist-info/RECORD,,
