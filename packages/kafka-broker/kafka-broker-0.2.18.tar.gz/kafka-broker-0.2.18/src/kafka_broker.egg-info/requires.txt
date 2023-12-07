@@ -1,0 +1,2 @@
+confluent_kafka>=2.3.0
+pymemcache>=4.0.0
