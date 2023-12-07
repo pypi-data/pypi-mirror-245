@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+README.pypi
+setup.py
+SlideLocalAPI/SlideLocalAPI.py
+SlideLocalAPI/__init__.py
+SlideLocalAPI.egg-info/PKG-INFO
+SlideLocalAPI.egg-info/SOURCES.txt
+SlideLocalAPI.egg-info/dependency_links.txt
+SlideLocalAPI.egg-info/requires.txt
+SlideLocalAPI.egg-info/top_level.txt
