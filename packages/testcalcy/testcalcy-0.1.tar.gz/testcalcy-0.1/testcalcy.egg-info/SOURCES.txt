@@ -1,0 +1,7 @@
+README.md
+setup.py
+testcalcy.egg-info/PKG-INFO
+testcalcy.egg-info/SOURCES.txt
+testcalcy.egg-info/dependency_links.txt
+testcalcy.egg-info/entry_points.txt
+testcalcy.egg-info/top_level.txt
