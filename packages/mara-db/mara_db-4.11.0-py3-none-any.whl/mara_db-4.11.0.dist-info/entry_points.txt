@@ -1,0 +1,2 @@
+[mara.commands]
+db = mara_db.cli:mara_db
