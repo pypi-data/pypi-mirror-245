@@ -1,0 +1,11 @@
+digital_experiments/__init__.py,sha256=opvWjNTaLivGhQXPgIhP97RXWTZMavH5Zu5Vmig4Ogo,366
+digital_experiments/backends.py,sha256=SnT1Tzn_HWDzjaJVfT4mVg62E6_rO2OoXodCK80-S50,2630
+digital_experiments/callbacks.py,sha256=1vskIJvWeK2r-wLtJm3Ks3UsmtKdQLNH_B9Yi23Bado,6700
+digital_experiments/core.py,sha256=JiraLtyXPyIJ7bIJgGw5FGT9tMenoorii74Qy5-Xg-M,6928
+digital_experiments/experiment.py,sha256=r1OXY2wqfXaZqJ8hiXjqntw6x5uF9l1MHbGeu8XRGsY,3500
+digital_experiments/util.py,sha256=hPRnOPvJ4boQfPDxffbcqABOfA_wbez10v81Szuhm1o,621
+digital_experiments-2.0.0.dist-info/LICENSE,sha256=W0DmFgdUW90fEMcKjI_uPdMSea1O77yLbwwVjo3FlzM,1051
+digital_experiments-2.0.0.dist-info/METADATA,sha256=I6zBmHYQwdrlvL_iRUKDlfNxGG12ABpeurwynaoilF8,3895
+digital_experiments-2.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+digital_experiments-2.0.0.dist-info/top_level.txt,sha256=su07wHYZqir9f3bRq5f2iZFUlLHKZglt9IxHUulm_mI,20
+digital_experiments-2.0.0.dist-info/RECORD,,
