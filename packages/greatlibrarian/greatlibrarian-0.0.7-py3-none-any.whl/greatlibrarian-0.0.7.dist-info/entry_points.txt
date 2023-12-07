@@ -1,0 +1,3 @@
+[console_scripts]
+gltest=greatlibrarian.run:main
+
