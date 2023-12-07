@@ -1,0 +1,15 @@
+eunomia/__init__.py,sha256=lcsAkzn3iD19tqdYT5nW3yZ_mPmnZHqBsdCO0g_av9I,283
+eunomia/agents.py,sha256=5ygnUQGgizgX0_TiUhWNL0aUEQ4Ro5zvcILZqk7Pspc,1542
+eunomia/eunomia.py,sha256=ibquwATgzVw0jR55eEeX4YFK-Mek56ja2CiKPXGVH0E,2622
+eunomia/general.py,sha256=YK2JrNKUawI-exgKc7HPtxD3NC-8MB2b_qYLO5cNU1Y,2508
+eunomia/parser.py,sha256=tmdkd2ITECpnsgUj8Mr2mRgPp5wyLfBJko6IuSyQG4I,3106
+eunomia/prompts.py,sha256=0G3sBPXOia9IOuqXrs6fGw4dQJIjKZQu0am5LO_bUdU,2248
+eunomia/tools.py,sha256=1reEg2lZPt9yAOlTnnYdyWyEZmGLHGIeyUiXYbTinGc,12883
+eunomia/tools_list.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eunomia/docs_utils/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+eunomia/docs_utils/docs.py,sha256=ndpYTYsLqprWmM-iBz_IqUOV7MbrivTaeeCMj106-uE,7614
+materials_eunomia-0.1.0.dist-info/LICENSE,sha256=Y_9ebIt02jvjhrDJcldz9nvxhC0G819fhwZGumfAjtM,1094
+materials_eunomia-0.1.0.dist-info/METADATA,sha256=x6WjQ0tngQ5MRleV1JhPT9ZJrWNkx0X8l2ffwmmEU6M,1154
+materials_eunomia-0.1.0.dist-info/WHEEL,sha256=iYlv5fX357PQyRT2o6tw1bN-YcKFFHKqB_LwHO5wP-g,110
+materials_eunomia-0.1.0.dist-info/top_level.txt,sha256=gxbs8RFRoWXTxwnrJe5GsoWk_2PbjAWQSoloIxBeEso,8
+materials_eunomia-0.1.0.dist-info/RECORD,,
