@@ -1,0 +1,2 @@
+[console_scripts]
+dsk-server = dsk_server:main
