@@ -1,0 +1,11 @@
+qlispc-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+qlispc-1.0.1.dist-info/METADATA,sha256=Zlp5X2yfP4p4FZqwKjC3jhTSheFSnXqkIVOwG_cmt2A,1204
+qlispc-1.0.1.dist-info/RECORD,,
+qlispc-1.0.1.dist-info/top_level.txt,sha256=Yp2_cLwqJba0dpMyJ1QM2rqvkdd6hRMdhk4BhhnD0Xo,7
+qlispc-1.0.1.dist-info/WHEEL,sha256=1FEjxEYgybphwh9S0FO9IcZ0B-NIeM2ko8OzhFZeOeQ,152
+qlispc/simple.cpython-310-x86_64-linux-gnu.so,sha256=6o_-FnqfaTUSHXgLQ1DW-RcERmPFYoBj4v3NL2soiSI,1496520
+qlispc/matricies.pyi,sha256=vOri9aGWX-4GU_fnGNz5o0pO760oWTH2QY5HaPp2epk,1421
+qlispc/__init__.py,sha256=qG_wDSOLAP8p7XcLIf4cBuk-bDHWUJI-k_CiHb86y40,279
+qlispc/matricies.cpython-310-x86_64-linux-gnu.so,sha256=CiRcg-hBcxW1du8GUlJvqtDEz9XQaOgb-4YbYuHsP30,914600
+qlispc/version.py,sha256=x7SWnx8ho-VaDHLtK75ItIuboJ9SpcR_vy2GvXNmU4A,21
+qlispc/simple.pyi,sha256=E5HbvOgtV_RBICOyFUGKgVwzZYxA-3lKg4h_dN27Wfw,358
