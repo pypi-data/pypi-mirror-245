@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: marslab
+Version: 0.9.13
+Summary: Utilities for working with observational data of Mars.
+Home-page: https://github.com/millionconcepts/marslab.git
+Author: Million Concepts
+Author-email: chase@millionconcepts.com
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: dustgoggles
+Requires-Dist: fs
+Requires-Dist: pandas
+Requires-Dist: more-itertools
+Requires-Dist: pathos
+Requires-Dist: cytoolz
+Provides-Extra: pdr-load
+Requires-Dist: pdr; extra == "pdr-load"
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: hypothesis; extra == "tests"
+Provides-Extra: render
+Requires-Dist: pillow; extra == "render"
+Requires-Dist: matplotlib; extra == "render"
+Provides-Extra: notebooks
+Requires-Dist: jupyter; extra == "notebooks"
+Provides-Extra: regions
+Requires-Dist: astropy; extra == "regions"
+Provides-Extra: time
+Requires-Dist: sympy; extra == "time"
+Requires-Dist: python-dateutil; extra == "time"
+Provides-Extra: geom
+Requires-Dist: pdr; extra == "geom"
+Provides-Extra: strict-reshape
+Requires-Dist: sympy; extra == "strict-reshape"
+Provides-Extra: histograms
+Requires-Dist: fast-histogram; extra == "histograms"
+Provides-Extra: masking
+Requires-Dist: scikit-image; extra == "masking"
+Requires-Dist: opencv; extra == "masking"
