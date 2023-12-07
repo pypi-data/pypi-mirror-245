@@ -1,0 +1,7 @@
+README.md
+setup.py
+fslog/__init__.py
+fslog.egg-info/PKG-INFO
+fslog.egg-info/SOURCES.txt
+fslog.egg-info/dependency_links.txt
+fslog.egg-info/top_level.txt
