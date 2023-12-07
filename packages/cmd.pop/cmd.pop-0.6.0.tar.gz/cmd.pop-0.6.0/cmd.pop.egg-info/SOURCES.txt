@@ -1,0 +1,7 @@
+setup.py
+cmd.pop.egg-info/PKG-INFO
+cmd.pop.egg-info/SOURCES.txt
+cmd.pop.egg-info/dependency_links.txt
+cmd.pop.egg-info/top_level.txt
+cmd_pop/__init__.py
+cmd_pop/pypi.py
