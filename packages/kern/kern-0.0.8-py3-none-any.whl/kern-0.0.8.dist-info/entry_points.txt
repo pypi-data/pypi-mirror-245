@@ -1,0 +1,8 @@
+[console_scripts]
+html = kern.html:main
+image = kern.image:main
+input = kern.__main__:main
+input-html = kern.html:main
+input-image = kern.image:main
+input-pdf = kern.pdf:main
+pdf = kern.pdf:main
