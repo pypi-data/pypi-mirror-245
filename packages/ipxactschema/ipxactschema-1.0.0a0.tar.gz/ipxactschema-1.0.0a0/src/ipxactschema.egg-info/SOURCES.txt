@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/ipxactschema/__init__.py
+src/ipxactschema/py.typed
+src/ipxactschema.egg-info/PKG-INFO
+src/ipxactschema.egg-info/SOURCES.txt
+src/ipxactschema.egg-info/dependency_links.txt
+src/ipxactschema.egg-info/requires.txt
+src/ipxactschema.egg-info/top_level.txt
+tests/test_import.py
