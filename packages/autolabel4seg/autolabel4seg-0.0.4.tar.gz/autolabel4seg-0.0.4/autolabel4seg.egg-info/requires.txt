@@ -1,0 +1,7 @@
+reportlab
+ultralytics
+Pillow
+roboflow
+autodistill-grounded-sam==0.1.1
+google-images-downloader==1.0.16
+pytube
