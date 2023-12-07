@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+TestMyFirstProjectLibrary/Documents.py
+TestMyFirstProjectLibrary/EGE24.py
+TestMyFirstProjectLibrary/__init__.py
+TestMyFirstProjectLibrary.egg-info/PKG-INFO
+TestMyFirstProjectLibrary.egg-info/SOURCES.txt
+TestMyFirstProjectLibrary.egg-info/dependency_links.txt
+TestMyFirstProjectLibrary.egg-info/top_level.txt
