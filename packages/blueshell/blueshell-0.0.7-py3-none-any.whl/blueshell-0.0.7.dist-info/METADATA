@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: blueshell
+Version: 0.0.7
+Summary: Blue Shell is a chat shell for local ai service endpoint
+Home-page: https://github.com/MarchLiu/blue-shell
+Author: marsliu
+Author-email: Liu Xin <mars.liu@outlook.com>
+License: MIT License
+        
+        Copyright (c) 2023 Mars Liu
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/MarchLiu/blue-shell
+Project-URL: Issues, https://github.com/MarchLiu/blue-shell/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.31.0
+Requires-Dist: prompt-toolkit >=3.0.41
+Requires-Dist: rich >=13.7.0
+
+# Blue Shell
+
+Blue Shell is a AI Chat Shell for local service. 0.0.1 version support ollama
+
+## Installation
+
+```
+pip install blueshell
+```
+
+## Usage
+
+At simplest, run 
+
+```shell
+python -m blueshell.shell -m "codellama" 
+```
+
+If ollama isn't listening default port, for example 11435. we could pass a url parameter like this:
+
+```shell
+python -m blueshell.shell -m "codellama" --url http://127.0.0.1:11435
+```
+
+More options could run help:
+
+```shell
+$ python -m blueshell.shell --help
+usage: Blue Shell [-h] [--url URL] [-p PROMPT] [-m MODEL]
+                  [-f {markdown,plain,json}] [-s SYSTEM]
+
+A AI assistant for local ai service
+
+options:
+  -h, --help            show this help message and exit
+  --url URL
+  -p PROMPT, --prompt PROMPT
+  -m MODEL, --model MODEL
+  -f {markdown,plain,json}, --format {markdown,plain,json}
+  -s SYSTEM, --system SYSTEM
+
+Powered By Python
+
+```
+
+You can list all models in ollama:
+
+```shell
+$ python -m blueshell.list
+```
+
+List has a option is url:
+
+```shell
+$ python -m blueshell.list --url http://127.0.0.1:11435
+```
+
+
+## What's New
+
+### 0.0.1
+
+support ollama
+
+### 0.0.2
+
+document typo
+
+### 0.0.3
+
+print feedback as markdown
+
+### 0.0.4
+
+fixed dependencies miss
+
+### 0.0.5
+
+- add list command
+- add format argument
+- C-c interrupt repl and continue
+- Improved User Experience
+
+### 0.0.6
+
+support json format pretty
+
+### 0.0.7
+
+save history in ~/.blueshell_history
