@@ -1,0 +1,6 @@
+black
+ipython
+isort
+pytest
+twine
+wheel

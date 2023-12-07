@@ -1,0 +1,4 @@
+-e ../../../lv-physics/.
+-e ../../../lv-physics/extras/lvp-plots/.
+jupyter
+matplotlib

@@ -1,0 +1,63 @@
+{
+  "id": 1,
+  "bundle": {
+    "offsets": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  "insulators": [
+    {
+      "connect": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "mounts": [
+        [
+          0.0,
+          0.0,
+          12.0
+        ]
+      ]
+    },
+    {
+      "connect": [
+        0.0,
+        500.0,
+        10.0
+      ],
+      "mounts": [
+        [
+          0.0,
+          500.0,
+          12.0
+        ]
+      ]
+    }
+  ],
+  "material": {
+    "name": "Drake",
+    "type": "ACSR",
+    "absorptivity": 0.8,
+    "emissivity": 0.8,
+    "diameter": 0.0281432,
+    "mass": 1.628,
+    "heat_capacity": 1280.069,
+    "resistance_25c": 0.000382546,
+    "resistance_alpha": 0.000385935,
+    "expansion_alpha": 9.1814125,
+    "youngs_modulus": 77056.5363
+  },
+  "shape": {
+    "curvature": 2000.0,
+    "swing_angle": 0.0
+  },
+  "state": {
+    "loading": 1.0,
+    "temperature": 20.0
+  }
+}

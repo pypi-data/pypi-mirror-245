@@ -1,0 +1,31 @@
+# ignore environment directory
+env/
+
+# ignore data files
+*.csv
+*.json
+*.npy
+*.png
+*.pickle
+
+# ignore vim files
+*~
+*.swp
+*.swo
+*.vim
+
+# ignore .ipynb_checkpoints/
+.ipynb_checkpoints/
+.virtual_documents/
+
+# ignore python packaging/distribution files
+.eggs/
+*.egg-info/
+*.egg
+build/
+dist/
+**/__pycache__/
+
+# include dataclass object jsons
+!data/*.json
+!data/*/*.json

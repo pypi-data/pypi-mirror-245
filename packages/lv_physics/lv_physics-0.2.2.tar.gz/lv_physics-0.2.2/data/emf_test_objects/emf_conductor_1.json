@@ -1,0 +1,53 @@
+{
+  "id": 1,
+  "bundle": null,
+  "insulators": [
+    {
+      "mounts": [
+        [
+          NaN,
+          NaN,
+          NaN
+        ]
+      ],
+      "connect": [
+        -3.0,
+        0.0,
+        15.0
+      ],
+      "rest_connect": [
+        NaN,
+        NaN,
+        NaN
+      ]
+    },
+    {
+      "mounts": [
+        [
+          NaN,
+          NaN,
+          NaN
+        ]
+      ],
+      "connect": [
+        -3.0,
+        100.0,
+        15.0
+      ],
+      "rest_connect": [
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "material": null,
+  "points": null,
+  "shape": {
+    "curvature": 500.0,
+    "swing_angle": NaN
+  },
+  "state": null,
+  "span_id": 1,
+  "phase": "B"
+}

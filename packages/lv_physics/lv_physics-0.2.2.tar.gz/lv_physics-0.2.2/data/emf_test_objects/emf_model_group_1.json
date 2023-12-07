@@ -1,0 +1,364 @@
+{
+  "id": 1,
+  "sensors": {
+    "1": {
+      "id": 1,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ext_angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_order": [
+        2,
+        1,
+        0
+      ],
+      "model_group_id": 1,
+      "phase_adjustment": 0.0
+    }
+  },
+  "circuits": {
+    "1": {
+      "id": 1,
+      "model_group_id": 1,
+      "spans": {
+        "1": {
+          "id": 1,
+          "circuit_id": 1,
+          "conductors": {
+            "1": {
+              "id": 1,
+              "bundle": null,
+              "insulators": [
+                {
+                  "mounts": [
+                    [
+                      NaN,
+                      NaN,
+                      NaN
+                    ]
+                  ],
+                  "connect": [
+                    -3.0,
+                    0.0,
+                    15.0
+                  ],
+                  "rest_connect": [
+                    NaN,
+                    NaN,
+                    NaN
+                  ]
+                },
+                {
+                  "mounts": [
+                    [
+                      NaN,
+                      NaN,
+                      NaN
+                    ]
+                  ],
+                  "connect": [
+                    -3.0,
+                    100.0,
+                    15.0
+                  ],
+                  "rest_connect": [
+                    NaN,
+                    NaN,
+                    NaN
+                  ]
+                }
+              ],
+              "material": null,
+              "points": null,
+              "shape": {
+                "curvature": 500.0,
+                "swing_angle": NaN
+              },
+              "state": null,
+              "span_id": 1,
+              "phase": "B"
+            },
+            "2": {
+              "id": 2,
+              "bundle": null,
+              "insulators": [
+                {
+                  "mounts": [
+                    [
+                      NaN,
+                      NaN,
+                      NaN
+                    ]
+                  ],
+                  "connect": [
+                    0.0,
+                    0.0,
+                    15.0
+                  ],
+                  "rest_connect": [
+                    NaN,
+                    NaN,
+                    NaN
+                  ]
+                },
+                {
+                  "mounts": [
+                    [
+                      NaN,
+                      NaN,
+                      NaN
+                    ]
+                  ],
+                  "connect": [
+                    3.0,
+                    100.0,
+                    15.0
+                  ],
+                  "rest_connect": [
+                    NaN,
+                    NaN,
+                    NaN
+                  ]
+                }
+              ],
+              "material": null,
+              "points": null,
+              "shape": {
+                "curvature": 500.0,
+                "swing_angle": NaN
+              },
+              "state": null,
+              "span_id": 1,
+              "phase": "A"
+            },
+            "3": {
+              "id": 3,
+              "bundle": null,
+              "insulators": [
+                {
+                  "mounts": [
+                    [
+                      NaN,
+                      NaN,
+                      NaN
+                    ]
+                  ],
+                  "connect": [
+                    3.0,
+                    0.0,
+                    15.0
+                  ],
+                  "rest_connect": [
+                    NaN,
+                    NaN,
+                    NaN
+                  ]
+                },
+                {
+                  "mounts": [
+                    [
+                      NaN,
+                      NaN,
+                      NaN
+                    ]
+                  ],
+                  "connect": [
+                    3.0,
+                    100.0,
+                    15.0
+                  ],
+                  "rest_connect": [
+                    NaN,
+                    NaN,
+                    NaN
+                  ]
+                }
+              ],
+              "material": null,
+              "points": null,
+              "shape": {
+                "curvature": 500.0,
+                "swing_angle": NaN
+              },
+              "state": null,
+              "span_id": 1,
+              "phase": "C"
+            }
+          }
+        },
+        "2": {
+          "id": 2,
+          "circuit_id": 1,
+          "conductors": {
+            "4": {
+              "id": 4,
+              "bundle": null,
+              "insulators": [
+                {
+                  "mounts": [
+                    [
+                      NaN,
+                      NaN,
+                      NaN
+                    ]
+                  ],
+                  "connect": [
+                    -3.0,
+                    -100.0,
+                    15.0
+                  ],
+                  "rest_connect": [
+                    NaN,
+                    NaN,
+                    NaN
+                  ]
+                },
+                {
+                  "mounts": [
+                    [
+                      NaN,
+                      NaN,
+                      NaN
+                    ]
+                  ],
+                  "connect": [
+                    -3.0,
+                    0.0,
+                    15.0
+                  ],
+                  "rest_connect": [
+                    NaN,
+                    NaN,
+                    NaN
+                  ]
+                }
+              ],
+              "material": null,
+              "points": null,
+              "shape": {
+                "curvature": 500.0,
+                "swing_angle": NaN
+              },
+              "state": null,
+              "span_id": 1,
+              "phase": "B"
+            },
+            "5": {
+              "id": 5,
+              "bundle": null,
+              "insulators": [
+                {
+                  "mounts": [
+                    [
+                      NaN,
+                      NaN,
+                      NaN
+                    ]
+                  ],
+                  "connect": [
+                    0.0,
+                    -100.0,
+                    15.0
+                  ],
+                  "rest_connect": [
+                    NaN,
+                    NaN,
+                    NaN
+                  ]
+                },
+                {
+                  "mounts": [
+                    [
+                      NaN,
+                      NaN,
+                      NaN
+                    ]
+                  ],
+                  "connect": [
+                    0.0,
+                    0.0,
+                    15.0
+                  ],
+                  "rest_connect": [
+                    NaN,
+                    NaN,
+                    NaN
+                  ]
+                }
+              ],
+              "material": null,
+              "points": null,
+              "shape": {
+                "curvature": 500.0,
+                "swing_angle": NaN
+              },
+              "state": null,
+              "span_id": 1,
+              "phase": "A"
+            },
+            "6": {
+              "id": 6,
+              "bundle": null,
+              "insulators": [
+                {
+                  "mounts": [
+                    [
+                      NaN,
+                      NaN,
+                      NaN
+                    ]
+                  ],
+                  "connect": [
+                    3.0,
+                    -100.0,
+                    15.0
+                  ],
+                  "rest_connect": [
+                    NaN,
+                    NaN,
+                    NaN
+                  ]
+                },
+                {
+                  "mounts": [
+                    [
+                      NaN,
+                      NaN,
+                      NaN
+                    ]
+                  ],
+                  "connect": [
+                    3.0,
+                    0.0,
+                    15.0
+                  ],
+                  "rest_connect": [
+                    NaN,
+                    NaN,
+                    NaN
+                  ]
+                }
+              ],
+              "material": null,
+              "points": null,
+              "shape": {
+                "curvature": 500.0,
+                "swing_angle": NaN
+              },
+              "state": null,
+              "span_id": 1,
+              "phase": "C"
+            }
+          }
+        }
+      },
+      "voltage": 100000.0
+    }
+  }
+}

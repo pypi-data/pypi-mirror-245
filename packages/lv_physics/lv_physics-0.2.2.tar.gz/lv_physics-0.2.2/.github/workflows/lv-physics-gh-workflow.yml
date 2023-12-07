@@ -1,0 +1,34 @@
+name: lv-physics CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.11"
+
+    - name: Install Make
+      run: sudo apt-get install -y make
+
+    - name: Build environment and install packages
+      run: make build-env install
+
+    - name: Run tests
+      run: make test
+
+    - name: Lint check
+      run: make lint-check

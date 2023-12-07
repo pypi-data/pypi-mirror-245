@@ -1,0 +1,3 @@
+-e ../../../lv-physics/.
+-e ../../../lv-physics/extras/lvp-data/.
+-e ../../../operations/.

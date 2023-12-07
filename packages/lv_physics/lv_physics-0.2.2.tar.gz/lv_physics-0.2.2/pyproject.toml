@@ -1,0 +1,46 @@
+[build-system]
+    requires = ["flit_core >=3.2,<4"]
+    build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+
+    module = "lv_physics"
+    author = "B. Leist & J. Colston"
+    requires-python = ">=3.11"
+    description-file = "README.md"
+    requires = [
+        "dataclasses-json",
+        "numpy",
+        "scipy",
+    ]
+
+    [tool.flit.metadata.requires-extra]
+        dev = [
+            "black",
+            "ipython",
+            "isort",
+            "pre-commit",
+            "python-lsp-server",
+            "pytest",
+            "twine",
+            "wheel",
+        ]
+
+[tool.bumpversion]
+
+    current_version = "0.2.2"
+    commit = true
+    tag = true
+    tag_name = "{new_version}"
+
+    [tool.bumpversion.file]
+        path = "lv_physics/__init__.py"
+
+    [tool.bumpversion.part]
+        serialize = "{major}.{minor}.{patch}"
+
+    [tool.bumpversion.search]
+        search = "__version__ = \"{current_version}\""
+
+    [tool.bumpversion.replace]
+        replace = "__version__ = \"{new_version}\""
