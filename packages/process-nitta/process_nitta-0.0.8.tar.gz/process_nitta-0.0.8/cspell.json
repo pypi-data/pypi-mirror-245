@@ -1,0 +1,30 @@
+// cSpell Settings
+{
+    // Version of the setting file.  Always 0.2
+    "version": "0.2",
+    // language - current active spelling language
+    "language": "en",
+    // words - list of words to be always considered correct
+    "words": [
+        "AGIS",
+        "DISP",
+        "dtype",
+        "idxmax",
+        "idxmin",
+        "Instron",
+        "Kamono",
+        "Makoto",
+        "nitta",
+        "nrows",
+        "pydantic",
+        "pyproject",
+        "REVL",
+        "skipfooter",
+        "skiprows",
+        "tanδ",
+        "usecols"
+    ],
+    // flagWords - list of words to be always considered incorrect
+    // This is useful for offensive words and common spelling errors.
+    "flagWords": []
+}
