@@ -1,0 +1,173 @@
+#!/bin/bash
+
+log()
+{
+    echo $(date +"%Y-%m-%d %H:%M:%S,%3N") $@
+}
+
+wait_for_host()
+{
+    local host=$1
+
+    retry=20
+    while (($retry > 0)); do
+        log INFO "Check $host, retry: $retry."
+        ssh -o ConnectTimeout=3 root@$host date > /dev/null 2>&1
+        if (($? == 0)); then
+            log INFO "Host $host is up."
+            break
+        fi
+        retry=$((retry - 1))
+        sleep 4
+    done
+    if (($retry == 0)); then
+        log ERROR "Timeout!"
+        exit 1
+    fi
+}
+
+set_repo()
+{
+    log INFO "Check repo."
+    if [ ! -d "/etc/yum.repos.d.orig" ]; then
+        mv /etc/yum.repos.d /etc/yum.repos.d.orig
+        mkdir -p /etc/yum.repos.d
+    fi
+    mv /tmp/depot.repo /etc/yum.repos.d/
+}
+
+disable_selinux()
+{
+    log INFO "Disable SELinux."
+    setenforce 0
+    cat > /etc/selinux/config << __EOF__
+SELINUX=permissive
+SELINUXTYPE=targeted
+__EOF__
+}
+
+install_mariadb()
+{
+    log INFO "Install MariaDB and Galera."
+    mv -f /tmp/hosts /etc/
+    dnf install -y mariadb-server galera mariadb-server-galera
+    systemctl enable mariadb
+    mv -f /tmp/my.cnf /etc/
+}
+
+install_keepalived()
+{
+    log INFO "Install keepalived."
+    dnf install -y keepalived
+    mv -f /tmp/keepalived.conf /tmp/check-svc \
+            /etc/keepalived/
+    chmod +x /etc/keepalived/check-svc
+    systemctl enable --now keepalived
+}
+
+deploy()
+{
+    local ha=$1
+
+    echo ""
+    log INFO "Deploy MariaDB."
+    set_repo
+    disable_selinux
+    install_mariadb
+    if [ "$ha" == "True" ]; then
+        install_keepalived
+    fi
+}
+
+bootstrap()
+{
+    log INFO "Bootstrap MariaDB."
+    galera_new_cluster
+    sleep 10
+
+    log INFO "Enable remote access for user root."
+    mysql -e "create user 'root'@'%';"
+    mysql -e "grant all on *.* to 'root'@'%';"
+}
+
+join()
+{
+    log INFO "Join MariaDB cluster."
+    systemctl start mariadb
+}
+
+help()
+{
+    echo "Help"
+    echo "$0 deploy <host> <id> <ha>"
+}
+
+start()
+{
+    local copy_files tmp_files host id ha
+
+    if [ -z "$2" ]; then help; exit 1; else host=$2; fi
+    if [ -z "$3" ]; then help; exit 1; else id=$3; fi
+
+    if [ "$cli_path" != "/tmp" ]; then
+        copy_files="$0"
+    fi
+    case "$1" in
+    deploy)
+        ha=$4
+        if [ "$copy_files" ]; then
+            tmp_path=/tmp/$id
+            copy_files="$copy_files $tmp_path/depot.repo $tmp_path/my.cnf
+                    $tmp_path/hosts"
+            if [ $ha == "True" ]; then
+                template_path=/usr/local/cms/builder/mariadb-template
+                copy_files="$copy_files
+                        $tmp_path/keepalived.conf
+                        $template_path/check-svc"
+            fi
+        else
+            deploy $ha
+        fi
+        ;;
+    bootstrap)
+        if [ "$copy_files" ]; then
+            copy_files="$copy_files"
+        else
+            bootstrap
+        fi
+        ;;
+    join)
+        if [ "$copy_files" ]; then
+            copy_files="$copy_files"
+        else
+            join
+        fi
+        ;;
+    *)
+        help
+        return
+        ;;
+    esac
+    if [ "$copy_files" ]; then
+        echo ""
+        log INFO $@
+        wait_for_host $host
+        log INFO "Copy files to $host."
+        scp $copy_files root@$host:/tmp/
+        log INFO "Run $cli_name on $host."
+        ssh root@$host /tmp/$cli_name "$@"
+        log INFO "Clean up on $host."
+        for f in $copy_files; do
+            tmp_files="$tmp_files /tmp/$(basename $f)"
+        done
+        ssh root@$host rm -f $tmp_files
+    fi
+}
+
+
+cli_name=$(basename $0)
+cli_path=$(dirname $0)
+start "$@"
+
+exit 0
+

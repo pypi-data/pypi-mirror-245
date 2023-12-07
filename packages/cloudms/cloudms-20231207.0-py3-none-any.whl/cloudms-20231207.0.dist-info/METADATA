@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cloudms
+Version: 20231207.0
+Summary: Cloud Managed Service
+Home-page: https://github.com/cms
+Author: contributor
+Author-email: contributor@cloud.svc
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+

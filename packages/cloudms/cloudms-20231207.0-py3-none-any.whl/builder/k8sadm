@@ -1,0 +1,362 @@
+#!/bin/bash
+
+log()
+{
+    echo $(date +"%Y-%m-%d %H:%M:%S,%3N") $@
+}
+
+wait_for_host()
+{
+    local host=$1
+
+    retry=20
+    while (($retry > 0)); do
+        log INFO "Check $host, retry: $retry."
+        ssh -o ConnectTimeout=3 core@$host date > /dev/null 2>&1
+        if (($? == 0)); then
+            log INFO "Host $host is up."
+            break
+        fi
+        retry=$((retry - 1))
+        sleep 4
+    done
+    if (($retry == 0)); then
+        log ERROR "Timeout!"
+        exit 1
+    fi
+}
+
+set_hosts()
+{
+    log INFO "Set hosts."
+    mv -f /tmp/hosts /etc/
+}
+
+disable_selinux()
+{
+    log INFO "Disable SELinux."
+    setenforce 0
+    sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+}
+
+install_client_cert()
+{
+    log INFO "Install client cert."
+    curl -s http://depot/cert/client/client.pem \
+        -o /etc/pki/ca-trust/source/anchors/client.pem
+    /usr/bin/update-ca-trust
+}
+
+set_kernel_module()
+{
+    log INFO "Set kernel module."
+    # This is required by CRI-O runtime.
+    # With Docker, this is automatically taken care of.
+    modprobe overlay
+    modprobe br_netfilter
+
+    file=/etc/modules-load.d/crio.conf
+    if [ ! -f $file ]; then
+        cat << __EOF__ > $file
+overlay
+br_netfilter
+__EOF__
+    fi
+}
+
+set_sysctl()
+{
+    log INFO "Set sysctl."
+    file=/etc/sysctl.conf
+    keys="net.ipv4.ip_forward
+            net.bridge.bridge-nf-call-iptables"
+    for key in $keys; do
+        grep $key $file > /dev/null 2>&1
+        if (( $? != 0 )); then
+            echo "$key = 1" >> $file
+            sysctl -p /etc/sysctl.conf
+        fi
+    done
+}
+
+set_repo()
+{
+    log INFO "Setup repo."
+    if [ ! -d "/etc/yum.repos.d.orig" ]; then
+        mv /etc/yum.repos.d /etc/yum.repos.d.orig
+        mkdir -p /etc/yum.repos.d
+    fi
+    mv /tmp/depot.repo /etc/yum.repos.d/
+}
+
+set_manifest_controller()
+{
+    path=/etc/kubernetes/manifests
+    mkdir -p $path
+    mv /tmp/keepalived.yaml $path/
+    mv /tmp/haproxy.yaml $path/
+
+    path=/etc/keepalived
+    mkdir -p $path
+    mv /tmp/keepalived.conf $path/
+    mv /tmp/check-api $path/
+    chmod +x $path/check-api
+
+    path=/etc/haproxy
+    mkdir -p $path
+    mv /tmp/haproxy.cfg $path/
+}
+
+set_manifest_worker()
+{
+    path=/etc/kubernetes/manifests
+    mkdir -p $path
+    mv /tmp/keepalived.yaml $path/
+
+    path=/etc/keepalived
+    mkdir -p $path
+    mv /tmp/keepalived.conf $path/
+    mv /tmp/check-ingress $path/
+    chmod +x $path/check-ingress
+}
+
+install_crio()
+{
+    log INFO "Install CRI-O."
+#    file=/etc/containers/registries.conf
+#    key=depot:5000
+#    grep $key $file > /dev/null 2>&1
+#    if (( $? != 0 )); then
+#        cat << __EOF__ >> $file
+#[[registry]]
+#location = "$key"
+#insecure = true
+#__EOF__
+#    fi
+
+    rpm-ostree install cri-tools-1.24.2 cri-o-1.26.1
+}
+
+install_kubernetes()
+{
+    log INFO "Install Kubernetes packages."
+    rpm-ostree install conntrack-tools-1.4.6 \
+            kubelet-1.24.0 kubeadm-1.24.0 kubectl-1.24.0
+}
+
+provision_controller()
+{
+    echo ""
+    log INFO "Provision controller."
+    set_hosts
+    disable_selinux
+    install_client_cert
+    set_kernel_module
+    set_sysctl
+    set_repo
+#    set_manifest_controller
+    install_crio
+    install_kubernetes
+    log INFO "Provision controller is done."
+}
+
+provision_worker()
+{
+    echo ""
+    log INFO "Provision worker."
+    set_hosts
+    disable_selinux
+    install_client_cert
+    set_kernel_module
+    set_sysctl
+    set_repo
+    #set_manifest_worker
+    install_crio
+    install_kubernetes
+    log INFO "Provision worker is done."
+}
+
+post_provision()
+{
+    echo ""
+    log INFO "Post provision."
+    log INFO "Enable and start CRI-O."
+    rm -f /etc/cni/net.d/100-crio-bridge.conflist \
+            /etc/cni/net.d/200-loopback.conflist
+    mv /tmp/crio.conf /etc/crio/
+    systemctl enable crio
+    systemctl restart crio
+    mv /tmp/crictl.yaml /etc/
+    #echo "INFO: Start containerd..."
+    #mv /tmp/config.toml /etc/containerd/
+    #systemctl enable containerd
+    #systemctl restart containerd
+    log INFO "Enable and start kubelet."
+    systemctl enable kubelet
+    systemctl restart kubelet
+    log INFO "Post provision is done."
+}
+
+bootstrap()
+{
+    echo ""
+    log INFO "Bootstrap."
+    nmcli -f ipv4.addresses conn show ens3 > /dev/null 2>&1
+    if (( $? == 0 )); then
+        cidr=$(nmcli -f ipv4.addresses conn show ens3 | awk '{print $2}')
+        IFS='/'; a=(${cidr}); unset IFS
+        address=${a[0]}
+        sed -i "s/__node_ip__/$address/" /tmp/bootstrap.yaml
+    fi
+    kubeadm --config /tmp/bootstrap.yaml init
+    kubectl --kubeconfig /etc/kubernetes/admin.conf \
+            apply -f /tmp/kube-flannel.yaml
+    log INFO "Bootstrap is done."
+}
+
+deploy_service()
+{
+    echo ""
+    log INFO "Deploy services."
+    kubectl --kubeconfig /etc/kubernetes/admin.conf \
+            apply -f /tmp/cloud.yaml
+    kubectl --kubeconfig /etc/kubernetes/admin.conf \
+            apply -f /tmp/svc
+    log INFO "Deploy services is done."
+}
+
+join_controller()
+{
+    echo ""
+    log INFO "Join controller."
+    nmcli -f ipv4.addresses conn show ens3 > /dev/null 2>&1
+    if (( $? == 0 )); then
+        cidr=$(nmcli -f ipv4.addresses conn show ens3 | awk '{print $2}')
+        IFS='/'; a=(${cidr}); unset IFS
+        address=${a[0]}
+        sed -i "s/__node_ip__/$address/" /tmp/join-controller.yaml
+    fi
+    kubeadm --config /tmp/join-controller.yaml join
+    log INFO "Join controller is done."
+}
+
+join_worker()
+{
+    echo ""
+    log INFO "Join worker."
+    nmcli -f ipv4.addresses conn show ens3 > /dev/null 2>&1
+    if (( $? == 0 )); then
+        cidr=$(nmcli -f ipv4.addresses conn show ens3 | awk '{print $2}')
+        IFS='/'; a=(${cidr}); unset IFS
+        address=${a[0]}
+        sed -i "s/__node_ip__/$address/" /tmp/join-worker.yaml
+    fi
+    kubeadm --config /tmp/join-worker.yaml join
+    log INFO "Join worker is done."
+}
+
+help()
+{
+    echo "deploy provision <host> <id>"
+    echo "deploy post-provision <host> <id>"
+    echo "deploy bootstrap <host> <id>"
+    echo "deploy join-controller <host> <id>"
+    echo "deploy join-worker <host> <id>"
+}
+
+start()
+{
+    local copy_files tmp_files host id tmp_path
+
+    if [ -z "$2" ]; then help; exit 1; else host=$2; fi
+    if [ -z "$3" ]; then help; exit 1; else id=$3; fi
+    if [ "$cli_path" != "/tmp" ]; then
+        copy_files="$cli_path/$cli_name"
+    fi
+    tmp_path=/tmp/$id
+    case "$1" in
+    provision-controller)
+        if [ "$copy_files" ]; then
+            copy_files="$copy_files $tmp_path/depot.repo $tmp_path/hosts"
+        else
+            provision_controller
+        fi
+        ;;
+    provision-worker)
+        if [ "$copy_files" ]; then
+            copy_files="$copy_files $tmp_path/depot.repo $tmp_path/hosts"
+        else
+            provision_worker
+        fi
+        ;;
+    post-provision)
+        if [ "$copy_files" ]; then
+            copy_files="$copy_files $tmp_path/crictl.yaml $tmp_path/crio.conf"
+        else
+            post_provision
+        fi
+        ;;
+    bootstrap)
+        if [ "$copy_files" ]; then
+            copy_files="$copy_files $tmp_path/bootstrap.yaml \
+                    $tmp_path/kube-flannel.yaml"
+        else
+            bootstrap
+        fi
+        ;;
+    join-controller)
+        if [ "$copy_files" ]; then
+            copy_files="$copy_files $tmp_path/join-controller.yaml"
+        else
+            join_controller
+        fi
+        ;;
+    join-worker)
+        if [ "$copy_files" ]; then
+            copy_files="$copy_files $tmp_path/join-worker.yaml"
+        else
+            join_worker
+        fi
+        ;;
+    deploy-service)
+        if [ "$copy_files" ]; then
+            cat /etc/pki/ca-trust/source/anchors/client.pem \
+                    | sed 's/^/    /' >> $tmp_path/cloud.yaml
+            t_src=/usr/local/cms/builder/k8s-template
+            cp $t_src/cloud-provider-openstack/controller-manager/*.yaml \
+                    $tmp_path/svc
+            cp $t_src/cloud-provider-openstack/cinder-csi-plugin/*.yaml \
+                    $tmp_path/svc
+            cp $t_src/resource/*.yaml $tmp_path/svc
+            copy_files="$copy_files $tmp_path/cloud.yaml $tmp_path/svc"
+        else
+            deploy_service
+        fi
+        ;;
+    *)
+        help
+        ;;
+    esac
+    if [ "$copy_files" ]; then
+        echo ""
+        log INFO $@
+        wait_for_host $host
+        log INFO "Copy files to $host."
+        scp -r $copy_files core@$host:/tmp/
+        log INFO "Run $cli_name on $host."
+        ssh core@$host sudo /tmp/$cli_name "$@"
+        log INFO "Clean up on $host."
+        for f in $copy_files; do
+            tmp_files="$tmp_files /tmp/$(basename $f)"
+        done
+        #ssh core@$host sudo rm -fr $tmp_files
+        log INFO "$1 is done from builder."
+    fi
+}
+
+cli_name=$(basename $0)
+cli_path=$(dirname $0)
+start "$@"
+
+exit 0
+

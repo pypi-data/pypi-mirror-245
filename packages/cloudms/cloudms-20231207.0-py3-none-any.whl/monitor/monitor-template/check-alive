@@ -1,0 +1,15 @@
+#!/bin/bash
+
+exit_error()
+{
+    echo "ERROR: Zabbix service is not active!" 1>&2
+    exit 1
+}
+docker ps | grep zabbix_server
+if [ $? -eq 1 ];then
+    docker start zabbix_server
+    docker start zabbix_web
+fi
+nodeName=`hostname`
+docker exec zabbix_server bash -c "zabbix_server -R ha_status" | grep $nodeName > /dev/null 2>&1 || exit_error
+
