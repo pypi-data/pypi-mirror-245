@@ -1,0 +1,12 @@
+tpltable/__init__.py,sha256=LIEpe2_w9z502H6-3twphjYUSJQm0_2X70o5L2ORVPs,238
+tpltable/_tablefb.py,sha256=01eEyGQ66uHMkedQfrrsy43I-_Gdl-RdJivAdyzPr8s,20569
+tpltable/_utils.py,sha256=q2GqBOv6JITBtQMAEQ317DZucPlHCoGL-MdvGQibM4o,865
+tpltable/areasdata.py,sha256=JwxR36_4d6337CnlbMaYnsMk07FsIjwKnaMEkKLUR9E,6965
+tpltable/filefinder.py,sha256=Fc9d7Bj80zT2wPgBctlZ6aWEJ-562fekbPh7hneK8l4,8407
+tpltable/main.py,sha256=rmTBMBVnr0OmCnfjkU2ffrn2yZBW7Aw9HpIrj73G-Ro,2953
+tpltable/pipe.py,sha256=vMDfJpSX0H3AszK5MLjuqGRfpAXPMLToswfBDADkFwA,14569
+tpltable/tablef.py,sha256=Vu6ae36x7HV58o8Yj8l-WpFZ6k3k96YcJBXOjQHcEE0,29215
+tpltable-0.1.0.dist-info/METADATA,sha256=9Js8ll4AFXlb90DPjQ4bidJQSKlYexIHkqXBsPxM-Ac,455
+tpltable-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+tpltable-0.1.0.dist-info/top_level.txt,sha256=7VBBdF2Ic3dVKZZGK3b-dhwZSDIwQLBMWbm08pnYLIk,9
+tpltable-0.1.0.dist-info/RECORD,,
