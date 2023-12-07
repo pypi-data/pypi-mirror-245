@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: humphrey
+Version: 2023.1
+Summary: An IRC client with no dependencies
+Author-email: William Jackson <william@subtlecoolness.com>
+Project-URL: Homepage, https://github.com/williamjacksn/humphrey
+Project-URL: Bug Tracker, https://github.com/williamjacksn/humphrey/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Humphrey
+
+Humphrey is an IRC client with no dependencies, written for Python >= 3.9
