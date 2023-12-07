@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cryptoserpent
+Version: 0.0.1
+Summary: A python library for encryption
+Author: Anish Kanthamneni
+Author-email: akneni@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# CryptoSerpent
