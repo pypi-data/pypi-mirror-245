@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: yaml-schema-agent
+Version: 0.1.0
+Summary: Project to Generate Schema from/to YAML and Also Validate
+Home-page: https://github.com/nayak-swastik/yaml-schema
+Author: Swastik.Nayak
+Author-email: swastik.nayak.eu@gmail.com

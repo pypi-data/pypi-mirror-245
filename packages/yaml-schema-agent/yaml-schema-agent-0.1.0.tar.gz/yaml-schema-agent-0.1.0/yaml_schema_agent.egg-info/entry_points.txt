@@ -1,0 +1,2 @@
+[console_scripts]
+ysg = YamlSchemaAgent.entry_point:main
