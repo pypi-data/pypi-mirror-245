@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+image-formatter = image_formatter.image_formatter_plugin.image_formatter_plugin:ImageFormatterPlugin
