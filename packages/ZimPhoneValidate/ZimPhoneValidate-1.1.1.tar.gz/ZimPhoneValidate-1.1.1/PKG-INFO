@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ZimPhoneValidate
+Version: 1.1.1
+Home-page: https://github.com/taqsblaze/ZimPhoneValidate
+Author: Tanaka Chinengundu
+Author-email: tanakah30@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+License-File: LICENSE
+Requires-Dist: pip
+
+
+	A package for easily validating Zimbabwean phon
+	
