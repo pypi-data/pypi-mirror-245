@@ -1,0 +1,642 @@
+body {
+  margin: 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(34, 34, 34);
+  font-family: arial, 'Microsoft Yahei', 'helvetica neue', sans-serif;
+}
+
+.container {
+  padding: 0px;
+  width: 100%;
+  height: 407px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(34, 34, 34);
+}
+
+.pagewrapper {
+  flex-grow: 1;
+  padding: 0px;
+  height: 100%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.etchline {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(47, 47, 47);
+}
+
+.pagebuttoncontainer {
+  height: 100%;
+  width: 128px;
+  padding-top: 1px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: rgba(255, 255, 255, 0.06);
+}
+
+.pagebutton {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  background-color: rgb(34, 34, 34);
+  border-style: none;
+  color: rgb(205, 205, 205);
+  font-size: 13px;
+}
+
+.pagebuttonchecked {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  background-color: rgb(55, 55, 55);
+  border-style: none;
+  color: rgb(230, 230, 230);
+  font-size: 13px;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: rgb(21, 136, 234);
+  border-right: solid;
+  border-right-width: 2px;
+  border-right-color: rgb(55, 55, 55);
+}
+
+.pagecontainer {
+  padding: 0px;
+  margin: 0px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.page {
+  padding: 12px;
+  padding-left: 16px;
+  padding-right: 14px;
+  flex-grow: 1;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.settingscontainer {
+  padding: 0px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pathcontainer {
+  width: 100%;
+  height: 103px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.prompttext {
+  user-select: none;
+  font-size: 13px;
+  color: #868686;
+  font-family: arial, Microsoft Yahei, helvetica neue, sans-serif;
+}
+
+.optionaltext {
+  user-select: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: rgb(195, 195, 195);
+  font-family: arial, Microsoft Yahei, helvetica neue, sans-serif;
+}
+
+.textinput {
+  outline: none;
+  height: 30px;
+  width: 410px;
+  padding-left: 6px;
+  padding-right: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #404040;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #dddfe8;
+  background-color: rgb(34, 34, 34);
+}
+
+.textinput:read-only {
+  color: #808080;
+}
+
+.textinput::selection {
+  background-color: rgb(7, 100, 211);
+  color: white;
+}
+
+.buttonrowcontainer {
+  height: 18px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.buttonrerowcontainer {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+.roundbutton {
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  background-color: rgb(60, 60, 60);
+  height: 28px;
+  border-style: none;
+  border-color: #cecece;
+  border-radius: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(210, 210, 210);
+  font-size: 13px;
+}
+
+.roundbutton:hover {
+  cursor: pointer;
+  background-color: rgb(79, 79, 79);
+  color: rgb(240, 240, 240);
+}
+
+.roundbutton:active {
+  cursor: pointer;
+  background-color: rgb(79, 79, 79);
+  color: rgb(240, 240, 240);
+}
+
+.roundbutton:disabled {
+  cursor: auto;
+  background-color: rgba(79, 79, 79, 0.4);
+  color: rgba(240, 240, 240, 0.4);
+}
+
+.savesettingsbutton {
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  background-color: #2569bf;
+  height: 32px;
+  width: 80px;
+  border-style: none;
+  border-radius: 2px;
+  color: rgb(210, 210, 210);
+  font-size: 13px;
+}
+
+.savesettingsbutton:hover {
+  cursor: pointer;
+  background-color: #3886ea;
+  color: rgb(245, 245, 245);
+}
+
+.choicebutton {
+  outline: none;
+  background: url(../imgs/btn_unchoice.png) no-repeat;
+  user-select: none;
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  background-size: 14px;
+  border-style: none;
+}
+
+.choicebuttonchecked {
+  outline: none;
+  background: url(../imgs/btn_choice.png) no-repeat;
+  user-select: none;
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  background-size: 14px;
+  border-style: none;
+}
+
+.cancelbutton {
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  background-color: rgb(60, 60, 60);
+  height: 32px;
+  width: 80px;
+  border-style: none;
+  border-radius: 2px;
+  color: rgb(210, 210, 210);
+  font-size: 13px;
+}
+
+.cancelbutton:hover {
+  cursor: pointer;
+  background-color: rgb(79, 79, 79);
+  color: rgb(240, 240, 240);
+}
+
+.combox {
+  width: 300px;
+  height: 33px;
+  background-color: rgb(64, 64, 64);
+  color: rgb(240, 240, 240);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.combox option {
+  width: 100%;
+  height: 56px !important;
+  text-align: center;
+  padding: 20px !important;
+  line-height: 56px;
+}
+
+.ah-radio {
+  color: rgba(195, 195, 195, 1);
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  outline: none;
+  font-size: 14px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.ah-radio.is-bordered {
+  padding: 12px 20px 0 10px;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+.ah-radio.is-bordered.is-checked {
+  border-color: #409eff;
+}
+
+.ah-radio.is-bordered.is-disabled {
+  cursor: not-allowed;
+  border-color: #ebeef5;
+}
+
+.ah-radio.is-bordered + .ah-radio.is-bordered {
+  margin-left: 10px;
+}
+
+.ah-radio--medium.is-bordered {
+  padding: 10px 20px 0 10px;
+  border-radius: 4px;
+  height: 36px;
+}
+
+.ah-radio--medium.is-bordered .ah-radio__label {
+  font-size: 14px;
+}
+
+.ah-radio--medium.is-bordered .ah-radio__inner {
+  height: 12px;
+  width: 12px;
+}
+
+.ah-radio--small.is-bordered {
+  padding: 8px 15px 0 10px;
+  border-radius: 3px;
+  height: 32px;
+}
+
+.ah-radio--small.is-bordered .ah-radio__label {
+  font-size: 12px;
+}
+
+.ah-radio--small.is-bordered .ah-radio__inner {
+  height: 12px;
+  width: 12px;
+}
+
+.ah-radio--mini.is-bordered {
+  padding: 6px 15px 0 10px;
+  border-radius: 3px;
+  height: 28px;
+}
+
+.ah-radio--mini.is-bordered .ah-radio__label {
+  font-size: 12px;
+}
+
+.ah-radio--mini.is-bordered .ah-radio__inner {
+  height: 12px;
+  width: 12px;
+}
+
+.ah-radio:last-child {
+  margin-right: 0;
+}
+
+.ah-radio__input {
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  vertical-align: middle;
+}
+
+.ah-radio__input.is-disabled .ah-radio__inner {
+  background-color: #f5f7fa;
+  border-color: #e4e7ed;
+  cursor: not-allowed;
+}
+
+.ah-radio__input.is-disabled .ah-radio__inner:after {
+  cursor: not-allowed;
+  background-color: #f5f7fa;
+}
+
+.ah-radio__input.is-disabled .ah-radio__inner + .ah-radio__label {
+  cursor: not-allowed;
+}
+
+.ah-radio__input.is-disabled.is-checked .ah-radio__inner {
+  background-color: #f5f7fa;
+  border-color: #e4e7ed;
+}
+
+.ah-radio__input.is-disabled.is-checked .ah-radio__inner:after {
+  background-color: #c0c4cc;
+}
+
+.ah-radio__input.is-disabled + span.ah-radio__label {
+  color: #c0c4cc;
+  cursor: not-allowed;
+}
+
+.ah-radio__input.is-checked .ah-radio__inner {
+  border: 2px solid rgba(151, 151, 151, 1);
+  background: rgba(39, 167, 70, 1);
+}
+
+.ah-radio__input.is-checked + .ah-radio__label {
+  color: rgba(195, 195, 195, 1);
+}
+
+.ah-radio__input.is-focus .ah-radio__inner {
+  color: rgba(34, 34, 34, 1);
+}
+
+.ah-radio__inner {
+  border: 1px solid rgba(243, 243, 243, 0.24);
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(243, 243, 243, 0.24);
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.ah-radio__inner:hover {
+}
+
+.ah-radio__inner:after {
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #fff;
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.15s ease-in;
+}
+
+.ah-radio__dbclick {
+  opacity: 0;
+  outline: none;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+.ah-radio__domain {
+  opacity: 0;
+  outline: none;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+.ah-radio__env {
+  opacity: 0;
+  outline: none;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+.ah-radio:focus:not(.is-focus):not(:active):not(.is-disabled) .ah-radio__inner {
+  box-shadow: 0 0 2px 2px #409eff;
+}
+
+.ah-radio__label {
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+.ah-radio-group {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.ah-radio-button,
+.ah-radio-button__inner {
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+
+.ah-radio-button__inner {
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  font-weight: 500;
+  border-left: 0;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.ah-radio-button__inner.is-round {
+  padding: 12px 20px;
+}
+
+.ah-radio-button__inner:hover {
+  color: #409eff;
+}
+
+.ah-radio-button__inner [class*='ah-icon-'] {
+  line-height: 0.9;
+}
+
+.ah-radio-button__inner [class*='ah-icon-'] + span {
+  margin-left: 5px;
+}
+
+.ah-radio-button:first-child .ah-radio-button__inner {
+  border-left: 1px solid #dcdfe6;
+  border-radius: 4px 0 0 4px;
+  box-shadow: none !important;
+}
+
+.ah-radio-button__orig-radio {
+  opacity: 0;
+  outline: none;
+  position: absolute;
+  z-index: -1;
+}
+
+.ah-radio-button__orig-radio:checked + .ah-radio-button__inner {
+  color: #fff;
+  background-color: #409eff;
+  border-color: #409eff;
+  box-shadow: -1px 0 0 0 #409eff;
+}
+
+.ah-radio-button__orig-radio:disabled + .ah-radio-button__inner {
+  color: #c0c4cc;
+  cursor: not-allowed;
+  background-image: none;
+  background-color: #fff;
+  border-color: #ebeef5;
+  box-shadow: none;
+}
+
+.ah-radio-button__orig-radio:disabled:checked + .ah-radio-button__inner {
+  background-color: #f2f6fc;
+}
+
+.ah-radio-button:last-child .ah-radio-button__inner {
+  border-radius: 0 4px 4px 0;
+}
+
+.ah-radio-button:first-child:last-child .ah-radio-button__inner {
+  border-radius: 4px;
+}
+
+.ah-radio-button--medium .ah-radio-button__inner {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.ah-radio-button--medium .ah-radio-button__inner.is-round {
+  padding: 10px 20px;
+}
+
+.ah-radio-button--small .ah-radio-button__inner {
+  padding: 9px 15px;
+  font-size: 12px;
+  border-radius: 0;
+}
+
+.ah-radio-button--small .ah-radio-button__inner.is-round {
+  padding: 9px 15px;
+}
+
+.ah-radio-button--mini .ah-radio-button__inner {
+  padding: 7px 15px;
+  font-size: 12px;
+  border-radius: 0;
+}
+
+.ah-radio-button--mini .ah-radio-button__inner.is-round {
+  padding: 7px 15px;
+}
+
+.ah-radio-button:focus:not(.is-focus):not(:active):not(.is-disabled) {
+  box-shadow: 0 0 2px 2px #409eff;
+}
+
+.envblock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.domainblock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.dbclickblock {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}

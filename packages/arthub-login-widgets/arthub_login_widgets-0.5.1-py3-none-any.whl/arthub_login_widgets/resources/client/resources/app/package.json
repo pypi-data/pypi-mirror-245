@@ -1,0 +1,32 @@
+{
+  "name": "arthub-tools",
+  "cdnRoot": "http://dldir1.qq.com/arthub",
+  "cdnDirectory": "arthub-tools",
+  "bundleId": "com.tencent.arthubtools",
+  "GUID": "arthubtools_desktopcenter",
+  "companyName": "Tencent, Inc.",
+  "version": "0.0.1",
+  "main": "./main.js",
+  "features": [
+    "登录"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://git.woa.com/arthub/arthub-tools.git"
+  },
+  "description": "Cross-platform desktop application development framework",
+  "author": {
+    "name": "joeyding",
+    "email": "joeyding@tencent.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "drivelist": "9.2.4"
+  },
+  "cmake-js": {
+    "runtime": "electron",
+    "runtimeVersion": "8.5.5",
+    "arch": "x64"
+  },
+  "productName": "arthub-tools"
+}

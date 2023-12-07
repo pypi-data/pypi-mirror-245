@@ -1,0 +1,202 @@
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  font-family: arial, Microsoft Yahei, helvetica neue, sans-serif; }
+
+#desktop-app-container {
+  height: 100%;
+  width: 100%;
+  margin: 0px; }
+
+#desktop-app-window {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+#desktop-window-container {
+  width: 100%;
+  margin: 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  background-color: #ffffff;
+  justify-content: flex-start; }
+
+#desktop-app-side-bar {
+  height: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #222222;
+  justify-content: flex-start;
+  border-right: 1px solid #161616;
+  padding-top: 10px; }
+  #desktop-app-side-bar .blue-button {
+    height: 22px;
+    border-style: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    pointer-events: all;
+    color: #e6e6e6;
+    background-color: #0e639c; }
+    #desktop-app-side-bar .blue-button:hover {
+      color: whitesmoke;
+      background-color: #1177bb; }
+  #desktop-app-side-bar .tab-button {
+    height: 48px;
+    width: 100%;
+    border-style: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    pointer-events: all;
+    color: gainsboro;
+    background-color: #222222;
+    font-size: 14px; }
+    #desktop-app-side-bar .tab-button:hover {
+      background-color: #2d2d2d; }
+    #desktop-app-side-bar .tab-button.pressed {
+      color: #f0f0f0;
+      background-color: #383838;
+      border-left: 2px solid #6590f3; }
+
+#desktop-app-title-bar {
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 1px;
+  padding-right: 2px;
+  -webkit-app-region: drag;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative; }
+  #desktop-app-title-bar .resize-handle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-app-region: no-drag; }
+    #desktop-app-title-bar .resize-handle.top {
+      width: 100%;
+      height: 2px; }
+    #desktop-app-title-bar .resize-handle.left {
+      width: 2px; }
+  #desktop-app-title-bar .titlebar-button {
+    outline: none;
+    user-select: none;
+    -webkit-app-region: no-drag;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    fill: #a0a0a0;
+    cursor: pointer;
+    pointer-events: all; }
+    #desktop-app-title-bar .titlebar-button:hover {
+      background-color: #F0F0F0; }
+    #desktop-app-title-bar .titlebar-button.disable {
+      fill: #adaeae80;
+      pointer-events: none; }
+    #desktop-app-title-bar .titlebar-button.pressed {
+      background-color: #F0F0F0; }
+    #desktop-app-title-bar .titlebar-button path {
+      cursor: pointer; }
+  #desktop-app-title-bar .window-controls {
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: center;
+    display: flex;
+    margin-left: auto; }
+  #desktop-app-title-bar .inner {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    overflow: hidden;
+    outline: none;
+    user-select: none;
+    -webkit-app-region: no-drag;
+    border-radius: 50%;
+    border: 0px;
+    background-color: #404040;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    pointer-events: all; }
+    #desktop-app-title-bar .inner:hover {
+      background-color: #535353; }
+  #desktop-app-title-bar .water {
+    position: absolute;
+    z-index: 1;
+    width: 200%;
+    height: 200%;
+    top: 100%;
+    left: -50%;
+    border-radius: 40%;
+    background: linear-gradient(180deg, #305aff 0%, #6653e5 100%);
+    transition: all 1s ease; }
+    #desktop-app-title-bar .water.floating {
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 10s;
+      animation-name: spin; }
+  #desktop-app-title-bar .number {
+    color: white;
+    font-size: 10px;
+    border-radius: 6px;
+    background-color: #f36f22;
+    padding: 0 2px 0 2px;
+    text-align: center;
+    min-width: 9px;
+    line-height: 13px;
+    height: 13px;
+    position: absolute; }
+  #desktop-app-title-bar .icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  #desktop-app-title-bar .titleText {
+    position: absolute;
+    font-size: 14px;
+    z-index: 1;
+    color: #afafaf;
+    top: calc(50% - 9px);
+    left: calc(50% - 75px);
+    height: 20px;
+    line-height: 20px;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    outline: none;
+    user-select: none;
+    pointer-events: all;
+    text-align: center; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+
+/*# sourceMappingURL=renderer.css.map*/

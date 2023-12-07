@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            font-family: arial, "Microsoft Yahei", "helvetica neue", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+        }
+        
+        .container {
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(34, 34, 34);
+        }
+        
+        .page {
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+        
+        #container_version_summary_title {
+            padding: 0px;
+            width: 100%;
+            /* height:calc(100% - 80px); */
+            align-items: flex-start;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            flex-grow: 0;
+        }
+        
+        #container_version_summary_content {
+            padding: 0px;
+            width: 100%;
+            /* height:calc(100% - 80px); */
+            align-items: flex-start;
+            justify-content: start;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            flex-grow: 1;
+        }
+        
+        .prompt {
+            color: rgb(115, 115, 115);
+            font-size: 12px;
+            text-overflow: ellipsis;
+            outline: none;
+            user-select: none;
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: center;
+            text-align: start;
+        }
+        
+        .prompt_bright {
+            color: rgb(160, 160, 160);
+            font-size: 13px;
+            text-overflow: ellipsis;
+            outline: none;
+            user-select: none;
+            overflow: hidden;
+            width: 290px;
+            white-space: nowrap;
+            text-align: center;
+        }
+        
+        .prompt_blue {
+            color: rgb(86, 164, 199);
+            font-size: 12px;
+            text-overflow: ellipsis;
+            outline: none;
+            user-select: none;
+            overflow: hidden;
+            width: 290px;
+            white-space: nowrap;
+            text-align: center;
+        }
+        
+        .prompt_summary {
+            color: rgb(160, 160, 160);
+            word-break: normal;
+            width: auto;
+            font-size: 12px;
+            white-space: pre-wrap;
+            outline: none;
+            user-select: none;
+            overflow: hidden;
+            width: 100%;
+            text-align: start;
+            line-height: 20px;
+            word-wrap: break-word;
+        }
+        
+        #prompt_install_alert {
+            color: rgb(195, 40, 10);
+            font-size: 11px;
+            text-overflow: ellipsis;
+            outline: none;
+            user-select: none;
+            overflow: hidden;
+            width: 290px;
+            white-space: nowrap;
+            text-align: start;
+            height: 18px;
+            line-height: 18px;
+            width: 100%;
+        }
+
+        #title_downloading_version {
+            color: rgb(205, 205, 205);
+            font-size: 15px;
+            text-overflow: ellipsis;
+            outline: none;
+            user-select: none;
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: center
+        }
+        
+        .progress_container {
+            width: 300px;
+            height: 4px;
+            background-color: rgb(50, 50, 50);
+            border-style: none;
+            outline: none;
+            user-select: none;
+        }
+        
+        .progress_inner {
+            width: 0%;
+            height: 100%;
+            background-color: rgb(88, 167, 103);
+        }
+        
+        .blue_button {
+            outline: none;
+            user-select: none;
+            cursor: pointer;
+            background-color: #2569bf;
+            height: 32px;
+            width: 160px;
+            border-style: none;
+            border-radius: 2px;
+            color: rgb(210, 210, 210);
+            font-size: 12px;
+        }
+        
+        .blue_button:hover {
+            background-color: #3886ea;
+            color: rgb(245, 245, 245);
+        }
+        
+        .postpone_button {
+            position: relative;
+            outline: none;
+            user-select: none;
+            cursor: pointer;
+            background-color: rgb(53, 53, 53);
+            height: 30px;
+            line-height: 30px;
+            width: 160px;
+            border-style: none;
+            border-radius: 2px;
+            color: rgb(190, 190, 190);
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .postpone_button:hover {
+            background-color: rgb(63, 63, 63);
+            color: rgb(205, 205, 205);
+        }
+        
+        .postpone_button_hover {
+            position: relative;
+            outline: none;
+            user-select: none;
+            cursor: pointer;
+            background-color: rgb(63, 63, 63);
+            height: 30px;
+            line-height: 30px;
+            width: 160px;
+            border-style: none;
+            border-radius: 2px;
+            color: rgb(205, 205, 205);
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        #postpone_button_arrow {
+            position: absolute;
+            top: calc(50% - 7px);
+            left: calc(100% - 21px);
+        }
+        
+        .postpone_time_button {
+            padding-left: 16px;
+            outline: none;
+            user-select: none;
+            cursor: pointer;
+            background-color: rgb(51, 51, 51);
+            height: 30px;
+            width: 100%;
+            border-style: none;
+            color: rgb(190, 190, 190);
+            font-size: 12px;
+            text-align: start;
+        }
+        
+        .postpone_time_button:hover {
+            background-color: rgb(34, 34, 34);
+            color: rgb(205, 205, 205);
+        }
+        
+        .postpone_time_button_hover {
+            background-color: rgb(34, 34, 34);
+            color: rgb(205, 205, 205);
+        }
+        
+        #postpone_time_container {
+            display: none;
+            box-shadow: 2px -2px 2px 1px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: -98px;
+            border-radius: 3px;
+            background-color: rgb(51, 51, 51);
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            width: 160px;
+            height: 96px;
+        }
+        
+        .button_row_container {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+        
+        .current_version_prompt {
+            height: 18px;
+        }
+
+        .new_version_prompt {
+            height: 18px;
+        }
+        .none {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page_container" class="container">
+        <div class="page">
+            <img class="current_version_prompt" src="./imgs/current_version_prompt.png"></img>
+            <div style="height: 7px;"></div>
+            <span id="prompt_page_1" class="prompt"></span>
+            <div style="height: 22px;"></div>
+        </div>
+        <div class="page">
+            <span id="title_downloading_version">Update to the latest version</span>
+            <div style="height: 7px;"></div>
+            <span id="prompt_page_2" class="prompt_blue"></span>
+            <div style="height: 28px;"></div>
+            <span class="prompt" style="color: rgb(155, 155, 155)">Updating...</span>
+            <div style="height: 12px;"></div>
+            <div class="progress_container">
+                <div class="progress_inner" id="downloading_progress_inner"></div>
+            </div>
+            <div style="height: 18px;"></div>
+        </div>
+        <div class="page">
+            <img class="new_version_prompt" src="./imgs/new_version_prompt.png"></img>
+            <div style="height: 7px;"></div>
+            <span id="prompt_page_3" class="prompt"></span>
+            <div style="height: 25px;"></div>
+            <button type="button" id="update_button" class="blue_button" onclick="upgradeToNewVersion()"></button>
+            <div style="height: 12px;"></div>
+        </div>
+        <div class="page" style="padding-left: 38px; padding-right: 38px;">
+            <div style="height: 14px;"></div>
+            <div id="container_version_summary_title">
+                <img class="current_version_prompt" src="./imgs/current_version_prompt.png"></img>
+                <div style="height: 7px;"></div>
+                <span id="prompt_page_4" class="prompt"></span>
+            </div>
+
+            <div style="height: 18px;"></div>
+            <div id="container_version_summary_content"></div>
+            <div style="height: 18px;"></div>
+            <div class="button_row_container">
+                <div class="postpone_button" id="postpone_button">
+                    Update Later
+                    <svg xmlns="http://www.w3.org/2000/svg" id="postpone_button_arrow" width="14" height="14" viewBox="0 0 32 32">
+                        <path id="postpone_button_arrow_svg" d="M17.817,22.689l6.277-8.426a2,2,0,0,0-1.6-3.195H9.935a2,2,0,0,0-1.6,3.2l6.277,8.426a2,2,0,0,0,3.208,0" fill="rgb(175,175,175)" fill-rule="evenodd"/>
+                    </svg>
+                    <div id="postpone_time_container">
+                        <button id="postpone_time_15mins" class="postpone_time_button" onclick="postponeUpgradePromptInSeconds(15*60)">15 minutes</button>
+                        <button id="postpone_time_1hour" class="postpone_time_button" onclick="postponeUpgradePromptInSeconds(60*60)">1 hour</button>
+                        <button id="postpone_time_24hours" class="postpone_time_button" onclick="postponeUpgradePromptInSeconds(24*60*60)">24 hours</button>
+                    </div>
+                </div>
+
+                <button type="button" class="blue_button" style="height: 30px;" onclick="upgradeToNewVersion()">Update</button>
+            </div>
+            <div style="height: 8px;"></div>
+            <span id="prompt_install_alert"></span>
+            <div style="height: 30px;"></div>
+
+        </div>
+        <div class="page">
+            <img src="./imgs/image_fail.png"></img>
+            <div style="height: 9px;"></div>
+            <span class="prompt_bright">Update failed</span>
+            <div style="height: 20px;"></div>
+            <button id="retry_button" type="button" class="blue_button" onclick="upgradeToNewVersion()">Retry</button>
+            <div style="height: 17px;"></div>
+        </div>
+    </div>
+    <script>
+        // UI
+        var _pages = [];
+        var setPages = function() {
+            pages = document.getElementById("page_container").children;
+            for (var i = 0; i < pages.length; i++) {
+                if (pages[i].className == "page") {
+                    _pages.push(pages[i]);
+                }
+            }
+        }();
+
+        const textLanguage = {
+            us: {
+                prompt_install_alert: 'Note: Updating will exit the application launched by client',
+            },
+            cn: {
+                prompt_install_alert: '请注意：更新将退出通过工具架启动的应用',
+            },
+        }
+        function getText(key) {
+            let lang = 'cn'
+            if (window.ArtHubDesktop && window.ArtHubDesktop.language) {
+              lang = window.ArtHubDesktop.language
+            }
+            return textLanguage[lang][key]
+        }
+        function translationElement(id) {
+            const element = document.getElementById(id)
+            if (element) {
+              element.innerText = getText(id)
+            }
+        }
+        translationElement('prompt_install_alert')
+
+        // page status variable
+        var _currentpageindex = -1;
+        // switch current page
+        function changeCurrentPage(pageIndex) {
+            if (pageIndex == _currentpageindex) {
+                return;
+            }
+            if (_currentpageindex == pageIndex) return;
+            for (var i = 0; i < _pages.length; i++) {
+                _pages[i].classList.add('none');
+            }
+            _pages[pageIndex].classList.remove('none');
+            _currentpageindex = pageIndex;
+        }
+        changeCurrentPage(0)
+
+        const _prompt_page_1 = document.getElementById('prompt_page_1')
+        const _prompt_page_2 = document.getElementById('prompt_page_2')
+        const _prompt_page_3 = document.getElementById('prompt_page_3')
+        const _prompt_page_4 = document.getElementById('prompt_page_4')
+        const _downloading_progress_inner = document.getElementById('downloading_progress_inner')
+        const _postpone_time_container = document.getElementById('postpone_time_container')
+        const _postpone_button = document.getElementById('postpone_button')
+
+        function hidepostponeTimeCombobox() {
+            document.getElementById('postpone_time_container').style.display = 'none'
+            _postpone_button.className = 'postpone_button'
+        }
+
+        function showpostponeTimeCombobox() {
+            document.getElementById('postpone_time_container').style.display = 'flex'
+            _postpone_button.className = 'postpone_button_hover'
+        }
+
+        document.getElementById("page_container").onclick = (ev) => {
+            if (ev.target.id === 'postpone_button' || ev.target.id === 'postpone_button_arrow' || ev.target.id === 'postpone_button_arrow_svg') {
+                showpostponeTimeCombobox();
+
+            } else {
+                hidepostponeTimeCombobox();
+            }
+        }
+
+        // model
+        let currentVersion = 'unknown'
+
+        function setToLatestVersionPage() {
+            _prompt_page_1.innerText = `current version: ${currentVersion}, already the latest`
+            changeCurrentPage(0)
+            window.ArtHubDesktop.resetVerisionWindowHeight(225);
+        }
+
+        function setToDownloadingPage(version, percentage) {
+            _prompt_page_2.innerText = `version ${version}`
+            _downloading_progress_inner.style = `width: ${percentage}%`
+            changeCurrentPage(1)
+            window.ArtHubDesktop.resetVerisionWindowHeight(225);
+        }
+
+        function setToPreparedPage(latestVersion) {
+            _prompt_page_3.innerText = `current version: ${currentVersion} the latest: ${latestVersion}`
+            changeCurrentPage(2)
+            window.ArtHubDesktop.resetVerisionWindowHeight(225);
+        }
+
+        function setToNewVersionSummaryPage(latestVersion, summaries) {
+            _prompt_page_4.innerText = `current version: ${currentVersion} the latest: ${latestVersion}`
+            if (summaries !== undefined) {
+                setVersionSummaries(summaries);
+            }
+            changeCurrentPage(3)
+            var listDom = document.getElementById('container_version_summary_content');
+            var summariesContentHeight = 0;
+            for (let index = 0; index < listDom.childElementCount; index++) {
+                summariesContentHeight += listDom.children[index].offsetHeight;
+            }
+            const contentHeight = summariesContentHeight + 14 + 40 + 18 + 18 + 88;
+            window.ArtHubDesktop.resetVerisionWindowHeight(contentHeight);
+        }
+
+        function setToErrorPage() {
+            changeCurrentPage(4)
+        }
+
+        function upgradeToNewVersion() {
+            window.ArtHubDesktop.upgradeToNewVersion()
+        }
+
+        function postponeUpgradePromptInSeconds(time) {
+            window.ArtHubDesktop.postponeUpgradePromptInSeconds(time)
+        }
+
+        const _notifyFunction = [
+            setToLatestVersionPage,
+            setToDownloadingPage,
+            setToPreparedPage,
+            setToNewVersionSummaryPage,
+            setToErrorPage
+        ]
+
+        function onNotify() {
+            let argArray = Array.from(arguments)
+            _notifyFunction[argArray[0]].apply(this, argArray.slice(1))
+        }
+
+        function addVersionSummary(text) {
+            var listDom = document.getElementById('container_version_summary_content');
+            var childDom = document.createElement('span')
+            childDom.className = 'prompt_summary'
+            if (text !== '') {
+                text = '•  ' + text;
+            }
+            childDom.innerText = text
+            childDom.title = text
+            listDom.appendChild(childDom)
+        }
+
+        function setVersionSummaries(summaries) {
+            var listDom = document.getElementById('container_version_summary_content');
+            while (listDom.hasChildNodes()) {
+                listDom.removeChild(listDom.firstChild);
+            }
+            summaries.forEach(element => {
+                addVersionSummary(element)
+            });
+        }
+
+        window.ArtHubDesktop.registerEventCallback('versionUpdateNotify', onNotify.bind(this))
+        window.ArtHubDesktop.getVersion((version) => {
+            currentVersion = version;
+            setToLatestVersionPage()
+        })
+    </script>
+</body>
+
+</html>
