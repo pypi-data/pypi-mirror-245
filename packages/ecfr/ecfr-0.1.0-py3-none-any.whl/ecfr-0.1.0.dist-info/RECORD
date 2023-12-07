@@ -1,0 +1,8 @@
+ecfr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecfr/ecfr.py,sha256=4LMeHLrGhKqUdF6Gbti0Aim_mUF34sIIEKlzKfp_cbY,15509
+ecfr/example/conf.json,sha256=x99NqzlXKmFtKVf9vlamSPen_KpGlcDA32F3P_tAjz0,482
+ecfr/example/starter_files/starter.py,sha256=d4BRhkAWE8wwUh5KIJBTsIajKnPmIXspyrJ7JBop_Pw,2517
+ecfr-0.1.0.dist-info/METADATA,sha256=DAYwWpLrfii138THQL4vFq-3OMZONdTVoAhL82e42f4,5093
+ecfr-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ecfr-0.1.0.dist-info/entry_points.txt,sha256=8g8m4hRXEDfdkjyFnulK9CnHzqP0o_ZeRghub5GSzDI,38
+ecfr-0.1.0.dist-info/RECORD,,
