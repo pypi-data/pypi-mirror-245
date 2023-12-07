@@ -1,0 +1,4 @@
+include enigmacipher/defaultRotor.txt
+include LICENSE
+include requirements.txt
+recursive-include enigmacipher *.py
