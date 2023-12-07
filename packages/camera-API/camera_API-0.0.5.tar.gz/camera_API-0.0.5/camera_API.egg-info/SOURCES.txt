@@ -1,0 +1,8 @@
+setup.py
+camera_API/__init__.py.py
+camera_API/camera_API.py
+camera_API.egg-info/PKG-INFO
+camera_API.egg-info/SOURCES.txt
+camera_API.egg-info/dependency_links.txt
+camera_API.egg-info/requires.txt
+camera_API.egg-info/top_level.txt
