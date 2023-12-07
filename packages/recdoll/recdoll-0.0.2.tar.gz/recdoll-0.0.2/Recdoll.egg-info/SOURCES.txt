@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Recdoll/__init__.py
+Recdoll.egg-info/PKG-INFO
+Recdoll.egg-info/SOURCES.txt
+Recdoll.egg-info/dependency_links.txt
+Recdoll.egg-info/top_level.txt
+recdoll/__init__.py
+recdoll.egg-info/PKG-INFO
+recdoll.egg-info/SOURCES.txt
+recdoll.egg-info/dependency_links.txt
+recdoll.egg-info/top_level.txt
