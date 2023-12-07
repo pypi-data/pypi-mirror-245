@@ -1,0 +1,7 @@
+data
+training
+build
+dist
+__pycache__/
+*.py[cod]
+.idea/*
