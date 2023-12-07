@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/bluetooth_2_usb/__init__.py
+src/bluetooth_2_usb/args.py
+src/bluetooth_2_usb/evdev.py
+src/bluetooth_2_usb/logging.py
+src/bluetooth_2_usb/relay.py
+src/bluetooth_2_usb.egg-info/PKG-INFO
+src/bluetooth_2_usb.egg-info/SOURCES.txt
+src/bluetooth_2_usb.egg-info/dependency_links.txt
+src/bluetooth_2_usb.egg-info/top_level.txt
