@@ -1,0 +1,10 @@
+setup.py
+sigiq/__init__.py
+sigiq/functions.py
+sigiq/login.py
+sigiq.egg-info/PKG-INFO
+sigiq.egg-info/SOURCES.txt
+sigiq.egg-info/dependency_links.txt
+sigiq.egg-info/entry_points.txt
+sigiq.egg-info/requires.txt
+sigiq.egg-info/top_level.txt
