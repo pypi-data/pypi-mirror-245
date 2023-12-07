@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sealgw
+Version: 0.0.6
+Summary: SealGW: SEmi-Analytical Localization for Gravitational Waves
+Home-page: https://github.com/marinerq/sealgw
+Author: Qian Hu
+Author-email: q.hu.2@research.gla.ac.uk
+License: MIT
+Requires-Python: >=3
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: cython
+Requires-Dist: matplotlib
+Requires-Dist: bilby
+Requires-Dist: ligo.skymap
+Requires-Dist: astropy
+Requires-Dist: spiir

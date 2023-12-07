@@ -1,0 +1,11 @@
+image: python:3.10.2-slim-bullseye
+
+stages:
+  - lint
+  - build
+  - deploy
+
+include:
+  - local: '/.gitlab/ci/pre-commit.yaml'
+  - local: '/.gitlab/ci/check-semver.yaml'
+  - local: '/.gitlab/ci/publish.yaml'

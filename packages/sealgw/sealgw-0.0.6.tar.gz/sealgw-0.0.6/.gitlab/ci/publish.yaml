@@ -1,0 +1,62 @@
+.publish:
+  stage: deploy
+  image: continuumio/miniconda3
+
+  # Change pip's cache directory to be inside the project directory since we can
+  # only cache local items.
+  variables:
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+  # Pip's cache doesn't store the python packages
+  # https://pip.pypa.io/en/stable/topics/caching/
+  #
+  # If you want to also cache the installed packages, you have to install
+  # them in a virtualenv and cache it as well.
+  cache:
+    paths:
+      - .cache/pip
+      - venv/
+  before_script:
+    - conda create -n publisher -c conda-forge python=3.10 gstlal-inspiral gcc chealpix
+    - conda init bash
+    - source ~/.bashrc
+    - conda activate publisher
+    - python --version  # For debugging
+    - pip install numpy Cython
+    - python setup.py bdist_wheel
+    # an alternative approach is to install and run:
+    - pip install dist/*
+    # run the command here
+    - pip install build twine auditwheel patchelf
+    - python -m build
+    - pushd dist
+    - auditwheel repair *.whl -w . --plat manylinux_2_28_x86_64
+    - rm *linux_x86_64.whl
+    - popd
+  artifacts:
+    paths:
+      - dist/*
+
+gitlab-publish:
+  extends:
+    - .publish
+  script:
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/*
+  rules:
+    - if:  ($CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH || $CI_COMMIT_BRANCH == "dev" || ($CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "dev"))
+
+test-pypi-publish:
+  extends:
+    - .publish
+  script:
+    - TWINE_PASSWORD=${TEST_PYPI_TOKEN} TWINE_USERNAME=__token__ python -m twine upload --repository testpypi dist/*
+  rules:
+    - if:  $CI_COMMIT_BRANCH == "dev"
+
+pypi-publish:
+  extends:
+    - .publish
+  script:
+    - TWINE_PASSWORD=${PYPI_TOKEN} TWINE_USERNAME=__token__ python -m twine upload dist/*
+  rules:
+    - if:  $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

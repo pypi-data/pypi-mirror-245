@@ -1,0 +1,8 @@
+numpy
+scipy
+cython
+matplotlib
+bilby
+ligo.skymap
+astropy
+spiir
