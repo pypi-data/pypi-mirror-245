@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: weavc-fir
+Version: 0.1.0a4
+Summary: 
+License: MIT
+Author: weavc
+Author-email: chrisweaver1@pm.me
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: argcomplete (>=3.1.6,<4.0.0)
+Requires-Dist: marshmallow (>=3.20.1,<3.21.0)
+Requires-Dist: python-slugify (>=8.0.1,<9.0.0)
+Requires-Dist: shortuuid (>=1.0.11,<2.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Requires-Dist: termcolor (>=2.3.0,<3.0.0)
+Requires-Dist: tomli-w (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+## Fir - Command line task management
+
+<small>This project is in development & subject to breaking changes.</small>
+
+Configurable command line task management tool inspired by emacs org mode & web based task management tools.
+
+Install / Update:
+```
+python -m pip install [--upgrade] weavc-fir
+```
+
+### Features
+- Support for multiple profiles allowing the user to easily switch between task lists. 
+- Toml configuration files, easy for humans and source control. See: [example](./fir.v1.todo.toml)
+- Configurable outputs (& more to come)
+- Support for tags, due dates, assigned people, notes and more
+- Configurable statuses, used to group tasks, define list ordering and colours
+
+View tasks with `fir ls` to see all ongoing tasks:
+
+![ls](https://raw.githubusercontent.com/weavc/fir/main/.github/screenshots/1143d8c55c079e3e19ecdaf5221eeb68b57c5e73.png)
+
+### Creating/Modifying tasks:
+
+![Adding a new task](https://raw.githubusercontent.com/weavc/fir/main/.github/screenshots/bd79c6bc12c8a755e056e1a1fe85de7dc5e88ca5.png)
+
+### Upcoming features ideas
+- Backlog for tasks that don't show in the regular task lists, but exist in the background ready to be pulled forward.
+- Forth status category for tasks that are on hold
+- Tracking dates for when the work started & finished (based on when they move status groups)
+- Better documentation, help commands etc
+
+### Development
+
+```
+git clone git@github.com:weavc/fir.git
+cd fir
+pip3 install poetry
+make shell
+make install
+```
+
