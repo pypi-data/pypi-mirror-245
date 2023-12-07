@@ -1,0 +1,3 @@
+[console_scripts]
+Ani_Encrypt = enc_dec.encoder_decoder:ED
+
