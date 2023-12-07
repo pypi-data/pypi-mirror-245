@@ -1,0 +1,7 @@
+setup.py
+library_creator_for_pypi/__init__.py
+library_creator_for_pypi/main.py
+library_creator_for_pypi.egg-info/PKG-INFO
+library_creator_for_pypi.egg-info/SOURCES.txt
+library_creator_for_pypi.egg-info/dependency_links.txt
+library_creator_for_pypi.egg-info/top_level.txt
