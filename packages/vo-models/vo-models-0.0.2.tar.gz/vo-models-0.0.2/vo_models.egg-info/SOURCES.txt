@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+vo_models/__init__.py
+vo_models.egg-info/PKG-INFO
+vo_models.egg-info/SOURCES.txt
+vo_models.egg-info/dependency_links.txt
+vo_models.egg-info/requires.txt
+vo_models.egg-info/top_level.txt
+vo_models/xml/__init__.py
+vo_models/xml/generics.py
+vo_models/xml/uws/__init__.py
+vo_models/xml/uws/models.py
+vo_models/xml/uws/types.py
+vo_models/xml/xlink/__init__.py
+vo_models/xml/xlink/xlink.py
