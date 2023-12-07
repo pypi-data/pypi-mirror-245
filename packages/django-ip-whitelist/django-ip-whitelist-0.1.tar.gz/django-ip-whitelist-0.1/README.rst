@@ -1,0 +1,130 @@
+Welcome to django-ip-whitelist's documentation!
+=================================================
+
+:Version: 0.1.0
+:Source: https://github.com/maykinmedia/django-ip-whitelist
+:Keywords: ``Django IP Whitelist, IP whitelist, pip package``
+:PythonVersion: 3.9
+
+|build-status| |code-quality| |black| |coverage| |docs|
+
+|python-versions| |django-versions| |pypi-version|
+
+This package provides a Django middleware that allows you to whitelist IP addresses that are allowed to access your site.
+
+By default the user's IP needs to conform to the IP whitelist in order to access the Django admin. You can either specify individual IP addresses or IP ranges, and the whitelist is manageable via the Django admin.
+
+.. contents::
+
+.. section-numbering::
+
+
+
+Installation
+============
+
+Requirements
+------------
+
+* Python 3.8 or above
+* setuptools 40.8.0 or above
+* Django 3.2 or newer
+
+
+Install
+-------
+
+.. code-block:: bash
+
+    pip install django-ip-whitelist
+
+Add ``ip_whitelist`` to your ``INSTALLED_APPS``:
+
+.. code-block:: python
+
+    INSTALLED_APPS = [
+        ...
+        'ip_whitelist',
+        ...
+    ]
+
+
+Usage
+=====
+Add the middleware to your ``MIDDLEWARE`` setting:
+
+.. code-block:: python
+
+    MIDDLEWARE = [
+        ...
+        'ip_whitelist.middleware.IPWhitelistMiddleware',
+        ...
+    ]
+
+Add the IP addresses you want to whitelist to your ``settings.py``:
+
+.. code-block:: python
+
+    WHITELIST_IPS = [
+        ...
+        '127.0.0.1',
+        ...
+    ]
+
+Add the WHITELIST_IP_RANGES to your ``settings.py``:
+
+.. code-block:: python
+
+    WHITELIST_IP_RANGES = [
+        ...
+        '
+        ...
+    ]
+
+Add the NO_AUTH_OUTSIDE_IP_ALLOWED_PATHS to your ``settings.py``:
+
+.. code-block:: python
+
+    NO_AUTH_OUTSIDE_IP_ALLOWED_PATHS = [
+        ...
+        '/admin',
+        ...
+    ]
+
+
+Migrations
+----------
+
+Run the migrations:
+
+.. code-block:: bash
+
+    python manage.py migrate
+
+
+
+.. |build-status| image:: https://github.com/maykinmedia/django-ip-whitelist/workflows/Run%20CI/badge.svg
+    :alt: Build status
+    :target: https://github.com/maykinmedia/django-ip-whitelist/actions?query=workflow%3A%22Run+CI%22
+
+.. |code-quality| image:: https://github.com/maykinmedia/django-ip-whitelist/workflows/Code%20quality%20checks/badge.svg
+     :alt: Code quality checks
+     :target: https://github.com/maykinmedia/django-ip-whitelist/actions?query=workflow%3A%22Code+quality+checks%22
+
+.. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+
+.. |coverage| image:: https://codecov.io/gh/maykinmedia/django-ip-whitelist/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/maykinmedia/django-ip-whitelist
+    :alt: Coverage status
+
+.. |docs| image:: https://readthedocs.org/projects/django-ip-whitelist/badge/?version=latest
+    :target: https://django-ip-whitelist.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+.. |python-versions| image:: https://img.shields.io/pypi/pyversions/django-ip-whitelist.svg
+
+.. |django-versions| image:: https://img.shields.io/pypi/djversions/django-ip-whitelist.svg
+
+.. |pypi-version| image:: https://img.shields.io/pypi/v/django-ip-whitelist.svg
+    :target: https://pypi.org/project/django-ip-whitelist/
