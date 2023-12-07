@@ -1,0 +1,2 @@
+[console_scripts]
+mara = mara_cli.cli:main
