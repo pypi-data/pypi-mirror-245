@@ -1,0 +1,72 @@
+
+## <b>Extrica DBT Adapter </b>
+The ```dbt-extrica``` adapter allows users to interact with Trino, a distributed SQL query engine, using dbt. 
+This adapter is designed to facilitate the use of dbt for transforming and modeling data in a Trino environment.
+#### Features
+- **Trino Compatibility:** Compatible with Trino, allowing users to leverage dbt in Trino-based data environments.
+- **JWT Authentication:** Utilizes JWT for secure authentication with Trino. The adapter handles the generation of JWT tokens behind the scenes via username and password configured in profiles.yml.
+
+## Description 
+
+### Connecting to Multiple Data Sources
+> <b> Challenges in Limited Connectivity </b> <br>
+> Default configurations in dbt make it challenging to connect to databases beyond the primary one associated with the project.
+> Many organizations deal with diverse data sources, such as Oracle, Snowflake, and others.
+> Integrating and transforming data from these varied sources efficiently becomes essential for comprehensive analytics.
+
+### Solution: Leveraging Trino and Catalogs in Extrica
+Trino is an advanced query engine that excels in federated queries across multiple data sources. 
+Its ability to connect to various databases and process SQL queries at scale makes it an ideal solution for organizations dealing with diverse data sources.
+
+<b>Extrica</b>, built on Trino introduces the concept of catalogs to address the challenge of connecting to multiple data sources seamlessly within dbt.
+Each catalog corresponds to a specific data source, enabling a unified approach to managing and transforming data across various systems.
+
+## Connecting to Extrica
+
+#### Example profiles.yml 
+
+<File name='~/.dbt/profiles.yml'>
+
+```yaml
+<profile-name>:
+  outputs:
+    dev:
+      type: extrica
+      method: jwt 
+      username: [username for jwt auth]
+      password: [password for jwt auth]  
+      host: [trino hostname]
+      port: [port number]
+      schema: [dev_schema]
+      catalog: [catalog_name]
+      threads: [1 or more]
+
+    prod:
+      type: extrica
+      method: jwt 
+      username: [username for jwt auth]
+      password: [password for jwt auth]  
+      host: [trino hostname]
+      port: [port number]
+      schema: [dev_schema]
+      catalog: [catalog_name]
+      threads: [1 or more]
+  target: dev
+
+```
+</File>
+
+#### Description of Profile Fields
+
+| Parameter  | Type     | Description                              |
+|------------|----------|------------------------------------------|
+| type       | string  | Specifies the type of dbt adapter (Extrica). |
+| method     | jwt      | Authentication method for JWT authentication. |
+| username   | string   | Username for JWT authentication. The obtained JWT token is used to initialize a trino.auth.JWTAuthentication object.      |
+| password   | string   | Password for JWT authentication. The obtained JWT token is used to initialize a trino.auth.JWTAuthentication object.      |
+| host       | string   | The host parameter specifies the hostname or IP address of the Trino server.           |
+| port       | integer  | The port parameter specifies the port number on which the Trino server is listening.        |
+| schema     | string   | Schema or database name for the connection. |
+| catalog    | string   | Name of the catalog representing the data source. |
+| threads    | integer  | Number of threads for parallel execution of queries. (1 or more |
+
