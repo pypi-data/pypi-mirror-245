@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: wolframalph-idk
+Version: 1.0
+Summary: Hook into process of object deallocation.
+Home-page: https://github.com/WolframAlph/idk
+Author: Yan Yanchii
+
