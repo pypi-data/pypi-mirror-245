@@ -1,0 +1,10 @@
+flatfile_mapping-0.1.0.dist-info/METADATA,sha256=0c55zswA2qMTQfcfbOesk1hay1mNUFYWslBpxv5_-6U,14339
+flatfile_mapping-0.1.0.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+flatfile_mapping-0.1.0.dist-info/licenses/LICENSE,sha256=UzMhZY7kdR6XtiD_xJnkbUN5ji8H7hIjEOwI8gCcT9s,1070
+flatfile_mapping/__init__.py,sha256=nigya9ysBbSC24EZ93gOHzRQe-TYNi-6xlDwF5WAwfI,233
+flatfile_mapping/automapping.py,sha256=lItciDFYa3sE-bVBSGH_XO8yFRTWT2Y3H_ebbybmkfI,3930
+flatfile_mapping/filter.py,sha256=uz3sPqXrzAYodzbGXMzLTf5wCs0UZuHFk-_U45bKBic,13391
+flatfile_mapping/mapping_program.py,sha256=EoqcVapkwHZAbUSyaRrLWnzYVHtkgKI8vBeh0nW9gsY,21176
+flatfile_mapping/mapping_rule.py,sha256=HIURI2EnecBZxgHcwX3jt-blj-8TtKU76sLmERCHcVg,4120
+flatfile_mapping/nesting.py,sha256=z3BUh6xX0Zn-dEmLtItnLAZLFCtldOCB_12HI6eiUf0,15667
+flatfile_mapping-0.1.0.dist-info/RECORD,,
