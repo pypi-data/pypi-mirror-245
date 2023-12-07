@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: placo
+Version: 0.4.2
+Summary: PlaCo: Rhoban Planning and Control
+Requires-Python: >= 3.8
+License-Expression: MIT
+Author-email: Rhoban team <team@rhoban.com>
+Project-URL: Changelog, https://github.com/rhoban/placo/blob/main/CHANGELOG.md
+Home-page: https://github.com/rhoban/placo
+Project-URL: Repository, https://github.com/rhoban/placo.git
+Requires-Dist: cmeel
+Requires-Dist: eiquadprog >= 1.2.6, < 2
+Requires-Dist: pin >= 2.6.18, < 3
+Requires-Dist: rhoban-cmeel-jsoncpp
+Requires-Dist: meshcat
+Requires-Dist: numpy
+Requires-Dist: ischedule
+Provides-Extra: build
+Requires-Dist: pin[build] >= 2.6.18, < 3 ; extra == "build"
+Requires-Dist: cmeel-urdfdom[build] ; extra == "build"
+Description-Content-Type: text/markdown
+
+# Rhoban Planning and Control (placo)
+
+## Setting up dependencies
+
+First, install `placo` in a workspace using `wks`:
+
+    pip install wks
+    wks install rhoban/placo
+
+To build, you will need:
+
+* Pinocchio [https://stack-of-tasks.github.io/pinocchio/download.html]
+  * `robotpkg-py38-pinocchio` (adapt the Python version)
+  * `robotpkg-pinocchio`
+  * `robotpkg-eiquadprog`
+  * `robotpkg-hpp-fcl`
+* The following apt repositories:
+  * `python3-dev libpython3-dev libboost-python1.71.0 doxygen libjsoncpp-dev`
+
+## Running the build
+
+Simply run:
+
+`wks build`
+
+*Note: at the end of the build, the libraries will end up in `build/lib`. the `stubs.py` script will be run to generate
+the `placo.pyi` file that contains more useful informations for autocompletions*
+
+## Using Python bindings
+
+You will need to add `build/lib` to your `PYTHONPATH` to be able to use `placo` library.
