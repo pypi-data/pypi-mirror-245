@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pytessng/main.py
+pytessng.egg-info/PKG-INFO
+pytessng.egg-info/SOURCES.txt
+pytessng.egg-info/dependency_links.txt
+pytessng.egg-info/requires.txt
+pytessng.egg-info/top_level.txt
