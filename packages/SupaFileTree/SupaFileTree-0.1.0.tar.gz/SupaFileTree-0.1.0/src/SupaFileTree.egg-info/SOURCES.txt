@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/SupaFileTree/__init__.py
+src/SupaFileTree/ftree.py
+src/SupaFileTree.egg-info/PKG-INFO
+src/SupaFileTree.egg-info/SOURCES.txt
+src/SupaFileTree.egg-info/dependency_links.txt
+src/SupaFileTree.egg-info/top_level.txt
