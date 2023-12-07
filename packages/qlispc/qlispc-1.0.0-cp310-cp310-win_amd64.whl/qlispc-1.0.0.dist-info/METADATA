@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: qlispc
+Version: 1.0.0
+Summary: Simulator for qlisp
+Author-email: feihoo87 <feihoo87@gmail.com>
+Maintainer-email: feihoo87 <feihoo87@gmail.com>
+Project-URL: Homepage, https://github.com/feihoo87/qlispc
+Project-URL: Bug Reports, https://github.com/feihoo87/qlispc/issues
+Project-URL: Source, https://github.com/feihoo87/qlispc/
+Keywords: qlisp,quantum,quantum computing,quantum programming,quantum circuit
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.13.3
+Requires-Dist: scipy >=1.0.0
+
+# qlispc
+Simulator for qlisp
