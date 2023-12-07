@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+debug_snapshot.egg-info/PKG-INFO
+debug_snapshot.egg-info/SOURCES.txt
+debug_snapshot.egg-info/dependency_links.txt
+debug_snapshot.egg-info/requires.txt
+debug_snapshot.egg-info/top_level.txt
