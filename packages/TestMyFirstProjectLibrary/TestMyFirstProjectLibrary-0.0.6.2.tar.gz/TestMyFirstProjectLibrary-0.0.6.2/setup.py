@@ -1,0 +1,50 @@
+from setuptools import setup
+def readme():
+    return ('''# TestMyFirstProjectLibrary #
+
+This is a super puper project that will help you do the exam
+## How to use ##
+
+To use it you should write or:
+1. ```Find.YourCommand```
+or
+2. ```Documentation.Information```
+## Commands ##
+
+
+1. ```Documentation.Creator()``` - print Creator
+2. ```Documentation.Commands()``` - print all functions
+3. ```Find.Longest_char(file, char)``` - finds the longest sequence of this character in the file
+4. ```Find.TheMostUsed_char()``` - 
+5. ```Find.Longest_char()``` - 
+6. ```lineFind.Longest_char()```
+
+Its all for now
+# TestMyFirstProjectLibrary #
+
+This is a super puper project that will help you do the exam
+## How to use ##
+
+To use it you should write or:
+1. ```Find.YourCommand```
+or
+2. ```Documentation.Information```
+## Commands ##
+
+
+1. ```Documentation.Creator()``` - print Creator
+2. ```Documentation.Commands()``` - print all functions
+3. ```Find.Longest_char(file, char)``` - finds the longest sequence of this character in the file
+4. ```Find.TheMostUsed_char()``` - 
+5. ```Find.Longest_char()``` - 
+6. ```lineFind.Longest_char()```
+
+Its all for now''')
+
+setup(name='TestMyFirstProjectLibrary',
+      long_description=readme(),
+      long_description_content_type='text/markdown',
+      version='0.0.6.2',
+      description='None',
+      packages=['TestMyFirstProjectLibrary'],
+      author_email='akim.petbu@gmail.com')
