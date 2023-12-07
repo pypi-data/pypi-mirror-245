@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: clld-glottologfamily-plugin
+Version: 4.1.0
+Summary: A clld plugin adding language family information from Glottolog
+Home-page: https://github.com/clld/clld-glottologfamily-plugin
+Author: Robert Forkel
+Author-email: dlce.rdm@eva.mpg.de
+License: Apache 2.0
+Keywords: web pyramid clld
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: clld (>=7.0)
+Requires-Dist: sqlalchemy
+Requires-Dist: zope.interface
+Requires-Dist: pybtex
+Requires-Dist: pyglottolog (>=2.0)
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (>=5) ; extra == 'test'
+Requires-Dist: pytest-mock ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-clld ; extra == 'test'
+Requires-Dist: coverage (>=4.2) ; extra == 'test'
+Requires-Dist: webtest ; extra == 'test'
+
+# clld-glottologfamily-plugin
+
+[clld](https://github.com/clld/clld) plugin, adding language families from 
+[Glottolog](http://glottolog.org) to a *clld* app to allow for better navigation and 
+visualization.
+
+[![Build Status](https://github.com/clld/clld-glottologfamily-plugin/workflows/tests/badge.svg)](https://github.com/clld/clld-glottologfamily-plugin/actions?query=workflow%3Atests)
+[![PyPI](https://img.shields.io/pypi/v/clld-glottologfamily-plugin.svg)](https://pypi.python.org/pypi/clld-glottologfamily-plugin)
+
+
+## Usage
+
+To equip a `Language` model with a family relation, the model should inherit from
+`clld_glottologfamily_plugin.models.HasFamilyMixin`. This relation can be populated upon
+database initialization calling `clld_glottologfamily_plugin.util.load_families`.
+
+The families assigned in this way have an associated icon which can be used as map marker.
+To make this easier, a custom `IMapMarker` may inherit from 
+`clld_glottologfamily_plugin.util.LanguageByFamilyMapMarker`.
+
+Associated `DataTable` columns suitable for tables listing `Language` objects can be
+used as follows:
+
+```python
+from clld.web.datatables.language import Languages
+from clld_glottologfamily_plugin.datatables import FamilyCol, MacroareaCol
+from clld_glottologfamily_plugin.models import Family
+
+from models import CustomLanguage
+
+
+class LanguagesWithFamily(Languages):
+    def base_query(self, query):
+        return query.outerjoin(Family)  # note: isolates will have no related family!
+
+    def col_defs(self):
+        res = Languages.col_defs(self)
+        res.append(MacroareaCol(self, 'macroarea', language_cls=CustomLanguage))
+        res.append(FamilyCol(self, 'family', language_cls=CustomLanguage))
+        return res
+```
+
+
+### Assigning families
+
+1. Family information is retrieved from Glottolog, based on the `id` attribute of a 
+language. This will only work if `id` is either a glottocode or an ISO 639-3 code.
+
+2. If no related family is found, `None` will be assigned - rather than a dummy *isolates*
+family or individual one-member families derived from the language.
