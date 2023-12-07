@@ -1,0 +1,9 @@
+sparkxarray/__init__.py,sha256=irG-E9Q106wWREQl3WLKq325w8flhjmVOjrG1-sYUo0,222
+sparkxarray/reader.py,sha256=mjG0nq2ZBr88QQoXxmXs-sXrTM6-xo0tXBbj1jXmleY,6404
+sparkxarray/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparkxarray/tests/test_reader.py,sha256=5YjGgrYl7Y3uRXyVDsVCPs6PykcFB1IWCoFCPtuDRCg,1016
+spark_xarray-0.1.dev0.dist-info/LICENSE,sha256=4DukHX-rIHAHaf5BGLq1DYAMt0-ZA1OgXS9f_xwig2M,11558
+spark_xarray-0.1.dev0.dist-info/METADATA,sha256=kGD7sY3uPok_-5TVjhdnFMEPCCZRu5lOOYLoBImw2ow,1070
+spark_xarray-0.1.dev0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+spark_xarray-0.1.dev0.dist-info/top_level.txt,sha256=KEQRpmxBpFEBJp7JQCzJ7X4L2lSbHT4fw91o8Tb62og,12
+spark_xarray-0.1.dev0.dist-info/RECORD,,
