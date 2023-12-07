@@ -1,0 +1,18 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u012erenginys jau sukonfig\u016bruotas"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti",
+            "invalid_thermostat": "Termostato serijinis numeris negalioja."
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "username": "Prisijungimos vardas"
+                }
+            }
+        }
+    }
+}

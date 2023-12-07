@@ -1,0 +1,26 @@
+{
+    "config": {
+        "abort": {
+            "single_instance_allowed": "Jau sukonfig\u016bruota. Galima tik viena konfig\u016bracija."
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti",
+            "invalid_account": "Paskyros ID turi b\u016bti 9 skaitmen\u0173 numeris"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Slapta\u017eodis",
+                    "username": "Prisijungimos vardas"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "energy_usage": {
+                "name": "Energijos naudojimas"
+            }
+        }
+    }
+}

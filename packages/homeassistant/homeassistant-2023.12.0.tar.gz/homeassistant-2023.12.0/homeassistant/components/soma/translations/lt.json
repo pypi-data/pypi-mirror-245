@@ -1,0 +1,11 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "J\u016bs\u0173 SOMA Connect pagrindinio kompiuterio pavadinimas arba IP adresas."
+                }
+            }
+        }
+    }
+}

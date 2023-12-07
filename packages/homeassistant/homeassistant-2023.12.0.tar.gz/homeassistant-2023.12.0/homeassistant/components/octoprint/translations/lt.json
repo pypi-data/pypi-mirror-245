@@ -1,0 +1,34 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u012erenginys jau sukonfig\u016bruotas",
+            "auth_failed": "Nepavyko gauti programos API rakto",
+            "cannot_connect": "Nepavyko prisijungti"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti"
+        },
+        "flow_title": "\u201eOctoPrint\u201c spausdintuvas: {host}",
+        "progress": {
+            "get_api_key": "Atidarykite \u201eOctoPrint\u201c vartotojo s\u0105saj\u0105 ir \u201eHome Assistant\u201c prieigos u\u017eklausoje spustel\u0117kite \u201eLeisti\u201c."
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "username": "Prisijungimos vardas"
+                }
+            },
+            "user": {
+                "data": {
+                    "path": "Taikymo kelias",
+                    "ssl": "Naudoja SSL sertifikat\u0105",
+                    "username": "Prisijungimos vardas",
+                    "verify_ssl": "Patikrinkite SSL sertifikat\u0105"
+                },
+                "data_description": {
+                    "host": "J\u016bs\u0173 spausdintuvo pagrindinio kompiuterio pavadinimas arba IP adresas."
+                }
+            }
+        }
+    }
+}

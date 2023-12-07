@@ -1,0 +1,12 @@
+{
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "tracing": "\u012egalinti na\u0161umo steb\u0117jim\u0105",
+                    "tracing_sample_rate": "Sekimo imties da\u017enis; nuo 0,0 iki 1,0 (1,0 = 100 %)"
+                }
+            }
+        }
+    }
+}

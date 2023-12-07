@@ -1,0 +1,21 @@
+{
+    "config": {
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Slapta\u017eodis"
+                },
+                "description": "Neteisingas {username} slapta\u017eodis."
+            },
+            "user": {
+                "data": {
+                    "password": "Slapta\u017eodis",
+                    "username": "Prisijungimos vardas"
+                },
+                "data_description": {
+                    "host": "Sistemos, kurioje veikia j\u016bs\u0173 \u201eGlances\u201c sistemos monitorius, pagrindinio kompiuterio pavadinimas arba IP adresas."
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u012erenginys jau sukonfig\u016bruotas"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti"
+        },
+        "step": {
+            "user": {
+                "description": "Nustatyti Mullvad VPN integracij\u0105?"
+            }
+        }
+    }
+}

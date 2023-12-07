@@ -1,0 +1,24 @@
+{
+    "config": {
+        "abort": {
+            "single_instance_allowed": "Jau sukonfig\u016bruota. Galima tik viena konfig\u016bracija."
+        },
+        "error": {
+            "invalid_zone": "Netinkama zona"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_token": "API prieigos raktas",
+                    "description": "I\u0161 naujo autentifikuokite naudodami \u201eCloudflare\u201c paskyr\u0105."
+                }
+            }
+        }
+    },
+    "services": {
+        "update_records": {
+            "description": "Rankiniu b\u016bdu suaktyvinkite \u201eCloudflare\u201c \u012fra\u0161\u0173 naujinim\u0105.",
+            "name": "Atnaujinti \u012fra\u0161us"
+        }
+    }
+}

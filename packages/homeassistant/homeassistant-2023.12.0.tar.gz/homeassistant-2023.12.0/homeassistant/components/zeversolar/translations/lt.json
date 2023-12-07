@@ -1,0 +1,26 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u012erenginys jau sukonfig\u016bruotas"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti",
+            "invalid_host": "Neteisingas pagrindinio kompiuterio pavadinimas arba IP adresas",
+            "timeout_connect": "Baig\u0117si ry\u0161io u\u017emezgimo laikas"
+        },
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "J\u016bs\u0173 Zeversolar keitiklio pagrindinio kompiuterio pavadinimas arba IP adresas."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "energy_today": {
+                "name": "Energija \u0161iandien"
+            }
+        }
+    }
+}

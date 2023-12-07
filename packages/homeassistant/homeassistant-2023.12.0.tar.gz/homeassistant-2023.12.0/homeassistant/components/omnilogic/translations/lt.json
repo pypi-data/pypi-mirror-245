@@ -1,0 +1,39 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Paskyra jau sukonfig\u016bruota",
+            "single_instance_allowed": "Jau sukonfig\u016bruota. Galima tik viena konfig\u016bracija."
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "username": "Prisijungimos vardas"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "ph_offset": "pH poslinkis (teigiamas arba neigiamas)"
+                }
+            }
+        }
+    },
+    "services": {
+        "set_pump_speed": {
+            "description": "Nustatomas kintamo grei\u010dio siurblio veikimo greitis.",
+            "fields": {
+                "speed": {
+                    "description": "VSP greitis tarp min. ir maks. grei\u010dio.",
+                    "name": "Greitis"
+                }
+            },
+            "name": "Nustatykite siurblio greit\u012f"
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Slu\u017eba je ji\u017e nastavena",
+            "no_port": "\u017d\u00e1dn\u00fd port pro koncov\u00fd bod",
+            "no_services": "Na koncov\u00e9m bodu nebyly nalezeny \u017e\u00e1dn\u00e9 slu\u017eby"
+        },
+        "error": {
+            "cannot_connect": "Nepoda\u0159ilo se p\u0159ipojit"
+        },
+        "step": {
+            "hassio_confirm": {
+                "description": "Chcete nastavit Home Assistanta pro p\u0159ipojen\u00ed ke slu\u017eb\u011b Wyoming poskytovan\u00e9 dopl\u0148kem: {addon}?"
+            },
+            "user": {
+                "data": {
+                    "host": "Hostitel",
+                    "port": "Port"
+                }
+            },
+            "zeroconf_confirm": {
+                "description": "Chcete nastavit Home Assistanta pro p\u0159ipojen\u00ed ke slu\u017eb\u011b Wyoming {name}?",
+                "title": "Zji\u0161t\u011bna slu\u017eba Wyoming"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "assist_in_progress": {
+                "name": "Asistence prob\u00edh\u00e1"
+            }
+        },
+        "select": {
+            "noise_suppression": {
+                "name": "Potla\u010den\u00ed \u0161umu"
+            },
+            "pipeline": {
+                "name": "Sekvence asistenta",
+                "state": {
+                    "preferred": "Preferov\u00e1no"
+                }
+            }
+        },
+        "switch": {
+            "satellite_enabled": {
+                "name": "Satelit povolen"
+            }
+        }
+    }
+}
