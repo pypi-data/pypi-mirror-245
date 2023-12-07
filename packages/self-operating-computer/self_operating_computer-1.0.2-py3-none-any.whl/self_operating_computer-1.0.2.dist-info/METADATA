@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: self-operating-computer
+Version: 1.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: annotated-types ==0.6.0
+Requires-Dist: anyio ==3.7.1
+Requires-Dist: certifi ==2023.7.22
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: contourpy ==1.2.0
+Requires-Dist: cycler ==0.12.1
+Requires-Dist: distro ==1.8.0
+Requires-Dist: EasyProcess ==1.1
+Requires-Dist: entrypoint2 ==1.1
+Requires-Dist: exceptiongroup ==1.1.3
+Requires-Dist: fonttools ==4.44.0
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: httpcore ==1.0.2
+Requires-Dist: httpx ==0.25.1
+Requires-Dist: idna ==3.4
+Requires-Dist: importlib-resources ==6.1.1
+Requires-Dist: kiwisolver ==1.4.5
+Requires-Dist: matplotlib ==3.8.1
+Requires-Dist: MouseInfo ==0.1.3
+Requires-Dist: mss ==9.0.1
+Requires-Dist: numpy ==1.26.1
+Requires-Dist: openai ==1.2.3
+Requires-Dist: packaging ==23.2
+Requires-Dist: Pillow ==10.1.0
+Requires-Dist: prompt-toolkit ==3.0.39
+Requires-Dist: PyAutoGUI ==0.9.54
+Requires-Dist: pydantic ==2.4.2
+Requires-Dist: pydantic-core ==2.10.1
+Requires-Dist: PyGetWindow ==0.0.9
+Requires-Dist: PyMsgBox ==1.0.9
+Requires-Dist: pyparsing ==3.1.1
+Requires-Dist: pyperclip ==1.8.2
+Requires-Dist: PyRect ==0.2.0
+Requires-Dist: pyscreenshot ==3.1
+Requires-Dist: PyScreeze ==0.1.29
+Requires-Dist: python3-xlib ==0.15
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: pytweening ==1.0.7
+Requires-Dist: requests ==2.31.0
+Requires-Dist: rubicon-objc ==0.4.7
+Requires-Dist: six ==1.16.0
+Requires-Dist: sniffio ==1.3.0
+Requires-Dist: tqdm ==4.66.1
+Requires-Dist: typing-extensions ==4.8.0
+Requires-Dist: urllib3 ==2.0.7
+Requires-Dist: wcwidth ==0.2.9
+Requires-Dist: zipp ==3.17.0
+
+UNKNOWN
+
+
