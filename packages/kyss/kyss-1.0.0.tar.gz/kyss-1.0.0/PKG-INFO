@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: kyss
+Version: 1.0.0
+Summary: A YAML-inspired configuration language that keeps it simple
+Project-URL: Documentation, https://github.com/gvx/kyss#readme
+Project-URL: Issues, https://github.com/gvx/kyss/issues
+Project-URL: Source, https://github.com/gvx/kyss
+Author-email: "R.E.J. Wellner" <gyvox.public@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: configuration
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# kyss
+
+Kyss is a YAML-inspired configuration language that keeps it simple.
+
+This repository includes a parser, an API to define schemas for more advanced usage, and a commandline tool that converts kyss-format files to Python syntax or JSON.
+
+[![PyPI - Version](https://img.shields.io/pypi/v/kyss.svg)](https://pypi.org/project/kyss)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/kyss.svg)](https://pypi.org/project/kyss)
+
+*You don't have to be universal to be my choice*  
+*You don't have to support cycles to rule my world*  
+*Ain't no particular JSON I'm compatible with*  
+*I just want your config files and your*
+
+:kiss: *Kyss* :kiss:
+
+(With apologies to Prince)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install kyss
+```
+
+## License
+
+`kyss` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
