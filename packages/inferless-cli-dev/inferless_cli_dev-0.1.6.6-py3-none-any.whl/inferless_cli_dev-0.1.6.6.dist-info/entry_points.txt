@@ -1,0 +1,3 @@
+[console_scripts]
+inferless=inferless_cli_dev.main:app
+
