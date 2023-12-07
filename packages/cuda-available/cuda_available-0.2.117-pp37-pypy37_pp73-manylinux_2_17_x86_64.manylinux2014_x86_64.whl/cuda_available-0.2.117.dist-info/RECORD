@@ -1,0 +1,6 @@
+cuda_available-0.2.117.dist-info/METADATA,sha256=w8JtBOdjamzoHSmNq7k1TSiXczKJvm4Ws-5czwMofM8,1922
+cuda_available-0.2.117.dist-info/RECORD,,
+cuda_available-0.2.117.dist-info/WHEEL,sha256=KfaaAw9sIdnk9dSxvDszpvUjLMQyCGrFBm9eDs1zl1A,165
+cuda_available-0.2.117.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cuda_available-0.2.117.dist-info/licenses/LICENSE,sha256=DI43vfQ6hv5p2USqobz-KFPN56sR_2-3IYPCTTQ9wmU,1060
+cuda_available/cuda_available.pypy37-pp73-x86_64-linux-gnu.so,sha256=sfeCaYqJtLCDWb3O77AyVcyFKSvohRCi0n88H2T1VXE,890584
