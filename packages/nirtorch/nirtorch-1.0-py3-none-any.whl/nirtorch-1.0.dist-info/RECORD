@@ -1,0 +1,10 @@
+nirtorch/__init__.py,sha256=6zYKYGSbpWXQsa6MHT1pf-hBV_A7BOdqQiK0NO7jFNw,174
+nirtorch/from_nir.py,sha256=T2KAzDhyhZqtV7iTjzTyKk4IqXOqYEoXpQYjmltmw_I,9464
+nirtorch/graph.py,sha256=DSTr4YJKM6h1XoeajKKX5n1qL31b5h54A4MEdhD_UDo,14881
+nirtorch/graph_utils.py,sha256=qNjdW0E2vzUjyrRQW3-4QQcPVsD-_MJZ0ekTbEaLaEM,2782
+nirtorch/to_nir.py,sha256=9qF8QSG2_NTNoy7a65JXLN-goXZkwQwVJtWgifFJP70,6186
+nirtorch/utils.py,sha256=8DazbLIndob82-x6fNYvclzq_jsbOR_1Q1xe_JfvEuo,103
+nirtorch-1.0.dist-info/METADATA,sha256=xO1YtoydbACt9tXzEru8wvkddf6HtcZr_C4a9DyviZY,3572
+nirtorch-1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+nirtorch-1.0.dist-info/top_level.txt,sha256=J804WWk6y29PxNeo4Ae-TfUHmC-nEgG0zMVNb7eylrw,9
+nirtorch-1.0.dist-info/RECORD,,
