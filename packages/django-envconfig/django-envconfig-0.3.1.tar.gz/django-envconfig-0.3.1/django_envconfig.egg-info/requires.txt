@@ -1,0 +1,10 @@
+Django
+python-dotenv
+
+[test]
+black
+mypy
+pytest
+pytest-cov>=4.1
+pytest-mock
+ruff
