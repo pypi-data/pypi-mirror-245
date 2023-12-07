@@ -1,0 +1,9 @@
+renderer_bindings.cpython-38-x86_64-linux-gnu.so,sha256=r9TbK66b3oVZTedUwJJHiMu9BzJsGSO6dRxFE25gxI0,3497713
+wp_renderer.libs/libEGL-976e38d5.so.1.1.0,sha256=HkAjF9eTwM5dXnL5NFB6UHMiNUYFEBTE1XpfrE45IXM,91913
+wp_renderer.libs/libGLdispatch-228223fa.so.0.0.0,sha256=f90hm2wkY9U0XIw-QTLbntReC9yv5tELs7eBAYdp2jw,772241
+renderer/__init__.py,sha256=sbWUlMsdiIQYgSYYFYWQZXf7rZbLlo_ttc5fMdSQX7k,1015
+wp_renderer-0.3.9.dist-info/LICENSE,sha256=9qlE-Ba6XGKhMiq28nTclxYAzx04L4aHvz2IxNwAf58,1072
+wp_renderer-0.3.9.dist-info/METADATA,sha256=VunfyIzREUoqYePk_yFYixc2ZN4PlRRQNDJwZaU3b3A,2120
+wp_renderer-0.3.9.dist-info/RECORD,,
+wp_renderer-0.3.9.dist-info/top_level.txt,sha256=2gMH0XiJZiXlHukkIp23UJPf7dQ_eWz7TCCykUiSK5U,27
+wp_renderer-0.3.9.dist-info/WHEEL,sha256=MBWKI9gN9R9ln4LPQLYAEiqQ5UuhixpCHmTX3OZ6JDI,112
