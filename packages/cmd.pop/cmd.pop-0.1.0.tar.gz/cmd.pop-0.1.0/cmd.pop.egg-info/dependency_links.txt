@@ -1,0 +1,1 @@
+git+https://gitlab.com/moon-0516/cmd.os#egg=cmd.os
