@@ -1,0 +1,9 @@
+py_syslab_app_sdk/__init__.py,sha256=C0fKkULl5-GFha6e_kkp6QcEL2NBv9AFsSNszIq_R3o,91
+py_syslab_app_sdk/connect_client.py,sha256=3a7DtqBCdtn2Xf6rAhvitDFGDqrMwNndR98PIGj2llE,2991
+py_syslab_app_sdk/syslab_app_sdk.py,sha256=__egQ9y6-PbMieBpi8Kt62YAK6NX0OfsXEF_CGelx5w,8016
+py_syslab_app_sdk/variable_info.py,sha256=ffiuVgt8l88VBwOexE8Gkf-sanoqJyYZIZKnywXOIKE,230
+syslabappsdk-0.1.2.dist-info/LICENSE,sha256=Ec3yh5wXS0osL3d9qVBzHDCBu20IsQWVkD236lkV3KU,1123
+syslabappsdk-0.1.2.dist-info/METADATA,sha256=Sre0JeFhdM5tbI6RyIdQHBvDswCVksI02huNtDTVDTw,4871
+syslabappsdk-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+syslabappsdk-0.1.2.dist-info/top_level.txt,sha256=z4NAH5yUPVFfhJsRFMBZAZxX5EfIgYpFzAVIqvp3hSg,18
+syslabappsdk-0.1.2.dist-info/RECORD,,
