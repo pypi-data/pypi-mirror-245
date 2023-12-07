@@ -1,0 +1,59 @@
+[harbor]
+url = "https://harbor.uio.no/api/v2.0"
+username = "pederhan"
+secret = "********"
+basicauth = ""
+credentials_file = ""
+validate_data = true
+raw_mode = false
+verify_ssl = true
+keyring = true
+
+[harbor.retry]
+enabled = true
+max_tries = 5
+max_time = 10.0
+
+[general]
+confirm_deletion = true
+confirm_enumeration = true
+
+[output]
+format = "table"
+paging = false
+pager = ""
+
+[output.table]
+description = false
+max_depth = 0
+compact = true
+
+[output.table.style]
+title = ""
+header = "bold green"
+rows = ""
+border = ""
+footer = ""
+caption = ""
+expand = true
+show_header = true
+bool_emoji = false
+
+[output.JSON]
+indent = 2
+sort_keys = true
+
+[repl]
+history = true
+history_file = "/Users/pederhan/Library/Application Support/harbor-cli/history"
+
+[cache]
+enabled = true
+ttl = 5
+
+[logging]
+enabled = true
+level = "INFO"
+directory = "/Users/pederhan/Library/Logs/harbor-cli"
+filename = "harbor_cli_{time}.log"
+retention = 30
