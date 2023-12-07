@@ -1,0 +1,86 @@
+[project]
+name = "pyfuture"
+dynamic = []
+description = ""
+authors = [
+    { name = "Zhan Rongrui", email = "2742392377@qq.com" },
+]
+dependencies = [
+    "libcst>=1.1.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+version = "0.0.9"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+watch = [
+    "watchfiles",
+]
+
+[project.urls]
+Homepage = "https://pypi.org/project/pyfuture"
+Repository = "https://github.com/zrr-lab/pyfuture.git"
+
+[project.scripts]
+pyfuture = "pyfuture.__main__:app"
+
+[tool.ruff]
+line-length = 120
+src = [
+    "pyfuture",
+    "tests",
+]
+exclude = [
+    "tests/fixtures",
+]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "I",
+    "B",
+    "C4",
+    "PGH",
+    "RUF",
+    "W",
+    "YTT",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = [
+    "pyfuture",
+]
+required-imports = [
+    "from __future__ import annotations",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = [
+    "F401",
+    "I002",
+]
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest",
+    "coverage",
+]
+
+[tool.pdm.version]
+source = "scm"
+write_to = "pyfuture/__version__.py"
+write_template = "__version__ = '{}'"
+
+[tool.pdm.build]
+includes = [
+    "pyfuture",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
