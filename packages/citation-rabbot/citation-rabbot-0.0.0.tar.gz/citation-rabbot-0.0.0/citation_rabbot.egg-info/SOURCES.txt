@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+citation_rabbot/__init__.py
+citation_rabbot/__main__.py
+citation_rabbot.egg-info/PKG-INFO
+citation_rabbot.egg-info/SOURCES.txt
+citation_rabbot.egg-info/dependency_links.txt
+citation_rabbot.egg-info/requires.txt
+citation_rabbot.egg-info/top_level.txt
