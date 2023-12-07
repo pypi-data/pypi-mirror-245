@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+qatools/__init__.py
+qatools/qa.py
+qatools/qatools.qa
+qatools.egg-info/PKG-INFO
+qatools.egg-info/SOURCES.txt
+qatools.egg-info/dependency_links.txt
+qatools.egg-info/entry_points.txt
+qatools.egg-info/requires.txt
+qatools.egg-info/top_level.txt
+qatools/adb/mac/adb
+qatools/adb/windows/AdbWinApi.dll
+qatools/adb/windows/AdbWinUsbApi.dll
+qatools/adb/windows/adb.exe
