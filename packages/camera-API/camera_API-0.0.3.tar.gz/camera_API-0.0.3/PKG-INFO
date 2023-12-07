@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: camera_API
+Version: 0.0.3
+Summary: Used to accessing the camera in friendly way
+Author: Sivabalan T
+Author-email: sivabalan.t@e-consystems.com
+Classifier: Programming Language :: Python :: 3
