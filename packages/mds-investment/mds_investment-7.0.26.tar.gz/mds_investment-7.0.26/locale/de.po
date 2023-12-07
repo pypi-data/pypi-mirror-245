@@ -1,0 +1,607 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+
+#############
+# res.group #
+#############
+msgctxt "model:res.group,name:group_investment"
+msgid "Investment"
+msgstr "Investition"
+
+msgctxt "model:res.group,name:group_investment_admin"
+msgid "Investment Administrator"
+msgstr "Investition Administrator"
+
+
+###########
+# ir.cron #
+###########
+msgctxt "selection:ir.cron,method:"
+msgid "Update Asset Rates"
+msgstr "Vermögenswertkurse Aktualisieren"
+
+
+##############
+# ir.message #
+##############
+msgctxt "model:ir.message,text:msg_currency_unique_rate_date"
+msgid "A asset can only have one rate by date."
+msgstr "Es darf nur einen Kurs pro Datum für einen Vermögenswert geben."
+
+msgctxt "model:ir.message,text:msg_currency_rate_positive"
+msgid "A asset rate must be positive."
+msgstr "Der Kurs des Vermögenswertes muss positiv sein."
+
+msgctxt "model:ir.message,text:msg_import_err_date"
+msgid "failed to read column %(colnr)s of file, expected date (format: %(datefmt)s)"
+msgstr "Fehler beim Lesen von Spalte %(colnr)s der Datei, erwartetes Datum (Format: %(datefmt)s)"
+
+msgctxt "model:ir.message,text:msg_err_unknown_content"
+msgid "failed to identify row content: %(linetxt)s"
+msgstr "Zeileninhalt konnte nicht identifiziert werden: %(linetxt)s"
+
+msgctxt "model:ir.message,text:msg_querytype_web"
+msgid "Extract from web page"
+msgstr "aus Webseite auslesen"
+
+msgctxt "model:ir.message,text:msg_missing_url"
+msgid "URL for the online source '%(oname)s' is missing."
+msgstr "URL für die Onlinequelle '%(oname)s' fehlt."
+
+
+##############
+# ir.ui.menu #
+##############
+msgctxt "model:ir.ui.menu,name:menu_investment"
+msgid "Investment"
+msgstr "Investition"
+
+msgctxt "model:ir.ui.menu,name:menu_asset"
+msgid "Asset"
+msgstr "Vermögenswert"
+
+msgctxt "model:ir.ui.menu,name:menu_onlinesource"
+msgid "Online Source"
+msgstr "Online Quelle"
+
+
+#############
+# ir.action #
+#############
+msgctxt "model:ir.action,name:act_asset_view"
+msgid "Asset"
+msgstr "Vermögenswert"
+
+msgctxt "model:ir.action,name:act_source_view"
+msgid "Online Source"
+msgstr "Online Quelle"
+
+msgctxt "model:ir.action,name:updt_source_wiz"
+msgid "Update Source"
+msgstr "Quelle aktualisieren"
+
+msgctxt "model:ir.action,name:act_import_wizard"
+msgid "Import CSV-File"
+msgstr "CSV-Datei importieren"
+
+
+###############################
+# ir.action.act_window.domain #
+###############################
+msgctxt "model:ir.action.act_window.domain,name:act_asset_domain_current"
+msgid "Current"
+msgstr "Aktuell"
+
+msgctxt "model:ir.action.act_window.domain,name:act_asset_domain_inactive"
+msgid "Inactive"
+msgstr "Inaktiv"
+
+msgctxt "model:ir.action.act_window.domain,name:act_asset_domain_all"
+msgid "All"
+msgstr "Alle"
+
+
+############################
+# investment.imp_wiz.start #
+############################
+msgctxt "model:investment.imp_wiz.start,name:"
+msgid "Import CSV-File"
+msgstr "CSV-Datei importieren"
+
+msgctxt "field:investment.imp_wiz.start,asset:"
+msgid "Asset"
+msgstr "Vermögenswert"
+
+msgctxt "field:investment.imp_wiz.start,file_:"
+msgid "CSV-File"
+msgstr "CSV-Datei"
+
+msgctxt "field:investment.imp_wiz.start,dec_divider:"
+msgid "Decimal divider"
+msgstr "Dezimaltrenner"
+
+msgctxt "field:investment.imp_wiz.start,date_fmt:"
+msgid "Date format"
+msgstr "Datumsformat"
+
+msgctxt "field:investment.imp_wiz.start,field_delimiter:"
+msgid "Field delimiter"
+msgstr "Feldtrenner"
+
+
+######################
+# investment.imp_wiz #
+######################
+msgctxt "model:investment.imp_wiz,name:"
+msgid "Import CSV-File"
+msgstr "CSV-Datei importieren"
+
+msgctxt "wizard_button:investment.imp_wiz,start,end:"
+msgid "Cancel"
+msgstr "Abbruch"
+
+msgctxt "wizard_button:investment.imp_wiz,start,importf:"
+msgid "Import File"
+msgstr "Datei importieren"
+
+
+############################
+# investment.source_update #
+############################
+msgctxt "model:investment.source_update,name:"
+msgid "Update Source"
+msgstr "Quelle aktualisieren"
+
+
+####################
+# investment.asset #
+####################
+msgctxt "model:investment.asset,name:"
+msgid "Asset"
+msgstr "Vermögenswert"
+
+msgctxt "view:investment.asset:"
+msgid "Currency and Units"
+msgstr "Währung und Einheiten"
+
+msgctxt "view:investment.asset:"
+msgid "Gain and Loss"
+msgstr "Gewinn und Verlust"
+
+msgctxt "view:investment.asset:"
+msgid "Identifiers"
+msgstr "Bezeichner"
+
+msgctxt "view:investment.asset:"
+msgid "Rates"
+msgstr "Kurse"
+
+msgctxt "view:investment.asset:"
+msgid "Course Update"
+msgstr "Kursaktualisierung"
+
+msgctxt "field:investment.asset,company:"
+msgid "Company"
+msgstr "Unternehmen"
+
+msgctxt "field:investment.asset,currency:"
+msgid "Currency"
+msgstr "Währung"
+
+msgctxt "field:investment.asset,currency_digits:"
+msgid "Digits"
+msgstr "Nachkommastellen"
+
+msgctxt "field:investment.asset,product:"
+msgid "Product"
+msgstr "Artikel"
+
+msgctxt "field:investment.asset,product_uom:"
+msgid "UOM Category"
+msgstr "Einheit-Kategorie"
+
+msgctxt "help:investment.asset,product_uom:"
+msgid "Category of unit on the product."
+msgstr "Kategorie der Einheit am Produkt."
+
+msgctxt "field:investment.asset,uom:"
+msgid "UOM"
+msgstr "Einheit"
+
+msgctxt "field:investment.asset,symbol:"
+msgid "UOM"
+msgstr "Einheit"
+
+msgctxt "field:investment.asset,asset_symbol:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "field:investment.asset,wkn:"
+msgid "NSIN"
+msgstr "WKN"
+
+msgctxt "help:investment.asset,wkn:"
+msgid "National Securities Identifying Number"
+msgstr "Wertpapierkennnummer"
+
+msgctxt "field:investment.asset,isin:"
+msgid "ISIN"
+msgstr "ISIN"
+
+msgctxt "help:investment.asset,isin:"
+msgid "International Securities Identification Number"
+msgstr "Internationale Wertpapierkennnummer"
+
+msgctxt "field:investment.asset,secsymb:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "help:investment.asset,secsymb:"
+msgid "Stock market symbol"
+msgstr "Börsensymbol"
+
+msgctxt "field:investment.asset,rates:"
+msgid "Rates"
+msgstr "Kurse"
+
+msgctxt "field:investment.asset,name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:investment.asset,rate:"
+msgid "Current Rate"
+msgstr "aktueller Kurs"
+
+msgctxt "field:investment.asset,date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "help:investment.asset,date:"
+msgid "Date of current rate"
+msgstr "Datum des aktuellen Kurses"
+
+msgctxt "field:investment.asset,updtsources:"
+msgid "Update Sources"
+msgstr "Kursquellen"
+
+msgctxt "help:investment.asset,updtsources:"
+msgid "Select sources for the course update. The course sources are tried until a valid value has been read."
+msgstr "Wählen Sie Quellen für die Kursaktualisierung aus. Die Kursquellen werden probiert bis ein gültiger Wert gelesen wurde."
+
+msgctxt "field:investment.asset,updttime:"
+msgid "Time"
+msgstr "Zeitpunkt"
+
+msgctxt "field:investment.asset,nextupdate:"
+msgid "Next Update"
+msgstr "nächste Aktualisierung"
+
+msgctxt "field:investment.asset,change_day1:"
+msgid "Previous Day"
+msgstr "Vortag"
+
+msgctxt "help:investment.asset,change_day1:"
+msgid "percentage change in value compared to the previous day"
+msgstr "prozentuale Wertänderung zum Vortag"
+
+msgctxt "field:investment.asset,change_month1:"
+msgid "1 Month"
+msgstr "1 Monat"
+
+msgctxt "help:investment.asset,change_month1:"
+msgid "percentage change in value compared to last month"
+msgstr "prozentuale Wertänderung zum letzten Monat"
+
+msgctxt "field:investment.asset,change_month3:"
+msgid "3 Months"
+msgstr "3 Monate"
+
+msgctxt "help:investment.asset,change_month3:"
+msgid "percentage change in value during 3 months"
+msgstr "Prozentuale Wertänderung während 3 Monate"
+
+msgctxt "field:investment.asset,change_month6:"
+msgid "6 Months"
+msgstr "6 Monate"
+
+msgctxt "help:investment.asset,change_month6:"
+msgid "percentage change in value during 6 months"
+msgstr "Prozentuale Wertänderung während 6 Monate"
+
+msgctxt "field:investment.asset,change_month12:"
+msgid "1 Year"
+msgstr "1 Jahr"
+
+msgctxt "help:investment.asset,change_month12:"
+msgid "percentage change in value during 1 year"
+msgstr "Prozentuale Wertänderung während 1 Jahr"
+
+msgctxt "field:investment.asset,change_symbol:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "field:investment.asset,updtdays:"
+msgid "Select days"
+msgstr "Tage wählen"
+
+msgctxt "selection:investment.asset,updtdays:"
+msgid "Mon - Fri"
+msgstr "Mo - Fr"
+
+msgctxt "selection:investment.asset,updtdays:"
+msgid "Mon - Sun"
+msgstr "Mo - So"
+
+msgctxt "field:investment.asset,updturl:"
+msgid "URL"
+msgstr "URL"
+
+msgctxt "help:investment.asset,updturl:"
+msgid "URL for data retrieval."
+msgstr "URL für Datenabruf."
+
+msgctxt "field:investment.asset,updturl_enable:"
+msgid "URL required"
+msgstr "URL required"
+
+
+###############################
+# investment.asset-source-rel #
+###############################
+msgctxt "model:investment.asset_source_rel,name:"
+msgid "Asset Source Relation"
+msgstr "Vermögenswert Quelle Verknüpfung"
+
+msgctxt "field:investment.asset_source_rel,source:"
+msgid "Source"
+msgstr "Quelle"
+
+msgctxt "field:investment.asset_source_rel,asset:"
+msgid "Asset"
+msgstr "Vermögenswert"
+
+
+#####################
+# investment.source #
+#####################
+msgctxt "model:investment.source,name:"
+msgid "Online Source"
+msgstr "Online Quelle"
+
+msgctxt "view:investment.source:"
+msgid "Result"
+msgstr "Ergebnis"
+
+msgctxt "view:investment.source:"
+msgid "Test parameters"
+msgstr "Testparameter"
+
+msgctxt "view:investment.source:"
+msgid "URL parameter placeholders: ${isin}, ${nsin}, ${symbol}"
+msgstr "Platzhalter für URL-Parameter: ${isin}, ${nsin}, ${symbol}"
+
+msgctxt "view:investment.source:"
+msgid "Regular expressions to find data"
+msgstr "Reguläre Ausdrücke zum Finden der Daten"
+
+msgctxt "view:investment.source:"
+msgid "How to"
+msgstr "So funktionierts"
+
+msgctxt "view:investment.source:"
+msgid "Values detected during the query"
+msgstr "bei der Abfrage erkannte Werte"
+
+msgctxt "view:investment.source:"
+msgid "Configure a source for receiving course data here. The source is queried with the parameters according to schedule."
+msgstr "Konfigurieren Sie hier eine Quelle für den Empfang von Kursdaten. Die Quelle wird mit den Paramtern nach Zeitplan abgefragt."
+
+msgctxt "view:investment.source:"
+msgid "Select a website where the price data, ISIN, date, etc. is contained in the loaded HTML file."
+msgstr "Wählen Sie eine Webseite bei der die Kursdaten, ISIN, Datum etc. in der geladenen HTML-Datei enthalten ist."
+
+msgctxt "view:investment.source:"
+msgid "Purely javascript-based websites do not work here."
+msgstr "Rein javascriptbasierte Webseiten funktionieren hier nicht."
+
+msgctxt "view:investment.source:"
+msgid "Method: Extract from web page"
+msgstr "Methode: aus Webseite auslesen"
+
+msgctxt "field:investment.source,name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:investment.source,url:"
+msgid "URL"
+msgstr "URL"
+
+msgctxt "field:investment.source,nsin:"
+msgid "NSIN"
+msgstr "WKN"
+
+msgctxt "field:investment.source,isin:"
+msgid "ISIN"
+msgstr "ISIN"
+
+msgctxt "field:investment.source,http_state:"
+msgid "HTTP-State"
+msgstr "HTTP-Status"
+
+msgctxt "field:investment.source,symbol:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "field:investment.source,text:"
+msgid "Result"
+msgstr "Ergebnis"
+
+msgctxt "field:investment.source,nohtml:"
+msgid "Remove HTML"
+msgstr "HTML entfernen"
+
+msgctxt "help:investment.source,nohtml:"
+msgid "Removes HTML tags before the text is interpreted."
+msgstr "Entfernt HTML-Tags bevor der Text interpretiert wird."
+
+msgctxt "field:investment.source,rgxdate:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "help:investment.source,rgxdate:"
+msgid "Regex code to find the date in the downloaded HTML file."
+msgstr "Regex-Code, um das Datum in der heruntergeladenen HTML-Datei zu finden."
+
+msgctxt "field:investment.source,rgxrate:"
+msgid "Rate"
+msgstr "Kurs"
+
+msgctxt "help:investment.source,rgxrate:"
+msgid "Regex code to find the rate in the downloaded HTML file."
+msgstr "Regex-Code, um den Kurs in der heruntergeladenen HTML-Datei zu finden."
+
+msgctxt "field:investment.source,rgxident:"
+msgid "Identifier"
+msgstr "Bezeichner"
+
+msgctxt "help:investment.source,rgxident:"
+msgid "Regex code to find the identifier in the downloaded HTML file."
+msgstr "Regex-Code, um den Bezeichner in der heruntergeladenen HTML-Datei zu finden."
+
+msgctxt "field:investment.source,used_url:"
+msgid "Used URL"
+msgstr "verwendete URL"
+
+msgctxt "help:investment.source,used_url:"
+msgid "This URL is used to retrieve the HTML file."
+msgstr "Diese URL wird für den Abruf der HTML-Datei verwendet."
+
+msgctxt "field:investment.source,rgxdecimal:"
+msgid "Decimal Separator"
+msgstr "Dezimaltrenner"
+
+msgctxt "help:investment.source,rgxdecimal:"
+msgid "Decimal separator for converting the market value into a number."
+msgstr "Dezimaltrenner für die Umwandlung des Kurswertes in eine Zahl."
+
+msgctxt "field:investment.source,rgxidtype:"
+msgid "ID-Type"
+msgstr "ID-Typ"
+
+msgctxt "help:investment.source,rgxidtype:"
+msgid "Type of identifier used to validate the result."
+msgstr "Typ des Bezeichners zur Validierung des Ergebnisses."
+
+msgctxt "selection:investment.source,rgxidtype:"
+msgid "ISIN"
+msgstr "ISIN"
+
+msgctxt "selection:investment.source,rgxidtype:"
+msgid "NSIN"
+msgstr "WKN"
+
+msgctxt "selection:investment.source,rgxidtype:"
+msgid "Symbol"
+msgstr "Symbol"
+
+msgctxt "field:investment.source,rgxdatefmt:"
+msgid "Date format"
+msgstr "Datumsformat"
+
+msgctxt "help:investment.source,rgxidtype:"
+msgid "Type of identifier used to validate the result."
+msgstr "Typ des Bezeichners zur Validierung des Ergebnisses."
+
+msgctxt "field:investment.source,fnddate:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "help:investment.source,fnddate:"
+msgid "Date found during test query."
+msgstr "Bei der Testabfrage gefundenes Datum."
+
+msgctxt "field:investment.source,fndrate:"
+msgid "Rate"
+msgstr "Kurs"
+
+msgctxt "help:investment.source,fndrate:"
+msgid "Rate found during test query."
+msgstr "Bei der Testabfrage gefundener Kurs."
+
+msgctxt "field:investment.source,fndident:"
+msgid "Identifier"
+msgstr "Bezeichner"
+
+msgctxt "help:investment.source,fndident:"
+msgid "Identifier found during test query."
+msgstr "Bei der Testabfrage gefundener Bezeichner."
+
+msgctxt "field:investment.source,query_method:"
+msgid "Method"
+msgstr "Methode"
+
+msgctxt "help:investment.source,query_method:"
+msgid "Select the method to retrieve the data."
+msgstr "Wählen Sie die Methode zum Abruf der Daten."
+
+msgctxt "field:investment.source,fixed_url:"
+msgid "Fixed URL"
+msgstr "feste URL"
+
+msgctxt "help:investment.source,fixed_url:"
+msgid "URL must be defined at investment record."
+msgstr "Die URL muss im Investitionsdatensatz definiert werden."
+
+
+###################
+# investment.rate #
+###################
+msgctxt "model:investment.rate,name:"
+msgid "Rate"
+msgstr "Kurs"
+
+msgctxt "view:investment.rate:"
+msgid "per"
+msgstr "pro"
+
+msgctxt "field:investment.rate,asset:"
+msgid "Asset"
+msgstr "Vermögenswert"
+
+msgctxt "field:investment.rate,date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "field:investment.rate,rate:"
+msgid "Rate"
+msgstr "Kurs"
+
+msgctxt "field:investment.rate,digits:"
+msgid "Digits"
+msgstr "Nachkommastellen"
+
+
+######################
+# product.identifier #
+######################
+msgctxt "selection:product.identifier,type:"
+msgid "National Securities Identifying Number (NSIN)"
+msgstr "Wertpapierkennnummer (WKN)"
+
+msgctxt "selection:product.identifier,type:"
+msgid "Stock market symbol"
+msgstr "Börsensymbol"
+
+
+####################
+# diagram.graphdef #
+####################
+msgctxt "view:diagram.graphdef:"
+msgid "Asset"
+msgstr "Vermögenswert"
+
+msgctxt "field:diagram.graphdef,asset:"
+msgid "Asset"
+msgstr "Vermögenswert"
