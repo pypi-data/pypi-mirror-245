@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: sensibleapi
+Version: 0.0.4
+Summary: Python SDK for Sensible, the developer-first platform for extracting structured data from documents so that you can build document-automation features into your SaaS products
+Author: Sensible Technologies, Inc
+Author-email: hello@sensible.so
+License-File: LICENSE
+
+Python SDK for Sensible, the developer-first platform for extracting structured data from documents so that you can build document-automation features into your SaaS products
