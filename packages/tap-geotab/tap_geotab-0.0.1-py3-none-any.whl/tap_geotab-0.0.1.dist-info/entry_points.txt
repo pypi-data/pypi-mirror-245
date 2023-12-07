@@ -1,0 +1,3 @@
+[console_scripts]
+tap-geotab=tap_geotab.tap:TapGeotab.cli
+
