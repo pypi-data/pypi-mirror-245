@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ConfDB
+Version: 20231207
+Summary: Highly Available store for configuration variables - Replicated and Strongly Consistent
+Home-page: https://github.com/magicray/ConfDB
+Author: Bhupendra Singh
+Author-email: bhsingh@gmail.com
+Keywords: paxos,consistent,replicated,config
+License-File: LICENSE
+
+Leaderless. Paxos for synchronous and consistent replication. SQLite for persistence. HTTP/mTLS interface.
