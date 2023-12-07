@@ -1,0 +1,10 @@
+pointcloud_sax_reader/__main__.py,sha256=F79g2hfeoLdPy2NJG-kn0tPKlSLO6FoGCPCQ6mOlP84,746
+pointcloud_sax_reader/__init__.py,sha256=yhMz6vpKVacGslRp6bRoVu6Oeu5fRCyYYsoaXVU_auk,296
+pointcloud_sax_reader/_core.cpython-39-i386-linux-gnu.so,sha256=ltMpccwSJJTYvov5836a33_GMelyX6Mmaf-k7hwcjjY,187725
+pointcloud_sax_reader.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+pointcloud_sax_reader.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+pointcloud_sax_reader-0.1.0.dist-info/METADATA,sha256=JuNkgyUyW5za1hPLhX1F_hNiPg81J63IfBpMym00Eac,763
+pointcloud_sax_reader-0.1.0.dist-info/RECORD,,
+pointcloud_sax_reader-0.1.0.dist-info/WHEEL,sha256=_whhpGNC64ztckfT2VsdxNPrN6r2lmkeqMqdTeBcaLI,112
+pointcloud_sax_reader-0.1.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pointcloud_sax_reader-0.1.0.dist-info/licenses/LICENSE,sha256=SBNiCMUPOkN74CrKaGEJk1CNXzPemZ76Qsm106kwI1E,2182
