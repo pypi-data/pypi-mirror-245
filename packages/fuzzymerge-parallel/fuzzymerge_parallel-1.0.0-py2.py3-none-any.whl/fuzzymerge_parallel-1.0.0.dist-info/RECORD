@@ -1,0 +1,12 @@
+fuzzymerge_parallel/FuzzyMergeParallel.py,sha256=Dw2vgXgs435pCHKKB0sP-xPFbba2fk22zKAuuWqtFEk,14207
+fuzzymerge_parallel/__init__.py,sha256=Lijvcqb137MskNkLnXoeEXoA2WRMB6zYfTPuDlVRK54,181
+fuzzymerge_parallel/aux.py,sha256=J9m89WlI48Kcd-S_OvRTeVT3H59WVkG-TZ7oq__nAPA,3919
+fuzzymerge_parallel/matches_dask.py,sha256=pMVEOdqW_-rdYF2kWlU0kC0hRSfCOPimEtjOMhfFO50,6016
+fuzzymerge_parallel/matches_multiproc.py,sha256=_zLx59vylxY_KyG4lmkZeWJVwf3hNbqmbEr0FsTMDm4,4635
+fuzzymerge_parallel-1.0.0.dist-info/AUTHORS.rst,sha256=yX81I_fMpcGHNwcOB4FM-AsNul0nkZGkEYbRpmOzF34,166
+fuzzymerge_parallel-1.0.0.dist-info/LICENSE,sha256=vw7yODZyh0_y_9C_zB3dhD5x-HgOP7DRvBtVoUTgu1g,1080
+fuzzymerge_parallel-1.0.0.dist-info/METADATA,sha256=5LUv2vHtmsyEs_tkAAwrowLnqPQbu36egy20txNg1Dg,12140
+fuzzymerge_parallel-1.0.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+fuzzymerge_parallel-1.0.0.dist-info/entry_points.txt,sha256=N6C7ZWSCb8jcnNdAd3Q_GQZtYU2S8qRciSukBpo4FQo,69
+fuzzymerge_parallel-1.0.0.dist-info/top_level.txt,sha256=bu8ZNFDRGJPnhOCoY7EHptC7CQRIwir-qdti1mppq5M,20
+fuzzymerge_parallel-1.0.0.dist-info/RECORD,,
