@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zrok_sdk
+Version: 0.4.18
+Summary: zrok
+Home-page: https://zrok.io
+Author-email: cameron.otts@netfoundry.io
+Keywords: Swagger,zrok
+Requires-Python: >=3.10
+Requires-Dist: urllib3>=1.15
+Requires-Dist: six>=1.10
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    Geo-scale, next-generation peer-to-peer sharing platform built on top of OpenZiti.
+    
