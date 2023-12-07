@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fast_tsne
+Version: 0.0.0.0.1
+Summary: fast-tsne: A mainfold method for visualizing single-cell data .
+Home-page: https://github.com/wangzichenbioinformatics/fast-tsne
+Author: Wangchen
+Author-email: wch_bioinformatics@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+
+# fast-tsne 
+
+You can use it.
+https://github.com/wangzichenbioinformatics/fast-tsne
+
+
