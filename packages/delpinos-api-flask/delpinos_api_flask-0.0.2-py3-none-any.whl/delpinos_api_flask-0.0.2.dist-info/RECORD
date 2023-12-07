@@ -1,0 +1,9 @@
+delpinos/api/flask/controllers/flask_controller.py,sha256=47DfsAPQiwsMCihlgZ19QIXJzuDAADs31QM2EGjtJdo,1732
+delpinos/api/flask/encoders/flask_encoder.py,sha256=fYovWnX1Md6G21ekUdpNMCB9yOGJbDjvS-Gh00sSRHA,136
+delpinos/api/flask/factories/flask_factory.py,sha256=m1ciZaAOyzVpPQdK5cSvSuzCubbmFA_9dIFnGJA3zYI,1124
+delpinos/api/flask/requests/flask_request.py,sha256=NOD7GOLgFuMcdKUqISfcztyTl6ox_Vhb-5mynsyWo4g,1783
+delpinos/api/flask/responses/flask_response.py,sha256=LoeNmbebGpPSbewyB4UKr2WRk4yCCTlC9ZVexBNcrHc,159
+delpinos_api_flask-0.0.2.dist-info/METADATA,sha256=OnSzGlK0qRP_5Q_w4309hTlNost9GG7DQv7mIMHTipc,1183
+delpinos_api_flask-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+delpinos_api_flask-0.0.2.dist-info/top_level.txt,sha256=LAneeXI8p69ze3LfTg_cQXHOJnefxd_-EVIro6WLLWk,9
+delpinos_api_flask-0.0.2.dist-info/RECORD,,
