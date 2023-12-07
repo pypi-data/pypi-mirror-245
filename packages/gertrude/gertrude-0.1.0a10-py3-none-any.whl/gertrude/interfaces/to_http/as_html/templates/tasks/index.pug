@@ -1,0 +1,51 @@
+//- Gertrude --- GTD done right
+//- Copyright © 2023 Tanguy Le Carrour <tanguy@bioneland.org>
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+extends layout
+
+block title
+  title= _("pages-tasks-index-title")
+
+block content
+  section.section.gtd-workflow: .container: .content
+      h1= _("pages-tasks-index-title")
+      h2= _("pages-tasks-index-subtitle")
+      p!= _("pages-tasks-index-introduction-html")
+
+      h3
+        span.icon: i.fas.fa-edit(aria-hidden="true")
+        span.ml-2= _("pages-tasks-index-capture-title")
+      p!= _("pages-tasks-index-capture-description-html")
+
+      h3
+        span.icon: i.fas.fa-inbox(aria-hidden="true")
+        span.ml-2= _("pages-tasks-index-clarify-title")
+      p!= _("pages-tasks-index-clarify-description-html")
+
+      h3
+        span.icon: i.fas.fa-folder-open(aria-hidden="true")
+        span.ml-2= _("pages-tasks-index-organize-title")
+      p!= _("pages-tasks-index-organize-description-html")
+
+      h3
+        span.icon: i.fas.fa-brain(aria-hidden="true")
+        span.ml-2= _("pages-tasks-index-reflect-title")
+      p!= _("pages-tasks-index-reflect-description-html")
+
+      h3
+        span.icon: i.fas.fa-thumbs-up(aria-hidden="true")
+        span.ml-2= _("pages-tasks-index-engage-title")
+      p!= _("pages-tasks-index-engage-description-html")

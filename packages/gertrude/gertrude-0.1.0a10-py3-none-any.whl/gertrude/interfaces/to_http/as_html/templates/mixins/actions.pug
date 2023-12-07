@@ -1,0 +1,113 @@
+//- Gertrude --- GTD done right
+//- Copyright © 2023 Tanguy Le Carrour <tanguy@bioneland.org>
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+mixin do(task)
+  form(
+    method="POST"
+    action=url_for("tasks.do", id=task.id)
+    hx-post=url_for("tasks.do", id=task.id)
+    hx-target="#modal"
+  )
+    button.button.is-success.is-fullwidth(type="submit")
+      span.icon: i.fas.fa-thumbs-up(aria-hidden="true")
+      span= _("pages-mixins-actions-do")
+
+mixin delegate(task)
+  a.button.is-link.is-fullwidth(
+    href=url_for("tasks.delegate_form", id=task.id)
+    hx-get=url_for("tasks.delegate_form", id=task.id)
+    hx-target="#modal"
+  )
+    span.icon: i.fas.fa-coffee(aria-hidden="true")
+    span= _("pages-mixins-actions-delegate")
+
+mixin postpone(task)
+  form(
+    method="POST"
+    action=url_for("tasks.postpone", id=task.id)
+    hx-post=url_for("tasks.postpone", id=task.id)
+    hx-target="#modal"
+  )
+    button.button.is-success.is-fullwidth(type="submit")
+      span.icon: i.fas.fa-chevron-circle-right(aria-hidden="true")
+      span= _("pages-mixins-actions-postpone")
+
+mixin file(task)
+  form(
+    method="POST"
+    action=url_for("tasks.file", id=task.id)
+    hx-post=url_for("tasks.file", id=task.id)
+    hx-target="#modal"
+  )
+    button.button.is-success.is-fullwidth(type="submit")
+      span.icon: i.fas.fa-folder-open(aria-hidden="true")
+      span= _("pages-mixins-actions-file")
+
+mixin incubate(task)
+  form(
+    method="POST"
+    action=url_for("tasks.incubate", id=task.id)
+    hx-post=url_for("tasks.incubate", id=task.id)
+    hx-target="#modal"
+  )
+    button.button.is-success.is-fullwidth(type="submit")
+      span.icon: i.fas.fa-umbrella(aria-hidden="true")
+      span= _("pages-mixins-actions-incubate")
+
+mixin eliminate(task)
+  form(
+    method="POST"
+    action=url_for("tasks.eliminate", id=task.id)
+    hx-post=url_for("tasks.eliminate", id=task.id)
+    hx-target="#modal"
+  )
+    button.button.is-danger.is-fullwidth(type="submit")
+      span.icon: i.fas.fa-trash(aria-hidden="true")
+      span= _("pages-mixins-actions-eliminate")
+
+mixin reclaim(task)
+  form(
+    method="POST"
+    action=url_for("tasks.reclaim", id=task.id)
+    hx-post=url_for("tasks.reclaim", id=task.id)
+    hx-target="#modal"
+  )
+    button.button.is-success.is-fullwidth(type="submit")
+      span.icon: i.fas.fa-coffee(aria-hidden="true")
+      span= _("pages-mixins-actions-reclaim")
+
+mixin assign(task)
+  a.button.is-link.is-fullwidth(
+    href=url_for("tasks.assign_form", id=task.id)
+    hx-get=url_for("tasks.assign_form", id=task.id)
+    hx-target="#modal"
+  )
+    span.icon: i.fas.fa-tasks(aria-hidden="true")
+    span= _("pages-mixins-actions-assign")
+
+mixin schedule(task)
+  a.button.is-link.is-fullwidth(
+    href=url_for("tasks.schedule_form", id=task.id)
+    hx-get=url_for("tasks.schedule_form", id=task.id)
+    hx-target="#modal"
+  )
+    span.icon: i.fas.fa-calendar(aria-hidden="true")
+    span= _("pages-mixins-actions-schedule")
+
+mixin projectify(task)
+  a.button.is-link.is-fullwidth(href="#" disabled)
+    span.icon: i.fas.fa-tasks(aria-hidden="true")
+    span= _("pages-mixins-actions-projectify")

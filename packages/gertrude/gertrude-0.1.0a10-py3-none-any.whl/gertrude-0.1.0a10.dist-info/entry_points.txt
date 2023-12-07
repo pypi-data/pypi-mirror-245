@@ -1,0 +1,3 @@
+[console_scripts]
+gertrude=gertrude.configuration.cli:cli
+

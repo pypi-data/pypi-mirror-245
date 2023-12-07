@@ -1,0 +1,110 @@
+//- Gertrude --- GTD done right
+//- Copyright © 2023 Tanguy Le Carrour <tanguy@bioneland.org>
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+extends layout
+
+block title
+  title= _("pages-tasks-capture-page-title")
+
+block modal
+  .modal.is-active(_="on closeModal remove me")
+    .modal-background(_="on click trigger closeModal then halt default")
+    .modal-card
+      header.modal-card-head
+        p.modal-card-title= _("pages-tasks-capture-page-title")
+        a.delete(
+          href=url_for("tasks.inbox")
+          _="on click trigger closeModal then halt default"
+          aria-label=_("pages-modal-close")
+        )
+
+      section.modal-card-body
+        form(
+          method="POST"
+          action=url_for("tasks.capture")
+          hx-post=url_for("tasks.capture")
+          hx-target="#modal"
+        )
+          input(type="hidden" name="id" value=values.task_id)
+
+          .field.is-horizontal
+            .field-label.is-normal
+              label.label(for="title")
+                i.fas.fa-star
+            .field-body
+              .field
+                p.control.is-expanded
+                  input.input(
+                    type="text"
+                    name="title"
+                    placeholder=_("pages-tasks-capture-title-placeholder")
+                    value=values.title
+                    maxlength=max.title
+                    required
+                    autofocus
+                  )
+                  if errors.title
+                    small.help.is-danger= errors.title
+
+          .field.is-horizontal
+            .field-label.is-normal
+              label.label(for="description")
+                i.fas.fa-file
+            .field-body
+              .field
+                p.control.is-expanded
+                  textarea.textarea(
+                    name="description"
+                    placeholder=_("pages-tasks-capture-description-placeholder")
+                    maxlength=max.description
+                  )= values.description
+                if errors.description
+                  small.help.is-danger= errors.description
+
+          .field.is-horizontal
+            .field-label.is-normal
+              label.label(for="project_id")
+                i.fas.fa-tasks
+            .field-body
+              .field
+                .select.is-fullwidth
+                  select(name="project_id")
+                    option(value="") --
+                    each project in projects
+                      - var selected = project.id == values.project_id
+                      option(value=project.id selected=selected)= project.name
+                if errors.project_id
+                  small.help.is-danger= errors.project_id
+
+          .field.is-horizontal
+            .field-label.is-normal
+              span.icon &nbsp;
+            .field-body
+              .field.is-grouped
+                .control: button.button.is-success(type="submit")
+                  span.icon: i.fas.fa-edit
+                  span=_("pages-tasks-capture-submit")
+                .control
+                  a.button(
+                    href=url_for("tasks.inbox")
+                    _="on click trigger closeModal then halt default"
+                  )
+                    span.icon: i.fas.fa-ban
+                    span=_("pages-tasks-capture-cancel")
+
+        if errors.other
+          article.message.is-danger
+            p.message-body= errors.other

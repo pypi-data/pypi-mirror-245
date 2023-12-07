@@ -1,0 +1,68 @@
+//- Gertrude --- GTD done right
+//- Copyright © 2023 Tanguy Le Carrour <tanguy@bioneland.org>
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+extends layout
+
+block title
+  title= _("pages-tasks-assign-title")
+
+block modal
+  .modal.is-active(_="on closeModal remove me")
+    .modal-background(_="on click trigger closeModal then halt default")
+    .modal-card
+      header.modal-card-head
+        p.modal-card-title= _("pages-tasks-assign-title")
+        a.delete(
+          href=url_for("tasks.display", id=task.id)
+          _="on click trigger closeModal then halt default"
+          aria-label=_("pages-modal-close")
+        )
+
+      section.modal-card-body
+        form(
+          method="POST"
+          action=url_for("tasks.assign", id=task.id)
+          hx-post=url_for("tasks.assign", id=task.id)
+          hx-target="#modal"
+        )
+          .field
+            - var classes = "is-danger" if errors.project_id else ""
+            label.label= _("pages-tasks-assign-project-id-label")
+            .control: .select.is-fullwidth: select(
+              class=classes
+              name="project_id"
+              required
+            )
+              - var selected = values.project_id == ""
+              option(value="" selected=selected) --
+              each project in projects
+                - var selected = project.id == values.project_id
+                option(value=project.id selected=selected)= project.name
+            if errors.project_id
+              p.help.is-danger= errors.project_id
+            p.help= _("pages-tasks-assign-project-id-help")
+
+          .field.is-grouped
+            .control: button.button.is-success(type="submit")
+              span.icon: i.fas.fa-tasks(aria-hidden="true")
+              span= _("pages-tasks-assign-submit")
+            .control
+              a.button(
+                href=url_for("tasks.display", id=task.id)
+                _="on click trigger closeModal then halt default"
+              )
+                span.icon: i.fas.fa-ban(aria-hidden="true")
+                span= _("pages-tasks-assign-cancel")

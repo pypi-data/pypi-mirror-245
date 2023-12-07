@@ -1,0 +1,110 @@
+//- Gertrude --- GTD done right
+//- Copyright © 2023 Tanguy Le Carrour <tanguy@bioneland.org>
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+nav.navbar(aria-label="main navigation")
+  .navbar-brand
+    a.navbar-item(href=url_for("aliases.index"))
+      img(src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="Bulma")
+
+    .navbar-item
+      if is_logged_in
+        a.button.is-link(
+          href=url_for("tasks.capture")
+          hx-get=url_for("tasks.capture")
+          hx-target="#modal"
+        )
+          span.icon: i.fas.fa-edit
+          span= _("activities-capture")
+      else
+        button.button.is-link(disabled)
+          span.icon: i.fas.fa-edit
+          span= _("activities-capture")
+
+    .navbar-burger(
+      role="button"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbar"
+      _="on click toggle .is-active on <.navbar-burger, .navbar-menu/>"
+    )
+      span(aria-hidden="true")
+      span(aria-hidden="true")
+      span(aria-hidden="true")
+
+  #navbar.navbar-menu
+    .navbar-start
+      - var target_url = url_for("tasks.inbox")
+      - var classes = "is-tab is-active" if current_url == target_url else ""
+      a.navbar-item(href=target_url class=classes)
+        span.icon: i.fas.fa-inbox
+        span= _("activities-clarify")
+
+      - var target_url = url_for("tasks.organize")
+      - var classes = "is-tab is-active" if current_url == target_url else ""
+      a.navbar-item(href=target_url class=classes)
+        span.icon: i.fas.fa-folder-open
+        span= _("activities-organize")
+
+      .navbar-item.has-dropdown.is-hoverable
+        - var target_url = url_for("tasks.waiting")
+        a.navbar-link(href=target_url)
+          span.icon: i.fas.fa-brain
+          span= _("activities-reflect")
+        .navbar-dropdown
+          - var target_url = url_for("tasks.waiting")
+          - var classes = "is-active" if current_url == target_url else ""
+          a.navbar-item(href=target_url class=classes)
+            span.icon: i.fas.fa-coffee
+            span= _("categories-waiting")
+          - var target_url = url_for("tasks.scheduled")
+          - var classes = "is-active" if current_url == target_url else ""
+          a.navbar-item(href=target_url class=classes)
+            span.icon: i.fas.fa-calendar
+            span= _("categories-scheduled")
+          - var target_url = url_for("tasks.someday")
+          - var classes = "is-active" if current_url == target_url else ""
+          a.navbar-item(href=target_url class=classes)
+            span.icon: i.fas.fa-umbrella
+            span= _("categories-someday")
+
+      .navbar-item.has-dropdown.is-hoverable
+        - var target_url = url_for("tasks.next")
+        a.navbar-link(href=target_url)
+          span.icon: i.fas.fa-thumbs-up
+          span= _("activities-engage")
+        .navbar-dropdown
+          - var target_url = url_for("tasks.next")
+          - var classes = "is-active" if current_url == target_url else ""
+          a.navbar-item(href=target_url class=classes)
+            span.icon: i.fas.fa-chevron-circle-right
+            span= _("categories-next")
+          - var target_url = url_for("projects.list")
+          - var classes = "is-active" if current_url == target_url else ""
+          a.navbar-item(href=target_url class=classes)
+            span.icon: i.fas.fa-tasks
+            span= _("categories-projects")
+
+    .navbar-end
+      .navbar-item
+        .buttons
+          if is_logged_in
+            button.button.is-danger(disabled)
+              span.icon: i.fas.fa-door-closed(aria-hidden="true")
+              span= _("pages-navbar-logout")
+          else
+            a.button.is-light(href=url_for("auth.login"))
+              span.icon: i.fas.fa-door-open(aria-hidden="true")
+              span= _("pages-navbar-login")

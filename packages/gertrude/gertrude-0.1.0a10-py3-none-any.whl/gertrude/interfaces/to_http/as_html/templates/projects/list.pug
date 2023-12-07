@@ -1,0 +1,50 @@
+//- Gertrude --- GTD done right
+//- Copyright © 2023 Tanguy Le Carrour <tanguy@bioneland.org>
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+extends layout
+
+block title
+  title= _("pages-projects-list-title")
+
+block content
+  section.section
+    .container
+      .is-pulled-right
+        a.button.is-link(href=url_for('projects.create'))
+          span.icon.is-small: i.fas.fa-plus(aria-hidden="true")
+          span= _("pages-projects-list-new")
+
+      h1.title= _("pages-projects-list-title")
+
+      if projects
+        .box
+          ul.list.has-hoverable-list-items.has-visible-pointer-controls
+            each project in projects
+              li.list-item
+                .list-item-content
+                  .list-item-title
+                    if project.short_name
+                      span.tag.is-info.is-light.mr-1= project.short_name
+                    span= project.name
+
+                .list-item-controls
+                  .buttons.is-right
+                    a.button(href=url_for("projects.display", id=project.id))
+                      span.icon.is-small: i.fas.fa-eye(aria-hidden="true")
+                      span= _("pages-projects-list-view")
+      else
+        article.message.is-info
+          .message-body: p= _("pages-projects-list-empty")
