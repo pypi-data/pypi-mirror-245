@@ -1,0 +1,16 @@
+raspberryrequest/__init__.py,sha256=Q-_8cGnJJnaO-L7emIT_HJPNvwBc_boNh0omI6B5COc,37
+raspberryrequest/backoff.py,sha256=CrlPm4U7JGUHZHrlcXoY30C-8ajbe93bijKJAtfNb-0,1494
+raspberryrequest/exceptions.py,sha256=odkXL_ODos30bsi5v99rgMMFxueP8mHeMp90WS2ortI,935
+raspberryrequest/main.py,sha256=do26Ql1dpjSBO213i3iCNLmffPTsHlSMn2hbNJkevUM,9541
+raspberryrequest/models.py,sha256=9JlM6AoGoCODY4GWUlqb4Vwf_PA7jQLXSLLL7WSTW5k,1689
+raspberryrequest/request.py,sha256=vAZK0uHrv-LrDguOYjrVyjYiP1FWVcyoIys-FGf8RZ8,1223
+raspberryrequest/validate.py,sha256=TJtBxwJPXOlRwf6mSaqZvUcVbC0qql0MusFCDZNf0Wc,2742
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_backoff.py,sha256=HDA3fe8l1MYduKdJoCHk0twc-W0baww2TzebtAqczsI,1636
+test/test_main.py,sha256=74DoReS1CXg0y1IN5dfntbtAAodobG3iLMPYhobT-R4,6961
+test/test_request.py,sha256=S__TGS1AkM4eVsSXPrcd4NJ0yqUWCNDQ6Iqkk3FSIMw,1667
+test/test_validate.py,sha256=jbgLXxrsCZtSIQr6Xj7OQGagokTUETibMOs4qLTXVmA,4035
+raspberryrequest-1.1.1.dist-info/METADATA,sha256=MbagKBfMjY_fRc1j1JRwqw1J2g3l6VialtSPGwJIhD4,251
+raspberryrequest-1.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+raspberryrequest-1.1.1.dist-info/top_level.txt,sha256=UcZKsDdZ0jALcYh6es24Yca0_n0n-YiHC3OFZqVfSjE,22
+raspberryrequest-1.1.1.dist-info/RECORD,,
