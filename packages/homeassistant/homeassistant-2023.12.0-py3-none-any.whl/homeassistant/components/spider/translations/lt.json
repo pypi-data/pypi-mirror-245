@@ -1,0 +1,23 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Slapta\u017eodis",
+                    "username": "Prisijungimos vardas"
+                },
+                "title": "Prisijunkite naudodami mijn.ithodaalderop.nl paskyr\u0105"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "power_consumption": {
+                "name": "Energijos s\u0105naudos"
+            },
+            "total_energy_today": {
+                "name": "Bendra energija \u0161iandien"
+            }
+        }
+    }
+}

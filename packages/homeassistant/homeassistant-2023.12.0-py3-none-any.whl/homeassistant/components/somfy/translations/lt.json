@@ -1,0 +1,12 @@
+{
+    "config": {
+        "abort": {
+            "no_url_available": "N\u0117ra URL. Nor\u0117dami gauti informacijos apie \u0161i\u0105 klaid\u0105, [\u017er. pagalbos skyri\u0173]( {docs_url} )"
+        },
+        "step": {
+            "pick_implementation": {
+                "title": "Pasirinkite autentifikavimo metod\u0105"
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti",
+            "timeout": "Baig\u0117si ry\u0161io u\u017emezgimo laikas"
+        },
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "\u201eEvil Genius Labs\u201c \u012frenginio pagrindinio kompiuterio pavadinimas arba IP adresas."
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Vieta jau sukonfig\u016bruota"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "destination": "Kelion\u0117s tikslas",
+                    "name": "Vardas"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "realtime": "Kelion\u0117s laikas realiuoju laiku?",
+                    "units": "Vienetai",
+                    "vehicle_type": "Transporto priemon\u0117s tipas"
+                },
+                "description": "\u201ePoeilut\u0117s\u201c \u012fvestis leis jums priversti integracij\u0105 naudoti konkret\u0173 mar\u0161rut\u0105 arba i\u0161vengti konkretaus mar\u0161ruto skai\u010diuojant kelion\u0117s laiku."
+            }
+        }
+    },
+    "selector": {
+        "region": {
+            "options": {
+                "au": "Australija",
+                "eu": "Europa",
+                "il": "Izraelis",
+                "na": "\u0160iaur\u0117s Amerika",
+                "us": "JAV"
+            }
+        },
+        "units": {
+            "options": {
+                "imperial": "Imperin\u0117 sistema",
+                "metric": "Metrin\u0117 sistema"
+            }
+        },
+        "vehicle_type": {
+            "options": {
+                "car": "Automobilis",
+                "motorcycle": "Motociklas",
+                "taxi": "Taksi"
+            }
+        }
+    },
+    "title": "\u201eWaze\u201c kelioni\u0173 laikas"
+}

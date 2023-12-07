@@ -1,0 +1,30 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u012erenginys jau sukonfig\u016bruotas"
+        },
+        "error": {
+            "cannot_authenticate": "Nepavyksta autentifikuoti, ar \u201eGateway\u201c yra suporuotas su kitu serveriu, pvz., \u201eHomekit\u201c?"
+        },
+        "step": {
+            "auth": {
+                "data": {
+                    "security_code": "Saugumo kodas"
+                },
+                "data_description": {
+                    "host": "J\u016bs\u0173 Tr\u00e5dfri \u0161liuzo pagrindinio kompiuterio pavadinimas arba IP adresas."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "aqi": {
+                "name": "Oro kokyb\u0117"
+            },
+            "filter_life_remaining": {
+                "name": "Liko filtravimo laikas"
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "config": {
+        "abort": {
+            "unknown_authorize_url_generation": "Ne\u017einoma klaida generuojant autorizavimo URL."
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "flow_impl": "Teik\u0117jas"
+                }
+            }
+        }
+    }
+}

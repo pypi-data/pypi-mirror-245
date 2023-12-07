@@ -1,0 +1,35 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Paskyra jau sukonfig\u016bruota"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "description": "Prisijunkite adresu {url} , kad rastum\u0117te savo kredencialus",
+                    "id": "ID",
+                    "secret": "Paslaptis"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "light": {
+                "name": "\u0160viesa"
+            },
+            "mold": {
+                "name": "Pel\u0117sis"
+            },
+            "radon": {
+                "name": "Radonas"
+            },
+            "virus_risk": {
+                "name": "Viruso rizika"
+            }
+        }
+    }
+}

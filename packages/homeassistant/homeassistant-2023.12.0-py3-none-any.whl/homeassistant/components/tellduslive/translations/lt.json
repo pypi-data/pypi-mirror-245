@@ -1,0 +1,33 @@
+{
+    "config": {
+        "abort": {
+            "unknown_authorize_url_generation": "Ne\u017einoma klaida generuojant autorizavimo URL."
+        },
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "Prieglobos serverio pavadinimas arba IP adresas, skirtas \u201eTellstick Net\u201c arba \u201eTellstick ZNet\u201c, skirtas vietinei API."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "dew_point": {
+                "name": "Rasos ta\u0161kas"
+            },
+            "uv": {
+                "name": "UV"
+            },
+            "wind_average": {
+                "name": "V\u0117jas vidutinis"
+            },
+            "wind_direction": {
+                "name": "V\u0117jo kryptis"
+            },
+            "wind_gust": {
+                "name": "V\u0117jo g\u016bsis"
+            }
+        }
+    }
+}

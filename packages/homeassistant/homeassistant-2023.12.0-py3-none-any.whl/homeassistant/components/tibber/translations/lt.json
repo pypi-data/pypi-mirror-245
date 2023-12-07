@@ -1,0 +1,12 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti"
+        },
+        "step": {
+            "user": {
+                "description": "\u012eveskite prieigos rakt\u0105 i\u0161 https://developer.tibber.com/settings/accesstoken"
+            }
+        }
+    }
+}

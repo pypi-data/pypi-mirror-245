@@ -1,0 +1,18 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Paslauga jau sukonfig\u016bruota",
+            "import_failed": "Nepavyko importuoti i\u0161 konfig\u016bracijos"
+        },
+        "error": {
+            "connection_refused": "Prisijungiant prie pagrindinio kompiuterio buvo atsisakyta prisijungti"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "certificate_expiry": {
+                "name": "Sertifikato galiojimo laikas"
+            }
+        }
+    }
+}

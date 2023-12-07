@@ -1,0 +1,32 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Paslauga jau sukonfig\u016bruota",
+            "cannot_connect": "Nepavyko prisijungti"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti"
+        },
+        "flow_title": "{host}",
+        "step": {
+            "hassio_confirm": {
+                "description": "Ar norite prisijungti prie priedo {addon} ?"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Slapta\u017eodis"
+                },
+                "description": "\u012eveskite teising\u0105 prieglobos slapta\u017eod\u012f: {host}"
+            },
+            "user": {
+                "data": {
+                    "name": "Vardas",
+                    "password": "Slapta\u017eodis"
+                },
+                "data_description": {
+                    "host": "J\u016bs\u0173 VLC medijos leistuvo pagrindinio kompiuterio pavadinimas arba IP adresas."
+                }
+            }
+        }
+    }
+}

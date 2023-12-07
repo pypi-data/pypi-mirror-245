@@ -1,0 +1,19 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Paslauga jau sukonfig\u016bruota"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "title": "Nustatykite sinchronizavimo integravim\u0105",
+                    "token": "Token",
+                    "verify_ssl": "Patikrinkite SSL sertifikat\u0105"
+                }
+            }
+        }
+    }
+}

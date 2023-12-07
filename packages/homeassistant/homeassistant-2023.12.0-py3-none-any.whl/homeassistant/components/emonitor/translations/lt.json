@@ -1,0 +1,22 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u012erenginys jau sukonfig\u016bruotas"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "confirm": {
+                "description": "Ar norite nustatyti {name} ( {host} )?",
+                "title": "Nustatykite \u201eSiteSage Emonitor\u201c."
+            },
+            "user": {
+                "data_description": {
+                    "host": "\u201eSiteSage Emonitor\u201c \u012frenginio pagrindinio kompiuterio pavadinimas arba IP adresas."
+                }
+            }
+        }
+    }
+}
