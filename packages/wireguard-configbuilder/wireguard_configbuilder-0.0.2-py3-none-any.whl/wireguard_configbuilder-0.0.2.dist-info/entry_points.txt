@@ -1,0 +1,2 @@
+[console_scripts]
+wireguard-configbuilder = configbuilder.app:main
