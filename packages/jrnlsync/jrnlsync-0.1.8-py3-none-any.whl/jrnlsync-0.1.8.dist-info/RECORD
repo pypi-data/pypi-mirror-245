@@ -1,0 +1,10 @@
+jrnlsync/__init__.py,sha256=Rf9Cyx5XdFKEPChaKQcjB8UiXDNOMoCq5VagFDs5X9s,118
+jrnlsync/__main__.py,sha256=Uhdz6vAiXAghvlV_wegaPshGw8UQ_5sjDE2ENFQ-Z2A,66
+jrnlsync/__version__.py,sha256=r6bMqlYbu714c-PuP4RoUuEJ2dnmr9nKh6LjvbL3PFE,123
+jrnlsync/config.py,sha256=wQmID6R-_zz44KqmBiE8e0Dp-Fb4A0myzwMS7tx8rBs,1246
+jrnlsync/sync.py,sha256=Non2NU-ZZ7v94UIYSQkmu2w9AiDklb4TvgqeXwnfo_k,1561
+jrnlsync-0.1.8.dist-info/METADATA,sha256=83m36WgIb_gRk6GvetGX9Otn53oZtuybMhjbJlxkDs0,1083
+jrnlsync-0.1.8.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+jrnlsync-0.1.8.dist-info/entry_points.txt,sha256=GHvgOw1aOwpgTH2irbEmz7POD7Os5iHmugrB2_2MuMM,48
+jrnlsync-0.1.8.dist-info/top_level.txt,sha256=T258rQYfNX4_Ca9Au0_44-SGMmORuhLbTGoJGk3PYi0,9
+jrnlsync-0.1.8.dist-info/RECORD,,
