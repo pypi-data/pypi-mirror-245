@@ -1,0 +1,8 @@
+geo_adjacency/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geo_adjacency/adjacency.py,sha256=bL6ErCwgtpvNu0XfgpQwCJ6RlK2M-vi-qx_veE1_0Rk,20844
+geo_adjacency/exception.py,sha256=zZNdBOm5LpuiCpNuqH1FNLhiPnQqyCyuhOTMBDnLSTQ,230
+geo_adjacency/utils.py,sha256=57Q-nRZQlW1QetlLoucbDr1jm3CRHYRCVzrarm7xxZw,4188
+geo_adjacency-1.1.2.dist-info/LICENSE,sha256=p0PMGdB2iuOndKPbBCVhTNe9TMIxZRpJ64bQ_CoUIqY,1065
+geo_adjacency-1.1.2.dist-info/METADATA,sha256=fpHyeHH726bndsYxfE_CWAtJLmBN9MlN3lFiraRX8PA,3857
+geo_adjacency-1.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+geo_adjacency-1.1.2.dist-info/RECORD,,
