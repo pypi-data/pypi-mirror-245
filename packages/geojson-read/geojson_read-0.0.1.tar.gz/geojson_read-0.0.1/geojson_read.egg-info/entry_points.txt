@@ -1,0 +1,2 @@
+[console_scripts]
+geojson_read = geojson_read:main

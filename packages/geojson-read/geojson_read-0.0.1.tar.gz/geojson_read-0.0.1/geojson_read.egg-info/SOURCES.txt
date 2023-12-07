@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+geojson_read.egg-info/PKG-INFO
+geojson_read.egg-info/SOURCES.txt
+geojson_read.egg-info/dependency_links.txt
+geojson_read.egg-info/entry_points.txt
+geojson_read.egg-info/requires.txt
+geojson_read.egg-info/top_level.txt
