@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+bimms/__init__.py
+bimms.egg-info/PKG-INFO
+bimms.egg-info/SOURCES.txt
+bimms.egg-info/dependency_links.txt
+bimms.egg-info/requires.txt
+bimms.egg-info/top_level.txt
