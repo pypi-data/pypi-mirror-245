@@ -1,0 +1,3 @@
+[console_scripts]
+launchkit = launchkit.cli:app
+
