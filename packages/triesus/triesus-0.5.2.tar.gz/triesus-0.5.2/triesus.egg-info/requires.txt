@@ -1,0 +1,4 @@
+ortools>9.7
+
+[:python_version > "3.7"]
+importlib-metadata
