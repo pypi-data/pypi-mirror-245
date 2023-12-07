@@ -1,0 +1,5 @@
+ce_tables
+dist
+docs
+soulsgym
+tests
