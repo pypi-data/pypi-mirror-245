@@ -1,0 +1,9 @@
+skyfield
+pandas
+matplotlib
+tabulate
+scipy
+ttkwidgets
+pyperclip
+geomag
+ttkbootstrap
