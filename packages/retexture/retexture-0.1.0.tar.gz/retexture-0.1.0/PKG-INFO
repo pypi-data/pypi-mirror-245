@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: retexture
+Version: 0.1.0
+Summary: ReTexture dataset toolkit for generation and analysis
+Home-page: https://github.com/mhyatt000/retexture
+Author: Matt Hyatt
+Author-email: Matthew Hyatt <mhyatt000@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Matthew Hyatt
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/mhyatt000/retexture
+Keywords: keyword1,keyword2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm>=4.74.0
+Requires-Dist: numpy>=1.23.5
+Requires-Dist: hydra-core<1.2
+
+# retexture
+using blender to augment 3d model textures
+
+<table>
+  <tr>
+    <td><img src="assets/output1.gif" alt="" width="400"/></td>
+    <td><img src="assets/output2.gif" alt="" width="400"/></td>
+  </tr>
+  <tr>
+    <td><img src="assets/output3.gif" alt="" width="400"/></td>
+    <td><img src="assets/output4.gif" alt="" width="400"/></td>
+  </tr>
+</table>
+
+## Installation
+
+1. clone the repo (more instructions later)
+2. `pip install -r requirements.txt`
+
+### Installing blender
+
+* MacOS: `brew install blender`
+* Unix: `apt-get install blender`
+
+### Install via script
+
+see `./install.sh`
+
+## Dataset Setup
+
+place all models in `datasets/models` and place textures in `datasets/textures` like so:
+
+```
+datasets
+├── models
+│   ├── bird1.dae
+│   ├── bird_duck.dae
+│   ├── bird_duck2.dae
+│   ├── bird_eagle.dae
+│   ├── bird_raven.dae
+│   ├── butterfly.dae
+│   ├── butterfly1.dae
+│   ...
+├── datasets/textures
+│   ├── _fish_bass
+│   │   ├── Sketchy_Lines_Wavy_45_A.jpg
+│   │   ├── __Chalk_1.jpg
+│   │   ├── __Sketchy_Scales_1.jpg
+│   │   ├── __Wavy_Lines_45deg_A_1.jpg
+│   │   ├── material_1.jpg
+│   │   ├── material_2.jpg
+│   │   ├── material_3.jpg
+│   │   └── material_5.jpg
+│   ├── bird_duck
+│   │   └── mallard_male1.jpg
+│   ├── bird_duck2
+│   │   └── Color_000.JPG
+│   ...
+```
+
+## Run
+
+`./run.sh`
+
+TODO:
+* `./run.sh <config>`
+
+## NOTES
+
+gpu rendering does not work (easily)
+* in the current state, a black image is created
+* blender provides lower level gpu support... see [docs](https://docs.blender.org/api/current/gpu.html)
+
+external libraries arediscouraged
+* blender uses its own python distro & environment
+* used sys.path.insert as a workaround
+* custom packages do not work with blender (TBD)
+
+argparse conflicts with blender commandline arguments
+* hydra also conflicts
+* might be better to nix the configurations or read statically from a config.yaml
+
+memory required increases with job runtime
+* maybe blender keeps a history of all operations?
+* consider splitting jobs into batches
+
+## Problems
+
+- bounding box centering doesnt work
