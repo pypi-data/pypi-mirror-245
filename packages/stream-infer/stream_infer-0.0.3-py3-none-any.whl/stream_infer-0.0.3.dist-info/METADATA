@@ -1,0 +1,514 @@
+Metadata-Version: 2.1
+Name: stream-infer
+Version: 0.0.3
+Summary: Real-time/offline analytics framework for video and streaming media
+Author-email: ZaiGie <jokerwho@yeah.net>
+License: Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: Homepage, https://github.com/zaigie/stream_infer
+Project-URL: Repository, https://github.com/zaigie/stream_infer
+Classifier: Typing :: Typed
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python <5,>=4.8.1.0
+Requires-Dist: imageio >=2.9.0
+Requires-Dist: imageio-ffmpeg >=0.4.7
+Requires-Dist: loguru >=0.6.0
+
+# Stream Infer
+
+<p align="left">
+   <strong>English</strong> | <a href="./README.zh.md">简体中文</a>
+</p>
+
+Stream Infer is a Python library designed for stream inference in video processing applications. It contains modular components for video frame generation, inference algorithms, and result exportation.
+
+## Installation
+
+```bash
+pip install stream-infer
+```
+
+## Quick Start
+
+Here is a simple example of Stream Infer to help you get started:
+
+```python
+from stream_infer import Inference, FrameTracker, TrackerManager, Player
+from stream_infer.algo import BaseAlgo
+from stream_infer.exporter import BaseExporter
+from stream_infer.producer import PyAVProducer
+from stream_infer.log import logger
+
+import time
+
+class ExampleAlgo(BaseAlgo):
+    def init(self):
+        logger.info(f"{self.name} initialized")
+
+    def run(self, frames):
+        logger.debug(f"{self.name} starts inferring {len(frames)} frames")
+        time.sleep(0.3)
+        result = {"name": self.name}
+        logger.debug(f"{self.name} inference completed: {result}")
+        return result
+
+class Exporter(BaseExporter):
+    def send(self):
+        if len(self.results) == 0:
+            return
+        logger.debug(self.results[-1])
+
+INFER_FRAME_WIDTH = 1920
+INFER_FRAME_HEIGHT = 1080
+OFFLINE = False
+
+video = "/path/to/your/video.mp4"
+play_fps = 30
+
+producer = PyAVProducer(INFER_FRAME_WIDTH, INFER_FRAME_HEIGHT)
+exporter = Exporter()
+
+if __name__ == "__main__":
+    frame_tracker = FrameTracker() if OFFLINE else TrackerManager().create()
+
+    inference = Inference(frame_tracker, exporter)
+    inference.load_algo(ExampleAlgo(), frame_count=1, frame_step=play_fps, interval=1)
+    inference.load_algo(ExampleAlgo("emotion"), 5, 6, 60)
+
+    player = Player(producer, frame_tracker, video)
+    inference.start(player, fps=play_fps, is_offline=OFFLINE)
+```
+
+## Features and Concepts
+
+### Real-time Inference
+
+![Time Sequence](./docs/img/real-time.png)
+
+Real-time inference refers to inputting a video or stream, where the video or stream plays at normal real-time speed, adding frames to the frame track. The playback process and the inference process are independent. Since inference will take a certain amount of time, it will cause more or less delay in results, but it will not cause memory leakage or pile-up.
+
+### Offline Inference
+
+**Good performance**
+
+![](./docs/img/offline_good.png)
+
+**Poor performance**
+
+![](./docs/img/offline_bad.png)
+
+Offline inference refers to inputting a video (streams are not applicable here), processing at the speed the current computer can handle. Frame fetching and inference are interleaved. Since inference will take a certain amount of time, depending on the machine performance, the total runtime of the process may be longer or shorter than the video duration.
+
+## Modules
+
+![Flow](./docs/img/flow.svg)
+
+### Step1. BaseAlgo
+
+We simply encapsulate and abstract all algorithms into classes with `init()` and `run()` functions, which is what BaseAlgo is.
+
+Even though Stream Infer provides a framework about stream inference, the actual algorithm still needs to be written by yourself. After writing it, inherit the BaseAlgo class for unified encapsulation and calling.
+
+For example, you have completed a head detection algorithm, and the inference call is:
+
+```python
+# https://modelscope.cn/models/damo/cv_tinynas_head-detection_damoyolo/summary
+from modelscope.pipelines import pipeline
+from modelscope.utils.constant import Tasks
+
+model_id = 'damo/cv_tinynas_head-detection_damoyolo'
+input_location = 'https://modelscope.oss-cn-beijing.aliyuncs.com/test/images/image_detection.jpg'
+
+head_detection = pipeline(Tasks.domain_specific_object_detection, model=model_id)
+result = head_detection(input_location)
+print("result is : ", result)
+```
+
+To perform stream inference of this algorithm in videos and streaming media, encapsulate it like this:
+
+```python
+from stream_infer.algo import BaseAlgo
+
+class HeadDetectionAlgo(BaseAlgo):
+    def init(self):
+        self.model_id = 'damo/cv_tinynas_head-detection_damoyolo'
+        self.head_detection = pipeline(Tasks.domain_specific_object_detection, model=model_id)
+
+    def run(self, frames):
+        return self.head_detection(frames)
+```
+
+This way, you have completed the encapsulation and can normally call it in the future.
+
+### Step2. Exporter
+
+Exporter is used to collect inference results, making it easy to collect data such as algorithm names, results, and times.
+
+Currently, only BaseExporter is implemented. More like RedisExporter, TDEngineExporter, MySQLExporter, etc., will be developed soon.
+
+Here is the simple source code of BaseExporter and an implementation called PrintExporter:
+
+```python
+class BaseExporter:
+    def __init__(self):
+        self.results = []
+
+    def collect(self, inference_result):
+        if inference_result is not None:
+            self.results.append(inference_result)
+
+    def send(self, *args, **kwargs):
+        raise NotImplementedError
+
+    def send_all(self):
+        for result in self.results:
+            self.send(result)
+
+    def clear(self):
+        self.results.clear()
+
+
+class PrintExporter(BaseExporter):
+    def send(self):
+        if len(self.results) == 0:
+            return
+        print(self.results[-1])
+```
+
+After printing, you will get the last inference result. The structure of `inference_result` is `(current_time, algo_instance.name, result)`
+
+### Step3. Producer
+
+Producer loads videos or streaming media in different ways, such as PyAV, FFmpeg, ImageIO, etc., and adjusts or transforms the frames in terms of width, height, and color space, finally returning each frame as a numpy array.
+
+Instantiating a Producer often requires inputting the frame width, height, and color space needed for inference, with color defaulting to BGR24.
+
+```python
+from stream_infer.producer import PyAVProducer
+
+producer = PyAVProducer(1920, 1080)
+```
+
+### Step4. FrameTracker
+
+FrameTracker can be understood as a frame track, supporting caching the latest frames into a queue, with a settable queue `max_size` (default is 120 frames).
+
+At the same time, FrameTracker also assumes the responsibility of obtaining the current playback time based on fps and the current frame.
+
+It should be noted that real-time and offline are two different operating modes. In real-time operation, the producer and inference are not in the same process and belong to a multi-process environment. Both the producer and inference need to access the same FrameTracker object. Therefore, when you need to run stream inference in real-time, you need to create a FrameTracker object through TrackerManager, rather than instantiating it directly through FrameTracker.
+
+```python
+from stream_infer import FrameTracker, TrackerManager
+
+# In an offline environment
+frame_tracker = FrameTracker()
+
+# In a real-time environment
+frame_tracker = TrackerManager().create(max_size=150)
+```
+
+### Step5. Inference
+
+Inference is the core of this framework, implementing functions such as loading algorithms and running inference.
+
+An Inference object requires input of the FrameTracker object (for frame fetching) and the Exporter object (for collection).
+
+```python
+from stream_infer import Inference
+inference = Inference(frame_tracker, exporter)
+```
+
+When you need to load algorithms, here's an example from Step1:
+
+```python
+from anywhere_algo import HeadDetectionAlgo, AnyOtherAlgo
+
+...
+
+inference = Inference(frame_tracker, exporter)
+inference.load_algo(HeadDetectionAlgo("head"), frame_count=1, frame_step=fps, interval=1)
+inference.load_algo(AnyOtherAlgo("other"), 5, 6, 60)
+```
+
+Here, we can specify a name for HeadDetectionAlgo, used to identify the running algorithm name (needed when collecting with Exporter and to avoid duplication). Also note the parameters:
+
+- frame_count: The number of frames the algorithm needs to fetch, which is also the number of frames finally received in the `run()` function.
+- frame_step: Indicates that for every `frame_step`, 1 frames are fetched, a total of 'frame_count' frames. If this parameter is filled with fps, it means that the last `frame_count` frames per second are fetched.
+- interval: The frequency of algorithm invocation, like the above `AnyOtherAlgo` which will only be called once a minute.
+
+### Step6. Player & run
+
+Player inputs the producer, frame tracker, and video/streaming media address for playback and inference.
+
+A Player requires the above parameters.
+
+```python
+from stream_infer import Player
+player = Player(producer, frame_tracker, video)
+```
+
+Having loaded the algorithms, with a collector, frame track, and player, you can start running the inference.
+
+In fact, you generally **do not** execute the code for running inference in the Quick Start in actual production development:
+
+```python
+# !!! Do not use in actual production development
+inference.start(player, fps=play_fps, is_offline=OFFLINE)
+```
+
+It combines the offline and real-time running methods, but this is not quite correct, as we often need to debug or handle other tasks during the run. Let's take a look at the source code of the `start()` function.
+
+```python
+def start(self, player, fps: int = None, is_offline: bool = False):
+    """
+    Easy to use function to start inference with realtime mode.
+    """
+    if is_offline:
+        for _, current_frame in player.play(fps):
+            self.auto_run_specific_inference(player.fps, current_frame)
+    else:
+        player.play_realtime(fps)
+        while player.is_active():
+            self.run_inference()
+```
+
+From this, we can easily extract the key functions for real-time and offline operation.
+
+#### Real-time Operation
+
+```python
+player.play_realtime(fps)
+while player.is_active():
+    print(player.get_current_time_str())
+    self.run_inference()
+    print(exporter.send())
+    # Other action
+```
+
+#### Offline Operation
+
+```python
+for _, current_frame in player.play(fps):
+    self.auto_run_specific_inference(player.fps, current_frame)
+    print(exporter.send())
+    # Other action
+```
+
+## License
+
+Stream Infer is licensed under the [Apache License](LICENSE).
