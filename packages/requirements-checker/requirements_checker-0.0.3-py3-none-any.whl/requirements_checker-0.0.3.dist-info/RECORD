@@ -1,0 +1,10 @@
+requirements_checker/__init__.py,sha256=PM22FDVlEb6qvAMgNsD_YvCEgOfipJQqFAnWDPuYt_U,98
+requirements_checker/check_requirements_txt.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requirements_checker/check_string.py,sha256=umltP3ZRhNRqX0tpG1KkEFx4l01vFtGX0FTSPnOxE80,7682
+requirements_checker/check_version.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requirements_checker/main.py,sha256=u6yPBC6QEmr5YsOzdE13fuFhnDTL7OfzYsasnwzZ6NY,3470
+requirements_checker-0.0.3.dist-info/LICENSE,sha256=BUWiayi7RqcCCQGoo6Mms531bDS9you-qasSm4FOlHE,1082
+requirements_checker-0.0.3.dist-info/METADATA,sha256=CWj_o8Yh2afoxJ2ms0_pTpxrs_QqsFOuRsRQpNDGoSk,1629
+requirements_checker-0.0.3.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+requirements_checker-0.0.3.dist-info/top_level.txt,sha256=iLkhg5nJWrbLL3weVTsXIHsk5IyJwbvlXvLO9pdzb4E,21
+requirements_checker-0.0.3.dist-info/RECORD,,
