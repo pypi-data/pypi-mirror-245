@@ -1,0 +1,7 @@
+click>=8.1.6
+dateparser
+traktexport>=0.1.7
+
+[testing]
+flake8
+mypy
