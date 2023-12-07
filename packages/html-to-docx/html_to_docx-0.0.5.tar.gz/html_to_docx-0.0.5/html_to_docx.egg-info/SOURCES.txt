@@ -1,0 +1,6 @@
+pyproject.toml
+setup.py
+html_to_docx.egg-info/PKG-INFO
+html_to_docx.egg-info/SOURCES.txt
+html_to_docx.egg-info/dependency_links.txt
+html_to_docx.egg-info/top_level.txt
