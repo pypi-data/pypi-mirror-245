@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: process-nitta
+Version: 0.0.6
+Summary: process experimental data
+Project-URL: Homepage, https://github.com/nitta-lab-polymer/process-nitta
+Project-URL: Issues, https://github.com/nitta-lab-polymer/process-nitta/issues
+Author-email: Kamono Makoto <chengyaye31@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Requires-Dist: pydantic
+Description-Content-Type: text/markdown
+
+# process-nitta
+
+実験データの解析ライブラリ
