@@ -1,0 +1,2 @@
+[console_scripts]
+fpl-convert-xml = fprime_fpl_convert_xml.__main__:main
