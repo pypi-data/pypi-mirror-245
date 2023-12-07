@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+janus/__init__.py
+janus/_find_swipl.py
+janus/hash.c
+janus/janus.c
+janus/janus.pl
+janus/janus.py
+janus/janus_swi.py
+janus/mod_swipl.c
+janus_swi.egg-info/PKG-INFO
+janus_swi.egg-info/SOURCES.txt
+janus_swi.egg-info/dependency_links.txt
+janus_swi.egg-info/top_level.txt
