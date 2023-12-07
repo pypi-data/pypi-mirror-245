@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+modelsonic/__init__.py
+modelsonic/client.py
+modelsonic/enums.py
+modelsonic/models.py
+python_modelsonic.egg-info/PKG-INFO
+python_modelsonic.egg-info/SOURCES.txt
+python_modelsonic.egg-info/dependency_links.txt
+python_modelsonic.egg-info/requires.txt
+python_modelsonic.egg-info/top_level.txt
