@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+oncalendar/__init__.py
+oncalendar/py.typed
+oncalendar.egg-info/PKG-INFO
+oncalendar.egg-info/SOURCES.txt
+oncalendar.egg-info/dependency_links.txt
+oncalendar.egg-info/not-zip-safe
+oncalendar.egg-info/top_level.txt
