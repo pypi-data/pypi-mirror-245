@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: qurpc
+Version: 2.2.8
+Summary: RPC for QuLab
+Author-email: feihoo87 <feihoo87@gmail.com>
+Maintainer-email: feihoo87 <feihoo87@gmail.com>
+License: GPLv3
+Project-URL: Homepage, https://github.com/feihoo87/qurpc
+Project-URL: Bug Reports, https://github.com/feihoo87/qurpc/issues
+Project-URL: Source, https://github.com/feihoo87/qurpc/
+Keywords: RPC,QuLab
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: msgpack >=1.0.4
+Requires-Dist: numpy >=1.22.4
+Requires-Dist: pyzmq >=23.2.0
+
+# qurpc
+RPC for QuLab

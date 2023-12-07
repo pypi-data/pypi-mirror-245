@@ -1,0 +1,2 @@
+[console_scripts]
+qurpc = qurpc.__main__:main
