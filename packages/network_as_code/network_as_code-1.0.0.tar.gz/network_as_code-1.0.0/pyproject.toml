@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "network_as_code"
+version = "1.0.0"
+description = ""
+authors = ["Sami Lahtinen <sami.lahtinen@nokia.com>", "Pavel Garmuyev <pavel.garmuyev@nokia.com>"]
+packages = [
+    { include = "network_as_code" },
+]
+license = "Apache-2.0"
+
+[[tool.poetry.source]]
+name = "internal"
+url = "https://repo.lab.pl.alcatel-lucent.com/api/pypi/python/simple/"
+priority = "default"
+
+[[tool.poetry.source]]
+name = "extra"
+url = "https://artifactory-espoo1.int.net.nokia.com/artifactory/api/pypi/hybrid-pypi-local/simple"
+priority = "supplemental"
+
+[tool.pyright]
+include = ["network_as_code"]
+exclude = ["**/__pycache__", "**/.pytest_cache", "**/.*"]
+pythonVersion = "^3.9"
+pythonPlatform = "Linux"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = {extras = ["email"], version = "^1.10.2"}
+httpx = "^0.24.1"
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.271"
+pytest-asyncio = "^0.19.0"
+pytest-xdist = "^2.5.0"
+pdoc = "^13.0.0"
+pytest = "^7.2.2"
+pytest-cov = "^4.0.0"
+black = "^23.1.0"
+pyyaml = "^6.0"
+python-dotenv = "^0.19.2"
+pytest-env = "^0.8.2"
+pytest-httpx = "^0.23.1"
+pip-audit = "^2.6.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+norecursedirs = "binding_generation"
+testpaths = [
+    "tests",
+    #"integration_tests"
+]
+xfail_strict = true
+
+
+
