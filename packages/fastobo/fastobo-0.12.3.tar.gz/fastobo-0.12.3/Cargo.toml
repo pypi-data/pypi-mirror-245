@@ -1,0 +1,53 @@
+[workspace]
+members = ["derive"]
+
+[package]
+name = "fastobo-py"
+version = "0.12.3"
+authors = ["Martin Larralde <martin.larralde@embl.de>"]
+license = "MIT"
+publish = false
+build = "src/build.rs"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "fastobo_py"
+doctest = false
+
+[[test]]
+name = "unittest"
+path = "tests/unittest.rs"
+harness = false
+
+[dev-dependencies]
+lazy_static = "1.4.0"
+
+[build-dependencies.built]
+version  = "0.5.1"
+features = ["chrono"]
+
+[dependencies]
+libc = "0.2.70"
+pyo3-built = "0.4.6"
+[dependencies.pyo3]
+version = "0.19.2"
+[dependencies.fastobo]
+version = "0.15.1"
+features = ["threading", "smartstring"]
+[dependencies.fastobo-graphs]
+version = "0.4.8"
+features = ["obo"]
+[dependencies.fastobo-owl]
+version = "0.2.1"
+[dependencies.horned-owl]
+version = "0.11.0"
+[dependencies.horned-functional]
+version = "0.4.0"
+[dependencies.fastobo-py-derive-internal]
+version = "0.12.3"
+path = "./derive"
+
+[features]
+default = []
+extension-module = ["pyo3/extension-module"]
+nightly = ["pyo3/nightly"]
