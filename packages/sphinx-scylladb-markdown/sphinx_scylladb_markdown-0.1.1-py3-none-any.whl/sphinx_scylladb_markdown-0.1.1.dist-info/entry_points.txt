@@ -1,0 +1,2 @@
+[console_scripts]
+sphinx-scylladb-markdown = sphinx_scylladb_markdown:main
