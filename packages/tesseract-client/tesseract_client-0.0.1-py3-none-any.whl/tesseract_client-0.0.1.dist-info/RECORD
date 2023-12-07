@@ -1,0 +1,15 @@
+tesseract/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tesseract/api_manager.py,sha256=97ev2Duk6ZE4cq6W4IEuQkHwr0-PXZjT7qXh_Gyip8I,4177
+tesseract/chunk.py,sha256=RKMqJK-C2SkrVG5lJHaft-ERAe8g9qSqMcca7MD3j5U,202
+tesseract/db_manager.py,sha256=i7yeXyCmbzWqbabNoIQkES6Xtwbn-_sTaR7xwChgzto,3173
+tesseract/file.py,sha256=0EDF_ICG05traNQ1B0SZM3han8nasEOSdG8UXMaP52E,3124
+tesseract/main.py,sha256=PR8wcyy1lcahJVA7-sT_5er5wAjL69s4WMR6Z55MMBU,2515
+tesseract/monitoring.py,sha256=mJBrLr5asvXRh1vMgXVHQxscwuPUV_jO3eOFVgsgXJ0,703
+tesseract/services.py,sha256=4xPo4RICjtsyGteyYmocaJxx4DmPsBKypGKFEFNb234,4589
+tesseract/settings.py,sha256=EaKfNGUF83mpTwx-lWkMaek6vQL7FWRjrPYfTM_6NNg,971
+tesseract_client-0.0.1.dist-info/LICENSE,sha256=dkKm4aTbnDkC7kv8Pq45LpJlnkPoNCWnYMOo5oEsRC0,1059
+tesseract_client-0.0.1.dist-info/METADATA,sha256=I9ZifxkFUihg6Zp88fGJsH9Xd0xD_33jPnIgd2Dscq0,1002
+tesseract_client-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tesseract_client-0.0.1.dist-info/entry_points.txt,sha256=8EjoIm5AIDVTM3eB-Pvh5Pxm1J9FgyF-qckdKkmLNQQ,50
+tesseract_client-0.0.1.dist-info/top_level.txt,sha256=q1iuQze2tRHNnKxd8hyfkDbkrz6RHFbHJd8Pm9X4qOI,10
+tesseract_client-0.0.1.dist-info/RECORD,,
