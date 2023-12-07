@@ -1,0 +1,29 @@
+[tool.poetry]
+authors = ["SaitoTsutomu <tsutomu7@hotmail.co.jp>"]
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python",
+  "Topic :: Software Development",
+  "Topic :: Scientific/Engineering",
+]
+description = "`unionfind` is a package for unionfind."
+homepage = "https://github.com/SaitoTsutomu/unionfind"
+license = "Apache-2.0"
+name = "unionfind"
+readme = "README.rst"
+version = "0.1.1"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11"
+flake8 = "^6.1"
+isort = "^5.12"
+mypy = "^1.7"
+pytest = "^7.4"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
