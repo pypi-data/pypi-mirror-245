@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+datasette_chronicle/__init__.py
+datasette_chronicle.egg-info/PKG-INFO
+datasette_chronicle.egg-info/SOURCES.txt
+datasette_chronicle.egg-info/dependency_links.txt
+datasette_chronicle.egg-info/entry_points.txt
+datasette_chronicle.egg-info/requires.txt
+datasette_chronicle.egg-info/top_level.txt
+datasette_chronicle/templates/disable-chronicle.html
+datasette_chronicle/templates/enable-chronicle.html
+tests/test_chronicle.py

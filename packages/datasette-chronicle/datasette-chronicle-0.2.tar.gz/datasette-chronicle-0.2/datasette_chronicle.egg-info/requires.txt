@@ -1,0 +1,7 @@
+datasette
+sqlite-chronicle>=0.2.1
+
+[test]
+pytest
+pytest-asyncio
+sqlite-utils
