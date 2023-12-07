@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+SM8relind.egg-info/PKG-INFO
+SM8relind.egg-info/SOURCES.txt
+SM8relind.egg-info/dependency_links.txt
+SM8relind.egg-info/requires.txt
+SM8relind.egg-info/top_level.txt
+lib8relind/__init__.py
