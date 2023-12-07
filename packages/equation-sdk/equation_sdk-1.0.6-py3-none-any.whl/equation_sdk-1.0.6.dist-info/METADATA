@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: equation-sdk
+Version: 1.0.6
+Summary: Python SDK for equationconnect.com
+Home-page: https://github.com/Ieshaj/equation-sdk
+Author: Ieshaj
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.27.1
+Requires-Dist: packaging >=21.2
+
+# 🌞 equation-sdk
+## A python 3 library to interact with Equation Devices.
+
+
+`equation-sdk` is a Python 3 library for the Equation HomeAssistant integration via a REST API.
+
+* [Installation](#Installation)
+* [Supported devices] (#supported-devices)
+
+
+## Installation
+```bash
+pip install equation-sdk
+```
+
+## Supported devices
+Currently supported devices include:
+* Hera radiators
+
+## Contributions used
+* Portions from https://github.com/tggm/rointe-sdk
+* Portions from https://github.com/AndreMiras/equation-connect.js
