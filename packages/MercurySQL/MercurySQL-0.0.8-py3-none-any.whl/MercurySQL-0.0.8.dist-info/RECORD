@@ -1,0 +1,10 @@
+MercurySQL/__init__.py,sha256=_ms5d22WrC3_j5570Ytt3zFTe6XEJdJ6XBisJvEGMPw,703
+MercurySQL/core.py,sha256=OQOJT_jCtAp2OjSrl-WATs1QLSYzP9fJRFZ9cUcFapI,26725
+MercurySQL/drivers/__init__.py,sha256=B5LCVGljwOqXjgP8-kKxynzH4fBjib5fYXdbRWkHLv8,21
+MercurySQL/drivers/example.py,sha256=r1GfzSVbt-BUNdRT1rVlQVuCpZmlI17CeijX5fjaqNQ,16613
+MercurySQL/drivers/sqlite.py,sha256=KkkwXGWrWC2yNHj9QwHY5SzPVkcYfWy9lkOH1WA7EKE,5755
+MercurySQL-0.0.8.dist-info/LICENSE,sha256=oBlTk5I1qahLfAwlD4uAI6V1M6p248oHDnyL6ug0Q8w,1070
+MercurySQL-0.0.8.dist-info/METADATA,sha256=xdV7x1Lu0IrDFX44DdZIBOsAWm1I8yTuzR-3XPfSLIQ,4442
+MercurySQL-0.0.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+MercurySQL-0.0.8.dist-info/top_level.txt,sha256=gosawaXmX5M7R5V3o4e7mAoNzqp3Y2Dq0rCVnkifwnw,11
+MercurySQL-0.0.8.dist-info/RECORD,,
