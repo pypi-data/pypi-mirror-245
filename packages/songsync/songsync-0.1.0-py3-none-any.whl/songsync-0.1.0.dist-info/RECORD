@@ -1,0 +1,9 @@
+songsync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+songsync/lang_helpers.py,sha256=VqdUdj0G1T1gs46o4qvjJ_ALxV-c00OF2iQ1A--fMc0,2612
+songsync/songsync.py,sha256=HlLQrM7dDp6D-rH_CYFHgv6HWbjgNsHjW422PRw5uAY,838
+songsync/sp_helpers.py,sha256=LNxx0bGCrxLel-TfxQAsE_3e1vKa1QLpndQj97Y6bWg,5491
+songsync/yt_helpers.py,sha256=YiIkXSexuK8BHgqzKlQQhJQM8D6wM3S4cfqZ_RvLvKY,810
+songsync-0.1.0.dist-info/LICENSE,sha256=agDCq4uZkfbhzrpKIGCQ6OcpGaldy1x4cqp6NfykQ-c,1062
+songsync-0.1.0.dist-info/METADATA,sha256=w23Y74jEv4eTuwEUn4xjetrmNqgQn2ip7v4Q28RyYN4,2586
+songsync-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+songsync-0.1.0.dist-info/RECORD,,
