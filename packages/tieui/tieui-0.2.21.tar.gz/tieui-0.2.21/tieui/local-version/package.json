@@ -1,0 +1,22 @@
+{
+  "name": "electron-react-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "react-start": "cd material-kit-react && npm run dev",
+    "react-build": "cd material-kit-react && npm run build",
+    "react-test": "cd material-kit-react && npm test",
+    "react-eject": "cd material-kit-react && npm run eject"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.1.3"
+  },
+  "dependencies": {
+    "electron-is-dev": "^2.0.0"
+  }
+}
