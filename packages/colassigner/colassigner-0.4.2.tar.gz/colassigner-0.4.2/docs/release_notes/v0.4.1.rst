@@ -1,0 +1,4 @@
+v0.4.1
+---------------------
+
+minor extension and simplification
