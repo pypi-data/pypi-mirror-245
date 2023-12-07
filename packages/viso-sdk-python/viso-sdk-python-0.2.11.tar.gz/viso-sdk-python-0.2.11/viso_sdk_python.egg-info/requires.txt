@@ -1,0 +1,8 @@
+requests
+requests-toolbelt
+setuptools
+paho-mqtt
+redis
+opencv-contrib-python~=4.6.0
+Pillow
+cython~=3.0.2

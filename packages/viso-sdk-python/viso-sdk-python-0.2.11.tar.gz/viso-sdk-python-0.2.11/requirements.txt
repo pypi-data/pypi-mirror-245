@@ -1,0 +1,12 @@
+networkx
+requests
+requests-toolbelt
+setuptools~=69.0.2
+responses~=0.24.1
+paho-mqtt
+redis~=5.0.1
+cython~=3.0.2
+Pillow
+numpy~=1.26.2
+opencv-contrib-python~=4.6.0
+opencv-python-headless<4.3
