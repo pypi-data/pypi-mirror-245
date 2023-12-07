@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+  "twine",
+  "setuptools"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mistune_jira"
+version = "2023.12.6.0"
+authors = [
+    {name = "Chris Halbersma", email = "chris@halbersma.us"},
+]
+description = "A mostly functional plugin for mistune to render Jira's markup language"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["mistune", "jira", "atlassian"]
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "mistune",
+]
+
+[options]
+packages = ["mistune_jira"]
