@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+
+if __name__ == "__main__":
+
+    from cryobf.cryobf import CryoBfFile
+    import glob
+    from pathlib import Path
+
+    from argparse import ArgumentParser
+    from pprint import pprint as pp
+
+    parser = ArgumentParser()
+    parser.add_argument("file", type=Path, help="A .bf file or a directory with .bf files.")
+    parser.add_argument("-l", dest="list", action="store_true", help="A flag to list the contents of FILE.")
+    parser.add_argument("-e", dest="extract", action="store_true", help="A flag to extract the contents of FILE.")
+    parser.add_argument("-o", dest="output_base_dir", type=Path, default=Path(), help="The output base directory where to extract to, defaults to current working directory.")
+    args = parser.parse_args()
+
+    if args.file.is_file():
+        cf = CryoBfFile(filepath=args.file)
+        print(cf.file_version)
+        if args.list:
+            pp(cf.files)
+        if args.extract:
+            cf.extract_all(args.output_base_dir)
+    elif args.file.is_dir():
+        for f in glob.glob(str(args.file.joinpath("*.bf"))):
+            p = Path(f)
+            cf = CryoBfFile(filepath=p)
+            print(cf.file_version)
+            if args.list:
+                pp(cf.files)
+            if args.extract:
+                cf.extract_all(args.output_base_dir)

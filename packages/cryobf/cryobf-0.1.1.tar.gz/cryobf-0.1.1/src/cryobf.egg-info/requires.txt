@@ -1,0 +1,9 @@
+
+[dev]
+build
+twine
+
+[test]
+pytest
+pytest-cov
+tox

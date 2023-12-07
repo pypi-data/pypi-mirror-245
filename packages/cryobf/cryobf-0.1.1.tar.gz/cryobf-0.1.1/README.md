@@ -1,0 +1,60 @@
+# cryobf
+
+![coverage](https://gitlab.com/Menschel/cryobf/badges/master/coverage.svg)
+![pipeline](https://gitlab.com/Menschel/cryobf/badges/master/pipeline.svg)
+
+[Documentation](https://menschel.gitlab.io/cryobf/)
+
+
+A python 3 unpacker for .bf files , proprietary format made by Cryo Interactive in the late 90's.
+
+# Description
+
+Create an unpacker utility for this format as a pre step for SCUMMVM integration.
+
+# Usage
+
+This utility copy's a shell executable to your local bin folder, so you can call it directly.
+```
+$ cryobf -h
+usage: cryobf [-h] [-l] [-e] [-o OUTPUT_BASE_DIR] file
+
+positional arguments:
+  file                A .bf file or a directory with .bf files.
+
+optional arguments:
+  -h, --help          show this help message and exit
+  -l                  A flag to list the contents of FILE.
+  -e                  A flag to extract the contents of FILE.
+  -o OUTPUT_BASE_DIR  The output base directory where to extract to, defaults
+                      to current working directory.
+```
+
+# Listing contents
+
+```
+$ cryobf -l Return\ to\ Mysterious\ Island/datas/cd1/loc_GE_cmn.bf 
+{'BDi_01.ogg': {'offset': 32, 'rel_path': 'OGG/BDi_01.ogg', 'size': 60930},
+ 'BDi_02.ogg': {'offset': 60962, 'rel_path': 'OGG/BDi_02.ogg', 'size': 112499},
+ 'BDi_06.ogg': {'offset': 173461, 'rel_path': 'OGG/BDi_06.ogg', 'size': 57828},
+ 'BDi_07.ogg': {'offset': 231289, 'rel_path': 'OGG/BDi_07.ogg', 'size': 61101},
+ 'BDi_08.ogg': {'offset': 292390, 'rel_path': 'OGG/BDi_08.ogg', 'size': 24178},
+ 'BDi_09.ogg': {'offset': 316568, 'rel_path': 'OGG/BDi_09.ogg', 'size': 86662},
+ 'BDp_06.ogg': {'offset': 403230, 'rel_path': 'OGG/BDp_06.ogg', 'size': 83541},
+```
+
+# Extracting contents
+```
+$ cryobf Return\ to\ Mysterious\ Island/datas/cd1/loc_GE_cmn.bf -e -o /tmp
+Writing /tmp/OGG/BDi_01.ogg - Wrote 60930 bytes
+Writing /tmp/OGG/BDi_02.ogg - Wrote 112499 bytes
+Writing /tmp/OGG/BDi_06.ogg - Wrote 57828 bytes
+Writing /tmp/OGG/BDi_07.ogg - Wrote 61101 bytes
+Writing /tmp/OGG/BDi_08.ogg - Wrote 24178 bytes
+```
+
+# Deprecation of PyPi Packages
+Packages on PyPi are no longer updated due to attempts of the Python Software Foundation to enforce new rules and basically flush out 
+developers who do not consent.  
+Recent packages can be installed directly from git, i.e.   
+```pip install git+https://gitlab.com/menschel/cryobf.git --upgrade```

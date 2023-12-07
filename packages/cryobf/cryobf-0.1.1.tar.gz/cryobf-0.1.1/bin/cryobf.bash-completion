@@ -1,0 +1,24 @@
+__cryobf()
+{
+    local cur prev opts diropts filterpat
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="{{flags}}"
+    filterpat = ".bf"
+
+    diropts="-o"
+
+    if [[ ${prev} =~ ${diropts} ]]; then
+        COMPREPLY=( $(compgen -d -- ${cur}) )
+        return 0
+    fi
+
+    if [[ ${cur} == * ]] ; then
+        COMPREPLY=( $(compgen -f -X "${filepat}" "${cur}") )
+        return 0
+    fi
+}
+
+complete -F __cryobf cryobf
+
