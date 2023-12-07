@@ -1,0 +1,2 @@
+[datasette]
+enrichments_jinja = datasette_enrichments_jinja
