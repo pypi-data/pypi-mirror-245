@@ -1,0 +1,10 @@
+config_reg/__init__.py,sha256=BQPoa4bu3EqZMu98JW5ZXj-w6WiOC40zt89C9xWv0Oc,601
+config_reg/callback.py,sha256=ozbtud2d5Bhnm28N48OWTHkdJdu2Wcd0EX1_X0NVoKw,2668
+config_reg/if_yaml.py,sha256=4gKwK2oonQkk7Ixn6zOnhzZ4ww-H2iGbLYHU3_JwsTs,121
+config_reg/reg.py,sha256=6jm90vyTenyUOjm333Qlu4O4PVGrSK7nXnTYUAvsviI,12728
+config_reg/type_def.py,sha256=UKkId-kv04zdC0rLcyCdyBvdtgU0ULUlWjmZyEv97BE,9076
+config_reg-0.1.1.dist-info/LICENSE.md,sha256=zFRw_u1mGSOH8GrpOu0L1P765aX9fB5UpKz06mTxAos,34893
+config_reg-0.1.1.dist-info/METADATA,sha256=K5yKFS5O2muq7hA2E2Jwb3QxYszdQW6waSJT7YNoWTU,41168
+config_reg-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+config_reg-0.1.1.dist-info/top_level.txt,sha256=-CDcQG4NKKXSfs3OeNf5cLkmC_XnnyRGWg7nfs7bw44,11
+config_reg-0.1.1.dist-info/RECORD,,
