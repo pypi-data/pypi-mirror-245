@@ -1,0 +1,7 @@
+Jinja2>=2.11.3
+build
+setuptools
+setuptools_scm[toml]>=6.2
+
+[:python_version < "3.8"]
+importlib-metadata
