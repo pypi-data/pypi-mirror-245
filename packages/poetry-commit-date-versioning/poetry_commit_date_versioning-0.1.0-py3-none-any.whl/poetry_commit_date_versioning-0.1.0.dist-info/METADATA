@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: poetry-commit-date-versioning
+Version: 0.1.0
+Summary: A Poetry plugin that observes the current git commit to build a date-based version number
+Author: Matt McShane
+Author-email: matt@mattmcshane.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dulwich (>=0.21.7,<0.22.0)
+Requires-Dist: poetry (>=1.7,<2.0)
+Description-Content-Type: text/markdown
+
+# poetry-dateversioning
+
+Date-based versioning for Poetry projects. Reads the commit date and sha from
+git and uses it to set the project version. Nothing else. No attempt is made to
+work with anything other than git.
+
+To use:
+
+1. `poetry self add git+ssh://git@github.com/lambdal/poetry-dateversioning.git`
+1. In pyproject.toml add a stanza to enable the plugin for a given project
+
+```.toml
+[tool.poetry-dateversioning]
+enable = true
+```
+
+As the version number is not written into source code files anywhere, we
+suggest using `importlib` to determine your module's version number.
+
+```.py
+from importlib import metadata
+
+__version__ = metadata.version(__name__)
+
+```
+
+This project was created as an alternative to
+
+- [poetry dynamic
+  versioning](https://github.com/mtkennerly/poetry-dynamic-versioning) because
+  it rewrites the pyproject.toml file with every invocation (even if nothing
+  has changed) and is thus incompatible with a development process that uses
+  pyproject.toml file in Makefile dependencies.
+- [poetry date versioning
+  plugin](https://github.com/miigotu/poetry-date-version-plugin) which may be
+  abandoned and incomplete and which is definitely centered around writing
+  version numbers into python source files.
+
+
