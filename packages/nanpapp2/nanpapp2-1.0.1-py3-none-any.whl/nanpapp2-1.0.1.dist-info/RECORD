@@ -1,0 +1,14 @@
+history.py,sha256=G2MPWzTjv1By6r3_qLNGyWTpEGFkoUprIAWaer17cvU,1279
+reading.py,sha256=tNh9Mtdsq26D9h4l5ygrLjHkJzVzLULk0luMUIPs-Ak,7732
+title.py,sha256=5cmyz4GktiF2mATy08rcRmydN0-gOt4Rg39gPtKgAco,5299
+word_list.py,sha256=MakYVLmOU0nqiHAuLAR6VG78pLZ7yOA01rYSZEqncls,7854
+word_test.py,sha256=xhKdQoboKImvDAuZkHfEA5dr7uz5d5kVD9lDssirHCA,9104
+libs/apikey.py,sha256=t5xe8xLCbZXpUpcjQcHIoV4Gq8G5fi8YjGHymqFHbRk,62
+libs/common.py,sha256=abIo7x1A8RWO2xhzMNsD6ZsJW87L7j9By2f0-bfuLPQ,1132
+libs/newdate.py,sha256=S8CY4YxQGNdqc7mB4LONm9rXXXB6axOaXvYvZpkDMTo,1655
+nanpapp2-1.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+nanpapp2-1.0.1.dist-info/METADATA,sha256=LnmsYDq8jAGMrK8_0ZYEqZAS-Kf9_L3klXxOEpbQZkc,4950
+nanpapp2-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+nanpapp2-1.0.1.dist-info/entry_points.txt,sha256=XjtU2pNoKU19w6G4_hXv2nXwkTIKpAi91sSX0DCUU0A,40
+nanpapp2-1.0.1.dist-info/top_level.txt,sha256=HSt629BKK4XBcsbAMIKEUF2_okmVBNthIN6TtJnmr7k,47
+nanpapp2-1.0.1.dist-info/RECORD,,
