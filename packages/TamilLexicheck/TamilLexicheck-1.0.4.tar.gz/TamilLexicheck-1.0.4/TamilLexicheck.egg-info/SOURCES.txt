@@ -1,0 +1,8 @@
+README.md
+setup.py
+TamilLexicheck/TamilLexicheck.py
+TamilLexicheck/__init__.py
+TamilLexicheck.egg-info/PKG-INFO
+TamilLexicheck.egg-info/SOURCES.txt
+TamilLexicheck.egg-info/dependency_links.txt
+TamilLexicheck.egg-info/top_level.txt
