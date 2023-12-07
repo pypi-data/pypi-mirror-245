@@ -1,0 +1,9 @@
+dataqa_extractor/.python-version,sha256=XA-ecQ1vWbtZmARE89xYiG_FZKCi2KHVNNMpa-LGfag,6
+dataqa_extractor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataqa_extractor/constants.py,sha256=0ywwm5L9e9sdz3VO5qIraOnv18Y_p3br_xJtC1XL--I,192
+dataqa_extractor/extract.py,sha256=IH0H2P-uTxEsPumDfQt7_mZRWIAoxgz0b6N-E0xLHe0,7439
+dataqa_extractor/run.py,sha256=8mGEAyKSGL917MF36kjHrWgK7-1eOE5-w3VQmbA7mWA,204
+dataqa_extractor-0.1.0.dist-info/METADATA,sha256=2a679Dow0Pndh4t66WiuP9ZfUcDHLqodGq9ZEmzAyXc,1054
+dataqa_extractor-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+dataqa_extractor-0.1.0.dist-info/entry_points.txt,sha256=_9GLbxWnkyw9VTuLflUP_g9nxChzWJVW31jIDP3LPrI,63
+dataqa_extractor-0.1.0.dist-info/RECORD,,
