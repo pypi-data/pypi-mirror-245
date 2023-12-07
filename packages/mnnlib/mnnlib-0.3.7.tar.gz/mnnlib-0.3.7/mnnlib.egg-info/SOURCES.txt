@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+mnnlib.egg-info/PKG-INFO
+mnnlib.egg-info/SOURCES.txt
+mnnlib.egg-info/dependency_links.txt
+mnnlib.egg-info/top_level.txt
