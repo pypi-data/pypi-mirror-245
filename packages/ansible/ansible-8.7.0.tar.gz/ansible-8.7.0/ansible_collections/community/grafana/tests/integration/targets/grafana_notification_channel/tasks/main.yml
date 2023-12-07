@@ -1,0 +1,20 @@
+---
+- block:
+  - include_tasks: dingding.yml
+  - include_tasks: discord.yml
+  - include_tasks: email.yml
+  - include_tasks: googlechat.yml
+  - include_tasks: hipchat.yml
+  - include_tasks: kafka.yml
+#  - include_tasks: line.yml
+  - include_tasks: teams.yml
+  - include_tasks: opsgenie.yml
+  - include_tasks: pagerduty.yml
+  - include_tasks: prometheus.yml
+  - include_tasks: pushover.yml
+  - include_tasks: sensu.yml
+  - include_tasks: slack-and-beyond.yml
+  - include_tasks: telegram.yml
+#  - include_tasks: threema.yml
+  - include_tasks: victorops.yml
+  - include_tasks: webhook.yml
