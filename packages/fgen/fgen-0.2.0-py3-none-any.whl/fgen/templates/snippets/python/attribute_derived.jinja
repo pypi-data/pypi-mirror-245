@@ -1,0 +1,9 @@
+    @property
+    @check_initialised
+    def {{name}}(self) -> {{ attribute.python_type_as_str() }}:
+        """
+        {{ attribute.description | trim }}
+        """
+        return {{ attribute.python_type_as_str() }}(
+            {{ module.wrapper_module_name }}.ig_{{ name }}(self.model_index)
+        )

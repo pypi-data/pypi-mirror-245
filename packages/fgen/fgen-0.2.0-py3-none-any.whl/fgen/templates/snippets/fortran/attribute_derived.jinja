@@ -1,0 +1,12 @@
+    function ig_{{ name }}(model_index) result({{ name }}_index)
+
+        integer, intent(in) :: model_index
+        integer :: {{ name }}_index
+
+        type({{ calculator.name }}), pointer :: instance
+
+        call manager_get_instance(model_index, instance)
+
+        {{ name }}_index = instance % {{ name }} % model_index
+
+    end function ig_{{ name }}

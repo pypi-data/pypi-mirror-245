@@ -1,0 +1,32 @@
+    @property
+    @check_initialised
+    @verify_units(
+        _UNITS["{{ name }}"],
+        (None,),
+    )
+    def {{name}}(self) -> npt.NDArray[np.number[Any]]:
+        """
+        {{ attribute.description | trim }}
+
+        Returns
+        -------
+            A pint Quantity that wraps a numpy array. The contents of the numpy array are a copy of the
+            calculator data. Changes to this array are not reflected in the calculator.
+
+        Raises
+        ------
+        BadPointerError
+            Something goes wrong with accessing the underlying data
+        """
+        from fgen_runtime.arrays import _ptr_to_ndarray, ftype_to_np
+
+        nd, dtype, shape, pointer = {{ module.wrapper_module_name }}.ig_{{ name }}(self.model_index)
+        if pointer is None:
+            raise fgr_excs.BadPointerError(
+                pointer,
+                "Somehow the underlying data could not be accessed"
+            )
+
+        arr = _ptr_to_ndarray(pointer, shape=shape[:nd], dtype=ftype_to_np(dtype.strip().decode()))
+
+        return arr.copy()

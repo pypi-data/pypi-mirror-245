@@ -1,0 +1,13 @@
+    @property
+    @check_initialised
+    @verify_units(
+        _UNITS["{{ name }}"],
+        (None,),
+    )
+    def {{name}}(self) -> {{ attribute.python_type_as_str() }}:
+        """
+        {{ attribute.description | trim }}
+        """
+        out: {{ attribute.python_type_as_str() }} = {{ module.wrapper_module_name }}.ig_{{ name }}(self.model_index)
+
+        return out
