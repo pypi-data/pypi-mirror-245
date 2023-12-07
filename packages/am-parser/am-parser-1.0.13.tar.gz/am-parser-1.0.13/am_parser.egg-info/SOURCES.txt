@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+am_parser/__init__.py
+am_parser/parser.py
+am_parser.egg-info/PKG-INFO
+am_parser.egg-info/SOURCES.txt
+am_parser.egg-info/dependency_links.txt
+am_parser.egg-info/top_level.txt
