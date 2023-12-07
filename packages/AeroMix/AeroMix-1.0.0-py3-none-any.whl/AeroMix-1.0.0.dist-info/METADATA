@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: AeroMix
+Version: 1.0.0
+Summary: Python package for modeling aerosol optical properties
+Home-page: https://github.com/sampr7/AeroMix
+Author: Sam P Raj
+Author-email: sampr7@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Keywords: aerosol model mixing state AOD SSA g
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: PyMieScatt
+
+# AeroMix
+
+Python package for modeling aerosol optical properties
+
+## Installation
+
+Use the package manager [pip](https://test.pypi.org/) to install AeroMix.
+
+```bash
+pip install -i https://test.pypi.org/simple/ AeroMix
+```
+
+## Usage
+
+```python
+import AeroMix
+
+# get a sample input dictionary
+input_dict = AeroMix.getAerosolType('urban',[0.4,0.5,0.6,0.7,0.8],80]
+
+# run the AeroMix model
+AeroMix.run(input_dict)
+
+```
+
+## Documentation
+Find detailed documentation is coming soon
+
+## License
+
+[GNU General Public License v3 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.en.html)
