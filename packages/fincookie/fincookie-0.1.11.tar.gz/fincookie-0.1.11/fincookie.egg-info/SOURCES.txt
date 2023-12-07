@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fincookie/__init__.py
+fincookie/api.py
+fincookie.egg-info/PKG-INFO
+fincookie.egg-info/SOURCES.txt
+fincookie.egg-info/dependency_links.txt
+fincookie.egg-info/requires.txt
+fincookie.egg-info/top_level.txt
