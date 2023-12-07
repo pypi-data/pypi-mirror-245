@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: smighty
+Version: 0.0.2
+Summary: Small, yet powerful conversational agent framework
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
+Author: Al Wonder
+Author-email: al@yiwonder.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: all
+Provides-Extra: cli
+Provides-Extra: ui
+Requires-Dist: gradio (>=4.7.1,<5.0.0) ; extra == "all" or extra == "ui"
+Requires-Dist: openapi[all] (>=1.1.0,<2.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0) ; extra == "all" or extra == "cli"
+Description-Content-Type: text/markdown
+
+ # Small and Mighty Conversational Agent Framework
+
+This is an experimental project to develop next generation of conversational
+agents that can connect the world of unconstrained generation of Large Language
+Models (LLM) to the world of structured data sources. Our goal is to build a
+modular and configurable framework to seamlessly integrate language agents with 
+data sources to build conversational experiences for next generation of digital
+systems.
+
+> THIS PROJECT IS IN ACTIVE DEVELOPMENT. PROCEED WITH CAUTION!
+
+---
+
+[![Test](https://github.com/alywonder/smighty/actions/workflows/run-tests.yml/badge.svg)](https://github.com/alywonder/smighty/actions/workflows/run-tests.yml)
+[![Python](https://img.shields.io/badge/python-3.10%7C3.11-blue)](https://www.python.org/downloads/release/python-3100/)
+
+
+
+## The Big Idea about Small Things
+
+To achieve our goals, we are pursuing two fundamental ideas:
+1. _Sequence to structure: Convert sequence to sequence models to sequence to 
+structure extraction ones._
+This is about extracting the structure of information required to properly
+fulfill a user request from her natural language utterances.
+2. Structure Informed Generation: Generate responses that combine both
+unstructured and structured information.
+
+<span style="font-size:8pt;">Copyright &copy; 2023 Weavers @ Eternal Loom. All rights reserved.</span>
+
