@@ -1,0 +1,5 @@
+pydantic<3,>=2
+pydantic_settings<3,>=2
+PyYAML<7,>=6.0.1
+jsonschema<5,>=4.19.2
+immutabledict<4,>=3.0.0
