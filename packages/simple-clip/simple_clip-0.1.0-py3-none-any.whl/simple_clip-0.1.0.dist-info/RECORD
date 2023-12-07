@@ -1,0 +1,17 @@
+simple_clip/__init__.py,sha256=bHDjJy3HBhbZlboQy5EDCsuQRum3tT1BK56RcI2y4YI,45
+simple_clip/clip.py,sha256=g_h-UhrZJQxB772MT0p1q0C-oxtRmOin1_iQGj-3dE8,1501
+simple_clip/imagenet_eval.py,sha256=yGtnXxHKxJiNrVskEwDtcvGK348D-hI9HOpiFJOwLDY,2700
+simple_clip/utils.py,sha256=3_Y0Qi59UJUW_m16DNRDjubPOijK0HhBialgB2aMCGE,4375
+simple_clip/custom_datasets/__init__.py,sha256=t--eOpXkGfg3ZexPjddW-jBkziEstahaSMI-kJOyF-U,78
+simple_clip/custom_datasets/clip_datasets.py,sha256=27j0uUKTg1rYVZDAhewy38y0bv4YeSxH-cHXz2nOo8E,4793
+simple_clip/encoders/__init__.py,sha256=mxQ5HXBtDTXGcNt1yM6Y-DNIz2BxBP9XYh2_m8C4mKw,145
+simple_clip/encoders/image_encoders.py,sha256=4chuAtLJ03xK6LL4eSVRIyy-j8eJT0dvB3ViAIxvkC0,816
+simple_clip/encoders/text_encoders.py,sha256=dZMmMJIQusqzhodEgBZnJera3vFCvaBBEzb5FPzvO74,469
+simple_clip-0.1.0.data/scripts/run_training.py,sha256=XLt-0rRqBOxIgA66I-XMpP-jIfeSEaK-WABEIkUBHxM,2525
+simple_clip-0.1.0.data/scripts/train.py,sha256=HK2iIFJiiFKtEg0GHD0HMn-yuI7fU6ByR3YPoXgaFDY,6474
+simple_clip-0.1.0.dist-info/LICENSE,sha256=p-mcPScGTo3bnIj3awd_qkWKtulivW1YwUvuaEdHoH0,1069
+simple_clip-0.1.0.dist-info/METADATA,sha256=7ytlL4NRqpJ20NxyBZiyKWtd2gaDw2YDS6GZwrWu6f0,6955
+simple_clip-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+simple_clip-0.1.0.dist-info/entry_points.txt,sha256=IZe8I4QpsHM0IpyyRghaVof2QaEny02PmXUKCs5qJSw,50
+simple_clip-0.1.0.dist-info/top_level.txt,sha256=eByHdMCH9G0oXc_iRHvbQ0WPd2hjtQl36jRLRGSk4ek,12
+simple_clip-0.1.0.dist-info/RECORD,,
