@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/proof-report-parser/__init__.py
+src/proof-report-parser/exceptions.py
+src/proof-report-parser/models.py
+src/proof-report-parser/parser.py
+src/proof_report_parser.egg-info/PKG-INFO
+src/proof_report_parser.egg-info/SOURCES.txt
+src/proof_report_parser.egg-info/dependency_links.txt
+src/proof_report_parser.egg-info/requires.txt
+src/proof_report_parser.egg-info/top_level.txt
