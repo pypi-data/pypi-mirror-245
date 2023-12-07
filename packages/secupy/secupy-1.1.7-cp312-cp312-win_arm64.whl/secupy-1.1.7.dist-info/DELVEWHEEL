@@ -1,0 +1,2 @@
+Version: 1.5.1
+Arguments: ['C:\\Users\\damianomazzella\\AppData\\Local\\Temp\\cibw-run-_ctroktv\\cp312-win_arm64\\build\\venv\\Scripts\\delvewheel', 'repair', '-w', 'C:\\Users\\damianomazzella\\AppData\\Local\\Temp\\cibw-run-_ctroktv\\cp312-win_arm64\\repaired_wheel', 'C:\\Users\\damianomazzella\\AppData\\Local\\Temp\\cibw-run-_ctroktv\\cp312-win_arm64\\built_wheel\\secupy-1.1.7-cp312-cp312-win_arm64.whl']
