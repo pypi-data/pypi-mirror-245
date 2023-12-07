@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+blueshell.egg-info/PKG-INFO
+blueshell.egg-info/SOURCES.txt
+blueshell.egg-info/dependency_links.txt
+blueshell.egg-info/requires.txt
+blueshell.egg-info/top_level.txt
+src/blueshell/__init__.py
+src/blueshell/list.py
+src/blueshell/shell.py
+src/test/__init__.py
