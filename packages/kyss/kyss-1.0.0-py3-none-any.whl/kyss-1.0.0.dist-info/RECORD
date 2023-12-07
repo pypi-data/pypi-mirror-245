@@ -1,0 +1,13 @@
+kyss/__about__.py,sha256=WZSN5wUuTD6X18DUQetMIBt3PO0WSbI0XsJdnURQgrA,132
+kyss/__init__.py,sha256=hiaD8JB3OrSfou7ymTpRmaIpi5W3wPxLi2Q9jNx8Nek,389
+kyss/ast.py,sha256=TqZrUaot5YncC1SCRRORiqeIwQJag6aQTm0wF45jxHc,2222
+kyss/errors.py,sha256=k7pxmgkqVPVpaewRRJzKRu5RYZCwzfinme1ZF1XBZEA,1642
+kyss/recursive_descent.py,sha256=J_8XPMoZWo-OM3e8fD9DlVB_VIVGJ16uq_DCZFJU96w,10023
+kyss/schema.py,sha256=TpbuEFsypy2CTBK1OinEUzh11SBjAE97o7KCx6OFzXY,7542
+kyss/schema_file.py,sha256=PbZOQg7-QPivus_ER9NG-JYJeIULNO87JuSd1Pv8gGA,1301
+kyss/tool.py,sha256=mKMtSiYV-tqtH3G-G_FFJkViBsW-M9p5of0tN9e4MyE,1799
+kyss/typed_schema.py,sha256=DWYZgEeSAkg7OIrrT_sJB3s0__hm4dSp6SxOirIue1I,6267
+kyss-1.0.0.dist-info/METADATA,sha256=VgQ6llM70exmbTpTwpoT4_Cwi66h3MFAovyCL1JYgDk,1687
+kyss-1.0.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+kyss-1.0.0.dist-info/licenses/LICENSE,sha256=c0oRnLGJFmEm-ZkgKG_xGtD4NM8ourrIwB8FZURnji8,1091
+kyss-1.0.0.dist-info/RECORD,,
