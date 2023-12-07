@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: huzzyrabbit
+Version: 0.0.1
+Summary: Huzzy Rabbit
+Home-page: UNKNOWN
+Author: Huzzy
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+This is my personal RabbitMq implementation
+
