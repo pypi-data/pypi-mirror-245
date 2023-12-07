@@ -1,0 +1,16 @@
+poetry_snakemake_plugin/__init__.py,sha256=rk_GcV_pcrljjTTGqLrYpoTwpmZ_u1V-BKy_mxrGK2k,704
+poetry_snakemake_plugin/common.py,sha256=SV-0No1IW9jr3jb5yTWZPJBo6OESs2oxrgoE8vhQsDk,2740
+poetry_snakemake_plugin/executor_plugins.py,sha256=IbYzJVGCHHP1suxPcUH-OjbFcBUfFq9Ji74IuQlp1_U,841
+poetry_snakemake_plugin/storage_plugins.py,sha256=MD4JBYZtIEHcGLWg0jwC0MluYw9QPHHnMnO17mEwfOo,831
+poetry_snakemake_plugin/templates/ci.yml.j2,sha256=oKe67kRfBrlTUpUuI2gmyFuRln-t9Z76jgOuplfsK_4,1861
+poetry_snakemake_plugin/templates/conventional_prs.yml.j2,sha256=2kpnTi1KNU7YtzMn5KQsEKw3ZQFkpWJasP9HSrYg1jc,305
+poetry_snakemake_plugin/templates/executor-plugins/init.py,sha256=Pb7Yt-jIGwsz18YnPSxQdnABViqMZnk55VyRYGmv-5o,6293
+poetry_snakemake_plugin/templates/executor-plugins/tests.py.j2,sha256=tKZyApsKxbMvhxujprcsraWZu4nerMW1t5ocy0vj7Ek,612
+poetry_snakemake_plugin/templates/release_please.yml.j2,sha256=Q2XOEeGuEmE_0GW_c0vwSnjdmzkfLsZNwmeSguz8jmc,1223
+poetry_snakemake_plugin/templates/setup.cfg.j2,sha256=UVeqlNessLpX1B-bY-HUtqPIX42e3nQHCVA08qTPga0,216
+poetry_snakemake_plugin/templates/storage-plugins/init.py,sha256=D0Op7e7Hdj8lWosF6G4xjfE7sJj9EkKluASfq1MdyC0,8002
+poetry_snakemake_plugin/templates/storage-plugins/tests.py,sha256=tYLhAA0IPSKC6mPDLl6K02b1zlCkRYVnWjDozz07b7w,1125
+poetry_snakemake_plugin-0.3.3.dist-info/METADATA,sha256=-W2FmVl5ncoIpRlHTb4CgjFlFC-589prybPAVTZOqHM,2575
+poetry_snakemake_plugin-0.3.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+poetry_snakemake_plugin-0.3.3.dist-info/entry_points.txt,sha256=qsRQatCMD2yuyGps2PdX6gPLZCgkW666PoxfFD0szIg,120
+poetry_snakemake_plugin-0.3.3.dist-info/RECORD,,
