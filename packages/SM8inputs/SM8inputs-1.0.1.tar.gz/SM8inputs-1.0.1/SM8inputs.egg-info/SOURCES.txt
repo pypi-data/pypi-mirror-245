@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+SM8inputs.egg-info/PKG-INFO
+SM8inputs.egg-info/SOURCES.txt
+SM8inputs.egg-info/dependency_links.txt
+SM8inputs.egg-info/requires.txt
+SM8inputs.egg-info/top_level.txt
+lib8inputs/__init__.py
