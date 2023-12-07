@@ -1,0 +1,14 @@
+slowroll/__init__.py,sha256=8KQ3MD2FdHnfrhP-12uNvOPdzT3bvvZo1zjwzRIT4pg,62
+slowroll/api.py,sha256=DLjCtQ-J8NDrLr1qpLRxhG2oa4AQ4k69fXbSxtsaIqM,4762
+slowroll/isoformat.py,sha256=cDnFZvzsdTteKM79TVWgzTpB2eEh31k3FEVJB09YsVc,556
+slowroll/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slowroll/time_delta_str.py,sha256=MGy7RHpYftqxPj1nKg4OyJ2d3OFyKBQqknw5RLn-IYk,548
+slowroll/tests/__init__.py,sha256=_qx4cgpNdkItivb0-yEzD-muYQV_uBobqTb9ue-gX1Y,146
+slowroll/tests/__main__.py,sha256=LMm2Qfck0CSmurETHFw4qpVGaCL2lkocVZfBUI4aJH8,100
+slowroll/tests/api.py,sha256=zlegKU07YJgqmixzdbFuw5rF_J7-x-K_rfhcF9xoeiA,2386
+slowroll/tests/time_delta_str.py,sha256=XSmPFGe32wvWkukOmsB0N8U2kMM8fkm9x-yfLTYvtlY,948
+slowroll-0.0.1.dist-info/LICENSE,sha256=aSjWWXLwFP9aJaNEECAPxFvyEV-B_Xp4w73axwoOyEU,1066
+slowroll-0.0.1.dist-info/METADATA,sha256=ILrF-EjwOuq2Rqhk2YVYE-Kal62Wp5A1je3yZDv3C1c,2392
+slowroll-0.0.1.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+slowroll-0.0.1.dist-info/top_level.txt,sha256=5AG_qkTJine18TJ_zbIIET_WjcZ-KppZ_C0za7SRHdw,9
+slowroll-0.0.1.dist-info/RECORD,,
