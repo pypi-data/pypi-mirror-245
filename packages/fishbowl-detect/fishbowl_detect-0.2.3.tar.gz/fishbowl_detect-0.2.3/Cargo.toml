@@ -1,0 +1,15 @@
+[package]
+name = "fishbowl"
+version = "0.2.3"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "fishbowl"
+crate-type = ["cdylib"]
+
+[dependencies]
+isolang = "2.3"
+pyo3 = "0.19"
+whatlang = "0.16"
+whichlang = "0.1"
