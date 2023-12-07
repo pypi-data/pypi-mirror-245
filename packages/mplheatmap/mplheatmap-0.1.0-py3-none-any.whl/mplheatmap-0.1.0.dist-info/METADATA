@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mplheatmap
+Version: 0.1.0
+Summary: Convenience utility to create interpolated 2d heatmaps
+Author: Frederic Schell
+Author-email: frederic.schell@iws.fraunhofer.de
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
