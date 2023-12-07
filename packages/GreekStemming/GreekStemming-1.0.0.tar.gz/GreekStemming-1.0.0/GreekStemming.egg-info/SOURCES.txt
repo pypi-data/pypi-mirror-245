@@ -1,0 +1,7 @@
+setup.py
+GreekStemming/GreekStemming.py
+GreekStemming/__init__.py
+GreekStemming.egg-info/PKG-INFO
+GreekStemming.egg-info/SOURCES.txt
+GreekStemming.egg-info/dependency_links.txt
+GreekStemming.egg-info/top_level.txt
