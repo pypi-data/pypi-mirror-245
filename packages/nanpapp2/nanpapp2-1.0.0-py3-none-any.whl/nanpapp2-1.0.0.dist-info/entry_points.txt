@@ -1,0 +1,2 @@
+[console_scripts]
+nanpapp2 = title:main
