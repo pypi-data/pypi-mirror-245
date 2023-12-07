@@ -1,0 +1,8 @@
+torch_contour/__init__.py,sha256=GTCe2gEK_VNyCEw2nb1N12Trk1SLbnKRSBBrmfcCcj8,96
+torch_contour/contour_to_mask.py,sha256=-YXO1N1JyZiQwc-gGUlve0NLUs2AXrFzUIrOcu7Dq4Q,1315
+torch_contour/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_contour-0.0.1.dist-info/LICENSE,sha256=MCqrn2WlroYz3aMXt3DmigJiYvl9ejsEwtdtJfBp4v0,1068
+torch_contour-0.0.1.dist-info/METADATA,sha256=QfpVnVvE5vY_PZ4aHO3iHwQuBeOPYQ8vcrhy4i-rA_U,913
+torch_contour-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+torch_contour-0.0.1.dist-info/top_level.txt,sha256=4n65HHR3FuCjlpQXiu2_NInv_5I6f7b3BSMU9qP_BiI,14
+torch_contour-0.0.1.dist-info/RECORD,,
