@@ -1,0 +1,14 @@
+numpy
+torch
+lightning
+h5torch>=0.2.5
+bio-attention
+pandas
+scipy
+matplotlib
+rdkit
+selfies
+deepsmiles
+scikit-learn
+xgboost
+tensorboard
