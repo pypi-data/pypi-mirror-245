@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: url(material-symbols-outlined.woff2) format('woff2'),
+       url(material-symbols-outlined.ttf) format('truetype');
+}
+
+:root {
+    --color-background-card: #FFFFFF;
+    --color-background-lane: #EEF0F2;
+    --color-background-body: #F5F7F8;
+    --color-background-button: rgb(14, 106, 237);
+    --color-border: rgb(202, 216, 223);
+    --color-text-title: #2B455C; 
+    --color-text-header: #486276;
+    --color-text-input: rgb(71, 97, 117);
+    --color-text-label: rgb(34, 68, 95);
+    --color-text: #0D0D0D;
+    --color-text-highlight: #4E92F4;
+    --color-text-button: #FFFFFF;
+}
+
+body {
+    font-family: 'Open Sans', verdana, arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: calc(100vh - 56px);
+    background-color: var(--color-background-body);
+    color: var(--color-text); 
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    background-color: var(--color-background-body);
+    color: var(--color-text-header);
+}
+
+h1 {
+    color: var(--color-text-title);
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+h2, h3 {
+    color: var(--color-text-header);
+    font-size: 1em;
+    margin: 0;
+}
+
+a, a:visited, a:hover, a:active {
+    color: var(--color-text-highlight);
+    text-decoration: none;
+}
+
+.material-symbols {
+    font-family: 'Material Symbols Outlined';
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    font-weight: normal;
+    font-style: normal;
+    font-size: inherit;
+    line-height: inherit;
+    vertical-align: bottom;
+    display: inline-block;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+.button, .button:visited {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 0.4em 0.8em;
+    background-color: var(--color-background-button);
+    color: var(--color-text-button);
+    border-color: var(--color-background-button);
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: var(--color-background-card);
+    border-radius: 0.2em;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 1px 3px, rgba(0, 0, 0, 0.05) 0 10px 15px -5px, rgba(0, 0, 0, 0.05) 0 7px 7px -5px;
+}
+
+input[type="text"], select, textarea {
+    font-size: 1.2em;
+    color: var(--color-text-input);
+    box-sizing: content-box;
+    width: 300px;
+    padding: 0.5em;
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-direction: column;
+    border-radius: 0.2em;
+    margin-bottom: 0.5em;
+    border: 1px solid rgb(132, 149, 163);
+}
+
+label {
+    font-size: 1em;
+    font-weight: 600;
+    align-items: flex-start;
+    display: flex;
+    color: var(--color-text-label);
+    margin-bottom: 0.3em;
+}
+
+input[type="submit"] {
+    align-self: end;
+    display: flex;
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border: 1px solid var(--color-background-button);
+    background-color: var(--color-background-button);
+    color: var(--color-text-button);
+}
+
+.lane {
+    flex: 1;
+    background-color: var(--color-background-lane);
+    padding: 1em;
+    margin: 1em;
+    max-width: 300px;
+}
+
+.card {
+    align-self: center;
+    background-color: var(--color-background-card);
+    border-radius: 0.2em;
+    padding: 0.5em;
+    margin: 1em 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 1px 3px, rgba(0, 0, 0, 0.05) 0 10px 15px -5px, rgba(0, 0, 0, 0.05) 0 7px 7px -5px;
+}
+
+.card-header {
+    border-bottom: 2px solid var(--color-background-lane);
+    margin-bottom: 0.5em;
+    padding: 0em 0 0.5em 0;
+}
+
+.card-detail {
+    color: var(--color-text-header);
+    white-space: nowrap;
+}
+
+.flash {
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: hideAnimation 0s ease-in 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hideAnimation {
+    to {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+}
