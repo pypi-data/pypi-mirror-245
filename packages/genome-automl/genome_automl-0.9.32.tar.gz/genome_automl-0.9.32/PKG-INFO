@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: genome_automl
+Version: 0.9.32
+Summary: library for building extreme scale, millions of models and intelligent agent pipelines, and evaluations, on AWS, Google Cloud
+Home-page: https://github.com/edeliu2000/genome
+Author: Endr Del
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+A client for Genome-Automl Pipelines, Visualizers, ModelStore, EvaluationStore and DataStore
+
+
