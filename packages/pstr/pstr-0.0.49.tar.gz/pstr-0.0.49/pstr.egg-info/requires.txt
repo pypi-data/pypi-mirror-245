@@ -1,0 +1,14 @@
+atyp
+ltyp
+chck
+nchr
+nlit
+pfmt
+pttn
+regsyn
+idfunc
+ispec
+urllib3
+atup
+
+[dev]
