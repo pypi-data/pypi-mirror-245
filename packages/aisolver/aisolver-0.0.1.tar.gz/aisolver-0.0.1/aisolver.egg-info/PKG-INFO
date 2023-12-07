@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: aisolver
+Version: 0.0.1
+Summary: AI Solver Test Project
+Author-email: plumzhenming <plumzhenming@idata.ah.cn>
+License: Copyright (c) 2018 The Python Packaging Authority
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 我们做什么
+    我们致力于提供优质求解器功能
+
+# 快速上手
+1、安装python库
+```python
+    pip install aisolver
+```
+2、调用求解
+
+```python
+>> > import aisolver
+>> > from aisolver import mix_integer_solver
+# 指定需要求解问题的.lp文件
+>> > file_name = "input_problem.lp"
+# 确定问题类型problem，可选WPMS,FCMCNF,GISP
+# solution_save默认为None，表示会打印求解结果。当指定文件路径时，会将求解结果保存到指定文件
+>> > mix_integer_solver(file_name, problem="FCMCNF", solution_save="./solve_out.txt")
+```
+
+# 目前能够求解问题
+## 1、WPMS(Weighted Independent Maximum Packing Set)
+*   WIMPs问题是NP-hard问题的一个例子，通常被用于寻找无向图中的最大权独立集。在WIMPs问题中，给定一个带权无向图，每个顶点都有一个正权值。问题的目标是找到权值之和最大的独立顶点集，其中独立顶点集是指该集合中的任何两个顶点之间都没有边相连。 
+*   WIMPs问题在许多领域中都有应用，例如在社交网络分析、电路设计和资源分配等领域中。
+
+## 2、GISP（广义独立集问题）问题
+*   GISP问题是一类经典的优化问题，通常用于优化分配问题，例如分配资源或任务到不同的位置或机器上。在GISP问题中，有一组可用的资源和一组任务需要被完成。每个资源都有一个成本，同时可以完成一组任务，这些任务需要一定的资源。任务可以被分配给多个资源，但每个任务只能被完成一次。问题的目标是找到最小化总成本的任务分配方案。 
+*   GISP问题的一个重要特点是，每个任务可以被分配给多个资源，这使得问题更加复杂。因此，GISP问题被认为是一种困难的组合优化问题。GISP问题在许多领域中都有应用，例如物流、生产调度和资源分配等领域。
+
+## 3、FCMCNF(Facility Capacity Multiple Choice Network Flow)
+*   该问题通常涉及在网络流模型中选择路径，以便满足一些特定的容量约束。FCMCNF问题中存在多种选择，每种选择都会影响网络流的容量限制。
+具体而言，FCMCNF问题是在具有多个源和汇的带容量的有向图中找到最小费用的流，并满足以下要求:
+>> 1. 每个源必须流出特定数量的流量。 
+>> 2. 每个汇必须接收特定数量的流量。 
+>> 3. 每个路径可以选择多个容量和费用。 
+>> 4. 每个路径的容量都受到一些限制，例如每个路径的容量不能超过某个特定的值。
+
+
+# 敬请期待
+1. 多样功能

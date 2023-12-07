@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+aisolver/__init__.py
+aisolver/remote_mix_integer_solver.py
+aisolver.egg-info/PKG-INFO
+aisolver.egg-info/SOURCES.txt
+aisolver.egg-info/dependency_links.txt
+aisolver.egg-info/top_level.txt
