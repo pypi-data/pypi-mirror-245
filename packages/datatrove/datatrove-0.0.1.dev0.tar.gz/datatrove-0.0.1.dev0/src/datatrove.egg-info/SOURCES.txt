@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/datatrove/__init__.py
+src/datatrove.egg-info/PKG-INFO
+src/datatrove.egg-info/SOURCES.txt
+src/datatrove.egg-info/dependency_links.txt
+src/datatrove.egg-info/entry_points.txt
+src/datatrove.egg-info/requires.txt
+src/datatrove.egg-info/top_level.txt
