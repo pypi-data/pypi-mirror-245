@@ -1,0 +1,24 @@
+# ATLtools 使用指南
+## 1. 简介
+ATL_Tools 是一个由[AI-Tianlong](https://github.com/AI-Tianlong)开发的工具集合，包含一些便利的小工具，发布的目的是为了方便自己使用。
+## 2. 使用方法
+### 2.1. ATL_path
+ATL_path 是一个用于`获取文件夹内数据集绝对路径`以及`创建文件夹`的小工具，可以获取当前文件内符合后缀名文件的绝对路径，以及替代`os.path.exist()`和`os.mkdir()`创建文件夹。
+
+有以下两个主要的功能：
+- 创建文件夹：
+    ```python
+    mkdir_or_exist(xxxx) # 创建文件夹, 存在则不创建
+    ```
+- 寻找所有符合后缀文件夹名称(绝对路径):
+    ```python
+    find_data_list(img_root_path: str, suffix: str ='.jpg') # 返回所有后缀为.jpg的文件绝对路径
+    ```
+使用方法：
+```python
+from ATL_Tools import mkdir_or_exist, find_data_list
+#创建文件夹
+mkdir_or_exist('新文件夹名称')
+#获取文件夹内所有后缀为.jpg的文件绝对路径
+img_lists = find_data_list(img_root_path='数据集文件夹路径', suffix ='.jpg')
+```
