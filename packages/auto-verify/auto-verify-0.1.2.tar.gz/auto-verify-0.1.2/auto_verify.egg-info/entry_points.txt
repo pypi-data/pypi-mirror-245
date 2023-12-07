@@ -1,0 +1,2 @@
+[console_scripts]
+auto-verify = autoverify.cli.main:main
