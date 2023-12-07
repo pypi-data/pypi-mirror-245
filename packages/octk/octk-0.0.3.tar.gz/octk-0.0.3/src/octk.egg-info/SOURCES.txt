@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/octk/__init__.py
+src/octk/email.py
+src/octk.egg-info/PKG-INFO
+src/octk.egg-info/SOURCES.txt
+src/octk.egg-info/dependency_links.txt
+src/octk.egg-info/requires.txt
+src/octk.egg-info/top_level.txt
+test/test_email.py
