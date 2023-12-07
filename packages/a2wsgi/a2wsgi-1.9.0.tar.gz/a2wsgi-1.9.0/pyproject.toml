@@ -1,0 +1,47 @@
+[project]
+authors = [
+    { name = "abersheeran", email = "me@abersheeran.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = []
+description = "Convert WSGI app to ASGI app or ASGI app to WSGI app."
+name = "a2wsgi"
+readme = "README.md"
+requires-python = ">=3.8.0"
+version = "1.9.0"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.urls]
+homepage = "https://github.com/abersheeran/a2wsgi"
+repository = "https://github.com/abersheeran/a2wsgi"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "asgiref<4.0.0,>=3.2.7",
+    "black",
+    "flake8",
+    "pytest<8.0.0,>=7.0.1",
+    "pytest-cov<4.0.0,>=3.0.0",
+    "pytest-asyncio<1.0.0,>=0.11.0",
+    "mypy",
+    "httpx<1.0.0,>=0.22.0",
+]
+benchmark = [
+    "uvicorn>=0.16.0",
+    "asgiref>=3.4.1",
+]
+
+[tool.pdm.build]
+includes = [
+    "a2wsgi",
+]
+
+[build-system]
+build-backend = "pdm.backend"
+requires = [
+    "pdm-backend",
+]
