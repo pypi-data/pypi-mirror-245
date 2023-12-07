@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: h-tool-library
+Version: 0.0.3
+Summary: python common tool library.
+Home-page: https://github.com/huyu456/h-tool-library
+Author: huyu
+Author-email: huyu0215@gamil.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# h-tool-library
+常用的方法和函数
+# 安装方式
+```shell
+pip install h-tool-library
+```
+### 使用方法
+
