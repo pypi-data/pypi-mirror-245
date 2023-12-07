@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: turtle-trading
+Version: 1.0.1
+Summary: A collection of investment tools used by the Turtle Traders.
+Project-URL: Homepage, https://github.com/gabekutner/turtle-trading/
+Author-email: Gabe Kutner <gabekutner1@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Gabe Kutner
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: investing,python,trading,turtle,turtle-trading
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Requires-Dist: yahoo-fin>=0.8.9.1
+Description-Content-Type: text/markdown
+
+# turtle-trading
+A Python Package of a collection Turtle Trading investing tools. All code is based on the ideas presented in [_The Original Turtle Trading Rules_](https://oxfordstrat.com/coasdfASD32/uploads/2016/01/turtle-rules.pdf). Page numbers are referenced in the code.
+
+The package, currently, contains only one module: position_sizing.
+
+Download using pip:
+
+```batch
+pip install turtle-trading
+```
+
+Examples using the `position_sizing` module:
+
+```python
+from turtle_trading.position_sizing import units, adjusting_size, risk_management
+
+# your account value
+account = 1_000_000.00
+
+""" Create a Unit instance. """
+unit = units.Unit(asset="AAPL", account_size=account)
+
+
+""" See N: the underlying volatility of a particular market 
+Pg. 12
+"""
+print(unit.N) # returns.. > 2.19987
+
+
+""" See Volatility Adjusted Position Units
+Pg. 18
+"""
+print(unit.get_unit) # returns.. > 20
+# or 
+print(unit.unit) # returns.. > AAPL: 20
+
+
+""" Adjusting Trading Size
+pg. 21
+"""
+print(adjusting_size.decrease_size(account)) # returns.. > 800_000
+```
+
+More will be published soon.
+
+For issues, look [here](https://github.com/gabekutner/turtle-trading/blob/main/.github/ISSUE_TEMPLATE.md).
