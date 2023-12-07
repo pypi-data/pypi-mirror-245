@@ -1,0 +1,2 @@
+[console_scripts]
+fpl-write-pic = fprime_fpl_write_pic.__main__:main
