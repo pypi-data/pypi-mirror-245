@@ -1,0 +1,4 @@
+drf-yasg
+djangorestframework
+django-modeltranslation
+django-filter
