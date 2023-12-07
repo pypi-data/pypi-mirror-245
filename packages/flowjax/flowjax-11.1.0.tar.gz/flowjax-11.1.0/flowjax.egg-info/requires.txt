@@ -1,0 +1,15 @@
+jax
+equinox>=0.10
+tqdm
+optax
+
+[dev]
+pytest
+ruff
+sphinx
+sphinx-rtd-theme
+sphinx-copybutton
+sphinx-autodoc-typehints
+nbsphinx
+ipython
+numpyro
