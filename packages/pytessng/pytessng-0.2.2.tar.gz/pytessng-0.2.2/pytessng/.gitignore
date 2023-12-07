@@ -1,0 +1,10 @@
+**/__pycache__
+*.log
+/.idea
+/.git
+/WorkSpace/Backup
+/WorkSpace/Cert
+/WorkSpace/Log
+/WorkSpace/SimuResult
+/WorkSpace/Temp
+WorkSpace/Data/osm_data

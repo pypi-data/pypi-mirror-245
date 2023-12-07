@@ -1,0 +1,3 @@
+include Learning tracker
+include LICENSE
+recursive-include pytessng *
