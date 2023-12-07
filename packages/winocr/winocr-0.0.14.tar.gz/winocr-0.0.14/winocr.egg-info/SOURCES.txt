@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+winocr.py
+winocr.egg-info/PKG-INFO
+winocr.egg-info/SOURCES.txt
+winocr.egg-info/dependency_links.txt
+winocr.egg-info/entry_points.txt
+winocr.egg-info/requires.txt
+winocr.egg-info/top_level.txt
