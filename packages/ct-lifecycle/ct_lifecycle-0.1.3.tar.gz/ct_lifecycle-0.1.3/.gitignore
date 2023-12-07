@@ -1,0 +1,14 @@
+lifecycle.egg-info/
+.coverage
+coverage.xml
+__pycache__
+*.swp
+/build
+.venv/
+/examples/suitecrm/suitecrm.yml
+/docs/build
+/docs/source/generated
+/dist
+/ct_lifecycle.egg-info
+.env
+Pipfile.lock

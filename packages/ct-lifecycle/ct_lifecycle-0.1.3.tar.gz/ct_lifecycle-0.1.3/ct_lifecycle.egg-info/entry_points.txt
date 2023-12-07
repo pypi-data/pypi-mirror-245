@@ -1,0 +1,2 @@
+[console_scripts]
+lifecycle = lifecycle.cli:main

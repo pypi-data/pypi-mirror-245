@@ -1,0 +1,32 @@
+name: Generate Documentation
+
+on: push
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build Docs
+      run: |
+        sudo apt install -y python3-sphinx python3-sphinx-rtd-theme python3-ldap3
+        sudo pip install addict
+        make -C docs html SPHINXOPTS="-W --keep-going"
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        name: documentation
+        path: docs/build/html
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    needs: generate
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+    - name: Deploy Pages artifact
+      id: deployment
+      uses: actions/deploy-pages@v1
+      with:
+        artifact_name: documentation

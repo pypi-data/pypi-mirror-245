@@ -1,0 +1,13 @@
+addict
+ldap3
+PyJWT
+pyyaml
+requests
+
+[dev]
+pre-commit
+pylint
+pytest
+pytest-cov
+pytest-mock
+pytest-pylint
