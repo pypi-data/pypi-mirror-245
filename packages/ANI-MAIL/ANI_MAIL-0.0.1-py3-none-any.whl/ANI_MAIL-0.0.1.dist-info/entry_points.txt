@@ -1,0 +1,3 @@
+[console_scripts]
+ANI_MAIL = Ani_mail.mail:main
+
