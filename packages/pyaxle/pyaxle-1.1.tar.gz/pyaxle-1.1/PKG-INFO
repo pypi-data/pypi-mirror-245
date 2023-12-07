@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: pyaxle
+Version: 1.1
+Description-Content-Type: text/markdown
+
+Pyaxel is a module that creates python threads, that can be ran, and is stored in a directory so that you can run it anywhere providing the directory.

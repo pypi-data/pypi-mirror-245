@@ -1,0 +1,1 @@
+Pyaxel is a module that creates python threads, that can be ran, and is stored in a directory so that you can run it anywhere providing the directory.
