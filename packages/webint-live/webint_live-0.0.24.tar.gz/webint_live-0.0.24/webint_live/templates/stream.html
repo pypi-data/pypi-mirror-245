@@ -1,0 +1,27 @@
+$def with ()
+$var title: Live Stream
+
+<link href=/assets/video.js-5.8.8.css rel=stylesheet>
+<script src=/assets/video.js-5.8.8.js></script>
+<script src=/assets/video.js-contrib-hls-3.6.12.js></script>
+<div id=stream></div>
+<script>
+fetch('/stream-stats')
+  .then(response => response.text())
+  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  .then(data => {
+    const streams = data.getElementsByTagName('stream')
+    if (streams.length) {
+      document.querySelector('#stream').innerHTML = `
+      <video id=livestream class="video-js vjs-default-skin" controls>
+        <source src=$tx.origin/hls/foo.m3u8 type=application/x-mpegURL>
+      </video>
+      <div style=font-size:.75em>started <span id=streamduration></span> minutes ago</div>
+      `
+      player = videojs('livestream', {fluid: true})
+      player.play()
+      // document.querySelector('#watching').innerHTML = streams[0].getElementsByTagName('nclients')[0].textContent
+      document.querySelector('#streamduration').innerHTML = Math.round(parseInt(streams[0].getElementsByTagName('time')[0].textContent) / 60000)
+    }
+  })
+</script>
