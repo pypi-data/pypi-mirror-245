@@ -1,0 +1,4 @@
+[console_scripts]
+mx_bluesky = mx_bluesky.__main__:main
+run_extruder = mx_bluesky.I24.serial.run_serial:run_extruder
+run_fixed_target = mx_bluesky.I24.serial.run_serial:run_fixed_target
