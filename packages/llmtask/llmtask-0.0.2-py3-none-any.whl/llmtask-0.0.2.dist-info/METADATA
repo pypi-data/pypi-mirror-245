@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: llmtask
+Version: 0.0.2
+Summary: LLM Downstream Task Evaluation Tool.
+Home-page: 
+Author: Slightwind
+Author-email: slightwindsec@gmail.com
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: pandas
+
+# LLM Task
+
+## Introduction
+
+
+
+## Quick Start
+
+```bash
+pip install llmtask
+```
+
+
+```python
+import random
+
+from llmtask import TaskGenerator
+
+choices = ("A", "B", "C", "D")
+
+TG = TaskGenerator("mmlu", max_shot=4)
+
+for task in TG:
+    TG.feedback(random.choice(choices))
+
+print(TG.summary())
+```
