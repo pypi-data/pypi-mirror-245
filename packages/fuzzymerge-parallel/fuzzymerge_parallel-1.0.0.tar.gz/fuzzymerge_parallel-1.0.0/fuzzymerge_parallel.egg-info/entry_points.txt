@@ -1,0 +1,2 @@
+[console_scripts]
+fuzzymerge_parallel = fuzzymerge_parallel.cli:main
