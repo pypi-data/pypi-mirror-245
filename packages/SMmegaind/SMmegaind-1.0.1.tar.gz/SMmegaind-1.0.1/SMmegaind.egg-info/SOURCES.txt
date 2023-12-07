@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+SMmegaind.egg-info/PKG-INFO
+SMmegaind.egg-info/SOURCES.txt
+SMmegaind.egg-info/dependency_links.txt
+SMmegaind.egg-info/requires.txt
+SMmegaind.egg-info/top_level.txt
+megaind/__init__.py
