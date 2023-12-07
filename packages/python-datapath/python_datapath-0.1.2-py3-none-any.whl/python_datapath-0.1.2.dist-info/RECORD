@@ -1,0 +1,10 @@
+datapath/__init__.py,sha256=S8iPdNaz9eB41OdCzru1HTiH4bBrIf4McbLaIsgcpNA,764
+datapath/_base.py,sha256=dm3akPdri1paAp7F23Y9gb4lCrsGmVPMAPuSht0Jq6k,10872
+datapath/collection.py,sha256=szidUEcQNRjPx1zTwpMoOcFiSWZPV5lernZKliVxK84,3435
+datapath/folding.py,sha256=00afNK3h2VqFCzuQtwUFbtHN_6PMfvHLtjm8s3vvXkQ,7655
+datapath/types.py,sha256=8cV5Ulzu-FAqEiCSDAwFmAjW7OgL5rh-CfsJ_5Ag3u0,5132
+python_datapath-0.1.2.dist-info/LICENSE.txt,sha256=JNIXJ5cZH7J9UgohQneDBBwVhr_qnTnYKf7DblvCDLE,1049
+python_datapath-0.1.2.dist-info/METADATA,sha256=5k9VsZos7Y2wJcZMT8pW8wP9FMMc4N6lEHdDw3wutOg,552
+python_datapath-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+python_datapath-0.1.2.dist-info/top_level.txt,sha256=-MveXG2541wgKgFcOuzVww-xW5jkMETkzjFNSav3EaQ,9
+python_datapath-0.1.2.dist-info/RECORD,,

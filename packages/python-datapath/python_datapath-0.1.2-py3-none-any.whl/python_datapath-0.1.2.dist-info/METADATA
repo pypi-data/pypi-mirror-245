@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-datapath
+Version: 0.1.2
+Summary: Functions for working with dotted and square-bracketed paths against a recursive dict/list structure
+Home-page: https://github.com/ashafer01/python-datapath
+Author: Alex Shafer
+Author-email: ashafer@pm.me
+License: MIT
+Requires-Python: >=3.10.0
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: regex
+
+Functions for working with dotted and square-bracketed paths against a recursive dict/list structure
+
+Docs at https://github.com/ashafer01/python-datapath
