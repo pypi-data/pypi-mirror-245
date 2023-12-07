@@ -1,0 +1,2 @@
+[console_scripts]
+example = ZimPhoneValidate.validate:example.show
