@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embrs"
+version = "0.0.11"
+authors = [
+  { name="Rui de Gouvea Pinto", email="rjdp3@gatech.edu" },
+]
+description = "A fire simulation tool optimized for autonomous firefighting systems development"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/AREAL-GT/embrs"
+Issues = "https://github.com/AREAL-GT/embrs/issues"

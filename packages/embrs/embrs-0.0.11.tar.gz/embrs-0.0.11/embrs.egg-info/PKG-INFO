@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: embrs
+Version: 0.0.11
+Summary: A fire simulation tool optimized for autonomous firefighting systems development
+Home-page: https://github.com/AREAL-GT/embrs
+Author: Rui de Gouvea Pinto
+Author-email: Rui de Gouvea Pinto <rjdp3@gatech.edu>
+Project-URL: Homepage, https://github.com/AREAL-GT/embrs
+Project-URL: Issues, https://github.com/AREAL-GT/embrs/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# embrs
