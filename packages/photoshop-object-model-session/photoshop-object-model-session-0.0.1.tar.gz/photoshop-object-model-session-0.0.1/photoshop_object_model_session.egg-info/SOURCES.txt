@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+photoshop_object_model_session/__init__.py
+photoshop_object_model_session/session.py
+photoshop_object_model_session.egg-info/PKG-INFO
+photoshop_object_model_session.egg-info/SOURCES.txt
+photoshop_object_model_session.egg-info/dependency_links.txt
+photoshop_object_model_session.egg-info/requires.txt
+photoshop_object_model_session.egg-info/top_level.txt

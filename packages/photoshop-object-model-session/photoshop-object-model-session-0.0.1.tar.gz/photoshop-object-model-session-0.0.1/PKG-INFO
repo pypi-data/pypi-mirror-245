@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: photoshop-object-model-session
+Version: 0.0.1
+Summary: Photoshop Object Model Session
+Author: Tristan Languebien
+Author-email: <tlanguebien@gmail.com>
+Keywords: python,photoshop
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pywin32
+Requires-Dist: photoshop-object-model
+
+
+This package is designed to interact with Photoshop using its Component Object Model using python.
+the class PhotoshopSession be used as a context, who handles errors while providing autocompletion, access to docstrings, and accurate type hints in your preferred IDE.
+
+Usage : 
+'''python
+from photoshop_object_model_session import PhotoshopSession
+
+with PhotoshopSession() as ps:
+    print(ps.Application.Version)
+    new_layer = ps.Application.ActiveDocument.ArtLayers.Add()
+    new_layer.Name = "Hello World"
+'''
+
+All classes have been written based on Photoshop's VBS documentation, which can be found at <https://github.com/Adobe-CEP/CEP-Resources/blob/master/Documentation/Product%20specific%20Documentation/Photoshop%20Scripting/photoshop-vbs-ref-2020.pdf>.
+As such, the code you'll find here isn't very pythonic, because it is based on the Visual Basic syntax.
+Please note that this package may contain inconsistencies, missing return types, and typos. Unfortunately, most of these issues stem from faithfully transcribing Adobes's flawed documentation.
