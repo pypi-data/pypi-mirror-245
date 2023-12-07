@@ -1,0 +1,8 @@
+black
+pylint
+python-aiconfig
+transformers
+torch
+torchvision
+torchaudio
+asyncio

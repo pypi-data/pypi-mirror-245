@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/aiconfig_extension_hugging_face_transformers/__init__.py
+src/aiconfig_extension_hugging_face_transformers/text_generation.py
+src/aiconfig_extension_hugging_face_transformers.egg-info/PKG-INFO
+src/aiconfig_extension_hugging_face_transformers.egg-info/SOURCES.txt
+src/aiconfig_extension_hugging_face_transformers.egg-info/dependency_links.txt
+src/aiconfig_extension_hugging_face_transformers.egg-info/requires.txt
+src/aiconfig_extension_hugging_face_transformers.egg-info/top_level.txt
