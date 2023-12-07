@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: pitsu
+Version: 1.1.2
+Summary: a python module to create html pages with python code
+Author: Filipi565
+Project-URL: Source, https://github.com/Filipi565/pitsu
+Project-URL: Issues, https://github.com/Filipi565/pitsu/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pitsu
+a python module to create html pages with python code
+
+# how to use
+
+* instal pitsu:
+
+```bash
+pip3 install pitsu
+```
+
+or 
+
+```bash
+pip install pitsu
+```
+
+simple example:
+
+```python
+from pitsu import *
+
+html(
+    head(
+        meta(charset='UTF-8'),
+        title('Example Login')
+    ),
+    body(
+        form(
+            inp( # inp = input element
+                type='text',
+                name='user',
+                id='user',
+                required=True
+            ),
+            br(),
+            inp(
+                type='password',
+                name='pass',
+                id='pass',
+                required=True
+            ),
+            br(),
+            inp(
+                type='submit',
+                value='Submit'
+            ),
+            action='/',
+            method='get'
+        )
+    ),
+    lang='en'
+).pack()
+```
+
+output:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>
+Example Login
+</title>
+</head>
+<body>
+<form action="/" method="get">
+<input type="text" name="user" id="user" required>
+<br>
+<input type="password" name="pass" id="pass" required>
+<br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+```
