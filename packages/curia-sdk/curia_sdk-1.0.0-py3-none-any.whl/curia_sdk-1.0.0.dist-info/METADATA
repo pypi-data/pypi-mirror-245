@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: curia-sdk
+Version: 1.0.0
+Summary: Curia Python SDK
+Home-page: https://github.com/Curia-co/curia-sdk
+Author: Nick Bucheleres
+Author-email: nick@curia.us
+Project-URL: Bug Tracker, https://github.com/Curia-co/curia-sdk
+Project-URL: Documentation, https://docs.curia.co
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Curia SDK
+### Track everything you care about, analyze it all in one place with Curia.
+
+Find documentation [here.](https://smile-coin.gitbook.io/sdk-docs/)
