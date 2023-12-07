@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bin/sm2mpx
+src/sm2mpx/__init__.py
+src/sm2mpx/ggd.py
+src/sm2mpx/sm2mpx.py
+src/sm2mpx.egg-info/PKG-INFO
+src/sm2mpx.egg-info/SOURCES.txt
+src/sm2mpx.egg-info/dependency_links.txt
+src/sm2mpx.egg-info/requires.txt
+src/sm2mpx.egg-info/top_level.txt
+tests/test_sm2mpx.py

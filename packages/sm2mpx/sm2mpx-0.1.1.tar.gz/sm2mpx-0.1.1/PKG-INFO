@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: sm2mpx
+Version: 0.1.1
+Summary: A python 3 unpacker for sm2mpx files.
+Home-page: https://gitlab.com/menschel/sm2mpx
+Author: Patrick Menschel
+Author-email: Patrick Menschel <menschel.p@posteo.de>
+Project-URL: Homepage, https://gitlab.com/menschel/sm2mpx
+Project-URL: Bug Tracker, https://gitlab.com/menschel/sm2mpx/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Embedded Systems
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: tox; extra == "test"
+
+# sm2mpx
+
+![coverage](https://gitlab.com/Menschel/sm2mpx/badges/master/coverage.svg)
+![pipeline](https://gitlab.com/Menschel/sm2mpx/badges/master/pipeline.svg)
+
+[Documentation](https://menschel.gitlab.io/sm2mpx/)
+
+
+A python 3 unpacker for SM2MPX files , a proprietary format used by H-Games from the late 90's.
+Filenames SE, VOICE, GGD, DATA are a clear indicator that it is this format.
+
+# Description
+
+Create an unpacker utility for this format to extract contents, just for fun.
+
+# Usage
+
+This utility copy's a shell executable to your local bin folder, so you can call it directly.
+```
+$ sm2mpx -h
+usage: sm2mpx [-h] [-l] [-e] [-o OUTPUT_BASE_DIR] file
+
+positional arguments:
+  file                A .bf file or a directory with .bf files.
+
+optional arguments:
+  -h, --help          show this help message and exit
+  -l                  A flag to list the contents of FILE.
+  -e                  A flag to extract the contents of FILE.
+  -o OUTPUT_BASE_DIR  The output base directory where to extract to, defaults
+                      to current working directory.
+```
+
+# Deprecation of PyPi Packages
+Packages on PyPi are no longer updated due to attempts of the Python Software Foundation to enforce new rules and basically flush out 
+developers who do not consent.  
+Recent packages can be installed directly from git, i.e.   
+```pip install git+https://gitlab.com/Menschel/sm2mpx.git --upgrade```

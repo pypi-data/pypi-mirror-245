@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+
+
+if __name__ == "__main__":
+    from pathlib import Path
+    from sm2mpx.sm2mpx import Sm2MpxFile
+    from argparse import ArgumentParser
+    from pprint import pprint as pp
+
+    parser = ArgumentParser()
+    parser.add_argument("file", type=Path, help="A .bf file or a directory with .bf files.")
+    parser.add_argument("-l", dest="list", action="store_true", help="A flag to list the contents of FILE.")
+    parser.add_argument("-e", dest="extract", action="store_true", help="A flag to extract the contents of FILE.")
+    parser.add_argument("-o", dest="output_base_dir", type=Path, default=Path(), help="The output base directory where to extract to, defaults to current working directory.")
+    args = parser.parse_args()
+
+    if args.file.is_file():
+        sm = Sm2MpxFile(filepath=args.file)
+        print(sm.file_version)
+        if args.list:
+            pp(sm.files)
+            sm.check_alignment_and_offset()
+        if args.extract:
+            sm.extract_all(args.output_base_dir)
+
