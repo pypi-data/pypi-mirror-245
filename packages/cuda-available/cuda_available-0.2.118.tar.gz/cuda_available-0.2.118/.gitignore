@@ -1,0 +1,6 @@
+/.vscode/
+/wheelhouse/
+/build/
+/dist/
+VERSION.metadata
+/venv/
