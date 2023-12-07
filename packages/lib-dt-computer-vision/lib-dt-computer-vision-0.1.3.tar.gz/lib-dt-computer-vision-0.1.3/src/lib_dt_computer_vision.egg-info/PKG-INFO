@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lib-dt-computer-vision
+Version: 0.1.3
+Summary: UNKNOWN
+Home-page: http://github.com/duckietown/lib-dt-computer-vision
+Author: Andrea F. Daniele
+Author-email: afdaniele@duckietown.org
+License: UNKNOWN
+Platform: UNKNOWN
+
+
+dt-computer-vision: Computer Vision components of Duckietown's autonomy behavior.
+=================================================================================
+
+
+Computer Vision components of the autonomous behavior pipeline running on Duckietown robots.
+
+
+
