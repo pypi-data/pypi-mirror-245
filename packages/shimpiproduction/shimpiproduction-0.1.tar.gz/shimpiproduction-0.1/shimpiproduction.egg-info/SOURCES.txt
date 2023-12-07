@@ -1,0 +1,12 @@
+CHANGELOG.txt
+License.txt
+MANIFEST.in
+README.txt
+main.py
+setup.py
+shimpiproduction.egg-info/PKG-INFO
+shimpiproduction.egg-info/SOURCES.txt
+shimpiproduction.egg-info/dependency_links.txt
+shimpiproduction.egg-info/entry_points.txt
+shimpiproduction.egg-info/requires.txt
+shimpiproduction.egg-info/top_level.txt
