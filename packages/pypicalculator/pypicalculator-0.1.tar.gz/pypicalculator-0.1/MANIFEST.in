@@ -1,0 +1,2 @@
+graft pypicalculator/static
+graft pypicalculator/templates
