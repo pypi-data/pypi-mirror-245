@@ -1,0 +1,8 @@
+dq_suite/__init__.py,sha256=LlNcaYhvNXgNe3BHd_dFlCxuh-jSRn_dkJXav8iOKv8,341
+dq_suite/df_checker.py,sha256=030C0FPG3pgvBrcQUARld1JoWXK8B-aTBjijLkojoL8,3401
+dq_suite/input_validator.py,sha256=hUs17RZCgPW3GJIEuvEePARaMoZJw_nEKbqfN3oTLJQ,784
+dq_suite/output_transformations.py,sha256=ru8TqcwY5Vv5kdEnObMbUeQ4qV_KpXuMK-OZ3kIirHs,3785
+dq_suite_amsterdam-0.1.0.dist-info/METADATA,sha256=N3WugPwf7kG3gcA5iQr9DQGTOKXiWvUIhfTuQ3eX334,1172
+dq_suite_amsterdam-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dq_suite_amsterdam-0.1.0.dist-info/top_level.txt,sha256=XX2ysQIapxHgF_NvYWYLvJ6RWHJcKHfZB6QeSmKxvvI,9
+dq_suite_amsterdam-0.1.0.dist-info/RECORD,,
