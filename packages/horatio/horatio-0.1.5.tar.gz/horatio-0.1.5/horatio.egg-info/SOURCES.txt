@@ -1,0 +1,8 @@
+README.md
+setup.py
+horatio/__init__.py
+horatio.egg-info/PKG-INFO
+horatio.egg-info/SOURCES.txt
+horatio.egg-info/dependency_links.txt
+horatio.egg-info/requires.txt
+horatio.egg-info/top_level.txt
