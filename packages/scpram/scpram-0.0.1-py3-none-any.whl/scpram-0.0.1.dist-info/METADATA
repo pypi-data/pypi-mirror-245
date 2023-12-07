@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: scpram
+Version: 0.0.1
+Summary: scPRAM accurately predicts single-cell gene expression perturbation response based on attention mechanism
+Home-page: https://github.com/jiang-q19/scPRAM
+Author: Qun Jiang
+License: MIT Licence
+Keywords: single cell,perturbation,attention,optimal transport
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: scanpy ==1.9.3
+Requires-Dist: adjusttext ==0.7
+Requires-Dist: pot ==0.9.1
+Requires-Dist: jupyter ==1.0.0
+Requires-Dist: torch ==1.3.1
+Requires-Dist: torchaudio ==0.13.1
+Requires-Dist: torchvision ==0.14.1
+
+With the rapid advancement of single-cell sequencing technology, we are gradually enabled to delve into the cellular re-sponses to various external perturbations at the gene expression level. However, obtaining perturbed samples in certain scenarios may be considerably challenging, and the substantial costs associated with sequencing also curtail the feasibil-ity of large-scale experimentation. A repertoire of methodologies has been employed for forecasting perturbative re-sponses in single-cell gene expression. However, existing methods only focus on predictions at the average level and do not capture the heterogeneity at the single-cell resolution effectively. Here we present scPRAM, a method for predicting Perturbation Responses in single-cell gene expression based on At-tention Mechanisms. Leveraging variational autoencoders and optimal transport, scPRAM aligns cell states before and after perturbation, followed by accurate prediction of gene expression responses to perturbations for unseen cell types through attention mechanisms. Experiments on multiple real perturbation datasets involving drug treatments and bacteri-al infections demonstrate that scPRAM attains heightened accuracy in perturbation prediction across cell types, species, and individuals, surpassing existing methodologies. Furthermore, scPRAM demonstrates outstanding capability in identi-fying differentially expressed genes under perturbation, capturing heterogeneity in perturbation responses across spe-cies, and maintaining stability in the presence of data noise and sample size variations.

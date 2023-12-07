@@ -1,0 +1,12 @@
+scpram/__init__.py,sha256=1rM9qVV_sLXBqIBolmXjMOuiQsqHP3BBcYEQAidysrA,150
+scpram/data_process.py,sha256=StishEu4P6PgrCuZpWmy3fbEBBVcKOk-AFk8Rq879Xs,1717
+scpram/dataset.py,sha256=TJR6tlA3k-L5Yejz_oKZtBZx7Oz6X_j1ZozUFlyIdZ4,3735
+scpram/evaluate.py,sha256=Qq9ZyZVuEpiJlvkCImZv0Mz_uUjEBzwl9N515Ymkylk,17928
+scpram/models.py,sha256=MuKs8Syeh5Fd4Kze59X1MRYvYDsvUy4oozXGQ_c8ITk,12269
+scpram/utils.py,sha256=KnnQMiI94HizS8B9K56Vw4btO81l0h44qSrHXdSUb_Y,5367
+scpram/version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+scpram-0.0.1.dist-info/LICENSE,sha256=e8Ancn2797wcbMS99UJKHBUUINcBiuhnsslES4izbsA,1067
+scpram-0.0.1.dist-info/METADATA,sha256=IO8kyIM4yezGGJIo-PD0jNyJnlKnQI3vYatbCwhm1b0,2337
+scpram-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+scpram-0.0.1.dist-info/top_level.txt,sha256=HugRzpfoQL6rPprIBRHfCTkcSYPXb13Woi_seLKs6_M,7
+scpram-0.0.1.dist-info/RECORD,,
