@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: spark-xarray
+Version: 0.1.dev0
+Home-page: https://github.com/andersy005/spark-xarray
+Author: Anderson Banihirwe, Kevin Paul
+Author-email: axbanihirwe@gmail.com
+Keywords:  Climate Science,xarray,Apache Spark,Distributed,netCDF,Parallel
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+License-File: LICENSE

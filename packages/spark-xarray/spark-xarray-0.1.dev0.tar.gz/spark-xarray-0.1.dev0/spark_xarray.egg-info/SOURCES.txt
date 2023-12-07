@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+spark_xarray.egg-info/PKG-INFO
+spark_xarray.egg-info/SOURCES.txt
+spark_xarray.egg-info/dependency_links.txt
+spark_xarray.egg-info/not-zip-safe
+spark_xarray.egg-info/requires.txt
+spark_xarray.egg-info/top_level.txt
+sparkxarray/__init__.py
+sparkxarray/reader.py
+sparkxarray/tests/__init__.py
+sparkxarray/tests/test_reader.py
