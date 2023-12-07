@@ -1,0 +1,3 @@
+
+[console_scripts]
+coin-clip = coin_clip.cli:cli

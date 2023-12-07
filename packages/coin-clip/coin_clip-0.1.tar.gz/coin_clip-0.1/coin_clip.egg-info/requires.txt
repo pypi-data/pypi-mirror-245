@@ -1,0 +1,12 @@
+colorlog
+click
+numpy
+torch
+torchvision
+transformers
+pillow
+chromadb
+
+[dev]
+pip-tools
+pytest
