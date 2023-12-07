@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "ml-switching-reg"
+version = "0.4.14"
+description = "A robust estimator to machine learning prediction misclassification"
+authors = ["Aleksandr Michuda <amichuda@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+matplotlib = "3.4.3"
+numpy = "1.24.2"
+linearmodels = "4.26"
+patsy = "0.5.2"
+scipy = "1.8.0"
+statsmodels = "0.13.2"
+pandas = "1.4.2"
+tqdm = "4.56.0"
+scikit-learn = "1.2.1"
+numba-stats = "1.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0",  "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+style = "semver"
+
+[tool.poetry-dynamic-versioning.substitution]
+folders = [
+  { path = "ml-switching-reg/" }
+]
