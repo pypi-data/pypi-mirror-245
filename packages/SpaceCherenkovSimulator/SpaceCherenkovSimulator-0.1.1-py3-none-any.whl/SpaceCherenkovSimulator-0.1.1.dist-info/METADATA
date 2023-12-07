@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: SpaceCherenkovSimulator
+Version: 0.1.1
+Summary: Python library containing tools for simulating Cherenkov detector count rates in space.
+Home-page: https://github.com/ssc-maire/SpaceCherenkovSimulator
+Author: Chris S. W. Davis
+Author-email: ChrisSWDavis@gmail.com
+License: GNU General Public License v3.0
+Keywords: space physics earth asymptotic trajectory Cherenkov detector Geant4 GRAS geomagnetic rigidity magnetocosmics trapped particles AE8 AP8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SpaceCherenkovSimulator
+
+**N.B. Currently this tool only runs on Linux-based machines (if you are a Windows user, you must use [Windows Subsystem for Linux](https://ubuntu.com/wsl) or a virtual machine with Linux to install and run this tool)**
+
