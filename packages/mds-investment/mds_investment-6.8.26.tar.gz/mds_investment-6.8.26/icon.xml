@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds.de for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.ui.icon" id="gain_icon">
+            <field name="name">mds-gaininvestment</field>
+            <field name="path">icon/gain_invest.svg</field>
+        </record>
+
+        <record model="ir.ui.icon" id="stockonline_icon">
+            <field name="name">mds-stockonline</field>
+            <field name="path">icon/stockonline.svg</field>
+        </record>
+
+        <record model="ir.ui.icon" id="asset_icon">
+            <field name="name">mds-asset</field>
+            <field name="path">icon/asset.svg</field>
+        </record>
+
+    </data>
+</tryton>

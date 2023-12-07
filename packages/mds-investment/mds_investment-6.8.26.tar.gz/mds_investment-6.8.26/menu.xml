@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!-- This file is part of the investment-module from m-ds.de for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <!-- menu: /Investment -->
+        <menuitem id="menu_investment" name="Investment"
+            icon="mds-gaininvestment" />
+        <record model="ir.ui.menu-res.group" id="menu_investment-group_investment">
+            <field name="menu" ref="menu_investment"/>
+            <field name="group" ref="group_investment"/>
+        </record>
+        <record model="ir.ui.menu-res.group" id="menu_investment-group_investment_admin">
+            <field name="menu" ref="menu_investment"/>
+            <field name="group" ref="group_investment_admin"/>
+        </record>
+
+        <!-- menu: /Investment/Online Source -->
+        <menuitem id="menu_onlinesource" action="act_source_view" sequence="10"
+            icon="mds-stockonline" parent="menu_investment"/>
+        <record model="ir.ui.menu-res.group" id="menu_onlinesource-group_investment_admin">
+            <field name="menu" ref="menu_onlinesource"/>
+            <field name="group" ref="group_investment_admin"/>
+        </record>
+
+        <!-- menu: /Investment/Asset -->
+        <menuitem id="menu_asset" action="act_asset_view" sequence="20"
+            icon="mds-asset" parent="menu_investment"/>
+        <record model="ir.ui.menu-res.group" id="menu_asset-group_investment">
+            <field name="menu" ref="menu_asset"/>
+            <field name="group" ref="group_investment"/>
+        </record>
+        <record model="ir.ui.menu-res.group" id="menu_asset-group_investment_admin">
+            <field name="menu" ref="menu_asset"/>
+            <field name="group" ref="group_investment_admin"/>
+        </record>
+
+    </data>
+</tryton>

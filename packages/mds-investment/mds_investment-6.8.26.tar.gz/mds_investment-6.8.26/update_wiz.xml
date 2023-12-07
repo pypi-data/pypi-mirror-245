@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- This file is part of the investment-module from m-ds.de for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.action.wizard" id="updt_source_wiz">
+            <field name="name">Update Source</field>
+            <field name="wiz_name">investment.source_update</field>
+        </record>
+        <record model="ir.action.keyword" id="updt_source_wiz_keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">investment.asset,-1</field>
+            <field name="action" ref="updt_source_wiz"/>
+        </record>
+        <record model="ir.action-res.group"
+            id="updt_source_wiz-group_investment_admin">
+            <field name="action" ref="updt_source_wiz"/>
+            <field name="group" ref="group_investment_admin"/>
+        </record>
+
+    </data>
+</tryton>
