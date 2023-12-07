@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: mkdocs-image-formatter-plugin
+Version: 1.0.0
+Summary: MkDocs plugin for managing image sizes
+License-File: LICENSE
+Requires-Dist: mkdocs >=1.0
+
