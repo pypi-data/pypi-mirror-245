@@ -1,0 +1,12 @@
+argcomplete
+businesstime
+coloredlogs
+configparser
+dash-bootstrap-components
+dash-bootstrap-templates
+openpyxl
+pandas<2.0.0
+pandas_bokeh
+pymysql
+sqlite-utils
+tabulate
