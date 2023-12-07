@@ -1,0 +1,3 @@
+[manim.plugins]
+manim_play_timeline=manim_play_timeline
+
