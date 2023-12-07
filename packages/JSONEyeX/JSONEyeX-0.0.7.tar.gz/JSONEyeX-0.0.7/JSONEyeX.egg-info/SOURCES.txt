@@ -1,0 +1,9 @@
+README.md
+setup.py
+JSONEyeX/__init__.py
+JSONEyeX/validator.py
+JSONEyeX.egg-info/PKG-INFO
+JSONEyeX.egg-info/SOURCES.txt
+JSONEyeX.egg-info/dependency_links.txt
+JSONEyeX.egg-info/requires.txt
+JSONEyeX.egg-info/top_level.txt
