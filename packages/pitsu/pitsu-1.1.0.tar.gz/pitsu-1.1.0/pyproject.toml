@@ -1,0 +1,18 @@
+[project]
+name = "pitsu"
+version = "1.1.0"
+authors = [
+  { name="Filipi565" },
+]
+description = "a python module to create html pages with python code"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Source = "https://github.com/Filipi565/pitsu"
+Issues = "https://github.com/Filipi565/pitsu/issues"
