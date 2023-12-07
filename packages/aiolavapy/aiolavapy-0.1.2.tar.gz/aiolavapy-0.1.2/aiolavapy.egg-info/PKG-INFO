@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: aiolavapy
+Version: 0.1.2
+Summary: Async library for Lava API
+Home-page: https://github.com/DTPlayer/aiolava
+Author: reff06
+Author-email: info@dnsprovider.tech
+Project-URL: Official documentation, https://dev.lava.ru/
+Keywords: lava aiolava lavaapi
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.9.1
+Requires-Dist: pydantic>=2.0.2
+
+# Async Lava API library
+
+### Example to use
+
+```python
+import asyncio
+
+from aiolava import LavaBusinessClient
+
+
+async def main():
+    client = LavaBusinessClient(
+        private_key="INSERT_PRIVATE_KEY",
+        shop_id="INSERT_SHOP_ID"  # optional
+    )
+    
+    invoice = await client.create_invoice(
+        sum_=10,
+        order_id="order#10"
+    )
+    print(invoice.data.url)
+    
+    status = await client.check_invoice_status(
+        order_id="order#10"
+    )
+    print(status.data.status)
+
+
+if __name__ == '__main__':
+    asyncio.run(main())
+
+```
+
+### All documentation you can find [here](https://dev.lava.ru/)
