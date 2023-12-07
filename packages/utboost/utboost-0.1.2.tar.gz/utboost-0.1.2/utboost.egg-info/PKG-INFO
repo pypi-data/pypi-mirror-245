@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: utboost
+Version: 0.1.2
+Summary: UTBoost Python Package
+Home-page: https://github.com/jd-opensource/UTBoost
+Author: Junjie Gao
+Author-email: gaojunjie10@jd.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# UTBoost Python Package
+
+## Installation Guide
+
+### Install from [PyPI](https://pypi.org/project/lightgbm)
+
+```bash
+❯ pip install utboost
+```
+
+### Install from source package
+#### Preparation
+
+* GNU Compiler Collection with OpenMP support
+* CMake 3.0+
+* Python 3.6+
+* [setuptools](https://pypi.python.org/pypi/setuptools) is needed
+
+#### Install python package
+May require `sudo` or administrator rights in Windows.
+```bash
+❯ python setup.py install
+```
+
+
+
