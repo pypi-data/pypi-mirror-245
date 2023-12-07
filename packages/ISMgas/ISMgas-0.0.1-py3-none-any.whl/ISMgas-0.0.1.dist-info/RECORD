@@ -1,0 +1,13 @@
+ISMgas/GalaxyProperties.py,sha256=PeeCq7VK3LV4S_6Dvr7aTIZW72Ma865vzSU1Y-E4nZw,1297
+ISMgas/SupportingFunctions.py,sha256=eGM5dG7AV_wdLVtZQ6oAli_nSwJnWHENT9cZBvAtI_M,10717
+ISMgas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ISMgas/globalVars.py,sha256=xAU8X9N2jL14h8OCbL6aYd8VnBOPO8kFRH4PIksSt6Q,1590
+ISMgas/linelist.py,sha256=dJUqvBnN67R5BvkGX95bcAtR1o5wyj6TzwHr4NtTD-c,4996
+ISMgas/fitting/DoubleGaussian.py,sha256=RW0ewvv7DPB3TFI07fSFNTgY4UKC0b_yj2s3S3RWVIE,18605
+ISMgas/fitting/init_fitting.py,sha256=tVGTejp2zkQeWFYAHaWo9tXEEr154QlntnBqAyKFszk,742
+ISMgas/spectra/AnalyzeSpectra.py,sha256=ytz3qUyMk4F9I5ZhZL9q83pl0nvJpsedqtsbSmL8DFg,27411
+ISMgas-0.0.1.dist-info/LICENSE,sha256=3rcHhW3WUDx_klfOEakF3WhmEpPSzXC8jY3WWY4dU24,1076
+ISMgas-0.0.1.dist-info/METADATA,sha256=xNOaq7-rG9JetZuxqr7yAVDHEc_OYOMvlfGyfS2B59Y,1896
+ISMgas-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ISMgas-0.0.1.dist-info/top_level.txt,sha256=ClahuvNTO_OZOdt_UNAbchogzGt3NYgqcU9OqZhQsSc,7
+ISMgas-0.0.1.dist-info/RECORD,,
