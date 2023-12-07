@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: customllib
+Version: 0.0.2
+Summary: A custom machine learning library
+Project-URL: Homepage, https://github.com/mustafaelghrib/customllib
+Project-URL: Issues, https://github.com/mustafaelghrib/customllib/issues
+Author-email: Mustafa Elghrib <mustafaelghrib@icloud.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# Customllib
+A custom machine learning library.
+
+## Install
+```shell
+pip install customllib
+```
