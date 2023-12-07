@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: freechat-sdk
+Version: 0.1.0
+Summary: FreeChat OpenAPI Definition
+Home-page: https://github.com/freechat-fun
+Author: freechat.fun
+Author-email: dev.freechat.fun@gmail.com
+License: UNKNOWN
+Keywords: OpenAPI,OpenAPI-Generator,FreeChat OpenAPI Definition
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3 (<2.1.0,>=1.25.3)
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic (>=2)
+Requires-Dist: typing-extensions (>=4.7.1)
+
+    https://github.com/freechat-fun/freechat
+    
+
