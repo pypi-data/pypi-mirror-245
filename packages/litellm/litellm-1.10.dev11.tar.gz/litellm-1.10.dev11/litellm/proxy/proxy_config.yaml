@@ -1,0 +1,15 @@
+model_list:
+  - model_name: Azure OpenAI GPT-4 Canada-East (External)
+    litellm_params:
+      model: azure/chatgpt-v-2
+      api_base: os.environ/AZURE_API_BASE
+      api_key: os.environ/AZURE_API_KEY
+      api_version: "2023-07-01-preview"
+      
+
+litellm_settings:
+  # callbacks: custom_callbacks.proxy_handler_instance # sets litellm.callbacks = [proxy_handler_instance]
+
+general_settings: 
+  # otel: True          # OpenTelemetry Logger
+  # master_key: sk-1234 # [OPTIONAL] Only use this if you to require all calls to contain this key (Authorization: Bearer sk-1234)
