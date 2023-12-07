@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: scKinetics
+Version: 0.2
+Summary: Biological prior guided single-cell kinetics inference.
+Home-page: https://github.com/poseidonchan/scKinetics
+Author: Yanshuo Chen
+Author-email: poseidonchan@icloud.com
+License: GPL-3.0 license
+Platform: any
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: diffrax
+Requires-Dist: jax (>=0.4.13)
+Requires-Dist: equinox (>=0.10.11)
+Requires-Dist: optaxanndata (>=0.7.6)
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+Requires-Dist: seabornnumpy
+
+UNKNOWN
+
