@@ -1,0 +1,12 @@
+jcalapi/__init__.py,sha256=i9jRn-_ZhILM_V11w1VqUb3AP9pGP_4nL43cadHWy_g,63
+jcalapi/app.py,sha256=E-ob8X1o5vVuwDg_UTnMuDLFL5BZxvkCaVCFufeEQu4,11729
+jcalapi/backend/__init__.py,sha256=EBNn0nstKeroofe8EMQyon1My4-8cVhlaRRGprJzrRI,148
+jcalapi/backend/confluence.py,sha256=10mDV7HbH3-oVxNlGti7odNocD2MrhVkCiLjmZHJWd4,9061
+jcalapi/backend/exchange.py,sha256=isdkpgD-uBNdPmqJXNQK2Kd0Vl_Lvif7t8XSgIMLpoU,8966
+jcalapi/events.py,sha256=1ZhZU31AijU5x20yKRJMJOlCRWEJbPlRi7bbhZiftKw,809
+jcalapi/run.py,sha256=VxweYPU3mKwvjo2Ce3GeHWUB8kroLpmDrI325bI4nz8,2156
+jcalapi-0.1.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+jcalapi-0.1.4.dist-info/METADATA,sha256=5fKlpeUkfmILTHERQi_Hi5gkmDWd6aiXg8V0G2HwvjI,4284
+jcalapi-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+jcalapi-0.1.4.dist-info/entry_points.txt,sha256=pC6nEnI1YPF7S9nfSv3gXeW8KFW6yBMQ_OyG2t2xFjM,44
+jcalapi-0.1.4.dist-info/RECORD,,
