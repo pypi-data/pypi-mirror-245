@@ -1,0 +1,2 @@
+[console_scripts]
+main_script = shimpiproductions.main:main
