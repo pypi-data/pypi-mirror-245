@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "data": {
+      "type": "number"
+    },
+    "dateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "device": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "diagnostic": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "version": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "toVersion": {
+      "type": "string"
+    }
+  }
+}
