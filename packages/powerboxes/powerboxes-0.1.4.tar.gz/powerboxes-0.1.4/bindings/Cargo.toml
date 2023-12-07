@@ -1,0 +1,25 @@
+[package]
+name = "_powerboxes"
+version = "0.1.4"
+edition = "2021"
+license = "MIT"
+readme = "../README.md"
+authors = ["Buillaume <guillaume.bertrand@edhec.com>"]
+description = "Utility functions to manipulate and compute metrics on boxes"
+repository = "https://github.com/Smirkey/powerboxes"
+homepage = "https://github.com/Smirkey/powerboxes"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "_powerboxes"
+crate-type = ["cdylib"]
+
+[dependencies]
+num-traits = "0.2.17"
+numpy = "0.20.0"
+pyo3 = "0.20.0"
+powerboxesrs = { path = "../powerboxesrs/" }
+ndarray = { version = "0.15.6", features = ["rayon"] }
+
+[dev-dependencies]
+pyo3 = { version = "0.20.0", features = ["auto-initialize"] }
