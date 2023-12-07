@@ -1,0 +1,2 @@
+[console_scripts]
+fpl-layout = fprime_fpl_layout.__main__:main
