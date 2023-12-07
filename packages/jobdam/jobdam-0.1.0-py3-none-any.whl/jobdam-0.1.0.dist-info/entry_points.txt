@@ -1,0 +1,3 @@
+[console_scripts]
+jobdam=jobdam.ui.main:main
+
