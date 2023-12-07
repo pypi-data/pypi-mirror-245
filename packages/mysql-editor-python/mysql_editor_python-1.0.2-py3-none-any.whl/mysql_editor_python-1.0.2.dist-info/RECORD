@@ -1,0 +1,13 @@
+mysql_editor/__main__.py,sha256=_agxtpUdsYB-KtF1fnboegQHGjJWQgtna4s_2GLVg-A,475
+mysql_editor/add_database.py,sha256=29CMkbWhCYXXJdgWOUthakbFs4C1ES0BMYTTKxOu-10,1182
+mysql_editor/files.py,sha256=k1v-M1yHpsoWYUX3avbXciC4OgMb45jCyqmc49i56t8,621
+mysql_editor/query.py,sha256=HxLo03x7gbaVV7aRCnmdHsrMOmKC2kaQRXAnFYKNTMg,2370
+mysql_editor/session.py,sha256=BFwUL8ur5l9HGvZBwQlFHFJ3c6o_BD6vEV1uDyfI7xU,4949
+mysql_editor/settings.py,sha256=8NJueTANWfFK7gkSwmPu1wzsukHzjxrSGIlrUBdVHbg,1699
+mysql_editor/window.py,sha256=OWsxPMhMnKUXmb2bM9GE5MkBPcCEciuLSKc2Hp7MDJ8,20176
+mysql_editor_python-1.0.2.dist-info/LICENSE,sha256=4mT_lp7iCFlMUtNrV3g-_f4HZNeYjhDSH7HBDmBmxxs,1073
+mysql_editor_python-1.0.2.dist-info/METADATA,sha256=AIrh8P1ap6zVyowqJUvtmJH8E3oDio_lcGre_losyhs,1035
+mysql_editor_python-1.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mysql_editor_python-1.0.2.dist-info/entry_points.txt,sha256=wj_E8iofhT3SUaKbNACCKK1iImIOB8_2ke8LzBVfhQE,51
+mysql_editor_python-1.0.2.dist-info/top_level.txt,sha256=CpS8YZx3Y8qLQ62GC0Adl3FIurJDH6PNtsauRwK7M1g,13
+mysql_editor_python-1.0.2.dist-info/RECORD,,
