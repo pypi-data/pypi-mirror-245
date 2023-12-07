@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: delpinos-rabbitmq
+Version: 0.0.2
+Summary: Delpinos Rabbitmq - Delpinos Framework
+Author-email: Alef Bruno Delpino de Oliveira <alef@delpinos.com>
+Keywords: delpinos,rabbitmq
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: delpinos-core ==0.0.1
+Requires-Dist: pika >=1.3.2
+
+# Delpinos API Core - Python
+
+![GitHub repo size](https://img.shields.io/github/repo-size/delpinos/delpinos-rabbitmq-python?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/delpinos/delpinos-rabbitmq-python?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/delpinos/delpinos-rabbitmq-python?style=for-the-badge)
+![GitHub open issues](https://img.shields.io/github/issues-raw/delpinos/delpinos-rabbitmq-python?style=for-the-badge)
+![GitHub open pull requests](https://img.shields.io/github/issues-pr-raw/delpinos/delpinos-rabbitmq-python?style=for-the-badge)
+
+
+> Base codes for creating python modules
