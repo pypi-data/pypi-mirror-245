@@ -1,0 +1,6 @@
+[console_scripts]
+client_smi=multiple_smi.client.client_smi:main
+discover_hosts=multiple_smi.client.update_hosts_list:main
+install_server_service=multiple_smi.server.install_server_service:main
+server_smi=multiple_smi.server.server_smi:main
+
