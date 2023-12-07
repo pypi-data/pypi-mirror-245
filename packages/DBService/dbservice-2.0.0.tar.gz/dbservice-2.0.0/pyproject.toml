@@ -1,0 +1,22 @@
+[project]
+name="DBService"
+version="2.0.0"
+authors = [
+  { name="hang.zhang", email="hhczy1003@163.com"},
+  { name="Marrin.Hu", email="himarrin@gmail.com"},
+]
+description = "a Database Wrapper for Redis and MySQL"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://pypi.org/project/DBService/"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
