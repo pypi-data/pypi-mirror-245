@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+siqc/__init__.py
+siqc/siqc.py
+siqc.egg-info/PKG-INFO
+siqc.egg-info/SOURCES.txt
+siqc.egg-info/dependency_links.txt
+siqc.egg-info/top_level.txt
