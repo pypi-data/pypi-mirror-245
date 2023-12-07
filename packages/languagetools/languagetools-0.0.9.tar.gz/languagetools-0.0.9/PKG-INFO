@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: languagetools
+Version: 0.0.9
+Summary: Tools for language models
+License: All Rights Reserved
+Author: Killian Lucas
+Author-email: killian@openinterpreter.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: os
+Requires-Dist: ipython (>=8.18.1,<9.0.0) ; extra == "os"
+Requires-Dist: matplotlib (>=3.8.2,<4.0.0) ; extra == "os"
+Requires-Dist: openai (>=0.28.0,<0.29.0)
+Requires-Dist: opencv-python (>=4.8.1.78,<5.0.0.0) ; extra == "os"
+Requires-Dist: pyautogui (>=0.9.54,<0.10.0) ; extra == "os"
+Requires-Dist: pytesseract (>=0.3.10,<0.4.0) ; extra == "os"
+Requires-Dist: tiktoken (>=0.4.0,<0.5.0)
+Description-Content-Type: text/markdown
+
+# LanguageTools
+
+Tools for language models.
+
+```shell
+pip install languagetools
+```
+
+```python
+import languagetools as lt
+
+summary = lt.summarizer.summarize(text)
+```
+
+This software is proprietary. All rights are reserved.
+
