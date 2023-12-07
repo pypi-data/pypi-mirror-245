@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: django-scripts
+Version: 2.0
+Summary: Django scripts
+Author-email: Raffaele Salmaso <raffaele@salmaso.org>
+License: MIT
+Project-URL: Home Page, https://pypi.org/project/django-scripts/
+Project-URL: Documentation, https://github.com/rsalmaso/django-scripts/blob/main/README.md
+Project-URL: GitHub, https://github.com/rsalmaso/django-scripts
+Project-URL: Changelog, https://github.com/rsalmaso/django-scripts/blob/main/CHANGELOG.md
+Project-URL: Bug Reports, https://github.com/rsalmaso/django-scripts/discussions
+Keywords: django,scripts
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: stua
+
+Various scripts to ease django development
+
+dj
+==
+
+Runs ./manage.py from anywehere in the django project
+
+rs
+--
+
+Runs (by default) ./manage.py runserver 0.0.0.0:8000 from anywhere in the django project
