@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: gradio_editor3d
+Version: 0.0.2
+Summary: Bringing 3D design and editing capabilities to Gradio
+Author-email: Shariq Farooq Bhat <shariqfarooq00@gmail.com>
+License-Expression: Apache-2.0
+Keywords: 3D design gradio,gradio-custom-component,gradio-editor3d
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.8
+Requires-Dist: gradio<5.0,>=4.0
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Description-Content-Type: text/markdown
+
+
+# gradio_editor3d
+Bringing 3D design and editing capabilities to Gradio.
+
+## Example usage
+
+```python
+import gradio as gr
+from gradio_editor3d import Editor3D
+```
