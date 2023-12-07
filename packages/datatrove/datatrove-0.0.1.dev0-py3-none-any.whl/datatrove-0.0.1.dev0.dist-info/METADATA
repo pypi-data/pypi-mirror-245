@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: datatrove
+Version: 0.0.1.dev0
+Summary: HuggingFace library to process and filter large amounts of webdata
+Home-page: https://github.com/huggingface/datatrove
+Author: HuggingFace Inc.
+Author-email: guilherme@huggingface.co
+License: Apache 2.0
+Keywords: data machine learning processing
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: boto3 ==1.28.78
+Requires-Dist: cchardet ==2.1.7
+Requires-Dist: inscriptis ==2.3.2
+Requires-Dist: loguru ==0.7.0
+Requires-Dist: multiprocess ==0.70.14
+Requires-Dist: nltk ==3.8.1
+Requires-Dist: numpy ==1.25.0
+Requires-Dist: python-magic ==0.4.27
+Requires-Dist: trafilatura ==1.6.1
+Requires-Dist: warcio ==1.7.4
+Requires-Dist: zstandard ==0.21.0
+Requires-Dist: pyarrow ==12.0.1
+Requires-Dist: tokenizers ==0.13.3
+Requires-Dist: tldextract ==3.4.4
+Requires-Dist: pandas ==2.0.3
+Requires-Dist: backoff ==2.2.1
+Requires-Dist: fsspec ==2023.9.2
+Requires-Dist: humanize ==4.8.0
+Requires-Dist: rich ==13.7.0
+Provides-Extra: dev
+Requires-Dist: black ~=23.1 ; extra == 'dev'
+Requires-Dist: pre-commit >=3.3.3 ; extra == 'dev'
+Requires-Dist: pytest >=7.2.0 ; extra == 'dev'
+Requires-Dist: pytest-timeout ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Requires-Dist: ruff <=0.0.259,>=0.0.241 ; extra == 'dev'
+
+# datatrove
+
+## Installation
+
+```bash
+pip install -e ".[dev]"
+```
+
+Install pre-commit code style hooks:
+```bash
+pre-commit install
+```
+
+Run the tests:
+```bash
+pytest -n 4  --max-worker-restart=0 --dist=loadfile tests
+```
