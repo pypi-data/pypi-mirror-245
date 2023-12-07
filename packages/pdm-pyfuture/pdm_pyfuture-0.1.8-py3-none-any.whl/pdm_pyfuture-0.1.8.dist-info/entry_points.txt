@@ -1,0 +1,6 @@
+[pdm]
+multibuild = pdm_pyfuture.__main__:plugin
+
+[pdm.build.hook]
+pyfuture = pdm_pyfuture.build:PyFutureBuildHook
+
