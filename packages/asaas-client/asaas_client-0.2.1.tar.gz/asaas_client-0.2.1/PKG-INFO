@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: asaas_client
+Version: 0.2.1
+Summary: An unofficial client for Asaas API.
+Project-URL: Documentation, https://github.com/miguelfferraz/python-asaas-client/tree/main#readme
+Project-URL: Source, https://github.com/miguelfferraz/python-asaas-client
+Project-URL: Tracker, https://github.com/miguelfferraz/python-asaas-client/issues
+Author-email: Miguel Figueira Ferraz <miguelfigueiraferraz@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Requires-Dist: httpx>=0.25.0
+Description-Content-Type: text/markdown
+
+# Asaas Client
+
+[![Test](https://github.com/miguelfferraz/python-asaas-client/workflows/CI/badge.svg)](https://github.com/miguelfferraz/python-asaas-client/actions?query=workflow%+branch%main)
+[![Codecov](https://codecov.io/gh/miguelfferraz/python-asaas-client/main/graph/badge.svg)](https://codecov.io/gh/miguelfferraz/python-asaas-client)
+[![Package Version](https://img.shields.io/pypi/v/asaas-client?color=%2334D058&label=PyPI%20package)](https://pypi.org/project/asaas-client)
