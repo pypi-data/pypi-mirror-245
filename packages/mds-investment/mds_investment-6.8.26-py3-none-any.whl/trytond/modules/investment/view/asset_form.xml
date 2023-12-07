@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!-- This file is part of the investment-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<form col="6">
+    <label name="product" />
+    <field name="product" colspan="3"/>
+    <label name="rate" />
+    <field name="rate" symbol="asset_symbol"/>
+
+    <label id="labdate" string=" "/>
+    <label name="nextupdate" colspan="2"/>
+    <field name="nextupdate"/>
+    <label name="date" />
+    <field name="date"/>
+
+    <separator id="sepperc" colspan="6" string="Gain and Loss"/>
+    <label name="change_day1" />
+    <field name="change_day1" symbol="change_symbol"/>
+    <label name="change_month1" />
+    <field name="change_month1" symbol="change_symbol"/>
+    <label name="change_month3" />
+    <field name="change_month3" symbol="change_symbol"/>
+
+    <label name="change_month6" />
+    <field name="change_month6" symbol="change_symbol"/>
+    <label name="change_month12" />
+    <field name="change_month12" symbol="change_symbol"/>
+    <newline/>
+
+    <separator id="sepunits" colspan="6" string="Currency and Units"/>
+    <label name="currency" />
+    <field name="currency" />
+    <label name="currency_digits" />
+    <field name="currency_digits" />
+    <newline/>
+
+    <label name="uom" />
+    <field name="uom" />
+    <label name="product_uom" />
+    <field name="product_uom" />
+    <newline/>
+
+    <notebook colspan="6">
+        <page id="pgids" col="4" string="Identifiers">
+            <label name="wkn" />
+            <field name="wkn" />
+            <label name="secsymb" />
+            <field name="secsymb" />
+
+            <label name="isin" />
+            <field name="isin" />
+        </page>
+        <page name="rates" col="1" string="Rates">
+            <field name="rates" mode="tree,form,graph"/>
+        </page>
+        <page id="pgupdate" col="4" string="Course Update">
+            <label name="updttime"/>
+            <field name="updttime"/>
+            <label name="updtdays"/>
+            <field name="updtdays"/>
+
+            <label name="updturl"/>
+            <field name="updturl" colspan="3"/>
+            <field name="updturl_enable"/>
+            <newline/>
+
+            <field name="updtsources" colspan="4"/>
+        </page>
+    </notebook>
+
+</form>

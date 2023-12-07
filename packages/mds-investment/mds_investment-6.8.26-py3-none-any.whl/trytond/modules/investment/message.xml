@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- This file is part of the investment-module from m-ds.de for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.message" id="msg_unique_rate_date">
+            <field name="text">A asset can only have one rate by date.</field>
+        </record>
+        <record model="ir.message" id="msg_rate_positive">
+            <field name="text">A asset rate must be positive.</field>
+        </record>
+        <record model="ir.message" id="msg_import_err_date">
+            <field name="text">failed to read column %(colnr)s of file, expected date (format: %(datefmt)s)</field>
+        </record>
+        <record model="ir.message" id="msg_err_unknown_content">
+            <field name="text">failed to identify row content: %(linetxt)s</field>
+        </record>
+        <record model="ir.message" id="msg_querytype_web">
+            <field name="text">Extract from web page</field>
+        </record>
+        <record model="ir.message" id="msg_missing_url">
+            <field name="text">URL for the online source '%(oname)s' is missing.</field>
+        </record>
+
+    </data>
+</tryton>

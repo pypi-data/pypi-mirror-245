@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: mds-investment
+Version: 6.8.26
+Summary: Tryton module to add investment items.
+Home-page: https://www.m-ds.de/
+Author: martin-data services
+Author-email: service@m-ds.de
+License: GPL-3
+Download-URL: https://scmdev.m-ds.de/Tryton/Extra/investment
+Keywords: tryton investment shares commodities
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Framework :: Tryton
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Natural Language :: German
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+Requires-Dist: html2text
+Requires-Dist: requests (>=2.26)
+Requires-Dist: trytond (<6.9,>=6.8)
+Requires-Dist: trytond-company (<6.9,>=6.8)
+Requires-Dist: trytond-currency (<6.9,>=6.8)
+Requires-Dist: trytond-product (<6.9,>=6.8)
+
+mds-investment
+==============
+Tryton module to add investment items.
+
+Install
+=======
+
+pip install mds-investment
+
+Requires
+========
+- Tryton 6.8
+
+How to
+======
+
+Store values such as stocks, funds and commodities in Tryton.
+Watch the performance. The Tryton module periodically loads
+quotes of values from one or more price sources.
+You can define the course sources yourself.
+
+Changes
+=======
+
+*6.8.26 - 06.12.2023*
+
+- add: columns optional
+
+*6.8.25 - 01.12.2023*
+
+- code/speed optimized
+
+*6.8.24 - 07.06.2023*
+
+- portet to Tryton 6.8
+
+

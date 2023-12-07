@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!-- This file is part of the investment-module from m-ds.de for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="investment.source" id="web_finanzen_net">
+            <field name="name">www.finanzen.net - ETF (Tradegate)</field>
+            <field name="url">https://www.finanzen.net/etf/${isin}/tgt</field>
+            <field name="nohtml" eval="True"/>
+            <field name="rgxdate">\nKurszeit\s+(\d+\.\d+\.\d+)\s+\d{2}:\d{2}:\d{2}.*\n</field>
+            <field name="rgxdatefmt">%d.%m.%Y</field>
+            <field name="rgxrate">\nKurs\s+(\d+,\d+)\s+EUR.*\n</field>
+            <field name="rgxdecimal">,</field>
+            <field name="rgxident">WKN:.* ISIN:\s+([A-Z,0-9]+).*</field>
+            <field name="rgxidtype">isin</field>
+        </record>
+        <record model="investment.source" id="web_finanzen_net_stu">
+            <field name="name">www.finanzen.net - ETF (Stuttgard)</field>
+            <field name="url">https://www.finanzen.net/etf/${isin}/stu</field>
+            <field name="nohtml" eval="True"/>
+            <field name="rgxdate">\nKurszeit\s+(\d+\.\d+\.\d+)\s+\d{2}:\d{2}:\d{2}.*\n</field>
+            <field name="rgxdatefmt">%d.%m.%Y</field>
+            <field name="rgxrate">\nKurs\s+(\d+,\d+)\s+EUR.*\n</field>
+            <field name="rgxdecimal">,</field>
+            <field name="rgxident">WKN:.* ISIN: ([A-Z,0-9]+).*</field>
+            <field name="rgxidtype">isin</field>
+        </record>
+        <record model="investment.source" id="web_finanzen_fonds">
+            <field name="name">www.finanzen.net - Fonds</field>
+            <field name="url">https://www.finanzen.net/fonds/${isin}/tgt</field>
+            <field name="nohtml" eval="True"/>
+            <field name="rgxdate">\n\*\*Kursdatum\*\*\s+(\d+\.\d+\.\d+).*\n</field>
+            <field name="rgxdatefmt">%d.%m.%Y</field>
+            <field name="rgxrate">\n\*\*Kurs\*\*\s+(\d+,\d+)\s+EUR.*\n</field>
+            <field name="rgxdecimal">,</field>
+            <field name="rgxident">WKN:.*\s+ISIN:\s+([A-Z,0-9]+).*</field>
+            <field name="rgxidtype">isin</field>
+        </record>
+        <record model="investment.source" id="web_finanzen_rohstoffe">
+            <field name="name">www.finanzen.net - Rohstoffe</field>
+            <field name="url">https://www.finanzen.net/rohstoffe/${symbol}</field>
+            <field name="nohtml" eval="True"/>
+            <field name="rgxdate">\nKurszeit\s+(\d+\.\d+\.\d+)\s+\d+:\d+:\d+.*\n</field>
+            <field name="rgxdatefmt">%d.%m.%Y</field>
+            <field name="rgxrate">\nKurs\s+([\d+\.]*\d+,\d+)\s+USD\s*\n</field>
+            <field name="rgxdecimal">,</field>
+        </record>
+        <record model="investment.source" id="web_finanzen_aktie">
+            <field name="name">www.finanzen.net - Aktie</field>
+            <field name="url">https://www.finanzen.net/aktien/${symbol}</field>
+            <field name="nohtml" eval="True"/>
+            <field name="rgxdate">\nKurszeit(\d+\.\d+\.\d+) \d{2}:\d{2}:\d{2}.*\n</field>
+            <field name="rgxdatefmt">%d.%m.%Y</field>
+            <field name="rgxrate">\nKurs(\d+,\d+) EUR.*\n</field>
+            <field name="rgxident">\nISIN([A-Z,0-9]+).*\n</field>
+            <field name="rgxidtype">isin</field>
+            <field name="rgxdecimal">,</field>
+        </record>
+        <record model="investment.source" id="web_markets_ft_com">
+            <field name="name">Financial Times UK</field>
+            <field name="url">https://markets.ft.com/data/etfs/tearsheet/summary?s=${symbol}</field>
+            <field name="nohtml" eval="True"/>
+            <field name="rgxdate">Data delayed at least 15 minutes, as of (.*) \d+:\d+ GMT\.</field>
+            <field name="rgxdatefmt">%b %d %Y</field>
+            <field name="rgxrate">Price\D+([\d,]*\d+\.\d+)</field>
+            <field name="rgxdecimal">.</field>
+        </record>
+        <record model="investment.source" id="web_sbroker">
+            <field name="name">www.sbroker.de</field>
+            <field name="url">https://www.sbroker.de/sbl/mdaten_analyse/dksuche_a?SEARCH_VALUE=${isin}</field>
+            <field name="nohtml" eval="True"/>
+            <field name="rgxdate">\nDatum / Uhrzeit: (\d+\.\d+\.\d+) / \d+:\d+\s+\n</field>
+            <field name="rgxdatefmt">%d.%m.%y</field>
+            <field name="rgxrate">Kurs aktuell .* (\d+,\d+)\s+EUR.*\n</field>
+            <field name="rgxdecimal">,</field>
+            <field name="rgxident">\nWKN / ISIN: [A-Z,0-9]+ / ([A-Z,0-9]+)\s+\n</field>
+            <field name="rgxidtype">isin</field>
+        </record>
+        <record model="investment.source" id="web_faz">
+            <field name="name">FAZ</field>
+            <field name="url">https://www.faz.net/aktuell/finanzen/kurs/etf/</field>
+            <field name="nohtml" eval="True"/>
+            <field name="fixed_url" eval="True"/>
+            <field name="rgxdate">(\d{2}\.\d{2}\.\d{4})</field>
+            <field name="rgxdatefmt">%d.%m.%y</field>
+            <field name="rgxrate">\nKurs(\d+.\d+)\s+€\s+\n</field>
+            <field name="rgxdecimal">,</field>
+            <field name="rgxident">\nWKN:.*\sISIN: ([A-Z,0-9]+).*\n</field>
+            <field name="rgxidtype">isin</field>
+        </record>
+
+    </data>
+</tryton>
