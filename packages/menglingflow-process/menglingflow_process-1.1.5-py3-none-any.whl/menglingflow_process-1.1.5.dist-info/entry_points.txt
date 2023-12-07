@@ -1,0 +1,2 @@
+[console_scripts]
+mlfloweek=menglingflow_process.week_schedule.main:transfer
