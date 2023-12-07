@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: delpinos-core
+Version: 0.0.1
+Summary: Base codes - Delpinos Framework
+Author-email: Alef Bruno Delpino de Oliveira <alef@delpinos.com>
+Keywords: delpinos,framework,core
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Delpinos Core - Python
+
+![GitHub repo size](https://img.shields.io/github/repo-size/delpinos/delpinos-core-python?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/delpinos/delpinos-core-python?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/delpinos/delpinos-core-python?style=for-the-badge)
+![GitHub open issues](https://img.shields.io/github/issues-raw/delpinos/delpinos-core-python?style=for-the-badge)
+![GitHub open pull requests](https://img.shields.io/github/issues-pr-raw/delpinos/delpinos-core-python?style=for-the-badge)
+
+
+> Base codes for creating python modules
