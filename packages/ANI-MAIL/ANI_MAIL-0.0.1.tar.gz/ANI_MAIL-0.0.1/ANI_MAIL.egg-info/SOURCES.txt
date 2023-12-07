@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ANI_MAIL.egg-info/PKG-INFO
+ANI_MAIL.egg-info/SOURCES.txt
+ANI_MAIL.egg-info/dependency_links.txt
+ANI_MAIL.egg-info/entry_points.txt
+ANI_MAIL.egg-info/top_level.txt
+Ani_mail/mail.py

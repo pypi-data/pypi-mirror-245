@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ANI_MAIL
+Version: 0.0.1
+Summary: A Python package to send mail, read mail and clear inbox.
+Home-page: UNKNOWN
+Author: Aniket Dubey
+Author-email: daniket182@gmail.com
+License: MIT
+Description: #ANI_MAIL
+        
+        A Python package to send mail, read mail and clear inbox.
+        
+        #HOW TO USE IT
+        
+        from Ani_mail import mail
+        
+        mail.main.send_email(email_address, email_password, recipient_email, subject, body)
+        
+        mail.main.check_new_emails(email_address, email_password, number_of_mails)
+        
+        mail.main.clear_inbox(email_address, email_password)
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
