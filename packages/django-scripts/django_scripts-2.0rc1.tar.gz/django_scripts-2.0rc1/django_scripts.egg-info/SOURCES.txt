@@ -1,0 +1,15 @@
+AUTHORS
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+django_scripts/__init__.py
+django_scripts/dj.py
+django_scripts.egg-info/PKG-INFO
+django_scripts.egg-info/SOURCES.txt
+django_scripts.egg-info/dependency_links.txt
+django_scripts.egg-info/entry_points.txt
+django_scripts.egg-info/requires.txt
+django_scripts.egg-info/top_level.txt
