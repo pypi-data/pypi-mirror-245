@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/nbdump/__init__.py
+src/nbdump/cli.py
+src/nbdump/core.py
+src/nbdump.egg-info/PKG-INFO
+src/nbdump.egg-info/SOURCES.txt
+src/nbdump.egg-info/dependency_links.txt
+src/nbdump.egg-info/entry_points.txt
+src/nbdump.egg-info/requires.txt
+src/nbdump.egg-info/top_level.txt
+tests/test_io.py
+tests/test_usage.py
+tests/test_version.py
