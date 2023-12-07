@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fhepy
+Version: 0.1.0
+Summary: 
+Author: hanyul-ryu
+Author-email: hanyul.ryu@desilo.ai
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# fhepy
+
