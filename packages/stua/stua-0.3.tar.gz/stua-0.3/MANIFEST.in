@@ -1,0 +1,9 @@
+include README.md
+include CHANGELOG.md
+include AUTHORS
+include COPYING
+include MANIFEST.in
+graft stua
+exclude tests
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
