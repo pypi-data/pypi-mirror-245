@@ -1,0 +1,10 @@
+delpinos/crud/sqlalchemy/config.py,sha256=WPnEzsQ-OtjWWNKDyBMvuaNTQP8dVWI8sUt2A0dSxBc,626
+delpinos/crud/sqlalchemy/connection.py,sha256=zsdM0NovPQ0E-7W3enYxMrYOCVIpDTczBNKLAGC7VOU,2519
+delpinos/crud/sqlalchemy/application/encoders/sqlalchemy_encoder.py,sha256=e2P_nyz3G72A_fZv0yF4QBfYCHScA4ZhL5S65NRRZ-g,1524
+delpinos/crud/sqlalchemy/application/models/sqlalchemy_model.py,sha256=d7T0u4utMD5UCItcX-7R6iqSzVYwLM5YvwP1WF05xCg,3660
+delpinos/crud/sqlalchemy/application/repositories/sqlalchemy_repository.py,sha256=ADbHr-Cu_JdZJNtpfioIE3GmyVeqnZJ5PdUSOwpeb_o,8831
+delpinos/crud/sqlalchemy/configuration/functions.py,sha256=-RnhRxK5ogU7lNfAFq1n3SMUYdDEaP80m1aNWLjILv4,2830
+delpinos_crud_sqlalchemy-0.0.2.dist-info/METADATA,sha256=8Wf2k-RO83Dx7w1G4HrWng9VGcDjK-xga2UleD90Luw,1277
+delpinos_crud_sqlalchemy-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+delpinos_crud_sqlalchemy-0.0.2.dist-info/top_level.txt,sha256=LAneeXI8p69ze3LfTg_cQXHOJnefxd_-EVIro6WLLWk,9
+delpinos_crud_sqlalchemy-0.0.2.dist-info/RECORD,,

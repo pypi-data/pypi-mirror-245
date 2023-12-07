@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: delpinos-crud-sqlalchemy
+Version: 0.0.2
+Summary: Delpinos Crud SqlAlchemy - Delpinos Framework
+Author-email: Alef Bruno Delpino de Oliveira <alef@delpinos.com>
+Keywords: delpinos,crud,sqlalchemy
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: delpinos-core ==0.0.1
+Requires-Dist: sqlalchemy-filters >=0.13.0
+Requires-Dist: SQLAlchemy >=2.0.23
+
+# Delpinos API Core - Python
+
+![GitHub repo size](https://img.shields.io/github/repo-size/delpinos/delpinos-crud-sqlalchemy-python?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/delpinos/delpinos-crud-sqlalchemy-python?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/delpinos/delpinos-crud-sqlalchemy-python?style=for-the-badge)
+![GitHub open issues](https://img.shields.io/github/issues-raw/delpinos/delpinos-crud-sqlalchemy-python?style=for-the-badge)
+![GitHub open pull requests](https://img.shields.io/github/issues-pr-raw/delpinos/delpinos-crud-sqlalchemy-python?style=for-the-badge)
+
+
+> Base codes for creating python modules
