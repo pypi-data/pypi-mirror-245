@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fhepy"
+version = "0.1.0"
+description = ""
+authors = ["hanyul-ryu <hanyul.ryu@desilo.ai>"]
+readme = "README.md"
+
+packages = [
+    { include = "fhepy", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
