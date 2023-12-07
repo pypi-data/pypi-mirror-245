@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="pagebuttoncontainer" id="page_button_container">
+        <button
+          class="pagebuttonchecked"
+          type="button"
+          id="preference_tab_button"
+          onclick="onPageButtonClick(0)"
+        ></button>
+        <button
+          class="pagebutton"
+          type="button"
+          id="network_tab_button"
+          onclick="onPageButtonClick(1)"
+        ></button>
+      </div>
+      <div id="page_wrapper" class="pagewrapper">
+        <div id="page_container" class="pagecontainer">
+          <div id="page1" class="page">
+            <div style="height: 3px;"></div>
+            <div class="prompttext" id="general_prompt_text"></div>
+            <div style="height: 15px;"></div>
+            <div class="buttonrowcontainer" onclick="onMinimizedToTray()">
+              <button
+                class="choicebutton"
+                type="button"
+                id="minimized_to_tray_button"
+              ></button>
+              <div style="width: 8px;"></div>
+              <div class="optionaltext" id="minimize_to_tray_text"></div>
+            </div>
+            <div style="height: 10px;"></div>
+            <!-- <div class="buttonrowcontainer" onclick="onOpenSystemNotify()">
+              <button
+                class="choicebutton"
+                type="button"
+                id="open_system_notify_button"
+              ></button>
+              <div style="width: 8px;"></div>
+              <div class="optionaltext" id="open_system_notify_text">Send system notification</div>
+            </div>
+            <div style="height: 10px;"></div> -->
+            <div class="buttonrowcontainer" onclick="onDebugInConsole()">
+              <button
+                class="choicebutton"
+                type="button"
+                id="debug_in_console_button"
+              ></button>
+              <div style="width: 8px;"></div>
+              <div class="optionaltext" id="debug_in_console_text"></div>
+            </div>
+            <div style="height: 12px;"></div>
+            <button
+              class="roundbutton"
+              type="button"
+              id="install_dependencies_button"
+              onclick="onInstallDependenciesButtonClick()"
+            ></button>
+            <div style="height: 13px;"></div>
+            <div class="etchline"></div>
+            <div style="height: 13px;"></div>
+            <div class="pathcontainer">
+              <div class="prompttext" id="download_path_prompt_text"></div>
+              <input
+                class="textinput"
+                type="text"
+                id="download_path"
+                readonly="true"
+              />
+              <div class="buttonrowcontainer">
+                <button
+                  class="roundbutton"
+                  type="button"
+                  id="change_download_path_button"
+                  onclick="onChangeDownloadPathButtonClick()"
+                ></button>
+                <div style="width: 8px;"></div>
+                <button
+                  class="roundbutton"
+                  type="button"
+                  id="open_download_path_button"
+                  onclick="onOpenDownloadPathButtonClick()"
+                ></button>
+              </div>
+            </div>
+          </div>
+          <div id="page2" class="page" style="display: none;">
+            <div style="height: 3px;"></div>
+            <div class="prompttext" id="select_entry_prompt_text"></div>
+            <div style="height: 10px;"></div>
+            <div class="domainblock" id="domainblock"></div>
+            <div style="height: 10px;"></div>
+            <div class="etchline"></div>
+            <div style="height: 13px;"></div>
+            <div class="prompttext" id="proxy_host_prompt_text"></div>
+            <div style="height: 14px;"></div>
+            <input
+              class="textinput"
+              type="text"
+              id="update_service_path_input"
+            />
+          </div>
+        </div>
+        <div style="flex-grow: 1;"></div>
+        <div class="buttonrerowcontainer">
+          <button
+            type="button"
+            class="savesettingsbutton"
+            id="ok_button"
+            onclick="onSaveButtonClick()"
+          ></button>
+          <div style="width: 14px;"></div>
+          <button
+            type="button"
+            class="cancelbutton"
+            id="cancel_button"
+            onclick="onCancelButtonClick()"
+          ></button>
+          <div style="width: 17px;"></div>
+        </div>
+        <div style="height: 19px;"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/Loader.js"></script>
+    <script>
+      loadAllScriptSync('').catch(function (error) {
+        window.alert(error)
+      })
+    </script>
+  </body>
+</html>
