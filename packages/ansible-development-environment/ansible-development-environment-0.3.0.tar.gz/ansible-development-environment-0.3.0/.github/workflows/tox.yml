@@ -1,0 +1,106 @@
+name: tox
+
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#concurrency
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+on:
+  create: # is used for publishing to PyPI and TestPyPI
+    tags: # any tag regardless of its name, no branches
+      - "**"
+  pull_request:
+
+jobs:
+  prepare:
+    name: prepare
+    runs-on: ubuntu-22.04
+    outputs:
+      matrix: ${{ steps.generate_matrix.outputs.matrix }}
+    steps:
+      - name: Determine matrix
+        id: generate_matrix
+        uses: coactions/dynamic-matrix@v1
+        with:
+          min_python: "3.10"
+          max_python: "3.12"
+          default_python: "3.11" # used by jobs in other_names
+          other_names: |
+            lint
+            docs
+            pkg
+
+  build:
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.os || 'ubuntu-22.04' }}
+    needs:
+      - prepare
+    defaults:
+      run:
+        shell: ${{ matrix.shell || 'bash'}}
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # needed by setuptools-scm
+          submodules: true
+
+      - name: Set pre-commit cache
+        uses: actions/cache@v3
+        if: ${{ matrix.passed_name == 'lint' }}
+        with:
+          path: |
+            ~/.cache/pre-commit
+          key: pre-commit-${{ matrix.name || matrix.passed_name }}-${{ hashFiles('.pre-commit-config.yaml') }}
+
+      - name: Set up Python ${{ matrix.python_version || '3.10' }}
+        if: "!contains(matrix.shell, 'wsl')"
+        uses: actions/setup-python@v4
+        with:
+          cache: pip
+          python-version: ${{ matrix.python_version || '3.10' }}
+
+      - name: Install tox
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install --upgrade "tox>=4.0.0"
+
+      - name: Log installed dists
+        run: python3 -m pip freeze --all
+
+      - name: Initialize tox envs ${{ matrix.passed_name }}
+        run: python3 -m tox --notest --skip-missing-interpreters false -vv -e ${{ matrix.passed_name }}
+        timeout-minutes: 5 # average is under 1, but macos can be over 3
+
+      # sequential run improves browsing experience (almost no speed impact)
+      - name: tox -e ${{ matrix.passed_name }}
+        run: python3 -m tox -e ${{ matrix.passed_name }}
+
+  check: # This job does nothing and is only used for the branch protection
+    if: always()
+    permissions:
+      pull-requests: write # allow codenotify to comment on pull-request
+
+    needs:
+      - build
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Decide whether the needed jobs succeeded or failed
+        uses: re-actors/alls-green@release/v1
+        with:
+          jobs: ${{ toJSON(needs) }}
+
+      - name: Check out src from Git
+        uses: actions/checkout@v4
+
+      - name: Notify repository owners about lint change affecting them
+        uses: sourcegraph/codenotify@v0.6.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # https://github.com/sourcegraph/codenotify/issues/19
+        continue-on-error: true
