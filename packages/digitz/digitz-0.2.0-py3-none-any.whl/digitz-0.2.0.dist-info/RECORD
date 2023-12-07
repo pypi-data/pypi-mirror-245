@@ -1,0 +1,10 @@
+digitz/__about__.py,sha256=BukVrpBz7aZahe_5LH3r1CyKHYPyopPgLjcqyL9oec8,130
+digitz/__init__.py,sha256=2-jOsaTUwNyqK41GepxYrjqE4VKrcNv7nCqP_3RYEew,550
+digitz/enums.py,sha256=oJlQnB0z_b50pYkNhbZkG2r-BU-82zrhNhmJcOJp7aU,1774
+digitz/exceptions.py,sha256=apeAu8zGhCeSLBKrr_wTut1IZWh8Rrxd_UU4qQklH58,1314
+digitz/parse.py,sha256=3ZhtKEMhzCrVI7Fv0Ku5TsLPjwHoPdaeHbOQRdYaiJg,1945
+digitz/phonenumbers.py,sha256=6aFjHuKysLmCdaDdo9xR9SpuQaUdYETKrV1JI122Viw,5361
+digitz-0.2.0.dist-info/METADATA,sha256=fT59bbYKs_vGad3FfLKGbSg1qzhUSaRS9mlvSveOFxI,1644
+digitz-0.2.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+digitz-0.2.0.dist-info/licenses/LICENSE.txt,sha256=RhSfKXyqnF0UOVXOEHWIgOke9Q7uhYHjQzwgU3ah0BQ,1100
+digitz-0.2.0.dist-info/RECORD,,
