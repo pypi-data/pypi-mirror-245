@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: edzip
+Version: 0.2.0
+Summary: Library for utilising an external SQLite database as a zip file directory. Useful for random access into zips with extremely many files.
+Home-page: https://github.com/hsci-r/edzip
+License: MIT
+Keywords: zip-files
+Author: Eetu Mäkelä
+Author-email: eetu.makela@iki.fi
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: stream-unzip (>=0.0.88,<0.0.89)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Project-URL: Repository, https://github.com/hsci-r/edzip
+Description-Content-Type: text/markdown
+
+# EDZip
+
+[![Documentation Status](https://readthedocs.org/projects/edzip/badge/?version=latest)](https://edzip.readthedocs.io/en/latest/?badge=latest)
+
+A Python library for utilising an external SQLite database as a zip file directory. Useful for random access into zips with extremely many files.
+
