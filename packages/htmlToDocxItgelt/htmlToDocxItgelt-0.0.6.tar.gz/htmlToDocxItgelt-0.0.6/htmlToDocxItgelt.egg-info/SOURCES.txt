@@ -1,0 +1,6 @@
+pyproject.toml
+setup.py
+htmlToDocxItgelt.egg-info/PKG-INFO
+htmlToDocxItgelt.egg-info/SOURCES.txt
+htmlToDocxItgelt.egg-info/dependency_links.txt
+htmlToDocxItgelt.egg-info/top_level.txt
