@@ -1,0 +1,10 @@
+(
+    None,
+    {% for param in parameters.values() %}
+    {% if param.unit %}
+    _UNITS["{{ param.name }}"],
+    {% else %}
+    None,
+    {% endif %}
+    {% endfor %}
+),
