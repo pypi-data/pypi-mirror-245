@@ -1,0 +1,3 @@
+[console_scripts]
+testcalcy = testcalcy.calcy:main
+
