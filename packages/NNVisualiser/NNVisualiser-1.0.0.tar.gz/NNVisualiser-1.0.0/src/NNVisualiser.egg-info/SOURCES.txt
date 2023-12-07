@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/NNVisualiser.py
+src/__init__.py
+src/NNVisualiser.egg-info/PKG-INFO
+src/NNVisualiser.egg-info/SOURCES.txt
+src/NNVisualiser.egg-info/dependency_links.txt
+src/NNVisualiser.egg-info/requires.txt
+src/NNVisualiser.egg-info/top_level.txt
