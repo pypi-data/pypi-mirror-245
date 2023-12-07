@@ -1,0 +1,14 @@
+chess_insight/__init__.py,sha256=4SNp3oKnxoOIVsC6i3J8xRsDvkSgdf55CSKdbgYi58I,1320
+chess_insight/__main__.py,sha256=vH8ql-i14Q8B2Wg5oCT4-ZbDwyAmK6CS8NHOCHZDsPE,3928
+chess_insight/api_communicator.py,sha256=buMeCfvGp7lky2bbSlCEJNDo-evHZ_q4pSguyQV-zkM,3285
+chess_insight/chess_com_api_communicator.py,sha256=tYK7f5M7LpIdN617mtjNK0VpWw8-SgYY8sPB3Dg0gZg,2353
+chess_insight/game.py,sha256=Y3Vg-iorfzNQFJc2AdqwVXoIB2F22XJcdo9YtboD-Sw,8555
+chess_insight/lichess_api_communicator.py,sha256=pCd9UkO6GlkulVUXgxArQMOVG_4IMb_4rto7oHqsDzo,1473
+chess_insight/player.py,sha256=3480jyOGA8q0hObUZNzKYbd1hTH2yJ_yQV5G-L6I9eM,2359
+chess_insight/semi_dataclass.py,sha256=qNGSp4Nr15c4KqGk__q1-o-XIeujKeJTcNmYLTzTnls,3225
+chess_insight/utils.py,sha256=QCD2TTXuflu_fkYabmMWVoKowjlwpwGpVWqfMCKtRts,1481
+chess_insight/data/openings.json,sha256=RAA2_lQfSHPBXH4tlfZrQ6DBmJ3CqGYfvaSFrvMADQY,510923
+chess_insight-0.3.1.dist-info/METADATA,sha256=T_pidjB6AggVZdWdSHmiJIENgIw5NmJAkDxePjlPZv8,13963
+chess_insight-0.3.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+chess_insight-0.3.1.dist-info/top_level.txt,sha256=NoCXtN6tAlGX-9koEwZHKzy-p_knNsbArjAgt02gtG4,14
+chess_insight-0.3.1.dist-info/RECORD,,
