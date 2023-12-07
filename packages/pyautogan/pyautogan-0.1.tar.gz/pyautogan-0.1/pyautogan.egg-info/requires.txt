@@ -1,0 +1,7 @@
+tiktoken
+python-docx
+wolframalpha
+openpyxl
+pandas
+PyPDF2
+matplotlib
