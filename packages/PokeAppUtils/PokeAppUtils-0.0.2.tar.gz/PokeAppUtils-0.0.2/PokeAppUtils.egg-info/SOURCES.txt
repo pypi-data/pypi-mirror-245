@@ -1,0 +1,8 @@
+setup.py
+PokeAppUtils/__init__.py
+PokeAppUtils/datas.py
+PokeAppUtils/teamSynergies.py
+PokeAppUtils.egg-info/PKG-INFO
+PokeAppUtils.egg-info/SOURCES.txt
+PokeAppUtils.egg-info/dependency_links.txt
+PokeAppUtils.egg-info/top_level.txt

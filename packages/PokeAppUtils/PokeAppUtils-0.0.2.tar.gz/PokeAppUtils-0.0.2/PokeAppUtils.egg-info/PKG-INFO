@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PokeAppUtils
+Version: 0.0.2
+Summary: Utils for the PokéApp
+Author: Ingo Kognito
+Keywords: python,PokeAppUtils
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+All subfunctions, lists and dicts needed in the main.py are included here
