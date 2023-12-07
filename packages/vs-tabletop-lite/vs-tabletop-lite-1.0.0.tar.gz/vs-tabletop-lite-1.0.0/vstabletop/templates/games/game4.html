@@ -1,0 +1,481 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+
+<div class="row h-100">
+    <div class="col-7 h-100">
+
+        <!-- Flow vector drawing and controls -->
+        <div class="row p-2 d-flex align-content-center">
+                <div class="col-3">
+{#                    <div class="row">#}
+{#                       <span id="flow-info"> Flow speed: 10 mm / s </span>#}
+{#                    </div>#}
+                    <div class="row">
+                        {{ template_game_form.flow_speed_field.label(class="form-label") }}
+                        {{ template_game_form.flow_speed_field(class="form-control",id="flow_speed",value=session['game4']['flow_speed']) }}
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-info btn-lg" id="flow-manual-button">PUSH</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-primary btn-lg" id="solution-param-button"
+                                data-mdb-toggle="modal" data-mdb-target="#solutionModal">Tissue properties</button>
+                    </div>
+                    <div class="modal fade" id="solutionModal" tabindex="-1" aria-labelledby="solutionModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="solutionModalLabel">Solution parameters</h5>
+                                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Input fields -->
+                                    <div class="form-group">
+                                        {{ template_game_form.t1_field.label(class="form-label") }}
+                                        {{ template_game_form.t1_field(class="form-control",id="T1",value=session['game4']['T1']) }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ template_game_form.t2_field.label(class="form-label") }}
+                                        {{ template_game_form.t2_field(class="form-control",id="T2",value=session['game4']['T2']) }}
+                                    </div>
+                                </div>
+                                <div class="modal-footer d-flex justify-content-center">
+                                    <button type="button" class="btn btn-info" data-mdb-dismiss="modal">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 p-0">
+                            T1 = <span id="t1-display">{{ session['game4']['T1'] }}</span> ms
+                        </div>
+                        <div class="col-6 p-0">
+                            T2 = <span id="t2-display">{{ session['game4']['T2'] }}</span> ms
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-9">
+                      <object id="syringe" style="height:90% ;width:90%;"
+                              data="../static/img/syringe.svg" type="image/svg+xml">
+
+                      </object>
+
+
+                </div>
+        </div>
+
+
+        <div class="row ">
+            <div class="card h-100">
+                <div class="card-body h-100">
+                    <div class="col h-100">
+                        <div class="row">
+                            {% if session['game4']['mode'] == 'bright' %}
+                                {% set brightTabStatus = 'active' %}
+                                {% set darkTabStatus = '' %}
+                                {% set brightPaneStatus = 'show active' %}
+                                {% set darkPaneStatus = '' %}
+                            {% else %}
+                                {% set brightTabStatus = '' %}
+                                {% set darkTabStatus = 'active' %}
+                                {% set brightPaneStatus = '' %}
+                                {% set darkPaneStatus = 'show active' %}
+                            {% endif %}
+
+                            <ul class="nav nav-tabs nav-fill mb-3" id="bright-blood-tabs" role="tablist">
+                              <li class="nav-item" role="presentation">
+                                <a
+                                  class="nav-link {{ brightTabStatus }}"
+                                  id="flow-tab-1"
+                                  data-mdb-toggle="tab"
+                                  href="#flow-tabs-1"
+                                  role="tab"
+                                  aria-controls="flow-tabs-1"
+                                  aria-selected="true"
+                                  >Bright blood</a
+                                >
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <a
+                                  class="nav-link {{ darkTabStatus }}"
+                                  id="flow-tab-2"
+                                  data-mdb-toggle="tab"
+                                  href="#flow-tabs-2"
+                                  role="tab"
+                                  aria-controls="flow-tabs-2"
+                                  aria-selected="false"
+                                  >Dark blood</a
+                                >
+                              </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+
+                            <div class="tab-content" id="flow-content">
+                                <div class="tab-pane fade {{ brightPaneStatus }}" id="flow-tabs-1" role="tabpanel" aria-labelledby="flow-tab-1">
+                                    <!-- Bright blood plots-->
+                                    <div class="row h-25">
+                                        <div class="chart p-0" id="bright-chart-1"></div>
+                                    </div>
+                                    <div class="row h-25">
+                                        <div class="chart p-0" id="bright-chart-2"> </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row h-50">
+                                        <div class="col form-group">
+                                            {{ template_game_form.bright_thk_field.label(class="form-label") }}
+                                            {{ template_game_form.bright_thk_field(class="form-control",id='bright_thk',value=session['game4']['bright_thk']) }}
+                                        </div>
+                                        <div class="col form-group">
+                                            {{ template_game_form.bright_tr_field.label(class="form-label") }}
+                                            {{ template_game_form.bright_tr_field(class="form-control",id='bright_tr',value=session['game4']['bright_tr']) }}
+                                        </div>
+                                        <div class="col form-group">
+                                            {{ template_game_form.bright_te_field.label(class="form-label") }}
+                                            {{ template_game_form.bright_te_field(class="form-control",id="bright_te",value=session['game4']['bright_te']) }}
+                                        </div>
+                                            {{ template_game_form.bright_fa_field.label(class="form-label") }}
+                                            {{ template_game_form.bright_fa_field(class="form-range",id='bright_fa',value=session['game4']['bright_fa']) }}
+                                        <div class="ticks text-primary">
+                                              {% for b in [0,15,30,45,60,75,90] %}
+                                               <span class="tick">{{ b }}</span>
+                                              {% endfor %}
+                                          </div>
+                                        </div>
+                                </div>
+                                <div class="tab-pane fade {{ darkPaneStatus }}" id="flow-tabs-2" role="tabpanel" aria-labelledby="flow-tab-2">
+                                    <!-- Dark blood plots-->
+                                    <div class="row h-25">
+                                        <div class="chart p-0" id="dark-chart-1"></div>
+                                    </div>
+                                    <div class="row h-25">
+                                        <div class="chart p-0" id="dark-chart-2"></div>
+                                    </div>
+                                    <hr>
+                                    <div class="row h-50">
+                                        <div class="form-group col">
+                                            {{ template_game_form.dark_thk_field.label(class="form-label") }}
+                                            {{ template_game_form.dark_thk_field(class="form-control",id="dark_thk",value=session['game4']['dark_thk']) }}
+                                        </div>
+                                        <div class="form-group col">
+                                            {{ template_game_form.dark_te_field.label(class="form-label") }}
+                                            {{ template_game_form.dark_te_field(class="form-control",id="dark_te",value=session['game4']['dark_te']) }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+         <div class="row">
+                            <div class="btn btn-lg btn-info" id="transfer-params">Transfer parameters >> </div>
+         </div>
+    </div>
+
+
+    <div class="col-5 h-100">
+           <div class="row">
+            <div class="card">
+                <p>Messages</p>
+                <p id="message-region">Press "PUSH" after you change parameters to re-run the flow simulation!</p>
+
+            </div>
+        </div>
+        <div class="row h-50">
+            <div class="card h-100">
+                <div class="card-header">
+                    Image
+                </div>
+                <div class="card-body">
+                    <div class="chart h-100" id="image-chart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row h-25">
+            <div class="card">
+                <div class="card-body">
+                <div class="row">
+                    <button class="btn btn-lg btn-success" id="run-scan">RUN!</button>
+                </div>
+
+                    <div class="form-group row" id="sequence-type-row">
+                        <div class="col-4">
+                            {{ template_game_form.sequence_type_field.label(class="form-label") }}
+                        </div>
+                        <div class="col-8">
+                            <select class="form-control" id="contrast-type" name="sequence_type_field">
+                                {% if session['game4']['mode'] == "bright" %}
+                                    {% set brightsel = "selected" %}
+                                    {% set darksel = "" %}
+                                {% else %}
+                                    {% set darksel = "selected" %}
+                                    {% set brightsel = "" %}
+                                {% endif %}
+                                <option {{ brightsel }} value="bright">Bright blood</option>
+                                <option {{ darksel }} value="dark">Dark blood</option>
+
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group row" id="thk-row">
+                        <div class="col-4">{{ template_game_form.thk_field.label(class="form-label") }}</div>
+                        <div class="col-8">{{ template_game_form.thk_field(class="form-control",id="thk",value=session['game4']['thk']) }}</div>
+                    </div>
+
+                    {% if session['game4']['mode']=='bright' %}
+                        {% set visibility = "" %}
+                    {% else %}
+                        {% set visibility = "d-none" %}
+                    {% endif %}
+
+                    <div class="form-group row {{ visibility }}" id="tr-row">
+                        <div class="col-4">{{ template_game_form.tr_field.label(class="form-label") }}</div>
+                        <div class="col-8">{{ template_game_form.tr_field(class="form-control",id="tr",value=session['game4']['tr']) }}</div>
+                    </div>
+
+                    <div class="form-group row" id="te-row">
+                        <div class="col-4">{{ template_game_form.te_field.label(class="form-label") }}</div>
+                        <div class="col-8">{{ template_game_form.te_field(class="form-control",id="te",value=session['game4']['te']) }}</div>
+
+                    </div>
+
+                    <div class="form-group row {{ visibility }}" id="fa-row">
+                        <div class="col-4">{{ template_game_form.fa_field.label(class="form-label") }}</div>
+                        <div class="col-8">
+                            {{ template_game_form.fa_field(class="form-range",id="fa",value=session['game4']['fa']) }}
+                            <div class="ticks text-primary">
+                              {% for b in [0,15,30,45,60,75,90] %}
+                               <span class="tick">{{ b }}</span>
+                              {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock %}
+
+{% block questions %}
+    <div class="card text-white bg-secondary mb-3 text-center" style="color: grey">
+                        <div id="slide" class="carousel slide" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <form action="/games/4" method="POST">
+                                {% for ind in range(success_text | length) %}
+                                    {% set letters = ['a','b','c','d'] %}
+                                    {% set active_text = 'active' if ind==0 else '' %}
+                                    <div class="carousel-item {{active_text}}">
+                                    <br>
+                                        <span> Q{{ ind + 1 }}:</span>
+                                        {{ questions[ind]['text'] }}
+
+                                        {% if (questions[ind]['main_image_path']) | length > 0 %}
+                                        <br><img src=".{{ questions[ind]['main_image_path']}}" alt="question image" style="height:150px; width:auto">
+                                        {% endif %}
+
+                                        {% for ind2 in range(questions[ind]['choices'] | length) %}
+                                            {% if not uses_images[ind] %}
+                                            <br><input type="radio" class="q{{ind}}-choice" id="q{{ind}}-{{letters[ind2]}}" name="mc-question" value="{{ letters[ind2] }}">
+                                            <label for="q{{ind}}-{{letters[ind2]}}">{{ questions[ind]['choices'][ind2] }}</label>
+                                            {% else %}
+                                            <input type="radio"  class="q{{ind}}-choice" id="q{{ind}}-{{letters[ind2] }}" name="mc-question" value="{{ letters[ind2] }}">
+                                            <label for="q{{ind}}-{{letters[ind2]}}"><img src=".{{ questions[ind]['choices'][ind2] }}" style="height: 150px; width:150px;"></label>
+                                            {% endif %}
+                                        {% endfor %}
+
+                                        <p class="d-none">Correct choice: <span id="mc-correct-choice-{{ind}}">{{ questions[ind]['correct']}}</span></p>
+
+
+                                        <br>
+
+                                        <div class="btn btn-large btn-primary answer-mc" id="answer-mc-{{ind}}">Submit</div>
+                                        <p id="mc-success-text-{{ind}}" class="d-none" style="color:palegreen">{{ success_text[ind] }}</p>
+                                        <p id="mc-failure-text-{{ind}}" class="d-none" style="color:#ffb500">Wrong answer, try again!</p>
+                                    </div>
+
+                                {% endfor %}
+
+                                </form>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#slide" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#slide" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                </div>
+
+
+
+
+
+                 </div>
+{% endblock %}
+
+
+
+{% block tasks %}
+       <div class="card-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+                             style="width: {{ session['game4']['task_completed']*25 }}%"
+                             aria-valuenow="0" aria-valuemin="{{ session['game4']['task_completed']*25 }}" aria-valuemax="100"></div>
+
+                    </div>
+                    <!-- Show tab for each lab procedure -->
+                    <ul class="nav nav-tabs nav-justified" id="game4-tab" role="tablist">
+                        {% for tab in instructions['tabs'] %}
+                            {% if loop.index == ([session['game4']['task_completed'] + 1,4] | min) %}
+                                {% set active = 'active' %}
+                            {% else %}
+                                {% set active = '' %}
+                            {% endif %}
+
+                            {% set disabled = 'disabled' if loop.index > 1 + session['game4']['task_completed'] else '' %}
+                            {% set aria_disabled = (disabled == 'disabled') %}
+
+                            <li class="nav-item" role="presentation">
+                                <button class="col nav-link {{ active }} {{ disabled }} text-info task_tab" id="task{{ loop.index }}-tab" data-bs-toggle="tab" data-bs-target="#step{{ loop.index }}"
+                                        type="button" role="tab"  aria-controls="step{{ loop.index }}"
+                                        aria-selected="{{ loop.index==1 }}" aria-disabled= "{{ aria_disabled }}">
+                                    {{ tab }}
+                                </button>
+                            </li>
+                        {% endfor %}
+                    </ul>
+
+                    <!-- Instructions -->
+                    <!-- Show content for each lab procedure -->
+                    <div class="tab-content" id="game4-tab-content">
+                        {% for task, task_details in instructions['tasks'].items() %}
+                            {% if loop.index == ([session['game4']['task_completed'] + 1 , 4] | min) %}
+                                {% set show_text = 'show' %}
+                                {% set active_text = 'active' %}
+                            {% else %}
+                                {% set show_text = '' %}
+                                {% set active_text = '' %}
+                            {% endif %}
+                            <div class="tab-pane fade {{ show_text }} {{ active_text }}" id="step{{ loop.index }}" role="tabpanel" aria-labelledby="step{{ loop.index }}-tab">
+                                <div class="h4 text-info">{{ instructions['titles'][loop.index0] }}</div>
+
+                                <ul class="accordion" id="instructions-accordion">
+                                {% set task_index = loop.index %}
+                                {% for step, details in instructions['explorations'][loop.index0].items() %}
+                                      <li class="accordion-item">
+                                          <div class="accordion-header row d-flex justify-content-center" id="heading{{ loop.index }}">
+                                              <div class="col-2 d-flex align-items-center justify-content-center">
+                                              <input class="form-check-input task-{{ task_index }}-check" type="checkbox" value="" aria-label="">
+                                              </div>
+                                            <div class="col-10">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ loop.index }}" aria-expanded="false" aria-controls="collapse{{ loop.index }}">
+                                                <strong>{{ step }}</strong>
+                                            </button>
+                                          </div>
+                                          </div>
+                                          <div class="accordion-collapse collapse" id="collapse{{ loop.index }}" aria-labelledby="heading{{ loop.index }}" data-bs-parent="#instructions-accordion">
+                                              <div class="accordion-body">
+                                                    <span>{{ details }}</span>
+                                              </div>
+                                          </div>
+                                      </li>
+                                {% endfor %}
+
+                                <!-- Special item -->
+                                    <li class="accordion-item text-info">
+                                          <div class="accordion-header row d-flex justify-content-center" id="heading-final-{{ task_index }}">
+
+                                              <div class="col-2 d-flex align-items-center justify-content-center">
+                                                <input class="form-check-input task-{{ task_index }}-check" id="final-task-of-{{ task_index }}" type="checkbox">
+                                              </div>
+
+                                            <div class="col-10">
+                                            <button class="accordion-button collapsed final-task-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-final-{{ task_index }}" aria-expanded="false" aria-controls="collapse{{ loop.index }}">
+                                                <strong class="text-info">{{ task }}</strong>
+                                            </button>
+                                          </div>
+                                          </div>
+                                          <div class="accordion-collapse collapse" id="collapse-final-{{ task_index }}" aria-labelledby="heading-final-{{ task_index }}" data-bs-parent="#instructions-accordion">
+                                              <div class="accordion-body">
+                                                    <span>{{ task_details }}</span>
+                                              </div>
+                                          </div>
+                                      </li>
+                                </li>
+                                </ul>
+
+
+
+                                <div class="btn btn-info task-next-button" id="task{{ loop.index }}-next">Next</div>
+
+                                <p class="d-none text-danger" id="task-message-{{ task_index }}">
+                                    Complete and check all steps to move on.
+                                </p>
+                                {% set dnone = '' if session['game4']['task_completed'] >= task_index else 'd-none' %}
+
+                                {% set success_message = 'This step has been completed' if task_index < 4 else
+                                        'All steps complete. Congratulations! To earn the remaining stars, do the quiz.' %}
+
+                                <p class="{{ dnone }} text-success" id="task-success-{{ task_index }}">
+                                    {{ success_message }}
+                                    {% if task_index == 4 %}
+                                        <a class="btn btn-large btn-success" href="/games/5"> Next game! </a>
+                                    {% endif %}
+                                </p>
+
+
+                            </div>
+
+
+
+                        {% endfor %}
+
+
+
+                    </div>
+                    </div>
+{% endblock %}
+
+
+{% block additional_imports %}
+    <script src="../static/game4.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+        // Plotting with Plotly
+        // Bright blood
+        let graph1 = {{ graphJSON_top_bright | safe }};
+        let graph2 = {{ graphJSON_bottom_bright | safe }}
+        // Get correct widths and heights
+        // replace the layout {autosize: true}
+        Plotly.plot('bright-chart-1',  graph1, {autosize:true});
+        Plotly.plot('bright-chart-2',  graph2, {autosize:true});
+
+        // Dark blood
+        let graph3 = {{ graphJSON_top_dark | safe }};
+        let graph4 = {{ graphJSON_bottom_dark | safe }};
+        Plotly.plot('dark-chart-1',graph3, {autosize:true});
+        Plotly.plot('dark-chart-2',graph4, {autosize:true});
+
+        // Image
+        let graph5 = {{ graphJSON_image | safe }};
+        Plotly.plot('image-chart',graph5,{autosize:true});
+
+    </script>
+
+{% endblock %}

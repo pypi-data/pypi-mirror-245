@@ -1,0 +1,439 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid vh-100">
+    <div class="row h-100">
+        <div class="col-4">
+            <div class="h-100 m-5">
+                <div class="row h-50">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="h3">Mode </span>
+                            <input type="radio" class="btn-check" name="game8-mode" id="mode-2d" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="mode-2d">2D</label>
+                            <input type="radio" class="btn-check" name="game8-mode" id="mode-3d" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="mode-3d">3D</label>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="row h-100 d-flex align-items-center justify-content-center m-0 p-0">
+                                <div class="d-none p-0 m-0" id="mystery-image-2d">
+                                    <img src="../static/img/game8/mystery-2d.png" alt="2D mystery object"
+                                         style='max-height:100%; width:380px; object-position:top'/>
+                                </div>
+                                <div class="d-none p-0 m-0" id="mystery-image-3d">
+                                    <img src="../static/img/game8/mystery-3d.png" alt="2D mystery object"
+                                         style='max-height:100%; width:380px; object-position:top'/>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row h-25">
+                    <div class="card">
+                        <div class="card-header">Prescription</div>
+                        <div class="card-body">
+                            <div class="d-none" id="prescription-3d">
+                               {{ template_game_form.proj_2d_axis_field.label(class="form-label") }}
+                               <div type="button" class="btn btn-sm shadow-none"
+                                     data-mdb-container="body"
+                                     data-mdb-toggle="popover"
+                                     data-mdb-placement="top"
+                                     title='2D projection axis'
+                                     data-mdb-content="The axis along which the water-filled parts of the 3D volume is summed.">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div class="row">
+                                    {% for subfield in template_game_form.proj_2d_axis_field %}
+                                        <div class="form-control col">
+                                            {{ subfield(id='proj2d_axis',class='form-check-input proj-2d-xyz') }}
+                                            {{ subfield.label(class='form-check-label') }}
+                                        </div>
+                                    {% endfor %}
+
+
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <button class="btn btn-primary" id="image-2d">Image 2D</button>
+                                </div>
+                            </div>
+                            <div id="prescription-2d">
+                                <div class="row">
+                                    <div class="col-4">
+                                        {{ template_game_form.proj_1d_angle_field.label(class="form-label") }}
+                                    </div>
+                                    <div class="col-8">
+                                        {{ template_game_form.proj_1d_angle_field(class="form-control", id='proj1d_angle') }}
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="row">
+                                    <button class="btn btn-primary" id="image-1d">Image 1D</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="h-100 m-5">
+               <!-- Tabs -->
+               <div class="row h-50">
+                    <div class="card h-100" id="2d-images-card">
+                        <div class="col h-100">
+                            <ul class="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist">
+                            {% for u in range(session['game8']['num_attempts_2d']) %}
+                                {% if u == 0 %}
+                                    {% set tab_status = "active" %}
+                                    {% set aria_status = "true" %}
+                                {% else %}
+                                    {% set tab_status = "" %}
+                                    {% set aria_status = "false" %}
+                                {% endif %}
+                              <li class="nav-item" role="presentation">
+                                <a
+                                  class="nav-link {{ tab_status }}"
+                                  id="game8-2d-tab-{{ u }}"
+                                  data-mdb-toggle="tab"
+                                  href="#game8-2d-tabs-{{ u }}"
+                                  role="tab"
+                                  aria-controls="game8-2d-tabs-{{ u }}"
+                                  aria-selected={{ aria_status }}
+                                  > {{ u + 1 }}</a
+                                >
+                              </li>
+                            {% endfor %}
+                            </ul>
+                            <div class="tab-content h-100" id="game8-2d-tabs-content">
+                                {% for u in range(session['game8']['num_attempts_2d']) %}
+                                    {% if u == 0 %}
+                                        {% set content_status = "show active" %}
+                                    {% else %}
+                                        {% set content_status = "" %}
+                                    {% endif %}
+                                    <div
+                                        class="tab-pane fade {{ content_status }} h-100"
+                                        id="game8-2d-tabs-{{ u }}"
+                                        role="tabpanel"
+                                        aria-labelledby="game8-2d-tab-{{ u }}"
+                                      >
+                                      <div class="chart h-100 chart-attempt " id="chart-2d-attempt{{ u + 1 }}"></div>
+
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card d-none" id="3d-images-card">
+                        <ul class="nav nav-tabs nav-justified mb-3" id="ex2" role="tablist">
+                        {% for u in range(session['game8']['num_attempts_3d']) %}
+                            {% if u == 0 %}
+                                {% set tab_status = "active" %}
+                                {% set aria_status = "true" %}
+                            {% else %}
+                                {% set tab_status = "" %}
+                                {% set aria_status = "false" %}
+                            {% endif %}
+                          <li class="nav-item" role="presentation">
+                            <a
+                              class="nav-link {{ tab_status }}"
+                              id="game8-3d-tab-{{ u }}"
+                              data-mdb-toggle="tab"
+                              href="#game8-3d-tabs-{{ u }}"
+                              role="tab"
+                              aria-controls="game8-3d-tabs-{{ u }}"
+                              aria-selected={{ aria_status }}
+                              > #{{ u + 1 }}</a
+                            >
+                          </li>
+                        {% endfor %}
+                        </ul>
+                        <!-- Tabs navs -->
+                        <!-- Tabs content -->
+                        <div class="tab-content" id="game8-3d-tabs-content">
+                            {% for u in range(session['game8']['num_attempts_3d']) %}
+                                {% if u == 0 %}
+                                    {% set content_status = "show active" %}
+                                {% else %}
+                                    {% set content_status = "" %}
+                                {% endif %}
+                                <div
+                                    class="tab-pane fade {{ content_status }}"
+                                    id="game8-3d-tabs-{{ u }}"
+                                    role="tabpanel"
+                                    aria-labelledby="game8-3d-tab-{{ u }}"
+                                  >
+                                <div class="col h-100">
+                                    <div class="row h-100">
+                                        <div class="chart h-100 chart-attempt" id="chart-3d-attempt{{ u + 1 }}"></div>
+                                    </div>
+                                </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+               </div>
+               <div class="row h-25">
+                   <div class="card">
+                       <div class="card-header">Messages</div>
+                       <div class="card-body p-0">
+                           <div class="col p-0">
+                                {# Messages #}
+                               <div class="row h-50 d-flex justify-content-center m-3 text-info" id="message-region">
+                                    Messages
+                               </div>
+
+                               <div class="row h-50 m-0 p-0">
+                                   <button class="btn btn-lg btn-info" id="reset-button">Reset</button>
+                                   <button class="btn btn-lg btn-success" id="new-model-button">New model</button>
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+            </div>
+
+        </div>
+        <div class="col-4">
+           <div class="h-100 m-5">
+                <div class="row h-50">
+                    <div class="card h-100">
+                        <div class="card-header h3">
+                            Options
+                        </div>
+                        <div class="card-body h-75">
+                            <div class="chart h-100" id="game8-choices-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row h-25">
+                    <div class="card">
+                        <div class="card-header">Answer</div>
+                        <div class="card-body">
+                        <div class="row">
+                              {% for subfield in template_game_form.answer_field %}
+                                    <div class="form-control col">
+                                        {{ subfield(id='game8_answer',class='form-check-input submit-option') }}
+                                        {{ subfield.label(class='form-check-label') }}
+                                    </div>
+                                {% endfor %}
+                        </div>
+                        <div class="row m-3 d-flex justify-items-center">
+                            <button class="btn btn-lg btn-primary" id="submit-button" disabled>Submit</button>
+                        </div>
+                        <div class="row m-3 d-flex justify-content-center">
+                            <span class="d-none text-success" id="feedback-correct">Correct!</span>
+                            <span class="d-none text-danger" id="feedback-wrong">Wrong choice. Try a new model!</span>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+{% endblock %}
+
+
+{% block tasks %}
+       <div class="card-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+                             style="width: {{ session['game8']['task_completed']*100/3 }}%"
+                             aria-valuenow="0" aria-valuemin="{{ session['game8']['task_completed']*100/3 }}" aria-valuemax="100"></div>
+
+                    </div>
+                    <!-- Show tab for each lab procedure -->
+                    <ul class="nav nav-tabs nav-justified" id="game8-tab" role="tablist">
+                        {% for tab in instructions['tabs'] %}
+                            {% if loop.index == ([session['game8']['task_completed'] + 1,3] | min) %}
+                                {% set active = 'active' %}
+                            {% else %}
+                                {% set active = '' %}
+                            {% endif %}
+
+                            {% set disabled = 'disabled' if loop.index > 1 + session['game8']['task_completed'] else '' %}
+                            {% set aria_disabled = (disabled == 'disabled') %}
+
+                            <li class="nav-item" role="presentation">
+                                <button class="col nav-link {{ active }} {{ disabled }} text-info task_tab" id="task{{ loop.index }}-tab" data-bs-toggle="tab" data-bs-target="#step{{ loop.index }}"
+                                        type="button" role="tab"  aria-controls="step{{ loop.index }}"
+                                        aria-selected="{{ loop.index==1 }}" aria-disabled= "{{ aria_disabled }}">
+                                    {{ tab }}
+                                </button>
+                            </li>
+                        {% endfor %}
+                    </ul>
+
+                    <!-- Instructions -->
+                    <!-- Show content for each lab procedure -->
+                    <div class="tab-content" id="game8-tab-content">
+                        {% for task, task_details in instructions['tasks'].items() %}
+                            {% if loop.index == ([session['game8']['task_completed'] + 1 , 3] | min) %}
+                                {% set show_text = 'show' %}
+                                {% set active_text = 'active' %}
+                            {% else %}
+                                {% set show_text = '' %}
+                                {% set active_text = '' %}
+                            {% endif %}
+                            <div class="tab-pane fade {{ show_text }} {{ active_text }}" id="step{{ loop.index }}" role="tabpanel" aria-labelledby="step{{ loop.index }}-tab">
+                                <div class="h4 text-info">{{ instructions['titles'][loop.index0] }}</div>
+
+                                <ul class="accordion" id="instructions-accordion">
+                                {% set task_index = loop.index %}
+                                {% for step, details in instructions['explorations'][loop.index0].items() %}
+                                      <li class="accordion-item">
+                                          <div class="accordion-header row d-flex justify-content-center" id="heading{{ loop.index }}">
+                                              <div class="col-2 d-flex align-items-center justify-content-center">
+                                              <input class="form-check-input task-{{ task_index }}-check" type="checkbox" value="" aria-label="">
+                                              </div>
+                                            <div class="col-10">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ loop.index }}" aria-expanded="false" aria-controls="collapse{{ loop.index }}">
+                                                <strong>{{ step }}</strong>
+                                            </button>
+                                          </div>
+                                          </div>
+                                          <div class="accordion-collapse collapse" id="collapse{{ loop.index }}" aria-labelledby="heading{{ loop.index }}" data-bs-parent="#instructions-accordion">
+                                              <div class="accordion-body">
+                                                    <span>{{ details }}</span>
+                                              </div>
+                                          </div>
+                                      </li>
+                                {% endfor %}
+
+                                <!-- Special item -->
+                                    <li class="accordion-item text-info">
+                                          <div class="accordion-header row d-flex justify-content-center" id="heading-final-{{ task_index }}">
+
+                                              <div class="col-2 d-flex align-items-center justify-content-center">
+                                                <input class="form-check-input task-{{ task_index }}-check" id="final-task-of-{{ task_index }}" type="checkbox">
+                                              </div>
+
+                                            <div class="col-10">
+                                            <button class="accordion-button collapsed final-task-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-final-{{ task_index }}" aria-expanded="false" aria-controls="collapse{{ loop.index }}">
+                                                <strong class="text-info">{{ task }}</strong>
+                                            </button>
+                                          </div>
+                                          </div>
+                                          <div class="accordion-collapse collapse" id="collapse-final-{{ task_index }}" aria-labelledby="heading-final-{{ task_index }}" data-bs-parent="#instructions-accordion">
+                                              <div class="accordion-body">
+                                                    <span>{{ task_details }}</span>
+                                              </div>
+                                          </div>
+                                      </li>
+                                </li>
+                                </ul>
+
+
+                                <div class="btn btn-info task-next-button" id="task{{ loop.index }}-next">Next</div>
+                                <p class="d-none text-danger" id="task-message-{{ task_index }}">
+                                    Complete and check all steps to move on.
+                                </p>
+                                {% set dnone = '' if session['game8']['task_completed'] >= task_index else 'd-none' %}
+
+                                {% set success_message = 'This step has been completed' if task_index < 3 else
+                                        'All steps complete. Congratulations! To earn the remaining stars, do the quiz.' %}
+
+                                <p class="{{ dnone }} text-success" id="task-success-{{ task_index }}">
+                                    {{ success_message }}
+                                </p>
+
+
+                            </div>
+
+
+
+                        {% endfor %}
+
+
+
+                    </div>
+                    </div>
+
+{% endblock %}
+
+{% block questions %}
+    <div class="card text-white bg-secondary mb-3 text-center" style="color: grey">
+                        <div id="slide" class="carousel slide" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <form action="/games/8" method="POST">
+                                {% for ind in range(success_text | length) %}
+                                    {% set letters = ['a','b','c','d'] %}
+                                    {% set active_text = 'active' if ind==0 else '' %}
+                                        <div class="carousel-item {{active_text}}">
+                                        <br>
+                                    <div class="row d-flex justify-content-center align-items-baseline">
+                                        <p class="h5">Q{{ ind + 1 }}:{{ questions[ind]['text']}}</p>
+                                    </div>
+                                        {% if (questions[ind]['main_image_path']) | length > 0 %}
+                                        <img src=".{{ questions[ind]['main_image_path']}}" style="max-height:120px; width:auto ">
+                                        {% endif %}
+                                        {% for ind2 in range(questions[ind]['choices'] | length) %}
+                                            {% if not uses_images[ind] %}
+                                            <br><input type="radio" class="q{{ind}}-choice" id="q{{ind}}-{{letters[ind2]}}" name="mc-question" value="{{ letters[ind2] }}">
+                                            <label for="q{{ind}}-{{letters[ind2]}}">{{ questions[ind]['choices'][ind2] }}</label>
+                                            {% else %}
+                                            <input type="radio"  class="q{{ind}}-choice" id="q{{ind}}-{{letters[ind2] }}" name="mc-question" value="{{ letters[ind2] }}">
+                                            <label for="q{{ind}}-{{letters[ind2]}}"><img src=".{{ questions[ind]['choices'][ind2] }}" style="height: 150px; width:150px;"></label>
+                                            {% endif %}
+                                        {% endfor %}
+
+                                        <p class="d-none">Correct choice: <span id="mc-correct-choice-{{ind}}">{{ questions[ind]['correct']}}</span></p>
+
+                                            <br><div class="btn btn-large btn-primary answer-mc" id="answer-mc-{{ind}}">Submit</div>
+                                        <br>
+                                        <p id="mc-success-text-{{ind}}" class="d-none" style="color:palegreen">{{ success_text[ind] }}</p>
+                                        <p id="mc-failure-text-{{ind}}" class="d-none" style="color:#ffb500">Wrong answer, try again!</p>
+
+                                    </div>
+
+                                {% endfor %}
+                                </form>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#slide" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#slide" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+
+{% endblock %}
+
+{% block additional_imports %}
+
+    <script src="../static/game8.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+        // Plotting with Plotly
+        // Image
+        // Plot the input image to ALL tabs (visible and invisible)
+{#        let graph1 = {{ graphJSON_image | safe }};#}
+{#           {% for u in range(session['game8']['num_attempts_2d']) %}#}
+{#                Plotly.plot('chart-2d-attempt{{ u + 1 }}',graph1, {autosize:true});#}
+{#           {% endfor %}#}
+{#           {% for u in range(session['game8']['num_attempts_3d']) %}#}
+{#                Plotly.plot('chart-3d-attempt{{ u + 1 }}',graph1, {autosize:true});#}
+{#           {% endfor %}#}
+{##}
+{#        // Plot the input options plot to the corresponding tab#}
+{#        let graph2 = {{ graphJSON_options | safe }};#}
+{#        Plotly.plot('game8-choices-chart',graph2,{autosize:true});#}
+    </script>
+
+{% endblock %}
