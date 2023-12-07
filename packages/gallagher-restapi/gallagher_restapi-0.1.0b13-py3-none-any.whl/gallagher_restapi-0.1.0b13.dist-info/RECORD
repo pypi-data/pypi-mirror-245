@@ -1,0 +1,9 @@
+gallagher_restapi/__init__.py,sha256=hz_HVyNSu2godBy2jD15H4tGWvWSA-3J4rZDEWPJSkQ,499
+gallagher_restapi/__main__.py,sha256=tvVVbPglbG_ADlA2UapEQfY396pDin0qm5lYeo4Twlg,4318
+gallagher_restapi/client.py,sha256=mduFJNXvcc2t8KW0pAFc39GicV2rhrumQD0IZkh-ppM,15727
+gallagher_restapi/exceptions.py,sha256=Cpzc3jAL5_lBlc4dwdJLXvv2CCluk1zf-rq_5CP8nCg,413
+gallagher_restapi/models.py,sha256=wz7A2nqohIXc17-LlrA3zJVIYlTKKcdf2K2vvDYtAT8,29462
+gallagher_restapi-0.1.0b13.dist-info/METADATA,sha256=kPDaEyYP6hMQaQKfdYA6cVDSB_iXLBLfzVQRlRVo408,477
+gallagher_restapi-0.1.0b13.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+gallagher_restapi-0.1.0b13.dist-info/entry_points.txt,sha256=8YUvgp2Soygsl_g47SALtEYDOvFzut3-sS7go00Wa6Q,59
+gallagher_restapi-0.1.0b13.dist-info/RECORD,,
