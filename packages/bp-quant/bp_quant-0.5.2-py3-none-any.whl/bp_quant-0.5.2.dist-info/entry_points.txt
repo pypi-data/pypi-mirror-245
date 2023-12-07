@@ -1,0 +1,2 @@
+[console_scripts]
+bp_quant = bp_quant.command_line:bp_quant_cli
