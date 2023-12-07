@@ -1,0 +1,8 @@
+pointcloud_sax_reader/__init__.py,sha256=BlRQmNCS9IqXL76GFOVfnMMSzy_HpZD5_toTVbLXPdg,315
+pointcloud_sax_reader/__main__.py,sha256=dgjcXLyjALNHuc7oqpLWxx84ZXzo_cNHofuLIjkgkb4,772
+pointcloud_sax_reader/_core.pyd,sha256=HzyBkAOYZvz3uVrCd8aps88g-jIUbr02NpZ6VvpSYbo,150528
+pointcloud_sax_reader-0.1.0.dist-info/METADATA,sha256=JuNkgyUyW5za1hPLhX1F_hNiPg81J63IfBpMym00Eac,763
+pointcloud_sax_reader-0.1.0.dist-info/WHEEL,sha256=RyjtzbFkeK2GOonc_Qt7B2dS90lLsnfMvQomqIZSrFA,104
+pointcloud_sax_reader-0.1.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pointcloud_sax_reader-0.1.0.dist-info/licenses/LICENSE,sha256=N_R9-5l0U5HZyk0-el1LtB0nxSXttAIy78h4x_w_bgk,2218
+pointcloud_sax_reader-0.1.0.dist-info/RECORD,,
