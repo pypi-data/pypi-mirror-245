@@ -1,0 +1,12 @@
+tap_geotab/__init__.py,sha256=4P3jy8kEwM13qAyCL59P0S2j6EuzPbGziGWNl0DF60o,22
+tap_geotab/client.py,sha256=8veCsBUQnDrZPrP49FipEsvU0_SrWAjJFk15FW1Q6Ns,1385
+tap_geotab/schemas/device_status_info.json,sha256=v4Qvy_mAsBPnldPwVpv7mVJFo8W860RWLjzMR3jX_ts,659
+tap_geotab/schemas/devices.json,sha256=McL3vW9xMzh4W6yplhhbasxwVeEKnbx-rARkSSeG76Y,660
+tap_geotab/schemas/status_data.json,sha256=xd4zBAejc9SLTvxQ0bhKZCsNBpQYSqk4R5yLAi5Wjaw,499
+tap_geotab/streams.py,sha256=LJU63YKdBpP7wqQFE8P93HUyofBv6oobKT_jYpXfIQQ,1233
+tap_geotab/tap.py,sha256=Kw6cgXrLd070yic9qDaoD212g055wJSXo_LoZcQvjOo,1233
+tap_geotab-1.0.0.dist-info/LICENSE,sha256=esgaFyaP4srv6f4FxsUiSOnO6ffOcvuSIf3C6TVG-eY,11344
+tap_geotab-1.0.0.dist-info/METADATA,sha256=csGWHN4oSXVzxiX_7UXpXEvFotawu5N36fVtDIx9HCg,3823
+tap_geotab-1.0.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+tap_geotab-1.0.0.dist-info/entry_points.txt,sha256=0b2ZfdZrHc_uo-9GphQhTGveu-dOOHAdhtO6ilpO7Fc,59
+tap_geotab-1.0.0.dist-info/RECORD,,
