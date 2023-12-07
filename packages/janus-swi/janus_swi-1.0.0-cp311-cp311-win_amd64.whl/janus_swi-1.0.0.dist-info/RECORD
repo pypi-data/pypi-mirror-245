@@ -1,0 +1,13 @@
+janus_swi/__init__.py,sha256=wzFGHui1-kEugKdSzMhAoeAvP_y4euGAwyWiHULkNP8,925
+janus_swi/_find_swipl.py,sha256=DKo6dpukGQXHAuq4ZaQnINzZ08ZftisKpIj0-JPGOik,1261
+janus_swi/_swipl.cp311-win_amd64.pyd,sha256=jM_XQlhxltcb0MilOKdV0n3SOTQ6Htk2cGDUv2ygYnI,49152
+janus_swi/hash.c,sha256=zyfYff4fyN0yo4rqy7Xk8X4nhloSaTY15i59BGI7sl0,4634
+janus_swi/janus.c,sha256=J_BDlSbvCjDxbMqpQTsPDzgcMncT_3iChqwpk0IGvCQ,55297
+janus_swi/janus.pl,sha256=DAmSbo9aiAi6m8Et6jT06G9BtUnSX_2I93Qie2oBbls,38595
+janus_swi/janus.py,sha256=X4OomjMQmUPciGTUff7dklZhWEIZhCBBEa61RySANcM,19269
+janus_swi/janus_swi.py,sha256=las7kZ1V_RlGQRURVKVDKSgmQ5q1JXP6HVPTVA5tDbE,113
+janus_swi/mod_swipl.c,sha256=v6fxfOtdjHjatDvCNiUuDmS3XX62YHfsU5_i0z0PCgc,16938
+janus_swi-1.0.0.dist-info/METADATA,sha256=PX218oedv7OsAuOK_2YqIbcWnazrTWa_onIc75OB7fo,6166
+janus_swi-1.0.0.dist-info/WHEEL,sha256=ircjsfhzblqgSzO8ow7-0pXK-RVqDqNRGQ8F650AUNM,102
+janus_swi-1.0.0.dist-info/top_level.txt,sha256=zuplddnrmuLzF__QPppYyBSomAy31Tkr5Gi_SDTJeIY,10
+janus_swi-1.0.0.dist-info/RECORD,,
