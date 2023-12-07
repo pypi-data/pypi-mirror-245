@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "stairsres"
+version = "0.1.10"
+description = ""
+authors = ["Kovalev Yasen Nikita <Nikitoskova123@gmail.com>",
+           "Irina Deeva <iriny.deeva@gmail.com>"]
+readme = "README.md"
+license = "BSD-3-Clause"
+packages = [{include = "stairsres"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+bamt = "1.2.7"
+idbadapter = "2.3.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

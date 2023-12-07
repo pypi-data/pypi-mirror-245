@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: stairsres
+Version: 0.1.10
+Summary: 
+License: BSD-3-Clause
+Author: Kovalev Yasen Nikita
+Author-email: Nikitoskova123@gmail.com
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: bamt (==1.2.7)
+Requires-Dist: idbadapter (==2.3.6)
+Description-Content-Type: text/markdown
+
+# GPN_KIP
+Модель сопоставления человеческих и материальных ресурсов (МСЧМ)
+
+![plot](/img/photo_2023-09-07_16-45-34.jpg "Диаграмма классов модели")
+
