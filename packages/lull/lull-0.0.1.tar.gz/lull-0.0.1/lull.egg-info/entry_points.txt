@@ -1,0 +1,2 @@
+[nbdev]
+lull = lull._modidx:d
