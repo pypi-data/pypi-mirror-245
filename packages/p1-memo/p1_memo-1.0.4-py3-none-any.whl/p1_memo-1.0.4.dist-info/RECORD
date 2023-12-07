@@ -1,0 +1,13 @@
+memoize/__init__.py,sha256=XbtQXM-Yuyp9jLVRo3o0HAc86wn0pkGU_T6vuraMk6w,27
+memoize/core.py,sha256=4ydGUamnH6_QziEkWv9l4iJO_g7raXkqi9ZrpTMq0oY,6745
+memoize/djangocache.py,sha256=I--2RmKGc6Zzu-EcQ-1Vo2gLxxtcusarLDpMRwdkxWU,1136
+memoize/func.py,sha256=Ak9nAxR47jobPdka0i4OX3HBKVWbcOGlFC24Zb2Dywg,4206
+memoize/options.py,sha256=r9Pigdfyoq7L3UGs3bhD0xTDCX6de_Ck8q2f8E27Vmg,913
+memoize/redis.py,sha256=1JCA4tmw89tXicpBbd9imqonT21Er09Qbnw2K2S3K64,1949
+memoize/time.py,sha256=1YhzA43ToS-9pvkFBY_rHvnyTsnEroXfYZ5MTTSRPtw,510
+p1_memo-1.0.4.dist-info/AUTHORS.txt,sha256=tin7qKVO5N1oE7XYPdisUW__1jfXpaRtPQoMr4Azr_E,353
+p1_memo-1.0.4.dist-info/LICENSE.txt,sha256=dPKmg80caMNNyD6fg7vwSJ1USX8YeNzBSXQmfvdwPT8,1504
+p1_memo-1.0.4.dist-info/METADATA,sha256=N3bKZJhR9BBwtF469B6hSzv7vkxZt7ZrbZNTkCBMqqk,712
+p1_memo-1.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+p1_memo-1.0.4.dist-info/top_level.txt,sha256=Phs_o_rZovFVscj566bIXQZl2lO2SjcdzKrtfsPyVKM,8
+p1_memo-1.0.4.dist-info/RECORD,,
