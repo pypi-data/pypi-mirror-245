@@ -1,0 +1,11 @@
+qlispc/__init__.py,sha256=K_iuR51N9E4Ea1-RSSYE4RQfYInHAdqCDM4Etl_5HMY,283
+qlispc/matricies.cp310-win_amd64.pyd,sha256=GrQT_sQ5pYW4024UoDEm9E5v6NLG9a79VWSeMq9pjHg,136192
+qlispc/matricies.pyi,sha256=_ELbTzEGCDm_nVjU9n9GtXIzYjzxeDfj9WMOzxAEWLU,1520
+qlispc/simple.cp310-win_amd64.pyd,sha256=d-fyBjWvi4LQY54-s7R0Tpb1lVVRb-NOb-Zcu6nRxME,205312
+qlispc/simple.pyi,sha256=bIwAoPDynwDEuW5OvRKH0Dvrtm1z9JBFQVt3vSRbgdk,376
+qlispc/version.py,sha256=x7SWnx8ho-VaDHLtK75ItIuboJ9SpcR_vy2GvXNmU4A,21
+qlispc-1.0.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+qlispc-1.0.1.dist-info/METADATA,sha256=kYruibO7ld1d5MwHUYe60rJKv2sGnj7_oeoN49maFsU,1234
+qlispc-1.0.1.dist-info/WHEEL,sha256=5JPYeYl5ZdvdSkrGS4u21mmpPzpFx42qrXOSIgWf4pg,102
+qlispc-1.0.1.dist-info/top_level.txt,sha256=Yp2_cLwqJba0dpMyJ1QM2rqvkdd6hRMdhk4BhhnD0Xo,7
+qlispc-1.0.1.dist-info/RECORD,,
