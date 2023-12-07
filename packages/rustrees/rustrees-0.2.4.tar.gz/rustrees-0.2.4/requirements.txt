@@ -1,0 +1,12 @@
+maturin
+jupyter
+pandas
+numpy
+scikit-learn
+matplotlib
+pyarrow
+econml
+seaborn
+black
+ruff
+toml
