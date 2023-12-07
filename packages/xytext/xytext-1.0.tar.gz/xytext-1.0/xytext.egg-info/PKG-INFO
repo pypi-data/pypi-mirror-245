@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: xytext
+Version: 1.0
+Summary: API Wrapper for Xytext - LLM Interfaces for Production.
+Home-page: https://github.com/xytext-ai/xytext
+Author: Xytext
+Author-email: hello@xytext.com
+Requires-Dist: requests
