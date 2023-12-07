@@ -1,0 +1,4 @@
+audeer>=1.18.0
+importlib-metadata>=4.8.0
+oyaml
+packaging
