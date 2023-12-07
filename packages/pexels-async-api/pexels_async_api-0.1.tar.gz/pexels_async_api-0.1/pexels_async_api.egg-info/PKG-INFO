@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: pexels-async-api
+Version: 0.1
+Summary: An Asynchronous Python Client for the Pexels API
+Home-page: https://github.com/darkcurrent/pexels_async_api
+Author: Cagin Polat
+Author-email: caginpolat@notrino.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AsyncPexelsClient
+
+AsyncPexelsClient is an asynchronous Python client for the Pexels API. It allows you to interact with the Pexels API to search for photos and videos, get details of a specific photo or video, get curated and popular photos, and download a specific photo or video.
+
+## Installation
+
+You can install the AsyncPexelsClient using pip:
+
+```bash
+pip install pexels-async-api
+```
+
+## Usage
+First, import the `AsyncPexelsClient` class from the pexels-async-api module:
+
+```python
+from pexels-async-api import AsyncPexelsClient
+```
+
+Then, create an instance of the `AsyncPexelsClient` class, passing your Pexels API key as a parameter to the constructor:
+
+```python
+client = AsyncPexelsClient("your_api_key")
+```
+
+Now, you can use the `client` object to interact with the Pexels API. Here are some examples:
+
+```python
+# Search for photos of cats
+photos = await client.search_photos("cats", per_page=5, page=1)
+print(photos)
+
+# Search for videos of dogs
+videos = await client.search_videos("dogs", per_page=5, page=1)
+print(videos)
+
+# Get details of a specific photo by its ID
+photo = await client.get_photo(123456)  # replace 123456 with the actual photo ID
+print(photo)
+
+# Get details of a specific video by its ID
+video = await client.get_video(123456)  # replace 123456 with the actual video ID
+print(video)
+
+# Get curated photos
+curated_photos = await client.get_curated_photos(per_page=5, page=1)
+print(curated_photos)
+
+# Get popular photos
+popular_photos = await client.get_popular_photos(per_page=5, page=1)
+print(popular_photos)
+
+# Download a specific photo by its ID
+photo_data = await client.download_photo(123456)  # replace 123456 with the actual photo ID
+with open("photo.jpg", "wb") as f:
+    f.write(photo_data)
+
+# Download a specific video by its ID
+video_data = await client.download_video(123456)  # replace 123456 with the actual video ID
+with open("video.mp4", "wb") as f:
+    f.write(video_data)
+```
+
+Remember to replace `your_api_key` with your actual Pexels API key. Also, replace `123456` with the actual ID of the photo or video you want to get or download.
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+MIT
