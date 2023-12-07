@@ -1,0 +1,9 @@
+datasets<3.0.0,>=2
+loguru
+transformers[torch]<5.0.0,>=4
+evaluate==0.4.1
+setfit==0.7.0
+scikit-learn
+
+[cuda]
+cudatoolkit==10.1

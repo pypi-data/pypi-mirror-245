@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/NewsFrames/__init__.py
+src/NewsFrames/classifier.py
+src/NewsFrames/config.py
+src/NewsFrames.egg-info/PKG-INFO
+src/NewsFrames.egg-info/SOURCES.txt
+src/NewsFrames.egg-info/dependency_links.txt
+src/NewsFrames.egg-info/requires.txt
+src/NewsFrames.egg-info/top_level.txt
