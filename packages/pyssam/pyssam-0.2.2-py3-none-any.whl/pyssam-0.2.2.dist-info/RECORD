@@ -1,0 +1,13 @@
+pyssam/__init__.py,sha256=3_9ehrXMG7BzXR0-5AUlw0qOBCfC0-kkamlJdzgyAiY,289
+pyssam/datasets.py,sha256=r2t6i8VwciQRS5YMQx3EXVdK81UudwqaiNuSGEhPgvs,6651
+pyssam/morph_mesh.py,sha256=ilMqW0rPVLEzO_3MaLjqSBTlbTY4vKrpsHTuyqAcLK4,8759
+pyssam/sam.py,sha256=QEYFDl1k1a_z1U2lfw5hVPPFKfYWxF03TpWVY1rey5w,1473
+pyssam/ssam.py,sha256=IE4wuW1NHjAKfhnsyBDQ9aRc30qUSRE9Sa2QvVKddVI,2364
+pyssam/ssm.py,sha256=qNYyu9o6AocUpcCqv4W4cLa8pkWdnxKzJYDAP1a0yto,1500
+pyssam/statistical_model_base.py,sha256=PPSjrTVp9yfCGJOr3uXPMvdw4Rlha9uVVkXQAdpy-08,10984
+pyssam/utils.py,sha256=rSOHusGcQ3QYD1IZGJ1gmhMFKa7B7idjqj3FkUsvxsg,10820
+pyssam-0.2.2.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+pyssam-0.2.2.dist-info/METADATA,sha256=KVXWosBvRMD18sEGLcpmDnK33wrhZX_tcetD7BvUH30,1768
+pyssam-0.2.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyssam-0.2.2.dist-info/top_level.txt,sha256=vhGhrHpSOnKwu1PpEh0DNwf8N-BAJCE46mHF1Vl5oBc,7
+pyssam-0.2.2.dist-info/RECORD,,
