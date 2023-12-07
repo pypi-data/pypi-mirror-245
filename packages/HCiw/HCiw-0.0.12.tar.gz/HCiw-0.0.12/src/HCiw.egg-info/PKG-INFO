@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: HCiw
+Version: 0.0.12
+Summary: Additional utilities for using the Ciw Python package.
+Author-email: Galen Seilis <galen.seilis@seilis.ca>
+Project-URL: Homepage, https://github.com/galenseilis/HCiw/tree/main
+Project-URL: Bug Tracker, https://github.com/galenseilis/HCiw/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# HCiw
+Additional utilities for using the Ciw Python package.
