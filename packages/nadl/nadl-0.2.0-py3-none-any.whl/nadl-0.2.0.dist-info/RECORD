@@ -1,0 +1,10 @@
+nadl-0.2.0.dist-info/METADATA,sha256=OkKtCr1YVa-gQOTdZmzo2Bvg-O2-gf20uf6ofB9LTE0,808
+nadl-0.2.0.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+nadl/__init__.py,sha256=9DSffp94eUBhuSaYmEqcc_tA_ThS4QStkB2eMw4J6wQ,2263
+nadl/keys.py,sha256=tB70K5qax53YXS4WJ5Z6PkxAcvLTyFgbmP3kE9RCLZw,2294
+nadl/loops.py,sha256=2nPEn1oyRJz3zDu4QWxoPZxqRvtIbNkWXqDHTs2PWAw,2006
+nadl/losses.py,sha256=BU5kYVESjFu0tZ4-E-PqO0u6TJ-hYk2X16XEe8_GeN4,2369
+nadl/metrics.py,sha256=EwPpGydqQNpYoYOzkigi9yn7WJUOsk9o09n37VbdlMg,6982
+nadl/preprocessing.py,sha256=WeNNdrHB_Mn_pmtgdTHEY8zYi96nhrgGo5cnDQ_FjL8,2283
+nadl/utils.py,sha256=WWeBoB2opORayzvB-Bz-w35RREAyMcSbzvYFmyENBLc,1962
+nadl-0.2.0.dist-info/RECORD,,
