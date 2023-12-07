@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Utils/__init__.py
+Utils/logging.py
+Utils/webscraper.py
+r0p3.egg-info/PKG-INFO
+r0p3.egg-info/SOURCES.txt
+r0p3.egg-info/dependency_links.txt
+r0p3.egg-info/requires.txt
+r0p3.egg-info/top_level.txt
