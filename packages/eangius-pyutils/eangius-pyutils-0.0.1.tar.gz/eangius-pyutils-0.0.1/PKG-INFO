@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: eangius-pyutils
+Version: 0.0.1
+Summary: Custom python utilities & types for reuse.
+Home-page: https://github.com/eangius/pyutils
+Author: Elian Angius
+License: MIT
+Keywords: utilities
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+License-File: LICENSE.md
