@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: st-triggers
+Version: 0.0.1
+Summary: Streamlit component triggers testing
+Home-page: 
+Author: tushar2704
+Author-email: tushar.inseec@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: Streamlit component -triggers testing
+Provides-Extra: devel
+License-File: LICENSE
+
+Streamlit component -triggers testing
