@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/PyUMLS_Similarity.py
+src/__init__.py
+src/PyUMLS_Similarity.egg-info/PKG-INFO
+src/PyUMLS_Similarity.egg-info/SOURCES.txt
+src/PyUMLS_Similarity.egg-info/dependency_links.txt
+src/PyUMLS_Similarity.egg-info/requires.txt
+src/PyUMLS_Similarity.egg-info/top_level.txt
