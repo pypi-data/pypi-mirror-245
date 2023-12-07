@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+telfhk0/telfhk0.py
+telfhk0.egg-info/PKG-INFO
+telfhk0.egg-info/SOURCES.txt
+telfhk0.egg-info/dependency_links.txt
+telfhk0.egg-info/requires.txt
+telfhk0.egg-info/top_level.txt
