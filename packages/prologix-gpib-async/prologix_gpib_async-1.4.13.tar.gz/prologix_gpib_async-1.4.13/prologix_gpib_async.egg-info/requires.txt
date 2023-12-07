@@ -1,0 +1,20 @@
+
+[:python_version < "3.11"]
+typing-extensions
+
+[dev]
+asyncio_mqtt
+black
+build
+isort
+mypy
+pre-commit
+pylint
+simplejson
+twine
+
+[test]
+asyncio_mqtt
+mypy
+pylint
+simplejson
