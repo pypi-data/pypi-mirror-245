@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: datadivecsv
+Version: 0.1
+Summary: Herramienta de Análisis Exploratorio de Datos para archivos CSV
+Home-page: https://github.com/aldomelladop/datadivecsv.git
+Author: Aldo Mellado Opazo
+Author-email: aldomellado.1310@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: numpy
+
+# datadivecsv
+
+`datadivecsv` es una herramienta de Python para realizar AnÃ¡lisis Exploratorio de Datos (EDA) en archivos CSV.
+
+## InstalaciÃ³n
+
+Puedes instalar este paquete usando pip:
+
+```bash
+pip install datadivecsv
+```
+
+## Uso
+
+<!-- AquÃ­ puedes poner ejemplos de cÃ³mo usar tu paquete. -->
+
+## Contribuir
+
+Las contribuciones son bienvenidas. Por favor, revisa las `issues` en GitHub para ver cÃ³mo puedes contribuir.
+
+## Licencia
+
+Este proyecto estÃ¡ bajo la Licencia MIT.
