@@ -1,0 +1,9 @@
+yfinance
+pandas
+pygame
+plotly
+tqdm
+scikit-learn
+scipy
+numpy
+tabulate
