@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+livekit/agents/__init__.py
+livekit/agents/version.py
+livekit/agents/worker.py
+livekit_agents.egg-info/PKG-INFO
+livekit_agents.egg-info/SOURCES.txt
+livekit_agents.egg-info/dependency_links.txt
+livekit_agents.egg-info/requires.txt
+livekit_agents.egg-info/top_level.txt
