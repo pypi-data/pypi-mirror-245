@@ -1,0 +1,8 @@
+venv
+.venv
+tests
+notebooks
+dist
+.github
+*.pkrvars.hcl
+*.tfvars

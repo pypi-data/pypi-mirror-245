@@ -1,0 +1,4 @@
+beautifulsoup4>=4.9.3,<5
+onixcheck>=0.9.7,<1
+ratelimit>=2.2.1,<3
+

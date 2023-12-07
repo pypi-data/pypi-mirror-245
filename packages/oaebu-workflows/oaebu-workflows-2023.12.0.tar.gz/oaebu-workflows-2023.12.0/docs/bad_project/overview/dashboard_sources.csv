@@ -1,0 +1,8 @@
+Data source,Status,Access,COUNTER-conformant?,Events,Page Views,Book Views,Book Downloads,Chapter Downloads,Time aggregation
+Crossref Event Data,Current,Public,n/a,Y (count of event [id]),,,,,Monthly
+Google Analytics Universal,Not current,Private,No,,Y [page_views],,Y (with custom dimensions),,Monthly
+Google Books,Current,Private,No,,,Y [BV_with_Pages_Viewed],Y [qty],,Monthly
+IRUS Fulcrum,Current,Private,Yes,,,,Y [title_requests] and [total_item_requests],,Monthly
+IRUS OAPEN,Current,Private,Yes,,,,Y [title_requests] and [total_item_requests],,Monthly
+JSTOR,Current,Private,Yes,,,,,Y [total_item_requests],Monthly
+UCL Discovery,Current,Public,No,,,,Y [total_downloads],,Monthly

@@ -1,0 +1,2 @@
+**/fixtures/** filter=lfs diff=lfs merge=lfs -text
+docs/* linguist-documentation
