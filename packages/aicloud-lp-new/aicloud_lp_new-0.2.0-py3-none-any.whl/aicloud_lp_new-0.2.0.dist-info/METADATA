@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: aicloud-lp-new
+Version: 0.2.0
+Requires-Dist: requests
+Requires-Dist: pandas
+
