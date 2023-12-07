@@ -1,0 +1,8 @@
+sigiq/__init__.py,sha256=RnAI1eGYgX-9xAIWSJzpShdYvUyPNTZM0dWtAkCZ3AM,42
+sigiq/functions.py,sha256=own5x1Od-olx6aMMgqpz4vAXe3-wfy9_-6k3750o-tk,1032
+sigiq/login.py,sha256=S8TiAKW1v0xO1JgDrVIt3rm1aTepOvG3TC0QZ4ufzgU,464
+sigiq-0.1.dist-info/METADATA,sha256=FFqzkmZYeLSxdY6GdAkX618waoM-puQogUPRBfDV5JE,72
+sigiq-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sigiq-0.1.dist-info/entry_points.txt,sha256=NMpxkpNMkHWxCmsOE7buBWdSL4G_FDu85X35nzXH2IU,55
+sigiq-0.1.dist-info/top_level.txt,sha256=XGUI0UNE6iPCNH8CYMD3ghrqLDdO2x4lXEmZqrlv7Fc,6
+sigiq-0.1.dist-info/RECORD,,

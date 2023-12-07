@@ -1,0 +1,2 @@
+[console_scripts]
+sigiq-login = sigiq.login:login_main
