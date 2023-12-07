@@ -1,0 +1,2 @@
+[console_scripts]
+susscanner = susscanner.__main__:main
