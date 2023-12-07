@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+vividlogger/__init__.py
+vividlogger/core.py
+vividlogger.egg-info/PKG-INFO
+vividlogger.egg-info/SOURCES.txt
+vividlogger.egg-info/dependency_links.txt
+vividlogger.egg-info/top_level.txt
