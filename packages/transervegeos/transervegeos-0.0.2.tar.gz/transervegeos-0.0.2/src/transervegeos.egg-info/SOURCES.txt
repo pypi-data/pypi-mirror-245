@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/transervegeos/__init__.py
+src/transervegeos/_transervegeos.py
+src/transervegeos/_version.py
+src/transervegeos.egg-info/PKG-INFO
+src/transervegeos.egg-info/SOURCES.txt
+src/transervegeos.egg-info/dependency_links.txt
+src/transervegeos.egg-info/requires.txt
+src/transervegeos.egg-info/top_level.txt
