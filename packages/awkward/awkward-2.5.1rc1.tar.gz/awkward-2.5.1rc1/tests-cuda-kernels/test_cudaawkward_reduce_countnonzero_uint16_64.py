@@ -1,0 +1,22 @@
+# AUTO GENERATED ON 2023-11-13 AT 18:13:22
+# DO NOT EDIT BY HAND!
+#
+# To regenerate file, run
+#
+#     python dev/generate-tests.py
+#
+
+# fmt: off
+
+import cupy
+import pytest
+
+import awkward as ak
+import awkward._connect.cuda as ak_cu
+from awkward._backends.cupy import CupyBackend
+
+cupy_backend = CupyBackend.instance()
+
+@pytest.mark.skip(reason='Unable to generate any tests for kernel')
+def test_cpuawkward_reduce_countnonzero_uint16_64_1():
+    raise NotImplementedError('Unable to generate any tests for kernel')
