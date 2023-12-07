@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath='src'
+addopts = [
+  "--import-mode=importlib",
+]
+
+[project]
+name = "flex-prompt"
+version = "0.0.4"
+authors = [
+  { name="ashi", email="i@ashi.io" },
+]
+description = "a flexible prompt renderer for large language models (LLMs)"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/queerviolet/flex-prompt"
+Issues = "https://github.com/queerviolet/flex-prompt/issues"
+
+[project.optional-dependencies]
+openai = ["tiktoken"]

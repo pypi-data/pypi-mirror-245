@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: flex-prompt
+Version: 0.0.4
+Summary: a flexible prompt renderer for large language models (LLMs)
+Project-URL: Homepage, https://github.com/queerviolet/flex-prompt
+Project-URL: Issues, https://github.com/queerviolet/flex-prompt/issues
+Author-email: ashi <i@ashi.io>
+License-File: LICENSE
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Provides-Extra: openai
+Requires-Dist: tiktoken; extra == 'openai'
+Description-Content-Type: text/markdown
+
+# flex[prompt]
+
+Large language models have *maximum context window*—a maximum number of tokens they can receive and produce. You may have noticed this:
+
+![Error message showing a model's maximum content length being exceeded](doc/screenshot-max-content-length.png)
+
+Flex prompt addresses this by fitting your prompt into the model's context window. You provide a flexible prompt template, flex prompt renders it into model input.
+
+Flex prompt does not handle model execution, but integrates well with execution frameworks like LangChain and Haystack.
+
+Check out the [intro to flex prompt colab](https://colab.research.google.com/github/queerviolet/flex-prompt/blob/main/doc/intro_to_flex_prompt.ipynb) ([github link](./doc/intro_to_flex_prompt.ipynb)) for usage and examples.
