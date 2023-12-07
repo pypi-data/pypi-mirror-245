@@ -1,0 +1,11 @@
+falcon_evaluate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+falcon_evaluate/context_relevancy.py,sha256=Vx5BEtp4U2bkPV5dcvD-DTvUyGaSsu6mYmZ7v7LJBLQ,1079
+falcon_evaluate/evaluate.py,sha256=p3Vh3_g8eOrcw__AdPJeG0N38KciAIHCBGs7LCq1ZZ8,11787
+falcon_evaluate/fevaluate_plot.py,sha256=4s2BKWPOEKg8OK9-NCR9xC1iRY_NG1hKqBhmN2SEipc,5976
+falcon_evaluate/fevaluate_reliability.py,sha256=5ntKpteuun-QRDJe4ZJFN-0lA9jvLyJS3xyTuv0rJZw,4750
+falcon_evaluate/fevaluate_results.py,sha256=e2KHKI85vTysemJZYDl2igBQPNwBziqpozkEKFg23kk,5776
+falcon_evaluate/utils.py,sha256=8e3FaDHxkX3akyZ6dQtbtMWJj8TJrPkkKjTQAUWdBLg,3092
+falcon_evaluate-0.1.9.1.dist-info/LICENSE,sha256=3tnRrXshSL0nyMOUEL5zhAXu3O1JawHte6PJeTzD8Fc,1087
+falcon_evaluate-0.1.9.1.dist-info/METADATA,sha256=Xh5uClvctBIepZsVxca7X85Ij2lg9UIrRv-w0K_JgCs,15102
+falcon_evaluate-0.1.9.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+falcon_evaluate-0.1.9.1.dist-info/RECORD,,
