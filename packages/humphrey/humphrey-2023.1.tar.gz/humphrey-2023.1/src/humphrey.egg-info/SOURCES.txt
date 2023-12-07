@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/humphrey/__init__.py
+src/humphrey.egg-info/PKG-INFO
+src/humphrey.egg-info/SOURCES.txt
+src/humphrey.egg-info/dependency_links.txt
+src/humphrey.egg-info/top_level.txt
