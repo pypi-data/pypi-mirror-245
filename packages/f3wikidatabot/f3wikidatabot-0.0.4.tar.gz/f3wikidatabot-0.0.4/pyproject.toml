@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "f3wikidatabot"
+version = "0.0.4"
+description = "A Wikidata bot that makes sanity checks for the Wikidata Forges project."
+authors = []
+license = "GPLv3+"
+readme = "README.md"
+repository = "https://lab.forgefriends.org/friendlyforgeformat/f3-wikidata-bot"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.7",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+black = "^23.3.0"
+pywikibot = "^8.1.2"
+dataclasses-json = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3"
+
+[tool.poetry.urls]
+"Issue Tracker" = "https://lab.forgefriends.org/friendlyforgeformat/f3-wikidata-bot/-/issues"
+
+[tool.black]
+line-length = 89
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
