@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "formulascraper"
+version = "1.1.1"
+description = "A Python library for parsing Formula data."
+authors = ["ryazhenkofc <ryazhenkofc@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
