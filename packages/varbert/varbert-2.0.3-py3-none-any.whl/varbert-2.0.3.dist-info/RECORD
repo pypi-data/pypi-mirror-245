@@ -1,0 +1,13 @@
+varbert/__init__.py,sha256=JAm_UWNgPmHAiyQIqjC6zuTCIkAs8Qg2h8Nqe6ollMQ,4512
+varbert/__main__.py,sha256=1-0Z5i4z9af8GPTF46JtZAPYoLPOL2WFdWPT3rdtpMY,1799
+varbert/api.py,sha256=L_5VPyI319ha1n35LH2STNL7aa7AMYVv_8dEpnFiqT4,6493
+varbert/logger.py,sha256=aC6buLUj51mXOzwTic3KFrGjKwQIltDwcsprSD5FGjA,2800
+varbert/model.py,sha256=UTq9QWzEhhEAN1zuQbMdPphG3WMKEgpnqYnVD6Q2qA0,15559
+varbert/text_processor.py,sha256=vyohVQZvLvBHN8JJ927YWwYr9RpKR28gnhAesRY_fas,9531
+varbert/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+varbert-2.0.3.dist-info/LICENSE,sha256=3XU-YtZTdSlGUJ3THdtjpU6XUR5xwUP8jxhJpCfGGSM,1296
+varbert-2.0.3.dist-info/METADATA,sha256=fko8TpulBMTlFTSndK7l9OsDNTbxQCOwiSH9chQ6tAY,4076
+varbert-2.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+varbert-2.0.3.dist-info/entry_points.txt,sha256=cK4v17Ob8IWaQFSDBVfdODgs2Hs6Dc7vteNnhtwYw5c,50
+varbert-2.0.3.dist-info/top_level.txt,sha256=pxHFO6WB-sSFKd3sV8eF727CS9HK2GIR215AU3QzViY,8
+varbert-2.0.3.dist-info/RECORD,,
