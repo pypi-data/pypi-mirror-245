@@ -1,0 +1,12 @@
+{% if product.quantity == 0 %}📦 Под заказ 📦
+
+{% endif %}{{ product.name }}
+
+{% if product.collection %}Коллекция: {{product.collection}}{% endif %}{% if product.size %}
+Размер: {{product.size}}{% endif %}{% if product.color %}
+Цвет: {{product.color}}{% endif %}
+
+{% if product.short_description %}{{product.short_description}}{% endif %}
+{% if product.specifications %}{% for material in product.specifications %}
+- {{material}}{% endfor %}{% endif %}{% if product.notes %}{% for note in product.notes %}
+- {{note}}{% endfor %}{% endif %}
