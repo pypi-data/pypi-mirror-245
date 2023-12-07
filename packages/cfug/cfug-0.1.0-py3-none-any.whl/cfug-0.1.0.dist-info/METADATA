@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: cfug
+Version: 0.1.0
+Summary: C++ project management utilities.
+Home-page: https://github.com/RauliL/cfug
+License: MIT
+Author: Rauli Laine
+Author-email: rauli.laine@iki.fi
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Typing :: Typed
+Requires-Dist: case-convertor (>=1.1.2,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: pathvalidate (>=3.2.0,<4.0.0)
+Requires-Dist: pygit2 (>=1.13.3,<2.0.0)
+Project-URL: Repository, https://github.com/RauliL/cfug
+Description-Content-Type: text/markdown
+
+# CFug
+
+Utilities for C++ project management.
+
+## Requirements
+
+- [CMake] >= 3.11
+- [Git]
+
+[CMake]: https://www.cmake.org
+[Git]: https://git-scm.com/
+
+## Commands
+
+- `cfug new`: Initializes new project. By default header-only library template
+  is used, but this can be changed with `--template` argument. Available
+  templates are `header-only` and `library`.
+- `cfug configure`: Runs CMake configuration on the project.
+- `cfug build`: Builds the project.
+- `cfug test`: Runs test cases.
+- `cfug clean`: Cleans all build files.
+

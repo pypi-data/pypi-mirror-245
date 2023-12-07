@@ -1,0 +1,77 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.11)
+
+PROJECT(
+  {{ project.name }}
+{% if project.version %}  VERSION {{ project.version }}{% endif %}
+{% if project.description %}  DESCRIPTION "{{ project.description }}"{% endif %}
+{% if project.homepage_url %}  HOMEPAGE_URL "{{ project.homepage_url }}"{% endif %}
+  LANGUAGES C CXX
+)
+
+INCLUDE(CMakePackageConfigHelpers)
+
+ADD_LIBRARY(${PROJECT_NAME} INTERFACE)
+
+TARGET_INCLUDE_DIRECTORIES(
+  ${PROJECT_NAME}
+  INTERFACE
+    $<BUILD_INTERFACE:${${PROJECT_NAME}_SOURCE_DIR}>
+    $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
+)
+
+TARGET_COMPILE_FEATURES(
+  ${PROJECT_NAME}
+  INTERFACE
+    cxx_std_17
+)
+
+INSTALL(
+  TARGETS
+    ${PROJECT_NAME}
+  EXPORT
+    ${PROJECT_NAME}_Targets
+  ARCHIVE DESTINATION
+    ${CMAKE_INSTALL_LIBDIR}
+  LIBRARY DESTINATION
+    ${CMAKE_INSTALL_LIBDIR}
+  RUNTIME DESTINATION
+    ${CMAKE_INSTALL_BINDIR}
+)
+
+WRITE_BASIC_PACKAGE_VERSION_FILE(
+  "${PROJECT_NAME}ConfigVersion.cmake"
+  VERSION
+    ${PROJECT_VERSION}
+  COMPATIBILITY
+    SameMajorVersion
+)
+
+CONFIGURE_PACKAGE_CONFIG_FILE(
+  "${PROJECT_SOURCE_DIR}/cmake/ProjectConfig.cmake.in"
+  "${PROJECT_BINARY_DIR}/${PROJECT_NAME}Config.cmake"
+  INSTALL_DESTINATION
+    ${CMAKE_INSTALL_DATAROOTDIR}/${PROJECT_NAME}/cmake
+)
+
+INSTALL(
+  EXPORT
+    ${PROJECT_NAME}_Targets
+  FILE
+    ${PROJECT_NAME}Targets.cmake
+  NAMESPACE
+    ${PROJECT_NAME}::
+  DESTINATION
+    ${CMAKE_INSTALL_DATAROOTDIR}/${PROJECT_NAME}/cmake
+)
+
+INSTALL(
+  DIRECTORY
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+  DESTINATION
+    include
+  FILES_MATCHING PATTERN
+    "*.hpp"
+)
+
+ENABLE_TESTING()
+ADD_SUBDIRECTORY(test)

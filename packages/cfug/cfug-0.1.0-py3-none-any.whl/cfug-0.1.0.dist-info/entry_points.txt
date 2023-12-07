@@ -1,0 +1,3 @@
+[console_scripts]
+cfug=cfug.__main__:main
+
