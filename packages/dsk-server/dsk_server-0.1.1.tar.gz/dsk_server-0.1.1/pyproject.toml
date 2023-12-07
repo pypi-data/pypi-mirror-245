@@ -1,0 +1,26 @@
+[project]
+name = "dsk-server"
+version = "0.1.1"
+description = "A server app to download files from DSK format file"
+dependencies = [
+    "fastapi>=0.104.1",
+    "fire>=0.5.0",
+    "uvicorn>=0.24.0.post1",
+    "construct>=2.10.70",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+dsk-server = 'dsk_server:main'
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
