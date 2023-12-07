@@ -1,0 +1,9 @@
+setup.py
+jsonr/__init__.py
+jsonr.egg-info/PKG-INFO
+jsonr.egg-info/SOURCES.txt
+jsonr.egg-info/dependency_links.txt
+jsonr.egg-info/top_level.txt
+jsonr/bases/__init__.py
+jsonr/bases/new_base.py
+jsonr/core/__init__.py
