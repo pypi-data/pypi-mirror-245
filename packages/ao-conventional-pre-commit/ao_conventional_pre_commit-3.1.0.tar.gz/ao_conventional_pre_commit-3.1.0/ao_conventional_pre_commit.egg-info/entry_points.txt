@@ -1,0 +1,2 @@
+[console_scripts]
+ao-conventional-pre-commit = ao_conventional_pre_commit.hook:main
