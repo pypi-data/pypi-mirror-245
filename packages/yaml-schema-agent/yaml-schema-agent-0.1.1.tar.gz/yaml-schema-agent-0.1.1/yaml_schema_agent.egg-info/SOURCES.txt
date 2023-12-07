@@ -1,0 +1,13 @@
+README.md
+setup.py
+YamlSchemaAgent/__init__.py
+YamlSchemaAgent/entry_point.py
+YamlSchemaAgent/generate.py
+YamlSchemaAgent/schema_types.py
+YamlSchemaAgent/tags_pkg.py
+yaml_schema_agent.egg-info/PKG-INFO
+yaml_schema_agent.egg-info/SOURCES.txt
+yaml_schema_agent.egg-info/dependency_links.txt
+yaml_schema_agent.egg-info/entry_points.txt
+yaml_schema_agent.egg-info/requires.txt
+yaml_schema_agent.egg-info/top_level.txt
