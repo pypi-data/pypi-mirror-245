@@ -1,0 +1,118 @@
+//- Gertrude --- GTD done right
+//- Copyright © 2023 Tanguy Le Carrour <tanguy@bioneland.org>
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+extends layout
+
+block title
+  title= _("pages-tasks-display-title")
+
+block modal
+  include mixins/actions
+
+  .modal.is-active(_="on closeModal remove me")
+    .modal-background(_="on click trigger closeModal then halt default")
+    .modal-card
+      header.modal-card-head
+        p.modal-card-title= _("pages-tasks-display-title")
+        a.delete(
+          href=url_for("tasks.inbox")
+          _="on click trigger closeModal then halt default"
+          aria-label= _("pages-modal-close")
+        )
+
+      section.modal-card-body
+        .buttons.is-pulled-right
+          a.button.is-link(
+            href=url_for("tasks.update_form", id=task.id)
+            hx-get=url_for("tasks.update_form", id=task.id)
+            hx-target="#modal"
+            title=_("pages-mixins-list-of-tasks-update-title")
+          )
+            span.icon.is-small: i.fas.fa-pen(aria-hidden="true")
+            span= _("pages-mixins-list-of-tasks-update-label")
+
+        strong= task.title
+
+        if task.description
+          div.mt-2!= task.description
+
+        if task.assigned_to or task.delegated_to
+          hr
+
+          dl
+            if task.assigned_to
+              - var project = projects_by_id[task.assigned_to]
+              dt= _("pages-tasks-display-assigned-to")
+              dd
+                a(href=url_for("projects.display", id=project.id))= project.name
+            if task.delegated_to
+              dt= _("pages-tasks-display-delegated-to")
+              dd= task.delegated_to
+
+        hr
+
+        h2.title.is-5.mt-5= _("pages-tasks-display-what-next")
+
+        if errors.other:
+          article.message.is-danger: .message-body: p= errors.other
+
+        if task.state == "captured"
+          h3.title.is-6.has-text-centered= _("pages-tasks-display-is-actionable")
+          .columns
+            .column
+              .message.is-success.has-text-centered: .message-body: p: strong= _("pages-tasks-display-yes")
+              p.mt-3= _("pages-tasks-display-conditions-do")
+              +do(task)
+              p.mt-3= _("pages-tasks-display-conditions-delegate")
+              +delegate(task)
+              p.mt-3= _("pages-tasks-display-conditions-projectify")
+              +projectify(task)
+              p.mt-3= _("pages-tasks-display-conditions-postpone")
+              +postpone(task)
+            .column
+              .message.is-danger.has-text-centered: .message-body: p: strong= _("pages-tasks-display-no")
+              p.mt-3= _("pages-tasks-display-conditions-assign")
+              +assign(task)
+              p.mt-3= _("pages-tasks-display-conditions-schedule")
+              +schedule(task)
+              p.mt-3= _("pages-tasks-display-conditions-incubate")
+              +incubate(task)
+              p.mt-3= _("pages-tasks-display-conditions-file")
+              +file(task)
+              p.mt-3= _("pages-tasks-display-conditions-eliminate")
+              +eliminate(task)
+
+        elif possible_next_states
+          .columns
+            if "DONE" in possible_next_states
+              .column: +do(task)
+            if "DELEGATED" in possible_next_states
+              .column: +delegate(task)
+            if "ACTIONABLE" in possible_next_states
+              .column: +postpone(task)
+          .columns
+            if "SCHEDULED" in possible_next_states
+              .column: +schedule(task)
+            if "FILED" in possible_next_states
+              .column: +file(task)
+            if "INCUBATED" in possible_next_states
+              .column: +incubate(task)
+            if "ELIMINATED" in possible_next_states
+              .column: +eliminate(task)
+
+        else
+          article.message.is-info
+            p.message-body= _("pages-tasks-display-no-action")

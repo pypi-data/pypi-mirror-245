@@ -1,0 +1,50 @@
+//- Gertrude --- GTD done right
+//- Copyright © 2023 Tanguy Le Carrour <tanguy@bioneland.org>
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    block title
+      title= _("pages-layout-title")
+
+    link(rel="icon" type="image/png" href=url_for("static", filename="favicon.png"))
+    link(rel="stylesheet" href=url_for("static", filename="css/styles.css"))
+    link(rel="stylesheet" href=url_for("static", filename="css/font-awesome@5.14.0.css"))
+    block links
+  body
+    .page
+      section.section: .container
+        include navbar
+
+      - var messages = get_flashed_messages(with_categories=true)
+      include mixins/flash_messages
+      +flash_messages(messages)
+
+      block content
+
+    footer.footer
+      .content.has-text-centered!= _("pages-layout-footer-html", version=version, years="2020-2023")
+
+    #modal
+      block modal
+        .modal
+
+    script(src=url_for("static", filename="js/htmx@1.9.6.min.js"))
+    script(src=url_for("static", filename="js/hyperscript@0.9.12.min.js"))
+    block scripts

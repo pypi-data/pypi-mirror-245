@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: gertrude
+Version: 0.1.0a10
+Summary: GTD done right
+License: AGPL-3.0-or-later
+Author: Tanguy Le Carrour
+Author-email: tanguy@bioneland.org
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Flask-Cors (>=3.0.10,<4.0.0)
+Requires-Dist: Jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: SQLAlchemy (>=2.0.23,<3.0.0)
+Requires-Dist: bl-seth (>=0.2.0,<0.3.0)
+Requires-Dist: bl3d (>=1.0.0a0,<2.0.0)
+Requires-Dist: bles (>=1.0.0a1,<2.0.0)
+Requires-Dist: blessql (>=1.0.0a0,<2.0.0)
+Requires-Dist: flask (>=3.0.0,<4.0.0)
+Requires-Dist: fluent-runtime (>=0.4.0,<0.5.0)
+Requires-Dist: jinja2-fragments (>=1.2.1,<2.0.0)
+Requires-Dist: markdown (>=3.5.1,<4.0.0)
+Requires-Dist: pypugjs (>=5.9.11,<6.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Requires-Dist: typing-extensions (>=4.8.0,<5.0.0)

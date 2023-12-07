@@ -1,0 +1,61 @@
+//- Gertrude --- GTD done right
+//- Copyright © 2023 Tanguy Le Carrour <tanguy@bioneland.org>
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+extends layout
+
+block title
+  title= _("pages-projects-create-title")
+
+block content
+  section.section
+    .container
+      h1.title= _("pages-projects-create-title")
+
+      form(method="POST")
+        input(type="hidden" name="id" value=values.id)
+
+        .field
+          label.label= _("pages-projects-create-short-name-label")
+          .control
+            input.input(
+              type="text"
+              name="short_name"
+              value=values.short_name
+              maxlength=short_name_max
+            )
+            if errors.name
+              p.help.is-danger= errors.short_name
+            p.help= _("pages-projects-create-short-name-help", max=short_name_max)
+
+        .field
+          label.label= _("pages-projects-create-name-label")
+          .control
+            input.input(
+              type="text"
+              name="name"
+              value=values.name
+            )
+            if errors.name
+              p.help.is-danger= errors.name
+            p.help= _("pages-projects-create-name-help", max=name_max)
+
+        .field.is-grouped
+          .control: button.button.is-success(type="submit")
+            span.icon: i.fas.fa-plus(aria-hidden="true")
+            span= _("pages-projects-create-submit")
+          .control: a.button(href=url_for("projects.list"))
+            span.icon: i.fas.fa-ban(aria-hidden="true")
+            span= _("pages-projects-create-cancel")

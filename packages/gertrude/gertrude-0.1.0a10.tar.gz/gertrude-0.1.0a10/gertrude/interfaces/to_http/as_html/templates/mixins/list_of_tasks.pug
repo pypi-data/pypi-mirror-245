@@ -1,0 +1,47 @@
+//- Gertrude --- GTD done right
+//- Copyright © 2023 Tanguy Le Carrour <tanguy@bioneland.org>
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+mixin list_of_tasks(tasks, next=false)
+  .box
+    ul.list.has-hoverable-list-items.has-visible-pointer-controls
+      each task in tasks
+        li.list-item
+          .list-item-content
+            .list-item-title
+              if task.project_short_name
+                span.tag.is-info.is-light.mr-1= task.project_short_name
+              span.mr-1= task.title
+              if task.scheduled_on
+                - var classes = "is-link" if today < task.scheduled_on else "is-danger"
+                span.tag.is-light.ml-1(class=classes)= task.scheduled_on
+
+          .list-item-controls
+            .buttons.is-right
+              if next
+                button.button.is-success(
+                  hx-post=url_for("tasks.postpone", id=task.id) hx-target="#modal"
+                  title=_("pages-mixins-list-of-tasks-postpone-title")
+                )
+                  span.icon.is-small: i.fas.fa-chevron-circle-right(aria-hidden="true")
+                  span= _("pages-mixins-list-of-tasks-postpone-label")
+              a.button(
+                href=url_for("tasks.display", id=task.id)
+                hx-get=url_for("tasks.display", id=task.id)
+                hx-target="#modal"
+                title=_("pages-mixins-list-of-tasks-display-title")
+              )
+                span.icon.is-small: i.fas.fa-eye(aria-hidden="true")
+                span= _("pages-mixins-list-of-tasks-display-label")
