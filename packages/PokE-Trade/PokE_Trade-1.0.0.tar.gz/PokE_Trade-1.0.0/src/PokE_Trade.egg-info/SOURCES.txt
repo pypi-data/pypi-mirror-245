@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+src/PokE_Trade/API.py
+src/PokE_Trade/ItemID.csv
+src/PokE_Trade/PokE_Trade.py
+src/PokE_Trade/Widgets.py
+src/PokE_Trade/__init__.py
+src/PokE_Trade/bg.png
+src/PokE_Trade/icon.ico
+src/PokE_Trade.egg-info/PKG-INFO
+src/PokE_Trade.egg-info/SOURCES.txt
+src/PokE_Trade.egg-info/dependency_links.txt
+src/PokE_Trade.egg-info/requires.txt
+src/PokE_Trade.egg-info/top_level.txt

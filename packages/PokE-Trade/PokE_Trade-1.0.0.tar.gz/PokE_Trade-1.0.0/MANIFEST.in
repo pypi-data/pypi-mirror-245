@@ -1,0 +1,3 @@
+include src/PokE_Trade/*.png
+include src/PokE_Trade/*.ico
+include src/PokE_Trade/*.csv
