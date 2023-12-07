@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: virtualcollegeapiwrapper
+Version: 0.1.5
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyjwt (>=2.8.0,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# VirtualCollegeAPI
+
+original API DOCS  https://enableapi.docs.apiary.io/#reference/security/access-tokens
+
+This is a small project, the entire API is not covered yet, 
+I just added the methods that I needed, PRs are welcome.
+
+it handles the creation of JWT and the encoding
+
+
+## Install
+`pip install virtualcollegeapiwrapper`
+
+## Usage example
+```
+from VirtualCollegeAPIWrapper.VirtualCollege import VirtualCollegeAPI
+
+# InstanceReference and PublicKeyAPI can be found in Virtual college -> Settings -> Api Settings
+# You will need an admin account
+
+VC = VirtualCollegeAPI(InstanceReference, PublicKeyAPI, "https://external-api.vc-enable.co.uk")
+print(VC.count_users())
+```
+
+For the list of methods look at the Class VirtualCollegeAPI code.
