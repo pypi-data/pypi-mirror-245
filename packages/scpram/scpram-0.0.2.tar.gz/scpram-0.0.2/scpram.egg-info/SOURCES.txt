@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+scpram/__init__.py
+scpram/data_process.py
+scpram/dataset.py
+scpram/evaluate.py
+scpram/models.py
+scpram/utils.py
+scpram/version.py
+scpram.egg-info/PKG-INFO
+scpram.egg-info/SOURCES.txt
+scpram.egg-info/dependency_links.txt
+scpram.egg-info/requires.txt
+scpram.egg-info/top_level.txt
