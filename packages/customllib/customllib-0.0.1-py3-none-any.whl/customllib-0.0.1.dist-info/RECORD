@@ -1,0 +1,15 @@
+customllib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+customllib/supervised/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+customllib/supervised/classification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+customllib/supervised/classification/logistic_regression.py,sha256=XwdNxlpxwccig9awSYjF_l6XsoD797YBJ3a2uM0Kd-A,1493
+customllib/supervised/regression/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+customllib/supervised/regression/linear_regression.py,sha256=ql0YWw7mSWIPci1faMhRZF2rMQZpiZ7lc4X6M84sehw,1236
+customllib/unsupervised/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+customllib/unsupervised/clustering/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+customllib/unsupervised/clustering/kmeans_clustering.py,sha256=pPyRNJz_SaDU27bbrDFKjbRsRmRoM-m73fhk1vis7f4,1256
+customllib/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+customllib/utils/feature_scaling.py,sha256=lgW5WaIZf-B_JaCTEbLb3wfY6cN4hujsZTFXWXhSS4o,367
+customllib-0.0.1.dist-info/METADATA,sha256=C6Rkne2K1d6kdrMW_mIbpKsBHrNf-yxOIWnvj2neTH4,625
+customllib-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+customllib-0.0.1.dist-info/licenses/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+customllib-0.0.1.dist-info/RECORD,,
