@@ -1,0 +1,20 @@
+{% extends "publisher/page.pub.html" %}
+
+{% block content %}
+<div class="row-fluid">
+  <h1>{{babelattr(obj.owner.line, 'name')}}
+    <span style="font-size: 0.5em;">
+    <a href="{{ar.get_detail_url(ar.actor, obj.pk)}}" title="Edit">&#x270E;</a>
+    </span>
+  </h1>
+  <p>Date: {{fdf(obj.start_date)}}{% if obj.end_date %}-{{fdf(obj.end_date)}}{% endif %}</p>
+  {% if obj.start_time %}<p>Time:  {{strftime(obj.start_time)}}{% if obj.end_time %}-{{strftime(obj.end_time)}}{% endif %}</p>{% endif %}
+  <p>Place: {{obj.room}} | Contact: {{obj.user}} </p>
+
+  {% if obj.description %}{{obj.description}}{% endif %}
+
+  {{babelattr(obj.owner.line, 'description')}}
+
+
+</div>
+{% endblock %}
