@@ -1,0 +1,78 @@
+{% extends 'layout.html' %}
+
+{% block style %}
+
+<link rel="stylesheet" href="/static/dropzone/dropzone.css">
+<style>
+    .row-upload {
+        background: rgb(243, 244, 245);
+        height: 100%;
+        color: rgb(100, 108, 127);
+        line-height: 1.4rem;
+        font-family: Roboto, "Open Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        text-rendering: optimizeLegibility;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .dropzone {
+        background: white;
+        border-radius: 5px;
+        border: 2px dashed rgb(0, 135, 247);
+        border-image: none;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+</style>
+{% endblock %}
+
+
+{% block search %}
+{% endblock %}
+
+
+{% block upload %}
+{{  super()  }}
+<a href="{{path}}" class="btn btn-secondary btn-primary">Finder</a>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="row row-upload">
+    <DIV id="dropzone">
+        <FORM class="dropzone needsclick" id="finder-upload" action="/upload">
+            <DIV class="dz-message needsclick">
+                Drop files here or click to upload.<BR>
+            </DIV>
+            <input type="hidden" name="path" value="{{path}}"/>
+        </FORM>
+    </DIV>
+</div>
+
+{% endblock %}
+
+
+{% block script %}
+
+<script src="/static/dropzone/dropzone.js"></script>
+
+<script>
+    $(function () {
+        $("#finder-upload").dropzone({
+            url: "/upload",
+            maxFiles: 10,
+            addRemoveLinks: true,
+        });
+    })
+</script>
+
+{% endblock %}

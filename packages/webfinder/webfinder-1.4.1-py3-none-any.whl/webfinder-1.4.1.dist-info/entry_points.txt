@@ -1,0 +1,3 @@
+[console_scripts]
+f = finder.cmdline:execute
+finder = finder.cmdline:execute
