@@ -1,0 +1,9 @@
+regress-0.4.5.dist-info/METADATA,sha256=ZqVkZe_flejec0V_H_EUQ6MJ5RJO11HByYhT4pZrQDk,2109
+regress-0.4.5.dist-info/WHEEL,sha256=6r56k9xHKUSlfa0Tf_oDbYhmnNXBxt-5k68ZgNu0qfw,108
+regress-0.4.5.dist-info/license_files/LICENSE,sha256=MU5Okb47qpPA-0vMyeTpfNZD64ObBlr5IXgsIXX-mQk,1057
+regress.libs/libgcc_s-60abea67.so.1,sha256=5Ymeh-PwFBkI5B-deNMLyVYu2EYmgIu7iQGitm7d2t4,724137
+regress/__init__.py,sha256=wFCBf-PinEt94zQBb74Xa1Td262ScujdrWtA_NVORIM,111
+regress/__init__.pyi,sha256=9NnS0L_f57YRzgFtbzr-dTZs0XP1aCbVB__TNTospys,394
+regress/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regress/regress.cpython-312-aarch64-linux-musl.so,sha256=T5OosCz-lQ1_AIN01780TimFE0tCV9_3rDHLA8CQ1cc,5573025
+regress-0.4.5.dist-info/RECORD,,
