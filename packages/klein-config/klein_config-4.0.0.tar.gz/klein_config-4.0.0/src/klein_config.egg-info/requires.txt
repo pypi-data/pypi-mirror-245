@@ -1,0 +1,2 @@
+pyhocon
+pyyaml<7,>=6
