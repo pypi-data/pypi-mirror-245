@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: openai-cost-tracker
+Version: 0.1
+Summary: OpenAi Cost Tracker
+Home-page: UNKNOWN
+Author: Roy Xie
+Author-email: royx252@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: tiktoken ==0.5.2
+Requires-Dist: lorem-text ==2.1
+Requires-Dist: openai ==0.28.0
+
+UNKNOWN
+
