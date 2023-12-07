@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+star_local.egg-info/PKG-INFO
+star_local.egg-info/SOURCES.txt
+star_local.egg-info/dependency_links.txt
+star_local.egg-info/requires.txt
+star_local.egg-info/top_level.txt
+star_local/src/__init__.py
+star_local/src/entity_constants.py
+star_local/src/exception_star.py
+star_local/src/star_local.py
+star_local/src/star_transaction.py
