@@ -1,0 +1,12 @@
+smartmultiprocessing/__init__.py,sha256=kz6j28dRku3AZgxz5N5wz3XTluI4vT4zIFQh-BfeV4A,157
+smartmultiprocessing/_sphandler.py,sha256=J67wTQjug3PAbuHIB37OZ58PDQ3ynyt64voVoA4IyAQ,40031
+smartmultiprocessing/errors.py,sha256=TY_xUpdWaQVp900Vq_lpli2unGQuCUzFJ1C9iTMb6HI,143
+smartmultiprocessing/pool.py,sha256=5vYsh3iWLj-OXLfmBpnnFFAODpz87OVOW2ogRuVuqSo,99
+smartmultiprocessing/process.py,sha256=J1PzceLYoCb5Ti_ferqJ4qMfPFq2pfC0uwdt5N-Gbrg,6287
+smartmultiprocessing/queue.py,sha256=meg6YTykrM9mjXrbTCrID2_PHFfDOEc0FmXvtXb6RrY,101
+smartmultiprocessing/utilities.py,sha256=7uaiKC3cLMz2bOhjOPEhWIJZ0oLmgms192SR3voQ0Nk,1576
+smartmultiprocessing-0.0.1.dist-info/LICENSE,sha256=JRH32yg_jXRb8vneAWX4vjaJsc-16icJ6oLGhb2g2Ug,1067
+smartmultiprocessing-0.0.1.dist-info/METADATA,sha256=fQXUrAKa7pqQg5eBVX_1Gnt30NSKgdxs3-LXXh5PZYQ,3918
+smartmultiprocessing-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+smartmultiprocessing-0.0.1.dist-info/top_level.txt,sha256=_pZ70Rh5H2T2n5z2LPXh2MUTwp-aXKMOxUnonkrtOBk,21
+smartmultiprocessing-0.0.1.dist-info/RECORD,,
