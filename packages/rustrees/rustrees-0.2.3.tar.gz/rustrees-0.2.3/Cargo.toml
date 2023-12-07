@@ -1,0 +1,31 @@
+[package]
+name = "rustrees"
+version = "0.2.3"
+edition = "2021"
+authors = [
+    "Guilherme Lázari <guilhermelcs@gmail.com>",
+    "Pedro Tabacof <tabacof@gmail.com>",
+]
+description = "Decision trees in Rust"
+license = "MIT"
+categories = ["machine-learning", "decision-trees", "python"]
+keywords = ["machine-learning", "decision-trees", "python"]
+
+[lib]
+name = "rustrees"
+path = "src/lib.rs"
+
+[dependencies]
+rand = "0.8.5"
+pyo3 = { version = "0.18.1", features = ["extension-module"] }
+permutation = "0.4.1"
+rayon = "1.7.0"
+arrow = { version = "37.0.0", features = ["prettyprint", "pyarrow"] }
+
+[dev-dependencies]
+criterion = { version = "0.5.1", features = ["html_reports"] }
+
+[[bench]]
+name = "benchmarks"
+harness = false
+
