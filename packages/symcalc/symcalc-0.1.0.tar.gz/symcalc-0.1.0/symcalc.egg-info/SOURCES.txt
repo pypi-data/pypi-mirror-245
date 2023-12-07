@@ -1,0 +1,7 @@
+README.md
+setup.py
+symcalc.egg-info/PKG-INFO
+symcalc.egg-info/SOURCES.txt
+symcalc.egg-info/dependency_links.txt
+symcalc.egg-info/top_level.txt
+tests/test_nothing.py
