@@ -1,0 +1,2 @@
+[console_scripts]
+imgdups = imgdups.imgdups:main

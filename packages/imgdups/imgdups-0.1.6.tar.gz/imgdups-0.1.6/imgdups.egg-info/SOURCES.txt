@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+imgdups/__init__.py
+imgdups/imgdups.py
+imgdups.egg-info/PKG-INFO
+imgdups.egg-info/SOURCES.txt
+imgdups.egg-info/dependency_links.txt
+imgdups.egg-info/entry_points.txt
+imgdups.egg-info/requires.txt
+imgdups.egg-info/top_level.txt
+imgdups.egg-info/zip-safe
+tests/test_imgdups.py
