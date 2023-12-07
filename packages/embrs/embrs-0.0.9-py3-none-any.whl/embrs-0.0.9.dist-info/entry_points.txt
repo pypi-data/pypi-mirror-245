@@ -1,0 +1,2 @@
+[console_scripts]
+run_embrs_sim = core.main:main
