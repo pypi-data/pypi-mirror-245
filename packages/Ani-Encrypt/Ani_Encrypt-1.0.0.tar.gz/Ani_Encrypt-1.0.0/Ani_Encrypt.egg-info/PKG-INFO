@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Ani-Encrypt
+Version: 1.0.0
+Summary: A Python package to encrypt and decrypt data.
+Home-page: UNKNOWN
+Author: Aniket Dubey
+Author-email: daniket182@gmail.com
+License: MIT
+Description: #encoder_decoder
+        A Python package to encrypt and decrypt data.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
