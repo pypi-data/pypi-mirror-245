@@ -1,0 +1,3 @@
+[console_scripts]
+create-token=getstream.cli:create_token
+
