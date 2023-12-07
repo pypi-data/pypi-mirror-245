@@ -1,0 +1,10 @@
+README.md
+setup.py
+pegasus/__init__.py
+pegasus/data_utils.py
+pegasus/tokenizers_pegasus.py
+tokenizers_pegasus.egg-info/PKG-INFO
+tokenizers_pegasus.egg-info/SOURCES.txt
+tokenizers_pegasus.egg-info/dependency_links.txt
+tokenizers_pegasus.egg-info/requires.txt
+tokenizers_pegasus.egg-info/top_level.txt

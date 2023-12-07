@@ -1,0 +1,5 @@
+jieba
+rouge
+torch
+numpy
+six

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tokenizers_pegasus
+Version: 0.0.4
+Summary: tokenizers for pegasus
+Home-page: https://github.com/Qiliang/pegasus.git
+Author: xiaoql
+Author-email: xiaoql@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: jieba
+Requires-Dist: rouge
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: six
+
+### tokenizers for pegasus
+
+```shell
+pip install tokenizers-pegasus  -i https://pypi.org/simple
+```
