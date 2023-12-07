@@ -1,0 +1,2 @@
+[console_scripts]
+ansible-development-environment = ansible_development_environment.cli:main
