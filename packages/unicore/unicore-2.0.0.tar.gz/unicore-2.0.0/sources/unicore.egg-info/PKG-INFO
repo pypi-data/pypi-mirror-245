@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: unicore
+Version: 2.0.0
+Summary: UniCore: Unified Perception Core Library
+Author-email: Kurt Stolle <k.h.w.stolle@gmail.com>
+Keywords: perception,computer vision,deep learning,object detection,instance segmentation,semantic segmentation
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch>=2.1.0
+Requires-Dist: torchvision
+Requires-Dist: torchdata
+Requires-Dist: iopath
+Requires-Dist: tensordict
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-rtd-theme; extra == "docs"
+Provides-Extra: notebooks
+Requires-Dist: ipython; extra == "notebooks"
+Requires-Dist: jupyter; extra == "notebooks"
+Requires-Dist: ipython-autotime; extra == "notebooks"
+Requires-Dist: imutils; extra == "notebooks"
+Requires-Dist: matplotlib; extra == "notebooks"
+Requires-Dist: seaborn; extra == "notebooks"
+Provides-Extra: tests
+Requires-Dist: hypothesis; extra == "tests"
+Requires-Dist: bandit[toml]; extra == "tests"
+Requires-Dist: black>=23.10.0; extra == "tests"
+Requires-Dist: check-manifest; extra == "tests"
+Requires-Dist: flake8; extra == "tests"
+Requires-Dist: flake8-bugbear; extra == "tests"
+Requires-Dist: flake8-docstrings; extra == "tests"
+Requires-Dist: flake8-formatter_junit_xml; extra == "tests"
+Requires-Dist: flake8-pyproject; extra == "tests"
+Requires-Dist: pre-commit; extra == "tests"
+Requires-Dist: pylint; extra == "tests"
+Requires-Dist: pylint_junit; extra == "tests"
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest-sugar; extra == "tests"
+Requires-Dist: pytest-xdist; extra == "tests"
+Requires-Dist: pytest-benchmark; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+Requires-Dist: pytest-mock; extra == "tests"
+Requires-Dist: pytest-runner; extra == "tests"
+Requires-Dist: pytest-github-actions-annotate-failures; extra == "tests"
+Requires-Dist: shellcheck-py; extra == "tests"
+Requires-Dist: pylint; extra == "tests"
+Requires-Dist: mypy; extra == "tests"
+Requires-Dist: autoflake; extra == "tests"
+Requires-Dist: pydocstyle; extra == "tests"
+Requires-Dist: pyre-check; extra == "tests"
+Requires-Dist: pydocstringformatter; extra == "tests"
+Requires-Dist: pyrefact; extra == "tests"
+Provides-Extra: benchmarks
+Requires-Dist: pytest-benchmark; extra == "benchmarks"
+Requires-Dist: tenacity; extra == "benchmarks"
+
+# UniCore: Unified Perception Core Libraries
+
+This project contains the core libraries used in UniPercept and UniTrack. All packages is mostly stable, but should not be considered production ready.
