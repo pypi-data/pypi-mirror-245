@@ -1,0 +1,11 @@
+nonebot_plugin_batarot-0.2.0.post1.dist-info/METADATA,sha256=-h7e03os-nzrFtqUDu99v1J44lRAHJxSI9aoXHSRawA,5345
+nonebot_plugin_batarot-0.2.0.post1.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+nonebot_plugin_batarot-0.2.0.post1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nonebot_plugin_batarot/__init__.py,sha256=D_12cUCNrNG2nFErnX5Df0JvfnDTzot4dOpwlTLE-0E,1037
+nonebot_plugin_batarot/batarot.json,sha256=7-dU6fDfISbS_3BeCGFVaErlr75gW00O_DAXroptlEE,18500
+nonebot_plugin_batarot/batarot_fortune.json,sha256=LF5qjaEoz42noCiQqQi1zcHm8AjfHdeu0uChzcrMLYE,2727
+nonebot_plugin_batarot/batarot_spread.json,sha256=dH4OKfqU_XXxRbHoEfaEd85T3FVD5siLHcilW9pUNhA,4393
+nonebot_plugin_batarot/batarot_url.json,sha256=_iLCX1ciGhBs28_19yJ8K3LftYS5jEOmsr812KchzNs,2634
+nonebot_plugin_batarot/commands.py,sha256=WH2VtPoDFzTrLhayhNThS1TDXU9emU8s1Dwf0l3j_Wg,5035
+nonebot_plugin_batarot/utils.py,sha256=y44kRmhqRrSsEBe4ne7mad5fvTTnL-9r8g3u_YnXk04,1806
+nonebot_plugin_batarot-0.2.0.post1.dist-info/RECORD,,
