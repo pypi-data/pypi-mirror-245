@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: uh2sc
+Version: 0.0.0b0
+Summary: This package simulates salt caverns with hydrogen and other gas mixtures
+Author-email: "Daniel L. Villa" <dlvilla@sandia.gov>
+Project-URL: Homepage, https://github.com/sandialabs/uh2sc
+Project-URL: Issues, https://github.com/sandialabs/uh2sc/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# uh2sc
+Underground H_2 Salt Cavern (UH_2SC) Simulation Tool
+
+This is a place holder for a tool that is in development.

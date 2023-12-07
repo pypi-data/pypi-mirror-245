@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/uh2sc/__init__.py
+src/uh2sc/main.py
+src/uh2sc.egg-info/PKG-INFO
+src/uh2sc.egg-info/SOURCES.txt
+src/uh2sc.egg-info/dependency_links.txt
+src/uh2sc.egg-info/top_level.txt
+tests/test_uh2sc_main.py
