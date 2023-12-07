@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+main.py
+requirements.txt
+setup.py
+.github/workflows/python-package.yml
+RR_Custom_Python_Library.egg-info/PKG-INFO
+RR_Custom_Python_Library.egg-info/SOURCES.txt
+RR_Custom_Python_Library.egg-info/dependency_links.txt
+RR_Custom_Python_Library.egg-info/requires.txt
+RR_Custom_Python_Library.egg-info/top_level.txt
+date_management/__init__.py
+date_management/date_management.py
