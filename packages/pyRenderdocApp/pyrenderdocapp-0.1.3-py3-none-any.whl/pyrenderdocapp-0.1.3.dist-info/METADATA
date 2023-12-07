@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: pyRenderdocApp
+Version: 0.1.3
+Summary: A small wrapper for the renderdoc in-app api in python.
+Project-URL: Homepage, https://github.com/space928/pyRenderdocApp
+Project-URL: Issues, https://github.com/space928/pyRenderdocApp/issues
+Author-email: Thomas Mathieson <thomas@mathieson.dev>
+License: MIT License
+        
+        Copyright (c) 2023 Thomas Mathieson
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Environment :: GPU
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Graphics :: 3D Rendering
+Classifier: Topic :: Software Development :: Debuggers
+Requires-Python: >=3.8
+Provides-Extra: docs
+Requires-Dist: jupyter-sphinx; extra == 'docs'
+Requires-Dist: nbsphinx; extra == 'docs'
+Requires-Dist: nbsphinx-link; extra == 'docs'
+Requires-Dist: pypandoc; extra == 'docs'
+Requires-Dist: pytest-check-links; extra == 'docs'
+Requires-Dist: recommonmark; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme; extra == 'docs'
+Requires-Dist: sphinx>=1.5; extra == 'docs'
+Provides-Extra: examples
+Provides-Extra: test
+Requires-Dist: nbval; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest>=6.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+# pyRenderdocApp
+A small wrapper for the renderdoc in-app api in python.
+
+This project wraps the methods exposed by `renderdoc_app.h` with the python ctypes API. It's designed to closely match 
+the official API, with the main difference being that the function and parameter names have been converted to snake case
+(ie: `GetAPIVersion()` --> `get_api_version()`). The original doc comments from `renderdoc_app.h` have also been ported 
+over (and modified where appropriate). For more information about using the Renderdoc in-app API, read the official 
+documentation: https://renderdoc.org/docs/in_application_api.html
+
+## Installing
+
+Install with `pip`:
+```bash
+pip install pyRenderdocApp
+```
+
+The package includes renderdoc binaries for Windows and Mac.
+
+## Building
+
+Build using `build`:
+```bash
+pip install build twine hatch
+```
+
+Build the wheel:
+```bash
+python -m build
+```
+
+Then to upload the package to PyPI, do:
+```bash
+twine upload dist/pyrenderdocapp*
+```
