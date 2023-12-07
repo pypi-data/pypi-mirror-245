@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: proto-inspect
+Version: 0.3
+Summary: protobuf parsing, modification, and reassembly for the repl
+Home-page: https://github.com/mumbleskates/proto-inspect
+Author: Kent Ross
+Author-email: k@mad.cash
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
