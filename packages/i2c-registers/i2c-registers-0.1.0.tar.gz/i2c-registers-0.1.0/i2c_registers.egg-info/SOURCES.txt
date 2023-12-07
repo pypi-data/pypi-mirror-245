@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+i2c_registers/__init__.py
+i2c_registers/i2c_device.py
+i2c_registers/i2c_register.py
+i2c_registers/i2c_register_section.py
+i2c_registers.egg-info/PKG-INFO
+i2c_registers.egg-info/SOURCES.txt
+i2c_registers.egg-info/dependency_links.txt
+i2c_registers.egg-info/top_level.txt
+tests/test_i2c_device.py
+tests/test_i2c_register.py
+tests/test_i2c_register_section.py

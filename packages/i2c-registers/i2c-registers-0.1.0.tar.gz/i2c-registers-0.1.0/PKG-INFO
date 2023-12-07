@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: i2c-registers
+Version: 0.1.0
+Summary: Python wrapper library around the common I2C controller register pattern.
+Home-page: https://github.com/tsessebe/i2c-register-module
+Author: Francois de Wet
+Author-email: francois@recotrust.co.za
+License: MIT
+Keywords: library i2c registers
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
