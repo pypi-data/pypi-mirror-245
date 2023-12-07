@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Daug
+Version: 2023.12.7.2
+Summary: discord.py を利用した Discord Bot 向け機能拡張ライブラリ
+Home-page: https://github.com/DiscordBotPortalJP/Daug.py
+Author: Discord Bot Portal JP
+Author-email: discordbot.jp@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: discord.py>=2.3.2
+Requires-Dist: python-dotenv>=1.0.0
+
+# Daug.py (augmented Discord by discord.py)
+discord.py を利用した Discord Bot 向け機能拡張ライブラリ
+
+# インストール方法
+
+```
+python3 -m pip install Daug
+```
