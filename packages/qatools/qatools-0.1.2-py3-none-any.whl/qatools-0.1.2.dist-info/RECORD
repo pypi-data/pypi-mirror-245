@@ -1,0 +1,13 @@
+qatools/__init__.py,sha256=bVeli50lHYk8Ypxfc_Dy1gDaZzDBoe2qKs2N8t1nHwc,128
+qatools/qa.py,sha256=9m7Ct6PPI5V4w_4X0z0ME3cWgqiq2Qfd_S74ZQ8aZdg,298
+qatools/qatools.qa,sha256=DDKad0IEn8SxETqn-qy0QICvI37s2Q5oB4Iy_p5DOqA,32
+qatools/adb/mac/adb,sha256=Dp6bgr9c3UZhdEnb41edvMzC2QL5zPG2-mixaVklKj8,2622660
+qatools/adb/windows/AdbWinApi.dll,sha256=1gEDpembyYiPeG7pFvXW5FSTwyR5cssFODOAPefpXPk,97792
+qatools/adb/windows/AdbWinUsbApi.dll,sha256=JSB8UG0pxOjc62G0vVDoZpuiYBKYikP78mqJCx5g_Jc,62976
+qatools/adb/windows/adb.exe,sha256=454lu-0RkVbNl1v4XkRuil1ZL9ko_t1mfg5UiEXiBzQ,1868800
+qatools-0.1.2.dist-info/LICENSE,sha256=0qmLpFIQ-2aJ5r2vQgYpzJPo_8YNlDf6df9zFgQKMK4,11361
+qatools-0.1.2.dist-info/METADATA,sha256=Zw_SY4de0aXnkF5d9A1epSg_GS5PuoJGHFAV0oMrwzQ,2307
+qatools-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+qatools-0.1.2.dist-info/entry_points.txt,sha256=xgsZfTjcXE7h0GGXSVZhINjHjC52BtOv6TplvsEh8Sg,39
+qatools-0.1.2.dist-info/top_level.txt,sha256=dfoYX9-3iN3DAlF4_d4H61grubn44znR9fmYvG4E1oA,8
+qatools-0.1.2.dist-info/RECORD,,
