@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bimms
+Version: 1.0.1
+Summary: BIMMS python API
+Home-page: https://github.com/fkolbl/BIMMS
+Author: Louis Regnacq - Florian Kolbl
+Project-URL: Documentation, https://bimms.readthedocs.io
+Project-URL: Source, https://github.com/fkolbl/bimms
+Keywords: bioimpedance,hardware,electronics,measurements,spectroscopy,potentiostat,galvanostat
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: andi-py
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
