@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentwallet"
+version = "0.0.2"
+description = "Agent Wallet SDK."
+authors = [{name = "llmOS", email = "llmos@llmos.dev"}]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31.0"
+]
+
+[project.urls]
+homepage = "https://www.llmos.dev/"
+repository = "https://github.com/llmOS/agent-wallet-sdk/"
+documentation = "https://docs.llmos.dev/"
+
+[tool.setuptools]
+packages = ["agentwallet"]
