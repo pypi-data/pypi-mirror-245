@@ -1,0 +1,10 @@
+bluetooth_2_usb/__init__.py,sha256=wZEA1I4s-BecocZQtuCc1oGvBGjZQHT1_e28Khq0EyI,600
+bluetooth_2_usb/args.py,sha256=QS_GdIrPi5ZY2I9sRcmh31IyXe-ZiabobPhbYkYdquQ,2391
+bluetooth_2_usb/evdev.py,sha256=3DI1Oqfs2ysHr2u2Aicnaf1MREjm8VJgxKfjcXOm0e4,49037
+bluetooth_2_usb/logging.py,sha256=WNEyXIAYHXjd-7fQfSd7CGqYqo1tlfuCzr3Gmy9gzTk,609
+bluetooth_2_usb/relay.py,sha256=VvVVB-S9rI9pFyLhtx7T9IqU9mwVXWeI27Yd_N11CXw,8054
+bluetooth_2_usb-0.0.0.dist-info/LICENSE.md,sha256=2U9os9YYq8kdnRfU9KuYsl8OT_3KTbQpKfm29DzTRtw,1098
+bluetooth_2_usb-0.0.0.dist-info/METADATA,sha256=zaUi1eRt8rCtORAEsYWAebDqyU0IltpyxIuUfEuFA3A,25815
+bluetooth_2_usb-0.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bluetooth_2_usb-0.0.0.dist-info/top_level.txt,sha256=H2DwZ80TGivd5WQgcecvOITA5ZvQEjnkHwjFw8cq1Xk,16
+bluetooth_2_usb-0.0.0.dist-info/RECORD,,
