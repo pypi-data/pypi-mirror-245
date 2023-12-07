@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+enigmacifra/__init__.py
+enigmacifra/cliengine.py
+enigmacifra/defaultRotor.py
+enigmacifra/engine.py
+enigmacifra/mshuffle.py
+enigmacifra.egg-info/PKG-INFO
+enigmacifra.egg-info/SOURCES.txt
+enigmacifra.egg-info/dependency_links.txt
+enigmacifra.egg-info/entry_points.txt
+enigmacifra.egg-info/top_level.txt
