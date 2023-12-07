@@ -1,0 +1,17 @@
+chemrel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chemrel/cli.py,sha256=WhN1Ualu7vkOiJFFBrVm7_WcvIdUwoF25OkJ-HEnzvw,13811
+chemrel/cli_constants.py,sha256=pAwAHCbO8tif-G-VH-pPjo3n0qQW86bugl-9Yp9G6B8,1810
+chemrel/functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chemrel/functions/auxiliary.py,sha256=XMEzb3u6iH-cYw415Zo-e4CkiBRXDxX6aJvnr_ZF3PI,4916
+chemrel/functions/build.py,sha256=_RL8dPsaTgwKdLLSGUNWTZbmhbetJ-IEVjyNRXHnaDs,1108
+chemrel/functions/model.py,sha256=wzeped9WWzt3eTMMjnJBE5iUQ-ZmVw5WQNfgySUJmuM,3981
+chemrel/functions/parser.py,sha256=8CWSgDosdH7oIrU3EMdbE51ykqZKEaNQCG5T3JG5r2M,8447
+chemrel/functions/pipeline.py,sha256=KGdlopIXmrp8SAcGt_V2wogsBWqxGy2PQYsLjuPsCKk,13645
+chemrel/functions/predict.py,sha256=FN_zU7dP8PCQz9pIg_Le6YnEwqdJ0k8cDlUd1P_favI,2622
+chemrel/functions/relutils.py,sha256=_ea8JyUbhfoGditYoXWRrQYT5HRdeRT6wu-0NDO8LGI,1337
+chemrel/functions/test.py,sha256=jhbP6ameJvtTTy3Mr2PyRyRRjYfRAu5wqR1dY1RdcQU,2085
+chemrel-1.0.0.dist-info/METADATA,sha256=uXrSLQB0QoZdrJD2mMBh-tlI6OAARpNrGvSXvEyDyhY,12683
+chemrel-1.0.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+chemrel-1.0.0.dist-info/entry_points.txt,sha256=x-y3y7AEVL1KOEXm2PnMvG7Bh4jFTRrzaj1nR_FruXo,44
+chemrel-1.0.0.dist-info/licenses/LICENSE,sha256=PXYzxEAKCrmQbmpzjfH7UvndnEC9zKviTlzth80JJEk,1062
+chemrel-1.0.0.dist-info/RECORD,,
