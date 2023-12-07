@@ -1,0 +1,10 @@
+requests
+pika
+tencentcloud-sdk-python-tmt
+kafka-python
+clickhouse-driver
+numpy
+pandas
+sqlalchemy
+pymysql
+azure-cognitiveservices-speech
