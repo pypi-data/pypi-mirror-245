@@ -1,0 +1,72 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "quollio-data-profiler"
+dynamic = ["version", "description"]
+
+readme = "README.en.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "blake3==0.3.3"
+    ,"boto3==1.33.0"
+    ,"click==8.1.7"
+    ,"dbt-core==1.7.2"
+    ,"dbt-snowflake==1.7.0"
+    ,"jinja2==3.1.2"
+    ,"PyYAML==6.0.1"
+    ,"requests==2.31.0"
+    ,"snowflake-connector-python==3.5.0"
+]
+repository = "https://github.com/QuollioLabs/quollio-data-profiler"
+urls = {Source = "https://github.com/QuollioLabs/quollio-data-profiler"}
+
+[tool.poetry]
+name = "quollio_data_profiler"
+version = "0.0.1"
+description = ""
+authors = ["Ryo Ariyama <ryo.ariyama@quollio.com>"]
+packages = [{include = "quollio-data-profiler"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+isort = "^5.10.1"
+pyproject-flake8 = "^0.0.1-alpha.2"
+pytest = "^5.2"
+
+[tool.black]
+target-version = ['py39']
+line-length = 120
+
+[tool.isort]
+line_length = 120
+multi_line_output = 3
+include_trailing_comma = true
+known_local_folder=['config',]
+
+[tool.flake8]
+max-line-length = 120
+max-complexity = 18
+ignore = "E402"
+
+[tool.hatch.version]
+source = "vcs"
