@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: common-packages
+Version: 0.1.8
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pika
+Requires-Dist: tencentcloud-sdk-python-tmt
+Requires-Dist: kafka-python
+Requires-Dist: clickhouse-driver
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: sqlalchemy
+Requires-Dist: pymysql
+Requires-Dist: azure-cognitiveservices-speech
+
