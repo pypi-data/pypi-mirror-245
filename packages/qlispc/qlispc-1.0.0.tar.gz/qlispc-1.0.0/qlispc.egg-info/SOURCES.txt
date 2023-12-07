@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+qlispc/__init__.py
+qlispc/version.py
+qlispc.egg-info/PKG-INFO
+qlispc.egg-info/SOURCES.txt
+qlispc.egg-info/dependency_links.txt
+qlispc.egg-info/requires.txt
+qlispc.egg-info/top_level.txt
+src/qlispc.h
+tests/test_seq2mat.py
