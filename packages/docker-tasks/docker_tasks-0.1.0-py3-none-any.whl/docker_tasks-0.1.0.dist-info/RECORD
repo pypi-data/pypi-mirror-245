@@ -1,0 +1,5 @@
+docker_tasks/__init__.py,sha256=bwAGX3pQEvz_fTPwCmOlkx0XdAR1NsNQTfUmobynYZM,345
+docker_tasks/cli.py,sha256=TP8w9gNn_nC6w-F4V_uxQ7heGP1_mkesv0eV-xUjBno,2854
+docker_tasks-0.1.0.dist-info/METADATA,sha256=lfEyEFSXy_13oN-JsLxQQlrxh1xV7uzFGR0BzxOV2hM,1923
+docker_tasks-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+docker_tasks-0.1.0.dist-info/RECORD,,
