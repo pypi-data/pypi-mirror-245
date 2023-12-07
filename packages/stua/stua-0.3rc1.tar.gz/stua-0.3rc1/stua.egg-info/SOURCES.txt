@@ -1,0 +1,17 @@
+AUTHORS
+CHANGELOG.md
+COPYING
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+stua/__init__.py
+stua/commands.py
+stua/os.py
+stua/vcs.py
+stua/version.py
+stua.egg-info/PKG-INFO
+stua.egg-info/SOURCES.txt
+stua.egg-info/dependency_links.txt
+stua.egg-info/not-zip-safe
+stua.egg-info/top_level.txt
