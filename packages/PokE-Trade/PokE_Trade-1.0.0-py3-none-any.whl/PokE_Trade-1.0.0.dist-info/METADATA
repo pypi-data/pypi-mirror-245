@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: PokE-Trade
+Version: 1.0.0
+Summary: A package for interacting with the pokemmohub.com API
+Requires-Dist: setuptools (>=68.0.0)
+Requires-Dist: requests (>=2.31.0)
+Requires-Dist: pandas (>=1.2.3)
+Requires-Dist: customtkinter (>=5.1.3)
+Requires-Dist: Pillow (>=9.4.0)
+Requires-Dist: tkcalendar (>=1.6.1)
+
