@@ -1,0 +1,204 @@
+# build
+name: build
+on:
+  push:
+    paths:
+      - "**"
+      - "!.github/**"
+      - ".github/workflows/build.yml"
+      - "!*.md"
+      - "!.gitignore"
+      - "!.gitmodules"
+jobs:
+  build-wheel-win:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: true
+      # explicit include-based build matrix, of known valid options
+      matrix:
+        include:
+          - os: windows-2022
+            cuda: "11.8.0"
+            visual_studio: "Visual Studio 17 2022"
+          - os: windows-2022
+            cuda: "11.7.0"
+            visual_studio: "Visual Studio 17 2022"
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: "recursive"
+
+      - name: Install CUDA
+        env:
+          cuda: ${{ matrix.cuda }}
+          visual_studio: ${{ matrix.visual_studio }}
+        shell: powershell
+        run: .\scripts\install_cuda_windows.ps1
+
+      - name: nvcc check
+        shell: powershell
+        run: |
+          nvcc -V
+          ls $env:CUDA_PATH
+          ls $env:CUDA_PATH\bin
+          ls $env:CUDA_PATH\include
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install cibuildwheel
+        shell: powershell
+        run: python -m pip install cibuildwheel==2.16.2
+      
+      - name: Generate version file
+        env:
+          CUDA_VERSION: ${{matrix.cuda}}
+        run: python ./scripts/make_version.py
+
+      - name: Build wheels
+        shell: bash
+        run: |
+          rm -rf ./wheelhouse
+          python -m cibuildwheel --output-dir wheelhouse
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: wheels
+          path: ./wheelhouse/*.whl
+#------------------------------------------#
+  build-wheel-linux:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - os: ubuntu-latest
+            cuda: "11.8"
+          - os: ubuntu-latest
+            cuda: "11.7"
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: "recursive"
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install cibuildwheel
+        run: python3 -m pip install cibuildwheel==2.16.2
+      
+      - name: Generate version file
+        env:
+          CUDA_VERSION: ${{matrix.cuda}}
+        run: python3 ./scripts/make_version.py
+      
+      - name: Build wheels
+        shell: bash
+        env:
+          CIBW_MANYLINUX_X86_64_IMAGE: sameli/manylinux2014_x86_64_cuda_${{matrix.cuda}}
+          CIBW_ENVIRONMENT: AUDITWHEEL_PLAT="manylinux2014_$(uname -m)"
+        run: |
+          rm -rf ./wheelhouse
+          python -m cibuildwheel --output-dir wheelhouse
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: wheels
+          path: ./wheelhouse/*.whl
+#------------------------------------------#
+  build-sdist:
+    name: Build sdist
+    runs-on: ${{matrix.os}}
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - os: ubuntu-22.04
+            cuda: "11.8"
+            python: "3.11"
+            gcc: 11
+          - os: ubuntu-22.04
+            cuda: "11.7"
+            python: "3.11"
+            gcc: 11
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: "recursive"
+      
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{matrix.python}}
+
+      - name: Install/Select gcc and g++ 
+        run: |
+          sudo apt-get install -y gcc-${{ matrix.gcc }} g++-${{ matrix.gcc }}
+          echo "CC=/usr/bin/gcc-${{ matrix.gcc }}" >> $GITHUB_ENV
+          echo "CXX=/usr/bin/g++-${{ matrix.gcc }}" >> $GITHUB_ENV
+          echo "CUDAHOSTCXX=/usr/bin/g++-${{ matrix.gcc }}" >> $GITHUB_ENV
+    
+      - name: Install CUDA toolkit
+        env: 
+          CUDA_VERSION: ${{matrix.cuda}}
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install wget
+          wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
+          sudo dpkg -i cuda-keyring*.deb
+          sudo apt-get update
+          sudo apt-get -y install cuda-toolkit-11-`echo -n $CUDA_VERSION|tail -c 1`
+          export CUDA_PATH=/usr/local/cuda-${{matrix.cuda}}
+          export PATH="$CUDA_PATH/bin:$PATH"
+          export LD_LIBRARY_PATH="$CUDA_PATH/lib:$LD_LIBRARY_PATH"
+          export LD_LIBRARY_PATH="$CUDA_PATH/lib64:$LD_LIBRARY_PATH"
+          echo "CUDA_PATH=${CUDA_PATH}" >> $GITHUB_ENV
+          echo "${CUDA_PATH}/bin" >> $GITHUB_PATH
+          echo "LD_LIBRARY_PATH=${CUDA_PATH}/lib:${LD_LIBRARY_PATH}" >> $GITHUB_ENV
+          echo "LD_LIBRARY_PATH=${CUDA_PATH}/lib64:${LD_LIBRARY_PATH}" >> $GITHUB_ENV
+          echo "CUDA_PATH=${CUDA_PATH}"
+          
+      - name: Generate version file
+        env:
+          CUDA_VERSION: ${{matrix.cuda}}
+        run: python3 ./scripts/make_version.py
+      
+      - name: Build sdist
+        run: |
+          rm -rf ./dist
+          python3 -m pip install build
+          python3 -m build . --sdist
+      
+      - uses: actions/upload-artifact@v3
+        with:
+          name: sdist
+          path: ./dist/*tar*
+#------------------------------------------#
+  upload:
+    name: Upload
+    needs: [build-wheel-linux, build-wheel-win, build-sdist]
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write
+    steps:
+      - name: Make temp dir
+        run: mkdir -pv files
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: wheels
+          path: ./files
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: sdist
+          path: ./files
+
+      - name: Publish package to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: ./files
+
