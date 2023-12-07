@@ -1,0 +1,8 @@
+LICENSE
+README.md
+memhack.py
+setup.py
+memhack.egg-info/PKG-INFO
+memhack.egg-info/SOURCES.txt
+memhack.egg-info/dependency_links.txt
+memhack.egg-info/top_level.txt
