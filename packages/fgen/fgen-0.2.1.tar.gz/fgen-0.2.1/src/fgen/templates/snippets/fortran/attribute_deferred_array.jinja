@@ -1,0 +1,21 @@
+    subroutine ig_{{ name }}(model_index, nd, dtype, dshape, dloc)
+        ! Returns a pointer to an array which can be directly modified
+
+        !f2py integer(8), intent(out) :: dloc
+
+        integer, intent(in) :: model_index
+        integer, intent(out) :: nd
+        character(len=20), intent(out) :: dtype
+        integer, dimension(10), intent(out) :: dshape
+        type(c_ptr), intent(out) :: dloc
+
+        type({{ calculator.name }}), pointer :: instance
+
+        call manager_get_instance(model_index, instance)
+
+        nd = rank(instance % {{ name }})
+        dtype = "{{ attribute.as_fortran_data_type().type_specification }}"
+        dshape(1:nd) = shape(instance % {{ name }})
+        dloc = c_loc(instance % {{ name }})
+
+    end subroutine ig_{{ name }}

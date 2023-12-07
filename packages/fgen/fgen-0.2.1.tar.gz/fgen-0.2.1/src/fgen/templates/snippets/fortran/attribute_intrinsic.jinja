@@ -1,0 +1,12 @@
+    function ig_{{ name }}(model_index) result({{ name }})
+
+        integer, intent(in) :: model_index
+        {{ attribute.fortran_type }} :: {{ name }}
+
+        type({{ calculator.name }}), pointer :: instance
+
+        call manager_get_instance(model_index, instance)
+
+        {{ name }} = instance % {{ name }}
+
+    end function ig_{{ name }}
