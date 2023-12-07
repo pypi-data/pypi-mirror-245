@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: RR-Custom-Python-Library
+Version: 0.0.1
+Summary: Frequently used python methods/libraries.
+Author: Ronak Rathore
+Author-email: ronak.rathore05@gmail.com
+License: GNU GENERAL PUBLIC LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+
+# Custom Python Library
+
+Custom library for frequent used methods/libraries.
+
+## Installation
+
+    pip install date-management-RR
+
+## Datetime Conversions
+
