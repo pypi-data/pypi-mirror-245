@@ -1,0 +1,10 @@
+kuyruk_manager/__init__.py,sha256=un79yZ_VLOl9DXiPOEYa7OO4pEGEKXXQaLmv-5FYOfM,12717
+kuyruk_manager/templates/failed_tasks.html,sha256=xbMLs4tINTEACCjHcpizTApRNjAHuCDMJcYBZnhpPcA,2581
+kuyruk_manager/templates/layout.html,sha256=81NvTJr0tIKc3PkmskXFm7IpqNkDqXy6JbbaXvM1Ef0,1209
+kuyruk_manager/templates/workers.html,sha256=NSiF9G0rJL21Fo2dVOvqDVdSPhYEKS62-GDCmyRphnU,2342
+Kuyruk_Manager-4.0.0.dist-info/LICENSE,sha256=3QPmRxxccxcavtg2h_kVR_Yd-83O5tBWRv72aa6ztnk,1076
+Kuyruk_Manager-4.0.0.dist-info/METADATA,sha256=FDetO2dkBP6xXQ-XiywY_3V-rumRWiG46cvUgaB48OM,1190
+Kuyruk_Manager-4.0.0.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+Kuyruk_Manager-4.0.0.dist-info/entry_points.txt,sha256=QUc6Z5fIvu8_vYhVElRJR_XJW6lqX6Oc2U2Y-g0FO6g,118
+Kuyruk_Manager-4.0.0.dist-info/top_level.txt,sha256=y9uDPxo-Zn4Txd7DFajaPk4cIsTmxEMWDWMptLlspeI,15
+Kuyruk_Manager-4.0.0.dist-info/RECORD,,
