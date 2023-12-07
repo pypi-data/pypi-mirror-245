@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+py_wifi_geter/__init__.py
+py_wifi_geter/main.py
+py_wifi_geter.egg-info/PKG-INFO
+py_wifi_geter.egg-info/SOURCES.txt
+py_wifi_geter.egg-info/dependency_links.txt
+py_wifi_geter.egg-info/requires.txt
+py_wifi_geter.egg-info/top_level.txt
