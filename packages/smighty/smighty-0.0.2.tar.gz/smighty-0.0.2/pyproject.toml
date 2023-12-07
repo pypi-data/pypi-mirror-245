@@ -1,0 +1,122 @@
+[tool.poetry]
+name = "smighty"
+version = "0.0.2"
+description = "Small, yet powerful conversational agent framework"
+packages = [
+    { include = "smighty" },
+    { include = "smighty/py.typed" }
+]
+authors = ["Al Wonder <al@yiwonder.com>"]
+license = "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openapi = {version = "^1.1.0", extras = ["all"]}
+
+# Optional dependecies
+typer = {version = "^0.9.0", extras = ["all"], optional = true}
+gradio = {version = "^4.7.1", optional = true}
+
+[tool.poetry.extras]
+all = ["typer", "gradio"]
+cli = ["typer"]
+ui = ["gradio"]
+
+# Development dependencies
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+tox = "^4.11.4"
+mypy = "^1.7.1"
+ruff = "^0.1.7"
+
+
+# Documentation dependencies
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^9.4.14"
+mkdocs-minify-plugin = "^0.7.1"
+mkdocstrings = "^0.24.0"
+
+[project.urls]
+Homepage = "https://add-homepage-here/"
+Documentation = "https://add-documentation-url-here/"
+Repository = "https://github.com/alywonder/smighty"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+# Tool specific configs
+
+# Use version number from smighty/__init__.py. NOT USED
+#[tool.poetry-version-plugin]
+#source = "init"
+
+
+[tool.mypy]
+plugins = [
+  "pydantic.mypy"
+]
+strict = true
+follow_imports = "silent"
+warn_unused_ignores = false
+# warn_redundant_casts = true
+# disallow_any_generics = true
+# check_untyped_defs = true
+# no_implicit_reexport = true
+
+# for strict mypy: (this is the tricky one :-))
+# disallow_untyped_defs = true
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+
+[tool.pytest.ini_options]
+#testpaths = ["tests"]
+
+[tool.coverage.report]
+omit = [
+    "*/tests/*",
+    "test_*"
+]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "def __str__",
+    "if self.debug",
+    "if settings.DEBUG",
+    "if TYPE_CHECKING",
+    "if __name__ == .__main__.:",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "pass"
+]
+
+[tool.ruff]
+
+# Same as Black.
+line-length = 88
+indent-width = 4
+
+# Assume Python 3.10
+target-version = "py310"
+
+[tool.ruff.format]
+# Changed to single quotes (default is double)
+quote-style = "single"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
