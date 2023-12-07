@@ -1,0 +1,17 @@
+docs/Makefile,sha256=4zv3TVkTACm6JBaKgTES3ZI9cETXgM6ULbZkXZP1as8,638
+docs/source/conf.py,sha256=E67DPkyMyK9J1IgrXbgrOpnha6zTjWwuGYQMRbf66Nk,1617
+docs/source/index.rst,sha256=hn_KIl_ToQQStfYHvzH0kck_BhN-jWfCf8P0gsHklfE,346
+docs/source/modules.rst,sha256=wDg6qUbY9WdPCkjkMOfjHdvN7aF7Jjzq6Zhk0jUj5no,49
+docs/source/phir.rst,sha256=_-An11kyjAXKuD5xprvFYeIR1iuD-IsXCyUb8zBQJn8,390
+phir/__init__.py,sha256=CRlFqH1Xs1lg1rLAdj0r6NPwnAzbP7S2M1rY8qM3DlQ,26
+phir/cli.py,sha256=nOPw6sdYSKyatAT24IwyWGjX53r2YAyWZOMMe6sJ1IY,1686
+phir/model.py,sha256=SiigJ_-dfFV60-iCzoJP1N3BS9CUNOMfFmpRS2M6ATI,7610
+phir/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/example.json,sha256=kr-0idNtmZUPY3ZsBd3XPdR6dZnU9HCQq0vw3Lv9x6Q,5520
+tests/test_model.py,sha256=5sOgOcWYTjB_voW2ruxCuZsDlFs1WZqmwcLzU9Gu3WM,749
+phir-0.2.0.dist-info/LICENSE,sha256=eVr-q8M8wDBUxxGWs3pN-u_7m4b1BgR39_swVxSP3kg,1501
+phir-0.2.0.dist-info/METADATA,sha256=CDNlfMD2vfA2W9nilresvAfD0QGk2fNtEU-Qmd2rzg4,4506
+phir-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+phir-0.2.0.dist-info/entry_points.txt,sha256=P0kAsiDabCgJ2fyaCduT99GQ4Y9tbAnoB3_dkHnx7iM,43
+phir-0.2.0.dist-info/top_level.txt,sha256=MHfgBkaT0cTBYjFAFU3MXhG1Z7WIje1HemIo2zgeVo8,16
+phir-0.2.0.dist-info/RECORD,,
