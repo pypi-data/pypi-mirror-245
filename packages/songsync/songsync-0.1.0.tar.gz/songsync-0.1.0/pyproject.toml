@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "songsync"
+version = "0.1.0"
+description = "Convert YouTube playlists to Spotify playlists"
+authors = ["pianobin <shoji@pianobin.com>"]
+readme = "README.md"
+repository = "https://github.com/pianobin/songsync"
+include = [
+    { path = "songsync" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ytmusicapi = "^1.3.2"
+requests = "^2.31.0"
+spotipy = "^2.23.0"
+langid = "^1.1.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
