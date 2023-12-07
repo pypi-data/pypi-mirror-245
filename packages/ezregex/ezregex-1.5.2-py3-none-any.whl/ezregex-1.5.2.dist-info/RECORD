@@ -1,0 +1,10 @@
+ezregex/EZRegexMember.py,sha256=j0rBY4JDQBStDHzMNWQJbBnqpQOSa5xdHhWJCUgO68A,22887
+ezregex/__init__.py,sha256=XXmdoE8lTDNCb6_8ZO8tTLySPkTroy-sEIwL_OFZ0ho,6235
+ezregex/elements.py,sha256=-tyIouwi_EuN92lyir0be4mNVWs1Ux6oDJARQKxQmdQ,16565
+ezregex/invert.py,sha256=Danx2chSoDwcXapOBtGSCBDSgknN0c7F36ZwZ9mqSP8,8447
+ezregex/invert_old.py,sha256=lqZHdfW8FNZ7Fl-9eoU7IdewOrnNKiDVSd7MMDaBnDA,10146
+ezregex/psuedonymns.py,sha256=qQAQucePaU_t6vhR3k3z9WFEdzOFEwIB69_u25lGYr4,2171
+ezregex-1.5.2.dist-info/METADATA,sha256=2nX1bsI4ke2T9iPj0VK77WU5WNlET33eB3e2X1K0PNE,14780
+ezregex-1.5.2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+ezregex-1.5.2.dist-info/licenses/LICENSE,sha256=f4Y4UbEkLBXTI96pyXMMZH1fzXXyHXcs4FmgsnvGtNM,1072
+ezregex-1.5.2.dist-info/RECORD,,
