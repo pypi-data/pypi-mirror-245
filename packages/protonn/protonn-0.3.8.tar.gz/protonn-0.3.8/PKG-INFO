@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: protonn
+Version: 0.3.8
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: static_typing
+Requires-Dist: typed_ast
+Requires-Dist: typed_astunparse
