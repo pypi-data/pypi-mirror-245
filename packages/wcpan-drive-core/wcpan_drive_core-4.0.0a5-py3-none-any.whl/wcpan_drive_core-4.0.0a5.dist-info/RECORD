@@ -1,0 +1,11 @@
+wcpan/drive/core/__init__.py,sha256=2sc2NV-Nb-hgDkfoDg6hQ9FzKEB-b1vzuEsyf-_DnJE,150
+wcpan/drive/core/_drive.py,sha256=sNOWtkM2PQlSKZvJQc8b7XpVdXAU4TONISh9MXneUS4,10987
+wcpan/drive/core/_lib.py,sha256=NWbYY3ngZNjR-iOAEZ5tNZRGPvLGYoYIVJ2ebebbRjM,1057
+wcpan/drive/core/exceptions.py,sha256=E94G6Pf8bo5s-Pk2-nrD7VOYcXN5sMBa4L_7984MOmk,896
+wcpan/drive/core/lib.py,sha256=Rq1PG88EJBnry8T1ItEyFrVOjKpiFrS35cM3-tpXgWw,6225
+wcpan/drive/core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wcpan/drive/core/types.py,sha256=t2brzqfEZ63mPWEV4sEHBpPy4H5ZFf3K86Eg7Q5spQQ,13795
+wcpan_drive_core-4.0.0a5.dist-info/LICENSE.txt,sha256=uOppBWSdxDMjjlDJ2o07rnUPC2MZppj6_wWId86JuhE,1102
+wcpan_drive_core-4.0.0a5.dist-info/METADATA,sha256=IX4QjTCFFKVAr6w489zqTRX6eW_yjt_PuQVo3wkenGI,2680
+wcpan_drive_core-4.0.0a5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+wcpan_drive_core-4.0.0a5.dist-info/RECORD,,
