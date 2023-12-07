@@ -1,0 +1,11 @@
+README.md
+setup.py
+automate/__init__.py
+automate/cli.py
+automate/core.py
+automatexpertise.egg-info/PKG-INFO
+automatexpertise.egg-info/SOURCES.txt
+automatexpertise.egg-info/dependency_links.txt
+automatexpertise.egg-info/entry_points.txt
+automatexpertise.egg-info/requires.txt
+automatexpertise.egg-info/top_level.txt
