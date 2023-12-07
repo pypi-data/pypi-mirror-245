@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>496</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="mplwidget" native="true">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QVBoxLayout" name="mplvl">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QDockWidget" name="DataInspectordockWidget">
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetClosable</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea</set>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="LayoutDataInspector">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="ViewDataTheorydockWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="features">
+    <set>QDockWidget::NoDockWidgetFeatures</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>Views/Data/Theory</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="ViewDataTheoryWidget">
+    <layout class="QVBoxLayout" name="ViewDataTheoryLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="viewLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QSpinBox" name="sp_nviews">
+         <property name="maximumSize">
+          <size>
+           <width>40</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>4</number>
+         </property>
+         <property name="value">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>39</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>39</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>View:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="viewComboBox">
+         <property name="currentText">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="saveViewtoolButton">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="DataSettabWidget">
+       <property name="tabShape">
+        <enum>QTabWidget::Triangular</enum>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+       <property name="usesScrollButtons">
+        <bool>true</bool>
+       </property>
+       <property name="tabsClosable">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-copy.png</normaloff>:/Images/Images/new_icons/icons8-copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-paste.png</normaloff>:/Images/Images/new_icons/icons8-paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionSelect_All">
+   <property name="text">
+    <string>Select All</string>
+   </property>
+  </action>
+  <action name="actionShowFigureTools">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-sine-100.png</normaloff>:/Images/Images/new_icons/icons8-sine-100.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+   <property name="toolTip">
+    <string>Show/Hide Figure Toolbar (Ctrl+F)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionShiftVertically">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-vertical-timeline-slider.png</normaloff>:/Images/Images/new_icons/icons8-vertical-timeline-slider.png</iconset>
+   </property>
+   <property name="text">
+    <string>ShiftVertically</string>
+   </property>
+   <property name="toolTip">
+    <string>Shift the selected curve vertically</string>
+   </property>
+  </action>
+  <action name="actionShiftHorizontally">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-timeline-slider.png</normaloff>:/Images/Images/new_icons/icons8-timeline-slider.png</iconset>
+   </property>
+   <property name="text">
+    <string>ShiftHorizontally</string>
+   </property>
+   <property name="toolTip">
+    <string>Shift the selected curve horizontally</string>
+   </property>
+  </action>
+  <action name="actionNew_Empty_Dataset">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-add-row.png</normaloff>:/Images/Images/new_icons/icons8-add-row.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Empty Dataset</string>
+   </property>
+   <property name="toolTip">
+    <string>Create an empty Data set (Ctrl+N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionNew_Dataset_From_File">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-open-view-in-new-tab.png</normaloff>:/Images/Images/new_icons/icons8-open-view-in-new-tab.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Dataset From File</string>
+   </property>
+   <property name="toolTip">
+    <string>Open Data File (Ctrl+O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionView_All_Sets">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-binoculars.png</normaloff>:/Images/Images/new_icons/icons8-binoculars.png</iconset>
+   </property>
+   <property name="text">
+    <string>View All Sets</string>
+   </property>
+   <property name="toolTip">
+    <string>View all sets simultaneously (Ctrl+A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionReload_Data">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-file-reload.png</normaloff>:/Images/Images/new_icons/icons8-file-reload.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reload Data</string>
+   </property>
+   <property name="toolTip">
+    <string>Reload data files and theories (Ctrl+R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionInspect_Data">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-microscope.png</normaloff>:/Images/Images/new_icons/icons8-microscope.png</iconset>
+   </property>
+   <property name="text">
+    <string>Inspect Data</string>
+   </property>
+   <property name="toolTip">
+    <string>Inspect contents of data files (Ctrl+I)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionMarkerSettings">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-color-wheel-2.png</normaloff>:/Images/Images/new_icons/icons8-color-wheel-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Select Symbols Color</string>
+   </property>
+   <property name="toolTip">
+    <string>Select Dataset Plot Style (Ctrl+M)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionTrack_data">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-physics.png</normaloff>:/Images/Images/new_icons/icons8-physics.png</iconset>
+   </property>
+   <property name="text">
+    <string>Track data</string>
+   </property>
+   <property name="toolTip">
+    <string>Track data</string>
+   </property>
+  </action>
+  <action name="actionAdd_Annotation">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-spiral-bound-booklet.png</normaloff>:/Images/Images/new_icons/icons8-spiral-bound-booklet.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Annotation</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Annotation</string>
+   </property>
+  </action>
+  <action name="actionShow_Legend">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-categorize.png</normaloff>:/Images/Images/new_icons/icons8-categorize.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show Legend</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Legend</string>
+   </property>
+  </action>
+  <action name="actionCopyChart">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-copy.png</normaloff>:/Images/Images/new_icons/icons8-copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>CopyChart</string>
+   </property>
+   <property name="toolTip">
+    <string>Copy Chart</string>
+   </property>
+  </action>
+  <action name="actionNew_Tool">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-maintenance.png</normaloff>:/Images/Images/new_icons/icons8-maintenance.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Tool</string>
+   </property>
+   <property name="toolTip">
+    <string>New Tool (Alt+T)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+T</string>
+   </property>
+  </action>
+  <action name="actionSave_View">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-saveView.png</normaloff>:/Images/Images/new_icons/icons8-saveView.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save View</string>
+   </property>
+   <property name="toolTip">
+    <string>Save All Data in Current View</string>
+   </property>
+  </action>
+  <action name="actionResetShiftFactors">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-reset-shift.png</normaloff>:/Images/Images/new_icons/icons8-reset-shift.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reset Shift Factors</string>
+   </property>
+   <property name="toolTip">
+    <string>Reset Shift Factors</string>
+   </property>
+  </action>
+  <action name="actionViewShiftFactors">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-view-ShiftFactors.png</normaloff>:/Images/Images/new_icons/icons8-view-ShiftFactors.png</iconset>
+   </property>
+   <property name="text">
+    <string>View Shift Factors</string>
+   </property>
+   <property name="toolTip">
+    <string>View Current Shift Factors</string>
+   </property>
+  </action>
+  <action name="actionSaveShiftFactors">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-save-ShiftFactors.png</normaloff>:/Images/Images/new_icons/icons8-save-ShiftFactors.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Shift Factors</string>
+   </property>
+   <property name="toolTip">
+    <string>Save Shift Factors</string>
+   </property>
+  </action>
+  <action name="actionAddDummyFiles">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-spiral-bound-booklet.png</normaloff>:/Images/Images/new_icons/icons8-spiral-bound-booklet.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Dummy Files</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Set of Empty Files to Current Dataset</string>
+   </property>
+  </action>
+  <action name="actionView_All_SetTheories">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-binoculars.png</normaloff>:/Images/Images/new_icons/icons8-binoculars.png</iconset>
+   </property>
+   <property name="text">
+    <string>View All Theories (Same DataSet)</string>
+   </property>
+   <property name="toolTip">
+    <string>View all theories simultaneously (same Set)</string>
+   </property>
+  </action>
+  <action name="action_import_from_excel">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-microsoft-excel.png</normaloff>:/Images/Images/new_icons/icons8-microsoft-excel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Import from Excel</string>
+   </property>
+   <property name="toolTip">
+    <string>Import data from Excel file</string>
+   </property>
+  </action>
+  <action name="actionAdd_File_With_Function">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-formula-fx-50.png</normaloff>:/Images/Images/new_icons/icons8-formula-fx-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Dummy File using Function</string>
+   </property>
+   <property name="toolTip">
+    <string>Create a Dummy File using a mathematical expression</string>
+   </property>
+  </action>
+  <action name="action_import_from_pasted">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-paste.png</normaloff>:/Images/Images/new_icons/icons8-paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste Data</string>
+   </property>
+   <property name="toolTip">
+    <string>Import from pasted data</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Reptate.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/Icon8">
+        <file>Images/new_icons/icons8-toggle-on.png</file>
+        <file>Images/new_icons/icons8-toggle-off.png</file>
+        <file>Images/new_icons/icons8-einstein-yes.png</file>
+        <file>Images/new_icons/icons8-einstein-no.png</file>
+        <file>Images/new_icons/icons8-ok.png</file>
+        <file>Images/new_icons/icons8-thumbs-up.png</file>
+        <file>Images/new_icons/icons8-thumbs-down.png</file>
+        <file>Images/new_icons/icons8-do-not-disturb.png</file>
+        <file>Images/new_icons/icons8-peak-minimum.png</file>
+        <file>Images/new_icons/icons8-peak-maximum.png</file>
+        <file>Images/new_icons/icons8-bell-curve.png</file>
+        <file>Images/new_icons/icons8-add-file.png</file>
+        <file>Images/new_icons/icons8-edit-property.png</file>
+        <file>Images/new_icons/icons8-save.png</file>
+        <file>Images/new_icons/icons8-iso.png</file>
+        <file>Images/new_icons/icons8-vertical-shift.png</file>
+		<file>Images/new_icons/icons8-delete-document-96.png</file>
+		<file>Images/new_icons/icons8-copy-96.png</file>
+        <file>Images/new_icons/icons8-vertical-shift-data.png</file>
+    </qresource>
+</RCC>

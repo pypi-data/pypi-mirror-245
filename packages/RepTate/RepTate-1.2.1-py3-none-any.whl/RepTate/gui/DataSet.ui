@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>401</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="handleWidth">
+      <number>5</number>
+     </property>
+     <property name="childrenCollapsible">
+      <bool>false</bool>
+     </property>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="TheoryLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTabWidget" name="TheorytabWidget">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTreeWidget::item { border: 0.5px ; border-style: solid ; border-color: lightgray ; selection-color: rgb(0, 0, 0); }</string>
+         </property>
+         <property name="tabShape">
+          <enum>QTabWidget::Triangular</enum>
+         </property>
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <property name="usesScrollButtons">
+          <bool>true</bool>
+         </property>
+         <property name="tabsClosable">
+          <bool>true</bool>
+         </property>
+         <property name="movable">
+          <bool>true</bool>
+         </property>
+         <property name="tabBarAutoHide">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionNew_Theory">
+   <property name="icon">
+    <iconset resource="Theory.qrc">
+     <normaloff>:/Icon8/Images/new_icons/icons8-einstein.png</normaloff>:/Icon8/Images/new_icons/icons8-einstein.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Theory</string>
+   </property>
+   <property name="toolTip">
+    <string>Create Selected Theory (Alt+N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+N</string>
+   </property>
+  </action>
+  <action name="actionCalculate_Theory">
+   <property name="icon">
+    <iconset resource="Theory.qrc">
+     <normaloff>:/Icon8/Images/new_icons/icons8-abacus.png</normaloff>:/Icon8/Images/new_icons/icons8-abacus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Calculate Theory</string>
+   </property>
+   <property name="toolTip">
+    <string>Calculate Theory (Alt+C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+  <action name="actionMinimize_Error">
+   <property name="icon">
+    <iconset resource="Theory.qrc">
+     <normaloff>:/Icon8/Images/new_icons/icons8-minimum-value.png</normaloff>:/Icon8/Images/new_icons/icons8-minimum-value.png</iconset>
+   </property>
+   <property name="text">
+    <string>Minimize Error</string>
+   </property>
+   <property name="toolTip">
+    <string>Minimize Error (Alt+M)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+M</string>
+   </property>
+  </action>
+  <action name="actionTheory_Options">
+   <property name="icon">
+    <iconset resource="Theory.qrc">
+     <normaloff>:/Icon8/Images/new_icons/icons8-administrative-tools.png</normaloff>:/Icon8/Images/new_icons/icons8-administrative-tools.png</iconset>
+   </property>
+   <property name="text">
+    <string>Theory Options</string>
+   </property>
+   <property name="toolTip">
+    <string>Theory Options</string>
+   </property>
+  </action>
+  <action name="actionNo_Limits">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/Line Chart.png</normaloff>:/Images/Images/Line Chart.png</iconset>
+   </property>
+   <property name="text">
+    <string>No Limits</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove Limits</string>
+   </property>
+  </action>
+  <action name="actionVertical_Limits">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/Line Chart Vertical Limits.png</normaloff>:/Images/Images/Line Chart Vertical Limits.png</iconset>
+   </property>
+   <property name="text">
+    <string>xrange</string>
+   </property>
+   <property name="toolTip">
+    <string>Vertical Limits</string>
+   </property>
+  </action>
+  <action name="actionHorizontal_Limits">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/Line Chart Horizontal Limits.png</normaloff>:/Images/Images/Line Chart Horizontal Limits.png</iconset>
+   </property>
+   <property name="text">
+    <string>yrange</string>
+   </property>
+   <property name="toolTip">
+    <string>Horizontal Limits</string>
+   </property>
+  </action>
+  <action name="actionBoth_Limits">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/Line Chart Both Limits.png</normaloff>:/Images/Images/Line Chart Both Limits.png</iconset>
+   </property>
+   <property name="text">
+    <string>Both Limits</string>
+   </property>
+   <property name="toolTip">
+    <string>Both Limits</string>
+   </property>
+  </action>
+  <action name="actionShow_Limits">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/Line Chart.png</normaloff>:/Images/Images/Line Chart.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show Limits</string>
+   </property>
+   <property name="toolTip">
+    <string>Change limits for fit</string>
+   </property>
+  </action>
+  <action name="actionCopy_Parameters">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-copy.png</normaloff>:/Images/Images/new_icons/icons8-copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy Parameters</string>
+   </property>
+   <property name="toolTip">
+    <string>Copy Parameters</string>
+   </property>
+  </action>
+  <action name="actionPaste_Parameters">
+   <property name="icon">
+    <iconset resource="Reptate.qrc">
+     <normaloff>:/Images/Images/new_icons/icons8-paste.png</normaloff>:/Images/Images/new_icons/icons8-paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste Parameters</string>
+   </property>
+   <property name="toolTip">
+    <string>Paste Parameters</string>
+   </property>
+  </action>
+  <action name="actionFitting_Options">
+   <property name="icon">
+    <iconset resource="Theory.qrc">
+     <normaloff>:/Icon8/Images/new_icons/icons8-minimum-value-options.png</normaloff>:/Icon8/Images/new_icons/icons8-minimum-value-options.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fitting Options</string>
+   </property>
+   <property name="toolTip">
+    <string>Fitting Options</string>
+   </property>
+  </action>
+  <action name="actionError_Calc_Options">
+   <property name="icon">
+    <iconset resource="Theory.qrc">
+     <normaloff>:/Icon8/Images/new_icons/icons8-abacus-err.png</normaloff>:/Icon8/Images/new_icons/icons8-abacus-err.png</iconset>
+   </property>
+   <property name="text">
+    <string>Error Calculation Options</string>
+   </property>
+   <property name="toolTip">
+    <string>Error Calculation Options</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Theory.qrc"/>
+  <include location="Reptate.qrc"/>
+ </resources>
+ <connections/>
+</ui>
