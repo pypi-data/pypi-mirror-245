@@ -1,0 +1,10 @@
+streamspeech/__init__.py,sha256=-RzdKB4T1sjdenileCVoZGCzSfB5KQ-jLNf3uuEm2lc,333
+streamspeech/__main__.py,sha256=iOF0dz74_eL80GHQx5n6P8Ii5zNd5uADDkDcf-kr0HI,199
+streamspeech/app.py,sha256=UhVfH2e3_m_dSaqKtotZQfo93ObrOeDJ7eVjcACkZQs,3108
+streamspeech/app_main.py,sha256=lEB_SM7aPY_e2FsbhqVQYAOlSTm8B6nfo06khXloreA,2557
+streamspeech/version.py,sha256=DbqycwJA5Bx9avR3bOOZOBn4DyLHFgRRTLjN6Hm4OK4,24
+streamspeech-2023.12.6.dist-info/LICENSE,sha256=6WF3_HWiJxDo_nlTSqlLWBATeETNblhV_Ko7VeGNxAY,1073
+streamspeech-2023.12.6.dist-info/METADATA,sha256=JekTSz0ID9HMzm8cWt9LXcHb6-B3b0ZxIdZKcZtJmqg,3948
+streamspeech-2023.12.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+streamspeech-2023.12.6.dist-info/top_level.txt,sha256=itXKWvjf3IRij2ZwrEghZFkCzDGUf_DAnfIjnFaaSPU,13
+streamspeech-2023.12.6.dist-info/RECORD,,
