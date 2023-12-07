@@ -1,0 +1,161 @@
+"""
+Python wrapper of Fortran module {{ module.name }}
+"""
+from __future__ import annotations
+
+from typing import Any
+
+import fgen_runtime.exceptions as fgr_excs
+{% if calculator.has_any_attribute_deferred_array() %}
+import numpy as np
+import numpy.typing as npt
+{% endif %}
+from attrs import define
+from fgen_runtime.base import (
+    INVALID_MODEL_INDEX,
+    FinalizableWrapperBase,
+    FinalizableWrapperBaseContext,
+    check_initialised,
+    execute_finalize_on_fail,
+)
+from fgen_runtime.units import verify_units
+try:
+    from {{ extension }} import {{ module.wrapper_module_name }}  # type: ignore
+except (ModuleNotFoundError, ImportError) as exc:
+    raise fgr_excs.CompiledExtensionNotFoundError("{{ extension }}") from exc
+{% for link in module.links %}
+try:
+    from {{ link.python_module }} import {{ link.provides }}
+except (ModuleNotFoundError, ImportError) as exc:
+    raise fgr_excs.RelativePythonModuleNotFoundError(
+        requesting_python_module=__name__,
+        requested_from_python_module="{{ link.python_module }}",
+        requested="{{ link.provides }}",
+    ) from exc
+
+{% endfor %}
+
+{% block units scoped %}
+_UNITS: dict[str, str] = {
+
+    {% for name, unit in calculator.units().items() %}
+    "{{ name }}": "{{ unit }}",
+    {% endfor %}
+}
+{% endblock %}
+
+@define
+class {{ calculator.name }}(FinalizableWrapperBase):
+    """
+    Wrapper around the Fortran :class:`{{ calculator.name }}`
+
+    {{ calculator.description | trim }}
+    """
+
+    @classmethod
+    def from_new_connection(cls) -> {{ calculator.name }}:
+        """
+        Allocate a new calculator instance
+
+        Returns
+        -------
+            A new instance with a unique model index
+
+        Raises
+        ------
+        WrapperErrorUnknownCause
+            If a new instance could not be allocated
+
+            This could occur if too many models are allocated at any one time
+        """
+        model_index = {{ module.wrapper_module_name }}.get_free_instance()
+        if model_index == INVALID_MODEL_INDEX:
+            raise fgr_excs.WrapperErrorUnknownCause(  # noqa: TRY003
+                f"Could not create instance of {cls.__name__}. "
+            )
+
+        return cls(model_index)
+
+    @check_initialised
+    def finalize(self) -> None:
+        """
+        Close the connection with the Fortran module
+        """
+        {{ module.wrapper_module_name }}.instance_finalize(self.model_index)
+        self._uninitialise_model_index()
+
+
+    @classmethod
+    @verify_units(
+        None,
+        {% set parameters=calculator.attributes %}
+        {% include "snippets/python/verify_units_parameters.jinja" %}
+    )
+    def from_build_args(
+        cls,
+        {% for attr_name, attr in calculator.attributes.items() %}
+        {{ attr_name }}: {{ attr.python_type_as_str()}},
+        {% endfor %}
+    ) -> {{ calculator.name }}:
+        """
+        Build a new {{ calculator.name }}
+
+        Creates a new connection to a Fortran object. The user is responsible for releasing this connection
+        using :attr:`~finalize` when it is no longer needed. Alternatively a
+        :class:`{{ calculator.name }}Context`
+        can be used to handle the finalization using a context manager.
+
+        See Also
+        --------
+        :meth:`{{ calculator.name }}Context.from_build_args`
+        """
+        out = cls.from_new_connection()
+
+        execute_finalize_on_fail(
+            out,
+            {{module.wrapper_module_name}}.instance_build,
+            {% for attr_name, attr in calculator.attributes.items() %}
+            {% if attr.as_fortran_data_type().is_derived_type() %}
+            {{ attr_name }}_index = {{attr.name }}.model_index,
+            {% else %}
+            {{ attr_name }} = {{attr.name }},
+            {% endif %}
+            {% endfor %}
+        )
+
+        return out
+
+    {% for name, method in calculator.methods.items() %}
+
+    {% include "snippets/python/method.jinja" %}
+
+    {% endfor %}
+
+    {% for name, attribute in calculator.exposed_attributes().items() %}
+    {% if attribute.as_fortran_data_type().is_derived_type() %}
+    {% include 'snippets/python/attribute_derived.jinja' %}
+    {% elif attribute.as_fortran_data_type().is_deferred_array() %}
+    {% include 'snippets/python/attribute_deferred_array.jinja' %}
+    {% else %}
+    {% include 'snippets/python/attribute_intrinsic.jinja' %}
+    {% endif %}
+
+    {% endfor %}
+
+    {% block extra_fields %}{% endblock %}
+
+
+@define
+class {{ calculator.name }}Context(FinalizableWrapperBaseContext):
+    """
+    Context manager for :class:`{{ calculator.name }}`
+    """
+
+    @classmethod
+    def from_build_args(cls, *args: Any, **kwargs: Any) -> {{ calculator.name }}Context:
+        """
+        Docstrings to be handled as part of #223
+        """
+        return cls(
+            {{ calculator.name }}.from_build_args(*args, **kwargs)
+        )

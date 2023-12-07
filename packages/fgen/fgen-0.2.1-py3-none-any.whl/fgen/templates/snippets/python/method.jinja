@@ -1,0 +1,23 @@
+    @check_initialised
+    @verify_units(
+        _UNITS["{{ method.returns.name }}"],
+        {% set parameters=method.parameters %}
+        {% include "snippets/python/verify_units_parameters.jinja" %}
+    )
+    def {{name}}(
+        self,
+        {% for param_name, parameter in method.parameters.items() %}
+        {{ param_name }}: {{ parameter.python_type_as_str() }},
+        {% endfor %}
+    ) -> {{ method.returns.python_type_as_str() }}:
+        """
+        {{ method.description | trim }}
+        """
+        out: {{ method.returns.python_type_as_str() }} = {{ module.wrapper_module_name }}.i_{{ name }}(
+            self.model_index,
+            {% for param_name in method.parameters.keys() %}
+            {{param_name}},
+            {% endfor %}
+        )
+
+        return out

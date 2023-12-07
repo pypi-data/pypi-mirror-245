@@ -1,0 +1,141 @@
+!
+! Wrapper for mod_{{ module.short_name }}_manager
+! Exposes the {{ calculator.name }} calculator
+!
+module {{ module.wrapper_module_name }}
+    use iso_c_binding, only: c_loc, c_ptr
+    use {{ calculator_module }}, only: &
+        manager_get_free_instance => get_free_instance_number, &
+        manager_instance_finalize => instance_finalize, &
+        manager_get_instance => get_instance, &
+        check_index_claimed
+
+    use {{ module.name }}, only: &
+        {{ calculator.name }}
+
+    {% for link in module.links %}
+    use {{ link.fortran_module }}, only: {{ link.provides}}
+    use {{ link.fortran_module }}_manager, only: {{ link.provides}}_get_instance => get_instance
+
+    {% endfor %}
+    implicit none
+    private
+
+    ! TODO: handle cases where more complicated wrappers are needed
+    public :: get_free_instance, &
+              instance_build, &
+              instance_finalize
+
+    ! Getters
+    {% for attribute in calculator.exposed_attributes().keys() %}
+    public :: ig_{{ attribute }}
+    {% endfor %}
+    ! Calculator methods
+    {% for method in calculator.methods.keys() %}
+    public :: i_{{ method }}
+    {% endfor %}
+contains
+
+    function get_free_instance() result(model_index)
+
+        integer :: model_index
+
+        model_index = manager_get_free_instance()
+
+    end function get_free_instance
+
+    subroutine instance_finalize(model_index)
+
+        integer, intent(in) :: model_index
+
+        call manager_instance_finalize(model_index)
+
+    end subroutine instance_finalize
+
+    !
+    ! Build a new instance
+    !
+    subroutine instance_build( &
+        model_index, &
+        {% for attribute in calculator.attributes.values() %}
+        {{ attribute.name }}{% if attribute.as_fortran_data_type().is_derived_type() %}_index{% endif %}{{ "," if not loop.last else "" }} &
+        {% endfor %}
+        )
+
+        integer, intent(in) :: model_index
+        {% for attribute_name, attribute in calculator.attributes.items() %}
+        {% if attribute.as_fortran_data_type().is_derived_type() %}
+        integer, intent(in) :: {{ attribute_name }}_index
+        {{ attribute.fortran_type }} :: {{ attribute_name }}
+        {% else %}
+        {{ attribute.fortran_type }}, intent(in) :: {{ attribute_name }}
+        {% endif %}
+        {% endfor %}
+        type({{ calculator.name }}), pointer :: instance
+
+        call manager_get_instance(model_index, instance)
+        {# Get the model instances for other calculators #}
+        {% for attribute_name, attribute in calculator.attributes.items() %}
+        {% if attribute.as_fortran_data_type().is_derived_type() %}
+        {# TODO: come up with a better way of getting the name of the calculator #}
+        call {{ attribute.python_type_as_str() }}_get_instance({{ attribute_name}}_index, {{attribute_name }})
+        {% endif %}
+        {% endfor %}
+
+        call instance % build( &
+            {% for attribute in calculator.attributes.keys() %}
+            {{ attribute }}{{ "," if not loop.last else "" }} &
+            {% endfor %}
+            )
+
+    end subroutine instance_build
+
+    !
+    ! Calculator accessors
+    !
+
+    {% for name, attribute in calculator.exposed_attributes().items() %}
+    {% if attribute.as_fortran_data_type().is_derived_type() %}
+    {% include 'snippets/fortran/attribute_derived.jinja' %}
+    {% elif attribute.as_fortran_data_type().is_deferred_array() %}
+    {% include 'snippets/fortran/attribute_deferred_array.jinja' %}
+    {% else %}
+    {% include 'snippets/fortran/attribute_intrinsic.jinja' %}
+    {% endif %}
+
+    {% endfor %}
+
+    !
+    ! Calculator methods
+    !
+    {% for name, method in calculator.methods.items() %}
+
+    function i_{{ name }}( &
+        model_index{{ "," if method.parameters | length > 0 else "" }} &
+        {% for param_name in method.parameters.keys() %}
+        {{ param_name }}{{ "," if not loop.last else "" }} &
+        {% endfor %}
+        ) result({{ method.returns.name }})
+
+        ! Should work out consistent approach to whether we use intent or not...
+        integer :: model_index
+        {% for param_name, param in method.parameters.items() %}
+        {{ param.fortran_type }} :: {{ param_name }}
+        {% endfor %}
+        {{ method.returns.fortran_type }} :: {{ method.returns.name }}
+
+        type({{ calculator.name }}), pointer :: instance
+
+        call manager_get_instance(model_index, instance)
+
+        !&<
+        {{ method.returns.name }} = instance % {{ name }}( &
+            {% for param_name in method.parameters.keys() %}
+            {{ param_name }}{{ "," if not loop.last else "" }} &
+            {% endfor %}
+            )
+        !&>
+    end function i_{{ name }}
+    {% endfor %}
+
+end module {{ module.wrapper_module_name }}
