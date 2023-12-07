@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: agentlib
+Version: 0.7.0
+Summary: Framework for development and execution of agents for control and simulation of energy systems.
+Author-email: Associates of the AGENT project <AGENT.Projekt@eonerc.rwth-aachen.de>
+License: BSD-3-Clause
+Keywords: agents,modular,control,distributed,digital twin
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.17.4
+Requires-Dist: pandas>=1.1.0
+Requires-Dist: simpy>=4.0.1
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: attrs>=22.2.0
+Provides-Extra: fmu
+Requires-Dist: FMPy>=0.3.6; extra == "fmu"
+Provides-Extra: scipy
+Requires-Dist: scipy>=1.5.2; extra == "scipy"
+Provides-Extra: plot
+Requires-Dist: matplotlib; extra == "plot"
+Provides-Extra: orjson
+Requires-Dist: orjson>=3.9.5; extra == "orjson"
+Provides-Extra: fuzz
+Requires-Dist: rapidfuzz>=1.7.0; extra == "fuzz"
+Provides-Extra: mqtt
+Requires-Dist: paho-mqtt>=1.6.1; extra == "mqtt"
+Provides-Extra: full
+Requires-Dist: agentlib[fmu,fuzz,mqtt,orjson,plot,scipy]; extra == "full"
+
+<img src="./docs/images/logos/agentlib_logo/logo.svg" alt="drawing" height="150"/>
+
+
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![Coverage](https://rwth-ebc.github.io/AgentLib/main/coverage/badge.svg)](https://rwth-ebc.github.io/AgentLib/main/coverage/)
+[![pylint](https://rwth-ebc.github.io/AgentLib/main/pylint/pylint.svg)](https://rwth-ebc.github.io/AgentLib/main/pylint/pylint.html)
+[![documentation](https://rwth-ebc.github.io/AgentLib/main/docs/doc.svg)](https://rwth-ebc.github.io/AgentLib/main/docs/index.html)
+
+
+This is a collection of base classes for the implementation of agents in Python.
+The original purpose of this library is the execution of distributed simulations and controllers for energy systems, however it is not limited to any specific field.
+To get started, please check out our examples.
+
+### Installation
+
+To install the agentlib with minimal dependencies, run:
+
+```
+pip install agentlib
+```
+
+To install with full dependencies (recommended), run:
+```
+pip install agentlib[full]
+```
+
+If you want to work on the agentlib, first clone it, go its directory and then install it in editable mode:
+
+```
+pip install -e .[full]
+```
+
+## Optional Dependencies
+The AgentLib has a number of optional dependencies, ranging from additional features to performance improvements:
+ 
+ - **fmu**: Support simulation of FMU models (https://fmi-standard.org/).
+ - **scipy**: Support simulation of linear state space models, based on scipy.
+ - **mqtt**: Support communication between agents through the mqtt protocol.
+ - **plot**: Installs matplotlib, allows to plot the result of examples.
+ - **orjson**: Faster json library, improves performance when using network communicators.
+ - **fuzz**: Improves error messages when providing wrong configurations.
+
+**clonemap**: Support the execution of agents and their communication through [clonemap](https://github.com/sogno-platform/clonemap). As clonemapy is not available through PYPI, please install it from source, or through the AgentLib's ``requirements.txt`` .
+
+## Referencing the AgentLib
+
+A publication regarding the AgentLib is currently in the work.
+If you use the AgentLib in your work which you plan to publish, please check back at a later date for a reference.
+
+## Copyright and license
+
+This project is licensed under the BSD 3 Clause License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+We gratefully acknowledge the financial support by Federal Ministry \\ for Economic Affairs and Climate Action (BMWK), promotional reference 03ET1495A.
+
+<img src="./docs/images/logos/BMWK_logo.png" alt="BMWK" width="200"/>
