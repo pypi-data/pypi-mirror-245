@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/zalgolib/__init__.py
+src/zalgolib/diacritics.py
+src/zalgolib/zalgolib.py
+src/zalgolib.egg-info/PKG-INFO
+src/zalgolib.egg-info/SOURCES.txt
+src/zalgolib.egg-info/dependency_links.txt
+src/zalgolib.egg-info/top_level.txt
