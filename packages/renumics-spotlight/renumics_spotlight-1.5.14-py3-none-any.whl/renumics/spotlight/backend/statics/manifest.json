@@ -1,0 +1,28 @@
+{
+  "_lib-1da19ef6.cjs": {
+    "file": "lib-1da19ef6.cjs"
+  },
+  "_lib-5bef024a.js": {
+    "file": "lib-5bef024a.js"
+  },
+  "src/lib.ts": {
+    "file": "lib.cjs",
+    "imports": [
+      "_lib-1da19ef6.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/lib.ts"
+  },
+  "src/main.tsx": {
+    "file": "main.cjs",
+    "imports": [
+      "_lib-1da19ef6.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/main.tsx"
+  },
+  "style.css": {
+    "file": "style.css",
+    "src": "style.css"
+  }
+}
