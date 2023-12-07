@@ -1,0 +1,2 @@
+class InvalidAttrDefinition(AttributeError):
+    pass
