@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: mpscenes
+Version: 0.4.6
+Summary: Generic motion planning scenes, including goals and obstacles.
+Home-page: https://github.com/maxspahn/motion_planning_scenes.git
+Author: Max
+Author-email: m.spahn@tudelft.nl
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: geomdl (>=5.3.1,<6.0.0)
+Requires-Dist: numpy (>=1.22.0,<2.0.0)
+Requires-Dist: omegaconf (>=2.2.2,<3.0.0)
+Requires-Dist: pyquaternion (>=0.9.9,<0.10.0)
+Requires-Dist: sympy (>=1.7,<2.0)
+Project-URL: Repository, https://github.com/maxspahn/motion_planning_scenes.git
+Description-Content-Type: text/markdown
+
+# Motion Planning Scenes
+
+Motion planning consists of finding a path from a state A to a goal state B
+while avoiding obstacles.
+
+There is a wide range of motion planning libraries that focus mostly on motion
+planning problems formulated in the configuration space
+[OMPL](https://ompl.kavrakilab.org/). This approach is usually based on inverse
+kinematics to transform real-world goals into suitable configurations. 
+
+This repository formulates a generic motion planning scene, including both
+moving and static obstacles and a generic formulation of goals.
+
+## Obstacles
+
+Obstacles are split into dynamic and static obstacles. Dynamic obstacles are
+further split into movable and fixed obstacles. Movable obstacles can be pushed
+by robots while fixed ones act as walls or static parts of the environment.
+
+## Goals
+
+Goals for motion planning should not depend on the robot's structure, neither should they
+involve orientation that are generally hard to obtain and hardly human understandable.
+
+## Installation
+
+I have decided to change the name of the package on pypi to `mpscenes` as it
+seems more convenient a name. Early versions were published under the name
+`motion_planning_scenes`.
+
+```bash
+pip3 install .
+```
+or
+```bash
+pip3 install mpscenes
+```
+
+## Poetry
+This package is build using [poetry](https://python-poetry.org/docs/). 
+Poetry generates a virtual environment automatically.
+If you have poetry installed you can test it through:
+```bash
+poetry install
+poetry shell
+```
+Then you are in a virtual environment in which you can test this specific package.
+Read more about poetry on the [documentation website](https://python-poetry.org/docs/).
+
