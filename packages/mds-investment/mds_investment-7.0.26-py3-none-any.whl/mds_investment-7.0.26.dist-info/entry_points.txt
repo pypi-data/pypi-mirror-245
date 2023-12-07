@@ -1,0 +1,6 @@
+
+    [trytond.modules]
+    investment = trytond.modules.investment
+    [console_scripts]
+    trytond_import_investment_historicalrates = trytond.modules.investment.scripts.import_investment_historicalrates:run [data]
+    

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- This file is part of the investment-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<form col="4">
+    <label name="asset"/>
+    <field name="asset" colspan="3"/>
+
+    <label name="dec_divider"/>
+    <field name="dec_divider"/>
+    <label name="date_fmt"/>
+    <field name="date_fmt"/>
+    <label name="field_delimiter"/>
+    <field name="field_delimiter"/>
+    <newline/>
+
+    <label name="file_"/>
+    <field name="file_"/>
+</form>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!-- This file is part of the investment-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<form col="6">
+    <label name="name"/>
+    <field name="name"/>
+    <label name="query_method"/>
+    <field name="query_method"/>
+    <newline/>
+
+    <separator colspan="6" name="url" string="Method: Extract from web page"/>
+    <label name="url"/>
+    <field name="url" colspan="3"/>
+    <label name="nohtml"/>
+    <field name="nohtml"/>
+
+    <label id="labtp1" string=" "/>
+    <label xalign="0.0" colspan="3" name="nohtml"
+        string="URL parameter placeholders: ${isin}, ${nsin}, ${symbol}"/>
+    <label name="fixed_url"/>
+    <field name="fixed_url"/>
+    <newline/>
+
+    <separator colspan="6" name="url" string="Regular expressions to find data"/>
+    <label name="rgxdate"/>
+    <field name="rgxdate"/>
+    <label name="rgxdatefmt"/>
+    <field name="rgxdatefmt"/>
+    <label name="rgxident"/>
+    <field name="rgxident"/>
+
+    <label name="rgxrate"/>
+    <field name="rgxrate"/>
+    <label name="rgxdecimal"/>
+    <field name="rgxdecimal"/>
+    <label name="rgxidtype"/>
+    <field name="rgxidtype"/>
+
+    <notebook colspan="6">
+        <page id="pgparam" col="6" string="Test parameters">
+            <label name="used_url"/>
+            <field name="used_url" colspan="3"/>
+            <label name="http_state"/>
+            <field name="http_state"/>
+
+            <label name="isin"/>
+            <field name="isin"/>
+            <label name="nsin"/>
+            <field name="nsin"/>
+            <label name="symbol"/>
+            <field name="symbol"/>
+
+            <separator id="sepfnd" colspan="6" string="Values detected during the query"/>
+            <label name="fnddate"/>
+            <field name="fnddate"/>
+            <label name="fndrate"/>
+            <field name="fndrate"/>
+            <label name="fndident"/>
+            <field name="fndident"/>
+
+            <separator name="text" colspan="6" string="Result"/>
+            <field name="text" colspan="6" xexpand="1"/>
+        </page>
+        <page id="pginfo" col="1" string="How to">
+            <label xalign="0.0" id="lab1"
+                string="Configure a source for receiving course data here. The source is queried with the parameters according to schedule."/>
+            <label xalign="0.0" id="lab2"
+                string="Select a website where the price data, ISIN, date, etc. is contained in the loaded HTML file."/>
+            <label xalign="0.0" id="lab3"
+                string="Purely javascript-based websites do not work here."/>
+        </page>
+    </notebook>
+</form>
