@@ -1,0 +1,9 @@
+code_size_counter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+code_size_counter/code_size_counter.py,sha256=DP1WTu5Nv5sroqu1umApf3lUo436Tym1WZ56b7He5ss,4376
+code_size_counter/file_tools.py,sha256=Nfye2iKlAMHW5GBrmkfCNeom-J74f18WwngjuuhQpOo,3047
+code_size_counter/main.py,sha256=gyUS2Ns1_HdHWZOr5GkX9VzYzE0ohBqSuC5nSrM9epg,4270
+code_size_counter-1.0.0.dist-info/entry_points.txt,sha256=t6sF99PvLn9RZMOiBULhqvaAWCNYriw5y-XBgwKtFR8,65
+code_size_counter-1.0.0.dist-info/LICENSE,sha256=eSYh0K8LGhYdJkGSRFc1qNkXe2xzOPtpY0mFa9_7sz4,1073
+code_size_counter-1.0.0.dist-info/METADATA,sha256=7SCm8qVnoAamdjp4Jy6Z2o9icDitLQplPN_v6OURdSU,9877
+code_size_counter-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+code_size_counter-1.0.0.dist-info/RECORD,,
