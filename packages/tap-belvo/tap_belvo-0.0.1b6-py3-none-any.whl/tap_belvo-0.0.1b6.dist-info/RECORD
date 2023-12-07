@@ -1,0 +1,16 @@
+tap_belvo/__init__.py,sha256=iyiBrJmF2aO9lg9B8vvrJlfGSSg0I2JooKI4TOFqbtY,80
+tap_belvo/__main__.py,sha256=J5_xhlTVBRRUlQ62HlFpgvpDXaeYZqEpb1-eEO0rSJg,110
+tap_belvo/client.py,sha256=RF-ZPIjj94hUie5H94LSUirlWqr86TrPGwcq7OPi7P8,5422
+tap_belvo/tap.py,sha256=p6u1lZcVeTPVkoS9FP3DqWzj8fR5Z5oOVT2ay3po7dc,2006
+tap_belvo/openapi/BelvoOpenFinanceApiSpec.json,sha256=YgJHPPsrmOFdFa-K118xvqvB09TZmJdeIHZFsqLXGN4,1287233
+tap_belvo/openapi/__init__.py,sha256=hG9zupkP8FU2f4jPK1Yhqq8gM7d3a9xGgRX9bL6SJ7Y,754
+tap_belvo/streams/__init__.py,sha256=uzQuiKWBkicZ0CuZNDIeg6oyuuEpLXHiDmBUqlNRssU,936
+tap_belvo/streams/banking.py,sha256=tDHw1NI6eaTm9kRtkNRhLGDK-aG8WMxs0kE4jQ6lvkM,2651
+tap_belvo/streams/enrichment.py,sha256=A4iTZZw_t0_NXmY0VltKVQobFVspe3f6cf5BbZRVQQw,845
+tap_belvo/streams/fiscal.py,sha256=-9oOGJP_Z2DQ5WWV8xM9Sr12-yfyxZlvBu6GpvHsJBg,1771
+tap_belvo/streams/links.py,sha256=wnmAm4SaYbfk6sSi8lFGTnhQYroHVyYMLBQ5HwMhI8o,1021
+tap_belvo-0.0.1b6.dist-info/METADATA,sha256=r9xJzNGJ-sO2hgI5jVHv352IbDkcvPuTHPst7OrzXhU,4031
+tap_belvo-0.0.1b6.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+tap_belvo-0.0.1b6.dist-info/entry_points.txt,sha256=mbs2jnK3SrSgW3kjbO1jMZdQkSAKw-JO8SscyYtN_Pg,57
+tap_belvo-0.0.1b6.dist-info/licenses/LICENSE,sha256=hYHcZxy5jb9T_KQO1dQVotQfhWsU2XBotWBg6FIgklM,1068
+tap_belvo-0.0.1b6.dist-info/RECORD,,
