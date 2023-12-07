@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: simbapy
+Version: 0.1.0
+Summary: SIMBa: System Identification Methods leveraging Backpropagation
+Home-page: 
+Author: 
+Author-email: loris.dinatale@alumni.epfl.ch
+License: GNU LESSER GENERAL PUBLIC LICENSE Version 3
+Requires-Python: >=3.8,<3.11
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: torch
+
