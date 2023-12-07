@@ -1,0 +1,42 @@
+{
+  "properties": {
+    "activeFrom": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "activeTo": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "deviceType": {
+      "type": "string"
+    },
+    "hardwareId": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "number"
+    },
+    "serialNumber": {
+      "type": "string"
+    },
+    "timeZoneId": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "toVersion": {
+      "type": "string"
+    }
+  }
+}
