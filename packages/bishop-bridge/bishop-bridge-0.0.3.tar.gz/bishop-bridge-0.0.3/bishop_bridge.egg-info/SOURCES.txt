@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bishop_bridge/__init__.py
+bishop_bridge/bridge.py
+bishop_bridge.egg-info/PKG-INFO
+bishop_bridge.egg-info/SOURCES.txt
+bishop_bridge.egg-info/dependency_links.txt
+bishop_bridge.egg-info/top_level.txt
