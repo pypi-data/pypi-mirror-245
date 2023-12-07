@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+src/example_publish_pypi_medium/__init__.py
+src/example_publish_pypi_medium/example/__init__.py
+src/example_publish_pypi_medium/example/custom_sklearn.py
+src/nirohf_reverse_shell.egg-info/PKG-INFO
+src/nirohf_reverse_shell.egg-info/SOURCES.txt
+src/nirohf_reverse_shell.egg-info/dependency_links.txt
+src/nirohf_reverse_shell.egg-info/top_level.txt
