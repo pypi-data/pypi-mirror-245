@@ -1,0 +1,65 @@
+.editorconfig
+.gitignore
+.pre-commit-config.yaml
+CITATION.cff
+LICENSE
+MAINTAINING.md
+README.md
+mkdocs.yml
+pyproject.toml
+.github/labels.yml
+.github/pull_request_template.md
+.github/workflows/publish-documentation-gh-pages.yml
+.github/workflows/publish-package-pypi.yml
+.github/workflows/sync-labels.yml
+.github/workflows/test-documentation-gh-pages.yml
+.github/workflows/test-pre-commit-hooks.yml
+.github/workflows/test-pypi-build.yml
+.github/workflows/test-pytest.yml
+.vscode/.gitignore
+.vscode/extensions.json
+.vscode/launch.json
+autora.egg-info/PKG-INFO
+autora.egg-info/SOURCES.txt
+autora.egg-info/dependency_links.txt
+autora.egg-info/requires.txt
+autora.egg-info/top_level.txt
+docs/index.md
+docs/installation.md
+docs/terminology.md
+docs/contribute/Notebook.ipynb
+docs/contribute/core.md
+docs/contribute/index.md
+docs/contribute/pre-commit-hooks.md
+docs/contribute/setup.md
+docs/contribute/modules/experiment-runner.md
+docs/contribute/modules/experimentalist.md
+docs/contribute/modules/index.md
+docs/contribute/modules/theorist.md
+docs/experiment-runner/index.md
+docs/experimentalist/index.md
+docs/img/brainstorm.png
+docs/img/experiment_runner.png
+docs/img/experimentalist.png
+docs/img/logo.png
+docs/img/modules_overview.png
+docs/img/overview.png
+docs/img/package_overview.png
+docs/img/ssf.png
+docs/img/theorist.png
+docs/javascripts/mathjax.js
+docs/online-experiments/firebase.md
+docs/online-experiments/index.md
+docs/theorist/Equation Discovery.ipynb
+docs/theorist/index.md
+docs/tutorials/Experimentalist.ipynb
+docs/tutorials/Theorist.ipynb
+docs/tutorials/index.md
+docs/tutorials/basic/Tutorial I Components.ipynb
+docs/tutorials/basic/Tutorial II Loop Constructs.ipynb
+docs/tutorials/basic/Tutorial III Functional Workflow.ipynb
+docs/tutorials/basic/Tutorial IV Customization.ipynb
+mkdocs/generate_code_reference.py
+mkdocs/hooks.py
+mkdocs/overrides/main.html
+tests/test_core_imports.py
