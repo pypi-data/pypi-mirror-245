@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+telcolib/__init__.py
+telcolib/validator.py
+telcolib.egg-info/PKG-INFO
+telcolib.egg-info/SOURCES.txt
+telcolib.egg-info/dependency_links.txt
+telcolib.egg-info/top_level.txt
+tests/__init__.py
+tests/test_validator.py
