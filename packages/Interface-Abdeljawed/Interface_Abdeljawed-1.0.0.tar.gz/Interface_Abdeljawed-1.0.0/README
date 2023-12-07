@@ -1,0 +1,18 @@
+# Interface_Abdeljawed
+
+## Description
+
+Interface Abdeljawed est un plugin Python qui fournit une fonctionnalité supplémentaire à votre application:
+1- Ajoute un menu PyQT
+2- Ajoute une commande "Ouvrir Interface Graphique"
+3 - Après la sélection de l'interface graphique (fichier.ui):
+_ Le script permettant l'importation du fichier.ui
+_ Ajoute des commandes permettant de : récupérer le texte, modifier le texte et l'effacement du texte des widgets
+
+## Installation
+
+Pour installer Interface_Abdeljawed, vous pouvez utiliser pip. Assurez-vous d'avoir Python installé sur votre système.
+
+```bash
+pip install Interface_Abdeljawed
+```
