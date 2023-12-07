@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+datapath/__init__.py
+datapath/_base.py
+datapath/collection.py
+datapath/folding.py
+datapath/types.py
+python_datapath.egg-info/PKG-INFO
+python_datapath.egg-info/SOURCES.txt
+python_datapath.egg-info/dependency_links.txt
+python_datapath.egg-info/requires.txt
+python_datapath.egg-info/top_level.txt
+test/test_datapath.py
+test/test_folding.py
