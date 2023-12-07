@@ -1,0 +1,13 @@
+flowa/__init__.py,sha256=ALbfdUuQMCnN755NE3UlCKOkPKp9bRbfnwLcOLJ9gxg,3275
+flowa/_version.py,sha256=-PHOp3xtaVBqt8rV80W5ifYOiZ7r54itTJjLtgfsu7E,783
+flowa/main/__init__.py,sha256=1UFLkx-G8rZ4FT9DrBzSstLeb84LTp2j0t8ZHQvEfEA,99
+flowa/main/decisiontree.py,sha256=a_WfBJxqzoYOKEQTrZD8YcCDz8qk6npq-VPVki2pO4M,6499
+flowa/main/imagemodel.py,sha256=v5sIoP4l1GD6Fdg0kg_T4EHA4znsgJ2Fo83COQDCPuI,6302
+flowa/main/labelencoder.py,sha256=MlgTBQ2xaBxgKqkwaKS03BoZNZs1DxL5T2alayICIJ4,4507
+flowa/types/__init__.py,sha256=mL5fCIGV2DKj0MM0sT7TWe03w9PsNFe6Fe2pe856AiY,4701
+flowa/utils/__init__.py,sha256=-72TVCtJx-oigF9bCZxrHuZ7nNjA7wGuGc-PMPE5GG8,1308
+flowa-1.2.3.dist-info/LICENSE,sha256=0Mn0y8jmfxT3RWigJXwqkznxP0kdLwesvTdsvkKU_IU,1062
+flowa-1.2.3.dist-info/METADATA,sha256=dLE6JvV57if551C5_JJGEHm8HeHlGXKYJlX0SihIN0A,4530
+flowa-1.2.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+flowa-1.2.3.dist-info/top_level.txt,sha256=qGgaWzrNFYxMlW5Pf_XtKZk7FxkBAVzQTEqK2wC6ISY,6
+flowa-1.2.3.dist-info/RECORD,,
