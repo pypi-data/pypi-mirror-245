@@ -1,0 +1,48 @@
+site_name: Auto-Verify Docs
+
+theme:
+  name: "material"
+
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - content.code.copy
+
+  icon:
+    repo: fontawesome/brands/github
+
+repo_url: https://github.com/ADA-research/auto-verify
+repo_name: auto-verify
+
+plugins:
+  - mkdocstrings:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - def_list
+
+nav:
+  - Auto-Verify: index.md
+  - How-To Guides: how-to-guides.md
+  - API: api.md

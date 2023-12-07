@@ -1,0 +1,109 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auto-verify"
+version = "0.1.3"
+description = "Efficient portfolio-based verification of neural network properties"
+readme = "README.md"
+authors = [{ name = "Corné Spek" }]
+license = { file = "LICENSE" }
+keywords = ["auto-verify", "Neural networks", "Robustness"]
+classifiers = [
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3.10",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "SMAC==2.0.2",
+    "result==0.9.0",
+    "xdg-base-dirs==6.0.0",
+    "onnxruntime==1.14.1",
+    "pandas==2.0.1",
+    "numpy==1.24.3",
+    "onnx==1.14.0",
+    "swig==4.1.1.post1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "tox",
+    "pytest",
+    "pre-commit",
+    "flake8",
+    "mypy",
+    "bumpver",
+    "coverage",
+    "mkdocs",
+    "pydocstyle",
+    "types-PyYAML",
+    "pytest-lazy-fixture",
+]
+
+[project.scripts]
+auto-verify = "autoverify.cli.main:main"
+
+[tool.black]
+line_length = 80
+target-version = ['py310']
+
+[tool.isort]
+line_length = 80
+profile = "black"
+
+[tool.pydocstyle]
+convention = "google"
+add-ignore = [
+    "D104", # Missing docstring in public package
+]
+ignore-decorators = "property" # TODO: Dont ignore abstractmethod properties
+
+[tool.pytest.ini_options]
+markers = [
+    "gpu: test needs a Nvidia GPU to pass",
+    "verifier: test will use a verifier",
+]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+no_implicit_reexport = true
+
+[tool.bumpver]
+current_version = "0.1.3"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['version = "{version}"']
+"README.md" = ["{version}"]
+"autoverify/__init__.py" = ['__version__ = "{version}"']
+
+[tool.coverage.run]
+omit = [
+    # The installation tests are done during gh-actions (see Dockerfile)
+    "autoverify/cli/install/install.py",
+    "autoverify/cli/install/installers/*",
+
+    "autoverify/util/conda.py",
+    "autoverify/util/vnncomp.py",
+    "autoverify/util/verifiers.py",
+
+    "autoverify/verifier/complete/mnbab/*",
+
+    "tests/*",
+]
