@@ -1,0 +1,2 @@
+[console_scripts]
+tbmail = thunderbird.mail_cmd:main
