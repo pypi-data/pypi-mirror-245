@@ -1,0 +1,5 @@
+pyscemu-0.3.8.dist-info/METADATA,sha256=BEcCDgWNyU1uoMHpAkSMmwnu-fF-1j6lP3NHREGjy_c,10480
+pyscemu-0.3.8.dist-info/WHEEL,sha256=_oCur9b1q83B2PijEEm9TBWSmJ_rbL5p80w21BnBBsg,108
+pyscemu/__init__.py,sha256=jjMhIttPyfTdr1MHka85RPpp3dxlC-NA2fRUcY4P3og,111
+pyscemu/pyscemu.cpython-311-x86_64-linux-gnu.so,sha256=LPyvzLIc1tU7ztvB8fD8tGoRIthslCg8TT0AI0DK8ho,4213280
+pyscemu-0.3.8.dist-info/RECORD,,
