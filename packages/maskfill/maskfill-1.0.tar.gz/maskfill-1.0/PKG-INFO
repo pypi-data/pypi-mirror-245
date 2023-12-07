@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: maskfill
+Version: 1.0
+Summary: A Python package for image mask filling
+Home-page: https://github.com/dokkum/maskfill
+Author: Pieter van Dokkum
+Author-email: pieter.vandokkum@yale.edu
+License: UNKNOWN
+Download-URL: https://github.com/dokkum/maskfill/archive/refs/tags/v1.0.tar.gz
+Description: # maskfill
+        Fill in masked values in an image
+        
+        Method description is in van Dokkum (2023) (PASP)
+        
+        Examples in
+         example_synthetic/
+         example_m51/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
