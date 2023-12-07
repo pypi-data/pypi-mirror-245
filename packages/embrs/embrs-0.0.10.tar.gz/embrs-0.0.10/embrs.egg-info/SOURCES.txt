@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+embrs.egg-info/PKG-INFO
+embrs.egg-info/SOURCES.txt
+embrs.egg-info/dependency_links.txt
+embrs.egg-info/entry_points.txt
+embrs.egg-info/requires.txt
+embrs.egg-info/top_level.txt
