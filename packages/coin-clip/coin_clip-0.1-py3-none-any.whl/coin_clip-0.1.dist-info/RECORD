@@ -1,0 +1,14 @@
+coin_clip/__init__.py,sha256=D2H6FBIGy81qtTMyuPf46bwM35YHvSDSpzsAJQASaCw,954
+coin_clip/__version__.py,sha256=yBnLUxNBlfj-uBgoNKon7OU-jmJvY8DedxI0g8A4YIc,889
+coin_clip/base_model.py,sha256=5ByOmacFGc41AiLqP8OVx6F3jWRbI7O4lZZIj_JBPjI,3724
+coin_clip/chroma_embedding.py,sha256=cgweE9v9qVd6SGctkr9hAx4PwteGbukfi40pnSzhJwg,2168
+coin_clip/cli.py,sha256=8DYcIP0ePYg8njkkfPHvGNBoIdY0GQfjXM2TYKfevHQ,5053
+coin_clip/coinclip.py,sha256=7jISpTqb38qB2NVFmwJRdvH0UNHYpPqP3xbOks5_5MM,6155
+coin_clip/consts.py,sha256=erZLkQi8OQdqFrIVzQyflhNAd_l1_3wvzufE_gAeWNU,1024
+coin_clip/detect.py,sha256=p7pQVcrSeBAesFB1rEuVmblNtGUrxxtnpwTmDEPJ5cw,4701
+coin_clip/utils.py,sha256=jxlR_vorSvLY4QgiYJ5Pb15HkIVOY1b3pIMmIeU-ZzI,2176
+coin_clip-0.1.dist-info/METADATA,sha256=PMp-ymJOOmed0g-GghrBGtmezSwQam8AaAH_10AghvA,6122
+coin_clip-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+coin_clip-0.1.dist-info/entry_points.txt,sha256=aQ6wQPRKALAe497tmNp8rdQbHKXUnRb6W5gbSp00eBM,49
+coin_clip-0.1.dist-info/top_level.txt,sha256=AKR1ZTpZmsrL50ABzzvidJL9cuwe2Cj9UK3h8ziaRCs,10
+coin_clip-0.1.dist-info/RECORD,,
