@@ -1,0 +1,11 @@
+aiohttp>=3
+aiolimiter>=1
+pydantic>=2
+
+[dev]
+pytest>=7
+pytest-asyncio
+coverage>=7
+mkdocs>=1
+mkdocstrings[python]
+mkdocs-material>=9
