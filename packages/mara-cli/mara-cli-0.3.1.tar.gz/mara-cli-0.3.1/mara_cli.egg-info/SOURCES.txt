@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+mara_cli/__init__.py
+mara_cli/_config.py
+mara_cli/cli.py
+mara_cli.egg-info/PKG-INFO
+mara_cli.egg-info/SOURCES.txt
+mara_cli.egg-info/dependency_links.txt
+mara_cli.egg-info/entry_points.txt
+mara_cli.egg-info/requires.txt
+mara_cli.egg-info/top_level.txt
+tests/test_mara_main.py
