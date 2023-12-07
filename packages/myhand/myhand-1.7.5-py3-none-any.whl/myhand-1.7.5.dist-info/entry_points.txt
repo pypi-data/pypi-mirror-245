@@ -1,0 +1,8 @@
+[console_scripts]
+autoassist = myhand.autoassist:main
+autobuilder = myhand.autobuilder:main
+automath = myhand.automath:main
+autoretriever = myhand.autoretriever:main
+autoteachable = myhand.autoteachable:main
+etextedit = myhand.eTextEdit:main
+myhand = myhand.main:main
