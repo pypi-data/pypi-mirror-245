@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: nirohf-reverse-shell
+Version: 1.6
+Home-page: https://github.com/gmyrianthous/example-publish-pypi
+Author: Nir Ohfeld
+Author-email: niro+test@wiz.io
+License: MIT
+Keywords: bug bounty test
