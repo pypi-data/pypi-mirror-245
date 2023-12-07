@@ -1,0 +1,1 @@
+echo "empty init_script.sh";
