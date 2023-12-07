@@ -1,0 +1,10 @@
+psutil<6.0,>=5.0
+
+[dev]
+check-manifest
+pytest
+mkdocs-material
+mkdocstrings[python]
+
+[test]
+pytest

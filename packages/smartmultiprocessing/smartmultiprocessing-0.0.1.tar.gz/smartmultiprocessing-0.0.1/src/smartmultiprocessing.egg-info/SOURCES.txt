@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/smartmultiprocessing/__init__.py
+src/smartmultiprocessing/_sphandler.py
+src/smartmultiprocessing/errors.py
+src/smartmultiprocessing/pool.py
+src/smartmultiprocessing/process.py
+src/smartmultiprocessing/queue.py
+src/smartmultiprocessing/utilities.py
+src/smartmultiprocessing.egg-info/PKG-INFO
+src/smartmultiprocessing.egg-info/SOURCES.txt
+src/smartmultiprocessing.egg-info/dependency_links.txt
+src/smartmultiprocessing.egg-info/requires.txt
+src/smartmultiprocessing.egg-info/top_level.txt
+tests/test_process.py

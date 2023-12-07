@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: smartmultiprocessing
+Version: 0.0.1
+Summary: Memory-managed parallel computing for medium-sized computational tasks.
+Author-email: Emily Hunt <emily.hunt.physics@gmail.com>
+Maintainer-email: Emily Hunt <emily.hunt.physics@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Emily Hunt
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Reports, https://github.com/pypa/sampleproject/issues
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Say Thanks!, http://saythanks.io/to/example
+Project-URL: Source, https://github.com/pypa/sampleproject/
+Keywords: multiprocessing,parallel,threading,development
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psutil<6.0,>=5.0
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: mkdocs-material; extra == "dev"
+Requires-Dist: mkdocstrings[python]; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+
+[![docs](https://img.shields.io/badge/docs-latest-blue.svg)](https://smartmultiprocessing.org)
+[![Build Docs](https://github.com/emilyhunt/smartmultiprocessing/actions/workflows/build-docs.yml/badge.svg)](https://smartmultiprocessing.org)
+
+# SmartMultiprocessing
+A drop-in replacement for Python's `multiprocessing` library with many extra features, including: memory management, smart task scheduling, a pause button, a GUI, and more.
+
+`SmartMultiprocessing` is ideal for use cases beyond typical `multiprocessing` use, like:
+
+- Running code where memory usage is different depending on input values
+- Benchmarking experimental code where memory usage is not well understood
+- Running code on a machine where it's important to be able to pause execution/change thread and memory use on the fly
+- Being able to monitor the performance of code without having to write your own monitoring library from scratch
+
+
+## SmartMultiprocessing is in active development!
+
+This project is a spin-out from code that [@emilyhunt](https://github.com/emilyhunt) wrote during her PhD. It's currently in alpha / active development - check back here soon for the first production-ready versions!
