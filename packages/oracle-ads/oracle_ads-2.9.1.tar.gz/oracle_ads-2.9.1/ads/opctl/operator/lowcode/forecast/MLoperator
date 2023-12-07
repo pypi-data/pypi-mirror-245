@@ -1,0 +1,23 @@
+type: forecast
+version: v1
+name: Forecasting Operator
+conda_type: service
+conda: forecast_p38_cpu_v1
+gpu: no
+jobs_default_params:
+  shape_name: VM.Standard.E4.Flex
+  ocpus: 32
+  memory_in_gbs: 512
+  block_storage_size_in_GBs: 512
+keywords:
+  - Prophet
+  - AutoML
+  - ARIMA
+  - RNN
+  - LSTM
+backends:
+  - job
+description: |
+  Forecasting operator, that leverages historical time series data to generate accurate
+  forecasts for future trends. Use `ads operator info -t forecast` to get more details about
+  the forecasting operator."
