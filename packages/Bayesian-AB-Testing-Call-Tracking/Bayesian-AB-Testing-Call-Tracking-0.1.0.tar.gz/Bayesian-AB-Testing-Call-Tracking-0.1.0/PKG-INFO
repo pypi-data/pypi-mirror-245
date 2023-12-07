@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Bayesian-AB-Testing-Call-Tracking
+Version: 0.1.0
+Summary: AB testing tool, designed for testing data of call tracking services
+Author: Anush Aghinyan, 
+                Anahit Navoyan, 
+                Yeva Avetisyan, 
+                Naira Maria Barseghyan, 
+                Mher Movsisyan
+Author-email: mher@movsisyan.info
