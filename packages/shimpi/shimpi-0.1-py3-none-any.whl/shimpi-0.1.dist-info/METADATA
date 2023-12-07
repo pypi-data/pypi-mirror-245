@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: shimpi
+Version: 0.1
+Summary: import pandas as pd
+Home-page: https://upload.pypi.org/legacy/
+Author: SHIMPI PRODUCTIONS
+Author-email: sarveshshimpi18@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: License.txt
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: apyori
+
+This is a code for lab 1 to lab 8
