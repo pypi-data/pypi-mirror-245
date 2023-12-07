@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: orca_nw_lib
+Version: 1.2.1
+Summary: APIs to interact with SONiC NW
+Author: Kamal Krishna Bhatt
+Author-email: kamal.bhatt@stordis.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: GitPython (>=3.1.31,<4.0.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: black (>=23.3.0,<24.0.0)
+Requires-Dist: grpcio-tools (>=1.54.2,<2.0.0)
+Requires-Dist: neo4j (>=5.4.0,<6.0.0)
+Requires-Dist: neomodel (>=5.0.0,<6.0.0)
+Requires-Dist: protobuf (>=4.23.0,<5.0.0)
+Requires-Dist: pyangbind (>=0.8.1,<0.9.0)
+Requires-Dist: pytest (>=7.3.1,<8.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Requires-Dist: wget (>=3.2,<4.0)
