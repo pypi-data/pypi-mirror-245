@@ -1,0 +1,9 @@
+telcolib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telcolib/validator.py,sha256=vgtpTHlKs_Vn-SnYIQw1gYkRd6IHatBf3oV799OIM9c,4566
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_validator.py,sha256=9X9GhgDJs9gGgh63gyDBeI0i3MWA7ViJWdpVfdn39uI,2078
+telcolib-0.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+telcolib-0.2.dist-info/METADATA,sha256=sYIqG2KWcxoOZSlqECBBg55ybm5iXezTENTD8aD3tO8,2639
+telcolib-0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+telcolib-0.2.dist-info/top_level.txt,sha256=-eGwcYKy1O52XnDl5b5baxdlHYp3F3EwtiGTR-Wz_cI,15
+telcolib-0.2.dist-info/RECORD,,
