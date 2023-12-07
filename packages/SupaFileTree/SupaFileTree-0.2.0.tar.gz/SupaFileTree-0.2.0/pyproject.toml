@@ -1,0 +1,18 @@
+[project]
+name = "SupaFileTree"
+version = "0.2.0"
+authors = [
+  { name="Sainitin Daverpally", email="s.daverpally@gmail.com" },
+]
+description = "A project that when given a folder path, generates a tree of all the files inside"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/SainitinD/File-Tree-Generator"
+Issues = "https://github.com/SainitinD/File-Tree-Generator/issues"
