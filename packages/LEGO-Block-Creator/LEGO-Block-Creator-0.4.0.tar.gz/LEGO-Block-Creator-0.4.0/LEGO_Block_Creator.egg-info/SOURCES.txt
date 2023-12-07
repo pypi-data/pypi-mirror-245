@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+main.py
+pyproject.toml
+setup.cfg
+setup.py
+LEGO_Block_Creator.egg-info/PKG-INFO
+LEGO_Block_Creator.egg-info/SOURCES.txt
+LEGO_Block_Creator.egg-info/dependency_links.txt
+LEGO_Block_Creator.egg-info/top_level.txt
+tests/test_main.py
