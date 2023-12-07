@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+src/tinybio/__init__.py
+src/tinybio/tinybio.py
+src/tinybio.egg-info/PKG-INFO
+src/tinybio.egg-info/SOURCES.txt
+src/tinybio.egg-info/dependency_links.txt
+src/tinybio.egg-info/requires.txt
+src/tinybio.egg-info/top_level.txt
