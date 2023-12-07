@@ -1,0 +1,196 @@
+builds:
+  lnd-krub:
+    instructions:
+      - FROM node:18-bullseye AS builder
+      - WORKDIR /usr/src
+      - RUN apt-get install -y ca-certificates git
+      - RUN git clone --branch master --depth=1 https://github.com/krutt/lnd-krub.git
+      - RUN mv lnd-krub/* ./
+      - RUN yarn --frozen-lockfile
+      - RUN yarn prisma:generate
+      - RUN yarn build
+      - RUN yarn --prod --ignore-scripts
+      - FROM node:18-bullseye-slim AS runner
+      - WORKDIR /usr/app
+      - COPY --from=builder /usr/src/dist /usr/app/dist
+      - COPY --from=builder /usr/src/node_modules /usr/app/node_modules
+      - COPY --from=builder /usr/src/prisma /usr/app/prisma
+      - COPY --from=builder /usr/src/package.json /usr/app/package.json
+      - ARG MACAROON
+      - ARG TLSCERT
+      - ENV NODE_ENV production
+      - EXPOSE 3000
+      - CMD printf $MACAROON > krub.macaroon && printf $TLSCERT > tls.cert && node dist/index.js
+    platform: linux/amd64
+clusters:
+  duo:
+    aesir-bitcoind:
+      alias: bitcoind
+      command:
+        - -server=1
+        - -regtest=1
+        - -rpcauth=aesir:0a17eed40accdd0f2271a548547ec9bb$b269b686f2ad7ccf0b5ea3450e0687dc1a90846d3828811ad0d570de83b65f4c
+        - -debug=1
+        - -zmqpubrawblock=tcp://0.0.0.0:28334
+        - -zmqpubrawtx=tcp://0.0.0.0:28335
+        - -zmqpubhashblock=tcp://0.0.0.0:28336
+        - -txindex=0
+        - -dnsseed=0
+        - -upnp=0
+        - -rpcbind=0.0.0.0
+        - -rpcallowip=0.0.0.0/0
+        - -rpcport=18443
+        - -rpcworkqueue=128
+        - -rest
+        - -listen=1
+        - -listenonion=0
+        - -fallbackfee=0.0002
+        - -blockfilterindex=1
+        - -peerblockfilters=1
+        - -datadir=/home/bitcoin/.bitcoin
+        - -prune=600
+      ports:
+        - 18443:18443
+        - 28334:28334
+        - 28335:28335
+    aesir-ping:
+      alias: lnd
+      command:
+        - --noseedbackup
+        - --trickledelay=5000
+        - --externalip=aesir-ping
+        - --tlsextradomain=aesir-ping
+        - --listen=0.0.0.0:9735
+        - --rpclisten=0.0.0.0:10001
+        - --restlisten=0.0.0.0:8080
+        - --bitcoin.active
+        - --bitcoin.regtest
+        - --bitcoin.node=bitcoind
+        - --bitcoind.rpchost=aesir-bitcoind
+        - --bitcoind.rpcuser=aesir
+        - --bitcoind.rpcpass=aesir
+        - --bitcoind.zmqpubrawblock=tcp://aesir-bitcoind:28334
+        - --bitcoind.zmqpubrawtx=tcp://aesir-bitcoind:28335
+      ports:
+        - 9735:9735
+        - 10001:10001
+    aesir-pong:
+      alias: lnd
+      ports:
+        - 9735:9736
+        - 10001:10002
+      command:
+        - --noseedbackup
+        - --trickledelay=5000
+        - --externalip=aesir-pong
+        - --tlsextradomain=aesir-pong
+        - --listen=0.0.0.0:9735
+        - --rpclisten=0.0.0.0:10001
+        - --restlisten=0.0.0.0:8080
+        - --bitcoin.active
+        - --bitcoin.regtest
+        - --bitcoin.node=bitcoind
+        - --bitcoind.rpchost=aesir-bitcoind
+        - --bitcoind.rpcuser=aesir
+        - --bitcoind.rpcpass=aesir
+        - --bitcoind.zmqpubrawblock=tcp://aesir-bitcoind:28334
+        - --bitcoind.zmqpubrawtx=tcp://aesir-bitcoind:28335
+  uno:
+    aesir-bitcoind:
+      alias: bitcoind
+      command:
+        - -server=1
+        - -regtest=1
+        - -rpcauth=aesir:0a17eed40accdd0f2271a548547ec9bb$b269b686f2ad7ccf0b5ea3450e0687dc1a90846d3828811ad0d570de83b65f4c
+        - -debug=1
+        - -zmqpubrawblock=tcp://0.0.0.0:28334
+        - -zmqpubrawtx=tcp://0.0.0.0:28335
+        - -zmqpubhashblock=tcp://0.0.0.0:28336
+        - -txindex=0
+        - -dnsseed=0
+        - -upnp=0
+        - -rpcbind=0.0.0.0
+        - -rpcallowip=0.0.0.0/0
+        - -rpcport=18443
+        - -rpcworkqueue=128
+        - -rest
+        - -listen=1
+        - -listenonion=0
+        - -fallbackfee=0.0002
+        - -blockfilterindex=1
+        - -peerblockfilters=1
+        - -datadir=/home/bitcoin/.bitcoin
+        - -prune=600
+      ports:
+        - 18443:18443
+        - 28334:28334
+        - 28335:28335
+    aesir-lnd:
+      alias: lnd
+      command:
+        - --noseedbackup
+        - --trickledelay=5000
+        - --externalip=aesir-lnd
+        - --tlsextradomain=aesir-lnd
+        - --listen=0.0.0.0:9735
+        - --rpclisten=0.0.0.0:10001
+        - --restlisten=0.0.0.0:8080
+        - --bitcoin.active
+        - --bitcoin.regtest
+        - --bitcoin.node=bitcoind
+        - --bitcoind.rpchost=aesir-bitcoind
+        - --bitcoind.rpcuser=aesir
+        - --bitcoind.rpcpass=aesir
+        - --bitcoind.zmqpubrawblock=tcp://aesir-bitcoind:28334
+        - --bitcoind.zmqpubrawtx=tcp://aesir-bitcoind:28335
+      ports:
+        - 9735:9735
+        - 10001:10001
+deprecated:
+  - polarlightning/bitcoind:24.0
+  - polarlightning/lnd:0.16.0-beta
+  - polarlightning/lnd:0.16.1-beta
+  - polarlightning/lnd:0.16.2-beta
+  - polarlightning/lnd:0.16.4-beta
+  - polarlightning/lnd:0.17.0-beta.rc1
+  - polarlightning/lnd:0.17.0-beta.rc2
+  - polarlightning/lnd:0.17.0-beta
+  - polarlightning/lnd:0.17.1-beta
+images:
+  optional:
+    postgres: postgres:latest
+    redis: redis:latest
+  required:
+    bitcoind: polarlightning/bitcoind:25.0
+    lnd: polarlightning/lnd:0.17.2-beta
+network: aesir
+peripherals:
+  lnd-krub:
+    aesir-lnd-krub:
+      alias: lnd-krub
+      env_vars:
+        - BITCOIND_RPC_URL=http://aesir:aesir@aesir-bitcoind:18443
+        - COOKIE_SECRET=RdnYShthFMcAjLpmzaVjABQrWTzeFwzf
+        - CSRF_SECRET=EJnBsZoSbQmrRzSVRiDlFUzmGvsNPmNh
+        - DATABASE_URL=postgresql://aesir-postgres:5432/aesir
+        - LND_MACAROON_PATH=krub.macaroon
+        - LND_SERVICE_HOST=aesir-ping
+        - LND_SERVICE_PORT=10001
+        - LND_TLSCERT_PATH=tls.cert
+        - PROD_FAUCET=true
+        - REDIS_HOST=aesir-redis
+      ports:
+        - 3000:3000
+  postgres:
+    aesir-postgres:
+      alias: postgres
+      env_vars:
+        - POSTGRES_USER=aesir
+        - POSTGRES_PASSWORD=aesir
+      ports:
+        - 5432:5432
+  redis:
+    aesir-redis:
+      alias: redis
+      ports:
+        - 6379:6379
