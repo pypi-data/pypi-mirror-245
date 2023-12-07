@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: dsk-server
+Version: 0.1.5
+Summary: Distribution server for files stored in DSK format image file.
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: construct>=2.10.70
+Requires-Dist: fastapi>=0.104.1
+Requires-Dist: fire>=0.5.0
+Requires-Dist: uvicorn>=0.24.0.post1
+Description-Content-Type: text/markdown
+
+# dsk-server
+
+FAT12形式のDSKファイルに含まれるファイルをダウンロードできるサーバアプリケーションです
+
+### インストール
+
+```
+pip install dsk-server
+```
+
+### Usage
+
+```
+NAME
+    dsk-server start - Start the DSK server.
+
+SYNOPSIS
+    dsk-server start DSKFILE <flags>
+
+DESCRIPTION
+    Start the DSK server.
+
+POSITIONAL ARGUMENTS
+    DSKFILE
+
+FLAGS
+    -h, --host=HOST
+        Default: '0.0.0.0'
+    -p, --port=PORT
+        Default: 8000
+```
+
+### API
+
+サーバを起動して、以下を参照ください
+
+```
+http://127.0.0.1/docs
+```
