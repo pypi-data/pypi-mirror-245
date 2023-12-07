@@ -1,0 +1,11 @@
+setup.py
+odoo/addons/hr_entry_type_mitxelena/README.md
+odoo/addons/hr_entry_type_mitxelena/__init__.py
+odoo/addons/hr_entry_type_mitxelena/__manifest__.py
+odoo/addons/hr_entry_type_mitxelena/data/hr_entry_type.xml
+odoo14_addon_hr_entry_type_mitxelena.egg-info/PKG-INFO
+odoo14_addon_hr_entry_type_mitxelena.egg-info/SOURCES.txt
+odoo14_addon_hr_entry_type_mitxelena.egg-info/dependency_links.txt
+odoo14_addon_hr_entry_type_mitxelena.egg-info/not-zip-safe
+odoo14_addon_hr_entry_type_mitxelena.egg-info/requires.txt
+odoo14_addon_hr_entry_type_mitxelena.egg-info/top_level.txt

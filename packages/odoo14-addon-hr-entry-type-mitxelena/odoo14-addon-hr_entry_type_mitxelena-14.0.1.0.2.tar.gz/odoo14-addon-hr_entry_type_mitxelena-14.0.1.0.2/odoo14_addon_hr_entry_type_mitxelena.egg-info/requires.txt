@@ -1,0 +1,2 @@
+odoo14-addon-hr_entry_type
+odoo<14.1dev,>=14.0a
