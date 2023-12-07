@@ -1,0 +1,8 @@
+duro_rest/__init__.py,sha256=TwPhfLTReWJVBS1MWUCQk8080wAUUcUA0euZcq5Zv2Q,477
+duro_rest/bom_client.py,sha256=vyTY8pkJ87bBMVyGmUkxTdTL11fRG-nEpKx1SlijAEI,8062
+duro_rest/duro_client.py,sha256=3rvyvSfvPFlyo9Lfgv4CzMZZwZiYz7lzEwRwnX_s7SQ,8675
+duro_rest/error.py,sha256=_sodVod-3_e5Fxk3Hg_IM5hLGrJOA7K0sRt9M2sW1P4,641
+duro_rest-0.0.13.dist-info/LICENSE,sha256=-3IYHdAkc7bkJ0nhQ2Lt5rpiAlQNzCzpgpntkFH73mE,16726
+duro_rest-0.0.13.dist-info/METADATA,sha256=pYYk3QNLRGQ7K2_LhuCPGBfjEikhjgmzjgs4Gk6dSEo,2520
+duro_rest-0.0.13.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+duro_rest-0.0.13.dist-info/RECORD,,
