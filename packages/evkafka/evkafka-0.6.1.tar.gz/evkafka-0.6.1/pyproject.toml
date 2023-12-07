@@ -1,0 +1,90 @@
+[project]
+name = "evkafka"
+version = "0.6.1"
+authors = [
+  { name="Aleksey Katichev", email="theleharo@gmail.com" },
+]
+description = "EVKafka framework. Handle kafka events easy"
+readme = 'README.md'
+dependencies = [
+    "aiokafka==0.8.1",
+    "aiohttp>=3.8.6",
+    "pydantic>=2.4.2",
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/theleharo/evkafka"
+"Bug Tracker" = "https://github.com/theleharo/evkafka/issues"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["evkafka"]  # ["*"] by default
+
+[tool.ruff.lint]
+select = [
+    "ARG",
+    "B",
+    "C",
+    "C4",
+    "E",
+    "F",
+    "I",
+    "PL",
+    "PT",
+    "T",
+    "W",
+]
+ignore = ["E501", "PLR2004"]
+
+[tool.ruff.pylint]
+max-args = 20
+
+[tool.ruff.lint.mccabe]
+max-complexity = 11
+
+[tool.mypy]
+disallow_untyped_defs = true
+disallow_untyped_decorators = true
+
+[[tool.mypy.overrides]]
+module = [
+    "aiokafka", "aiokafka.structs"
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+#addopts = "--cov=evkafka --cov-report term-missing"
+asyncio_mode = "auto"
+
+[tool.coverage.report]
+precision = 2
+exclude_also = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "raise NotImplemented",
+    "if TYPE_CHECKING:",
+    "@overload",
+]
+
+
+[tool.coverage.run]
+source = ["evkafka"]
+branch = true
