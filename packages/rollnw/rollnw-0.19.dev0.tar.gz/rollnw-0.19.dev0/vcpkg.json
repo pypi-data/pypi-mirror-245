@@ -1,0 +1,21 @@
+{
+  "name": "rollnw",
+  "version": "0.19.0",
+  "dependencies": [
+    "fmt",
+    "abseil",
+    "zstd",
+    "sqlite3",
+    "minizip",
+    "nlohmann-json",
+    {
+      "name": "libiconv",
+      "platform": "windows"
+    },
+    "glm",
+    "benchmark",
+    "stduuid",
+    "gtest"
+  ],
+  "builtin-baseline": "9d47b24eacbd1cd94f139457ef6cd35e5d92cc84"
+}
