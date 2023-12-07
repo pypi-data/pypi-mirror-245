@@ -1,0 +1,16 @@
+COPYING,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+NEWS,sha256=bD1SrKLkFkNTfQgYxfjSz3QLoFhIPcjJ5ap4mPBWKAs,1779
+README.adoc,sha256=BDovQpvtV_QgxQKeqUVdCvZ_QcN9OY9ULyGS8gz2uWE,4128
+yubihsm/__init__.py,sha256=K0C8_aHvPfVH003G3zXrQKFYWtJhdWd0LtL_caP9qlc,910
+yubihsm/backends/__init__.py,sha256=vtVJ8LpEi3H8_EcwB0GfKEz0orHyPLsmEfKIPRMbbg4,1921
+yubihsm/backends/http.py,sha256=j1oOKHtgt9Ese1E3qlvQO3pGuIXMEtzPzXJVmtfsg1I,2263
+yubihsm/backends/usb.py,sha256=aGsF0EDojSAYkm-lTsAZg18eUHodvSO-5qMOryAw7JI,3244
+yubihsm/core.py,sha256=FHzI9hKB-CI9TaIf2bmGgoVlUBcmnVexISLNwFayHNY,34028
+yubihsm/defs.py,sha256=VFTEQE4joPkw9vLov93o72ejCf8fpDG3xBOpj-w3Q7k,9894
+yubihsm/exceptions.py,sha256=4CTBuq4guhUWZZhWnEOvPnJps7X2WF32d3w2TAaOy04,1449
+yubihsm/objects.py,sha256=dPhmmrI5AGaoGZCTD26W0ZS-TiXYMx50EPjKydAG4C8,51289
+yubihsm/utils.py,sha256=2c4qNzbYNjKg6iGTa3eGw802ySKyOBfd3wIPzBTcDt0,1332
+yubihsm-3.0.0.dist-info/COPYING,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+yubihsm-3.0.0.dist-info/METADATA,sha256=O2vugKOvWl8EXbPKhCfl7kCqrxYj3VyAMaWWhSL-LuI,1131
+yubihsm-3.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+yubihsm-3.0.0.dist-info/RECORD,,
