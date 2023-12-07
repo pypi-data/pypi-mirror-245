@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+SMmegabas.egg-info/PKG-INFO
+SMmegabas.egg-info/SOURCES.txt
+SMmegabas.egg-info/dependency_links.txt
+SMmegabas.egg-info/requires.txt
+SMmegabas.egg-info/top_level.txt
+megabas/__init__.py
