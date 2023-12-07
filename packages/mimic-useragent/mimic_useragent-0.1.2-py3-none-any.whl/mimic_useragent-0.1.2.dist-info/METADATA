@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: mimic-useragent
+Version: 0.1.2
+Summary: Simple user-agent generator.
+Home-page: https://github.com/kurotom/mimic_useragent
+License: LGPL-3.0-or-later
+Author: kurotom
+Author-email: 55354389+kurotom@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Project-URL: Bug Tracker, https://github.com/kurotom/mimic_useragent/issues
+Project-URL: Repository, https://github.com/kurotom/mimic_useragent
+Description-Content-Type: text/markdown
+
+# mimic_user_agent
+
+Funcion que retorna un 'user-agent' falso aleatorio o estático.
+
+# Uso
+
+```python
+>>> from mimic_useragent import mimic_user_agent
+>>> mimic_user_agent()
+'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0'
+>>>
+>>> mimic_user_agent(seed=10)
+'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:112.0) Gecko/20100101 Firefox/112.0'
+```
+
+Recibe un parámetro `int` para el uso de una *seed*, por defecto es `None`.
+
+---
+
+**Aclaración:**
+
+Por ahora, solamente genera user-agent Firefox.
+
+---
+
+# Tests
+
+```python
+python -m unittest
+```
+
