@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: unsplash-get
+Version: 0.1.1
+Summary: unsplash srape tool
+Home-page: https://github.com/streanger/unsplash_get
+Author: streanger
+Author-email: divisionexe@gmail.com
+License: MIT
+Keywords: unsplash scrape stock images
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: lxml
+Requires-Dist: beautifulsoup4
+
+unsplash_get
+======================
+Script for scraping unsplash. Only for educational purposes.
+
+Install
+**************************
+
+from pypi
+
+.. code-block:: bash
+
+    pip install unsplash-get
+
+from github
+
+.. code-block:: bash
+
+    pip install git+https://github.com/streanger/unsplash-get.git
+
+Usage from command line
+**************************
+
+.. code-block:: bash
+
+    # as module
+    python -m unsplash_get <word>
+    python -m unsplash_get orange
+
+    # as entry point
+    unsplash <word>
+    unsplash orange
+
+    # as script
+    python unsplash_get.py <word>
+    python unsplash_get.py orange
+
+Usage from Python
+**************************
+
+.. code-block:: python
+
+    from pathlib import Path
+    from unsplash_get import search, save_img
+    
+    # get list of urls
+    word = 'orange'
+    urls = search(word)
+    
+    # create directory
+    directory = Path(word)
+    directory.mkdir(exist_ok=True)
+
+    # save images
+    for index, url in enumerate(urls, start=1):
+        path = str(directory / f'{word}_{index:03}.jpg')
+        status = save_img(url, path)
+        print(f"{index:03}.{url} -> {path} ({status})")
+
+Load image to variable
+**************************
+
+it requires additional libraries (`PIL` and/or `numpy`), which could be installed with:
+
+.. code-block:: bash
+
+    pip install Pillow numpy
+
+.. code-block:: python
+
+    import io
+    import numpy as np
+    from PIL import Image
+    from unsplash_get import search, load_img
+
+    def load_img_to_pil(data):
+        img = Image.open(io.BytesIO(data))
+        return img
+
+    def load_image_to_numpy(data):
+        img = np.array(Image.open(io.BytesIO(data)))
+        return img
+
+    # get list of urls
+    word = 'orange'
+    urls = search(word)
+    url = url[4]
+
+    # read image
+    pil_img = load_img_to_pil(url)
+    numpy_img = load_image_to_numpy(url)
+
+Screenshots
+**************************
+
+.. image:: https://raw.githubusercontent.com/streanger/unsplash-get/master/images/unsplash1.png
