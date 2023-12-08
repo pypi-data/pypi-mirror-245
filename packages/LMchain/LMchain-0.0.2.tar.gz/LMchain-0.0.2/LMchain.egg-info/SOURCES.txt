@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+LMchain.egg-info/PKG-INFO
+LMchain.egg-info/SOURCES.txt
+LMchain.egg-info/dependency_links.txt
+LMchain.egg-info/top_level.txt
+lmchain/__init__.py
+lmchain/start_chatglm3_server.py
