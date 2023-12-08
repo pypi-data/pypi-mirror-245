@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: uscan-notify
+Version: 0.1.1
+Summary: Notify when uscan detects new upstream versions.
+License: MIT
+Author: Maytham Alsudany
+Author-email: maytha8thedev@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: platformdirs (>=4.0.0,<5.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# uscan-notify
+Command line tool to notify of any outdated Debian packages by using uscan info
+available from qa.d.o.
+
+## Install
+
+I can't publish to PyPi as new registrations are temporarily disabled, but you
+can install from the Codeberg package registry like so:
+
+```sh
+pip install --index-url https://codeberg.org/api/packages/Maytha8/pypi/simple/ uscan-notify
+```
+
+**From source**
+
+```
+git clone https://codeberg.org/Maytha8/uscan-notify
+cd uscan-notify
+
+poetry install
+poetry run uscan-notify --help # or
+
+pip install .
+```
+
+## Usage
+
+Use `--help` flag for usage info.
+
+
+### Example: email notifications
+
+Here's a bash script to send email notifications with the output (to use with
+e.g. cron)
+
+```bash
+result="$(uscan-notify --db-path <packages>)"
+
+if [[ $result ]]; then
+  echo "uscan-notify has found outdated packages, below are the results:
+
+$result" | mail -s "[uscan-notify] Outdated packages" "<your email>"
+fi
+
+```
+
+## Why?
+
+I wanted to setup email notifications whenever a new upstream version is released.
+
+## Copyright
+
+Copyright &copy; 2023 Maytham Alsudany `<maytha8thedev@gmail.com>`
+
+## License
+
+MIT (unless otherwise indicated). See [LICENSE](./LICENSE).
+

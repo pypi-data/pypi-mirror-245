@@ -1,0 +1,3 @@
+[console_scripts]
+uscan-notify=uscan_notify.main:main
+
