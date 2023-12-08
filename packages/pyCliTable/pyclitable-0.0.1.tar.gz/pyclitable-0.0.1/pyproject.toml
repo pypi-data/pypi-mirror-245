@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyCliTable"
+version = "0.0.1"
+authors = [
+  { name="Baboucarr", email="bbabucarr32@gmail.com" },
+]
+description = "A package designed to simplify the display of data in a tabular format."
+readme = "README.md"
+requires-python = ">=2.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/babucarr32/pyClicTable"
+Issues = "https://github.com/babucarr32/pyClicTable/issues"
