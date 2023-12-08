@@ -1,0 +1,16 @@
+python-dateutil
+PyYAML
+requests
+Deprecated
+pytest
+responses
+python-dotenv
+setuptools_scm
+invoke
+pylint
+PyJWT
+cachetools
+inputimeout
+flask
+websockets
+pandas
