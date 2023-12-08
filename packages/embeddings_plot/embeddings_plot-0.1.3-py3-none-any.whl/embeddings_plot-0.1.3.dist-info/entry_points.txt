@@ -1,0 +1,3 @@
+[console_scripts]
+embeddings-plot=embeddings_plot:embeddings_plot.main
+
