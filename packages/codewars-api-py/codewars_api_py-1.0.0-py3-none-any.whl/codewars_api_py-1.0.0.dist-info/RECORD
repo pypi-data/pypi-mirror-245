@@ -1,0 +1,12 @@
+codewars_api_py/__init__.py,sha256=_qFA0tz6F4oWS6eTL294bDx8iR5V3M0ICFFGWahlQc4,417
+codewars_api_py/__main__.py,sha256=Tw4NK2ZuBVvF3WcyE1X9H8__fD195UOUsqGMvz_LNeQ,1650
+codewars_api_py/api.py,sha256=mnipcwDx_xrs-eW5bSn-Gq5r7WWEfUpeBI8oDDvQK0k,10192
+codewars_api_py/cli.py,sha256=ft--GtozogWhOgoEbs6LEW8CCJQAE_bPSgGqdkD6cBk,2490
+codewars_api_py/config.py,sha256=sFQs52xddIU_pFb5yYZUQT9GLKoSlH7miYZTziTurbM,2158
+codewars_api_py/consts.py,sha256=M1NXE1Y1S2P30x_XSN_uPj93nKnMz71imMaNG4-ba10,632
+codewars_api_py/logs.py,sha256=3qQhZ6cezHyVny_NCH-ERWbs5pDd8woaktAy0dIfkKQ,642
+codewars_api_py-1.0.0.dist-info/entry_points.txt,sha256=6Il81WWIJphvwEzMeZgMWb0xi-BWVttDZne_x8MXNK0,65
+codewars_api_py-1.0.0.dist-info/LICENSE,sha256=oO50YGSwbQnKsHaBFuwmX9DUUmHUCHya0saYoHx6rA4,35803
+codewars_api_py-1.0.0.dist-info/METADATA,sha256=rP3VDAkB0gBJ4QWCtOhumlbi70N6fjvi7-0-jG0j2r8,4383
+codewars_api_py-1.0.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+codewars_api_py-1.0.0.dist-info/RECORD,,
