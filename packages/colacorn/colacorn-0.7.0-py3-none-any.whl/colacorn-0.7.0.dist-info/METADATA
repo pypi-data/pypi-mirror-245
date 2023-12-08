@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: colacorn
+Version: 0.7.0
+Author: Wang Shengyang
+Author-email: 1095046934@qq.com
+License-File: LICENSE
+Requires-Dist: azure-devops
+Requires-Dist: pandas
+Requires-Dist: aiohttp
+Requires-Dist: msrest
+
