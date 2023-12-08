@@ -1,0 +1,75 @@
+{% load i18n %}
+<form method="get" class="has-background-light py-3 px-3 my-4 noprint is-flex"> <!--onsubmit="return clean_filter(this)"-->
+  <div class="field is-grouped is-flex-grow-1 mb-0">
+    {% for field in filter.form %}
+      {% if field.name != "o" %}
+	<div class="control">
+	  <!-- <label class="label">{{field.label}}</label> -->
+	  <div class="select is-small" >
+	    <select name="{{field.name}}">
+	      {% if field.field.choices %}
+		<option value>
+		  {% if field.label != '[invalid name]' %}
+		    Select {{field.label}}		  
+		  {% else %}
+		    -----------
+		  {% endif %}
+		</option>
+	      {% endif %}
+              {% for o in field.field.widget.choices %}
+		{% if o.0 %}
+		  <option
+		    value="{{o.0}}"
+		    {% if field.value|stringformat:"s"|lower == o.0|stringformat:"s" or o.0|stringformat:"s" in field.value %}
+		      selected
+		    {% endif %}>
+		    {% if o.0 == 'unknown' %}
+		      {{field.label}}
+		    {% else %}
+		      {{o.1}}
+		    {% endif %}
+		  </option>
+		{% endif %}
+              {% endfor %}
+	    </select>
+	  </div>
+	</div>
+      {% endif %}
+    {% endfor %}
+    <div class="control">
+      <input class="button is-small" type="submit" value="{% translate "Filter" %}" />
+    </div>
+  </div>    
+  {% if filter.form.o %}
+    <div class="field is-flex is-align-items-center">
+      <label class="label is-small mb-0 mr-2">{% translate "Sort By" %}</label>
+      <div class="control">
+
+	<div class="select is-small" >
+	  <select name="o">
+            {% for o in filter.form.o.field.widget.choices %}
+	      {% if o.0 %}
+		<option
+		  value="{{o.0}}"
+			 {% if o.0 in filter.form.o.value %}
+		    selected
+			 {% endif %}>
+		  {{o.1}}
+		</option>
+	      {% endif %}
+            {% endfor %}
+	  </select>
+	</div>
+      </div>
+    </div>
+  {% endif %}
+  
+
+</form>
+<script>
+ document.querySelectorAll("[name=o]").forEach(e => {
+   e.addEventListener("change", ()=>{
+     e.closest("form").submit();     
+   });
+ });
+</script>

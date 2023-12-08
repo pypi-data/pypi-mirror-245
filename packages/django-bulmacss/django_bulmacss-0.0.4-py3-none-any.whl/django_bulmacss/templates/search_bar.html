@@ -1,0 +1,11 @@
+{% load i18n %}
+<form method="get">
+  <div class="field has-addons">
+    <div class="control">
+      <input type="search" name="search" autofocus class="input" placeholder="" value="{{search}}" />
+    </div>
+    <div class="control">
+      <input type="submit" value="{% translate "Search" %}" class="button" />
+    </div>
+  </div>
+</form>
