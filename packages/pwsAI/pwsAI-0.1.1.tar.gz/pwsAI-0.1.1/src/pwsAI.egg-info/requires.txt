@@ -1,0 +1,13 @@
+numpy
+matplotlib
+PySimpleGUI
+pwspy
+pillow
+scikit-image
+scikit-learn
+tifffile
+opencv-python
+patchify
+h5py
+rasterio
+tensorflow

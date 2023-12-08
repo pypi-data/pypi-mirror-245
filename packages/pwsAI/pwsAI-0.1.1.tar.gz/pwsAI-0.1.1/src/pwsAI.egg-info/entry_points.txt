@@ -1,0 +1,2 @@
+[gui_scripts]
+PwsAIGui = pwsAI.__main__:main
