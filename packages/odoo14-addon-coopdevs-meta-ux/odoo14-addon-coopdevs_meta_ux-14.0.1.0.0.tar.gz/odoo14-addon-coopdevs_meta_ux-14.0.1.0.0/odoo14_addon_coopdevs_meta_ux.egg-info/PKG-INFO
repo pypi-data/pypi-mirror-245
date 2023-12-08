@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: odoo14-addon-coopdevs-meta-ux
+Version: 14.0.1.0.0
+Summary: Module to automate the installation of a set of modules
+Home-page: https://www.coopdevs.org
+Author: Coopdevs
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Python: >=3.6

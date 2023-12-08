@@ -1,0 +1,10 @@
+setup.py
+odoo/addons/coopdevs_meta_ux/README.md
+odoo/addons/coopdevs_meta_ux/__init__.py
+odoo/addons/coopdevs_meta_ux/__manifest__.py
+odoo14_addon_coopdevs_meta_ux.egg-info/PKG-INFO
+odoo14_addon_coopdevs_meta_ux.egg-info/SOURCES.txt
+odoo14_addon_coopdevs_meta_ux.egg-info/dependency_links.txt
+odoo14_addon_coopdevs_meta_ux.egg-info/not-zip-safe
+odoo14_addon_coopdevs_meta_ux.egg-info/requires.txt
+odoo14_addon_coopdevs_meta_ux.egg-info/top_level.txt
