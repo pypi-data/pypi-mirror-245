@@ -1,0 +1,4 @@
+[console_scripts]
+docent-convert = docent.rest.commands:convert
+docent-document = docent.docs.commands:document
+docent-serve = docent.rest.commands:serve
