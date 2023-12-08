@@ -1,0 +1,12 @@
+numpy
+scipy
+pandas
+seaborn
+scanpy
+matplotlib
+scipy
+sklearn
+logging
+torch
+pyro
+ot
