@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+aolesrtc/__init__.py
+aolesrtc/aolesrtc.py
+aolesrtc.egg-info/PKG-INFO
+aolesrtc.egg-info/SOURCES.txt
+aolesrtc.egg-info/dependency_links.txt
+aolesrtc.egg-info/top_level.txt
