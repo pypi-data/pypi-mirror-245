@@ -1,0 +1,356 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# sköldpadda <weblate@turtle.garden>, 2023.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2023.
+# bittin1ddc447d824349b2 <bittin@reimu.nl>, 2023.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-05 18:54+0330\n"
+"PO-Revision-Date: 2023-12-06 01:09+0000\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/carburetor/"
+"translations/sv/>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.3-dev\n"
+
+#: src/carburetor/actions.py:79
+msgid "translator-credits"
+msgstr "skøldis <carburetor@turtle.garden>"
+
+#: src/carburetor/actions.py:109
+msgid "Disconnecting…"
+msgstr "Kopplar från…"
+
+#: src/carburetor/actions.py:113
+msgid "Connecting…"
+msgstr "Ansluter…"
+
+#: src/carburetor/actions.py:125
+msgid "You have a new identity!"
+msgstr "Du har en ny identitet!"
+
+#: src/carburetor/actions.py:127
+msgid "Tractor is not running!"
+msgstr "Tractor kör inte!"
+
+#: src/carburetor/actions.py:144
+msgid "Proxy has been unset"
+msgstr "Proxy har ställts av"
+
+#: src/carburetor/actions.py:147
+msgid "Proxy has been set"
+msgstr "Proxy har ställts"
+
+#: src/carburetor/actions.py:211 data/gtk/main.ui:91
+msgid "Stopped"
+msgstr "Stoppad"
+
+#: src/carburetor/actions.py:214 data/gtk/main.ui:52
+msgid "_Connect"
+msgstr "_Anslut"
+
+#: src/carburetor/actions.py:226
+msgid "Tractor is stopped"
+msgstr "Tractor är stoppad"
+
+#: src/carburetor/actions.py:235
+msgid "Running"
+msgstr "Kör"
+
+#: src/carburetor/actions.py:242
+msgid "_Disconnect"
+msgstr "_Koppla ifrån"
+
+#: src/carburetor/actions.py:252
+msgid "Tractor is running"
+msgstr "Tractor kör"
+
+#: src/carburetor/config.py:35 data/gtk/main.ui:37
+msgid "Carburetor"
+msgstr "Carburetor"
+
+#: src/carburetor/handler.py:112
+msgid "Austria"
+msgstr "Österrike"
+
+#: src/carburetor/handler.py:113
+msgid "Bulgaria"
+msgstr "Bulgarien"
+
+#: src/carburetor/handler.py:114
+msgid "Canada"
+msgstr "Kanada"
+
+#: src/carburetor/handler.py:115
+msgid "Switzerland"
+msgstr "Schweiz"
+
+#: src/carburetor/handler.py:116
+msgid "Czech"
+msgstr "Tjeckien"
+
+#: src/carburetor/handler.py:117
+msgid "Germany"
+msgstr "Tyskland"
+
+#: src/carburetor/handler.py:118
+msgid "Spain"
+msgstr "Spanien"
+
+#: src/carburetor/handler.py:119
+msgid "Finland"
+msgstr "Finland"
+
+#: src/carburetor/handler.py:120
+msgid "France"
+msgstr "Frankrike"
+
+#: src/carburetor/handler.py:121
+msgid "Ireland"
+msgstr "Irland"
+
+#: src/carburetor/handler.py:122
+msgid "Moldova"
+msgstr "Moldova"
+
+#: src/carburetor/handler.py:123
+msgid "Netherlands"
+msgstr "Nederländerna"
+
+#: src/carburetor/handler.py:124
+msgid "Norway"
+msgstr "Norge"
+
+#: src/carburetor/handler.py:125
+msgid "Poland"
+msgstr "Polen"
+
+#: src/carburetor/handler.py:126
+msgid "Romania"
+msgstr "Rumänien"
+
+#: src/carburetor/handler.py:127
+msgid "Seychelles"
+msgstr "Seychellerna"
+
+#: src/carburetor/handler.py:128
+msgid "Sweden"
+msgstr "Sverige"
+
+#: src/carburetor/handler.py:129
+msgid "Singapore"
+msgstr "Singapore"
+
+#: src/carburetor/handler.py:130
+msgid "Russia"
+msgstr "Ryssland"
+
+#: src/carburetor/handler.py:131
+msgid "Ukraine"
+msgstr "Ukraina"
+
+#: src/carburetor/handler.py:132
+msgid "United Kingdom"
+msgstr "Storbritannien"
+
+#: src/carburetor/handler.py:133
+msgid "United States"
+msgstr "Förenta staterna"
+
+#: src/carburetor/handler.py:148
+msgid "Auto (Best)"
+msgstr "Auto (bästa)"
+
+#: src/carburetor/handler.py:238 data/gtk/preferences.ui:120
+msgid "None"
+msgstr "Ingen"
+
+#: src/carburetor/handler.py:239
+msgid "Vanilla"
+msgstr "Utan ändringar"
+
+#: src/carburetor/handler.py:240
+msgid "Obfuscated"
+msgstr "Fördunklad"
+
+#: src/carburetor/handler.py:274
+msgid "_OK"
+msgstr "_Okej"
+
+#: src/carburetor/handler.py:277
+msgid "Can not save the bridges"
+msgstr "Kan inte spara broarna"
+
+#: src/carburetor/handler.py:278
+msgid "Please check the syntax of bridges"
+msgstr "Var god kolla syntaxen av broarna"
+
+#: src/carburetor/tasks.py:143
+msgid "Tractor is connected"
+msgstr "Tractor är kopplad"
+
+#: src/carburetor/tasks.py:145
+msgid "Tractor couldn't connect"
+msgstr "Tractor kunde inte koppla"
+
+#: data/gtk/help-overlay.ui:26 data/gtk/preferences.ui:28
+msgid "General"
+msgstr "Allmänt"
+
+#: data/gtk/help-overlay.ui:31
+msgctxt "shortcuts window item"
+msgid "Preferences"
+msgstr "Inställningar"
+
+#: data/gtk/help-overlay.ui:38
+msgctxt "shortcuts window item"
+msgid "Shortcuts"
+msgstr "Genvägar"
+
+#: data/gtk/help-overlay.ui:45
+msgctxt "shortcuts window item"
+msgid "Quit"
+msgstr "Avsluta"
+
+#: data/gtk/help-overlay.ui:52
+msgctxt "Shortcuts window group"
+msgid "Functionality"
+msgstr "Funktionell"
+
+#: data/gtk/help-overlay.ui:57
+msgctxt "shortcuts window item"
+msgid "Connect / Disconnect"
+msgstr "Anslut / Avkoppla"
+
+#: data/gtk/help-overlay.ui:64
+msgctxt "shortcuts window item"
+msgid "New ID"
+msgstr "Ny ID"
+
+#: data/gtk/main.ui:46
+msgctxt "tooltip"
+msgid "Main Menu"
+msgstr "Huvudmeny"
+
+#: data/gtk/main.ui:98
+msgid "_Cancel"
+msgstr "_Avbryt"
+
+#: data/gtk/main.ui:158
+msgctxt "Action Menu Item"
+msgid "_New ID"
+msgstr "_Ny ID"
+
+#: data/gtk/main.ui:162
+msgctxt "Action Menu Item"
+msgid "_Check connection"
+msgstr "_Kolla anslutning"
+
+#: data/gtk/main.ui:166
+msgctxt "Action Menu Item"
+msgid "_Toggle proxy on system"
+msgstr "_Växla proxy på systemet"
+
+#: data/gtk/main.ui:172
+msgctxt "App Menu Item"
+msgid "_Preferences"
+msgstr "_Inställningar"
+
+#: data/gtk/main.ui:176
+msgid "_Keyboard Shortcuts"
+msgstr "_Tangentbordsgenvägar"
+
+#: data/gtk/main.ui:180
+msgctxt "App Menu Item"
+msgid "_About Carburetor"
+msgstr "_Om Carburetor"
+
+#: data/gtk/preferences.ui:31
+msgid "Exit Node"
+msgstr "Utgångsnode"
+
+#: data/gtk/preferences.ui:35
+msgid "The country you want to connect from"
+msgstr "Landet som du vill ansluta från"
+
+#: data/gtk/preferences.ui:36
+msgid "Exit Country"
+msgstr "Utgångsland"
+
+#: data/gtk/preferences.ui:45
+msgid "Accept Connections"
+msgstr "Godkänn anslutningar"
+
+#: data/gtk/preferences.ui:48
+msgid "Allow external devices to use this network"
+msgstr "Tillåt externa enheter att använda detta nätverk"
+
+#: data/gtk/preferences.ui:59
+msgid "Ports"
+msgstr "Portar"
+
+#: data/gtk/preferences.ui:62
+msgid "Socks Port"
+msgstr "Socks Port"
+
+#: data/gtk/preferences.ui:66
+msgid "Local port on which Tractor would be listen"
+msgstr "Lokal port som Tractor ska lyssna på"
+
+#: data/gtk/preferences.ui:74
+msgid "DNS Port"
+msgstr "DNS Port"
+
+#: data/gtk/preferences.ui:78
+msgid "Local port on which you would have an anonymous name server"
+msgstr "Lokal port på vilken du skulle ha en anonym namnserver"
+
+#: data/gtk/preferences.ui:86
+msgid "HTTP Port"
+msgstr "HTTP Port"
+
+#: data/gtk/preferences.ui:90
+msgid "Local port on which a HTTP tunnel would be listen"
+msgstr "Lokal port på vilken en HTTP-tunnel skulle lyssna på"
+
+#: data/gtk/preferences.ui:101 data/gtk/preferences.ui:132
+msgid "Bridges"
+msgstr "Broar"
+
+#. Type of the bridge to use
+#: data/gtk/preferences.ui:104
+msgid "Type"
+msgstr "Typ"
+
+#: data/gtk/preferences.ui:108
+msgid "Type of bridge"
+msgstr "Typ av bro"
+
+#: data/gtk/preferences.ui:115
+msgid "Client Transport Plugin"
+msgstr "Klienttransport Insticksmodul"
+
+#: data/gtk/preferences.ui:154
+msgid "_Save"
+msgstr "_Spara"
+
+#: data/gtk/preferences.ui:155
+msgid "Save Bridges as a file in your local configs"
+msgstr "Spara bryggor som en fil i dina lokala konfigurationer"
+
+#~ msgid "GTK frontend for Tractor"
+#~ msgstr "GTK-användargränssnitt för Tractor"
+
+#~ msgid "Copyright © 2019-2023, Tractor Team"
+#~ msgstr "Copyright © 2019-2023, Tractor Team"
+
+#~ msgid "For Tractor"
+#~ msgstr "För Tractor"

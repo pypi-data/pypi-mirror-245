@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.16.0 -->
+<!-- Danial Behzadi <dani.behzi@ubuntu.com>, 2023-->
+<interface domain="carburetor">
+  <!-- interface-description This file is part of Carburetor. -->
+  <!-- interface-copyright Carburetor is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Carburetor is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Carburetor.  If not, see <http://www.gnu.org/licenses/>. -->
+  <!-- interface-authors Danial Behzadi <dani.behzi@ubuntu.com> -->
+  <requires lib="gtk" version="4.6"/>
+  <object class="GtkShortcutsWindow" id="help_overlay_w">
+    <property name="hide-on-close">True</property>
+    <child>
+      <object class="GtkShortcutsSection">
+        <child>
+          <object class="GtkShortcutsGroup">
+            <property name="title" translatable="yes">General</property>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="accelerator">&lt;Ctrl&gt;comma</property>
+                <property name="action-name">app.preferences</property>
+                <property name="title" translatable="yes" context="shortcuts window item">Preferences</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="accelerator">&lt;Ctrl&gt;question</property>
+                <property name="action-name">app.shortcuts</property>
+                <property name="title" translatable="yes" context="shortcuts window item">Shortcuts</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="accelerator">&lt;Ctrl&gt;q</property>
+                <property name="action-name">app.quit</property>
+                <property name="title" translatable="yes" context="shortcuts window item">Quit</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkShortcutsGroup">
+            <property name="title" translatable="yes" context="Shortcuts window group">Functionality</property>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="accelerator">F9</property>
+                <property name="action-name">app.connect</property>
+                <property name="title" translatable="yes" context="shortcuts window item">Connect / Disconnect</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="accelerator">F5</property>
+                <property name="action-name">app.new_id</property>
+                <property name="title" translatable="yes" context="shortcuts window item">New ID</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

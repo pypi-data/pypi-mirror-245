@@ -1,0 +1,2 @@
+recursive-include src/carburetor/locales *
+include src/carburetor/res.gresource

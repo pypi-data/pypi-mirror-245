@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/io/frama/tractor/carburetor">
+    <file compressed="true">icons/scalable/apps/io.frama.tractor.carburetor.svg</file>
+    <file compressed="true">gtk/main.ui</file>
+    <file compressed="true">gtk/preferences.ui</file>
+    <file compressed="true">gtk/help-overlay.ui</file>
+    <file compressed="true">gtk/style.css</file>
+  </gresource>
+  <gresource>
+    <file compressed="true">metainfo/io.frama.tractor.carburetor.metainfo.xml</file>
+  </gresource>
+</gresources>

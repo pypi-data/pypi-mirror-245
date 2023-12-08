@@ -1,0 +1,19 @@
+#!/bin/bash
+# Released under GPLv3+ License
+# Danial Behzadi<dani.behzi@ubuntu.com>, 2019-2023
+
+set -e
+
+echo '' >messages.po
+for py_file in src/carburetor/*.py; do
+	xgettext --from-code utf-8 --language Python -j $py_file
+done
+for ui_file in data/gtk/*.ui; do
+	xgettext --from-code utf-8 -j $ui_file
+done
+mv messages.po src/carburetor/locales/carburetor.pot
+
+cd data
+glib-compile-resources res.xml
+cd ..
+mv data/res.gresource src/carburetor

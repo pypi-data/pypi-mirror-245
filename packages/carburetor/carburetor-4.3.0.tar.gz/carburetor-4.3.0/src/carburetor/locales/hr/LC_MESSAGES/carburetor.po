@@ -1,0 +1,410 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Milo Ivir <mail@milotype.de>, 2020, 2021, 2022.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2020, 2021, 2022, 2023.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-05 18:54+0330\n"
+"PO-Revision-Date: 2023-12-03 15:57+0000\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
+"Language-Team: Croatian <https://hosted.weblate.org/projects/carburetor/"
+"translations/hr/>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.3-dev\n"
+
+#: src/carburetor/actions.py:79
+msgid "translator-credits"
+msgstr "Milo Ivir <mail@milotype.de>"
+
+#: src/carburetor/actions.py:109
+msgid "Disconnecting…"
+msgstr "Odspajanje …"
+
+#: src/carburetor/actions.py:113
+msgid "Connecting…"
+msgstr "Povezivanje …"
+
+#: src/carburetor/actions.py:125
+msgid "You have a new identity!"
+msgstr "Imaš novi identitet!"
+
+#: src/carburetor/actions.py:127
+msgid "Tractor is not running!"
+msgstr "Tractor nije pokrenut!"
+
+#: src/carburetor/actions.py:144
+msgid "Proxy has been unset"
+msgstr ""
+
+#: src/carburetor/actions.py:147
+msgid "Proxy has been set"
+msgstr ""
+
+#: src/carburetor/actions.py:211 data/gtk/main.ui:91
+msgid "Stopped"
+msgstr "Prekinuto"
+
+#: src/carburetor/actions.py:214 data/gtk/main.ui:52
+msgid "_Connect"
+msgstr "_Poveži"
+
+#: src/carburetor/actions.py:226
+msgid "Tractor is stopped"
+msgstr "Tractor je prekinut"
+
+#: src/carburetor/actions.py:235
+msgid "Running"
+msgstr "Pokrenuto"
+
+#: src/carburetor/actions.py:242
+msgid "_Disconnect"
+msgstr "_Odspojeno"
+
+#: src/carburetor/actions.py:252
+msgid "Tractor is running"
+msgstr "Tractor je pokrenut"
+
+#: src/carburetor/config.py:35 data/gtk/main.ui:37
+msgid "Carburetor"
+msgstr "Carburetor"
+
+#: src/carburetor/handler.py:112
+msgid "Austria"
+msgstr "Austrija"
+
+#: src/carburetor/handler.py:113
+msgid "Bulgaria"
+msgstr "Bugarska"
+
+#: src/carburetor/handler.py:114
+msgid "Canada"
+msgstr "Kanada"
+
+#: src/carburetor/handler.py:115
+msgid "Switzerland"
+msgstr "Švicarska"
+
+#: src/carburetor/handler.py:116
+msgid "Czech"
+msgstr "Češka"
+
+#: src/carburetor/handler.py:117
+msgid "Germany"
+msgstr "Njemačka"
+
+#: src/carburetor/handler.py:118
+msgid "Spain"
+msgstr "Španjolska"
+
+#: src/carburetor/handler.py:119
+msgid "Finland"
+msgstr "Finska"
+
+#: src/carburetor/handler.py:120
+msgid "France"
+msgstr "Francuska"
+
+#: src/carburetor/handler.py:121
+msgid "Ireland"
+msgstr "Irska"
+
+#: src/carburetor/handler.py:122
+msgid "Moldova"
+msgstr "Moldavija"
+
+#: src/carburetor/handler.py:123
+msgid "Netherlands"
+msgstr "Nizozemska"
+
+#: src/carburetor/handler.py:124
+msgid "Norway"
+msgstr "Norveška"
+
+#: src/carburetor/handler.py:125
+msgid "Poland"
+msgstr "Poljska"
+
+#: src/carburetor/handler.py:126
+msgid "Romania"
+msgstr "Rumunjska"
+
+#: src/carburetor/handler.py:127
+msgid "Seychelles"
+msgstr "Sejšeli"
+
+#: src/carburetor/handler.py:128
+msgid "Sweden"
+msgstr "Švedska"
+
+#: src/carburetor/handler.py:129
+msgid "Singapore"
+msgstr "Singapur"
+
+#: src/carburetor/handler.py:130
+msgid "Russia"
+msgstr "Rusija"
+
+#: src/carburetor/handler.py:131
+msgid "Ukraine"
+msgstr "Ukrajina"
+
+#: src/carburetor/handler.py:132
+msgid "United Kingdom"
+msgstr "Ujedinjeno Kraljevstvo"
+
+#: src/carburetor/handler.py:133
+msgid "United States"
+msgstr "Sjedinjene Države"
+
+#: src/carburetor/handler.py:148
+msgid "Auto (Best)"
+msgstr "Automatski (najbolje)"
+
+#: src/carburetor/handler.py:238 data/gtk/preferences.ui:120
+msgid "None"
+msgstr "Ništa"
+
+#: src/carburetor/handler.py:239
+msgid "Vanilla"
+msgstr "Vanilla"
+
+#: src/carburetor/handler.py:240
+msgid "Obfuscated"
+msgstr "Pomućeno"
+
+#: src/carburetor/handler.py:274
+msgid "_OK"
+msgstr "_U redu"
+
+#: src/carburetor/handler.py:277
+msgid "Can not save the bridges"
+msgstr "Nije moguće spremiti mostove"
+
+#: src/carburetor/handler.py:278
+msgid "Please check the syntax of bridges"
+msgstr "Provjeri sintaksu mostova"
+
+#: src/carburetor/tasks.py:143
+msgid "Tractor is connected"
+msgstr "Tractor je povezan"
+
+#: src/carburetor/tasks.py:145
+msgid "Tractor couldn't connect"
+msgstr "Tractor se nije uspio povezati"
+
+#: data/gtk/help-overlay.ui:26 data/gtk/preferences.ui:28
+msgid "General"
+msgstr "Opće"
+
+#: data/gtk/help-overlay.ui:31
+#, fuzzy
+#| msgctxt "App Menu Item"
+#| msgid "_Preferences"
+msgctxt "shortcuts window item"
+msgid "Preferences"
+msgstr "Osobitosti"
+
+#: data/gtk/help-overlay.ui:38
+#, fuzzy
+msgctxt "shortcuts window item"
+msgid "Shortcuts"
+msgstr "Prečaci"
+
+#: data/gtk/help-overlay.ui:45
+#, fuzzy
+#| msgctxt "App Menu Item"
+#| msgid "_Quit"
+msgctxt "shortcuts window item"
+msgid "Quit"
+msgstr "Zatvori"
+
+#: data/gtk/help-overlay.ui:52
+msgctxt "Shortcuts window group"
+msgid "Functionality"
+msgstr ""
+
+#: data/gtk/help-overlay.ui:57
+#, fuzzy
+#| msgid "_Disconnect"
+msgctxt "shortcuts window item"
+msgid "Connect / Disconnect"
+msgstr "_Odspojeno"
+
+#: data/gtk/help-overlay.ui:64
+#, fuzzy
+#| msgctxt "Action Menu Item"
+#| msgid "_New ID"
+msgctxt "shortcuts window item"
+msgid "New ID"
+msgstr "Novi ID"
+
+#: data/gtk/main.ui:46
+msgctxt "tooltip"
+msgid "Main Menu"
+msgstr "Glavni izbornik"
+
+#: data/gtk/main.ui:98
+msgid "_Cancel"
+msgstr "_Odustani"
+
+#: data/gtk/main.ui:158
+msgctxt "Action Menu Item"
+msgid "_New ID"
+msgstr "_Novi ID"
+
+#: data/gtk/main.ui:162
+msgctxt "Action Menu Item"
+msgid "_Check connection"
+msgstr "_Provjeri vezu"
+
+#: data/gtk/main.ui:166
+msgctxt "Action Menu Item"
+msgid "_Toggle proxy on system"
+msgstr "_Uklj./Isklj. proxy na sustavu"
+
+#: data/gtk/main.ui:172
+msgctxt "App Menu Item"
+msgid "_Preferences"
+msgstr "_Postavke"
+
+#: data/gtk/main.ui:176
+msgid "_Keyboard Shortcuts"
+msgstr "_Tipkovni prečaci"
+
+#: data/gtk/main.ui:180
+msgctxt "App Menu Item"
+msgid "_About Carburetor"
+msgstr "_Carburetor podaci"
+
+#: data/gtk/preferences.ui:31
+msgid "Exit Node"
+msgstr "Čvor izlaza"
+
+#: data/gtk/preferences.ui:35
+msgid "The country you want to connect from"
+msgstr "Zemlja iz koje se želiš povezati"
+
+#: data/gtk/preferences.ui:36
+msgid "Exit Country"
+msgstr "Zemlja izlaza"
+
+#: data/gtk/preferences.ui:45
+msgid "Accept Connections"
+msgstr "Prihvati veze"
+
+#: data/gtk/preferences.ui:48
+msgid "Allow external devices to use this network"
+msgstr "Dopusti vanjskim uređajima koristiti ovu mrežu"
+
+#: data/gtk/preferences.ui:59
+msgid "Ports"
+msgstr "Priključci"
+
+#: data/gtk/preferences.ui:62
+msgid "Socks Port"
+msgstr "Priključak za Socks"
+
+#: data/gtk/preferences.ui:66
+msgid "Local port on which Tractor would be listen"
+msgstr "Lokalni priključak na kojem se Tractor prisluškuje"
+
+#: data/gtk/preferences.ui:74
+msgid "DNS Port"
+msgstr "Priključak za DNS"
+
+#: data/gtk/preferences.ui:78
+msgid "Local port on which you would have an anonymous name server"
+msgstr "Lokalni priključak na kojem se može nalaziti anonimni poslužitelj"
+
+#: data/gtk/preferences.ui:86
+msgid "HTTP Port"
+msgstr "Priključak za HTTP"
+
+#: data/gtk/preferences.ui:90
+msgid "Local port on which a HTTP tunnel would be listen"
+msgstr "Lokalni priključak na kojem se HTTP tunel prisluškuje"
+
+#: data/gtk/preferences.ui:101 data/gtk/preferences.ui:132
+msgid "Bridges"
+msgstr "Mostovi"
+
+#. Type of the bridge to use
+#: data/gtk/preferences.ui:104
+msgid "Type"
+msgstr "Vrsta"
+
+#: data/gtk/preferences.ui:108
+msgid "Type of bridge"
+msgstr "Vrsta mosta"
+
+#: data/gtk/preferences.ui:115
+msgid "Client Transport Plugin"
+msgstr "Dodatak klijentskog transporta"
+
+#: data/gtk/preferences.ui:154
+msgid "_Save"
+msgstr "_Spremi"
+
+#: data/gtk/preferences.ui:155
+msgid "Save Bridges as a file in your local configs"
+msgstr "Spremi mostove kao datoteku u lokalnim konfiguracijama"
+
+#~ msgid "GTK frontend for Tractor"
+#~ msgstr "GTK sučelje za Tractor"
+
+#~ msgid "Copyright © 2019-2023, Tractor Team"
+#~ msgstr "Autorska prava © 2019. – 2023., Tractor tim"
+
+#~ msgid "For Tractor"
+#~ msgstr "Za Tractor"
+
+#~ msgid "Source Code"
+#~ msgstr "Izvorni kod"
+
+#~ msgid "Use obfs4proxy"
+#~ msgstr "Koristi obfs4proxy"
+
+#~ msgid "Please specify the plugin executable file"
+#~ msgstr "Odredi izvršnu datoteku dodatka"
+
+#~ msgid "Start"
+#~ msgstr "Pokreni"
+
+#~ msgid "Stop"
+#~ msgstr "Prekini"
+
+#~ msgid "stopping…"
+#~ msgstr "prekidanje …"
+
+#~ msgid "starting…"
+#~ msgstr "pokretanje …"
+
+#~ msgid "Unset Proxy"
+#~ msgstr "Poništi proxy"
+
+#~ msgid "Set Proxy"
+#~ msgstr "Postavi proxy"
+
+#~ msgid "<b>Use bridges</b>"
+#~ msgstr "<b>Koristi mostove</b>"
+
+#~ msgid "<small>Bridges help you to bypass tor sensorship</small>"
+#~ msgstr "<small>Mostovi pomažu zaobići cenzuru</small>"
+
+#~ msgid "Bridges:"
+#~ msgstr "Mostovi:"
+
+#~ msgid "<b>obfs4proxy executable</b>"
+#~ msgstr "<b>Izvršna datoteka obfs4proxy</b>"
+
+#~ msgid "<small>You should specify where is obfs4proxy file</small>"
+#~ msgstr "<small>Odredi mjesto datoteke obfs4proxy</small>"
