@@ -1,0 +1,3 @@
+include src/syntopy/bin/linux/topologic/*
+include src/syntopy/bin/linux/topologic.libs/*
+include src/syntopy/bin/windows/topologic/*

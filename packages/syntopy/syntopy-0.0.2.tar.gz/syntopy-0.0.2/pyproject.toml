@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "syntopy"
+version = "0.0.2"
+authors = [
+  { name="Syntopy", email="info@syntopy.io" },
+]
+description = "An Advanced Spatial Modelling and Analysis Software Library for Architecture, Engineering, and Construction."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "tqdm",
+    "plotly",
+]
+[project.urls]
+"Homepage" = "https://github.com/wassimj/Syntopy"
+"Bug Tracker" = "https://github.com/wassimj/Syntopy/issues"
+"Documentation" = "https://syntopy.io"
+
