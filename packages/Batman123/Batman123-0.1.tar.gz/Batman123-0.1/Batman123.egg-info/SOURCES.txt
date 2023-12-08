@@ -1,0 +1,5 @@
+setup.py
+Batman123.egg-info/PKG-INFO
+Batman123.egg-info/SOURCES.txt
+Batman123.egg-info/dependency_links.txt
+Batman123.egg-info/top_level.txt
