@@ -1,0 +1,10 @@
+License.lic
+MANIFEST.in
+setup.py
+databricks_delta_utility.egg-info/PKG-INFO
+databricks_delta_utility.egg-info/SOURCES.txt
+databricks_delta_utility.egg-info/dependency_links.txt
+databricks_delta_utility.egg-info/requires.txt
+databricks_delta_utility.egg-info/top_level.txt
+utility_manager/__init__.py
+utility_manager/dbdelta_manager.py

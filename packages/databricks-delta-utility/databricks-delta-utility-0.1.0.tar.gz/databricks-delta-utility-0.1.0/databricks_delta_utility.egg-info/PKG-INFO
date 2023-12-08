@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: databricks-delta-utility
+Version: 0.1.0
+Summary: Utility package for managing Delta tables on Databricks
+Home-page: https://github.com/your-username/databricks-delta-utility
+Author: Sachin Dhiman
+Author-email: sachindhiman1@live.in
+Project-URL: Bug Reports, https://github.com/your-username/databricks-delta-utility/issues
+Project-URL: Source, https://github.com/your-username/databricks-delta-utility
+Keywords: databricks delta utility
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: License.lic
+Requires-Dist: databricks-api
+Requires-Dist: delta-tables
+
+    My Databricks Package is a Python package designed to simplify Delta table management on Databricks.
+    It provides functionalities to create, read, update, and delete Delta tables, with parameterization for table names,
+    prefix, and suffix. The package also auto-detects the Databricks workspace and current user.
+    
