@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/tokenizers_pegasus/__init__.py
+src/tokenizers_pegasus/data_utils.py
+src/tokenizers_pegasus/tokenizers_pegasus.py
+src/tokenizers_pegasus.egg-info/PKG-INFO
+src/tokenizers_pegasus.egg-info/SOURCES.txt
+src/tokenizers_pegasus.egg-info/dependency_links.txt
+src/tokenizers_pegasus.egg-info/top_level.txt

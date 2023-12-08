@@ -1,0 +1,18 @@
+[project]
+name = "tokenizers_pegasus"
+version = "0.0.5"
+authors = [
+  { name="xiaoql", email="xiaoql@hollycrm.com" },
+]
+description = "pegasus tokenizers "
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Qiliang/pegasus"
+Issues = "https://github.com/Qiliang/pegasus/issues"
