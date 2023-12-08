@@ -1,0 +1,16 @@
+django_user_trace/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_user_trace/apps.py,sha256=qPdd49fN1FlZpWx8px7yWwXdu1No_eTkeEXOInTLcaw,382
+django_user_trace/conf.py,sha256=mSIxoAGI6MgBkji-Qj0w9Y7sw_-jWvkqAxGKf44sw2U,2903
+django_user_trace/context.py,sha256=H1XULUCP1PYyru5-K5YUrtYXVUQuXh1OHVEwelzP29E,527
+django_user_trace/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_user_trace/contrib/celery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_user_trace/contrib/celery/apps.py,sha256=GgaPqSnS9mWG4TxP1Tn4v18EAYWEBTWUT4rtkTel6nU,401
+django_user_trace/contrib/celery/signals.py,sha256=o0JI25LGY8ygyKVJ3pycz6KqAVmkM-Z6porpoh6VDSE,1584
+django_user_trace/log.py,sha256=mgL7PSrVcm_alVotIyD6M09XdPID-8cCbvwDlOer690,1315
+django_user_trace/middleware.py,sha256=AUYgQFnPIvMW0Tm9frWfDoCoEnUuyJHJ258gKCqKooo,3408
+django_user_trace/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_user_trace/signals.py,sha256=YBBjSqG2Imq0mir28tN2yeGBiphB5OswBViMyaEoWzY,990
+django_user_trace/utils.py,sha256=so83-D4sNSX6DDQXpjbek1bBeJ8WIiFfw_mW4ZXQoVI,1930
+django_user_trace-2.0.0.dist-info/METADATA,sha256=O1Zdhwz8uNBvLtq4J9qP1IQwZSJzgZXcYI3JJEnY1B0,4781
+django_user_trace-2.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+django_user_trace-2.0.0.dist-info/RECORD,,
