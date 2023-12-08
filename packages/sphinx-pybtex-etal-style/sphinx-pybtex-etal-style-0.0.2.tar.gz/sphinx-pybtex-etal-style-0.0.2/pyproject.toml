@@ -1,0 +1,230 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools>=61.2",
+    "setuptools_scm",
+]
+
+[project]
+authors = [{name = "Common Partial Wave Analysis", email = "compwa-admin@ep1.rub.de"}]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python",
+    "Topic :: Documentation",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+dependencies = ["pybtex"]
+description = "Abbreviate long author lists with et al. in BibTeX bibliographies for Sphinx"
+dynamic = ["version"]
+keywords = [
+    "bibliography",
+    "bibtex",
+    "sphinx",
+]
+license = {text = "BSD 3-Clause License"}
+maintainers = [{email = "compwa-admin@ep1.rub.de"}]
+name = "sphinx-pybtex-etal-style"
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = ["sphinx-pybtex-etal-style[sty]"]
+format = ["black"]
+lint = [
+    "ruff",
+    "sphinx-pybtex-etal-style[mypy]",
+]
+mypy = [
+    "Sphinx",
+    "mypy",
+]
+sty = [
+    "pre-commit >=1.4.0",
+    "sphinx-pybtex-etal-style[format]",
+    "sphinx-pybtex-etal-style[lint]",
+]
+
+[project.readme]
+content-type = "text/markdown"
+file = "README.md"
+
+[project.urls]
+Changelog = "https://github.com/ComPWA/sphinx-pybtex-etal-style/releases"
+Documentation = "https://github.com/ComPWA/sphinx-pybtex-etal-style/blob/main/README.md"
+Source = "https://github.com/ComPWA/sphinx-pybtex-etal-style"
+Tracker = "https://github.com/ComPWA/sphinx-pybtex-etal-style/issues"
+
+[tool.setuptools]
+include-package-data = true
+license-files = ["LICENSE"]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.setuptools.packages.find]
+namespaces = false
+where = ["src"]
+
+[tool.setuptools_scm]
+write_to = "src/version.py"
+
+[tool.black]
+exclude = '''
+/(
+    .*\.egg-info
+    | .*build
+    | \.eggs
+    | \.git
+    | \.pytest_cache
+    | \.tox
+    | \.venv
+    | \.vscode
+    | dist
+)/
+'''
+include = '\.pyi?$'
+preview = true
+target-version = [
+    "py310",
+    "py311",
+    "py312",
+    "py37",
+    "py38",
+    "py39",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+
+[tool.mypy]
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+files = [
+    "**/*.py",
+    "**/*.pyi",
+]
+show_error_codes = true
+warn_unused_configs = true
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = ["pybtex.*"]
+
+[tool.pyright]
+exclude = [
+    "**/.git",
+    "**/.ipynb_checkpoints",
+    "**/.mypy_cache",
+    "**/.pytest_cache",
+    "**/.tox",
+    "**/__pycache__",
+    "**/_build",
+]
+reportGeneralTypeIssues = false
+reportMissingImports = false
+reportMissingParameterType = false
+reportMissingTypeArgument = false
+reportUnboundVariable = false
+reportUnknownArgumentType = false
+reportUnknownMemberType = false
+reportUnknownParameterType = false
+reportUnknownVariableType = false
+reportUntypedFunctionDecorator = false
+reportUnusedClass = true
+reportUnusedFunction = true
+reportUnusedImport = true
+reportUnusedVariable = true
+typeCheckingMode = "strict"
+
+[tool.ruff]
+extend-select = [
+    "A",
+    "B",
+    "BLE",
+    "C4",
+    "C90",
+    "D",
+    "EM",
+    "ERA",
+    "FA",
+    "I",
+    "ICN",
+    "INP",
+    "ISC",
+    "N",
+    "NPY",
+    "PGH",
+    "PIE",
+    "PL",
+    "Q",
+    "RET",
+    "RSE",
+    "RUF",
+    "S",
+    "SIM",
+    "T20",
+    "TCH",
+    "TID",
+    "TRY",
+    "UP",
+    "YTT",
+]
+ignore = [
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D107",
+    "D203",
+    "D213",
+    "D407",
+    "D416",
+    "E501",
+    "SIM108",
+    "UP036",
+]
+show-fixes = true
+src = ["src"]
+target-version = "py37"
+task-tags = ["cspell"]
+
+[tool.ruff.per-file-ignores]
+"setup.py" = ["D100"]
+"tests/*" = [
+    "D",
+    "INP001",
+    "PGH001",
+    "PLR0913",
+    "PLR2004",
+    "S101",
+]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.tomlsort]
+all = false
+ignore_case = true
+in_place = true
+sort_first = [
+    "build-system",
+    "project",
+    "tool.setuptools",
+    "tool.setuptools_scm",
+]
+sort_table_keys = true
+spaces_indent_inline_array = 4
+trailing_comma_inline_array = true

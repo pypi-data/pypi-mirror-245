@@ -1,0 +1,56 @@
+{
+  "enableFiletypes": [
+    "git-commit",
+    "github-actions-workflow",
+    "julia",
+    "jupyter"
+  ],
+  "flagWords": [
+    "analyse",
+    "colour",
+    "comparision",
+    "favour",
+    "flavour",
+    "hte",
+    "optimise",
+    "paramater",
+    "parmater",
+    "transision",
+    "transisions"
+  ],
+  "ignorePaths": [
+    "**/.cspell.json",
+    ".editorconfig",
+    ".gitignore",
+    ".pre-commit-config.yaml",
+    ".prettierignore",
+    ".vscode/*",
+    "pyproject.toml"
+  ],
+  "ignoreWords": [
+    "PyPI",
+    "bookfinder",
+    "commitlint",
+    "etal",
+    "isbnsearch",
+    "prereleased",
+    "rtfd",
+    "sphinxcontrib",
+    "unsrt"
+  ],
+  "language": "en-US",
+  "version": "0.2",
+  "words": [
+    "ampform",
+    "apidoc",
+    "autoapi",
+    "autodoc",
+    "bibtex",
+    "ComPWA",
+    "conda",
+    "mypy",
+    "pybtex",
+    "PYTHONHASHSEED",
+    "SymPy"
+  ]
+}
