@@ -1,0 +1,7 @@
+certifi
+decorator
+pathlib
+dataclasses
+PyYaml
+pandas
+numpy>=1.22.2
