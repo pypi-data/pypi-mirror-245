@@ -1,0 +1,8 @@
+mtcnnruntime/__init__.py,sha256=gokibZHjBdCUIFZzp9rAHXK_RLjTq0ntP4GFpqSHIpg,82
+mtcnnruntime/box_utils.py,sha256=9Gi9z8CinznfZCf4b6nDutNOpaJWK9A0V9ShGzcMaJw,7128
+mtcnnruntime/detector.py,sha256=r2srb8MFL9HOXv4w6hPSyTYrGrPFTOvqTrEN1owTTBc,20758
+mtcnnruntime/first_stage.py,sha256=h3oIeW0-Q3-BJVeAePmIV0FDrsfPykr3SxP-_yknYSs,3183
+mtcnn_runtime-0.0.1.dist-info/METADATA,sha256=NIFQoJLndFp7F7x2vYdt-lnreg5sjnPwllSq9IUEF50,1089
+mtcnn_runtime-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+mtcnn_runtime-0.0.1.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+mtcnn_runtime-0.0.1.dist-info/RECORD,,
