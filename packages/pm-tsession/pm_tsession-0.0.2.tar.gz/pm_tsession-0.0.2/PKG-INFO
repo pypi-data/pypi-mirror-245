@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pm-tsession
+Version: 0.0.2
+Summary: Paste text into tmux windows and capture output
+Project-URL: Documentation, https://github.com/unknown/pm-tsession#readme
+Project-URL: Issues, https://github.com/unknown/pm-tsession/issues
+Project-URL: Source, https://github.com/unknown/pm-tsession
+Author-email: Trey Hunner <trey@treyhunner.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: libtmux==0.20.0
+Description-Content-Type: text/markdown
+
+# pm-tsession
+
+[![PyPI - Version](https://img.shields.io/pypi/v/pm-tsession.svg)](https://pypi.org/project/pm-tsession)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pm-tsession.svg)](https://pypi.org/project/pm-tsession)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install pm-tsession
+```
+
+## License
+
+`pm-tsession` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
