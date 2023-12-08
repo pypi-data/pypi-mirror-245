@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: karrio.laposte
+Version: 2023.9.2
+Summary: Karrio - La Poste Shipping Extension
+Home-page: https://github.com/karrioapi/karrio
+Author: karrio
+Author-email: hello@karrio.io
+License: Apache-2.0
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: karrio
+
+
+# karrio.laposte
+
+This package is a La Poste extension of the [karrio](https://pypi.org/project/karrio) multi carrier shipping SDK.
+
+## Requirements
+
+`Python 3.7+`
+
+## Installation
+
+```bash
+pip install karrio.laposte
+```
+
+## Usage
+
+```python
+import karrio
+from karrio.mappers.laposte.settings import Settings
+
+
+# Initialize a carrier gateway
+laposte = karrio.gateway["laposte"].create(
+    Settings(
+        ...
+    )
+)
+```
+
+Check the [Karrio Mutli-carrier SDK docs](https://docs.karrio.io) for Shipping API requests

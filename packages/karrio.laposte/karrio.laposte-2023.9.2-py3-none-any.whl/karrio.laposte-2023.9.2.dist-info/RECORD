@@ -1,0 +1,16 @@
+karrio/mappers/laposte/__init__.py,sha256=vsWcoXxN6v4jR6SR81XYDZZhTOLJtmZ9pDSFciTH40k,417
+karrio/mappers/laposte/mapper.py,sha256=TFfFyez_qeX94yxlFMydzNp2B7NvynTHY_8o0irGiMk,735
+karrio/mappers/laposte/proxy.py,sha256=NQyWL0rc-ky80o1NF2eNOpLTq9q6k6RQHosSjDrwgsQ,745
+karrio/mappers/laposte/settings.py,sha256=79yhTg2rG_dw6j8DrTFMbjXAMpDp7BpGctHtLSXMDjY,489
+karrio/providers/laposte/__init__.py,sha256=UmsiUvmZL8zOhAcoZMippZ6okpCPa8BcnWCfNEkSYWw,154
+karrio/providers/laposte/error.py,sha256=oohq1_PrH_AwIbMzDHAwN9Q6pSCdifUw8z6Dz-bt6VA,948
+karrio/providers/laposte/tracking.py,sha256=3tU-7DmdONDVyHg9VCqNEnBOKj38tGW19Fm7BZ_Ua3Y,2752
+karrio/providers/laposte/units.py,sha256=dOC62QEibI0bmI4Ukobvj81cH1udqnzHTbIGNBAsQEk,1332
+karrio/providers/laposte/utils.py,sha256=WuPZ-V3_WhsMuPjBzbponHNfHD9BmlRBzVOfIf5sEJA,416
+karrio/schemas/laposte/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+karrio/schemas/laposte/error.py,sha256=XyJLO5KdGzehGc8W4vPzefayu-fvpi7l29TW0sDB2Zk,322
+karrio/schemas/laposte/tracking_response.py,sha256=U3W2TbdT5ld_ZlZIMXRY62ScCEZ2nsFdcQPTFFNudl0,1525
+karrio.laposte-2023.9.2.dist-info/METADATA,sha256=8Rux_F7Y_vatdSF5bwPc49Ap7lfDDEbA0VASdSaPDms,939
+karrio.laposte-2023.9.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+karrio.laposte-2023.9.2.dist-info/top_level.txt,sha256=m_J29PyDW0QBmWa_owaWC_WqcAkMJq4zBYbtjQ0_D9o,15
+karrio.laposte-2023.9.2.dist-info/RECORD,,
