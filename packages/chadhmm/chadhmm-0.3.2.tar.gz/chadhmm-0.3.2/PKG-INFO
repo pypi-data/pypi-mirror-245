@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: chadhmm
+Version: 0.3.2
+Summary: Package for Hidden (Semi) Markov Models
+Home-page: https://github.com/GarroshIcecream/ChadHMM
+Download-URL: https://github.com/GarroshIcecream/ChadHMM/archive/refs/tags/v0.3.tar.gz
+Author: GarroshIcecream
+Author-email: ad.pesek13@gmail.com
+License: MIT
+Keywords: Hidden Markov Models,Hidden Semi-Markov Models,hsmm,hmm,Gaussian Mixture Models,gmm
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+License-File: LICENSE.txt
+Requires-Dist: torch
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: prettytable
