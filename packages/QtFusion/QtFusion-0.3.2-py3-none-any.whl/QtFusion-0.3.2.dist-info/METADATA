@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: QtFusion
+Version: 0.3.2
+Summary: QtFusion is a Python library created by Seasal Wesley (seasalwesley@gmail.com) for the convenient creation of PySide6 applications that interact with deep learning models. It provides user interface management and beautification, database management, image/video/camera processing, model interface definition, and event handling. This makes it easy for users to create deep learning applications.
+Author: Seasal Wesley
+Author-email: seasalwesley@gmail.com
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: opencv-python (>=4.5.5.64)
+Requires-Dist: Pillow (>=9.0.1)
+Requires-Dist: PySide6 (>=6.4.2)
+Requires-Dist: PyYAML (>=6.0)
+Requires-Dist: captcha (>=0.4)
+
+# QtFusion
+
+## Introduction
+QtFusion is a versatile Python library for building applications. It focuses on seamlessly integrating deep learning models, offering a suite of tools for UI management, beautification, database management, as well as handling image/video/camera processing, model interface definition, and event handling. This library simplifies the creation of advanced deep learning applications.
+
+## Features
+- UI Enhancement: Provides tools for beautifying and managing the user interface. 
+- Database Management: Facilitates easy handling of database operations. 
+- Media Processing: Supports image, video, and camera data processing. 
+- Model Integration: Simplifies the integration of deep learning models with UI. 
+- Event Handling: Efficient management of application events.
+
+## Installation
+To successfully install QtFusion, follow these guidelines:
+
+1. **Python Version**: Ensure you have Python 3.8 or newer installed, as QtFusion is designed to work best with these versions.
+2. **Install Dependencies**: QtFusion relies on several key libraries. Install them using pip:
+
+```bash
+pip install numpy
+pip install opencv-python>=4.5.5.64
+pip install Pillow>=9.0.1
+pip install PySide6>=6.4.2
+pip install PyYAML>=6.0
+pip install captcha>=0.4
+```
+These commands will install the required versions of numpy, opencv-python, Pillow, PySide6, PyYAML, and captcha.
+
+3. **Deep Learning Libraries**: For deep learning projects, it's recommended to use either PyTorch or TensorFlow. Future versions of QtFusion will support PyQt5, PyQt6, and PySide6.
+4. **Install QtFusion**: Finally, install QtFusion:
+
+```bash
+pip install QtFusion
+```
+
+
+## Usage
+To use QtFusion in your PySide6 project:
+* Import FBaseWindow from QtFusion.BaseFrame.
+* Define your main window class, inheriting from FBaseWindow.
+* Initialize a QApplication, create an instance of your main window, and call necessary methods.
+* Start the application with app.exec().
+
+This will allow you to incorporate QtFusion's features into your PySide6 application, enhancing its interface and functionality.
+
+```python
+from Your_UI import Ui_MainWindow
+from QtFusion.BaseFrame import FBaseWindow
+from PySide6.QtWidgets import QApplication
+from sys import argv, exit
+class YourMainWindow(FBaseWindow, Ui_MainWindow):
+    def __init__(self, parent=None, *args, **kwargs):
+        super(YourMainWindow, self).__init__(*args, **kwargs)
+        self.setupUi(self)
+
+app = QApplication(argv)
+win = YourMainWindow()
+win.showTime()
+exit(app.exec()) 
+```
+
+This is a basic example to get started. For more advanced features, refer to the QtFusion documentation and examples.
+
+
+## Acknowledgments
+Special thanks to all contributors who have helped in developing QtFusion.
+
+## Contact
+For support or queries, please contact [seasalwesley@gmail.com](seasalwesley@gmail.com).
