@@ -1,0 +1,2 @@
+recursive-include qatools/adb *
+recursive-include qatools qatools.qa
