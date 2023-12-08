@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: puneetpackagetest
+Version: 0.0.1
+Summary: Puneet Package Test Package for Demo
+Home-page: UNKNOWN
+Author: Puneet
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## PuneetPackageSample
+
+Puneet sample python package deployment utility for Demo.
+
