@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: exlib
+Version: 0.0.1
+Summary: Toolkit for explainability by BrachioLab
+Author-email: Eric Wong <exwong@cis.upenn.edu>
+Project-URL: Homepage, https://github.com/BrachioLab/exlib
+Project-URL: Bug Tracker, https://github.com/BrachioLab/exlib/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lime >=0.2
+Requires-Dist: shap >=0.42
+Requires-Dist: torch >=2.0
+Requires-Dist: torchvision >=0.15
+Requires-Dist: torchaudio >=2.0
+Requires-Dist: grad-cam >=1.4.8
+Requires-Dist: jsonlines >=3.1.0
+Requires-Dist: segmentation-models-pytorch >=0.3.3
+Requires-Dist: scikit-image >=0.22
+Provides-Extra: dev
+Requires-Dist: notebook ; extra == 'dev'
+
+# exlib
+
+To create a dev environment: 
+```
+pip install '.[dev]'
+```
+
+In order to use gradcam, either use the dev environment or install the lab version to handle more diverse shapes. 
