@@ -1,0 +1,16 @@
+best-practices.md,sha256=8z7GcnhPcApW8UbUueJR9LhqpJheaQTAN_nIRwNtnSY,2175
+maup/__init__.py,sha256=6eOb7ogKnHA_XOkaOoqnUrqiGwj4KDUiMWRfrSC9J-o,1067
+maup/adjacencies.py,sha256=zgLgSV5IMkc8VV-kHU9jsbI0TdbP3-yAX1oWgycOJks,2967
+maup/assign.py,sha256=6Ihe30_q-prhm_6tG3UrtFrXgE_fEuCH8WsH1U7sufw,1345
+maup/crs.py,sha256=HfhXF3sTqPZYiFszAgISePa4J6Kdb0EQY8fyxU52bdQ,428
+maup/indexed_geometries.py,sha256=q1L6G27B2Ajg0f9BPOBjgX8yHPMsEGxUZJJIcJujfbk,3342
+maup/indices.py,sha256=fM3HDcuLvXv3bQQcb19IqeAqTDygwbYLuf4peuJQrm8,289
+maup/intersections.py,sha256=-YVNh-Z4QyNCwqBVDteZ7WSK54FTMjFEg64Er_YLJ8M,4048
+maup/normalize.py,sha256=IzWubbPGZq75W0W8ZQ06K4gASGfia9D5IuqZBIjtkqk,416
+maup/progress_bar.py,sha256=tQwo818eCgRmmtRR4RMxH2AWOMSgxJJNNJz6ClXItiI,681
+maup/repair.py,sha256=3UXJMUjbTF1zGf8zaLz34A3qmZWjC7u52rqtEQs2Hts,15168
+maup/smart_repair.py,sha256=DqXvwl4mj1zEOYEKrYmXhnueiD9ZFC6gAkKjZi37AeY,92261
+maup-2.0.0.dist-info/LICENSE,sha256=gzrl0RFlwPm7WbHdD7qV19jPLumBANy8TW0kKRm75co,1096
+maup-2.0.0.dist-info/METADATA,sha256=vw3xl3vymakO23KqdT2DoCaa5wLaO8nkwus9sC8ulHg,23811
+maup-2.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+maup-2.0.0.dist-info/RECORD,,
