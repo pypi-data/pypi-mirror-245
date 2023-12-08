@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: swarms-cloud
+Version: 0.0.1
+Summary: Swarms Cloud - Pytorch
+Home-page: https://github.com/kyegomez/swarms-cloud
+License: MIT
+Keywords: artificial intelligence,deep learning,optimizers,Prompt Engineering
+Author: Kye Gomez
+Author-email: kye@apac.ai
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: fastapi
+Requires-Dist: skypilot
+Requires-Dist: swarms
+Project-URL: Documentation, https://github.com/kyegomez/swarms-cloud
+Project-URL: Repository, https://github.com/kyegomez/swarms-cloud
+Description-Content-Type: text/markdown
+
+[![Multi-Modality](agorabanner.png)](https://discord.gg/qUtxnK2NMf)
+
+# Swarms Cloud
+Deploy your autonomous agents to the cloud with infinite scalability, 99% uptime, and a polymorphic api.
+
+
+Base swarms code -> fastapi code is added to top and bottom -> agent is decorated with expose as api decorator -> file is parsed and then -> added onto yaml for -> skypilot
+
+# License
+MIT
