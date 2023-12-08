@@ -1,0 +1,8 @@
+src/deploy.py,sha256=GufYtR_rofuiMTY7SPiUNKabu_0fJ_R2zXXLexgYToc,1338
+src/diff.py,sha256=zFlo-33nASjS8fVn1uhpNUEBKxN0Hmo3DzCr-oAL1Rw,1005
+src/package.py,sha256=2OtMp0TMgFFlZ-XDWF_bwN6kyTt4vsK6zjyxz-sT8oI,362
+aws_cf-0.0.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_cf-0.0.0.dist-info/METADATA,sha256=6nkf752HbAizEqddbzYNNzytR9K3q0KTBtqB3BBRNOs,321
+aws_cf-0.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+aws_cf-0.0.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+aws_cf-0.0.0.dist-info/RECORD,,
