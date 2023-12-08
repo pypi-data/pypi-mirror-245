@@ -1,0 +1,37 @@
+name: reviewdog
+on: [pull_request]
+
+permissions:
+  checks: "write"
+  contents: "read"
+  pull-requests: "write"
+
+jobs:
+  pylint:
+    name: pylint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          pip install -r requirements-dev.lock
+      - uses: reviewdog/action-setup@v1
+      - name: Run reviewdog
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pylint --rcfile=.pylintrc src/dbt_quicksight_lineage tests | reviewdog -efm="%f:%l:%c: %m" -reporter=github-pr-review
+  actionlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: reviewdog/action-actionlint@v1
+        with:
+          fail_on_error: true
+          filter_mode: nofilter
+          level: error
+          reporter: github-pr-review
