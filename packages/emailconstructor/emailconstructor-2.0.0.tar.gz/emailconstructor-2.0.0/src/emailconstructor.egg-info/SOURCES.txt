@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/emailconstructor/__init__.py
+src/emailconstructor/email_constructor.py
+src/emailconstructor.egg-info/PKG-INFO
+src/emailconstructor.egg-info/SOURCES.txt
+src/emailconstructor.egg-info/dependency_links.txt
+src/emailconstructor.egg-info/top_level.txt
+tests/test_emailconstructor.py
