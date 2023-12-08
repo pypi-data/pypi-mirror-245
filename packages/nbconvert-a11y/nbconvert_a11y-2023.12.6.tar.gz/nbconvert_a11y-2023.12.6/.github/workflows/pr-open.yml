@@ -1,0 +1,18 @@
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    name: Notify html target
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            A preview fo the exported examples will be rendered at 
+            https://${{ github.repository_owner }}.github.io/nbconvert-a11y/branch/${{ github.event.pull_request.head.ref }}/exports/html/lorenz-executed-a11y.html
