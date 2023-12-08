@@ -1,0 +1,15 @@
+autotranslate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autotranslate/compat.py,sha256=VQT9zNWoH7Yd2VyBwiE1x-5iWaEwP2SxEFLA7cphzeg,675
+autotranslate/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autotranslate/services.py,sha256=oJdDq4FE33sAEJ-8zSH2GGnfzKxraDTgyt4gMKcNL9E,4921
+autotranslate/utils.py,sha256=_OLhgl3WdwVbyquKBGlJ-ebXcQE7g2MC6UssO9q4p-E,1496
+autotranslate/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autotranslate/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autotranslate/management/commands/translate_messages.py,sha256=Y2eD4bQtB4yV8s0igvWYozrru0cvCan54QopsWSoYXM,8820
+autotranslate/tests/__init__.py,sha256=IqiB1HeKljiiWWDBrrPrSSjJh98HPSNo1XuIdBGUVt0,386
+autotranslate/tests/test_translate_messages.py,sha256=40ZzfqFdj5pUkPeLxJZVyqwNiL9_OaKBYmnY5M2tHrA,3014
+django_autotranslate2-1.2.3.dist-info/LICENSE,sha256=eZIu9VmaKtoUZEV8AKwqdO4vt5l5kGoXEePAiquJc7k,1082
+django_autotranslate2-1.2.3.dist-info/METADATA,sha256=Zkmv1_FB9QRKVs0sslfzff1iuEYUWuxFKFQv_ZpyoaM,3229
+django_autotranslate2-1.2.3.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+django_autotranslate2-1.2.3.dist-info/top_level.txt,sha256=YvdgGqk9aS0gh17K669ofgWHyiS7mROqe0z4iZ9X00Q,14
+django_autotranslate2-1.2.3.dist-info/RECORD,,
