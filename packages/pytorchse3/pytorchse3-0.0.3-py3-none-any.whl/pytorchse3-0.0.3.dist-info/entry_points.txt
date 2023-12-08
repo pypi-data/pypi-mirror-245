@@ -1,0 +1,2 @@
+[nbdev]
+pytorchse3 = pytorchse3._modidx:d

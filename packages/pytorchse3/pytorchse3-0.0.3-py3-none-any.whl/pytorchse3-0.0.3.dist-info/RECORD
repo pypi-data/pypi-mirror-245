@@ -1,0 +1,11 @@
+pytorchse3/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+pytorchse3/_modidx.py,sha256=ucG4JgOLfxpr4p5m1l6oPTo45W_L4wqZkuzpZYWOsXM,1174
+pytorchse3/se3.py,sha256=bDqP9N2NW3gHzKL6xd_0AUx8fOXr1AIRpeGLzsY_vOE,1606
+pytorchse3/so3.py,sha256=y29hAjvrdaT_mQtJt4AR6ztZ8rBMcqXEw5vLsekgOd0,2615
+pytorchse3/utils.py,sha256=YksjUayXS-yRb0L981yHjNR3sKXkgudtuAGdE7wos_I,992
+pytorchse3-0.0.3.dist-info/LICENSE,sha256=ucA3ORLM00-A04-81C2yRhAxGOyS3HqcA7cZvMS788g,1076
+pytorchse3-0.0.3.dist-info/METADATA,sha256=xTwhjELU3-FrdztEP0OGPqyjG2fJiw4V2ESWAtKWMUA,3697
+pytorchse3-0.0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+pytorchse3-0.0.3.dist-info/entry_points.txt,sha256=_E9BDIG6rs2copUOTMY4e1x2-XL4MMHU1r679ERT33M,42
+pytorchse3-0.0.3.dist-info/top_level.txt,sha256=2Wi2qMB_Ijq0kk0lcGprq2BNDX79rw7QCI9MIRdc_n4,11
+pytorchse3-0.0.3.dist-info/RECORD,,
