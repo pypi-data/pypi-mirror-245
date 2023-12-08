@@ -1,0 +1,13 @@
+ataxx/__init__.py,sha256=PkM0KJdOij3K_rPzE0WcZqjf0SSehOGCdLcwAUtI93g,18583
+ataxx/draw.py,sha256=Y320UBQkvwtWHwdUj_wDPIq1XuMv1GTEp1aE0Somyrg,2933
+ataxx/pgn.py,sha256=3P-x4n8cATxA6JCXNN9uiEARpx8AV-roDyJFQHbnqCo,9065
+ataxx/players.py,sha256=IeFjz8cCf9hq3eDTYYQsIR71OsSxpsGm8y37hBYxsrA,2041
+ataxx/process.py,sha256=Sg1pQBNEKPgNwSkM17Z8MT8MRv-v5ZR96Dguw7wa4S0,1277
+ataxx/socket.py,sha256=wygF3I7T6vvBH3k3qsKmJYYzcuepQXStjpWzrJscMt8,1977
+ataxx/uai.py,sha256=wQAa2BjffSWYH7ylDU3-675fKom9XMLNGFQ3xh0d8xc,4142
+ataxx/zobrist.py,sha256=mOC6pyHjF10zlWHEGIwvtSHgnnH36la8_ksrodeHjYQ,3057
+ataxx-2.1.0.dist-info/LICENSE,sha256=a3zTIgyiQ04U3IM2_BKAEFmq703fAqKxzAxbLRmc4f4,1063
+ataxx-2.1.0.dist-info/METADATA,sha256=9aYp0F5JMOZ-HJ6gNf6UGTOJClKYKeh39Q2DhDZ2Ti4,2806
+ataxx-2.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ataxx-2.1.0.dist-info/top_level.txt,sha256=7srlUQZ0pkLPrNfvapDOrjN5fNphRqhU0_Z4uXjcsCg,6
+ataxx-2.1.0.dist-info/RECORD,,
