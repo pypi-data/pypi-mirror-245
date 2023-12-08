@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<gdml>
+    <userinfo>
+      <auxiliary auxtype="PrimaryGun" auxvalue="gun=SimpleThermalGun;energy=2.0;position=0,0,-300;direction=0,0,1" />
+    </userinfo>
+
+    <define>
+        <constant name="HALFPI" value="pi/2." />
+        <constant name="PI" value="1.*pi" />
+        <constant name="TWOPI" value="2.*pi" />
+    </define>
+
+    <materials>
+       
+        <material name="Vacuum">
+          <atom value="vacuum.ncmat"/>
+        </material>
+    </materials>
+
+    <solids>
+        <box lunit="mm" name="WorldBox" x="300.0" y="300.0" z="650.0" />
+        <box lunit="mm" name="MonitorIn" x="40.0" y="40.0" z="50.0" />
+    </solids>
+
+    <structure>
+        <volume name="LV_MonitorIn">
+            <solidref ref="MonitorIn" />
+            <materialref ref="Vacuum" />
+            <auxiliary auxtype="Color" auxvalue="#00ff1700" />
+        </volume>
+
+        <volume name="worldVOL">
+            <solidref ref="WorldBox" />
+            <materialref ref="Vacuum" />
+            <auxiliary auxtype="Color" auxvalue="#ff9f0000" />
+
+            <physvol name="LV_MonitorIn">
+                <volumeref ref="LV_MonitorIn" />
+                <position name="P_MonitorIn1" unit="mm" x="0.0" y="0.0" z="-250.0" />
+            </physvol>
+
+            <physvol name="LV_MonitorIn">
+                <volumeref ref="LV_MonitorIn" />
+                <position name="P_MonitorIn2" unit="mm" x="0.0" y="0.0" z="-150.0" />
+            </physvol>
+
+            <physvol name="LV_MonitorIn">
+                <volumeref ref="LV_MonitorIn" />
+                <position name="P_MonitorIn3" unit="mm" x="0.0" y="0.0" z="-50.0" />
+            </physvol>
+        </volume>
+    </structure>
+
+    <setup name="Default" version="1.0">
+        <world ref="worldVOL" />
+    </setup>
+</gdml>
