@@ -1,0 +1,3 @@
+include cythonrgbasearch/requirements.txt
+include cythonrgbasearch/thirdparty.json
+include cythonrgbasearch/README.MD
