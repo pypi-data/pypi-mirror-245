@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: conflutools
+Version: 0.2.0
+Summary: Tools to work with an Atlassian Confluence (Data Center) instance.
+License: GPL-3.0-or-later
+Author: Niko Ehrenfeuchter
+Author-email: nikolaus.ehrenfeuchter@unibas.ch
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: atlassian-python-api (>=3.41.4,<4.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: markdownify (>=0.11.6,<0.12.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Description-Content-Type: text/markdown
+
+# Atlassian Confluence Tools
+
+## Generic Setup
+
+```bash
+pip install conflutools
+
+# copy the confluence-configuration file and adjust its content:
+cp confconf-example.yaml confconf.yaml
+vim confconf.yaml
+```
+
+## Recursive page export
+
+After the preparation steps above:
+
+```bash
+# create a directory for storing the exports:
+$EXPORT_DIR="/path/for/storing/wiki-exports"
+mkdir $EXPORT_DIR
+cd $EXPORT_DIR
+
+# export by page ID:
+export-pagetree --config confconf.yaml --page 53838601
+
+# export by page title (requires the space KEY as well):
+export-pagetree --config confconf.yaml --page "Project XY Pages" --space "FOO"
+```
+
