@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "mgwas-data-exploration-app"
+version = "0.1.1"
+description = "Data exploration app for large phenotypic datasets analyzed using mGWAS, originally developed for Scoary2"
+authors = ["MrTomRod <roder.thomas@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "mgwas_data_exploration_app" }
+]
+include = [
+    { path = 'mgwas_data_exploration_app/templates/*', format = 'sdist' }
+]
+
+
+[tool.poetry.scripts]
+mgwas-data-exploration-app = "mgwas_data_exploration_app.main:__main__"
+
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+pandas = ">=2.1.1"
+scipy = ">=1.7.3"
+matplotlib = ">=3.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
