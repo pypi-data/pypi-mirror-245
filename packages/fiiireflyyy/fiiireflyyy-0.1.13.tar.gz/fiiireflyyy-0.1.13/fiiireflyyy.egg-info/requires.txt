@@ -1,0 +1,8 @@
+imaris-ims-file-reader
+matplotlib
+numpy
+opencv-python
+pandas
+scikit-learn
+seaborn
+zarr
