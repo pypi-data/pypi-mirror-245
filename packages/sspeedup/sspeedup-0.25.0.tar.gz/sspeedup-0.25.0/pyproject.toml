@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "sspeedup"
+version = "0.25.0"
+description = "开发工具箱"
+authors = ["yezi <yehaowei20060411@qq.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/FHU-yezi/sspeedup"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Typing :: Typed"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pymongo = { version = "^4.3.0", optional = true }
+motor = { version ="^3.3.0", optional = true }
+jieba = { version = "^0.42.0", optional = true }
+qrcode = { version = "^7.4.0", optional = true }
+pywebio = { version = "^1.8.0", optional = true }
+sanic = { version = "^23.3.0", optional = true }
+httpx = { version = "0.*", optional = true }
+ujson = { version = "^5.8.0", optional = true }
+pydantic = { version = "^2.0.0", optional = true }
+msgspec = { version ="0.*", optional = true }
+litestar = { version ="^2.3.0", optional = true }
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.0"
+pyright = "^1.1.0"
+
+[tool.poetry.extras]
+config = ["msgspec"]
+word-split-jieba = ["jieba"]
+qrcode = ["qrcode"]
+pywebio = ["pywebio"]
+feishu-auth = ["httpx"]
+feishu-bitable = ["httpx", "msgspec"]
+
+ability-word-split = ["httpx"]
+
+api-sanic = ["sanic", "pydantic", "ujson"]
+api-litestar = ["litestar", "msgspec"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+
+select = [
+    "A", "ANN", "ASYNC", "B", "BLE",
+    "C4", "E", "F", "I", "ICN",
+    "ISC", "N", "PIE", "Q", "RET",
+    "RSE", "RUF", "S", "SIM", "SLF",
+    "TCH", "UP", "W"
+]
+
+ignore = ["ANN101", "ANN401", "BLE001", "RUF001", "RUF002", "RUF003"]
+
+target-version = "py38"
+
+[tool.ruff.per-file-ignores]
+
+"__init__.py" = ["F401"]
