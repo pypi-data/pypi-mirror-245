@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+debugsnap/__init__.py
+debugsnap/debugsnap.py
+debugsnap.egg-info/PKG-INFO
+debugsnap.egg-info/SOURCES.txt
+debugsnap.egg-info/dependency_links.txt
+debugsnap.egg-info/requires.txt
+debugsnap.egg-info/top_level.txt
