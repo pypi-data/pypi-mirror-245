@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gptool
+Version: 0.1.1
+Summary: A compact tool for OpenAI API, offering streamlined function management and efficient API tool(function calling) usage through Pydantic validation and vector database indexingg.
+Author: zhongwei
+Author-email: lizhongwei.nkcs@gmail.com
+Requires-Python: >=3.9,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: openai (>=1.3.7)
+Requires-Dist: pydantic (>=1.6,<=1.10.12)
+Requires-Dist: qdrant-client (>=1.4.0)
+Description-Content-Type: text/markdown
+
+# gptool
+
