@@ -1,0 +1,5 @@
+setup.py
+Fcolor.egg-info/PKG-INFO
+Fcolor.egg-info/SOURCES.txt
+Fcolor.egg-info/dependency_links.txt
+Fcolor.egg-info/top_level.txt
