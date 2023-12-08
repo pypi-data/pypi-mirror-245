@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: hashint
+Version: 1.0
+Summary: Easily hash string
+Author: lolo859
+Keywords: hash,hashint,hsht
+Classifier: Natural Language :: French
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Code Generators
+Requires-Dist: docutils >=0.3
+Requires-Dist: pillow
+
+========
+Hashint
+========
+*Easily hash string*
+
+Install and import
+------------------
+
+- For install hashint : pip install hashint
+- For import hashint : import hashint
+
+Functions
+---------
+
+This module contain 8 functions : each function allows more or less long and complex hashing.
+Each function need the same argument : the string to hash
+
+Errors
+------
+
+The indecode module can trigger the following errors :
+
+- TypeError : the argument is not a string
+- HashError : one of the caracter is not hashable
