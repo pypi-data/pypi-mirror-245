@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+perconeb/__init__.py
+perconeb/core.py
+perconeb.egg-info/PKG-INFO
+perconeb.egg-info/SOURCES.txt
+perconeb.egg-info/dependency_links.txt
+perconeb.egg-info/requires.txt
+perconeb.egg-info/top_level.txt
