@@ -1,0 +1,14 @@
+CHANGES
+=======
+
+0.0.3
+-----
+
+* Code refactoring and adding code for building ai container image
+* !3 Enhancing Robustness Through Exception Handling
+* update eulerpublisher/container/container.py
+* Merge: enhance the code robustness of publishing container and aws image
+* Add code for building AMI image
+* !1 Initialize EulerPublisher code
+* Initialize EulerPublisher code
+* Initial commit
