@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: RequestsPlusPlus
+Version: 1.0.0
+Summary: A Wrapper for the Request library
+Home-page: https://replit.com/@dashtiss/requestsplusplus
+Author: Dashtiss
+Author-email: brandontisserand@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Requests++
+
+## About
+This is a library for the [Requests library](https://requests.readthedocs.io/en/latest). You this adds many features.
+
+## Features
+### Main Addition
+- Easy Image Puller
+- Easy Fast/Rest API puller
+
+## Contribution
+You can submit a issue or error to my github or dm me ([@Dashtiss](discord.com)) on discord

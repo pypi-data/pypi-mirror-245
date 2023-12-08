@@ -1,0 +1,5 @@
+pyproject.toml
+RequestsPlusPlus.egg-info/PKG-INFO
+RequestsPlusPlus.egg-info/SOURCES.txt
+RequestsPlusPlus.egg-info/dependency_links.txt
+RequestsPlusPlus.egg-info/top_level.txt
