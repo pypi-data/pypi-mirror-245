@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gitlogviz/__init__.py
+gitlogviz/gitlogviz.py
+gitlogviz.egg-info/PKG-INFO
+gitlogviz.egg-info/SOURCES.txt
+gitlogviz.egg-info/dependency_links.txt
+gitlogviz.egg-info/entry_points.txt
+gitlogviz.egg-info/requires.txt
+gitlogviz.egg-info/top_level.txt
