@@ -1,0 +1,2 @@
+[console_scripts]
+typora-git-uploader = typora_git_uploader.main:main
