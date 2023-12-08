@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nalibs-utility
+Version: 1.0.0
+Summary: qana - tiny package - nalibsUtils
+Author-email: Ron <naq0310@gmail.com>
+Maintainer-email: Ron <naq0310@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: PyYAML
+
+# nalibs-utility
