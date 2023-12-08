@@ -1,0 +1,11 @@
+recently_visited_page_middleware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recently_visited_page_middleware/asgi.py,sha256=ZSXiP4MzSgzFJR5jtVYVrnEqJcmRzSLVJwm__PBBpwk,443
+recently_visited_page_middleware/middleware.py,sha256=uO2xMe9dP2DBe2EnZXtbe3oj9Mw94_wgTb0vFLzZ448,606
+recently_visited_page_middleware/settings.py,sha256=mvB7LGrObgOUo1a9AjauBbrewvrqf3mw_tYAnt7f27k,3392
+recently_visited_page_middleware/urls.py,sha256=M5zbmyJyY7E-nuvztl2MuSSyu-B6DYb38KgeQ4pga-o,790
+recently_visited_page_middleware/utils.py,sha256=Nr-pK3g6dLExzXxUtsI3xqbFvK9SieciiWAFV0Kj2P4,654
+recently_visited_page_middleware/wsgi.py,sha256=MSqj6Gi1InWlZFRQeGHeJ8DNA4DRcY-n9kcxOBdDSxA,443
+recently_visited_page_middleware-0.1.1.dist-info/METADATA,sha256=ovK7xRieGG-7JFboRZ-r2MSrBIVKRIgJ6_nEB6KxP2Y,2345
+recently_visited_page_middleware-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+recently_visited_page_middleware-0.1.1.dist-info/top_level.txt,sha256=CCoRFLQjDuURoZBsNJso3aXunToL7OrzAA9B4ydvBzA,33
+recently_visited_page_middleware-0.1.1.dist-info/RECORD,,
