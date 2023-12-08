@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: bodystuff
+Version: 0.0.5
+Summary: Utilities for my tools
+Home-page: UNKNOWN
+Author: Body Alhoha
+Author-email: bodyalhoha@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
