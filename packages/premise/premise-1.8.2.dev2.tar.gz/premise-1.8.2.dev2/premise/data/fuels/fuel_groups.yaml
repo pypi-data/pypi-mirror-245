@@ -1,0 +1,36 @@
+gasoline:
+  - gasoline
+  - bioethanol, from wood
+  - bioethanol, from wood, with CCS
+  - bioethanol, from grass
+  - bioethanol, from grass, with CCS
+  - bioethanol, from grain
+  - bioethanol, from grain, with CCS
+  - bioethanol, from sugar
+  - bioethanol, from sugar, with CCS
+  - methanol, from wood
+  - methanol, from wood, with CCS
+  - methanol, from grass
+  - methanol, from grass, with CCS
+diesel:
+  - diesel
+  - diesel, synthetic, from wood
+  - diesel, synthetic, from wood, with CCS
+  - diesel, synthetic, from grass
+  - diesel, synthetic, from grass, with CCS
+  - biodiesel, from used cooking oil
+  - biodiesel, from used cooking oil, with CCS
+gas:
+  - natural gas
+  - biomethane
+
+hydrogen:
+  - hydrogen, from electrolysis
+  - hydrogen, from biomass
+  - hydrogen, from biomass, with CCS
+  - hydrogen, from coal
+  - hydrogen, from coal, with CCS
+  - hydrogen, from natural gas
+  - hydrogen, from natural gas, with CCS
+
+
