@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INF219 Project 10: Exam Analyzer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f4;
+        padding: 50px;
+      }
+      .container {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+      }
+      .left-content {
+        flex: 1;
+        padding: 20px;
+        overflow: auto;
+      }
+      .right-content {
+        flex: 1;
+        padding: 20px;
+        height: 100%;
+      }
+      h1 {
+        font-size: 2.5em;
+        color: #333;
+      }
+      h2 {
+        font-size: 2.5em;
+        color: #333; /* or any lighter color */
+      }
+      .cta-button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border: none;
+        cursor: pointer;
+        margin: 20px 0;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .cta-button:hover {
+        background-color: #444;
+        color: white;
+      }
+      .upload-btn {
+        background-color: #007bff;
+        color: white;
+      }
+      .preview-btn {
+        background-color: #28a745;
+        color: white;
+      }
+      .download-btn {
+        background-color: #ffc107;
+        color: white;
+      }
+      .checkbox-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start (left for column direction) */
+        gap: 10px;
+        margin-top: 20px;
+        border: 1px solid #ccc; /* Added a border for visual clarity */
+        padding: 10px; /* Some padding to space things out */
+        width: max-content; /* Only as wide as its content */
+        margin-left: auto; /* Center the box */
+        margin-right: auto;
+      }
+      .checkbox-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .dark-mode {
+        background-color: #333;
+        color: #f4f4f4;
+    }
+
+    /* Title color in dark mode */
+    .dark-mode h1{
+        color: #f4f4f4; /* Adjust this color as needed for better visibility */
+    }
+    .dark-mode h2{
+        color: #f4f4f4; /* Adjust this color as needed for better visibility */
+    }
+    </style>
+
+    <!-- Java Sxript for dark mode -->
+    <script>
+      // Dark mode toggle function
+      function toggleDarkMode() {
+          const body = document.body;
+          body.classList.toggle("dark-mode");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-content">
+        <h1>Exam Analyzer</h1>
+        <h2>Version 1.0</h2>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+        <form id="pdfForm" action="/preview_pdf" method="post" enctype="multipart/form-data">
+          <!-- The hidden file input -->
+          <input type="file" name="file" accept=".json" class="file-input" id="fileInput" style="display: none" />
+
+          <!-- The custom button that will trigger the hidden file input -->
+          <button type="button" class="cta-button upload-btn" onclick="document.getElementById('fileInput').click();">Upload File</button>
+          <p>Click to upload</p>
+
+          <div class="checkbox-container">
+            <div class="checkbox-item"><input type="checkbox" name="checkbox" value="Question Table" checked /> Question Table</div>
+            <div class="checkbox-item"><input type="checkbox" name="checkbox" value="Correct Portion" checked /> Correct Portion</div>
+            <div class="checkbox-item"><input type="checkbox" name="checkbox" value="Grade Distribution" checked /> Grade Distribution</div>
+            <div class="checkbox-item"><input type="checkbox" name="checkbox" value="PBC" checked /> PBC</div>
+            <div class="checkbox-item"><input type="checkbox" name="checkbox" value="Task Duration" checked /> Task Duration</div>
+            <div class="checkbox-item"><input type="checkbox" name="checkbox" value="Question Time Average" checked /> Question Time Average</div>
+          </div>
+
+          <!-- The button that triggers form submission to preview the PDF -->
+          <!-- <button type="button" class="cta-button preview-btn" onclick="submitForm('/preview_pdf')">Preview PDF</button> -->
+          <button type="button" class="cta-button preview-btn" onclick="previewPDF()">Preview PDF</button>
+
+          <!-- <p>Click to preview the PDF</p> -->
+
+          <!-- This button directly downloads the PDF -->
+          <button type="button" class="cta-button download-btn" onclick="submitForm('/generate_pdf')">Download PDF</button>
+          <!-- <p>Click to download the PDF</p> -->
+        </form>
+      </div>
+      <div class="right-content">
+        <iframe id="pdfFrame" style="width: 100%; height: 80%; border: 3px solid #ccc; margin-top: 20px"></iframe>
+      </div>
+    </div>
+
+    <script>
+      // Update the button text with the selected file name
+      document.getElementById("fileInput").addEventListener("change", function () {
+        const fileName = this.value.split("\\").pop();
+        if (fileName) {
+          document.querySelector(".upload-btn").textContent = fileName;
+        }
+      });
+    </script>
+
+    <script>
+      function submitForm(action) {
+        var form = document.getElementById("pdfForm");
+        form.action = action;
+        form.method = "post";
+        form.submit();
+      }
+    </script>
+    <script>
+      function previewPDF() {
+        // Create a new FormData object to capture the form's data
+        const formData = new FormData(document.getElementById("pdfForm"));
+
+        // Make an AJAX call to the /preview_pdf route
+        fetch("/preview_pdf", {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.blob()) // Convert the response to a Blob
+          .then((pdfBlob) => {
+            // Create an object URL for the Blob
+            const pdfURL = URL.createObjectURL(pdfBlob);
+
+            // Set the iframe's src attribute to the blob's URL
+            document.getElementById("pdfFrame").src = pdfURL;
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+    </script>
+  </body>
+</html>
