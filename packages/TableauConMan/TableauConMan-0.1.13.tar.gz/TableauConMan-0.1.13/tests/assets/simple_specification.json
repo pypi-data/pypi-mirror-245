@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "projects": [
+    {
+      "project_name": "Test Project",
+      "description": "This project includes automatically uploaded samples.",
+      "content_permissions": "LockedToProject",
+      "project_path": "Test Project",
+      "permission_set": [
+        {
+          "group_name": "Test Group",
+          "permission_rule": "view"
+        }
+      ]
+    }
+  ],
+  "permission_templates": [
+    {
+      "name": "view",
+      "workbook": {
+        "Read": "Allow"
+      },
+      "datasource": {
+        "Read": "Allow"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "group_name": "Test Group"
+    },
+    {
+      "group_name": "Test Group Two"
+    }
+  ]
+}
