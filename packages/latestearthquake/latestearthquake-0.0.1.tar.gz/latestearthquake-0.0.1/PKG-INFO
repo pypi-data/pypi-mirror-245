@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: latestearthquake
+Version: 0.0.1
+Summary: This package will get the latest earthquake from BMKG
+Home-page: https://github.com/teolloDEV/Indonesia-last-earthquake
+Author: Nur Arif
+Author-email: nurarif0151@gmail.com
+License: The Unlicense
+Project-URL: Website, https://nurarif.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Indonesia Latest Earthquake Detection Application
+This package will get the latest earthquake data from [ BMKG ](https://bmkg.go.id) |  Badan Meteorologi, Klimatologi, dan Geofisika
+
+
+
+## HOW IT WORK ?
+
+
+
+> The package will use BeautifulSoup4 and Requests, to produce output in the from of JSON that is ready to be used in web or mobile phone
+
