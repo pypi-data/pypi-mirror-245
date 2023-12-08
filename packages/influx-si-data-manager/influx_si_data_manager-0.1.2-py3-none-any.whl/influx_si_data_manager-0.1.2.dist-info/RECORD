@@ -1,0 +1,9 @@
+influx_si_data_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+influx_si_data_manager/main.py,sha256=TXmKXxi_jvRnIYqZLKhkwlmF8FDxuJ5gQoPjEmZqF3Y,5711
+influx_si_data_manager/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+influx_si_data_manager/utils/isocor2mtf.py,sha256=Hcl4_EjR1fZNTIYABeRfqtAQJRyTTlQGGxzOudN8x9s,3071
+influx_si_data_manager/utils/physiofit2mtf.py,sha256=uwM---RQDQyl2upzIoeCnFEgxC97RrU09f35JHXn1z0,1466
+influx_si_data_manager-0.1.2.dist-info/LICENSE,sha256=yOROdlbE-pyra5WnmWokHe6wvG0zcaqzVAB8H7EzeC8,34599
+influx_si_data_manager-0.1.2.dist-info/METADATA,sha256=mOvDSnDECiZ33MHRIYlQp2UTFKTPxj0LMdle3kW8y8g,1325
+influx_si_data_manager-0.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+influx_si_data_manager-0.1.2.dist-info/RECORD,,
