@@ -1,0 +1,5 @@
+wxPython
+requests
+PyExecjs
+web3
+pywin32
