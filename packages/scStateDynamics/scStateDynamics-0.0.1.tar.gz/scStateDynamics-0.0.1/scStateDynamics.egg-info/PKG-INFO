@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: scStateDynamics
+Version: 0.0.1
+Summary: A package to decipher the drug-responsive tumor cell state dynamics by modeling single-cell level expression changes
+Home-page: https://github.com/wguo-research/scStateDynamics
+Author: Wenbo Guo
+Author-email: gwb17@tsinghua.org.cn
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# scStateDynamics
+
+## Introduction
+
+`scStateDynamics` is a computational method to thoroughly decipher the tumor cell state dynamics in response to drug treatment by modeling single-cell level expression changes. It first infers dynamic characteristics of tumor cell states by minimizing the overall changes in gene expression while also considering distinct proliferation or inhibition rates across cell populations. Then it identifies cluster-shared and cluster-specific components (gene factors) from the cell-level expression changes to dissect the drug action mechanisms.
+
+
+
+## Installation
+
+
+
+## Usage
+
+
+
+## Citation
+
+Please use the following citation:
+
+
+
+
+
