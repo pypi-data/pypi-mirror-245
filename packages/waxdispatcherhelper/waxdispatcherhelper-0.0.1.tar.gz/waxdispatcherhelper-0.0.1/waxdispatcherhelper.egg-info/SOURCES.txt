@@ -1,0 +1,8 @@
+setup.py
+waxdispatcherhelper/__init__.py
+waxdispatcherhelper/waxdispatcherhelper.py
+waxdispatcherhelper.egg-info/PKG-INFO
+waxdispatcherhelper.egg-info/SOURCES.txt
+waxdispatcherhelper.egg-info/dependency_links.txt
+waxdispatcherhelper.egg-info/requires.txt
+waxdispatcherhelper.egg-info/top_level.txt
