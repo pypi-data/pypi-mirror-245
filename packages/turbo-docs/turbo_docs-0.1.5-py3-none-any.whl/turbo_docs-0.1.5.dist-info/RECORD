@@ -1,0 +1,12 @@
+turbo_docs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turbo_docs/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turbo_docs/commands/readme.py,sha256=hejWzV_gX1me_MSav4piTqMGTzto26nOHh1sebcf94o,883
+turbo_docs/generate.py,sha256=FM0gaiA3mUaAF0tYiBqvdlAM77aooTFG1o5uQ6mASF8,1450
+turbo_docs/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turbo_docs/utils/cli_options.py,sha256=eHTG4A9tJQH2oCRILXB18OXZxOQOViDUHga4az3eseA,395
+turbo_docs/utils/directory.py,sha256=-ffhpPfwYY9MT4DLV89AYYIWKbebldL_DUiNwf3i0LQ,2290
+turbo_docs/utils/openai_api.py,sha256=1mr_DHacl-vokJ6FEby47AKXu5xqUD4oUsLZzflJOa0,755
+turbo_docs-0.1.5.dist-info/METADATA,sha256=XiOrUPmuGuFGsOkp-3j6i4woNHz7oqxmVSiI28B8uj8,4166
+turbo_docs-0.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+turbo_docs-0.1.5.dist-info/entry_points.txt,sha256=khCiGzHuZF2cc5bxjSFiGwaKpxfAScN-5D7kjioeZ6o,57
+turbo_docs-0.1.5.dist-info/RECORD,,
