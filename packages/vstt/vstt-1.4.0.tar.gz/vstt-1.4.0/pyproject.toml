@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vstt"
+description = "Visuomotor Serial Targeting Task (VSTT)"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Liam Keegan", email = "ssc@iwr.uni-heidelberg.de" }]
+requires-python = ">=3.7"
+classifiers = [
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Education",
+  "Natural Language :: English",
+  "Operating System :: MacOS :: MacOS X",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+  "click",
+  "numpy",
+  "packaging",
+  "pillow",
+  "psychopy",
+  "psychopy-sounddevice",
+  "qtpy",
+  "requests",
+  "shapely",
+]
+dynamic = ["version"]
+
+[project.scripts]
+vstt = "vstt.__main__:main"
+
+[project.urls]
+Github = "https://github.com/ssciwr/vstt"
+Issues = "https://github.com/ssciwr/vstt/issues"
+Documentation = "https://vstt.readthedocs.io/"
+
+[project.optional-dependencies]
+tests = [
+  "ascii-magic",
+  "keyboard",
+  "pyautogui",
+  "pytest",
+  "pytest-cov",
+  "pytest-randomly",
+]
+docs = [
+  "ipykernel",
+  "matplotlib",
+  "myst_parser",
+  "nbsphinx",
+  "pandoc",
+  "sphinx>=4.5.0",
+  "sphinx_rtd_theme>=1.0.0",
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "vstt.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
