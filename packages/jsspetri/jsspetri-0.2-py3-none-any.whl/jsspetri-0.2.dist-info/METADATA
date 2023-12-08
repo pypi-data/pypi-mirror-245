@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: jsspetri
+Version: 0.2
+Summary: OpenAI Gym compatible Environment for Job Shop Scheduling Problems using Petri Nets
+Home-page: https://github.com/your-username/your-repo
+Author: Sofiene Lassoued
+Author-email: lassoued.sofiene@fh-swf.de
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: gymnasium
+
+JSSPetri: Job Shop Scheduling with Petri Nets
+
+JSSPetri is a Python-based framework for simulating and studying job shop scheduling problems using Petri nets. The project provides an Open Ai gym-compatible Petri ne environment representation of job shop instances and a simulator that allows for the exploration of scheduling strategies. The Petri net model captures the flow of operations through various stages of production, and the simulator enables users to interact with the system through discrete actions, such as allocating jobs to machines. The project is designed for flexibility, allowing researchers and practitioners to experiment with different scheduling policies and evaluate their impact on makespan and resource utilization.JSSPetri aims to be a valuable tool for studying and optimizing job shop scheduling scenarios.
+
+
+
+
+
+
+
