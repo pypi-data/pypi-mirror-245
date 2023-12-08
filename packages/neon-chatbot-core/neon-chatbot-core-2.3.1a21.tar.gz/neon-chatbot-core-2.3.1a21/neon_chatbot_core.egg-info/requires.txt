@@ -1,0 +1,13 @@
+ovos-bus-client~=0.0.5
+klat-connector>=0.6.2a15
+psutil~=5.7
+neon_utils[network]~=1.0
+click~=8.0
+
+[lang]
+jellyfish~=0.8
+nltk~=3.5
+spacy~=2.3.1
+
+[lgpl]
+autocorrect~=2.2.2
