@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: MyLogColor
+Version: 0.0.2
+Summary: This is a python package that uses the rough set algorithm to measure which features can be reduced.
+Project-URL: Homepage, https://github.com/YiyaoZhang9527
+Author-email: ManmanZhang <408903228@qq.com>
+License: MIT License
+        
+        Copyright (c) [year] [fullname]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+##### 这是一个简单的带颜色输出的包，主要用于支持代码调试的时候打印出来的内容变成不同的彩色
+
+##### 以下是使用例子：
+
+```python
+from MyLogColor import log,LogLevel
+
+
+log('Hello,错误', LogLevel.ERROR)
+log('Hello,通过', LogLevel.PASS)
+log('Hello,信息', LogLevel.INFO)
+log('Hello,至关重要的', LogLevel.CRITICAL)
+log('Hello,警告', LogLevel.WARN)
+log('Hello,愚蠢的', LogLevel.SILLY)
+log('Hello,成功', LogLevel.SUCCESS)
+```
