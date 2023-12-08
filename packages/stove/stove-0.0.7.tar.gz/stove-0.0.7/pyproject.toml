@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "stove"
+version = "0.0.7"
+description = "A warm place to cook your apps with."
+authors = ["Marco Di Sarno <disarno@k3b.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.scripts]
+stove = "stove.hello:hello"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
