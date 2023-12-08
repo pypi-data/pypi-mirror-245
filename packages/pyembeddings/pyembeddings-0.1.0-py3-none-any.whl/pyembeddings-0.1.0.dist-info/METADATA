@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyembeddings
+Version: 0.1.0
+Summary: Simple and intuitive embeddings generation, storage, and retrieval.
+Home-page: https://github.com/shack15/PyEmbeddings
+Author: Anant Sinha
+Author-email: anant@shack15.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: transformers
+
+# Embedding
