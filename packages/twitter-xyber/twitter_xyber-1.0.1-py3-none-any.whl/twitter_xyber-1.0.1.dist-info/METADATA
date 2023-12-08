@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: twitter-xyber
+Version: 1.0.1
+Summary: Twitter xyber merupakan libary untuk melakukan scraping data twitter. project ini disupport oleh XYBER
+Author: ['Made Garda', 'Ari Yahya']
+Author-email: garda.magase@gmail.com
+Requires-Dist: playwright
+
