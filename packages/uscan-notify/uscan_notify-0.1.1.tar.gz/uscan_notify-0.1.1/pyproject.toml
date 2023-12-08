@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "uscan-notify"
+version = "0.1.1"
+description = "Notify when uscan detects new upstream versions."
+authors = ["Maytham Alsudany <maytha8thedev@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+  { include = "uscan_notify" }
+]
+
+[tool.poetry.scripts]
+uscan-notify = "uscan_notify.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+platformdirs = "^4.0.0"
+click = "^8.1.7"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
