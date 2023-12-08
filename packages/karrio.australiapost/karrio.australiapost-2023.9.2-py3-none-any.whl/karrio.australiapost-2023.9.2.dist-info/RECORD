@@ -1,0 +1,16 @@
+karrio/mappers/australiapost/__init__.py,sha256=V8yq79XycE_TRNjxmFGuczSw5iH6-GPc-uwgLtRb8N4,588
+karrio/mappers/australiapost/mapper.py,sha256=P63Pj8rhRmTb_OGeYtskByUO8BGVvfXcAfbp6X5UiN4,4099
+karrio/mappers/australiapost/proxy.py,sha256=P6Ho7gfXVOfQcf3KPA_qtQbZjoGBH5rz5VwAD_5CX1k,913
+karrio/mappers/australiapost/settings.py,sha256=OwRHtX4ce3IBUZbWKOPe_nAXOv5QTpMOslmrdvE0Ydk,515
+karrio/providers/australiapost/__init__.py,sha256=VWxoktcysztS3NwibUHVCiKCHaO11kMtI8s-khqE2AY,805
+karrio/providers/australiapost/error.py,sha256=gHKquziX5ocviM2aUSeblpj8_joU5TMYo27I9gnfOdM,824
+karrio/providers/australiapost/tracking.py,sha256=Z5EWQGE7J9UxwOys6ZN0YuMTCJh6RmRnP8aC3ZJFOq8,2382
+karrio/providers/australiapost/units.py,sha256=eymwCj6jQgK72LuJmWwS3O00Nv3UygkGD4MTWNdkOVM,1382
+karrio/providers/australiapost/utils.py,sha256=sKweE5MwZ6DvjB9Dvz_RVAbXfBM0GmtGBDy9cEJxJ0k,820
+karrio/schemas/australiapost/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+karrio/schemas/australiapost/error.py,sha256=i8nQeHyk0n9iu5IRPaqnBsLKIgCQVmmV7NlYFp8wR50,499
+karrio/schemas/australiapost/tracking.py,sha256=Uq9HxHa4yfKK_AjThJJo7Qmwvv9LdiJ_VusQ-kRSHTM,1344
+karrio.australiapost-2023.9.2.dist-info/METADATA,sha256=vQb8Hnt6bYz7PLe6IaXpWhzOwdt3Zbidqg7XE9Z_J0s,982
+karrio.australiapost-2023.9.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+karrio.australiapost-2023.9.2.dist-info/top_level.txt,sha256=m_J29PyDW0QBmWa_owaWC_WqcAkMJq4zBYbtjQ0_D9o,15
+karrio.australiapost-2023.9.2.dist-info/RECORD,,
