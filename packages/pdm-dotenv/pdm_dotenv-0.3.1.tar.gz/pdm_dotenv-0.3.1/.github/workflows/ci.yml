@@ -1,0 +1,67 @@
+name: Tests
+
+on:
+  pull_request:
+    paths-ignore:
+      - "docs/**"
+      - "news/**"
+      - "*.md"
+  push:
+    branches:
+      - master
+      - main
+    paths-ignore:
+      - "docs/**"
+      - "news/**"
+      - "*.md"
+
+jobs:
+  Type-Checking:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: pip install hatch
+      - uses: actions/cache@v3
+        id: hatch-cache
+        with:
+          # cache to runner
+          path: hatch-cache
+          key: ${{ hashFiles('pyproject.toml') }}
+      - name: Run pytype
+        run: hatch --cache-dir hatch-cache run static:pytype src
+  Coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: pip install hatch
+      - uses: actions/cache@v3
+        id: hatch-cache
+        with:
+          # cache to runner
+          path: hatch-cache
+          key: ${{ hashFiles('pyproject.toml') }}
+      - name: Run coverage
+        run: hatch --cache-dir hatch-cache run cov --cov-report=xml
+      - uses: codecov/codecov-action@v3
+  Testing:
+    runs-on: "${{ matrix.os }}"
+    strategy:
+      matrix:
+        python-version: [3.8, 3.9, "3.10", 3.11, 3.12]
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v3
+        id: hatch-cache
+        with:
+          # cache to runner
+          path: hatch-cache
+          key: ${{ hashFiles('pyproject.toml') }}-${{ matrix.python-version }}
+      - name: Install dependencies
+        run: pip install hatch
+      - name: Run Tests
+        run: hatch --cache-dir hatch-cache run test
