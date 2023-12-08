@@ -1,0 +1,6 @@
+mandl/__init__.py,sha256=Suq7sUCleedNVHWYv95uLpnK68bUIhF-XXgkcCcdF7Y,527
+mandl/mandl.py,sha256=M05fjFYHonjBYb0Os_qqKWK9KZyz4LS-rS7-pR8lcEg,10049
+mandl/prometheus.yml.template,sha256=vj8IlnfWQ4cjmhzYNAfWxpTfzZbSoSCuTF-KinST0Cc,312
+mandl-0.1.4.dist-info/METADATA,sha256=D_y6qYMym5dcqZSktKzSg95JGJ9fcTO1MK6BCo3YY6Y,834
+mandl-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mandl-0.1.4.dist-info/RECORD,,
