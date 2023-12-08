@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ltchiptool-ft232-flasher
+Version: 1.0.0
+Summary: FT232/FT2232 flasher tool plugin for ltchiptool
+License: MIT
+Author: Kuba Szczodrzyński
+Author-email: kuba@szczodrzynski.pl
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyftdi (>=0.55.0,<0.56.0)
+Requires-Dist: pyftdi-bitbang (>=1.0.0,<2.0.0)
+Requires-Dist: pyspiflash (>=0.6.3,<0.7.0)
+Description-Content-Type: text/markdown
+
+# ltchiptool-ft232-flasher
+
+FT232/FT2232 flasher tool plugin for [ltchiptool](https://docs.libretiny.eu/docs/flashing/tools/ltchiptool/).
+
+The plugin consists of a GUI to read/write SPI flash chips (25Qxx) using FT232/FT2232 USB adapters.
+
+It can also be used with FT232R (without MPSSE) in bit-bang mode.
+
