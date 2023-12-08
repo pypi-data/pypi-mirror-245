@@ -1,0 +1,91 @@
+{% load inventree_extras %}
+{% load i18n %}
+{% load static %}
+
+<script>
+    async function upload_csv() {
+        var formData = new FormData();
+
+        formData.append("file", fileupload.files[0]);
+
+        const cmd_url = "{% url 'plugin:kicad-library-plugin:meta_data_upload' %}"
+
+        document.getElementById("import_spinner").hidden = false;
+
+        inventreeFormDataUpload(url = cmd_url, data = formData).then(function (data) {
+
+            document.getElementById("import_spinner").hidden = true;
+
+            showMessage("Metadata has been processed!", {
+                style: 'success',
+                icon: 'fas fa-server icon-green',
+                details: '',
+            });
+        });
+
+    }
+
+    async function submit_button_controller() {
+        $('#upload-form').on('change', function (evt) {
+
+            if (evt.target.files == null) {
+                return;
+            }
+
+            document.getElementById("btn_import").disabled = false;
+
+            var filesCount = evt.target.files.length;
+
+            if (!filesCount) {
+                document.getElementById("btn_import").disabled = true;
+            }
+
+        });
+
+        return true;
+    }
+
+
+</script>
+
+<div class="panel-heading">
+    <h4>KiCad Metadata Import</h4>
+</div>
+
+<div class='panel-content'>
+
+    <!-- Generic note for user -->
+    <div class='alert alert-info alert-block'>
+        <strong>Requirements for KiCad Metadata upload:</strong>
+        <ul>
+            <li>
+                Open the KiCad BOM export tool and use any of the generator scripts to export the part data.
+            </li>
+
+            <li>
+                KiCad will create an intermediate file with .xml extension which contains all the project's data which
+                is needed.
+            </li>
+
+            <li>Each part must already exist in the database. If not, KiCad will return an error for that specific
+                part.
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<form id="upload-form">
+
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Please select an XML file</label>
+        <input class="form-control" accept=".xml" type="file" id="fileupload" name="fileupload"
+               onchange="submit_button_controller()">
+    </div>
+
+</form>
+
+<button type="submit" class="btn btn-primary" onclick="upload_csv()" title='Import' id="btn_import" disabled>
+    Import Metadata
+    <span class="spinner-border spinner-border-sm" id="import_spinner" hidden role="status" aria-hidden="true"></span>
+</button>
