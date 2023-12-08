@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: piligraphs
+Version: 0.0.1
+Summary: Pillow extension for drawing graphs and charts.
+Home-page: https://github.com/EeeMoon/piligraphs
+License: MIT
+Author: EeeMoon
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# piligraphs
+[![pypi](https://img.shields.io/pypi/v/piligraphs)](https://pypi.org/project/piligraphs)
+[![python](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/downloads)
+[![python](https://img.shields.io/badge/support-yellow)](https://www.buymeacoffee.com/eeemoon)
+
+[Pillow](https://github.com/python-pillow/Pillow) extension for drawing graphs and charts.
+
+![](examples/images/allgraphs.png)
+
+### You can find more examples [here](examples/)
+
