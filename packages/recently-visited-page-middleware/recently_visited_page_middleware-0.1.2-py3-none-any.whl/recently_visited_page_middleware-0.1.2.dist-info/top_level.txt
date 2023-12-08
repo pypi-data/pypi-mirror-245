@@ -1,0 +1,1 @@
+recently_visited_page_middleware
