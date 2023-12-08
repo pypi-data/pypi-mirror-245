@@ -1,0 +1,11 @@
+gemmap/__init__.py,sha256=3ELI-cs4sz0aYUBADjYHf3bE03AbIapWeUobJQ9eMPU,152
+gemmap/_bipartite.py,sha256=EyFISve5BTUmYvG9vVEZ0uiNnrGc3wJhHzC1eCbQAjA,11439
+gemmap/_monopartite.py,sha256=XRwx1udwkEMtcpXkgHeSCdqmrf9Qnkg9oQhS7w7dNRs,6953
+gemmap/_netcore.py,sha256=NM9E5MXLuWrWsHoJfyTa67swCzhCIn4zytcpbg7M9jw,38525
+gemmap/_pimping.py,sha256=Vt7xTuWrUulWKdvorTTsrG5IPwyvNVDXBRV5XXZZE0g,6205
+gemmap/annotation.gemmap_data,sha256=BI1tXO51CCjBo-d66cCuZJosoHbyvkOz_DTjwn2YaCY,61891675
+gemmap/mapping.gemmap_data,sha256=NzLUu_wrWGzeCg0sSv_aP7WCoiGCmYvLXrWAtwgH7j8,2927420
+gemmap-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gemmap-0.1.1.dist-info/METADATA,sha256=vqSUoej4MAlI8KUCNrBVC4UgJaI-X15lm6NmzaUbhxA,506
+gemmap-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+gemmap-0.1.1.dist-info/RECORD,,
