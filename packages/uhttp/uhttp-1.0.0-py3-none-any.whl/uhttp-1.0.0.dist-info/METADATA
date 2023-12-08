@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: uhttp
+Version: 1.0.0
+Summary: Pythonic web development.
+License: MIT
+Author: gus
+Author-email: 0x67757300@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# µHTTP 
+
+Pythonic web development.
+
+
+### Inspirations
+
+- [Flask](https://github.com/pallets/flask/): Hacky Solutions™
+- [FastAPI](https://github.com/tiangolo/fastapi): `Union[Any, None]`
+- [Sanic](https://github.com/sanic-org/sanic): A walking contradiction
+- [Bottle](https://github.com/bottlepy/bottle): One file, 3500+ LOC
+- [Django](https://github.com/django/django)
+
+### TODO
+
+- [x] `asyncfy`
+- [x] `MultiDict`
+- [ ] `uhttp-jinja`
+- [ ] Tests
+- [ ] Documentation
+
