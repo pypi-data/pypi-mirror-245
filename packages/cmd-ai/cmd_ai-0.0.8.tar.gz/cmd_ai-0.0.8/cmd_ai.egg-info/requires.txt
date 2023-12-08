@@ -1,0 +1,6 @@
+click
+console
+fire
+openai
+pandas
+prompt_toolkit
