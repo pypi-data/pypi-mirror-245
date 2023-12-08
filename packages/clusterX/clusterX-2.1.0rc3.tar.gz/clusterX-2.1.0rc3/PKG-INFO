@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: clusterX
+Version: 2.1.0rc3
+Summary: CELL (aka clusterX) is a python package for building Cluster Expansion models of simple and complex alloys and performing thermodynamical analyses of materials.
+Home-page: http://sol.physik.hu-berlin.de/cell/
+Author: CELL Developers
+Author-email: srigamonti@physik.hu-berlin.de
+License: http://www.apache.org/licenses/LICENSE-2.0
+License-File: LICENSE.txt
+License-File: COPYING
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: ase
+Requires-Dist: plac
+Requires-Dist: pytest
+Requires-Dist: spglib
+Requires-Dist: sympy
+Requires-Dist: nglview
+Requires-Dist: ipywidgets
+Requires-Dist: pytest-html
+Requires-Dist: tqdm
