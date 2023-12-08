@@ -1,0 +1,8 @@
+risingwave/__init__.py,sha256=yg3bDanvsHbbEyiHlM_VVU6-o8Ny6IRPvBWkiUVcDYQ,579
+risingwave/test_udf.py,sha256=QFBlruQeoPLhY6I58-OtxpcQsNYeRLSeMGed2tGEZ1o,6554
+risingwave/udf.py,sha256=HbjEjimbN16Lk0hkugW17eLjmplJatuStIUFr33Gq6g,18618
+risingwave/udf/health_check.py,sha256=PRjoKe8od6g0nbY-S5d_djy9Axrf3jrhHxHLNEAPdZg,1290
+risingwave-0.1.1.dist-info/METADATA,sha256=h9-bseX0j48juoXC-S4KrvnEEFt8oqx9ZEQOMsAxakI,4409
+risingwave-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+risingwave-0.1.1.dist-info/top_level.txt,sha256=y8LH5ap2KIkRW9y1XgSDy-p7gX8G77DLu0nWCEiN-Z0,11
+risingwave-0.1.1.dist-info/RECORD,,
