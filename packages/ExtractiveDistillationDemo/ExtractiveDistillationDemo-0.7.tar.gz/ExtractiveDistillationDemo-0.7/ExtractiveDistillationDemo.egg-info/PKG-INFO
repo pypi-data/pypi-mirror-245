@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ExtractiveDistillationDemo
+Version: 0.7
+Summary: A Python codebase to model extractive distillation of ternary mixtures.
+Home-page: https://github.com/AMKCode/ctei_ext_distillation/tree/package
+Download-URL: 
+Author: CTEI
+Author-email: dayakaran@jhu.edu
+License: MIT
+Keywords: Extractive Distillation,Numerical Analysis,Ternary Mixtures
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
