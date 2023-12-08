@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "MyLogColor"
+version = "0.0.1"
+authors = [
+  { name="ManmanZhang", email="408903228@qq.com"},
+]
+description = "This is a python package that uses the rough set algorithm to measure which features can be reduced."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+
+    ]
+
+[project.urls]
+"Homepage" = "https://github.com/YiyaoZhang9527"
