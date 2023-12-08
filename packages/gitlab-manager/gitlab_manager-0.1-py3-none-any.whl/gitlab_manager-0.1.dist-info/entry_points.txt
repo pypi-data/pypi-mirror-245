@@ -1,0 +1,3 @@
+[console_scripts]
+gitlab-manager = gitlab_manager.main:main
+
