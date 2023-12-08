@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+examAnalyserINF219v23.egg-info/PKG-INFO
+examAnalyserINF219v23.egg-info/SOURCES.txt
+examAnalyserINF219v23.egg-info/dependency_links.txt
+examAnalyserINF219v23.egg-info/top_level.txt
