@@ -1,0 +1,12 @@
+spglib/__init__.py,sha256=1nluqtmmNyuJtH88o52rrqFDjslp1I3dKPiV2CDS2kE,2461
+spglib/_spglib.cpython-311-x86_64-linux-gnu.so,sha256=ZEARHRvpby-VFXkdjDykogxYsTpSkACiqKzQGe-CnC0,32064
+spglib/libsymspg.so,sha256=bgk_IO1Tg3mmuZ9u5qROUX1MrW4ChA3EB-h8rLlGbmw,1864904
+spglib/libsymspg.so.2,sha256=bgk_IO1Tg3mmuZ9u5qROUX1MrW4ChA3EB-h8rLlGbmw,1864904
+spglib/libsymspg.so.2.2.0,sha256=bgk_IO1Tg3mmuZ9u5qROUX1MrW4ChA3EB-h8rLlGbmw,1864904
+spglib/spglib.h,sha256=CS9jNj0K-ajnq3t-jp5Ezq1QcONGKVTSWmE0qY1kT9A,25389
+spglib/spglib.py,sha256=ur5i04hwCBDQ436VVklFwTmKBc95nZfhs0leTs-cXP4,54233
+spglib-2.2.0.dist-info/METADATA,sha256=V0Wrf84GV6tunpBvjXlVJak-pLn2B_v6YP1fz2saUuE,3301
+spglib-2.2.0.dist-info/WHEEL,sha256=U6nqohrHIUT_fAdZNN7Ff5W4zPKAENJINBVrCIC8eJc,117
+spglib-2.2.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spglib-2.2.0.dist-info/licenses/COPYING,sha256=pP-g7gE-Qun33KQRQPeAWwBpe6m9FihcqUlaz5U2QmY,1468
+spglib-2.2.0.dist-info/RECORD,,
