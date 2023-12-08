@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mtcnn-runtime
+Version: 0.0.1
+Summary: Python library for streamlined tracking and management of AI training processes.
+Project-URL: Homepage, https://github.com/SAKURA-CAT/mtcnn-runtime
+Author-email: Cunyue <cunykang@gmail.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Keywords: machine learning
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Requires-Dist: onnxruntime
+Requires-Dist: opencv-python
+Description-Content-Type: text/markdown
+
+# mtcnn-runtime
+mtcnn人脸检测模型的轻量化版本，基于onnxruntime
