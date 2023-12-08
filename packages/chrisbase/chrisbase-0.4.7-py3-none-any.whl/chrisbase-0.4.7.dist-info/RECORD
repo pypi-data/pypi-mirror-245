@@ -1,0 +1,15 @@
+chrisbase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chrisbase/cli.py,sha256=4iAcYzF-y7d5xTJP9ukHzawCtTNuI3B7aLX3hsoOArk,151
+chrisbase/data.py,sha256=1cCTMJqqF-qgDOBJIj7xgDPImR85jQIb6m2pD7vNlPc,25330
+chrisbase/io.py,sha256=_U_dpoKoK2M3umtKYEwGlasB_GGtCdAmRrl8o_TMSeA,21277
+chrisbase/morp.py,sha256=7qC9pFVzBcvye53pLfZ3OYg6WH3jaxTFrP0vKu813EQ,2170
+chrisbase/net.py,sha256=CPSNN6vIWkRUzjue53ynEP9Y9b5U3-OanLsSGKgHq4I,505
+chrisbase/time.py,sha256=WFKFwiSWMCSXltH7dLbEDryvaj57uh7HVzUxS6PTEps,1059
+chrisbase/util.py,sha256=lcsBF9mXkRUV0gtl7MrfvKsM_fne5GA83VOUebopBrQ,11482
+chrisbase-0.4.7.dist-info/LICENSE,sha256=CHMXGvGn1zOtMVqa1BcUF758IPxcMANK9V_WPZfOjGs,1066
+chrisbase-0.4.7.dist-info/METADATA,sha256=BoVQ_kHZe63u9HyIWaypl3D4oACM2GZK6r48b6k7wNw,1314
+chrisbase-0.4.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+chrisbase-0.4.7.dist-info/entry_points.txt,sha256=tWguKuEwyR_V6xF6J_yRs1Q02OuN0pFmDt7yy2C2EdM,48
+chrisbase-0.4.7.dist-info/top_level.txt,sha256=HOvP-neGraw0c33Fs8Z27iCPIZv8YKDKtI4sK800rjM,10
+chrisbase-0.4.7.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+chrisbase-0.4.7.dist-info/RECORD,,
