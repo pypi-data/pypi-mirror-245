@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: colorAw
+Version: 0.0.2
+Summary: This is an Color Library for Terminal
+Home-page: https://rubika.ir/Mohamadreza_firouzi
+Author: MohammadRezaFirouzi
+Author-email: mrfirouziii@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+
+## colorAw
+
+> colorAw
+
+
+**Example:**
+```python
+from colorAw import Color
+
+
+print(Color.red+"Test Red Text ")
+```
+
+
+
+### Installing
+
+``` bash
+pip3 install -U colorAw
+```
+
+
