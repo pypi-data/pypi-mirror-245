@@ -1,0 +1,17 @@
+func_timeout
+mmengine>=0.8
+numpy
+opencv-python
+packaging
+Pillow
+prompt_toolkit
+requests
+thefuzz
+tqdm
+
+[all]
+openai
+sentence-transformers
+torch
+torchaudio
+torchvision
