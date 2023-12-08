@@ -1,0 +1,2 @@
+[console_scripts]
+simgen = simgen_ssg.__main__:cli
