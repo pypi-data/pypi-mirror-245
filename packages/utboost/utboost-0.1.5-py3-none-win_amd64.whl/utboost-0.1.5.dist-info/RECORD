@@ -1,0 +1,10 @@
+utboost/__init__.py,sha256=mFEnYOYWnW1dv0-BLjMbGLTYAbA8_lCOVMhmgfK2Qxk,203
+utboost/basic.py,sha256=unNZyvkbBugxpIugaf7UgLpR6N2TPUzOqeaDhOwnqcQ,24101
+utboost/callback.py,sha256=MuCdINrFxUxQJeV6Ips-i1yEDAMEKyxkTtcSbg31src,5027
+utboost/core.py,sha256=Pdgmfl_Me53JtZQMhiMi5p_NvGxa2ne4t4f6n7lr2nc,24875
+utboost/libpath.py,sha256=yCjnSgtlo8scoCldlYunsh6l7fRimQ8EobIUgej2jWw,1162
+utboost/lib/lib_utboost.dll,sha256=TFuP45FatNUckY4BSGGZ5cMsVWHHc7jg8Qc1-_hoCdw,332800
+utboost-0.1.5.dist-info/METADATA,sha256=Csul51nGrM535ICX2NBRJQgtHanNMF23kCDIfWh0zfY,1364
+utboost-0.1.5.dist-info/RECORD,,
+utboost-0.1.5.dist-info/WHEEL,sha256=xq3J6sB2oJqjv0tDC7tGUGvne1fOugw1JUmk86QA7UM,106
+utboost-0.1.5.dist-info/top_level.txt,sha256=Ey-lEw-2mLqBjAF4HpHtGlNwC1Peyy29bIxrZtTZGBA,20
