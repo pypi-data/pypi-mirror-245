@@ -1,0 +1,48 @@
+# Doc:
+# https://hatch.pypa.io/latest/config/build/
+#
+# Examples:
+# https://github.com/pypa/hatch/blob/master/pyproject.toml
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyBusPirateLite"
+version = "0.1.0"
+authors = [
+  { name="Zapta", email="zapta@zapta.com" },
+]
+description = "A Python driver for Bus Pirate"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    #"License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "serial >=0.0.97",
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "LICENSE",
+  "/src/pyBusPirateLite",
+]
+# NOTE: root .gitignore can't be excluded per 
+# https://github.com/pypa/hatch/discussions/368
+exclude = [
+  ".gitignore",
+  ".vscode",
+  ".*.sh",
+  ".DS_Store",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/zapta/pyBusPirateLite"
+"Bug Tracker" = "https://github.com/zapta/pyBusPirateLite/issues"
+
