@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/multicor_fa/__init__.py
+src/multicor_fa/_em.py
+src/multicor_fa/gsea.py
+src/multicor_fa/mcfa_model.py
+src/multicor_fa/simulate_model_gaussian.py
+src/multicor_fa.egg-info/PKG-INFO
+src/multicor_fa.egg-info/SOURCES.txt
+src/multicor_fa.egg-info/dependency_links.txt
+src/multicor_fa.egg-info/requires.txt
+src/multicor_fa.egg-info/top_level.txt
+tests/test_simulate_model_gaussian.py
