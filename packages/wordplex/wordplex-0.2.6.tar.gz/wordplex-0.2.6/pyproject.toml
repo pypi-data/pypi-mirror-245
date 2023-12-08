@@ -1,0 +1,73 @@
+[tool.poetry]
+name = "wordplex"
+version = "0.2.6"
+description = "WordPlex"
+authors = ["fordnox <fordnox@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+black = "23.7.0"
+isort = "5.12.0"
+pre-commit = "3.3.3"
+pywatchman = "1.4.1"
+towncrier = "^23.6.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "7.4.3"
+
+[tool.pytest.ini_options]
+addopts = "-rsx -v --import-mode=importlib"
+testpaths = [
+    "tests"
+]
+
+
+[tool.towncrier]
+package = "wordplex"
+filename = "changelog.md"
+title_format = "## wordplex {version} ({project_date})"
+underlines = ["", "", ""]
+issue_format = "[#{issue}](https://github.com/fordnox/wordplex-python/pulls/{issue})"
+
+  [[tool.towncrier.type]]
+  directory = "breaking"
+  name = "Breaking Changes"
+  showcontent = true
+
+  [[tool.towncrier.type]]
+  directory = "deprecation"
+  name = "Deprecations"
+  showcontent = true
+
+  [[tool.towncrier.type]]
+  directory = "feature"
+  name = "Features"
+  showcontent = true
+
+  [[tool.towncrier.type]]
+  directory = "improvement"
+  name = "Improvements"
+  showcontent = true
+
+  [[tool.towncrier.type]]
+  directory = "fix"
+  name = "Bug Fixes"
+  showcontent = true
+
+  [[tool.towncrier.type]]
+  directory = "docs"
+  name = "Improved Documentation"
+  showcontent = true
+
+  [[tool.towncrier.type]]
+  directory = "trivial"
+  name = "Trivial/Internal Changes"
+  showcontent = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
