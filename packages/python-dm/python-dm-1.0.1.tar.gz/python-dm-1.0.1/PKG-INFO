@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: python-dm
+Version: 1.0.1
+Summary: Dm.dll Python Wrapper.
+Home-page: https://github.com/lvillis/python-dm.dll
+Download-URL: https://github.com/lvillis/python-dm.dll/releases
+Author: Lvillis
+Author-email: lvillis@outlook.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pywin32
+
+<div align="center">
+
+# Python-Dm.dll
+*🐍 Dm.dll Python Wrapper.*
+
+[![](https://img.shields.io/github/license/lvillis/python-dm.dll?style=flat-square)](https://github.com/lvillis/python-dm.dll)
+[![](https://img.shields.io/github/repo-size/lvillis/python-dm.dll?style=flat-square&color=328657)](https://github.com/lvillis/python-dm.dll)
+[![Github Actions](https://img.shields.io/github/actions/workflow/status/lvillis/python-dm.dll/publish-to-test-pypi.yml?style=flat-square)](https://github.com/lvillis/python-dm.dll/actions)
+[![](https://img.shields.io/github/last-commit/lvillis/python-dm.dll?style=flat-square&label=commits)](https://github.com/lvillis/python-dm.dll)
+[![](https://img.shields.io/pypi/dm/python-dm?style=flat-square)](https://github.com/lvillis/python-dm.dll)
+
+</div>
+
+---
+
+```
+pip install python-dm
+```
+
+```
+from python_dm import Dm
+
+dm = Dm()
+dm.Reg(reg_code='your reg_code', ver_info='')
+```
