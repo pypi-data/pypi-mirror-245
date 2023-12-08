@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load static i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block navbar %}{% endblock %}
+{% block footer %}{% endblock %}
+{% block html_class %}{% endblock %}
+
+{% block extra_css %}
+  <style>
+   html, body {
+     overflow: hidden;
+   }
+   #rightPanel {
+     background-image: url("/static/bulma/login_bg.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 100vh;
+     padding: 0;
+   }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <div class="columns">
+    <div class="column is-narrow">
+      <div class="is-flex is-align-items-center is-justify-content-center" style="width:600px;max-width:100%;height:100%;">
+	<div style="width:420px;max-width:100%;" class="py-6 px-5">
+	  {% if request.site.setting.logo %}
+	    <img class="mb-6" src="{{request.site.setting.logo.url}}" style="height:32px;" />
+	  {% endif %}
+	  <h1 class="title">{% translate "Welcome back" %}</h1>
+	  <form method="post">
+	    {% csrf_token %}
+	    {% if form.non_field_errors %}
+	      <div class="notification is-danger is-light" >{{form.non_field_errors.0}}</div>
+	    {% endif %}
+	    <div class="field">
+	      {{form.login.label_tag}}
+	      {{form.login}}
+	    </div>
+	    <div class="field">
+	      {{form.password.label_tag}}
+	      {{form.password}}
+	    </div>
+	    <div class="field">
+	      <label class="checkbox">
+		{{form.remember}}
+		{{form.remember.label}}
+	      </label>
+	    </div>
+	    <p class="has-text-right my-5">
+	      <a href="{% url "account_reset_password" %}" class="has-text-dark">{% trans "Forgot Password?" %}</a></p>
+	    {% if redirect_field_value %}
+	      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+	    {% endif %}
+	    <div class="field" >
+	      <div class="control" >
+		<button class="button is-primary is-fullwidth is-medium" type="submit">{% translate "Sign In" %}</button>
+	      </div>
+	    </div>
+	  </form>
+	  
+	  {% get_providers as socialaccount_providers %}
+	  {% if socialaccount_providers %}
+	    <div class="divider"><span>{% trans 'Or Sign in with' %}</span></div>
+	    <div class="buttons is-centered">
+	      {% include "socialaccount/snippets/provider_list.html" with process="login" %}	    
+	    </div>
+	    {% include "socialaccount/snippets/login_extra.html" %}
+	  {% endif %}
+	  <p class="has-text-centered">{% blocktrans %}Don's have an account ?
+	    <a href="{{ signup_url }}">Sign up</a>{% endblocktrans %}
+	  </p>
+	</div>
+      </div>
+    </div>
+    <div class="column is-hidden-mobile" id="rightPanel">
+    </div>
+  </div>
+{% endblock %}
+
+{% block extra_js %}
+  <script>
+   document.querySelector("form").addEventListener("submit", event => {
+     event.submitter.classList.add("is-loading")
+   })
+  </script>
+{% endblock %}

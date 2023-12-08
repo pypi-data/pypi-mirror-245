@@ -1,0 +1,31 @@
+{% load static %}
+<nav class="navbar is-fixed-top noprint has-shadow">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-weight-bold" href="/">
+       <img src="{% static "backend/img/logo.png" %}" style="max-height:18px;" />
+     </a>
+   </div>
+   <div id="navbarMenuHeroA" class="navbar-menu">
+    <div class="navbar-start">
+     {% if request.user.is_authenticated %}
+     <a class="navbar-item" href="/papers/">我的文档</a>
+     {% endif %}
+   </div>
+ </div>
+ {% if user.is_authenticated %}
+ {% include "profile_menu.html" %}
+ {% else %}
+ <div class="navbar-item">
+  <div class="buttons">
+   <a class="button is-dark" href="/accounts/signup/">
+    <span>免费注册</span>
+  </a>
+  <a class="button is-light" href="/accounts/login/">
+    <span>登录</span>
+  </a>
+</div>
+</div>
+</div>
+</nav>
+{% endif %}

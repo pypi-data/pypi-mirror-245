@@ -1,0 +1,21 @@
+{% load thumbnail %}
+<div class="navbar-item has-dropdown is-hoverable" href="/accounts/">
+  <a class="navbar-link" id="user-tools">
+    <figure class="image" style="height:32px;width:28px;">
+      {% if user.avatar %}
+	{% thumbnail user.avatar "64x64" crop="center" as im %}
+	<img class="is-rounded" src="{{im.url}}" />
+	{% endthumbnail %}
+      {% else %}
+      <svg width="32" height="32" data-jdenticon-value="{{user.email}}"></svg>
+      {% endif %}
+    </figure>
+    <!-- <span>{{user.username}}</span> -->
+  </a>
+  <div class="navbar-dropdown is-right">
+    <a class="navbar-item" href="/accounts/profile/">我的信息</a>
+    <a class="navbar-item" href="/accounts/password/change/">修改密码</a>
+    <hr class="navbar-divider" />
+    <a class="navbar-item" href="/accounts/logout/">退出登录</a>
+  </div>
+</div>
