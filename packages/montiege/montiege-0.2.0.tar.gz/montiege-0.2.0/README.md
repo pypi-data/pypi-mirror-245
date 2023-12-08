@@ -1,0 +1,43 @@
+# PrintGraph
+
+## Description
+PrintGraph is a simple python script that prints a graph.
+
+### Parameters
+- listX (list): List of list, each sublist should contain x coordinates of every dot
+- listY (list): List of list, each sublist should contain y coordinates of every dot
+- listLabel (list) : List of string, label of each curve
+- title (str) : Title of the plot
+- xLabel (str) : Label of x axis (optional) (default : X Axis)
+- yLabel (str) : Label of y axis (optional) (default : Y Axis)
+- width (int) : Width of the plot (optional) (default : 10)
+- height (int) : Height of the plot (optional) (default : 6)
+- xScale (str) : Scale of x axis (optional) (linear, log, symlog, logit) (default : log)
+- yScale (str) : Scale of y axis (optional) (linear, log, symlog, logit) (default : log)
+
+
+## Usage
+```python 
+xVal = [[10, 100, 1000, 10000, 100000],
+          [10, 100, 1000, 10000, 100000, 1000000],
+          [10, 100, 1000, 10000, 100000]]
+
+yVal = [[57294, 607418, 6755705, 331559735, 33178671213],
+          [45717, 299134, 1715546, 10415336, 157352093, 12800502882], [69268, 2490323, 5273649, 71921675, 3268629864]]
+curvesLabel = ["HeapTree", "ArrayList", "HeapArray"]
+name = 'Compare sort algorithms on random lists'
+xLabel = 'List size'
+yLabel = 'Execution time (nano seconds)'
+xScale = "log"
+yScale = "log"
+
+curves(xVal, yVal, curvesLabel, name, xLabel, yLabel, xScale=xScale, yScale=yScale)
+```
+
+### Plot : 
+
+![Plot example](image.png)
+
+### Dependencies
+* Python 3.8 or higher
+* Matplotlib
