@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: blackmarblepy
+Version: 0.2.0
+Summary: Georeferenced Rasters of Nighttime Lights from NASA Black Marble data
+Author-email: World Bank <github@worldbank.org>
+Maintainer-email: Gabriel Stefanini Vicente <gvicente@worldbank.org>, Robert Marty <rmarty@worldbank.org>
+License: MIT License
+        
+        Copyright (c) 2023 World Bank
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/worldbank/blackmarblepy
+Project-URL: Bug Reports, https://github.com/worldbank/blackmarblepy/issues
+Project-URL: Source, https://github.com/worldbank/blackmarblepy
+Keywords: nighttime lights,nasa,black marble,world bank
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: backoff<3,>=2
+Requires-Dist: dask[dataframe]
+Requires-Dist: geopandas<1
+Requires-Dist: h5py
+Requires-Dist: httpx
+Requires-Dist: ipywidgets<9
+Requires-Dist: numpy
+Requires-Dist: pandas<3,>=2
+Requires-Dist: pqdm
+Requires-Dist: pydantic<3,>2
+Requires-Dist: rasterio
+Requires-Dist: rasterstats
+Requires-Dist: rioxarray
+Requires-Dist: tqdm
+Requires-Dist: xarray
+Requires-Dist: aiohttp
+Provides-Extra: docs
+Requires-Dist: docutils==0.17.1; extra == "docs"
+Requires-Dist: jupyter-book>=0.15.1; extra == "docs"
+Requires-Dist: sphinxcontrib-apidoc<1,>=0.4.0; extra == "docs"
+Requires-Dist: docutils==0.17.1; extra == "docs"
+
+# BlackMarblePy
+
+[![PyPI version](https://badge.fury.io/py/blackmarblepy.svg)](https://badge.fury.io/py/blackmarblepy)
+[![docs](https://github.com/worldbank/blackmarblepy/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/worldbank/blackmarblepy/actions/workflows/gh-pages.yml)
+[![GitHub Repo stars](https://img.shields.io/github/stars/worldbank/blackmarblepy)](https://github.com/worldbank/blackmarblepy)
+[![activity](https://img.shields.io/github/commit-activity/m/worldbank/blackmarblepy)](https://github.com/worldbank/blackmarblepy/graphs/commit-activity)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**BlackMarblePy** provides a simple and efficient way to retrieve and extract nighttime lights data from NASA's Black Marble project. [Black Marble](https://blackmarble.gsfc.nasa.gov) is a [NASA Earth Observatory](https://earthobservatory.nasa.gov) project that provides a product suite of daily, monthly and yearly global nighttime lights. This package automates the process of downloading all relevant tiles from the [NASA LAADS archive](https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5000/VNP46A3/) to cover a region of interest, converting the raw files (in HDF5 format), to georeferenced rasters, and mosaicing rasters together when needed.
+
+## Features
+
+- Download daily, monthly, and yearly nighttime lights data  for user-specified region of interest and time range.
+- Parallel downloading for faster data retrieval and automatic retry mechanism for handling network errors.
+- Access NASA Black Marble as a Xarray Dataset
+  - Integrated data visualization with customization options
+    - Choose between various plot types, including bar charts, line graphs, and heatmaps.
+    - Customize plot appearance with color palettes, axes labels, titles, and legends.
+    - Save visualizations as high-resolution images for presentations or reports.
+  - Perform time series analysis on nighttime lights data.
+    - Calculate zonal statistics like mean and sum.
+    - Plot time series of nighttime lights data.
+
+## Installation
+
+**BlackMarblePy** is available on [PyPI](https://pypi.org) as [blackmarblepy](https://pypi.org/project/blackmarblepy) and can installed using `pip`:
+
+```shell
+pip install blackmarblepy
+```
+
+## Usage
+
+Before downloading and extracting Black Marble data, define the [NASA LAADS archive](https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5000/VNP46A3/) `bearer` token, and define a region of interest (i.e., `gdf` as a [`geopandas.GeoDataFrame`](https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoDataFrame.html)).
+
+```python
+from blackmarble.raster import bm_raster
+
+# Raster stack of daily data
+date_range = pd.date_range("2022-01-01", "2022-03-31", freq="D")
+
+# Retrieve VNP46A2 for date range into a Xarray Dataset
+daily = bm_raster(
+    gdf,
+    product_id="VNP46A2",
+    date_range=date_range,
+    bearer=bearer,
+)
+```
+
+For more detailed information and examples, please refer to the [documentation](https://worldbank.github.io/blackmarblepy/examples/blackmarblepy.html).
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please follow our [contribution guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is open-source - see the [LICENSE](LICENSE) file for details

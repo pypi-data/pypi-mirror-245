@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blackmarblepy"
+dynamic = ["version"]
+description = "Georeferenced Rasters of Nighttime Lights from NASA Black Marble data"
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE" }
+keywords = ["nighttime lights", "nasa", "black marble", "world bank"]
+authors = [{ name = "World Bank", email = "github@worldbank.org" }]
+maintainers = [
+	{ name = "Gabriel Stefanini Vicente", email = "gvicente@worldbank.org" },
+	{ name = "Robert Marty", email = "rmarty@worldbank.org" },
+]
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: 3 :: Only",
+	"Development Status :: 3 - Alpha",
+	"Intended Audience :: Science/Research",
+	"Topic :: Scientific/Engineering",
+]
+requires-python = ">=3.7"
+dependencies = [
+	"backoff>=2,<3",
+	"dask[dataframe]",
+	"geopandas<1",
+	"h5py",
+	"httpx",
+	"ipywidgets<9",
+	"numpy",
+	"pandas>=2,<3",
+	"pqdm",
+	"pydantic>2,<3",
+	"rasterio",
+	"rasterstats",
+	"rioxarray",
+	"tqdm",
+	"xarray",
+	"aiohttp",
+]
+[project.optional-dependencies]
+docs = [
+	"docutils==0.17.1",                  # https://jupyterbook.org/en/stable/content/citations.html?highlight=docutils#citations-and-bibliographies
+	"jupyter-book >= 0.15.1",
+	"sphinxcontrib-apidoc >= 0.4.0, <1",
+	"docutils==0.17.1",
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/worldbank/blackmarblepy"
+"Bug Reports" = "https://github.com/worldbank/blackmarblepy/issues"
+"Source" = "https://github.com/worldbank/blackmarblepy"
+
+[tool.setuptools.dynamic]
+version = { file = "src/blackmarble/VERSION" }
+
+[tool.setuptools.package-data]
+"blackmarble.data" = ["blackmarbletiles.geojson"]
