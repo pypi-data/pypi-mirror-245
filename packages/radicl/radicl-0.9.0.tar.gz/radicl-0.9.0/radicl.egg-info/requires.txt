@@ -1,0 +1,10 @@
+pyserial<4.0.0,>=3.4
+pandas<2.0.0,>=1.2.0
+colorama<0.5.0,>=0.4.3
+termcolor<2.0.0,>=1.1.0
+argparse<2.0.0,>=1.4.0
+coloredlogs<15.0,>=14.0
+matplotlib<4.0.0,>=3.6.0
+progressbar2<4.0.0,>=3.53.1
+study-lyte>=0.6.2
+pynmeagps==1.0.19
