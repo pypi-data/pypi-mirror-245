@@ -1,0 +1,16 @@
+p_winds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+p_winds/carbon.py,sha256=Fd7heLMhzr9zxIjy8WHWHgZ8RMbQDQjHGH3s-a0rBng,28191
+p_winds/energetics.py,sha256=3O7zv9ilrYLuwnmSnlXHMaxQohGrh48j42jC1o7FtS8,18412
+p_winds/helium.py,sha256=sRpLmVirw27zwDvjTROYtwX_O8nvgDV2AP28NfCSRIU,44850
+p_winds/hydrogen.py,sha256=bq5smpyAg9bmlrXMCXJVE6_MBJnNsEGq7qMQ9-SXj00,23906
+p_winds/lines.py,sha256=Wt2dxGUtUGosDlWVXb8-0F5Oj34RcCP_TLhfoqEOBi8,4739
+p_winds/microphysics.py,sha256=9fy98yoq8qeWA6-8yI1DH7uJwOEnAYkrCbe4JCViClw,12810
+p_winds/oxygen.py,sha256=2J2omYf5HzNl3YPvjXb7ECpt8JlFaIVKhSTD3vCimJE,20269
+p_winds/parker.py,sha256=wenHs4yNn2RfULuFbuRzhYcaHAe-8bImf6DjsW4h4PI,12934
+p_winds/tools.py,sha256=9urYeKXJ-4DdhvMy30ED10fmwPo0f8MkyaayU5a0bzU,10547
+p_winds/transit.py,sha256=VyrXnaksZslCTpfpZahkP3wpzM49rhl3yWN3WFZoBd8,21205
+p_winds-1.4.5.dist-info/LICENSE,sha256=B9C9NE8xaJh2VzShf2iJ5OMXn02wWYGi8EINfmthwwA,1079
+p_winds-1.4.5.dist-info/METADATA,sha256=S5AIakyJM5igM7_vobtByGH5VxjWE9_CNpdSAwyJK-E,592
+p_winds-1.4.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+p_winds-1.4.5.dist-info/top_level.txt,sha256=Nz4eP-Fm0W3a1_piUnCHfVhGodcuqfo3CuHkcHF6h_0,8
+p_winds-1.4.5.dist-info/RECORD,,
