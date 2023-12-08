@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+htoopdf/__init__.py
+htoopdf/pdf2image.py
+htoopdf/pdf2text.py
+htoopdf.egg-info/PKG-INFO
+htoopdf.egg-info/SOURCES.txt
+htoopdf.egg-info/dependency_links.txt
+htoopdf.egg-info/top_level.txt
