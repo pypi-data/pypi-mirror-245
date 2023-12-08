@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ZimPhoneValidate/__init__.py
+ZimPhoneValidate/validate.py
+ZimPhoneValidate.egg-info/PKG-INFO
+ZimPhoneValidate.egg-info/SOURCES.txt
+ZimPhoneValidate.egg-info/dependency_links.txt
+ZimPhoneValidate.egg-info/entry_points.txt
+ZimPhoneValidate.egg-info/requires.txt
+ZimPhoneValidate.egg-info/top_level.txt
+ZimPhoneValidate/Examples/example.py
