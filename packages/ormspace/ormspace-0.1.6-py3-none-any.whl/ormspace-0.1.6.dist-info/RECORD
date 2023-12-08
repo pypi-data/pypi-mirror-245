@@ -1,0 +1,15 @@
+ormspace/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ormspace/alias.py,sha256=B6ioSFniVGgMXhn0QzQYULT-F_6euz0mbHEQnBsB9NE,974
+ormspace/bases.py,sha256=lW-Nl5MZISJCXRZbJfd2bomCLR-HrHtV96qerfd-QAk,3830
+ormspace/containers.py,sha256=MrZvhuZBipDIN_O2U1xaOMhz9uHIxNd2tGJ0IotjcVQ,700
+ormspace/database.py,sha256=9lZQqkaNzU35SWh74UrlTi_EqjCupc5-jTNVdFFTD7Y,11627
+ormspace/exception.py,sha256=sMmTBurgjMLv38KCcVCX3jHPjpiG3Oh1meFnCJInbiE,246
+ormspace/functions.py,sha256=hWys2sYaKVaxxtoYunN-UXYAjCqlQpJK9gf_yEucvw0,8750
+ormspace/key_model.py,sha256=LWE0DHuzwm0ORwfLmZL-3eyjmbwV---ncw9n39BjqWo,3406
+ormspace/keys.py,sha256=pdHRRF7en3bpvXn3sXj_GkVaH8xZFzlmxSZRW5coHQE,4275
+ormspace/metadata.py,sha256=-Sp5kPzSW4tQe9IGxlumLWlkPAPtV-pNzY1FyJNcB84,1748
+ormspace/model.py,sha256=JRsMPvKoz7MpR-4uPhXdo3A5kg14W2B4c-R9zOLSlu4,7796
+ormspace/settings.py,sha256=_juhO1-EX5XyMqU-7RRRAG7vPcl3eDowX58e8Xu18MQ,880
+ormspace-0.1.6.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+ormspace-0.1.6.dist-info/METADATA,sha256=tx-42zGEI0w7HgbkuaRh09x1ED3DmIAZRjeoleXv5oU,1823
+ormspace-0.1.6.dist-info/RECORD,,
