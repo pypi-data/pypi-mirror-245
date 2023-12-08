@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+skleam/__init__.py
+skleam.egg-info/PKG-INFO
+skleam.egg-info/SOURCES.txt
+skleam.egg-info/dependency_links.txt
+skleam.egg-info/not-zip-safe
+skleam.egg-info/top_level.txt
