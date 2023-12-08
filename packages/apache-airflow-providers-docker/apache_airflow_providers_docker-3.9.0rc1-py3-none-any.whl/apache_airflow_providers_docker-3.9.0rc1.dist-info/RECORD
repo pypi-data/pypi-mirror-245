@@ -1,0 +1,15 @@
+airflow/providers/docker/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/docker/__init__.py,sha256=ezAj7MxH3dvZ0kaKVUHfyZId6-gFAui75oPdrkMQbV0,1581
+airflow/providers/docker/exceptions.py,sha256=s67Fk74SBO0bmznEltZS8xPN21W-kBER24AdrPgxXpw,1670
+airflow/providers/docker/get_provider_info.py,sha256=BtwTy1laG1WQXXeDg37ygGK3xPFRFLXbAjdGKt16Gt0,3509
+airflow/providers/docker/decorators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/docker/decorators/docker.py,sha256=TerTxCsSNIX4k7ktsm0aoNSReII_nrjT91_Ug7Ri0iM,6753
+airflow/providers/docker/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/docker/hooks/docker.py,sha256=BlEDwPHHpa9pFdKd_WU8iQSHTpYIhqQ4l8spitGTIXk,7938
+airflow/providers/docker/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/docker/operators/docker.py,sha256=IFXfPTz5DRzXynP6WBRMrT5n_1Fj2uzOCtdUen25hbg,24853
+airflow/providers/docker/operators/docker_swarm.py,sha256=Or5Ij1JvG1FNp8-V3iVAFiV-EChi6heKQLF6GDnW36k,10181
+apache_airflow_providers_docker-3.9.0rc1.dist-info/entry_points.txt,sha256=MBIHYXDef8WBNiO3kv-IpYFCMnsK0xAHHovg87L5yGQ,102
+apache_airflow_providers_docker-3.9.0rc1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_docker-3.9.0rc1.dist-info/METADATA,sha256=fw6Lelj8qZndSGxKHQhEgNoLEmYq9ITXWHzsIZw3Vis,4757
+apache_airflow_providers_docker-3.9.0rc1.dist-info/RECORD,,
