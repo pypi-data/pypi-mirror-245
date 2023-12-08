@@ -1,0 +1,8 @@
+pydantic-xml[lxml]>=2.6.0
+
+[dev]
+pylint
+
+[test]
+pytest
+pytest-cov
