@@ -1,0 +1,12 @@
+LICENSE
+README.md
+requirements.txt
+setup.py
+main/__init__.py
+main/common.py
+prepup_linux.egg-info/PKG-INFO
+prepup_linux.egg-info/SOURCES.txt
+prepup_linux.egg-info/dependency_links.txt
+prepup_linux.egg-info/entry_points.txt
+prepup_linux.egg-info/requires.txt
+prepup_linux.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+prepup = main.__init__:main
+
