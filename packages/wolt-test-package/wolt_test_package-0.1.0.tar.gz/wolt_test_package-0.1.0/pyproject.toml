@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "wolt-test-package"
+version = "0.1.0"
+description = "A package to test dependency related issues."
+authors = ["Wolt Security Team <security@wolt.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
