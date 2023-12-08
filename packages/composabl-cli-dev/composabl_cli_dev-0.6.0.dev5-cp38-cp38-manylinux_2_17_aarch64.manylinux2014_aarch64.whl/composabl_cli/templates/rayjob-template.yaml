@@ -1,0 +1,85 @@
+# Copyright (C) Composabl, Inc - All Rights Reserved
+# Unauthorized copying of this file, via any medium is strictly prohibited
+# Proprietary and confidential
+
+apiVersion: ray.io/v1
+kind: RayJob
+metadata:
+  name: composabl-job-{{ job_id }}
+spec:
+  entrypoint: bootstrap.sh
+#  entrypoint: python /home/ray/composabl-agent/main.py
+  shutdownAfterJobFinishes: true
+  ttlSecondsAfterFinished: 10
+  runtimeEnvYAML: |
+    {# todo: loop to add the additional dependencies, if any #}
+    pip:
+      - composabl=={{ composabl_version }}
+    {% for package in additional_packages %}
+      - {{ package["name"] }}=={{ package["version"] }}
+    {% endfor %}
+    env_vars:
+      counter_name: "test_counter"
+
+  rayClusterSpec:
+    rayVersion: '2.7.0'
+    headGroupSpec:
+      rayStartParams:
+        dashboard-host: '0.0.0.0'
+      #pod template
+      template:
+        spec:
+          containers:
+            - name: ray-head
+              image: rayproject/ray:2.7.0
+              ports:
+                - containerPort: 6379
+                  name: gcs-server
+                - containerPort: 8265 # Ray dashboard
+                  name: dashboard
+                - containerPort: 10001
+                  name: client
+              resources:
+                limits:
+                  cpu: "1"
+                requests:
+                  cpu: "200m"
+              volumeMounts:
+                - mountPath: /home/ray/composabl-agent
+                  name: composabl-agent
+          volumes:
+            - name: composabl-agent
+              configMap:
+                name: composabl-agent-{{ job_id }}
+                items:
+                  - key: main.py
+                    path: main.py
+    workerGroupSpecs:
+      - replicas: {{ worker_replicas }}
+        rayStartParams: {}
+        groupName: composabl-workers
+        #pod template
+        template:
+          spec:
+            containers:
+              - name: composabl-worker
+                image: rayproject/ray:2.7.0
+                lifecycle:
+                  preStop:
+                    exec:
+                      command: [ "/bin/sh","-c","ray stop" ]
+                resources:
+                  limits:
+                    cpu: {{ worker_cpu }}
+                    memory: {{ worker_memory }}
+                  requests:
+                    cpu: {{ worker_cpu }}
+                    memory: {{ worker_memory }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: composabl-agent-{{ job_id }}
+data:
+  main.py: |
+    {{ script_payload }}
