@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/infinitum/__init__.py
+src/infinitum/main.py
+src/infinitum.egg-info/PKG-INFO
+src/infinitum.egg-info/SOURCES.txt
+src/infinitum.egg-info/dependency_links.txt
+src/infinitum.egg-info/requires.txt
+src/infinitum.egg-info/top_level.txt
+tests/test.py

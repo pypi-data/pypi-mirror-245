@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infinitum"
+version = "0.0.6"
+description = "A tool to help working with databases not suck"
+readme = "README.md"
+authors = [{ name = "Jacob Hochendoner", email = "hochen97@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "psycopg2-binary",
+]
+requires-python = ">=3.11"
+
+[project.urls]
+Homepage = "https://github.com/hochen97/infinitum"
