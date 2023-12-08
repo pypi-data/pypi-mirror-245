@@ -1,0 +1,10 @@
+climkern/__init__.py,sha256=UdVMqlhubP-U2kXhrzpqc3bNJu0A48uhmp-A4Gyj9y8,421
+climkern/__main__.py,sha256=ZwQVPOxSgS2CilXUj0jdTma6gPKfjzJvbMCeFNU48So,494
+climkern/download.py,sha256=dRnPASoDmA4qXfGLMTnfuTs9gFBEoKuUSAPMiGOm-rE,635
+climkern/frontend.py,sha256=yOwOOYIDdFMYkvRMwSLexKCLJwfUwmKchBIsV1A3-9E,47536
+climkern/util.py,sha256=gn9QRPBpGKRAlFYGUtUEcXzcyYckQ2N4AnhsmlSaEkU,9391
+climkern-1.0.0.dist-info/LICENSE,sha256=omQaR4dgUUvDhTc289J-khA9dn1Fe5s8ynvsn98LdJ8,1067
+climkern-1.0.0.dist-info/METADATA,sha256=iDSJN2xUunbM31rnBzizkHny19s2LIzpa7-cEfyoQXg,8037
+climkern-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+climkern-1.0.0.dist-info/top_level.txt,sha256=HzwgizQanpvKJSx6fShuQGWUYtHSMTC0ORXD2RCD9cQ,9
+climkern-1.0.0.dist-info/RECORD,,
