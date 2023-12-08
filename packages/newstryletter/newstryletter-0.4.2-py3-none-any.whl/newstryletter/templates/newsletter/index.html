@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+<!-- include mission and little image-->
+ {% block bg_primary %}
+    {% include "jobs/bg_primary.html" %}
+{% endblock %}
+
+{% block title %}Newsletetr {% endblock %}
+
+{% block content %}
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<div class="card shadow-custom border-0 col-lg-4 mx-auto mb-3">
+    <h3 class="py-2 font-weight-bold text-grey text-center">
+        NewsLetter
+    <small class="text-muted">YouTax</small>
+    </h3>
+    <p class="text-center">
+        Your email address for sending our periodic news
+    </p>
+    <div class="col-lg-4 mx-auto mb-3">
+        {% if email %}
+            <p>{{ email }} has been {{ action }}.</p>
+        {% endif %}
+    </div>
+    {% if form %}
+        <form method="post" novalidate>
+            {% csrf_token %}
+            {{ form|crispy }}
+            <div class="form-group g-recaptcha" data-sitekey="{{ public_captcha }}"></div>
+            <button type="submit" class="btn btn-info">Subscribe</button>
+        </form>
+    {% endif %}
+
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}
