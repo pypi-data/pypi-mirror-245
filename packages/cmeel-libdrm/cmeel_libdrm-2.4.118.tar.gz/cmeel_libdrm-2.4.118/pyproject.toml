@@ -1,0 +1,23 @@
+[build-system]
+build-backend = "cmeel"
+requires = ["cmeel[build]", "meson", "ninja"]
+
+[project]
+description = "cmeel distribution for libdrm"
+license = "MIT"
+name = "cmeel-libdrm"
+requires-python = ">= 3.8"
+version = "2.4.118"
+
+[project.urls]
+homepage = "https://github.com/cmake-wheel/cmeel-libdrm"
+repository = "https://github.com/cmake-wheel/cmeel-libdrm.git"
+upstream = "https://dri.freedesktop.org/"
+
+[tool.cmeel]
+build-number = 1
+has-sitelib = false
+run-tests = false
+
+[tool.tomlsort]
+all = true
