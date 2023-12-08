@@ -1,0 +1,3 @@
+[console_scripts]
+code-size-counter=code_size_counter.main:main
+
