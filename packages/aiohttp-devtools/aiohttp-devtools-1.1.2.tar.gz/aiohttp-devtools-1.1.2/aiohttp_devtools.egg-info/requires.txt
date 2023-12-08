@@ -1,0 +1,5 @@
+aiohttp>=3.9
+click>=6.6
+devtools>=0.6
+Pygments>=2.2.0
+watchfiles>=0.10
