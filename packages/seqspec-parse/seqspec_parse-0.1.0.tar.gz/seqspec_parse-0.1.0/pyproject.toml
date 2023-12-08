@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "seqspec-parse"
+version = "0.1.0"
+description = "Parse a seqspec file for use with UMI-tools"
+authors = ["Eric Che <eric.che@childrens.harvard.edu>"]
+readme = "README.md"
+packages = [{include = "seqspec_parse"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typeguard = "^4.1.5"
+seqspec = "^0.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
