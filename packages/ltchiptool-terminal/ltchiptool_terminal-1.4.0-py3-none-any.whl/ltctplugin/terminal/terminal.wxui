@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wxUiEditorData
+  data_version="15">
+  <node
+    class="Project">
+    <node
+      class="PanelForm"
+      base_file="terminalpanel_base"
+      class_name="TerminalPanel"
+      derived_class_name="TerminalPanelDerived"
+      derived_file="terminalpanel_derived"
+      mockup_size="500,400">
+      <node
+        class="wxGridBagSizer"
+        var_name="sizer_terminal"
+        growablecols="1,2"
+        growablerows="2"
+        flags="wxEXPAND">
+        <node
+          class="wxStaticText"
+          label="Device port"
+          var_name="text_port"
+          alignment="wxALIGN_CENTER_VERTICAL" />
+        <node
+          class="wxComboBox"
+          style="wxCB_READONLY"
+          var_name="combo_port"
+          colspan="2"
+          column="1"
+          flags="wxEXPAND" />
+        <node
+          class="wxButton"
+          label="Rescan"
+          var_name="button_rescan"
+          column="3"
+          flags="wxEXPAND" />
+        <node
+          class="wxStaticText"
+          label="Baud rate"
+          var_name="text_baudrate"
+          alignment="wxALIGN_CENTER_VERTICAL"
+          row="1" />
+        <node
+          class="wxComboBox"
+          contents="&quot;9600&quot; &quot;19200&quot; &quot;38400&quot; &quot;57600&quot; &quot;115200&quot; &quot;230400&quot; &quot;460800&quot; &quot;921600&quot; &quot;1000000&quot; &quot;1200000&quot; &quot;1500000&quot;"
+          selection_int="4"
+          var_name="combo_baudrate"
+          validator_data_type="int"
+          alignment="wxALIGN_CENTER_VERTICAL"
+          column="1"
+          row="1" />
+        <node
+          class="wxBoxSizer"
+          orientation="wxVERTICAL"
+          var_name="box_sizer_3"
+          alignment="wxALIGN_RIGHT"
+          border_size="0"
+          column="2"
+          flags="wxEXPAND"
+          row="1">
+          <node
+            class="wxBoxSizer"
+            border_size="0"
+            column="2"
+            row="1">
+            <node
+              class="wxCheckBox"
+              label="CR"
+              var_name="checkbox_cr" />
+            <node
+              class="wxCheckBox"
+              checked="1"
+              label="LF"
+              var_name="checkbox_lf"
+              alignment="wxALIGN_CENTER_VERTICAL" />
+            <node
+              class="wxCheckBox"
+              label="Word Wrap"
+              var_name="checkbox_wrap"
+              hidden="1" />
+            <node
+              class="wxCheckBox"
+              checked="1"
+              label="Auto Scroll"
+              var_name="checkbox_scroll"
+              hidden="1" />
+            <node
+              class="wxCheckBox"
+              checked="1"
+              label="Local Echo"
+              var_name="checkbox_echo" />
+            <node
+              class="wxCheckBox"
+              label="Auto Clear"
+              var_name="checkbox_clear" />
+          </node>
+          <node
+            class="wxBoxSizer"
+            var_name="box_sizer_2"
+            border_size="0"
+            column="3"
+            row="1">
+            <node
+              class="wxButton"
+              label="Clear console"
+              var_name="button_clear"
+              borders="wxBOTTOM|wxRIGHT|wxLEFT" />
+          </node>
+        </node>
+        <node
+          class="wxBoxSizer"
+          orientation="wxVERTICAL"
+          var_name="box_sizer_4"
+          border_size="0"
+          column="3"
+          row="1">
+          <node
+            class="wxCheckBox"
+            checked="1"
+            label="Auto Open"
+            var_name="checkbox_auto"
+            flags="wxEXPAND" />
+          <node
+            class="wxToggleButton"
+            label="Open port"
+            var_name="button_open"
+            borders="wxBOTTOM|wxRIGHT|wxLEFT"
+            column="3"
+            flags="wxEXPAND"
+            row="1" />
+        </node>
+        <node
+          class="wxTextCtrl"
+          style="wxTE_PROCESS_ENTER|wxTE_PROCESS_TAB|wxTE_MULTILINE|wxTE_READONLY|wxTE_RICH|wxTE_AUTO_URL|wxTE_CHARWRAP"
+          var_name="text_console"
+          background_colour="12,12,12"
+          font="Consolas,11"
+          foreground_colour="255,255,255"
+          border_size="0"
+          colspan="4"
+          flags="wxEXPAND"
+          proportion="1"
+          row="2" />
+      </node>
+    </node>
+  </node>
+</wxUiEditorData>
