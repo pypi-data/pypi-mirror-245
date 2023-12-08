@@ -1,0 +1,2 @@
+class WrongDecryptionInputs(Exception):
+    pass
