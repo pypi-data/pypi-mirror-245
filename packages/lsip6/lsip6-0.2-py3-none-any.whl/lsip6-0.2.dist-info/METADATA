@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: lsip6
+Version: 0.2
+Summary: Find link-local IPv6 neighbors on point-to-point links
+Home-page: https://git.sr.ht/~martijnbraam/lsip6
+Author: Martijn Braam
+Author-email: martijn@brixit.nl
+License: MIT
+License-File: LICENSE
+
