@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vnpy_mongodb/__init__.py
+vnpy_mongodb/mongodb_database.py
+vnpy_mongodb.egg-info/PKG-INFO
+vnpy_mongodb.egg-info/SOURCES.txt
+vnpy_mongodb.egg-info/dependency_links.txt
+vnpy_mongodb.egg-info/not-zip-safe
+vnpy_mongodb.egg-info/requires.txt
+vnpy_mongodb.egg-info/top_level.txt
