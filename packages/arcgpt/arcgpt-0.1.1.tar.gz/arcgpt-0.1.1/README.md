@@ -1,0 +1,65 @@
+# ArcGPT
+## Description:
+ArcGPT is intended to be used with ArcGIS Pro and be run within the python window. ArcGPT relies on ChatGPT function calling to call arcpy functions to perform various tasks in ArcGIS Pro using natural language prompts. It is essentially a collection of ChatGPT function call functions that call geoprocessing tools via arcpy.
+
+## Dependancies:
+- ArcGIS Pro Desktop
+- An OpenAI API Key
+- Python 3.9.16 (the native python environment of ArcGIS Pro)
+- arcpy (comes with your ArcGIS Pro installation)
+
+## Getting Started:
+1. Find your arcgis pro pip usually found in:
+```
+C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\Scripts\pip.exe
+```
+2. using this pip.exe run install arcgpt
+```
+"C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\Scripts\pip.exe" install arcgpt
+```
+3. Now that arcgpt is installed, open ArcGIS Pro and create or open an existing project then open the python window, and run:
+```
+import arcgpt
+
+openai_key = "[YOUR OPENAI KEY]"
+agent = arcgpt.agent(openai_key)
+
+response = agent.command("[YOUR COMMAND]")
+
+print(response)
+```
+
+## Currently supported functions:
+arcgpt uses the ChatGPT function calling feature to inform the ChatGPT model about all the supported functions. The functions are generally calls to arcpy geoprocessing tools. The currently implemented functions are listed below:
+
+### Display Layer
+**Description:** This function will search the user's default geodatabase for feature classes and bring them into the current map then zoom to thier extent.
+
+**ChatGPT Function:**
+```
+to be developed..
+``` 
+
+**Example query:**
+```
+"Display suburb data"
+```
+**Limitations:** Display layer only looks for data that is in the user's default geodatabase for the project so make sure the layers you are searching for or working with are in your project's default geodatabase. 
+
+## Additional Notes:
+- Usually you will want to keep the session going beyond just 1 query and arcgpt will often need to ask for additional information before running a process to do this, you can keep sending commands using something like a input() inside a while loop like this:
+```
+while True:
+    command = input("enter command: ")
+    response = agent.command(command)
+    print(response)
+```
+- arcgpt will never delete or edit any data, it will only create new feature classes.
+- all your commands are going to OpenAI to generate the responses so just be aware of that.
+- arcgpt uses the gpt-3.5-turbo model by default you can change the model with the optional parameter in the agent:
+```
+openai_key = "[YOUR OPENAI KEY]"
+model = "gpt-4"
+arcgpt.agent(openai_key, model)
+```
+

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "arcgpt"
+version = "0.1.1"
+description = "A ChatGPT powered library for controling ArcGIS Pro using natural language prompts."
+authors = ["Nicholas Chai <nicholas.chai@ngis.com.au>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9.16"
+python-dotenv = "^1.0.0"
+openai = "^0.28.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+arcgpt = 'main:main'
