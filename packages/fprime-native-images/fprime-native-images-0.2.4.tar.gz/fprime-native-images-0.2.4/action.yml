@@ -1,0 +1,20 @@
+name: 'fprime-setup-native-scala'
+description: 'Setup To Work With Native Image'
+author: 'The F´ Team'
+runs:
+  using: "composite"
+  steps:
+  - name: "Checkout Native Image Tools"
+    uses: actions/checkout@v3
+    with:
+      repository: fprime-community/native-images-action
+      submodules: recursive
+      ref: main
+      path: native-image-tools
+  - name: "Setting up GraalVM/Java Environment"
+    run: |
+      echo "Setup GraalVM Environment"
+      export NATIVE_IMAGE_TOOLS_PATH="$GITHUB_WORKSPACE/native-image-tools"
+      echo "NATIVE_IMAGE_TOOLS_PATH=${NATIVE_IMAGE_TOOLS_PATH}" >> $GITHUB_ENV
+      $NATIVE_IMAGE_TOOLS_PATH/env-setup
+    shell: bash
