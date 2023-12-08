@@ -1,0 +1,4 @@
+httpx>=0.23.0
+six>=1.10
+certifi
+python-dateutil
