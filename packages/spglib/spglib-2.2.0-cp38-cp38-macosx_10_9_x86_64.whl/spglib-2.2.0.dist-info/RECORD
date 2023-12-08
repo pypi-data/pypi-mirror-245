@@ -1,0 +1,12 @@
+spglib/__init__.py,sha256=1nluqtmmNyuJtH88o52rrqFDjslp1I3dKPiV2CDS2kE,2461
+spglib/_spglib.cpython-38-darwin.so,sha256=s49p9cDvmcZfYIeSkAP22p4LCKS3e2rjMhiSS21jjfw,53536
+spglib/libsymspg.2.2.0.dylib,sha256=yZup6ntAj2nMmNcZi8aZI4fx8Td91Jt7V-3hTa5i4XY,1882248
+spglib/libsymspg.2.dylib,sha256=yZup6ntAj2nMmNcZi8aZI4fx8Td91Jt7V-3hTa5i4XY,1882248
+spglib/libsymspg.dylib,sha256=yZup6ntAj2nMmNcZi8aZI4fx8Td91Jt7V-3hTa5i4XY,1882248
+spglib/spglib.h,sha256=CS9jNj0K-ajnq3t-jp5Ezq1QcONGKVTSWmE0qY1kT9A,25389
+spglib/spglib.py,sha256=ur5i04hwCBDQ436VVklFwTmKBc95nZfhs0leTs-cXP4,54233
+spglib-2.2.0.dist-info/METADATA,sha256=V0Wrf84GV6tunpBvjXlVJak-pLn2B_v6YP1fz2saUuE,3301
+spglib-2.2.0.dist-info/WHEEL,sha256=RWAqT8VBusfsmJI18miHLHDXev28T-m8GeKWkiZQO_c,112
+spglib-2.2.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spglib-2.2.0.dist-info/licenses/COPYING,sha256=pP-g7gE-Qun33KQRQPeAWwBpe6m9FihcqUlaz5U2QmY,1468
+spglib-2.2.0.dist-info/RECORD,,
