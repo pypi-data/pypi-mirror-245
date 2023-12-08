@@ -1,0 +1,2 @@
+
+Fcolor représente un module Python offrant un accès à une palette de plus de 200 codes RGB. Il propose également deux fonctions permettant de convertir les valeurs RGB en format hexadécimal ou HSL (Teinte, Saturation, Luminosité), offrant ainsi une flexibilité étendue dans la manipulation des couleurs.
