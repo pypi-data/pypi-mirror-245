@@ -1,0 +1,11 @@
+numpy
+pandas
+ipynb-py-convert
+graphviz
+matplotlib
+psutil
+rich
+argcomplete
+
+[h5]
+tables
