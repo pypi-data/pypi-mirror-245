@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lymphatic
+Version: 0.0.16
+Summary: The enthusiasm of the deceased lymphocytes who's work is not yet done.
+License: 
+        
+        There seems to be some sort of inscription here.
+        
+        
+        
+Keywords: rethinkdb,databases,hiiii there!,69,passion,the monarch
+Description-Content-Type: text/x-rst
+Requires-Dist: rethinkdb
+Requires-Dist: looseversion
+Requires-Dist: botany
+
+
+
+lymphatic:
+
+	The cybernetic immune system hyper drive
+	of the elliptic to ellipitic jumper.
+
+	installation:
+		[tcsh] pip install lymphaitc
