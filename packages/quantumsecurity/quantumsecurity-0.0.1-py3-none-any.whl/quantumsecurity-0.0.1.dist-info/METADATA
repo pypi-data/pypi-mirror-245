@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: quantumsecurity
+Version: 0.0.1
+Summary: A package for supporting security applications with the power of quantum computing and cyrptography
+Author: Rajesh Harinarayan
+Author-email: rajeshtceit@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+
