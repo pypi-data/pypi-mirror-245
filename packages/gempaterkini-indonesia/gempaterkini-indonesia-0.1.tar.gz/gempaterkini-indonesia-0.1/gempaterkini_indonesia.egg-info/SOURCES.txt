@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+deteksigempa/__init__.py
+gempaterkini_indonesia.egg-info/PKG-INFO
+gempaterkini_indonesia.egg-info/SOURCES.txt
+gempaterkini_indonesia.egg-info/dependency_links.txt
+gempaterkini_indonesia.egg-info/top_level.txt
