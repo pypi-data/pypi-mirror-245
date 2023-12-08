@@ -1,0 +1,2 @@
+[console_scripts]
+vspace = vspace.vspace:main

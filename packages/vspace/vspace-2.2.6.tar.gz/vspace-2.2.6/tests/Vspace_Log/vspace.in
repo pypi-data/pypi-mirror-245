@@ -1,0 +1,6 @@
+sSrcFolder  .
+sDestFolder Log_Test
+sTrialName  semi_
+
+sBodyFile   earth.in
+dSemi [1, 1000, l10] a

@@ -1,0 +1,6 @@
+sSrcFolder  .
+sDestFolder Explict_Test
+sTrialName  semi_
+
+sBodyFile   earth.in
+dSemi [1, 2, 0.1] a
