@@ -1,0 +1,3 @@
+[console_scripts]
+pixelgreat = pixelgreat.core:single
+pixelgreat-sequence = pixelgreat.core:sequence
