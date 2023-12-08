@@ -1,0 +1,14 @@
+nougat-ocr
+idisplay
+sentencepiece
+duckduckgo-search
+BASC-py4chan
+pytube
+tqdm
+flask
+datasets
+petals
+kaggle
+autoscraper
+ydata-synthetic==1.3.0
+scap4chan
