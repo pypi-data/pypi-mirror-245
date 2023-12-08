@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: EA2P
+Version: 0.1
+Summary: EA2P : A flexible and accurate multi-plateforms profiling tool for fine-grained energy measurement of applications
+Home-page: https://github.com/HPC-CRI/EA2P
+Author: Roblex NANA
+Author-email: nanatchakouteroblex@email.com
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EA2P
+A flexible tool for accurate and multi device energy measurement

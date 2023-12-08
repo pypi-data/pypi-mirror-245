@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+EA2P.egg-info/PKG-INFO
+EA2P.egg-info/SOURCES.txt
+EA2P.egg-info/dependency_links.txt
+EA2P.egg-info/requires.txt
+EA2P.egg-info/top_level.txt
