@@ -1,0 +1,5 @@
+setup.py
+prisjakt_fis_entity_functions.egg-info/PKG-INFO
+prisjakt_fis_entity_functions.egg-info/SOURCES.txt
+prisjakt_fis_entity_functions.egg-info/dependency_links.txt
+prisjakt_fis_entity_functions.egg-info/top_level.txt
