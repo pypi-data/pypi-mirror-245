@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "km-data-crawler"
+version = "0.1.1"
+description = ""
+authors = ["KM"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"
+lxml = "^4.9.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
