@@ -1,0 +1,9 @@
+deepgram/__init__.py,sha256=vEKYFIi4FTQkyxORFwxygjtlccos0C3Ts7C7Q8J63CU,1091
+deepgram/client.py,sha256=7Mc52kk3eUZL-EMXOjI4zVCsgQCqQPxat5pKeV4svrI,5877
+deepgram/errors.py,sha256=vPamhYIbaqxB1md44Ju0Ga8jKP_yESDHF-uMFeSOqFs,837
+deepgram/options.py,sha256=ijpO5mYsHeRa_ZPznTvSolZ2Uba24pJYAze_a61FBhM,2140
+deepgram_sdk-3.0.0b1.dist-info/LICENSE,sha256=mj1MHMQqj2_8WE8rl5d7-Q3i5zkcuqrHWuwQm5Ztr2A,1065
+deepgram_sdk-3.0.0b1.dist-info/METADATA,sha256=zz2whdTP3ABAw_EC5CN4O84ZiXuxio5sGpefGI3hwQk,28241
+deepgram_sdk-3.0.0b1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+deepgram_sdk-3.0.0b1.dist-info/top_level.txt,sha256=i_v4rcE13LLCmMx7hzaEbCMVU8YYUpWNu6eNCU3_UQs,9
+deepgram_sdk-3.0.0b1.dist-info/RECORD,,
