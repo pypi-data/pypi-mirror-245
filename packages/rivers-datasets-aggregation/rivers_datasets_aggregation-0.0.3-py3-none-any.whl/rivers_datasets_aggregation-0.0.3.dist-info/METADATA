@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: rivers-datasets-aggregation
+Version: 0.0.3
+Summary: A toolbox for grid and vector data aggregation on river stations.
+Home-page: https://gitlab.cloud-espace.si.c-s.fr/RemoteSensing/hydro/rivers_dataset_aggregation
+Author: CS Group
+Author-email: kevin.larnier@csgroup.eu
+License: Apache License 2.0
+Project-URL: HomePage, https://gitlab.cloud-espace.si.c-s.fr/RemoteSensing/hydro/rivers_dataset_aggregation
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rasterio
+Requires-Dist: ogr
+Requires-Dist: wheel
+Requires-Dist: pandas
+Requires-Dist: fiona <1.9
+Requires-Dist: build
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-timestamper ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: isort >=5.8.0 ; extra == 'dev'
+Requires-Dist: black >=21.5b0 ; extra == 'dev'
+Requires-Dist: flake8 <6.0.0 ; extra == 'dev'
+Requires-Dist: flake8-copyright >=0.2.2 ; extra == 'dev'
+Requires-Dist: flake8-comprehensions >=3.4.0 ; extra == 'dev'
+Requires-Dist: flake8-bugbear >=21.4.3 ; extra == 'dev'
+Requires-Dist: pylint ==2.13.6 ; extra == 'dev'
+Requires-Dist: setuptools-scm ; extra == 'dev'
+Requires-Dist: virtualenv ; extra == 'dev'
+Requires-Dist: configupdater ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Provides-Extra: notebook
+
+# rivers-datasets-aggregation
+A toolbox for grid and vector data aggregation on river stations.
+
+### Overview
+
+Module features : 
+
+- __Extract__ raster values corresponding to a dataset of points (river stations)
+- __Relocate__ a dataset of points (river stations) on a river network
+
+### Getting started
+
+##### Option 1 - Virtual environment
+
+Create a virtual environment with venv:
+
+```
+python3 -m venv rda_venv
+source rda_venv/bin/activate
+
+pip install -e .
+pip install -e .[dev]
+
+pre-commit install
+```
+
+##### Option 2 - Conda environment
+
+Create a virtual environment with conda: 
+
+```
+conda env create -f environment.yml
+conda activate aggregation
+
+pre-commit install
+```
+
+
