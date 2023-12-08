@@ -1,0 +1,4 @@
+sqlalchemy
+pandas
+keyring
+keyrings.alt
