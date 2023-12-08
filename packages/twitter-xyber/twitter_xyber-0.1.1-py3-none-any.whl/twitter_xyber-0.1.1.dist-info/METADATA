@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: twitter-xyber
+Version: 0.1.1
+Requires-Dist: playwright
+
