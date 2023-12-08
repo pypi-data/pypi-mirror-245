@@ -1,0 +1,13 @@
+dionysus/__init__.py,sha256=vNiWJ14r_cw5t_7UDqDQIVZvladKFGyHH2avsLpN7Vg,22
+dionysus/__main__.py,sha256=TkRBJH7040Cq7wE8B257CqQwGvrr3VfijsENX0b_j8A,241
+dionysus/architectures.py,sha256=mXh0CpLNYnBMw8lYovfITaIn9JiIXz9D0l4Rk47Qjc8,3151
+dionysus/constants.py,sha256=Tzzm-41527al_rQHmluh5YpITo09TtDpgyi9v4qHh60,160
+dionysus/loss.py,sha256=ZqXwrXIZMvDiSCGZcjwGLeTTQ_Ik0nTdtfzftqAY2BQ,1688
+dionysus/training.py,sha256=_xxaq3Tn8GacvpS_NqZlu199qXQW5TYCCOgQ-iSDKBo,7362
+dionysus/utils.py,sha256=bE1rCofyE-1ZC97TL96-bi4zso1Aq-vQywuhxkWupn8,6425
+dionysus_trainer-0.3.2.dist-info/LICENSE,sha256=r4SfqTvOAv1Hpq6_ouCuqpohrFczRFyVfKU4EpT9_rY,1069
+dionysus_trainer-0.3.2.dist-info/METADATA,sha256=TaXNzAz8wNXSYWh4I1oY61A7IBnuUaZ4diGRdnL3QXw,2048
+dionysus_trainer-0.3.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dionysus_trainer-0.3.2.dist-info/entry_points.txt,sha256=O5XcyE-RUvJI_tFNKKj-U0kBHQslxR9c2fWSKjZ6a3M,52
+dionysus_trainer-0.3.2.dist-info/top_level.txt,sha256=jtuTZg11Qqiheat6-YWhtKX05D8XCx2AokEv9C5OeVQ,9
+dionysus_trainer-0.3.2.dist-info/RECORD,,
