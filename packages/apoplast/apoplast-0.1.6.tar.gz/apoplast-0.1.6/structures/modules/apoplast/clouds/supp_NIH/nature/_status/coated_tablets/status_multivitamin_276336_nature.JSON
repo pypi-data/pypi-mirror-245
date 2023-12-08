@@ -1,0 +1,1616 @@
+{
+    "kind": "supp",
+    "identity": {
+        "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+        "FDC ID": "",
+        "UPC": "8 95634 00002 7",
+        "DSLD ID": "276336"
+    },
+    "brand": {
+        "name": "DEVA"
+    },
+    "measures": {
+        "form": {
+            "unit": "Coated Tablet",
+            "amount per package": "90",
+            "serving size amount": "1"
+        }
+    },
+    "essential nutrients": {
+        "natures": [
+            {
+                "amount": "1",
+                "identity": {
+                    "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                    "FDC ID": "",
+                    "UPC": "8 95634 00002 7",
+                    "DSLD ID": "276336"
+                }
+            }
+        ],
+        "measures": {
+            "mass + mass equivalents": {
+                "per recipe": {
+                    "grams": {
+                        "fraction string": "454719447176344239977/900719925474099200000"
+                    }
+                }
+            },
+            "energy": {
+                "per recipe": {
+                    "food calories": {
+                        "fraction string": "0"
+                    }
+                }
+            }
+        },
+        "grove": [
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "protein"
+                    ],
+                    "region": 1
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [
+                        "carbohydrate, by difference",
+                        "total carbohydrates"
+                    ],
+                    "includes": [
+                        6,
+                        7
+                    ],
+                    "names": [
+                        "carbohydrates"
+                    ],
+                    "region": 2
+                },
+                "measures": {},
+                "natures": [],
+                "unites": [
+                    {
+                        "essential": {
+                            "includes": [],
+                            "names": [
+                                "dietary fiber",
+                                "fiber, total dietary"
+                            ],
+                            "region": 6
+                        },
+                        "measures": {},
+                        "natures": [],
+                        "unites": []
+                    },
+                    {
+                        "essential": {
+                            "accepts": [
+                                "sugars, total including nlea"
+                            ],
+                            "includes": [
+                                8
+                            ],
+                            "names": [
+                                "sugars, total",
+                                "total sugar",
+                                "sugar",
+                                "total sugars"
+                            ],
+                            "region": 7
+                        },
+                        "measures": {},
+                        "natures": [],
+                        "unites": [
+                            {
+                                "essential": {
+                                    "includes": [],
+                                    "names": [
+                                        "added sugars",
+                                        "sugars, added"
+                                    ],
+                                    "region": 8
+                                },
+                                "measures": {},
+                                "natures": [],
+                                "unites": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "essential": {
+                    "includes": [
+                        4,
+                        5,
+                        15,
+                        51
+                    ],
+                    "names": [
+                        "fats",
+                        "total fat",
+                        "lipids",
+                        "total lipid (fat)"
+                    ],
+                    "region": 3
+                },
+                "measures": {},
+                "natures": [],
+                "unites": [
+                    {
+                        "essential": {
+                            "includes": [],
+                            "names": [
+                                "saturated fat",
+                                "fatty acids, total saturated"
+                            ],
+                            "region": 4
+                        },
+                        "measures": {},
+                        "natures": [],
+                        "unites": []
+                    },
+                    {
+                        "essential": {
+                            "includes": [],
+                            "names": [
+                                "trans fat",
+                                "fatty acids, total trans"
+                            ],
+                            "region": 5
+                        },
+                        "measures": {},
+                        "natures": [],
+                        "unites": []
+                    },
+                    {
+                        "essential": {
+                            "includes": [],
+                            "names": [
+                                "polyunsaturated fat",
+                                "fatty acids, total polyunsaturated"
+                            ],
+                            "region": 15
+                        },
+                        "measures": {},
+                        "natures": [],
+                        "unites": []
+                    },
+                    {
+                        "essential": {
+                            "includes": [],
+                            "names": [
+                                "monounsaturated fat",
+                                "fatty acids, total monounsaturated"
+                            ],
+                            "region": 51
+                        },
+                        "measures": {},
+                        "natures": [],
+                        "unites": []
+                    }
+                ]
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "calcium",
+                        "calcium, ca"
+                    ],
+                    "region": 9
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "1/10"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Calcium"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "100.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.100",
+                                        "fraction string": "1/10"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "cholesterol"
+                    ],
+                    "region": 12
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin a",
+                        "vitamin a, iu"
+                    ],
+                    "region": 16
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "3/2000"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Vitamin A"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "yes",
+                                    "listed": [
+                                        "1500.000",
+                                        "mcg RAE"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.002",
+                                        "fraction string": "3/2000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin e"
+                    ],
+                    "region": 19
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "3/100"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Vitamin E"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "30.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.030",
+                                        "fraction string": "3/100"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "iodine"
+                    ],
+                    "region": 29
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "3/20000"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Iodine"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "150.000",
+                                        "mcg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.000",
+                                        "fraction string": "3/20000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "magnesium"
+                    ],
+                    "region": 30
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "1/25"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Magnesium"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "40.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.040",
+                                        "fraction string": "1/25"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [],
+                    "includes": [],
+                    "names": [
+                        "Zinc, Zn",
+                        "Zinc"
+                    ],
+                    "region": 31
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "7/500"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Zinc"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "14.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.014",
+                                        "fraction string": "7/500"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "selenium"
+                    ],
+                    "region": 32
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "7/100000"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Selenium"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "70.000",
+                                        "mcg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.000",
+                                        "fraction string": "7/100000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "copper"
+                    ],
+                    "region": 33
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "8286623314361713/36028797018963968000"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Copper"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "0.230",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.000",
+                                        "fraction string": "8286623314361713/36028797018963968000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "manganese"
+                    ],
+                    "region": 34
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "517913957147607/225179981368524800"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Manganese"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "2.300",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.002",
+                                        "fraction string": "517913957147607/225179981368524800"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "chromium"
+                    ],
+                    "region": 35
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "3/25000"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Chromium"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "120.000",
+                                        "mcg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.000",
+                                        "fraction string": "3/25000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "molybdenum"
+                    ],
+                    "region": 36
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "3/40000"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Molybdenum"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "75.000",
+                                        "mcg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.000",
+                                        "fraction string": "3/40000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "choline"
+                    ],
+                    "region": 37
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "3/200"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Choline"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "15.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.015",
+                                        "fraction string": "3/200"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "lutein"
+                    ],
+                    "region": 40
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "1/20000"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Lutein"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "50.000",
+                                        "mcg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.000",
+                                        "fraction string": "1/20000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "betaine hydrochloride"
+                    ],
+                    "region": 43
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "1/100"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Betaine Hydrochloride"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "10.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.010",
+                                        "fraction string": "1/100"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "rutin"
+                    ],
+                    "region": 44
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "1/100"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Rutin"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "10.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.010",
+                                        "fraction string": "1/100"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "strontium"
+                    ],
+                    "region": 47
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vanadium"
+                    ],
+                    "region": 49
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [],
+                    "includes": [],
+                    "names": [
+                        "Phosphorus, P",
+                        "Phosphorus"
+                    ],
+                    "region": 57
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "potassium",
+                        "potassium K",
+                        "potassium, K",
+                        "K"
+                    ],
+                    "region": 58
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "sodium Na",
+                        "sodium, Na",
+                        "sodium",
+                        "Na"
+                    ],
+                    "region": 59
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin d",
+                        "vitamin d (d2 + d3)",
+                        "vitamin d2",
+                        "vitamin d3",
+                        "vitamin d (d2 + d3), international units"
+                    ],
+                    "region": 63
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "1/50000"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Vitamin D2"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "20.000",
+                                        "mcg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.000",
+                                        "fraction string": "1/50000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin c",
+                        "vitamin c (form: as calcium ascorbate)",
+                        "vitamin c, total ascorbic acid"
+                    ],
+                    "region": 64
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "3/20"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Vitamin C"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "150.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.150",
+                                        "fraction string": "3/20"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin k",
+                        "vitamin k1",
+                        "vitamin k2"
+                    ],
+                    "region": 65
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "thiamin",
+                        "thiamine",
+                        "vitamin b1"
+                    ],
+                    "region": 66
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "3/250"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Vitamin B1"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "12.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.012",
+                                        "fraction string": "3/250"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "riboflavin",
+                        "vitamin b2"
+                    ],
+                    "region": 67
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "13/1000"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Vitamin B2"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "13.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.013",
+                                        "fraction string": "13/1000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin b3",
+                        "niacin",
+                        "nicotinamide",
+                        "nicotinamide riboside"
+                    ],
+                    "region": 68
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "1/20"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Vitamin B3"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "50.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.050",
+                                        "fraction string": "1/20"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin b5",
+                        "pantothenic acid"
+                    ],
+                    "region": 69
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "1/40"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Vitamin B5"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "25.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.025",
+                                        "fraction string": "1/40"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [
+                        "pyridoxine",
+                        "pyridoxal",
+                        "pyridoxamine"
+                    ],
+                    "includes": [],
+                    "names": [
+                        "Vitamin B6",
+                        "Vitamin B-6"
+                    ],
+                    "region": 70
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "51/4000"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Vitamin B6"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "12.750",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.013",
+                                        "fraction string": "51/4000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin b7",
+                        "biotin",
+                        "vitamin h"
+                    ],
+                    "region": 71
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "3/40000"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Biotin"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "75.000",
+                                        "mcg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.000",
+                                        "fraction string": "3/40000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin b9",
+                        "folate",
+                        "folacin"
+                    ],
+                    "region": 72
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "1/2500"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Folate"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "yes",
+                                    "listed": [
+                                        "400.000",
+                                        "mcg DFE"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.000",
+                                        "fraction string": "1/2500"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [],
+                    "includes": [],
+                    "names": [
+                        "Vitamin B12",
+                        "Vitamin B-12",
+                        "cobalamin"
+                    ],
+                    "region": 73
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "1/10000"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Vitamin B12"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "100.000",
+                                        "mcg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.000",
+                                        "fraction string": "1/10000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "calories",
+                        "energy"
+                    ],
+                    "region": 74
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "iron",
+                        "iron, fe"
+                    ],
+                    "region": 75
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "9/500"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Vegan Multivitamin & Mineral Supplement with Greens",
+                            "FDC ID": "",
+                            "UPC": "8 95634 00002 7",
+                            "DSLD ID": "276336"
+                        },
+                        "ingredient": {
+                            "name": "Iron"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "18.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.018",
+                                        "fraction string": "9/500"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [],
+                    "includes": [],
+                    "names": [
+                        "Folate, DFE"
+                    ],
+                    "region": 76
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [],
+                    "includes": [],
+                    "names": [
+                        "Folate",
+                        "Folate, Total"
+                    ],
+                    "region": 77
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            }
+        ],
+        "exclusions": []
+    }
+}
