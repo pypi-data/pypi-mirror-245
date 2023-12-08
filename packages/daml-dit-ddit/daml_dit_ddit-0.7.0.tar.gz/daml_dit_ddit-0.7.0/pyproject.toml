@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "daml-dit-ddit"
+version = "0.7.0"
+description = "Daml Hub DIT File Tool"
+authors = ["Daml Hub Team <daml-hub-team@digitalasset.com>"]
+readme = "README.md"
+repository = "https://github.com/digital-asset/daml-dit-ddit"
+keywords = ["daml", "blockchain", "dlt", "distributed ledger", "digital asset"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dacite = "*"
+pyyaml = "*"
+pex = "*"
+daml-dit-api = "*"
+dazl = "^7"
+GitPython = "*"
+PyGithub = "*"
+semver = "*"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+isort = "*"
+mypy = "*"
+pytest = "*"
+pytest-asyncio = "*"
+pytest-codestyle = "*"
+
+[tool.poetry.scripts]
+ddit = "daml_dit_ddit:main"
+
+[tool.isort]
+add_imports = ["from __future__ import annotations"]
+profile = "black"
+
+[build-system]
+requires = ["poetry_core"]
+build-backend = "poetry.core.masonry.api"
