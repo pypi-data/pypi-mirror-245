@@ -1,0 +1,6 @@
+colorama==0.4.6
+flask==3.0.0
+Flask-HTTPAuth==4.8.0
+werkzeug==3.0.0
+pyopenssl==23.2.0
+flask_cors==3.0.10
