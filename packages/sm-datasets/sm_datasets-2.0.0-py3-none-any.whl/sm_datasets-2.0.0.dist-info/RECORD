@@ -1,0 +1,14 @@
+sm_datasets/__init__.py,sha256=HDAlt4ylESDaNDfzG-FZD-ltrX_Y4OuIYR3UQ1RKjVU,66
+sm_datasets/datasets.py,sha256=9unpjhIOFEHSRbNBWDnE_BmGy9FhnNAhBIPeQYDZGkM,9376
+sm_datasets/helper.py,sha256=NmiBSeeiLyzC03FZtAG1Q7CpFdOSEWrXrfwgN-d4vnA,1072
+sm_datasets/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sm_datasets/migrations/biotables.py,sha256=ly1qakhajCX8nLLIAF852GzCxHReaK29GRgCtYfVOng,8412
+sm_datasets/migrations/semtab.py,sha256=Byw0AQ1OmkKfs8UZZeSxf0V93D40yYe2AL9saFYAR9U,21423
+sm_datasets/migrations/semtab2020.py,sha256=9Z8aShC34RgsjBWwfG6i2XMusbFPWyh2HroJX6mmJJM,11540
+sm_datasets/migrations/semtab2020_r4sampled.py,sha256=vXoSxs-jABqqHGfkVrSZV1vuwTFKu2-8oYoSqR8Jvsc,1043
+sm_datasets/migrations/semtab2022.py,sha256=5xHOEZb9_ZbUVaCzkYmQEUtdjoZimQpzf6ofOAbY7cU,11300
+sm_datasets/models.py,sha256=y_WSLY_Qk5gpkQu-03_Lg52btj5oqZwEBo4vcXnmwaI,1151
+sm_datasets/verrsion_compare.ipynb,sha256=eMepDvUU-8JrhKmYYzP4OwevYNdOsZExlNBPgXgCL9k,4013
+sm_datasets-2.0.0.dist-info/METADATA,sha256=_dJpZzEuBSVIjhI7vYBUrwZWRzTs77l58K7ZF3yVs5I,794
+sm_datasets-2.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sm_datasets-2.0.0.dist-info/RECORD,,
