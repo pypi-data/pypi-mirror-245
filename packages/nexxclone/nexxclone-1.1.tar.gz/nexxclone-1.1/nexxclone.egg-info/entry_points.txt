@@ -1,0 +1,3 @@
+[console_scripts]
+nexx_clone = nexx_clone:main
+
