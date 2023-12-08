@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: mrweb
+Version: 1.1.1
+Summary: Join @mrwebservice For API / Mrweb Library is python library to use easy channel api
+Author: Mr Moorgh
+Author-email: vboxvm512@gmail.com
+Requires: requests
