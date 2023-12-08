@@ -1,0 +1,14 @@
+pymemuc/__init__.py,sha256=zUDy4PnGZKoCJhjWOtjg6pwkFqmjoVFa8mWk0tgdz1c,415
+pymemuc/_command.py,sha256=fsJ-sL-14iTX3kEoqb3Y9yb4QdXdibHLwt5617Q8idk,24657
+pymemuc/_constants.py,sha256=EuyXFGWFvt4wAw7rewuXf3vkUO50AzsO4bYcccsV1eA,607
+pymemuc/_control.py,sha256=CSbHh4Uib8gvbjMAQ3zuvw15WA2zufWp2Psj9YPL8P4,5168
+pymemuc/_decorators.py,sha256=dmRoFx7K_nhwMcMOjdQ-sYvNtUXfcBmmJmrE5NOvR8o,1258
+pymemuc/_manage.py,sha256=T1a1jEYxMwY0BqECJUXvn_w-n5T-XgIe6d6aZhNigQs,14892
+pymemuc/_memuc.py,sha256=fCqRER9cFv2gdhwG-RwM4ghcBEQlqCa0o9ciZGq4wVs,5369
+pymemuc/exceptions.py,sha256=DPTtLRfumc1A6SgopdvfkkLrN27gcuDWabQPSF_pm3M,934
+pymemuc/pymemuc.py,sha256=RkgOKphvCZELKyxEePfGl9ztNIjFnUa8cPf7p1x7saE,3149
+pymemuc/types.py,sha256=-Diixud7blPBO1BV2Zh3rFwOZLbUjro8B9-uI-S2-Fw,1213
+pymemuc-0.5.2.dist-info/LICENSE,sha256=waVcallPfzNHcWnaJ61cK4Wtv2Q1ao2LV3PSBO-1b8U,1057
+pymemuc-0.5.2.dist-info/METADATA,sha256=H2Y1gh6JRiKjUBuxk95Ddrm-X5Hx37xAm6LgdNqDe4M,2489
+pymemuc-0.5.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pymemuc-0.5.2.dist-info/RECORD,,
