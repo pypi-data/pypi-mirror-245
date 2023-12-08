@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "django-vrsns"
+version = "0.3.0"
+description = "Provide an Django view that lists installed package versions"
+authors = ["Birger Schacht <birger@rantanplan.org>"]
+readme = "README.md"
+packages = [{include = "django_vrsns"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+ruff = "^0.0.289"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
