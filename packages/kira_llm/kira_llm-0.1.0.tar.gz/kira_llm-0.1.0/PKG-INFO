@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: kira_llm
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: Artur A. Galstyan
+Author-email: galstyan.artu@gmail.com
+Requires-Python: >=3.11,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: equinox (>=0.11.1,<0.12.0)
+Requires-Dist: icecream (>=2.1.3,<3.0.0)
+Requires-Dist: jax (>=0.4.19,<0.5.0)
+Requires-Dist: jaxlib (>=0.4.19,<0.5.0)
+Requires-Dist: jaxtyping (>=0.2.23,<0.3.0)
+Requires-Dist: matplotlib (>=3.8.0,<4.0.0)
+Requires-Dist: mido (>=1.3.0,<2.0.0)
+Requires-Dist: numpy (>=1.26.1,<2.0.0)
+Requires-Dist: optax (>=0.1.7,<0.2.0)
+Requires-Dist: pandas (>=2.1.3,<3.0.0)
+Requires-Dist: torch (>=2.1.0,<3.0.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Requires-Dist: wandb (>=0.16.0,<0.17.0)
+Description-Content-Type: text/markdown
+
+# That's right. I'm _**Kira**_ ✍️
+
+_Kira_ is a transformer built with JAX and
+[Equinox](https://github.com/patrick-kidger/equinox), which is IMHO the best
+neural network library built on top of JAX out there, because of its simple and
+elegant design.
+
+The role of _Kira_ is to serve as a baseline transformer implementation, which
+is very easy to understand and extend.
+
+_Kira_ itself does _not_ yet allow for KV caching (although there is a branch in
+which I'm trying to get it to work). It does however allow you to interpolate
+between Multi-Query Attention (MQA) and "regular" Multi-Head Attention (MHA).
+This is different from other MHA implementations, where most of the time you can
+only set the number of heads and that's it. _Kira_ offers more flexibility in
+that regard.
+
+These features of _Kira_ (the interpolation between MQA and MHA and the RoPE
+embeddings) will soon be integrated in the main Equinox repository at which
+point _Kira_'s MHA implementation will be replaced with the built-in Equinox's
+MHA.
+
+---
+
+To get started with _Kira_, you can either install it with
+
+```
+pip3 install kira-transformer
+```
+
