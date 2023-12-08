@@ -1,0 +1,8 @@
+min_db/__init__.py,sha256=C6CUo-Uc1VK5SOc5XVq6LyZ-TSd9dif4uasJqfI_vEI,168
+min_db/connector.py,sha256=dGTacUVkSfh96ElJRBT8Ngd1sqEHBWNPdWzEs1grboc,7602
+min_db/mapper.py,sha256=yDH1wk3_4GBqPpueuch1oiMHmjyUYLti1qqy19Kfmqs,2530
+min_db/types.py,sha256=a2HPlUBsvQAMnCYFMOuYzvMDus3abAKOBtXR98U350U,433
+min_db-0.0.7.dist-info/METADATA,sha256=vjz9j64wiHbp1VOHfn1uhiu8IgY4H3epDv_tGupa-pQ,339
+min_db-0.0.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+min_db-0.0.7.dist-info/top_level.txt,sha256=d7EaTj4bxcDnnXD6derMNpD-L6z9Hfj_9mB_SVFhbKg,7
+min_db-0.0.7.dist-info/RECORD,,
