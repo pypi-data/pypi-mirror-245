@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: waxdispatcherhelper
+Version: 0.0.1
+Summary: Utilities to help with setting up transactions with waxnftdispatcher
+Home-page: UNKNOWN
+Author: Funkaclau
+Author-email: cloudspg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: waxnftdispatcher
+
+UNKNOWN
+
+
