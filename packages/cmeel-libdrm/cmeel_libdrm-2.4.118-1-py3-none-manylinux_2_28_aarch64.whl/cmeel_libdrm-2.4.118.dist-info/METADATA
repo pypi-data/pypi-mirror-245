@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cmeel-libdrm
+Version: 2.4.118
+Summary: cmeel distribution for libdrm
+Requires-Python: >= 3.8
+License-Expression: MIT
+Home-page: https://github.com/cmake-wheel/cmeel-libdrm
+Project-URL: Repository, https://github.com/cmake-wheel/cmeel-libdrm.git
+Project-URL: Upstream, https://dri.freedesktop.org/
+Requires-Dist: cmeel
+Provides-Extra: build
+Requires-Dist: meson ; extra == "build"
+Requires-Dist: ninja ; extra == "build"
+Description-Content-Type: text/markdown
+
+# CMeel libdrm
+
+[![PyPI version](https://badge.fury.io/py/cmeel-mpc.svg)](https://pypi.org/project/cmeel-mpc)
+[![Release](https://github.com/cmake-wheel/cmeel-mpc/actions/workflows/release.yml/badge.svg)](https://github.com/cmake-wheel/cmeel-mpc/actions/workflows/release.yml)
+
+[libdrm](https://dri.freedesktop.org) distribution for cmeel packages.
