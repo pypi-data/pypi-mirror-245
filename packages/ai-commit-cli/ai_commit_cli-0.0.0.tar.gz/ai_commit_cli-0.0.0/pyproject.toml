@@ -1,0 +1,13 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.poetry]
+authors = ["liblaf <i@liblaf.me>"]
+description = "A CLI that writes your git commit messages for you with AI"
+name = "ai-commit-cli"
+readme = "README.md"
+version = "0.0.0"
+
+[tool.poetry.dependencies]
+python = "^3.11"
