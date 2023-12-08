@@ -1,0 +1,8 @@
+httpx
+websockets
+dataclasses-json
+typing_extensions
+python-dotenv
+asyncio
+aiohttp
+verboselogs
