@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+sdcensus/__init__.py
+sdcensus/core.py
+sdcensus.egg-info/PKG-INFO
+sdcensus.egg-info/SOURCES.txt
+sdcensus.egg-info/dependency_links.txt
+sdcensus.egg-info/requires.txt
+sdcensus.egg-info/top_level.txt
+sdcensus/tests/__init__.py
+sdcensus/tests/test_census.py
