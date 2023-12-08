@@ -1,0 +1,15 @@
+bs4
+numpy
+joblib
+pandas
+matplotlib
+
+[all]
+backtrader
+akshare
+
+[backtest]
+backtrader
+
+[crawler]
+akshare
