@@ -1,0 +1,9 @@
+sqs_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqs_client/client.py,sha256=MfoyNN2rFcLFKhAuPKOk0DDxwqx6G4jkDXik2NIxPZs,7534
+sqs_client/publisher.py,sha256=K3MXOO4BOKnzaRkxwLjqXgyFM0cE9qOOBjb8vTxTKnY,1531
+sqs_client/task.py,sha256=GiPyLB6byQNs8col-GDgisPkvMlfWAhAF5904ssza1U,4882
+sqs_client-0.1.2.dist-info/LICENSE,sha256=fRBgpvS0opMhmdXNh5u8COhsVQprwM_LxfM8lOjXOAc,1073
+sqs_client-0.1.2.dist-info/METADATA,sha256=uaKP6fXGtzZzhq-Bk6z9Q86ph7RdIt3mdpKewGaqDaY,3443
+sqs_client-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sqs_client-0.1.2.dist-info/top_level.txt,sha256=jmKpT4pSauuU9x3cyky2RVnINnR337vxypiEmv-NXx4,11
+sqs_client-0.1.2.dist-info/RECORD,,
