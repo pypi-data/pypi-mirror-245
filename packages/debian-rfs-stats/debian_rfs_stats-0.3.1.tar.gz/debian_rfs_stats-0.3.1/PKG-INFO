@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: debian-rfs-stats
+Version: 0.3.1
+Summary: Statistics regarding RFS wait times on Debian.
+License: MIT
+Author: Maytham Alsudany
+Author-email: maytha8thedev@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: lxml (>=4.9.3,<5.0.0)
+Requires-Dist: platformdirs (>=4.0.0,<5.0.0)
+Requires-Dist: python-debianbts (>=4.0.2,<5.0.0)
+Requires-Dist: python-gnupg (>=0.5.1,<0.6.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# debian-rfs-stats
+Calculate mean and median waiting time in days for RFS (Request for Sponsor)
+bugs in Debian to be closed.
+
+## Install
+
+I can't publish to PyPi as new registrations are temporarily disabled, but you
+can install from the [Codeberg package
+registry](https://codeberg.org/Maytha8/-/packages/pypi/debian-rfs-stats) like
+so:
+
+```sh
+pip install --index-url https://codeberg.org/api/packages/Maytha8/pypi/simple/ debian-rfs-stats
+```
+
+From source? This project uses Poetry, so a simple `poetry install` and `poetry
+run debian-rfs-stats` should work. Use `pip install .` in the source directory
+to install from source.
+
+## Usage
+
+Use `--help` flag for usage info.
+
+## What is an RFS?
+
+When someone outside of the Debian project (i.e. not a [Debian
+Developer](https://wiki.debian.org/Glossary#debian-developer) nor [Debian
+Maintainer](https://wiki.debian.org/Glossary#debian-maintainer)) creates a
+package for a piece of software, they cannot upload their packages directly to
+the official Debian archives, as only members of Debian can do so.
+
+Instead, these people file RFS ("Request for Sponsor") reports against the
+sponsorship-requests [virtual
+package](https://wiki.debian.org/Glossary#virtual-package), asking for a Debian
+Developer to review their work and upload the package on their behalf.
+
+## Why?
+
+I made this so I could see around how long I should wait for my RFS bugs in
+Debian to be addressed.
+
+## Copyright
+
+Copyright &copy; 2023 Maytham Alsudany `<maytha8thedev@gmail.com>`
+
+## License
+
+MIT. See [LICENSE](./LICENSE).
+

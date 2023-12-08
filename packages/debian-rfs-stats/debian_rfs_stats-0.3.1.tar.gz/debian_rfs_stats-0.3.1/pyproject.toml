@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "debian-rfs-stats"
+version = "0.3.1"
+description = "Statistics regarding RFS wait times on Debian."
+authors = ["Maytham Alsudany <maytha8thedev@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+  { include = "debianrfs" }
+]
+
+[tool.poetry.scripts]
+debian-rfs-stats = 'debianrfs.main:main'
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-debianbts = "^4.0.2"
+click = "^8.1.7"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+lxml = "^4.9.3"
+python-gnupg = "^0.5.1"
+platformdirs = "^4.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
