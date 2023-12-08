@@ -1,0 +1,7 @@
+core
+imageProcessing
+matrixOperations
+plots
+postProcessing
+pyHiM
+toolbox
