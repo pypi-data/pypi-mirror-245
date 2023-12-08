@@ -1,0 +1,88 @@
+README
+========
+
+This module is installed via pip:
+
+```
+pip install otel-fyers-logger
+```
+
+Packages Required
+ - python-json-logger
+
+
+## Usage
+
+Create a simple JSON Logger 
+```
+import logging
+from otel-fyers_logger import FyersLogger
+
+logger = FyersLogger("fyers_logger", level=logging.DEBUG)
+```
+
+Set parameters for a request
+```
+import uuid
+
+logger.set_fyId("ABC123")
+logger.set_requestId(f"{uuid.uuid4()}")
+```
+
+Define logger with a custom handlers
+```
+from logging import FileHandler
+from logging.handlers import TimedRotatingFileHandler
+formatter = FyersLogger.get_json_formatter()
+
+timed_rotating_handler = TimedRotatingFileHandler("fyers_logger_time_rotating.log", when="midnight", interval=1)
+timed_rotating_handler.setFormatter(formatter)
+
+simple_file_handler = FileHandler("fyers_logger.log")
+simple_file_handler.setFormatter(formatter)
+
+logger = FyersLogger("fyers_logger", handlers=[timed_rotating_handler, simple_file_handler], level=logging.DEBUG)
+```
+
+Add more handlers to the logger
+```
+new_file_handler = logging.FileHandler("fyers_logger_new_file.log")
+new_file_handler.setFormatter(FyersLogger.get_json_formatter())
+logger.add_handler(new_file_handler)
+```
+
+Log Data
+```
+logger.debug("This is a debug message", 1, 2,4, foo="bar", bar="baz")
+logger.info("This is a info message", 1, 2,4, foo="bar", bar="baz", stacklevel=2)
+logger.warning("This is a warning message", 1, 2,4, foo="bar", bar="baz")
+logger.error("This is a error message", 1, 2,4, foo="bar", bar="baz")
+logger.critical("This is a critical message", 1, 2,4, foo="bar", bar="baz")
+
+try:
+    raise Exception("DB connection error")
+except Exception as e:
+    logger.exception("getRRSpanFromDB", 1, 2,4, foo="bar", bar="baz")
+```
+
+Example Output
+```
+{"timestamp": "2023-09-20T18:29:33.967675Z", "level": "DEBUG", "name": "fyers_logger", "location": "[main:5] test_main", "message": "This is a debug message", "foo": "bar", "bar": "baz", "log_arguments": [1, 2, 4], "fyId": "ABC123", "requestId": "1469283c-cb2d-4ba5-9e8a-fe58930d72cf"}
+
+{"timestamp": "2023-09-20T18:29:33.967944Z", "level": "INFO", "name": "fyers_logger", "location": "[main:5] test_main", "message": "This is an info message", "foo": "bar", "bar": "baz", "log_arguments": [1, 2, 4], "fyId": "ABC123", "requestId": "1469283c-cb2d-4ba5-9e8a-fe58930d72cf"}
+
+{"timestamp": "2023-09-20T18:29:33.968095Z", "level": "WARNING", "name": "fyers_logger", "location": "[main:5] test_main", "message": "This is a warning message", "foo": "bar", "bar": "baz", "log_arguments": [1, 2, 4], "fyId": "ABC123", "requestId": "1469283c-cb2d-4ba5-9e8a-fe58930d72cf"}
+
+{"timestamp": "2023-09-20T18:29:33.968238Z", "level": "ERROR", "name": "fyers_logger", "location": "[main:5] test_main", "message": "This is an error message", "foo": "bar", "bar": "baz", "log_arguments": [1, 2, 4], "fyId": "ABC123", "requestId": "1469283c-cb2d-4ba5-9e8a-fe58930d72cf"}
+
+{"timestamp": "2023-09-20T18:29:33.968375Z", "level": "CRITICAL", "name": "fyers_logger", "location": "[main:5] test_main", "message": "This is a critical message", "foo": "bar", "bar": "baz", "log_arguments": [1, 2, 4], "fyId": "ABC123", "requestId": "1469283c-cb2d-4ba5-9e8a-fe58930d72cf"}
+
+{"timestamp": "2023-09-20T18:29:33.968647Z", "level": "ERROR", "name": "fyers_logger", "location": "[main:5] test_main", "message": "getRRSpanFromDB\n %Traceback (most recent call last):\n  File \"/home/logger/test.py\", line 60, in b\n    raise Exception(\"DB connection error\")\nException: DB connection error\n", "foo": "bar", "bar": "baz", "log_arguments": [1, 2, 4], "fyId": "ABC123", "requestId": "1469283c-cb2d-4ba5-9e8a-fe58930d72cf"}
+
+```
+
+Clear data after every request
+
+```
+logger.clear_data()
+```
