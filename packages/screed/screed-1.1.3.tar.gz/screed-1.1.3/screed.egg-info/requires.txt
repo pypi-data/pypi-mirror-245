@@ -1,0 +1,16 @@
+
+[all]
+pytest>=6.2.2
+pycodestyle
+pytest-cov
+
+[all:python_version < "3.9"]
+importlib_resources
+
+[test]
+pytest>=6.2.2
+pycodestyle
+pytest-cov
+
+[test:python_version < "3.9"]
+importlib_resources
