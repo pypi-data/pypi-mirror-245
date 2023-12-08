@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+autoencodersplz.egg-info/PKG-INFO
+autoencodersplz.egg-info/SOURCES.txt
+autoencodersplz.egg-info/dependency_links.txt
+autoencodersplz.egg-info/requires.txt
+autoencodersplz.egg-info/top_level.txt
+tests/test_fsqvae.py
+tests/test_ijepa.py
+tests/test_mae.py
+tests/test_maemix.py
+tests/test_mlp_ae.py
+tests/test_mlp_residual_ae.py
+tests/test_residual_ae.py
+tests/test_vqvae.py
