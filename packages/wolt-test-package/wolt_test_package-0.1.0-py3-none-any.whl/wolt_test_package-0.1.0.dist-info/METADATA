@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: wolt-test-package
+Version: 0.1.0
+Summary: A package to test dependency related issues.
+Author: Wolt Security Team
+Author-email: security@wolt.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+This is just a package to test dependency related issues.
+
