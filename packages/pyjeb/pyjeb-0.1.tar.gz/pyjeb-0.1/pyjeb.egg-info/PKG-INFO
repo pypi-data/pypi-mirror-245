@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pyjeb
+Version: 0.1
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+A package to help on configuration file
