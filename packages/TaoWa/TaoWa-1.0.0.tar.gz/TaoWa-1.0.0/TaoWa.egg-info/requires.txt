@@ -1,0 +1,5 @@
+wxPython==4.1.0
+requests
+PyExecjs
+web3
+pywin32
