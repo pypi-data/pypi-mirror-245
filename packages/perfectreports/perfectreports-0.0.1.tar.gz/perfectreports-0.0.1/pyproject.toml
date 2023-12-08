@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "perfectreports"
+version = "0.0.1"
+authors = [{ name="Genesis Thomas", email="genesis.thomas@perforce.com" }]
+description = "Custom Reports"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = ["numpy==1.24.3","requests==2.31.0","pandas==2.0.3","matplotlib==3.7.1","plotly==5.14.1","kaleido==0.2.1"]
+
+[project.scripts]
+perfectreports = "perfecto.main_cli:main"
