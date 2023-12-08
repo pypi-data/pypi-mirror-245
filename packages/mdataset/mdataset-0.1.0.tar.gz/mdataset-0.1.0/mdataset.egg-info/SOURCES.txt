@@ -1,0 +1,8 @@
+README.md
+setup.py
+Mdataset/__init__.py
+mdataset.egg-info/PKG-INFO
+mdataset.egg-info/SOURCES.txt
+mdataset.egg-info/dependency_links.txt
+mdataset.egg-info/requires.txt
+mdataset.egg-info/top_level.txt
