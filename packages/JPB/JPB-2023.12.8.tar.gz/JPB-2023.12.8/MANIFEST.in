@@ -1,0 +1,2 @@
+recursive-include jpb/components *.py
+recursive-include jpb/config *.py

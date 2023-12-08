@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: JPB
+Version: 2023.12.8
+Summary: Automatization
+Author: Loamf
+Author-email: <loamf2@gmail.com>
+Keywords: python,jackbox,automatization,jackbox24
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: pyautogui
+Requires-Dist: numpy
+
+
+1
