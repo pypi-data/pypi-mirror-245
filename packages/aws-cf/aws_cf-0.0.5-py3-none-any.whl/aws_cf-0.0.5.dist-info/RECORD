@@ -1,0 +1,9 @@
+aws-cf/__main__.py,sha256=hZBy3WADw4ap6E3Kzt-QI5-kEh_jVLZ9-33Bi2k3R28,675
+aws-cf/deploy.py,sha256=S5TR3O9TmkHuDot0_s2r3QCLU_-bllKuT7iRRafZrh0,1286
+aws-cf/diff.py,sha256=zFlo-33nASjS8fVn1uhpNUEBKxN0Hmo3DzCr-oAL1Rw,1005
+aws-cf/package.py,sha256=2OtMp0TMgFFlZ-XDWF_bwN6kyTt4vsK6zjyxz-sT8oI,362
+aws_cf-0.0.5.dist-info/LICENSE,sha256=2533I6wq5_rQU17IeREHVLgHaDjcYkL2cEdCcE3zEg4,464
+aws_cf-0.0.5.dist-info/METADATA,sha256=s3pXc0JmBk06mIPKDc2wJhQIjjnwets0dSsUgD8NB3c,317
+aws_cf-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+aws_cf-0.0.5.dist-info/top_level.txt,sha256=IwlUeHBxyO1wBlxBvBhXiUWe9y8rdR9a2yx3hilXs8c,7
+aws_cf-0.0.5.dist-info/RECORD,,
