@@ -1,0 +1,13 @@
+wgconfigbuilder/__init__.py,sha256=MJ46L_zSiFpUUVqmDlB3De74YdNIxEUzLWk93b8ll9Y,25
+wgconfigbuilder/app.py,sha256=QXiyuMIrwcQe9IViY5FoZOsAjI8ugn8792nl-_FFjE0,955
+wgconfigbuilder/lib/build.py,sha256=xUWkBxab1MTGEy8OvuEjiyQCikFJ4_PPvW3O9GUptUA,3963
+wgconfigbuilder/lib/util.py,sha256=NuqsJV1ZZctBzbaGmnzqdHYj4FonMcXVbAY5vO_W6Vk,2518
+wgconfigbuilder/model/Peer.py,sha256=T40kMrteC3dNWJZ_ejVhXTqF-mFkVpqE1Bmrpcd_WOA,611
+wgconfigbuilder/model/Server.py,sha256=rfH5lpteqmTdIWfgrQutruRDM5zJt58WuK9--c1pSDo,877
+wgconfigbuilder/to-delete/ssetup.py,sha256=jiqvbqW5t9ba4IdOq10kcvGwDCpLESqNJlIIGapieyU,897
+wireguard_configbuilder-0.0.5.dist-info/LICENSE,sha256=HLfcoO3supB0g6jJjs2-S4fGRrueRJMLBW5QvDiSW30,1295
+wireguard_configbuilder-0.0.5.dist-info/METADATA,sha256=MwzNzL-IykqmCzxL3QJnWwsUdHA1mwgeVWYRstr22lg,855
+wireguard_configbuilder-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+wireguard_configbuilder-0.0.5.dist-info/entry_points.txt,sha256=ng6801OXR49DbqWT9iwiptAOLhNYMtz_Xz89zwgt_9w,53
+wireguard_configbuilder-0.0.5.dist-info/top_level.txt,sha256=cChZcuahYvAmSOrloIHv_qjbCUOZ3_S5RitfY5Tts74,16
+wireguard_configbuilder-0.0.5.dist-info/RECORD,,
