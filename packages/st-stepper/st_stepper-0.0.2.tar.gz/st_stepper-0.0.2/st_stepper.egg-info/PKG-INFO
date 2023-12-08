@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: st-stepper
+Version: 0.0.2
+Summary: Streamlit component -st_stepper
+Home-page: 
+Author: tushar2704
+Author-email: tushar.27041994@gmail.com
+Keywords: Python,Streamlit,React,JavaScript,Custom,www.tushar-aggarwal.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: Streamlit component -st_stepper
+Provides-Extra: devel
+License-File: LICENSE
+
+Streamlit componen -st_stepper
