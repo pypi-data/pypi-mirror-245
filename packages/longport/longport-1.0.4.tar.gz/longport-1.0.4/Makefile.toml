@@ -1,0 +1,18 @@
+[tasks.python]
+command = "maturin"
+args = ["build"]
+cwd = "python"
+dependencies = ["install-maturin"]
+
+[tasks.install-maturin]
+command = "pip"
+args = ["install", "maturin>=1.0,<2.0"]
+
+[tasks.install-python-sdk.windows]
+command = "pip"
+args = [
+    "install",
+    "target/wheels/longport-1.0.2-cp311-none-win_amd64.whl",
+    "-I",
+]
+dependencies = ["python"]
