@@ -1,0 +1,17 @@
+extension_helpers/__init__.py,sha256=8M23pqDadDoCV6Q5mRgNu--TG9U_Q1ijk_uCuhx5v-Q,1674
+extension_helpers/_openmp_helpers.py,sha256=bSMSRyYjjnQzsGWyrQQHGHg8G5D4viW4k2yF5z6wM2o,10437
+extension_helpers/_setup_helpers.py,sha256=iejsD-6st58PvR_Nf2Db5922Wt4A5OrlvZsBxOoEu58,11330
+extension_helpers/_utils.py,sha256=IRnNEnOc7i8r9vtkEL5hsHYPTqAPxH6sVvGwQCFQtL4,4234
+extension_helpers/conftest.py,sha256=F62U5Gj36zrouie_CBFIKI9LOiT9v601ri7O0k9lMlk,2383
+extension_helpers/version.py,sha256=EPoWF0em1tKJgBz5dbBF-r29860VBk-SsdiXh6E1aO0,411
+extension_helpers/src/compiler.c,sha256=S2-Krq6EPYpF4cUGK3DVzSqqQm_d35WFd3HSWjj_DhQ,2720
+extension_helpers/tests/__init__.py,sha256=Rhpk30etQutHljsiTvlPZbkF2mmqKFPTOvxlW-iWEDw,4435
+extension_helpers/tests/test_openmp_helpers.py,sha256=XYOF4PgMbzQJbWHSfz1S4OY2BIH4j4TQ_PasUPssp0E,1578
+extension_helpers/tests/test_setup_helpers.py,sha256=RtANxoy3afjKcdnSoFm-zx4slr8Pu6YlhOlMKg6u_zY,12226
+extension_helpers/tests/test_utils.py,sha256=gFZc0_YjmsLj_TD70V-h3fkXA0DUF7spps-M2LRRiRc,696
+extension_helpers-1.1.1.dist-info/LICENSE.rst,sha256=lSsNzyAHuErngixulSTXtGiUb3ZOiS0xWX0vKlLksi4,1491
+extension_helpers-1.1.1.dist-info/METADATA,sha256=25KRGSfh9ZeanwmKafERhr1nqjt2wn0zA_doh-HPBcw,2197
+extension_helpers-1.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+extension_helpers-1.1.1.dist-info/entry_points.txt,sha256=VguvSMSrMjATxYJbtZ-1R9hZThYKyW-Rxnbxts9-xX4,124
+extension_helpers-1.1.1.dist-info/top_level.txt,sha256=JvheL5VCrLl-zL12nx1LcOMUtWGc5FtJZr_Ujleg4cc,18
+extension_helpers-1.1.1.dist-info/RECORD,,
