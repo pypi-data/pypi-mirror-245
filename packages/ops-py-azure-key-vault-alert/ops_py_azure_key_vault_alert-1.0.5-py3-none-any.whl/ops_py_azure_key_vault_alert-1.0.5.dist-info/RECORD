@@ -1,0 +1,6 @@
+azure_key_vault_alert/__init__.py,sha256=FPGjb5hgpJWOUwgcvPmJa4Bf8Sp5xmRatU13cQkpEdA,149
+azure_key_vault_alert/azure_key_vault_alert.py,sha256=EKWZmUB53oSsBp22Olf6ruS4tib8k3gFgEfkhcREy6o,4693
+ops_py_azure_key_vault_alert-1.0.5.dist-info/METADATA,sha256=BtOfvV71SymlA4i2I3UwNX3XOz0S8qI48libmG6yty8,5697
+ops_py_azure_key_vault_alert-1.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ops_py_azure_key_vault_alert-1.0.5.dist-info/top_level.txt,sha256=_JfqMuBtmMrjys9FM6ZcvZ53wj8dE_gMkZPKd3w9Uas,22
+ops_py_azure_key_vault_alert-1.0.5.dist-info/RECORD,,
