@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+meshgpt_pytorch/__init__.py
+meshgpt_pytorch/meshgpt_pytorch.py
+meshgpt_pytorch.egg-info/PKG-INFO
+meshgpt_pytorch.egg-info/SOURCES.txt
+meshgpt_pytorch.egg-info/dependency_links.txt
+meshgpt_pytorch.egg-info/requires.txt
+meshgpt_pytorch.egg-info/top_level.txt
