@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ymorishima030-method
+Version: 2.0.0
+Summary: ymorishima030s method
+Author-email: ymorishima030 <ymorishima@hochiki.co.jp>
+Project-URL: Homepage, https://github.com/ymorishima030/ymorishima030-method
+Project-URL: Bug Tracker, https://github.com/ymorishima030/ymorishima030-method/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENCE
