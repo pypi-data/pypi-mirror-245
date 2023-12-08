@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: dataadderDB
+Version: 0.1.0
+Requires-Dist: sqlite3
+Requires-Dist: csvjsonsqlite3datetime

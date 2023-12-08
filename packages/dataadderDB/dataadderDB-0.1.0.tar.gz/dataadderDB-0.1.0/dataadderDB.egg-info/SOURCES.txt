@@ -1,0 +1,6 @@
+dataadderDB/setup.py
+dataadderDB.egg-info/PKG-INFO
+dataadderDB.egg-info/SOURCES.txt
+dataadderDB.egg-info/dependency_links.txt
+dataadderDB.egg-info/requires.txt
+dataadderDB.egg-info/top_level.txt
