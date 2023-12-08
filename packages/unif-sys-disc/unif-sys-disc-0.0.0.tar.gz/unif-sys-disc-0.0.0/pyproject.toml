@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unif-sys-disc"
+authors = [
+    {name = "Lulai Zhu", email = "lulai.zhu@gmail.com"},
+    {name = "Wei Cheng", email = "wei.cheng.me@gmail.com"},
+    {name = "Livia Lestingi", email = "livia.lestingi@polimi.it"},
+]
+description = "Unified System Discovery Framework"
+keywords = ["Production Systems", "Model Generation"]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Manufacturing",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only"
+]
+requires-python = ">= 3.9"
+dependencies = []
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/AutotwinEU/unif-sys-disc"
+
+[tool.setuptools]
+py-modules = ["unifsysdisc"]
+
+[tool.setuptools_scm]
+version_scheme = "no-guess-dev"

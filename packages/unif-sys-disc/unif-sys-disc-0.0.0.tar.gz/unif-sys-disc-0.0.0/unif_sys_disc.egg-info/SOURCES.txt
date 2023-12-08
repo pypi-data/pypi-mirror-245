@@ -1,0 +1,10 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+unifsysdisc.py
+unif_sys_disc.egg-info/PKG-INFO
+unif_sys_disc.egg-info/SOURCES.txt
+unif_sys_disc.egg-info/dependency_links.txt
+unif_sys_disc.egg-info/top_level.txt
