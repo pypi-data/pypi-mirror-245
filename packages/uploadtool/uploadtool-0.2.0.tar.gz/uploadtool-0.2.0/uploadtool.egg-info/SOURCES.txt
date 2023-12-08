@@ -1,0 +1,8 @@
+setup.py
+uploadtool/__init__.py
+uploadtool/upload.py
+uploadtool.egg-info/PKG-INFO
+uploadtool.egg-info/SOURCES.txt
+uploadtool.egg-info/dependency_links.txt
+uploadtool.egg-info/requires.txt
+uploadtool.egg-info/top_level.txt
