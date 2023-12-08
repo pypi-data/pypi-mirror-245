@@ -1,0 +1,62 @@
+# MultiVisionToolkit
+
+MultiVisionToolkit is a Python package that provides tools for object detection and segmentation, specifically using the YOLOv8 model. It includes real-time detection on camera video, visualization metrics, and the ability to convert reports to document and PDF files.
+
+## Installation
+
+```bash
+pip install multivision
+```
+##  Usage
+Object Detection with YOLOv8
+
+![](screenshot.png)
+
+[Detailed feature showcase with images](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features):
+
+```
+
+from multivisiontoolkit import YOLOv8Detector
+
+# Load the YOLOv8 model
+detector = YOLOv8Detector()
+
+# Real-time object detection on camera video
+detector.detect_camera_video()
+
+# Save the detection results as an image
+detector.save_detection_result(output_path='output.jpg')
+
+```
+## Download images for created dataset
+```
+#download images form internet
+#using class name and count for images more than 500 images for best training 
+from multivision.dataset import dataset as ds
+class_name='dog'
+count=100
+ds.download_images(class_name,count)
+```
+
+## Visualization Metrics
+
+```
+```
+## Convert Report to Document and PDF
+
+```
+```
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Citation
+If you find MultiVisionToolkit helpful in your work, please consider citing it. You can use the following BibTeX entry:
+
+@software{multivisiontoolkit,
+  author = {Falah.G.Salieh},
+  title = {MultiVisionToolkit},
+  year = {2023},
+  url = {https://github.com/falahgs/multivisiontoolkit},
+}
+
+
