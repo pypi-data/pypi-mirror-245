@@ -1,0 +1,14 @@
+licensespring/__init__.py,sha256=8G85BVm4XUk0pwLU4iTJZuN1K3DzHfJmamC882k5DIk,37
+licensespring/api/__init__.py,sha256=yUlH0Z8yabvB38V-XD5dDscXUwA12fdKnuq50e4copA,23088
+licensespring/api/authorization.py,sha256=RpzAWbtDR2LYhRueyYFqtDqiTOyaM6EMZwmlLT0X8cs,1198
+licensespring/api/error.py,sha256=hMRNF4HQFkaBgX0u1h2d3uLgrN6MfEaMRew1yhpLA3g,624
+licensespring/api/hardware.py,sha256=esVHB4TH-mPDGDgv9FggpMp591YKyo3vry-e9Lj_nhg,2281
+licensespring/api/signature.py,sha256=BAj9VgGFJ6Ft72EwasjI2dXs2BI39rRNZTG1EeDWNfs,1896
+licensespring/webhook/__init__.py,sha256=o6vDTa4ssPGcuNr1LURnoAFtxu6a9c4znfVFwxKRriY,342
+licensespring/webhook/error.py,sha256=uCiheF-SgE-3O2hOU8IWePw6oyiwNjv5pj2QeXQgplo,300
+licensespring/webhook/signature.py,sha256=arSWpv4z9elkypgxAn4A3ELfVYP0d-zUAqLUecEqnfE,2140
+licensespring/webhook/utils.py,sha256=zIoul4gMoWbBAVYJIeUoFG3eboMh2gFIK9wST_UIZwo,980
+licensespring-1.3.2.dist-info/LICENSE,sha256=M36YYi7TZSxwkTou6odm57zPAvFwU8hRj8L4Mmb7u0w,64
+licensespring-1.3.2.dist-info/METADATA,sha256=8zwoPDu2FptTVZFMcY5_4fpawVKw8gjMvI5yPtS_6x8,13713
+licensespring-1.3.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+licensespring-1.3.2.dist-info/RECORD,,
