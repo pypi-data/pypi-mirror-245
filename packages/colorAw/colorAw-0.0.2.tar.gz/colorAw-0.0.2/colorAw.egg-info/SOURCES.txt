@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.cfg
+setup.py
+colorAw/__init__.py
+colorAw/color.py
+colorAw.egg-info/PKG-INFO
+colorAw.egg-info/SOURCES.txt
+colorAw.egg-info/dependency_links.txt
+colorAw.egg-info/top_level.txt
