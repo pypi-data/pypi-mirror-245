@@ -1,0 +1,9 @@
+meshgpt_pytorch/__init__.py,sha256=fVlOeg0B1Rt71Tq9eqouyCpUH9hZkSosauoVowbY_1E,185
+meshgpt_pytorch/data.py,sha256=zEPXG1Dpce5Hz0poSQrJALZCNvtHAvHOqBqjiJxv0Pc,1587
+meshgpt_pytorch/meshgpt_pytorch.py,sha256=p895kxb3EEqXpBj9WuCTxWQOrteUpZ7o9akFaBYcYCw,27095
+meshgpt_pytorch/trainer.py,sha256=-5BJDg9K3zz2zZPYsN9nr3dgkEtW5lKlI2byyg1i76w,3171
+meshgpt_pytorch-0.0.36.dist-info/LICENSE,sha256=JCo3d2HvOFPGYvaXfnYX4-qjRyQvVElop5ZRITXMg-U,1066
+meshgpt_pytorch-0.0.36.dist-info/METADATA,sha256=13cn4q6a25RzLHCgZe1AuZsjicBZVcO6r0k7faaooec,983
+meshgpt_pytorch-0.0.36.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+meshgpt_pytorch-0.0.36.dist-info/top_level.txt,sha256=GoLNXEbRBRuRDTQZMQFPmWLIMIhmaPkb7YT6S4ESDQs,16
+meshgpt_pytorch-0.0.36.dist-info/RECORD,,
