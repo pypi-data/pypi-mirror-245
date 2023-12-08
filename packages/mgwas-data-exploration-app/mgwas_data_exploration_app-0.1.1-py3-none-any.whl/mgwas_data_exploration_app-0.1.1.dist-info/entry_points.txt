@@ -1,0 +1,3 @@
+[console_scripts]
+mgwas-data-exploration-app=mgwas_data_exploration_app.main:__main__
+
