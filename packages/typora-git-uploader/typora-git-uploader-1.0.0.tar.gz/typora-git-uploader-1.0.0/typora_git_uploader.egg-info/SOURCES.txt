@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+config.json
+requirements.txt
+setup.cfg
+setup.py
+typora_git_uploader/__init__.py
+typora_git_uploader/main.py
+typora_git_uploader.egg-info/PKG-INFO
+typora_git_uploader.egg-info/SOURCES.txt
+typora_git_uploader.egg-info/dependency_links.txt
+typora_git_uploader.egg-info/entry_points.txt
+typora_git_uploader.egg-info/not-zip-safe
+typora_git_uploader.egg-info/requires.txt
+typora_git_uploader.egg-info/top_level.txt
