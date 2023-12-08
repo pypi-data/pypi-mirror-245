@@ -1,0 +1,125 @@
+[tool.poetry]
+name = "django-user-trace"
+version = "2.0.0"
+description = "A Python logging filter for Django user attributes."
+license = "MIT"
+authors = ["Jonathan Hiles <jonathan@hil.es>"]
+readme = "README.md"
+repository = "https://github.com/axieum/django-user-trace"
+documentation = "https://axieum.github.io/django-user-trace/latest/"
+keywords = ["async", "django", "logs", "logging", "middleware", "sync", "trace", "tracing", "user", "web"]
+classifiers = [
+  "Framework :: Django",
+  "Framework :: Django :: 5.0",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+packages = [{ include = "django_user_trace", from = "src" }]
+include = [{ path = "tests", format = "sdist" }]
+
+[tool.poetry.urls]
+"Funding" = "https://github.com/sponsors/axieum"
+"Issue tracker" = "https://github.com/axieum/django-user-trace/issues"
+"Release notes" = "https://axieum.github.io/django-user-trace/latest/changelog/"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5.0"
+celery = {version = "^5.3.1", optional = true}
+
+[tool.poetry.extras]
+celery = ["celery"]
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+pre-commit = "^3.3.3"
+ruff = "^0.1.7"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.0"
+pytest-asyncio = "^0.23.2"
+pytest-celery = "^0.0.0"
+pytest-cov = "^4.1.0"
+pytest-django = "^4.5.2"
+pytest-mock = "^3.11.1"
+pytest-xdist = "^3.3.1"
+syrupy = "^4.6.0"
+
+[tool.poetry.group.typing.dependencies]
+mypy = ">=0.990"
+django-stubs = "^4.2.3"
+
+[tool.poetry.group.docs]
+optional = true
+[tool.poetry.group.docs.dependencies]
+mike = "^1.1.2"
+mkdocs = "^1.4.2"
+mkdocs-awesome-pages-plugin = "^2.8.0"
+mkdocs-gen-files = "^0.4.0"
+mkdocs-git-revision-date-localized-plugin = "^1.1.0"
+mkdocs-material = "^9.0.9"
+mkdocs-minify-plugin = "^0.6.2"
+
+[tool.ruff]
+src = ["src", "tests"]
+target-version = "py310"
+line-length = 120
+select = [
+  "F", # pyflakes
+  "E", # pycodestyle
+  "W", # pycodestyle
+  "I", # isort
+  "N", # pep8-naming
+  "UP", # pyupgrade
+  "ANN", # flake8-annotations
+  "B", # flake8-bugbear
+  "C4", # flake8-comprehensions
+  "DJ", # flake8-django
+  "PIE", # flake8-pie
+  "PT", # flake8-pytest-style
+  "SIM", # flake8-simplify
+  "TCH", # flake8-type-checking
+  "RUF", # ruff-specific rules
+]
+ignore = [
+  "ANN101", # Missing type annotation for {name} in method
+  "ANN102", # Missing type annotation for {name} in classmethod
+  "ANN401", # Dynamically typed expressions (typing.Any) are disallowed in {name}
+  "E501", # Line too long
+  "PT013", # Found incorrect import of pytest, use simple `import pytest` instead
+]
+
+[tool.black]
+target-version = ["py310"]
+line-length = 120
+
+[tool.mypy]
+files = ["src", "tests"]
+strict = true
+plugins = ["mypy_django_plugin.main"]
+
+  [[tool.mypy.overrides]]
+  module = "celery.*"
+  ignore_missing_imports = true
+
+[tool.django-stubs]
+django_settings_module = "example.settings"
+
+[tool.pytest.ini_options]
+addopts = "-n auto"
+asyncio_mode = "auto"
+testpaths = ["tests"]
+DJANGO_SETTINGS_MODULE = "example.settings"
+
+[tool.coverage.report]
+exclude_lines = [
+  "pragma: no cover",
+  "if TYPE_CHECKING:",
+]
+show_missing = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
