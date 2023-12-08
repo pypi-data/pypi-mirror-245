@@ -1,0 +1,30 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+name = "numx"
+version = "1.0.1"
+description = "Import Numbers"
+authors = ["Tom Herman <flipjumpproject@gmail.com>"]
+license = "BSD-2-Clause-Simplified"
+readme = "README.md"
+
+repository = "https://github.com/tomhea/numx"
+
+keywords = ["math", "primes", "fast", "cli"]
+classifiers = [
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sympy = "=1.12"
