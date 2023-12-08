@@ -1,0 +1,12 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="Icons">
+        <file alias="Py2exe-GUI_icon_72px">Icons/Py2exe-GUI_icon_72px.png</file>
+    </qresource>
+    <qresource prefix="Texts" lang="zh">
+        <file alias="About_Text">Texts/About_zh.md</file>
+    </qresource>
+    <qresource prefix="Texts" lang="en">
+        <file alias="About_Text">Texts/About_en.md</file>
+    </qresource>
+</RCC>
