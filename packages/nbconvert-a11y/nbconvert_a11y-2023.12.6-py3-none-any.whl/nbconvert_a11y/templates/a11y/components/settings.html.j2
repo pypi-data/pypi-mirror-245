@@ -1,0 +1,49 @@
+{#
+settings provides multiple screen reader navigation techniques when the dialog is active.
+
+#}
+
+{% from "a11y/components/core.html.j2" import h, radiogroup, select, activity_log, input_number, checkbox, dialog_close %}
+<dialog id="nb-settings">
+    <form name="settings">
+        {{h(1, "accessibility settings")}}
+        {{dialog_close()}}
+        <ul aria-labelledby="nb-accessibility-settings-label">
+            <li>
+                {{h(2, "notebook layout")}}
+                <ul aria-labelledby="nb-notebook-layout-label">
+                    <li>{{select("color scheme", {"light mode": "light", "dark mode": "dark"})}}</li>
+                    <li>{{input_number("margin", 5, min=0, max=40, step=5, extra_title="%")}}</li>
+                    <li>{{input_number("line height", 1.5, min=0.5, max=3, step=0.1)}}</li>
+                    <li>{{select("cell navigation", values="list table landmark presentation".split(), disabled="grid
+                        treegrid
+                        tree".split())}}</li>
+                    <li>{{select("accessibility priority", "AAA AA A".split(), resources.wcag_priority)}}</li>
+                    <li>{{checkbox("accesskey navigation", True)}}</li>
+                </ul>
+            </li>
+            <li>
+                {{h(2, "font settings")}}
+                <ul aria-labelledby="nb-font-settings-label">
+                    <li>{{select("font size", "xx-small x-small small medium large x-large xx-large".split(),
+                        "medium")}}</li>
+                    <li>
+                        {{select("font family", "serif sans-serif".split())}}
+                    </li>
+                </ul>
+            </li>
+            <li>
+                {{h(2, "sound settings")}}
+                <ul aria-labelledby="nb-sound-settings-label">
+                    <li>
+                        {{checkbox("synthetic speech", False)}}
+                    </li>
+                    <li>
+                        {{checkbox("aria live", True)}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        {{activity_log(False)}}
+    </form>
+</dialog>
