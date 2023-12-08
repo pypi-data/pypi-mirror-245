@@ -1,0 +1,7 @@
+numpy
+pyvista
+anytree
+termcolor
+PyYAML
+toml
+pillow
