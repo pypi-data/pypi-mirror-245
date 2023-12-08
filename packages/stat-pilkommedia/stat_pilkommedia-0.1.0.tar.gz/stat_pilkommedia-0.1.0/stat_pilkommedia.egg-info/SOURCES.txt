@@ -1,0 +1,6 @@
+README.md
+setup.py
+stat_pilkommedia.egg-info/PKG-INFO
+stat_pilkommedia.egg-info/SOURCES.txt
+stat_pilkommedia.egg-info/dependency_links.txt
+stat_pilkommedia.egg-info/top_level.txt
