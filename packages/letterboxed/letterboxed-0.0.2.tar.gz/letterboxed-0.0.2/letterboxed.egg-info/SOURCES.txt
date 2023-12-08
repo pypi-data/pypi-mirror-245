@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+letterboxed/__init__.py
+letterboxed/__main__.py
+letterboxed/letterbox.py
+letterboxed.egg-info/PKG-INFO
+letterboxed.egg-info/SOURCES.txt
+letterboxed.egg-info/dependency_links.txt
+letterboxed.egg-info/entry_points.txt
+letterboxed.egg-info/top_level.txt
