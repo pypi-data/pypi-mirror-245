@@ -1,0 +1,10 @@
+chrome_fingerprints/__init__.py,sha256=1dyO-DyMC1upvif9IZDny4suUXvU8Oxadw4bpXHmDyw,186
+chrome_fingerprints/fingerprint_typing.py,sha256=9FqWOoV3uuHmWL2AVGZMnOLt8gGiA9bagQ2kEjEmw54,2995
+chrome_fingerprints/fingerprints.json.xz,sha256=4jNgShhwbBJOxC_MpjmIIgNSFzEWNuv8uW5zE6qnsGA,1320028
+chrome_fingerprints/fingerprints.py,sha256=Z_8UdNI33tlJgHwJ1RjDKwUbW81xKo8W1VslcrfS0wc,4990
+chrome_fingerprints/vars.py,sha256=j90qxR1n7rwdoaukJ3MMi5-kUDLzzbkXuMDo-w4NKD0,138631
+chrome_fingerprints-1.0.dist-info/LICENSE,sha256=o88u-sJjXQvB7TSKc0ZiNgDlW4y5QQSDkhAsegx6VUw,35760
+chrome_fingerprints-1.0.dist-info/METADATA,sha256=IS77BsrWGw_BAm0l4HEEK40kLZ0JUi-zypD6yer-ttk,2847
+chrome_fingerprints-1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+chrome_fingerprints-1.0.dist-info/top_level.txt,sha256=YMuhbC6jONmFAi6063ugeF49FN6Oi3vbZLraObiXEwc,20
+chrome_fingerprints-1.0.dist-info/RECORD,,
