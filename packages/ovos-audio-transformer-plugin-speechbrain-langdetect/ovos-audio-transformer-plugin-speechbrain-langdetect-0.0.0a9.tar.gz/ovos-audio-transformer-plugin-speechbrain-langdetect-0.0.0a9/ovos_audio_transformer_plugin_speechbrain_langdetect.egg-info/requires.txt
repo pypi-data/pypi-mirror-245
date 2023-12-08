@@ -1,0 +1,4 @@
+torchaudio
+speechbrain
+ovos_plugin_manager
+ovos-config>=0.0.12a3
