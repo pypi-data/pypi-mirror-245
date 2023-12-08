@@ -1,0 +1,9 @@
+numx/__init__.py,sha256=IJXEJw3924pIL71J4J4x5dbXTUBpFhqMegGxpUR4MYY,1211
+numx/_actual_math.py,sha256=JKqJCNxKyMjFDfT_ldayg0zDD0vfQxDTZtST6pBGORw,1197
+numx/_exceptions.py,sha256=VwpPDfzfYwJdNRA25WSpw8_OIVRIdToo9NQ-TAXhrl4,38
+numx/_numx_main.py,sha256=Zu60VTALobBMbcqIBuyOp1p6mtvzN4SMWmRmHd1SakA,305
+numx/_parser.py,sha256=5nksWzdxZin9dxq8bf6aksi56jhDysSzlArB5QUjuDw,2096
+numx-1.0.1.dist-info/LICENSE,sha256=XqDYfxlPIszt2PucH-XU7oa8SOWR_zkztM1c-5gqFZs,1292
+numx-1.0.1.dist-info/METADATA,sha256=5Kac05jeRdM7Y6t8JA4dF9zo9QWOQHSP5Jv5L7b7yGc,2665
+numx-1.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+numx-1.0.1.dist-info/RECORD,,
