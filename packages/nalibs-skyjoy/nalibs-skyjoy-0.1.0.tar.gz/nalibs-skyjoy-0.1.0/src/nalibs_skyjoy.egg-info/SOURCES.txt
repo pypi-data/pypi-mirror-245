@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/nalibsSkyJoy/__base.py
+src/nalibsSkyJoy/__init__.py
+src/nalibsSkyJoy/__version.py
+src/nalibsSkyJoy/cli_cicd_fe.py
+src/nalibsSkyJoy/func.py
+src/nalibs_skyjoy.egg-info/PKG-INFO
+src/nalibs_skyjoy.egg-info/SOURCES.txt
+src/nalibs_skyjoy.egg-info/dependency_links.txt
+src/nalibs_skyjoy.egg-info/entry_points.txt
+src/nalibs_skyjoy.egg-info/requires.txt
+src/nalibs_skyjoy.egg-info/top_level.txt
