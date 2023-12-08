@@ -1,0 +1,10 @@
+api_him
+core
+imageProcessing
+matrixOperations
+plots
+postProcessing
+pyHiM
+registration
+segmentation
+toolbox
