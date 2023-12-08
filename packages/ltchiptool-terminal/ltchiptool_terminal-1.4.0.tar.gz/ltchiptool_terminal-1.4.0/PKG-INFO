@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ltchiptool-terminal
+Version: 1.4.0
+Summary: Serial terminal plugin for ltchiptool
+License: MIT
+Author: Kuba Szczodrzyński
+Author-email: kuba@szczodrzynski.pl
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# ltchiptool-terminal
+
+Simple serial (UART) terminal plugin for [ltchiptool](https://docs.libretiny.eu/docs/flashing/tools/ltchiptool/).
+
+The terminal will automatically connect and disconnect, when the flashing operation ends and starts, respectively.
+
