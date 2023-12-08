@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/sanduuzlogformatter/__init__.py
+src/sanduuzlogformatter/sanduuzlogformatter.py
+src/sanduuzlogformatter.egg-info/PKG-INFO
+src/sanduuzlogformatter.egg-info/SOURCES.txt
+src/sanduuzlogformatter.egg-info/dependency_links.txt
+src/sanduuzlogformatter.egg-info/top_level.txt
