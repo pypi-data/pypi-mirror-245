@@ -1,0 +1,3 @@
+[console_scripts]
+schedule_server = tesp_support.api.schedule_server:main
+tesp_component = tesp_support.api.data:tesp_component
