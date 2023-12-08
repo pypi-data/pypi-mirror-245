@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: tfl_bus_monitor
+Version: 0.8
+Summary: TFL Bus Monitor - download Transport for London bus arrival times
+Home-page: https://www.soinkleined.com
+Author: David Klein
+Author-email: david@soinkleined.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.0.0
+Requires-Dist: pytz>=2021.1
+
+---
+# tfl_bus_monitor
+
+
+Download Transport For London bus arrival time information.
+
+## Install it from PyPI
+
+```bash
+pip install tfl_bus_monitor
+```
+
+## Usage
+
+```py
+from tfl_bus_monitor import get_stops, get_config_path
+
+```
+
+```bash
+% busstop -h
+usage: busstop [-h] [-t | -j]
+
+Get bus stop data from TFL
+
+options:
+  -h, --help        show this help message and exit
+  -t, --text        print formatted text
+  -j, --json        pretty print json (default)
+```
+
