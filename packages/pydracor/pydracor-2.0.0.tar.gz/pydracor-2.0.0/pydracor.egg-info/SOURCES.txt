@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+pydracor/__init__.py
+pydracor/dracor.py
+pydracor/test_dracor.py
+pydracor.egg-info/PKG-INFO
+pydracor.egg-info/SOURCES.txt
+pydracor.egg-info/dependency_links.txt
+pydracor.egg-info/requires.txt
+pydracor.egg-info/top_level.txt
