@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+qumess.egg-info/PKG-INFO
+qumess.egg-info/SOURCES.txt
+qumess.egg-info/dependency_links.txt
+qumess.egg-info/top_level.txt
