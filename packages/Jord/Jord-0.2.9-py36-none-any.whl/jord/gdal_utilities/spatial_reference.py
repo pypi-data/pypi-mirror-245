@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+from osgeo import osr
+
+__all__ = ["get_spatial_reference_from_epsg"]
+
+
+def get_spatial_reference_from_epsg(epsg_number: int) -> osr.SpatialReference:
+    srs = osr.SpatialReference()
+    res = srs.ImportFromEPSG(epsg_number)
+    if res != 0:
+        raise RuntimeError(f"{repr(res)}: could not import from EPSG")
+    return srs
