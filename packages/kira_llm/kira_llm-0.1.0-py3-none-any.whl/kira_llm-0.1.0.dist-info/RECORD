@@ -1,0 +1,8 @@
+kira/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kira/generate.py,sha256=NXm-EFVD3kj2hKNjndspxKhckKkPu8nS4omwwL2PS1E,1265
+kira/model/model.py,sha256=dHzsIOg1NA3JGs406TmJhJeV8vhKarV0KXQzF2qCMII,11324
+kira/model/rope_embeddings.py,sha256=QqZcgzrybfUGk0vjeh_uumNowYgNULp1l703OtvfjG4,3508
+kira/train.py,sha256=JfwJzitLJ_bv4w1s8YkkxTvq0VifMEk6WrNlj_zaQ84,2860
+kira_llm-0.1.0.dist-info/METADATA,sha256=ncS5T-MWwfyrcoekLfOezMX8tkz8G1_eyD8M8Ciepfw,2101
+kira_llm-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+kira_llm-0.1.0.dist-info/RECORD,,
