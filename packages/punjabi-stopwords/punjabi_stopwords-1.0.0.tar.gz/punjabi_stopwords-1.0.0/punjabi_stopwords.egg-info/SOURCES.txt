@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+punjabi_stopwords.py
+setup.py
+punjabi_stopwords.egg-info/PKG-INFO
+punjabi_stopwords.egg-info/SOURCES.txt
+punjabi_stopwords.egg-info/dependency_links.txt
+punjabi_stopwords.egg-info/top_level.txt
