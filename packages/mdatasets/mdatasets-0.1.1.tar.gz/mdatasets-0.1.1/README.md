@@ -1,0 +1,35 @@
+Introducing Mdataset (/em-dataset/): a comprehensive solution tailored for researchers and students seeking a streamlined approach to compiling high-quality datasets and processing. 
+
+### **Why is it necessary?**
+
+Dataset compilation and processing can be a formidable challenge in various fields utilizing big data. The complexities lie in either navigating unfamiliar data banks or grappling with the intricacies of downloading specific datasets. Mdataset addresses these hurdles, providing an all-encompassing solution that equips users with the essential tools and methods needed to download existing datasets from renowned sources like Kaggle and Hugging Face. The only limiting factor is your computational power.
+
+### **What do we offer?**
+
+Mdataset delivers a set of wrappers and functions, either wrapping existing tools developed by researchers or providing our solutions. With a simple three-line command, users can effortlessly download and compile datasets while also performing various processing tasks. Our offerings include:
+
+- Downloading datasets from high-quality sources
+- Video transcription
+- Text-to-audio conversion
+- User-friendly web scraping tools
+- Secure local-to-internet file transfer on demand
+- Scraping popular image boards
+- Synthetic generation of tabular and text data
+- Secure one-on-one interview method for data extraction by researchers
+- YouTube video and audio download
+- Powerful Optical Character Recognition for extracting data from PDFs
+- Unrestricted on-terminal search engine
+- Tor route circuits for secure communication
+
+Choose Mdataset for a comprehensive and efficient solution to your dataset compilation and processing needs.
+
+### Quickstart
+
+`pip install mdataset`
+
+```Python
+from mdataset import scrape_data
+url = "www.example.com'
+wanted_list = ['What's the data ca?']
+scrape_data(url, wanted_list)
+```
