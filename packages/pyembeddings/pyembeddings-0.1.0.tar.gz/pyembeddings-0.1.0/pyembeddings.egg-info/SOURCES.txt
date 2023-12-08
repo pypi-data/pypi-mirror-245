@@ -1,0 +1,11 @@
+README.md
+setup.py
+pyembeddings/__init__.py
+pyembeddings/collection.py
+pyembeddings/database.py
+pyembeddings/generator.py
+pyembeddings.egg-info/PKG-INFO
+pyembeddings.egg-info/SOURCES.txt
+pyembeddings.egg-info/dependency_links.txt
+pyembeddings.egg-info/requires.txt
+pyembeddings.egg-info/top_level.txt
