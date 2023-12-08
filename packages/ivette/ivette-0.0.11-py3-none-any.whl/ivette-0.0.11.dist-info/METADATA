@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ivette
+Version: 0.0.11
+Summary: Python client for Ivette Computational chemistry and Bioinformatics project
+Home-page: UNKNOWN
+Author: Eduardo Bogado
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: httpx <0.25.2
+Requires-Dist: openbabel ==3.1.1.1
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: rdkit ==2023.9.2
+Requires-Dist: rdkit-pypi ==2022.9.5
+Requires-Dist: supabase ==2.2.0
+
+UNKNOWN
+
+
