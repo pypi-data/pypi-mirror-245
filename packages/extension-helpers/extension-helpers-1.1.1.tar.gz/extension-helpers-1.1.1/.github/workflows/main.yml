@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@v1
+    with:
+      posargs: --openmp-expected=True
+      coverage: codecov
+      envs: |
+        # Code style
+        - linux: style
+
+        # Standard tests
+
+        - linux: py38-test-oldestdeps
+        - linux: py39-test
+        - linux: py310-test
+        - linux: py311-test
+        - linux: py312-test
+        - linux: py312-test-devdeps
+
+        - macos: py312-test-devdeps
+          posargs: --openmp-expected=False
+
+        - windows: py38-test
+          runs-on: windows-2019
+        - windows: py312-test-devdeps
+          runs-on: windows-2019
+
+        # Test with more compilers, for the OpenMP helpers
+        - macos: py39-test-osxclang-conda
+          toxdeps: 'tox>=4'
+          coverage: ''
+        - linux: py39-test-linuxgcc-conda
+          toxdeps: 'tox>=4'
+          coverage: ''
+
+        # Test downstream packages
+        - linux: py39-downstream
+
+  publish:
+    needs: tests
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/publish_pure_python.yml@v1
+    with:
+      test_extras: test
+      test_command: pytest --pyargs extension_helpers
+    secrets:
+      pypi_token: ${{ secrets.PYPI_TOKEN }}
