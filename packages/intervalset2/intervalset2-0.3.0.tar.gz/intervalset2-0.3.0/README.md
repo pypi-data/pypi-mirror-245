@@ -1,0 +1,123 @@
+Install
+============================================================
+pip install intervalset2
+
+
+Basic Use Case
+============================================================
+- import 
+```python3
+>>> from intervalset2 import IntervalSet, NEG_INF, POS_INF
+```
+- initialize an interval set (follow simply called "TVS")
+```python3
+>>> IntervalSet.parse_from_str('(-inf, -10) | (-3, 3) | 5 | (10, inf)')
+(-inf, -10) | (-3, 3) | 5 | (10, inf)       # a TVS all intervals is open
+>>> IntervalSet.parse_from_str('(-inf, -10) | [-3, 3) | 5 | [10, inf)')
+(-inf, -10) | [-3, 3) | 5 | [10, inf)       # a TVS part of intervals is open
+>>> IntervalSet.parse_from_str('(-inf, -10] | [-3, 3] | 5 | [10, inf)')
+(-inf, -10] | [-3, 3] | 5 | [10, inf)       # a TVS all intervals is close
+>>> IntervalSet.parse_from_str('')          # an empty TVS
+
+>>> IntervalSet.empty_tvs()                 # get an empty TVS
+
+>>> IntervalSet.inf_tvs()                   # get an infinite TVS
+(-inf, inf)
+>>> tvs = IntervalSet.parse_from_str('(2, 5) | 5 | (5, 8) | (7, 9) | (10, inf)')
+>>> tvs                                     # intervals will be merged automatically
+(2, 9) | (10, inf)  
+>>> len(tvs)                                # a TVS length, represent the number of its intervals
+2  
+>>> tvs[1]                                  # TVS support __getitem__
+(10, inf)  
+>>> tvs[:]                                  # TVS support slice __getitem__
+[(2, 9), (10, inf)]  
+>>> [2, 3, False, True] in tvs              # TVS support __contains__
+True 
+>>> 20 in tvs                               # TVS support __contains__ on  discrete point
+True 
+>>> tvs2 = tvs.copy()                       # get a copy
+>>> tvs2 == tvs  
+True                                        # whether all intervals in the two TVS objects is same or not
+>>> tvs2.is_disjoint(tvs)                   # whether a TVS overlap on other
+False                                       
+>>> from datetime import date
+>>> IntervalSet([[date.fromisoformat('2023-12-03'), date.fromisoformat('2023-12-05'), True, False]])
+[2023-12-03, 2023-12-05)                    # also support other data type as interval 
+>>> IntervalSet([['a', 'c', True, False],['b', 'd', True, False]])
+[a, d)
+```
+- add an interval into a tvs
+```python3
+>>> tvs1 = IntervalSet.parse_from_str('(0, 3] | (100, inf)')
+>>> tvs1.add(3, 4)
+>>> tvs1
+(0, 4) | (100, inf)
+>>> tvs1.add(4, 4)
+>>> tvs1
+(0, 4] | (100, inf)
+```
+- union
+```python3
+>>> tvs1 = IntervalSet.parse_from_str('(0, 3] | (100, inf)')
+>>> tvs2 = IntervalSet.parse_from_str('(2, 5) | (-inf, -100)')
+>>> tvs3 = IntervalSet.parse_from_str('[4, 9) | 0')
+>>> tvs1.union(tvs2, tvs3)
+(-inf, -100) | [0, 9) | (100, inf)
+>>> tvs1.union()  # also can passed in zero other interval sets
+(0, 3] | (100, inf)
+```
+- intersection
+```python3
+>>> tvs1 = IntervalSet.parse_from_str('(0, 5] | (100, inf)')
+>>> tvs2 = IntervalSet.parse_from_str('(2, 7) | (200, inf)')
+>>> tvs3 = IntervalSet.parse_from_str('[4, 9) | (300, inf)')
+>>> tvs1.intersection(tvs2, tvs3)
+[4, 5] | (300, inf)
+>>> tvs1.intersection()  # also can passed in zero other interval sets
+(0, 5] | (100, inf)
+```
+- difference
+```python3
+>>> tvs1 = IntervalSet.parse_from_str('(0, 10) | (100, inf)')
+>>> tvs2 = IntervalSet.parse_from_str('(2, 7) | (200, inf)')
+>>> tvs3 = IntervalSet.parse_from_str('[4, 9) | (300, inf)')
+>>> tvs1.difference(tvs2, tvs3)
+(0, 2] | [9, 10) | (100, 200]
+>>> tvs1.intersection()  # also can passed in zero other interval sets
+(0, 10) | (100, inf)
+```
+- symmetric difference
+```python3
+>>> tvs1 = IntervalSet.parse_from_str('(0, 3] | (100, inf)')
+>>> tvs2 = IntervalSet.parse_from_str('(2, 5) | (200, inf)')
+>>> tvs3 = IntervalSet.parse_from_str('[4, 9) | (300, inf)')
+>>> tvs1.symmetric_difference(tvs2, tvs3)
+(0, 2] | (3, 4) | [5, 9) | (100, 200]
+>>> tvs1.symmetric_difference()  # also can passed in zero other interval sets
+(0, 3] | (100, inf) 
+```
+- complementary
+```python3
+>>> tvs1 = IntervalSet.parse_from_str('(0, 3] | (100, inf)')
+>>> tvs1.complementary()
+(-inf, 0] | (3, 100]
+>>> tvs1 = IntervalSet.parse_from_str('-3 | (0, 2]')
+>>> tvs2 = IntervalSet.parse_from_str('(3, 5)')
+>>> tvs3 = IntervalSet.parse_from_str('[7, 9) | (300, inf)')
+>>> IntervalSet.complementary_many(tvs1, tvs2, tvs3)
+(-inf, -3) | (-3, 0] | (2, 3] | [5, 7) | [9, 300]
+```
+- other
+    - union also support | |=
+    - intersection also support & &=
+    - difference also support  - -=
+    - symmetric difference also support ^ ^=
+    - complementary also support ~
+
+FAQ
+============================================================
+- for interval in a TVS, what required?
+  - must support compare methods, like __lt__, __gt__, ...
+- follow-up plan?
+  - improve the performance of some methods
