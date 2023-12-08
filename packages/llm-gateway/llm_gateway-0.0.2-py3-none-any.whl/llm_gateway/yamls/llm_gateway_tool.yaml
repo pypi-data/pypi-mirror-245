@@ -1,0 +1,13 @@
+llm_gateway.tools.llm_gateway_tool.llm_gateway:
+  function: llm_gateway
+  inputs:
+    connection:
+      type:
+      - CustomConnection
+    input_text:
+      type:
+      - string
+  module: llm_gateway.tools.llm_gateway_tool
+  name: Hello World Tool
+  description: This is hello world tool
+  type: python
