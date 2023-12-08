@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/semverkit/__init__.py
+src/semverkit.egg-info/PKG-INFO
+src/semverkit.egg-info/SOURCES.txt
+src/semverkit.egg-info/dependency_links.txt
+src/semverkit.egg-info/entry_points.txt
+src/semverkit.egg-info/requires.txt
+src/semverkit.egg-info/top_level.txt

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semverkit"
+description = "Semantic Versioning CLI"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "click==8.1.7",
+    "semver==3.0.2",
+]
+license = {file = "LICENSE"}
+authors = [{name = "Elmer Nocon", email = "elmernocon@gmail.com"}]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+]
+
+[project.scripts]
+semverkit = "semverkit:run"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.dynamic]
+version = {attr = "semverkit.__version__"}
