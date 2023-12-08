@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: obris
+Version: 0.1.4
+Summary: Obris CLI for managing infrastructure independent of your cloud provider.
+Author-email: Obris <josh@obris.io>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click >=8.1.7
+Requires-Dist: attrs >=23.1.0
+Requires-Dist: requests >=2.31.0
+
+# Obris CLI
+![Obris logo](./assets/images/obris-logo.svg)
+
+The Obris CLI is used to manage Obris apps from the command line. 
+It is built using [click](https://click.palletsprojects.com/en/8.1.x/) 
+as the underlying cli framework.  
+
+Learn more about Obris @[obris.io](https://obris.io).
+
+Use our [quickstart guide](https://www.obris.io/docs/quickstart) to start building apps.
+
+## Overview
+
+This project aims to make managing your infrastructure independent from the cloud it's deployed on.  We want developers 
+to be able to leverage the tools they need and not have to make compromises when choosing between a scoped, managed 
+PaaS offering or a customizable, terse IaaS offering.
+
+## Developing
+
+### Install Dependencies
+
+```bash
+pyenv install 3.12.0
+pyenv virtualenv 3.12.0 obris-cli
+
+pyenv local obris-cli
+pip install -r requirements.txt
+```
+
+### Configure Executable
+
+```bash
+sudo chmod +x ./obriscli/__main__.py
+```
+
+### Entry Point
+
+Start running Obris commands locally!
+
+```bash
+./obriscli/__main__.py <command>
+```
+
+## Contributing
+
+* [Branch Guidelines](docs/contributing/branch_guidelines.md)
+* [Pull Request Guidelines](./.github/PULL_REQUEST_TEMPLATE.md)
