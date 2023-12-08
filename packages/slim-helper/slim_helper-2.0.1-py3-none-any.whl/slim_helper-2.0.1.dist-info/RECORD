@@ -1,0 +1,11 @@
+slim_helper-2.0.1.dist-info/METADATA,sha256=v1lwDCnQ-YcpIqkBPV0HeSlyiUiGDu8pBL2W2l4r6hQ,3600
+slim_helper-2.0.1.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+slim_helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slim_helper/common.py,sha256=sRK8_R-OxAyl9zuvVZRk4PUlC-Df7VPFLw7KYJyml1I,1394
+slim_helper/database.py,sha256=343c2xQGCqTfEtEOYI1kmY_JvijrMXNhDUQj3ZNQ5y8,7265
+slim_helper/display.py,sha256=8PIFLgj6Ovt8Wzu_SAS_lwnvW-IfXZ1IHaprFF7b-Dk,2087
+slim_helper/io.py,sha256=he2CoY5yAvl1QqIJVkg_tnnTURyN_-RkTQOVXFQj5uc,5838
+slim_helper/process.py,sha256=j9Mg5WAIFYYhYM1Ih-pHXg-sI8EBupSIAuUuEGkDZMs,924
+slim_helper/security.py,sha256=f8c3IY4QCex19oUyWTu0lyMG-TPM6Y5BzYbh92Ojs1k,851
+slim_helper/task.py,sha256=0yPEOucmok_aNcD0t8H45SCRs_leDj6uvkqwZWgBKj4,2807
+slim_helper-2.0.1.dist-info/RECORD,,
