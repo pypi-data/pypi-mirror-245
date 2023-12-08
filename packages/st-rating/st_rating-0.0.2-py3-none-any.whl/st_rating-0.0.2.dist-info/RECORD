@@ -1,0 +1,12 @@
+st_rating/__init__.py,sha256=tmQCv2jhhKAb7AZwUY_LLwWWZ_NiVktAADUoVziS6Nk,2430
+st_rating/frontend/build/asset-manifest.json,sha256=aQlGsTG0uNgnLTIsA8fm6PuF7QDB8vdYVrc6KFhWPZk,221
+st_rating/frontend/build/bootstrap.min.css,sha256=X9ITP3t3djkRs4SffIkA1Q2WMy-oYl6au5HFYTVShe0,206960
+st_rating/frontend/build/index.html,sha256=ohmB0xL-JgegVhUCjmxdn3HEBsGGZqRGc7q16WAjAl0,492
+st_rating/frontend/build/static/js/main.b0be312f.js,sha256=rIxyOYGEkyGolsSdXNQEWCA3XWm6oR0yCgxfXzl1uqM,430160
+st_rating/frontend/build/static/js/main.b0be312f.js.LICENSE.txt,sha256=_m4AmoYePr-JYvRuyPQVgDBPgzqvrTK00VmmzfNb-3w,1534
+st_rating/frontend/build/static/js/main.b0be312f.js.map,sha256=F-JkxoLHGX1kkETmjPWdokZuLg4Ecgaq709juAnKmhY,1765123
+st_rating-0.0.2.dist-info/LICENSE,sha256=Vg5GaUbBVuhmpXFnvVkirmf28Iel_VPeS4Qo612X3uY,1107
+st_rating-0.0.2.dist-info/METADATA,sha256=7M7d9K4N19sDWU-5RLPfIhLDracnAqDDUC2obAnrYnw,932
+st_rating-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+st_rating-0.0.2.dist-info/top_level.txt,sha256=9TK5UgHC-T7kReCDiX2kN06-S35qH_n4Ago1D0gB2NM,10
+st_rating-0.0.2.dist-info/RECORD,,
