@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 1s 
+scrape_configs:
+  - job_name: 'python_process'
+    static_configs:
+      - targets: ['localhost:8000']
+remote_write:
+  - url: https://prometheus-prod-13-prod-us-east-0.grafana.net/api/prom/push
+    basic_auth:
+      username: ${PROMETHEUS_USER}
+      password: ${PROMETHEUS_TOKEN}
