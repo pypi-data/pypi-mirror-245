@@ -1,0 +1,14 @@
+mcvqoe/tvo/__init__.py,sha256=YivFEqLAi6lcUpM3gqM8EJ5ndyJ9Nox9dc4Vq8sNOT4,121
+mcvqoe/tvo/version.py,sha256=xQh39nrVAigw2u8MjH3aYv8O6_458xfl6M8eP39WjVw,427
+mcvqoe/tvo/volume_adjust.py,sha256=SOTdx-ju-2EjHXFifE4fo10G7WpXWXyRcxSenGoFoIE,35339
+mcvqoe/tvo/volume_adjust_eval.py,sha256=tRnoR7DW2kud8eTIhQyxR1cuuzTVXC6kfWGrxTE8lyM,9871
+mcvqoe/tvo/volume_adjust_hw_test.py,sha256=AHkImpg6KVyUd9eqvhKRr3z82_foyFiDRQKJOG2PE4Y,44
+mcvqoe/tvo/audio_clips/Vol_Set_F1.wav,sha256=zzdKfMTw4RlF9wEPJBO74gWjNpQ6RHvHWtOIH52F2Uo,931502
+mcvqoe/tvo/audio_clips/Vol_Set_F3.wav,sha256=l4Gkbm0_1nRH-eHQmW0rYEnTsVcycLBVu4kceJPxkBU,954390
+mcvqoe/tvo/audio_clips/Vol_Set_M3.wav,sha256=I1SPpIesDKAPUgPUySG5k1r5jNbbGnA58rFlZpyW9Xg,852924
+mcvqoe/tvo/audio_clips/Vol_Set_M4.wav,sha256=ibQaTedFfmxA3PDrCOhnpl6NWKZAMyHdaVo-mnyQSCA,951272
+mcvqoe_tvo-2.0.1.dist-info/METADATA,sha256=WyDuyt30XoNpcH0BbdKrGhyb2Ya_j90DiHLL0Y-s79A,5783
+mcvqoe_tvo-2.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mcvqoe_tvo-2.0.1.dist-info/entry_points.txt,sha256=NjuEATeFUkOH82FFbo-Rv_CTFRWMNIi5DZeaE6dIG74,62
+mcvqoe_tvo-2.0.1.dist-info/top_level.txt,sha256=xhVU7lOB8643r6aJatqOQUZq_l17GO6pKJlWEWQEBFk,7
+mcvqoe_tvo-2.0.1.dist-info/RECORD,,
