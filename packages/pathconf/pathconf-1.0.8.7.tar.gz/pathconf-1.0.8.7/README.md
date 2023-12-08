@@ -1,0 +1,45 @@
+**I do not recommend using this project as it was created for internal use. Due to this it is quite specific in its usecase and quite messy.**
+
+As stated in the short description this project simply uses os.walk to traverse a filesystem, starting in the users home directory, looking for a given file.
+It was created for internal use as there are several of us in the office running python scripts which are located on a onedrive and each time a new machine was initialised onedrive would have wildly different paths.
+Originally we were just using a simple function at the start of each script which would return the onedrive path but as different parts of the path started changing with new devices I realised this would quickly become an incredibly intricate and inneficient solution so I wrote this to help solve it. Published here for easier distribution around the office.
+
+Yes I know the name is bad I'm not good with names.
+
+**use:**
+
+```
+import pathconf
+
+pathconf.find_path('filename.filetype')
+```
+
+Alternatively you can give it a partial directory.
+
+```
+pathconf.find_path('folder/filename.filetype')
+```
+or
+```
+pathconf.findpath('foldera/folderb/filename.filetype')
+```
+
+
+This will create a .file_paths json file in home/.config/pathconf/ if it doesn't already exist and then will search for your file. Once found it will add that file to the pathconf file for quicker access in future runs. 
+If the file does already exist it will lookup your desired file and if it exists in the pathconf.json it will then check that the file exists where stated.
+If the file exists where the pathconf.json says it does then it will use that file, if the file doesn't exist there or the file doesn't appear in the pathconf.json then it will search for the file and append it to the pathconf.json.
+
+**Installation:**
+
+Easiest way to install is using pip
+
+```
+pip install pathconf
+```
+
+
+**Current issues:**
+
+Haven't yet run into but understand that this will always take the first match it finds, if there are files with the same name and type elsewhere in your home directory then it will use them if found first, even if they're not the desired file. Will skip any directory whose name contains 'Deprecated' as an attempt to workaround for our usecase as most duplicate file names will be found in our Deprecated Scripts directory.
+
+Other than deleting the fileconf.json file there is no way to reset the indexing. Unless file is deleted if it has already indexed the wrong file it will continue to use that file for as long as it exists at that location.
