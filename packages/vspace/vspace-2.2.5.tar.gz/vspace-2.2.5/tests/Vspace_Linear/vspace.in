@@ -1,0 +1,6 @@
+sSrcFolder  .
+sDestFolder Linear_Test
+sTrialName  semi_
+
+sBodyFile   earth.in
+dSemi [1, 2, n11] a
