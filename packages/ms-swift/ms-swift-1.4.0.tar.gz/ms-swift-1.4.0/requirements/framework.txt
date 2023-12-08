@@ -1,0 +1,16 @@
+accelerate
+datasets
+jieba
+matplotlib
+modelscope>=1.9.3
+nltk
+numpy
+optimum
+pandas
+peft>=0.6.0,<=0.6.2
+requests
+rouge
+safetensors
+tensorboard
+tqdm
+transformers>=4.33
