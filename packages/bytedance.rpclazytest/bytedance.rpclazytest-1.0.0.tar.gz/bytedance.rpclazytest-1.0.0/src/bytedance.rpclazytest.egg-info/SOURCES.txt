@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bytedance.rpclazytest.egg-info/PKG-INFO
+src/bytedance.rpclazytest.egg-info/SOURCES.txt
+src/bytedance.rpclazytest.egg-info/dependency_links.txt
+src/bytedance.rpclazytest.egg-info/top_level.txt
