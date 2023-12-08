@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "housing_library_5500"
+version = "0.2"
+description = "Sample code for coding practice"
+readme = "README.md"
+authors = [{ 'name' = "Bidisha Mukherjee", 'email' = "bidisha.mukherje@tigeranalytics.com" }]
+
+ 
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+keywords = ["housing","data training"]
+ 
+dependencies = [ "numpy", "pandas", "scikit-learn"]
+ 
+requires-python = ">=3.11"
+
+[project.urls]
+Homepage = "https://github.com/BidiMukh28/mle-training.git"
+ 
+[project.scripts]
+ingest_data = "ingest_data:main"
+train = "train:main"
+score = "score:main"

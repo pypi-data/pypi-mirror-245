@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/house_price_prediction/__init__.py
+src/house_price_prediction/ingest_data.py
+src/house_price_prediction/score.py
+src/house_price_prediction/train.py
+src/housing_library_5500.egg-info/PKG-INFO
+src/housing_library_5500.egg-info/SOURCES.txt
+src/housing_library_5500.egg-info/dependency_links.txt
+src/housing_library_5500.egg-info/entry_points.txt
+src/housing_library_5500.egg-info/requires.txt
+src/housing_library_5500.egg-info/top_level.txt
