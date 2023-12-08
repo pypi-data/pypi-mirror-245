@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: test-base-package
+Version: 1.0.0
+Summary: python 自动化测试基础包
+Home-page: https://www.baidu.com
+Author: 自动化测试基础包
+Author-email: tianjincn@163.com
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
+
+test_base_package自动化测试基础包，其中包括ui自动化和api接口自动化部分（暂未集成），由于test_base_package基础包集成了当前自动化测试的一些主流第三方库 ，测试人员可以通过test_base_package基础包快速的搭建自己的自动化测试框架。
+
+一、安装
+----------
+
+```shell
+pip install test-base-package
+```
+
+二、使用示例
+----------
+1、test_base_package 基础集成cli命令testpkg，可以使用testpkg命令进行初始化测试项目，测试模块详细命令请使用`testpkg -h 查看。`
+
+2、命令详情
+
+```text
+positional arguments:
+  project_name          项目名称为必填项
+  {1,2}                 测试用例类型: 1、ui自动化测试。 2、api自动化测试。
+
+options:
+  -h, --help            show this help message and exit
+  --case_name CASE_NAME
+                        测试用例模块为选填项
+
+```
+
+3、初始化项目命令
+
+```shell
+testpkg project_name 1
+```
+
+4、初始化项目结构
+
+```text
+
+├─project_name
+    ├─cases
+    │      __init__.py
+    │
+    ├─logs
+    ├─pages
+    │   __init__.py
+    │
+    ├─screenshots
+    ├─__init__.py
+    ├─config.py
+    ├─conftest.py
+    ├─pytest.ini
+    ├─requirements.txt
+    ├─runner.py
+```
+
