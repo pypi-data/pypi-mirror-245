@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+bodystuff/__init__.py
+bodystuff/logger.py
+bodystuff.egg-info/PKG-INFO
+bodystuff.egg-info/SOURCES.txt
+bodystuff.egg-info/dependency_links.txt
+bodystuff.egg-info/top_level.txt
