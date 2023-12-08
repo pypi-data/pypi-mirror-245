@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+uhttp.py
+uHTTP.egg-info/PKG-INFO
+uHTTP.egg-info/SOURCES.txt
+uHTTP.egg-info/dependency_links.txt
+uHTTP.egg-info/top_level.txt

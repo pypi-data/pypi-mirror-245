@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: uHTTP
+Version: 1.0.0
+Summary: ASGI micro framework
+Home-page: https://github.com/0x67757300/uHTTP
+Author: gus
+Author-email: 0x67757300@gmail.com
+License: MIT
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# µHTTP 
+
+Pythonic web development.
+
+
+### Inspirations
+
+- [Flask](https://github.com/pallets/flask/): Hacky Solutions™
+- [FastAPI](https://github.com/tiangolo/fastapi): `Union[Any, None]`
+- [Sanic](https://github.com/sanic-org/sanic): A walking contradiction
+- [Bottle](https://github.com/bottlepy/bottle): One file, 3500+ LOC
+- [Django](https://github.com/django/django)
+
+### TODO
+
+- [x] `asyncfy`
+- [x] `MultiDict`
+- [ ] `uhttp-jinja`
+- [ ] Tests
+- [ ] Documentation
