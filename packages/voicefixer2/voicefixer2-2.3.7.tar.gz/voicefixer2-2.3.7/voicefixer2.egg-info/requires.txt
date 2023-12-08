@@ -1,0 +1,12 @@
+matplotlib
+cached_path
+torch>=1.7.0
+progressbar
+torchlibrosa
+GitPython
+streamlit
+pyyaml
+pydub
+scipy
+soundfile
+librosa
