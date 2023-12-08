@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pycities/__init__.py
+pycities/config.py
+pycities/database.py
+pycities/datadownload.py
+pycities/datadump.py
+pycities/model.py
+pycities/utils.py
+pycities.egg-info/PKG-INFO
+pycities.egg-info/SOURCES.txt
+pycities.egg-info/dependency_links.txt
+pycities.egg-info/top_level.txt
+pycities/data/data.db
