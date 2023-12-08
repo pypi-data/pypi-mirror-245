@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: llm-gateway
+Version: 0.0.3
+Summary: This is LLM Gateway package
+Provides-Extra: azure
