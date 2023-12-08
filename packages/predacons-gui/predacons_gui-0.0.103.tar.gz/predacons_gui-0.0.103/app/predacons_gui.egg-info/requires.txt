@@ -1,0 +1,6 @@
+predacons>=0.0.108
+gradio>=4.2.0
+
+[dev]
+pytest>=7.0
+twine>=4.0.2
