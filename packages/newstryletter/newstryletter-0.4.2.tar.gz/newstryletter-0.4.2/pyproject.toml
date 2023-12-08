@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "newstryletter"
+version = "0.4.2"
+description = "simple package to keep user newsletter"
+authors = ["revego <revego@code4you.cloud>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9 || ^3.10 || ^3.11"
+django = "3.2.23"
+wheel = "*"
+requests = "2.31.0"                # Esempio di dipendenza
+django-crispy-forms = "2.0"        # Un'altra dipendenza
+crispy-bootstrap4 = "2022.1"   	   # Bootstrap4 template pack for django-crispy-forms
+
+#[tool.poetry.dev-dependencies]
+#pytest = "^6.0"
+bumpversion = "^0.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
