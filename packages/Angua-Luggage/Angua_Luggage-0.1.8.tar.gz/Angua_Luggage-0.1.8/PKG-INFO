@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Angua_Luggage
+Version: 0.1.8
+Author: Sam McGreig and Morgan Wodring
+Author-email: morgan.wodring@gmail.com
+License-File: LICENSE.txt
+Requires-Dist: biopython
+Requires-Dist: rpy2
+Requires-Dist: pysam
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: yaml
+
+Angua, a Bioinformatics pipeline using Blast, and its extension, Luggage.
