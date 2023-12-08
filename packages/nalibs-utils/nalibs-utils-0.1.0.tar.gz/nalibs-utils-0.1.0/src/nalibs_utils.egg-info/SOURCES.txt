@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/nalibsUtils/__init__.py
+src/nalibsUtils/addfunc.py
+src/nalibsUtils/utils_csv.py
+src/nalibsUtils/utils_files.py
+src/nalibsUtils/utils_json.py
+src/nalibsUtils/utils_yaml.py
+src/nalibs_utils.egg-info/PKG-INFO
+src/nalibs_utils.egg-info/SOURCES.txt
+src/nalibs_utils.egg-info/dependency_links.txt
+src/nalibs_utils.egg-info/entry_points.txt
+src/nalibs_utils.egg-info/top_level.txt
