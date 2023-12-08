@@ -1,0 +1,13 @@
+distributed:
+  version: 2
+  
+  dashboard:
+    link: "/user/{JUPYTERHUB_USER}/proxy/{port}/status"
+
+  admin:
+    system-monitor:
+      gil:
+        enabled: true
+        interval: 10us
+    tick:
+      limit: 5s # time allowed before triggering a warning
