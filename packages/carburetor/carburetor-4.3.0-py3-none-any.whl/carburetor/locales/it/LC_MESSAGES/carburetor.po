@@ -1,0 +1,368 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# albanobattistella <albano_battistella@hotmail.com>, 2023.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2023.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-05 18:54+0330\n"
+"PO-Revision-Date: 2023-12-06 01:09+0000\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/carburetor/"
+"translations/it/>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.3-dev\n"
+
+#: src/carburetor/actions.py:79
+msgid "translator-credits"
+msgstr "albanobattistella"
+
+#: src/carburetor/actions.py:109
+msgid "Disconnecting…"
+msgstr "Disconnessione in corso…"
+
+#: src/carburetor/actions.py:113
+msgid "Connecting…"
+msgstr "Connessione in corso…"
+
+#: src/carburetor/actions.py:125
+msgid "You have a new identity!"
+msgstr "Hai una nuova identità!"
+
+#: src/carburetor/actions.py:127
+msgid "Tractor is not running!"
+msgstr "Tractor non si avvia!"
+
+#: src/carburetor/actions.py:144
+msgid "Proxy has been unset"
+msgstr ""
+
+#: src/carburetor/actions.py:147
+msgid "Proxy has been set"
+msgstr ""
+
+#: src/carburetor/actions.py:211 data/gtk/main.ui:91
+msgid "Stopped"
+msgstr "Fermato"
+
+#: src/carburetor/actions.py:214 data/gtk/main.ui:52
+msgid "_Connect"
+msgstr "_Connetti"
+
+#: src/carburetor/actions.py:226
+msgid "Tractor is stopped"
+msgstr "Tractor si è fermato"
+
+#: src/carburetor/actions.py:235
+msgid "Running"
+msgstr "In esecuzione"
+
+#: src/carburetor/actions.py:242
+msgid "_Disconnect"
+msgstr "_Disconnetti"
+
+#: src/carburetor/actions.py:252
+msgid "Tractor is running"
+msgstr "Tractor è in funzione"
+
+#: src/carburetor/config.py:35 data/gtk/main.ui:37
+msgid "Carburetor"
+msgstr "Carburetor"
+
+#: src/carburetor/handler.py:112
+msgid "Austria"
+msgstr "Austria"
+
+#: src/carburetor/handler.py:113
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#: src/carburetor/handler.py:114
+msgid "Canada"
+msgstr "Canada"
+
+#: src/carburetor/handler.py:115
+msgid "Switzerland"
+msgstr "Svizzera"
+
+#: src/carburetor/handler.py:116
+msgid "Czech"
+msgstr "Ceco"
+
+#: src/carburetor/handler.py:117
+msgid "Germany"
+msgstr "Tedesco"
+
+#: src/carburetor/handler.py:118
+msgid "Spain"
+msgstr "Spagna"
+
+#: src/carburetor/handler.py:119
+msgid "Finland"
+msgstr "Finlandia"
+
+#: src/carburetor/handler.py:120
+msgid "France"
+msgstr "Francia"
+
+#: src/carburetor/handler.py:121
+msgid "Ireland"
+msgstr "Irlanda"
+
+#: src/carburetor/handler.py:122
+msgid "Moldova"
+msgstr "Moldavia"
+
+#: src/carburetor/handler.py:123
+msgid "Netherlands"
+msgstr "Paesi Bassi"
+
+#: src/carburetor/handler.py:124
+msgid "Norway"
+msgstr "Norvegia"
+
+#: src/carburetor/handler.py:125
+msgid "Poland"
+msgstr "Polonia"
+
+#: src/carburetor/handler.py:126
+msgid "Romania"
+msgstr "Romania"
+
+#: src/carburetor/handler.py:127
+msgid "Seychelles"
+msgstr "Seychelles"
+
+#: src/carburetor/handler.py:128
+msgid "Sweden"
+msgstr "Svezia"
+
+#: src/carburetor/handler.py:129
+msgid "Singapore"
+msgstr "Singapore"
+
+#: src/carburetor/handler.py:130
+msgid "Russia"
+msgstr "Russia"
+
+#: src/carburetor/handler.py:131
+msgid "Ukraine"
+msgstr "Ucraina"
+
+#: src/carburetor/handler.py:132
+msgid "United Kingdom"
+msgstr "Regno Unito"
+
+#: src/carburetor/handler.py:133
+msgid "United States"
+msgstr "Stati Uniti"
+
+#: src/carburetor/handler.py:148
+msgid "Auto (Best)"
+msgstr "Automatico (migliore)"
+
+#: src/carburetor/handler.py:238 data/gtk/preferences.ui:120
+msgid "None"
+msgstr "Nessuno"
+
+#: src/carburetor/handler.py:239
+msgid "Vanilla"
+msgstr "Vanilla"
+
+#: src/carburetor/handler.py:240
+msgid "Obfuscated"
+msgstr "Offuscato"
+
+#: src/carburetor/handler.py:274
+msgid "_OK"
+msgstr "_OK"
+
+#: src/carburetor/handler.py:277
+msgid "Can not save the bridges"
+msgstr "Impossibile salvare i bridges"
+
+#: src/carburetor/handler.py:278
+msgid "Please check the syntax of bridges"
+msgstr "Si prega di controllare la sintassi dei bridge"
+
+#: src/carburetor/tasks.py:143
+msgid "Tractor is connected"
+msgstr "Tractor è connesso"
+
+#: src/carburetor/tasks.py:145
+msgid "Tractor couldn't connect"
+msgstr "Tractor non è riuscito a connettersi"
+
+#: data/gtk/help-overlay.ui:26 data/gtk/preferences.ui:28
+msgid "General"
+msgstr "Generale"
+
+#: data/gtk/help-overlay.ui:31
+#, fuzzy
+#| msgctxt "App Menu Item"
+#| msgid "_Preferences"
+msgctxt "shortcuts window item"
+msgid "Preferences"
+msgstr "Preferenze"
+
+#: data/gtk/help-overlay.ui:38
+#, fuzzy
+msgctxt "shortcuts window item"
+msgid "Shortcuts"
+msgstr "Scorciatoie"
+
+#: data/gtk/help-overlay.ui:45
+#, fuzzy
+#| msgctxt "App Menu Item"
+#| msgid "_Quit"
+msgctxt "shortcuts window item"
+msgid "Quit"
+msgstr "Non aiutarli."
+
+#: data/gtk/help-overlay.ui:52
+msgctxt "Shortcuts window group"
+msgid "Functionality"
+msgstr ""
+
+#: data/gtk/help-overlay.ui:57
+#, fuzzy
+#| msgid "_Disconnect"
+msgctxt "shortcuts window item"
+msgid "Connect / Disconnect"
+msgstr "_Disconnetti"
+
+#: data/gtk/help-overlay.ui:64
+#, fuzzy
+#| msgctxt "Action Menu Item"
+#| msgid "_New ID"
+msgctxt "shortcuts window item"
+msgid "New ID"
+msgstr "_Nuovo ID"
+
+#: data/gtk/main.ui:46
+msgctxt "tooltip"
+msgid "Main Menu"
+msgstr "Menù principale"
+
+#: data/gtk/main.ui:98
+msgid "_Cancel"
+msgstr "_Annulla"
+
+#: data/gtk/main.ui:158
+msgctxt "Action Menu Item"
+msgid "_New ID"
+msgstr "_Nuovo ID"
+
+#: data/gtk/main.ui:162
+msgctxt "Action Menu Item"
+msgid "_Check connection"
+msgstr "_Controllare la connessione"
+
+#: data/gtk/main.ui:166
+msgctxt "Action Menu Item"
+msgid "_Toggle proxy on system"
+msgstr "_Attiva/disattiva proxy sul sistema"
+
+#: data/gtk/main.ui:172
+msgctxt "App Menu Item"
+msgid "_Preferences"
+msgstr "_Preferenze"
+
+#: data/gtk/main.ui:176
+#, fuzzy
+msgid "_Keyboard Shortcuts"
+msgstr "_Scorciatoie tastiera"
+
+#: data/gtk/main.ui:180
+msgctxt "App Menu Item"
+msgid "_About Carburetor"
+msgstr "_Informazioni su Carburator"
+
+#: data/gtk/preferences.ui:31
+msgid "Exit Node"
+msgstr "Nodi di uscita"
+
+#: data/gtk/preferences.ui:35
+msgid "The country you want to connect from"
+msgstr "Il Paese da cui vuoi connetterti"
+
+#: data/gtk/preferences.ui:36
+msgid "Exit Country"
+msgstr "Esci dal Paese"
+
+#: data/gtk/preferences.ui:45
+msgid "Accept Connections"
+msgstr "Accetta connessioni"
+
+#: data/gtk/preferences.ui:48
+msgid "Allow external devices to use this network"
+msgstr "Consenti ai dispositivi esterni di utilizzare questa rete"
+
+#: data/gtk/preferences.ui:59
+msgid "Ports"
+msgstr "Porte"
+
+#: data/gtk/preferences.ui:62
+msgid "Socks Port"
+msgstr "Porta Sock"
+
+#: data/gtk/preferences.ui:66
+msgid "Local port on which Tractor would be listen"
+msgstr "Porta locale su cui Tractor sarà in ascolto"
+
+#: data/gtk/preferences.ui:74
+msgid "DNS Port"
+msgstr "Porta DNS"
+
+#: data/gtk/preferences.ui:78
+msgid "Local port on which you would have an anonymous name server"
+msgstr "Porta locale su cui avresti un server dal nome anonimo"
+
+#: data/gtk/preferences.ui:86
+msgid "HTTP Port"
+msgstr "Porta HTTP"
+
+#: data/gtk/preferences.ui:90
+msgid "Local port on which a HTTP tunnel would be listen"
+msgstr "Porta locale su cui sarebbe in ascolto un tunnel HTTP"
+
+#: data/gtk/preferences.ui:101 data/gtk/preferences.ui:132
+msgid "Bridges"
+msgstr "Bridge"
+
+#. Type of the bridge to use
+#: data/gtk/preferences.ui:104
+msgid "Type"
+msgstr "Tipo"
+
+#: data/gtk/preferences.ui:108
+msgid "Type of bridge"
+msgstr "Tipo di bridge"
+
+#: data/gtk/preferences.ui:115
+msgid "Client Transport Plugin"
+msgstr "Plug-in di trasporto client"
+
+#: data/gtk/preferences.ui:154
+msgid "_Save"
+msgstr "_Salva"
+
+#: data/gtk/preferences.ui:155
+msgid "Save Bridges as a file in your local configs"
+msgstr "Salva Bridge come file nelle tue configurazioni locali"
+
+#~ msgid "GTK frontend for Tractor"
+#~ msgstr "GTK frontend per Tractor"
+
+#~ msgid "Copyright © 2019-2023, Tractor Team"
+#~ msgstr "Copyright © 2019-2023, Tractor Team"
+
+#~ msgid "For Tractor"
+#~ msgstr "Per Tractor"
