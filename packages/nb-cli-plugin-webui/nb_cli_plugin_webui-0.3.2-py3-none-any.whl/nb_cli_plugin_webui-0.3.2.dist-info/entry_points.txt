@@ -1,0 +1,3 @@
+[nb]
+webui=nb_cli_plugin_webui.plugin:install
+
