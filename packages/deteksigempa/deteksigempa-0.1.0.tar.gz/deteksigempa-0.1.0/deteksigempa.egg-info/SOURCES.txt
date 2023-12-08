@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+deteksigempa/__init__.py
+deteksigempa.egg-info/PKG-INFO
+deteksigempa.egg-info/SOURCES.txt
+deteksigempa.egg-info/dependency_links.txt
+deteksigempa.egg-info/top_level.txt
