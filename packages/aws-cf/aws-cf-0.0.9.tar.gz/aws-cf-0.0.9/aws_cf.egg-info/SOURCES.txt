@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+aws-cf/__main__.py
+aws-cf/deploy.py
+aws-cf/diff.py
+aws-cf/package.py
+aws_cf.egg-info/PKG-INFO
+aws_cf.egg-info/SOURCES.txt
+aws_cf.egg-info/dependency_links.txt
+aws_cf.egg-info/entry_points.txt
+aws_cf.egg-info/requires.txt
+aws_cf.egg-info/top_level.txt
