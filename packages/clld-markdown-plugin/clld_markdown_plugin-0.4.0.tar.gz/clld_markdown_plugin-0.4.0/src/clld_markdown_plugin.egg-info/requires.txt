@@ -1,0 +1,16 @@
+clldutils
+pycldf
+clld
+markdown
+
+[dev]
+flake8
+twine
+wheel
+build
+
+[test]
+pytest
+pytest-mock
+pytest-cov
+tox
