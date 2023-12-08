@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vicky-mod-editor
+Version: 0.1.2
+Summary: Vicky Mod Editor
+Home-page: https://github.com/supamap/vicky-mod-editor
+Author: supamap
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: ClauseWizard
+Requires-Dist: pyparsing
+
+## VICKY MOD EDITOR
+
+This is an editor for the files for making a vicky mod
+
