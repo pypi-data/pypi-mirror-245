@@ -1,0 +1,33 @@
+stages:
+  - build
+  - test
+  - deploy
+
+include:
+  - project: 'PSCR/MCV/mcvqoe-measurements'
+    file: '/templates/upload-pypi.yml'
+
+variables:
+  IMAGE_MCVQOE_BASE: docker.nist.gov:4567/pscr/mcv/mcv-qoe-library/mcvqoe-base:develop
+
+default:
+  image: $IMAGE_MCVQOE_BASE
+  tags:
+    - docker
+
+build:
+  stage: build
+  before_script:
+    - python -V
+  script:
+    - python setup.py bdist_wheel
+  artifacts:
+    paths:
+      - dist/*
+
+test-measure_class:
+  stage: test
+  before_script:
+    - pip install --no-index --find-links=./dist mcvqoe-mouth2ear
+  script:
+    - python tests/test_measure_class.py
