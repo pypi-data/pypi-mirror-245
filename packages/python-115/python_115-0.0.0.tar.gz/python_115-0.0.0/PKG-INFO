@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: python-115
+Version: 0.0.0
+Summary: Python wrapper for 115 webdisk.
+Home-page: https://github.com/ChenyangGao/web-mount-packs/tree/main/python-115-client
+License: MIT
+Keywords: nas,115
+Author: ChenyangGao
+Author-email: wosiwujm@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: ecdsa
+Requires-Dist: lz4
+Requires-Dist: oss2
+Requires-Dist: pycryptodome
+Requires-Dist: qrcode
+Requires-Dist: requests
+Project-URL: Repository, https://github.com/ChenyangGao/web-mount-packs/tree/main/python-115-client
+Description-Content-Type: text/markdown
+
+
