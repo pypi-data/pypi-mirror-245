@@ -1,0 +1,8 @@
+cmake_aux
+conda
+include
+notes
+src
+tests
+warpkit
+wheelhouse
