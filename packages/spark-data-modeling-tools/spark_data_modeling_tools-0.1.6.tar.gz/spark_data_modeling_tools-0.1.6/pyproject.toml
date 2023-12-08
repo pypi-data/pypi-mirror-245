@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "spark-data-modeling-tools"
+version = "0.2.0"
+description = ""
+authors = ["jonathan <jony327@gmail.com>"]
+readme = "README.md"
+packages = [{include = "spark_data_modeling_tools"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+spark-dataframe-tools = "^0.5.9"
+openpyxl = "^3.1.2"
+
+
+
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.0.0"
+twine = "^4.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
