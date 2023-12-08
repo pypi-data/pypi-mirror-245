@@ -1,0 +1,12 @@
+
+[dev]
+pytest-cov
+flake8
+black
+mypy
+pylint
+pip-tools
+pipdeptree
+pre-commit
+twine
+scalene
