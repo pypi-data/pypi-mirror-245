@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: perconeb
+Version: 0.1
+Summary: A tool for finding percolation pathways in crystals
+Home-page: https://github.com/dembart/perconeb
+Author: Artem Dembitskiy
+Author-email: art.dembitskiy@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ase
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: spglib
+Requires-Dist: scipy
+
+#### About
+
+Perconeb is the library used for fast identifying of the optimal jumps mobile species required for the percolation in a crystal structure. 
+
+The identified jumps can be used for nudged elastic band (NEB) clalculation of the mobile species activation barriers.
+
+Functionality includes:
+- 1-3D percolation radius calculations (percolation threshold)
+
+- cutoff search for the shortest ionic jumps between equilibrium positions
+
+- identifying of unique jumps required for 1-3D percolation
+
+- initial trajectory preparation for NEB calculations
+
+
+#### Installation
+!pip install perconeb
+
+#### How to use
+
+
+```python
+from core import Perconeb
+from ase.io import read
+
+file = '/Users/artemdembitskiy/Desktop/perconeb/LiCoO2.cif'
+atoms = read(file)  # can be .cif, POSCAR, or any that is readable by ase
+specie = 3          # mobile specie, atomic number
+tr = 0.75           # minimum allowed distance between linear segment connecting i,j-th positions of mobile specie
+                    # and the framework, angstrom
+upper_bound = 10.0  # maximum allowed distance for intersite hops of mobile species, angstrom
+
+calc = Perconeb(atoms, specie, upper_bound = upper_bound)
+dim, cutoff = calc.percolation_dimensionality(tr = tr)
+
+dimensions = {2: 1, 4: 2, 8: 3} # we use 2x2x2 supercell to evaluate the percolation dimensionality
+                                # if there is a connection between some point in the unitcell 
+                                # and its closest replica within supercell then we have the percolation
+                                # number of connected unitcell and dimensionality are related as follows
+                                # 2 -> 1D, 4 -> 2D, 8 -> 3D
+print(f'Maximum percolation dimnesionality is {dimensions[dim]}')
+print(f'That requires mobile specie hops up to {round(cutoff, 3)} Angstorm')
+```
+
+    Maximum percolation dimnesionality is 3
+    That requires mobile specie hops up to 4.922 Angstorm
+
+
+#### Inequivalent mobile specie hops (edges)
+
+
+```python
+edges, edge_ids, inverse  = calc.unique_edges(tr = tr, dim = dim, cutoff = cutoff)
+edges                         # each edge is represented by a 5D vector [i, j, offset_x, offset_y, offset_z]
+for edge in edges:
+    source, target = edge[:2] # indices of source and target mobile atoms in the mobile sublattice
+    offset = edge[2:]
+    p_source = atoms[atoms.numbers == specie].positions[source]
+    p_target = atoms[atoms.numbers == specie].positions[target]
+    distance_vector = p_source - (p_target + np.dot(atoms.cell, offset))
+    distance = np.linalg.norm(distance_vector)
+    print(f'Source {source}, target {target}, offset {offset}, hop distance {round(distance, 4)}')
+```
+
+    Source 0, target 1, offset [0 0 0], hop distance 4.9124
+    Source 0, target 0, offset [ 1 -1  0], hop distance 4.7593
+    Source 0, target 0, offset [0 1 0], hop distance 2.4346
+
+
+#### Initial gues for NEB
+
+
+```python
+sep_dist = 8.0                                  # minimum size of the supercell, Angstrom
+idpp = False                                    # whether to use IDPP or linear interpolation scheme
+step = 1.0                                      # interpolation step, Angstroms
+out = calc.neb_guess(edges, edge_ids,
+                     min_sep_dist = sep_dist,
+                     idpp = idpp,
+                     step = step
+                    )
+calc.write_traj(out, f'{file}_traj.cif')        # the whole trajectory can be visualized in jmol
+```
+
+#### Save percolating pathway within supercell
+
+
+```python
+from ase.io import write
+
+file = '/Users/artemdembitskiy/Desktop/perconeb/LiCoO2.cif'
+atoms = read(file)
+specie = 3
+
+calc = Perconeb(atoms, specie, upper_bound = 10.0)
+dim, cutoff = calc.percolation_dimensionality(tr = 0.75)
+mask = calc._filter_edges(tr = 0.75, cutoff = cutoff)
+sublattice = calc.mobile_supercell
+base = sublattice.copy()
+for pair in calc.u[mask][:, :2]:
+    p1, p2 = sublattice.positions[pair]
+    traj = np.linspace(p1, p2, 10)
+    for p in traj[1:-1]:
+        base.append('B')
+        base.positions[-1] = p
+write('percopath.cif', base)
+```
+
+
