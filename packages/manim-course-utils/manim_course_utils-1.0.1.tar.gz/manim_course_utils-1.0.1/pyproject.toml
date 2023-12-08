@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "manim-course-utils"
+version = "1.0.1"
+description = "Para el curso de ManimCE de MathLike"
+homepage = "https://github.com/MathLike/manim-course-utils"
+repository = "https://github.com/MathLike/manim-course-utils"
+authors = ["MathLike <benjamin.ubilla@uc.cl>"]
+readme = "README.md"
+packages = [{include = "manim_course_utils"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.13"
+manim = ">=0.18.0"
+setuptools = ">=68.2.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
