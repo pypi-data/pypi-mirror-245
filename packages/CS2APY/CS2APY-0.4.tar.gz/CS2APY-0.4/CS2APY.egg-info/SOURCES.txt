@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+CS2APY/CS2APY.py
+CS2APY/__init__.py
+CS2APY/scoreboard_pb2.py
+CS2APY.egg-info/PKG-INFO
+CS2APY.egg-info/SOURCES.txt
+CS2APY.egg-info/dependency_links.txt
+CS2APY.egg-info/top_level.txt
