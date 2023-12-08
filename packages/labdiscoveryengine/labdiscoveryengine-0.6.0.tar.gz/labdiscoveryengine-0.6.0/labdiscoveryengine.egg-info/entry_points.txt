@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        lde=labdiscoveryengine.cli:lde
+      
