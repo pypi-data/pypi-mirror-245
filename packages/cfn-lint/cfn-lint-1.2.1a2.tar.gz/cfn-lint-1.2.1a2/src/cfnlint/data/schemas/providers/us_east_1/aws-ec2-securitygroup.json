@@ -1,0 +1,316 @@
+{
+ "additionalProperties": false,
+ "createOnlyProperties": [
+  "/properties/GroupDescription",
+  "/properties/GroupName",
+  "/properties/VpcId"
+ ],
+ "definitions": {
+  "Egress": {
+   "additionalProperties": false,
+   "oneOf": [
+    {
+     "properties": {
+      "CidrIpv6": false,
+      "DestinationPrefixListId": false,
+      "DestinationSecurityGroupId": false
+     },
+     "required": [
+      "CidrIp"
+     ],
+     "type": "object"
+    },
+    {
+     "properties": {
+      "CidrIp": false,
+      "DestinationPrefixListId": false,
+      "DestinationSecurityGroupId": false
+     },
+     "required": [
+      "CidrIpv6"
+     ],
+     "type": "object"
+    },
+    {
+     "properties": {
+      "CidrIp": false,
+      "CidrIpv6": false,
+      "DestinationPrefixListId": false
+     },
+     "required": [
+      "DestinationSecurityGroupId"
+     ],
+     "type": "object"
+    },
+    {
+     "properties": {
+      "CidrIp": false,
+      "CidrIpv6": false,
+      "DestinationSecurityGroupId": false
+     },
+     "required": [
+      "DestinationPrefixListId"
+     ],
+     "type": "object"
+    },
+    {
+     "maxProperties": 1,
+     "minProperties": 1,
+     "propertyNames": {
+      "enum": [
+       "Fn::Base64",
+       "Fn::GetAtt",
+       "Fn::GetAZs",
+       "Fn::ImportValue",
+       "Fn::Join",
+       "Fn::Split",
+       "Fn::FindInMap",
+       "Fn::Select",
+       "Ref",
+       "Fn::If",
+       "Fn::Contains",
+       "Fn::Sub",
+       "Fn::Cidr",
+       "Fn::Length",
+       "Fn::ToJsonString",
+       "Fn::ForEach::[a-zA-Z0-9]+"
+      ]
+     },
+     "type": "object"
+    }
+   ],
+   "oneOfDescription": "Specify only one ['CidrIp', 'CidrIpv6', 'DestinationSecurityGroupId', 'DestinationPrefixListId']",
+   "properties": {
+    "CidrIp": {
+     "type": "string"
+    },
+    "CidrIpv6": {
+     "type": "string"
+    },
+    "Description": {
+     "type": "string"
+    },
+    "DestinationPrefixListId": {
+     "type": "string"
+    },
+    "DestinationSecurityGroupId": {
+     "type": "string"
+    },
+    "FromPort": {
+     "type": "integer"
+    },
+    "IpProtocol": {
+     "type": "string"
+    },
+    "ToPort": {
+     "type": "integer"
+    }
+   },
+   "required": [
+    "IpProtocol"
+   ],
+   "type": "object"
+  },
+  "Ingress": {
+   "additionalProperties": false,
+   "oneOf": [
+    {
+     "properties": {
+      "CidrIpv6": false,
+      "SourcePrefixListId": false,
+      "SourceSecurityGroupId": false,
+      "SourceSecurityGroupName": false
+     },
+     "required": [
+      "CidrIp"
+     ],
+     "type": "object"
+    },
+    {
+     "properties": {
+      "CidrIp": false,
+      "SourcePrefixListId": false,
+      "SourceSecurityGroupId": false,
+      "SourceSecurityGroupName": false
+     },
+     "required": [
+      "CidrIpv6"
+     ],
+     "type": "object"
+    },
+    {
+     "properties": {
+      "CidrIp": false,
+      "CidrIpv6": false,
+      "SourceSecurityGroupId": false,
+      "SourceSecurityGroupName": false
+     },
+     "required": [
+      "SourcePrefixListId"
+     ],
+     "type": "object"
+    },
+    {
+     "properties": {
+      "CidrIp": false,
+      "CidrIpv6": false,
+      "SourcePrefixListId": false,
+      "SourceSecurityGroupName": false
+     },
+     "required": [
+      "SourceSecurityGroupId"
+     ],
+     "type": "object"
+    },
+    {
+     "properties": {
+      "CidrIp": false,
+      "CidrIpv6": false,
+      "SourcePrefixListId": false,
+      "SourceSecurityGroupId": false
+     },
+     "required": [
+      "SourceSecurityGroupName"
+     ],
+     "type": "object"
+    },
+    {
+     "maxProperties": 1,
+     "minProperties": 1,
+     "propertyNames": {
+      "enum": [
+       "Fn::Base64",
+       "Fn::GetAtt",
+       "Fn::GetAZs",
+       "Fn::ImportValue",
+       "Fn::Join",
+       "Fn::Split",
+       "Fn::FindInMap",
+       "Fn::Select",
+       "Ref",
+       "Fn::If",
+       "Fn::Contains",
+       "Fn::Sub",
+       "Fn::Cidr",
+       "Fn::Length",
+       "Fn::ToJsonString",
+       "Fn::ForEach::[a-zA-Z0-9]+"
+      ]
+     },
+     "type": "object"
+    }
+   ],
+   "oneOfDescription": "Specify only one ['CidrIp', 'CidrIpv6', 'SourcePrefixListId', 'SourceSecurityGroupId', 'SourceSecurityGroupName']",
+   "properties": {
+    "CidrIp": {
+     "type": "string"
+    },
+    "CidrIpv6": {
+     "type": "string"
+    },
+    "Description": {
+     "type": "string"
+    },
+    "FromPort": {
+     "type": "integer"
+    },
+    "IpProtocol": {
+     "type": "string"
+    },
+    "SourcePrefixListId": {
+     "type": "string"
+    },
+    "SourceSecurityGroupId": {
+     "type": "string"
+    },
+    "SourceSecurityGroupName": {
+     "type": "string"
+    },
+    "SourceSecurityGroupOwnerId": {
+     "type": "string"
+    },
+    "ToPort": {
+     "type": "integer"
+    }
+   },
+   "required": [
+    "IpProtocol"
+   ],
+   "type": "object"
+  },
+  "Tag": {
+   "additionalProperties": false,
+   "properties": {
+    "Key": {
+     "type": "string"
+    },
+    "Value": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "Value",
+    "Key"
+   ],
+   "type": "object"
+  }
+ },
+ "dependencies": {
+  "SecurityGroupEgress": [
+   "VpcId"
+  ]
+ },
+ "description": "Resource Type definition for AWS::EC2::SecurityGroup",
+ "primaryIdentifier": [
+  "/properties/Id"
+ ],
+ "properties": {
+  "GroupDescription": {
+   "maxLength": 255,
+   "minLength": 0,
+   "pattern": "^([a-z,A-Z,0-9,. _\\-:/()#,@[\\]+=&;\\{\\}!$*])*$",
+   "type": "string"
+  },
+  "GroupId": {
+   "type": "string"
+  },
+  "GroupName": {
+   "type": "string"
+  },
+  "Id": {
+   "type": "string"
+  },
+  "SecurityGroupEgress": {
+   "items": {
+    "$ref": "#/definitions/Egress"
+   },
+   "type": "array",
+   "uniqueItems": false
+  },
+  "SecurityGroupIngress": {
+   "items": {
+    "$ref": "#/definitions/Ingress"
+   },
+   "type": "array",
+   "uniqueItems": false
+  },
+  "Tags": {
+   "items": {
+    "$ref": "#/definitions/Tag"
+   },
+   "type": "array",
+   "uniqueItems": false
+  },
+  "VpcId": {
+   "type": "string"
+  }
+ },
+ "readOnlyProperties": [
+  "/properties/Id",
+  "/properties/GroupId"
+ ],
+ "required": [
+  "GroupDescription"
+ ],
+ "typeName": "AWS::EC2::SecurityGroup"
+}
