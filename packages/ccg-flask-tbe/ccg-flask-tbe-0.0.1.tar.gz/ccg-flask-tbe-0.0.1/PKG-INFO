@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: ccg-flask-tbe
+Version: 0.0.1
+Summary: Centreon clapi command generator
+Author-email: Teddy BEENEN <teddy.beenen@open-groupe.com>
+Project-URL: Homepage, https://github.com/TedBee/ccg
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Centreon Clapi Command Generator
+Site web développé en Python avec le framework Flask. Le design est principalement du bootstrap. Quelques fonctions en javascript ont été ajoutées.  
+Permet d'afficher les commandes Clapi[^1], les copier dans le presse-papier.  
+Pour les commandes en masse, permet de les enregistrer en plus dans un script python ou un csv.
+
+Documentation Centreon - [CLAPI](https://docs.centreon.com/fr/docs/23.04/api/clapi/)
+
+> [!CAUTION]
+> Seuls les administrateurs peuvent utiliser CLAPI.
+
+[^1]: Centreon CLAPI a pour objectif d’offrir (presque) toutes les fonctionnalités disponibles sur l’interface utilisateur en termes de configuration.
+
+## Les routes
+Le fichier [flask_app.py](flask_app.py) contient les définitions des différentes routes et est le fichier appelé pour lancer l'application.
+
+### '/'
+Génère et affiche toutes les commandes.  
+**fonction** : `index()`
+
+### '/clapi/domaine/<domaine>'
+Génère et Liste toutes les commandes pour un domaine.  
+**fonction** : `clapi_get_domaine(domaine)`
+
+### '/clapi/objet/<objet>'
+Lister toutes les commandes pour un objet.  
+**fonction** : `clapi_get_objet(objet)`
+
+### '/scriptaddhosts'
+Générer les commandes pour ajouter des hosts.  
+**fonction** : `scriptaddhosts()`
+
+### '/scriptaddservices'
+Générer les commandes pour ajouter des services.  
+**fonction** : `scriptaddservices()`
+
+## Les fichiers "configurations"
+### centreon.yaml
+#### Information
+Les arguments et paramètres centreon sont renseignés dans [centreon.yaml](/centreon.yaml)
+> [!NOTE]
+> Renseigne ton user et ton password d'admin centreon dans centreon.yaml
+
+#### Information complémentaire
+L'argument -s est défini dans le fichier mais n'a pas été implémenté dans le code.
+
+### ccg-conf.yaml
+#### Information
+Objets et actions sont renseignés dans [ccg-conf.yaml](/ccg-conf.yaml)
+> [!IMPORTANT]
+> Les commandes sont nombreuses, seuls quelques objets / actions sont enregistrées dans ccg-conf.yaml
+
+#### Information complémentaire
+La syntaxe est celle du YAML.  
+L'indentation doit être respectée et rigoureuse.  
+Une action notée `: null` signifie que l'action n'a pas d'argument, ni de paramètre.  
+Afin garder le formatage du texte multiligne pour `information:` utiliser la notation **|**  
+```
+domaine: 
+  - ACL:
+      # ACL
+      - name: ACL
+        command: ACL
+        actions:
+          - reload: null
+          - lastreload:
+              - args: -v
+                parametres: "d-m-Y H:i:s"
+                required: false
+                information: |
+                  d = Day ; m = Month ; Y = Year
+                  H = Hour ; i = Minute ; s = Second
+```
+> [!NOTE]
+> La notion de domaine n'existe pas dans la documentation Centreon. Elle a été ajouté afin de regrouper les objets par thématique
+
+## L'interface
+### Navigation
+#### MENU
+| MENU | ROUTE |
+| --- | --- |
+| `Script Add Hosts` | /scriptaddhosts |
+| `Script Add Services` | /scriptaddservices |
+
+#### DOMAINE
+| DOMAINE | ROUTE |
+| --- | --- |
+| `<domaine>` | /clapi/domaine/<domaine> |
+
+#### OBJET
+| OBJET | ROUTE |
+| --- | --- |
+| `<objet>` | /clapi/objet/<objet> |
+
+#### ACTIONS
+| OBJET | ROUTE |
+| --- | --- |
+| `<actions>` | # |
+
+#### ACCUEIL
+Simple bouton qui renvoi vers '/'
+
+### CONTENU
+Contenu de la page
