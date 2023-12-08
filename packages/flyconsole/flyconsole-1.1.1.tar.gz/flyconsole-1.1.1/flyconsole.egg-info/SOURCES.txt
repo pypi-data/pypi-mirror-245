@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+flyconsole/__init__.py
+flyconsole/console.py
+flyconsole.egg-info/PKG-INFO
+flyconsole.egg-info/SOURCES.txt
+flyconsole.egg-info/dependency_links.txt
+flyconsole.egg-info/top_level.txt
