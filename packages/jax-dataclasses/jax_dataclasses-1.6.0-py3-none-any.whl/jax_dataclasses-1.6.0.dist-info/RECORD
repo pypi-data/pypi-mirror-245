@@ -1,0 +1,12 @@
+jax_dataclasses/__init__.py,sha256=b_T8rriShTeM9UFgPUKJ1k8nte_BeLS2DNR-B4YEY7o,1509
+jax_dataclasses/_copy_and_mutate.py,sha256=MxU-R6vO00ktqvZvio5M46-9IPZFz0ON2YNjeG48YT0,4175
+jax_dataclasses/_dataclasses.py,sha256=2FWGd_xvUzxfiustnchoRAHVZ0-LMGTo40GCMa6DcFg,6224
+jax_dataclasses/_enforced_annotations.py,sha256=OxrPrgVSrWooe3tBNB4MIkDU673hwLNPEjlVpm9bXsM,6656
+jax_dataclasses/_get_type_hints.py,sha256=OCouy3j0Oubfrqy80FCdnzJs3M8cw6zuj5Ow8FqwhU8,3402
+jax_dataclasses/_jit.py,sha256=U9ufWOs0gn-89PbNcj1nuZ7qnY-XSO724VElJB_8vYw,3319
+jax_dataclasses/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jax_dataclasses-1.6.0.dist-info/LICENSE,sha256=MnBlxH5pv0ksFfdZjJDYTrijT9_9XFTaeVti2loT828,1065
+jax_dataclasses-1.6.0.dist-info/METADATA,sha256=WoCFmsh6vkuqrutHv6yMV84scA3tqP2xl42p9a1ZyWM,6722
+jax_dataclasses-1.6.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jax_dataclasses-1.6.0.dist-info/top_level.txt,sha256=CmeIP24sEeWyaIZfAr2ixJs4csOlfHEfkdlmvq8nm84,16
+jax_dataclasses-1.6.0.dist-info/RECORD,,
