@@ -1,0 +1,2 @@
+[console_scripts]
+present = present.__main__:_main
