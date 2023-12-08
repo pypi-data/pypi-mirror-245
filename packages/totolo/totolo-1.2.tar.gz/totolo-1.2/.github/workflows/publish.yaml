@@ -1,0 +1,55 @@
+name: On Release, Publish
+
+on:
+  release:
+    types: [ published, edited ]
+
+jobs:
+
+  test-and-build:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: pypi
+      url: https://pypi.org/p/totolo
+
+    permissions:
+      id-token: write
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements-dev.txt
+
+    - name: Check Package Version & Git Tag
+      run: |
+        export PV=`python -c "import totolo; print('v' + totolo.__version__)"`
+        export TV=`git describe --tag`
+        echo "__version__ = '$PV'"
+        echo "        tag = '$TV'"
+        if [ "$PV" != "$TV" ]; then
+          echo "Python package __version__ doesn't match git tag. Exiting."
+          exit 1
+        fi
+
+    - name: Run PyLint Check
+      run: pylint --fail-under=10 totolo
+
+    - name: Test with PyTest
+      run: pytest --cov-report=xml --cov-fail-under=100 --cov=totolo tests/
+
+    - name: Build Package
+      run: flit build
+
+    - name: Publish package distributions to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        password: ${{ secrets.PYPI_API_TOKEN }}
