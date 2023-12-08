@@ -1,0 +1,8 @@
+data_collection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_collection/aggregate_reports.py,sha256=50wmXDiRXwYAnYHkiUpbaQi8deRlj4qbkhGRl0kyGl4,739
+data_collection/conftest.py,sha256=V0CuckJMCq3KA0BkPeaHi08Bu1xOtV8_Mh0ewAtaWJM,1669
+reportzz_ai-0.1.8.dist-info/METADATA,sha256=Go5O9lao8GwrJDKd7Muw7V11glwPsauxGCbHd5BUEms,292
+reportzz_ai-0.1.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+reportzz_ai-0.1.8.dist-info/entry_points.txt,sha256=jhHlJeLfRk2LFTesRzzKJpEvS2ErdPvmxHMIZWP_dV0,53
+reportzz_ai-0.1.8.dist-info/top_level.txt,sha256=EF1Qtkj8z0THyOFYs7DyouQk4do7BIp55y4ZtI3xd64,16
+reportzz_ai-0.1.8.dist-info/RECORD,,
