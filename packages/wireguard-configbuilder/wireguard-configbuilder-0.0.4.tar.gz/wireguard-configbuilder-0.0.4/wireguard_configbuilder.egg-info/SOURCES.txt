@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+configbuilder/__init__.py
+configbuilder/app.py
+wireguard_configbuilder.egg-info/PKG-INFO
+wireguard_configbuilder.egg-info/SOURCES.txt
+wireguard_configbuilder.egg-info/dependency_links.txt
+wireguard_configbuilder.egg-info/entry_points.txt
+wireguard_configbuilder.egg-info/top_level.txt
