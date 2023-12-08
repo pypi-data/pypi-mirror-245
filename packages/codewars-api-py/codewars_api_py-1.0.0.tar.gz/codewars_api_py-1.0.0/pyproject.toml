@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "codewars-api-py"
+version = "1.0.0"
+description = "Effortlessly interact with Codewars API using a Python wrapper"
+license = "GPL-3.0-only"
+authors = ["Alejandro González Momblán <agelrenorenardo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.urls]
+Changelog = "https://github.com/yisuschrist/codewars-api-py/releases"
+Homepage = "https://github.com/yisuschrist/codewars-api-py"
+Issues = "https://github.com/yisuschrist/codewars-api-py/issues"
+Repository = "https://github.com/yisuschrist/codewars-api-py"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+platformdirs = "^4.1.0"
+requests = "^2.31.0"
+rich-argparse-plus = "^0.3.1.4"
+
+[tool.poetry.group.dev.dependencies]
+bandit = "^1.7.5"
+mypy = "^1.5.1"
+pylint = "^2.17.7"
+
+[tool.poetry.scripts]
+codewars-api-py = "codewars_api_py.__main__:main"
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint]
+disable = [
+   "W0622",  # Redefining built-in 'format' (redefined-builtin)
+   "C0103",  # Constant name doesn't conform to UPPER_CASE naming style (invalid-name)
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
