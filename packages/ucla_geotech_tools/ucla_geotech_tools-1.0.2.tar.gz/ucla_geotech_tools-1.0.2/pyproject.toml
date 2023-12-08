@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ucla_geotech_tools"
+version = "1.0.2"
+description = "A collection of software tools developed by the UCLA geotechnical group"
+authors = ["Scott J. Brandenberg"]
+license = "LICENSE.txt"
+readme = "README.md"
+
+packages = [
+    {include = "ucla_geotech_tools", from = "src"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.22"
+scipy = "^1.8"
+
+[tool.poetry.group.test.dependencies]
+obspy = "^1.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
