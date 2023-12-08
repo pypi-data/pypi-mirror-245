@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ingrida_data_kup
+Version: 0.1.0
+Summary: 
+Author: ingri
+Author-email: mokymui25@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: lxml (>=4.9.3,<5.0.0)
+Description-Content-Type: text/markdown
+
+
