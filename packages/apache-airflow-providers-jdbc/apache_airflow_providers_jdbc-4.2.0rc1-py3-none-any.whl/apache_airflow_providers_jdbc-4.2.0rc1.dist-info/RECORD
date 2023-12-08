@@ -1,0 +1,11 @@
+airflow/providers/jdbc/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/jdbc/__init__.py,sha256=RqGbk6wGW4dyOl5NLQE4LqQHwzIal4kUa5ZswQydPgY,1579
+airflow/providers/jdbc/get_provider_info.py,sha256=bH81WZCQqW96ReHlUdOVUbu-PxCsjNGMPYR43aMgTHs,4330
+airflow/providers/jdbc/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/jdbc/hooks/jdbc.py,sha256=VT-NcXihjTH35OSYeGSocCFbKvIg89h81OrT36C8Me8,7063
+airflow/providers/jdbc/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/jdbc/operators/jdbc.py,sha256=OMMsAFRF9duzh9nODGCG1IzsdbfJHTX6xDuZj3TMnf4,2432
+apache_airflow_providers_jdbc-4.2.0rc1.dist-info/entry_points.txt,sha256=uUB8JJGJdglrmEdyOxafoJSnS-wTCiqIFleqgiG4NuU,100
+apache_airflow_providers_jdbc-4.2.0rc1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_jdbc-4.2.0rc1.dist-info/METADATA,sha256=8S4yUqFWYOQvUU2vCDY0MME6tNl1r3mIQn9AbQxvrkI,6107
+apache_airflow_providers_jdbc-4.2.0rc1.dist-info/RECORD,,
