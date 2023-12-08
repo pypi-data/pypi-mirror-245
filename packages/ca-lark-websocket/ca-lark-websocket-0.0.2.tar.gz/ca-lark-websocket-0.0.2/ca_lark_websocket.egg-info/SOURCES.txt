@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ca_lark_websocket.egg-info/PKG-INFO
+ca_lark_websocket.egg-info/SOURCES.txt
+ca_lark_websocket.egg-info/dependency_links.txt
+ca_lark_websocket.egg-info/not-zip-safe
+ca_lark_websocket.egg-info/requires.txt
+ca_lark_websocket.egg-info/top_level.txt
+connectai/lark/websocket/__init__.py
+connectai/lark/websocket/client.py
