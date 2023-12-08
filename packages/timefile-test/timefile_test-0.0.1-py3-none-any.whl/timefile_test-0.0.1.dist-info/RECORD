@@ -1,0 +1,8 @@
+timefile/__init__.py,sha256=ypi0Bw3QfhUXbmQnKEFvwFWe8-OVKjvpbCELieyspuU,413
+timefile/config.py,sha256=wE9FmH1QpQoP-OUinB_LaZPFUlXy57WGspG3HcR-1G8,297
+timefile/logger.py,sha256=yQr-lt_zqBxLl0ZzuVh5zH2_ItoMURK7EYdXG8veGio,723
+timefile/plotter.py,sha256=kin61eYCxQAV9OmVrAZGpgHjNDUHx-dyhDUcv2RtDGc,1957
+timefile_test-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+timefile_test-0.0.1.dist-info/METADATA,sha256=-FzXQGyP9PsYTUmxQYZ0B7SN_1K87f20aUiIcU8CQe8,1208
+timefile_test-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+timefile_test-0.0.1.dist-info/RECORD,,
