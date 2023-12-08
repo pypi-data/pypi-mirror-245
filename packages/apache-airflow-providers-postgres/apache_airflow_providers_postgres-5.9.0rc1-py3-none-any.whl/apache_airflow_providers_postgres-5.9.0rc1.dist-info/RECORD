@@ -1,0 +1,11 @@
+airflow/providers/postgres/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/postgres/__init__.py,sha256=TJ_bT7wW3-TYiLiJfQPC-ivsJfyp7U1My9l2Sx4gZCw,1583
+airflow/providers/postgres/get_provider_info.py,sha256=dua2iKtczapHH6799iLtqHgJhpSiKfoiBmQ7GfYVRg8,3294
+airflow/providers/postgres/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/postgres/hooks/postgres.py,sha256=zibysgtBSLmFoYjld-zoTs-8TS1LQB5GlzvQnixvADM,15703
+airflow/providers/postgres/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/postgres/operators/postgres.py,sha256=8nrKGIQvf_0KBg8wm7OQpp7Q6l-oXV2QeuMOTqPQj5U,3544
+apache_airflow_providers_postgres-5.9.0rc1.dist-info/entry_points.txt,sha256=dhtJi6PTWHd6BwKhmI4OtSPvQVI_p0yYWI0eba83HqY,104
+apache_airflow_providers_postgres-5.9.0rc1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_postgres-5.9.0rc1.dist-info/METADATA,sha256=8zNxqZMPX3m2_R03CAgeLwqG2WKa4Lg_yc7JLD8xOak,6566
+apache_airflow_providers_postgres-5.9.0rc1.dist-info/RECORD,,
