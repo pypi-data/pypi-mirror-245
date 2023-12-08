@@ -1,0 +1,9 @@
+token_utils
+pyparsing
+packaging
+installer
+
+[SIM]
+aioconsole
+aiohttp
+asyncio_socks_server
