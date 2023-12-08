@@ -1,0 +1,14 @@
+xlrd
+pyyaml
+pydot
+pandas<2.1,>=1.1
+Amply>=0.1.6
+networkx
+flatten_dict
+openpyxl
+pydantic>=2
+
+[testing]
+setuptools
+pytest
+pytest-cov
