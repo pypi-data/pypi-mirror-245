@@ -1,0 +1,9 @@
+KaggleAPIConnection.py
+LICENSE
+README.md
+setup.py
+kaggle_st_connection.egg-info/PKG-INFO
+kaggle_st_connection.egg-info/SOURCES.txt
+kaggle_st_connection.egg-info/dependency_links.txt
+kaggle_st_connection.egg-info/requires.txt
+kaggle_st_connection.egg-info/top_level.txt
