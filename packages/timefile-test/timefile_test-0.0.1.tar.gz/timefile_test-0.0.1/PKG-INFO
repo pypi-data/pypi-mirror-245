@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: timefile-test
+Version: 0.0.1
+Summary: Probably the simplest time profiling in python
+Home-page: https://github.com/hugofe99/timefile
+License: MIT
+Author: hugofe99
+Author-email: fernstrom.hugo@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.8.2)
+Requires-Dist: numpy (>=1.26.2)
+Project-URL: Repository, https://github.com/hugofe99/timefile
+Description-Content-Type: text/markdown
+
+# ⏱️ timefile
+Probably the simplest time profiling in python 
+# TODO: 
+- [ ] Fix project structure
+- [ ] Implement custom logging level to avoid other modules logs
+- [ ] Add total time per function bar graph
+- [ ] allow args and kwargs using <code>func.__code__.co_varnames </code>
+- [ ] Parse out constant multi kwargs
+- [ ] Add some way to plot with multi variable func
+- [ ] Add dt tolerance to avoid too many logs
+    > ~10^5 func calls Starts to get slow => 15 sec :/
