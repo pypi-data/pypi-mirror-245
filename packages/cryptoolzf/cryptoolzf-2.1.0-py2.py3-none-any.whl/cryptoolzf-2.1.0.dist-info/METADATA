@@ -1,0 +1,161 @@
+Metadata-Version: 2.1
+Name: cryptoolzf
+Version: 2.1.0
+Summary: A small high-level crypto library / cli toolset.
+Home-page: https://github.org/mtugan/cryptoolzf
+Author: Mtugan
+Author-email: havanaguilahava@proton.me
+License: GNU General Public License v3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Version Control :: Git
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: asn1crypto ==1.5.1
+Requires-Dist: cffi ==1.15.1
+Requires-Dist: click ==8.1.3
+Requires-Dist: pydantic <2
+Requires-Dist: pydantic-core <2
+Requires-Dist: cryptography ==39.0.0
+Requires-Dist: cytoolz ==0.12.1
+Requires-Dist: coincurve ==18.0.0
+Requires-Dist: eth-utils ==2.1.0
+Requires-Dist: eth-hash[pycryptodome] ==0.5.1
+Requires-Dist: eth-typing ==3.2.0
+Requires-Dist: pycparser ==2.21
+Requires-Dist: segno ==1.5.2
+Requires-Dist: pycryptodome ==3.16.0
+Requires-Dist: typing-extensions ==4.4.0
+Provides-Extra: dev
+Requires-Dist: build[virtualenv] ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: watchdog ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+
+=====
+About
+=====
+
+
+.. image:: https://img.shields.io/pypi/v/cryptoolzf.svg
+        :target: https://pypi.python.org/pypi/cryptoolzf
+
+.. image:: https://img.shields.io/travis/mtugan/cryptoolzf.svg
+        :target: https://travis-ci.com/mtugan/cryptoolzf
+
+.. image:: https://readthedocs.org/projects/cryptoolzf/badge/?version=latest
+        :target: https://cryptoolzf.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+* Free software: GNU General Public License v3
+* Documentation: https://cryptoolzf.readthedocs.io.
+
+What
+----
+
+This is a CLI app with crypto related tools and a high level slightly-circom-circuit-inspired crypto module. This is a heavy WIP, many more algorithms can be added, code can/must also be polished.
+
++-------------+-----------------------------------------------------------+
+| Tool        | Description                                               |
++=============+===========================================================+
+||            || Generates a keypair for a chosen network.                |
+|| **keys**   || Encrypts the secret with a chosen algorithm combination. |
+|| (offered)  || The public key is shown during generation!               |
+||            || Can print a QR code or a basic PEM block!                |
++-------------+-----------------------------------------------------------+
+|| **primes** || Utility command for getting prime numbers of a certain   |
+|| (offered)  || form.                                                    |
++-------------+-----------------------------------------------------------+
+|| **crypto** || crypto will offer options for the above,                 |
+|| (planned)  || but generalized to plaintext encryption.                 |
++-------------+-----------------------------------------------------------+
+
+Modules offered
+^^^^^^^^^^^^^^^
+
+**crypto** is a "circuit"-like (slightly circom inspired) wrapper for pyca cryptography with pydantic data validation and sensible defaults:
+
+        * Composited: PBDKF2-AESGCM
+        * Key Derivation Functions: PBDKF2 
+        * Authenticated Encryption: AESGCM
+        * Message Digests (Hash): BLAKE2b
+
+
+Disclaimer
+----------
+
+The use of this library is at your own risk. The developer and contributors of cryptoolzf are not liable for any types of damages caused through the use of anything which is part of this project.
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+
+=======
+History
+=======
+
+2.1.0 (2023-12-07)
+------------------
+
+* Actually fix by adding reqs in `setup.cfg` `install_requires`.
+
+
+2.0.0 (2023-12-07)
+------------------
+
+* Fork by mtugan
+* Fix `requirements.txt` not being included.
+
+1.3.2 (2023-02-06)
+------------------
+
+* Fix data files in `cryptoolzf/resources` not being included.
+
+1.3.0 (2023-02-06)
+------------------
+
+* `prime` command.
+* Fix all instances of that write-to-file bug.
+* Some style formatting.
+
+1.2.1 (2023-02-03)
+------------------
+
+* Bugfix on main command because of a file object
+* Don't print "No digest created!", we might not plan digest, need to analyze utility first.
+
+1.2.0 (2023-02-02)
+------------------
+
+* Users couldn't use 1 passphrase to decrypt entire text file if so encrypted.
+* QR format now also prints public key to QR. See Usage.
+
+1.1.0 (2023-02-02)
+------------------
+
+* Fix ugly abstractions in tools.keys and replace with something better.
+
+1.0.2 (2023-02-01)
+------------------
+
+* Minor config fixups.
+
+1.0.1 (2023-01-30)
+------------------
+
+* First release on PyPI.
