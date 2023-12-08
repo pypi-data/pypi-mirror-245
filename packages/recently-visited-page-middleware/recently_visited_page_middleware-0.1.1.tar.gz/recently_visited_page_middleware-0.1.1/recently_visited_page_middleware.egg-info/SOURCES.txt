@@ -1,0 +1,14 @@
+README.md
+setup.py
+recently_visited_page_middleware/__init__.py
+recently_visited_page_middleware/asgi.py
+recently_visited_page_middleware/middleware.py
+recently_visited_page_middleware/settings.py
+recently_visited_page_middleware/urls.py
+recently_visited_page_middleware/utils.py
+recently_visited_page_middleware/wsgi.py
+recently_visited_page_middleware.egg-info/PKG-INFO
+recently_visited_page_middleware.egg-info/SOURCES.txt
+recently_visited_page_middleware.egg-info/dependency_links.txt
+recently_visited_page_middleware.egg-info/requires.txt
+recently_visited_page_middleware.egg-info/top_level.txt
