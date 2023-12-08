@@ -1,0 +1,4 @@
+[console_scripts]
+build_simulation = simulation.run_simulation:_execute_build_script
+run_simulation = simulation.run_simulation:main
+simulation_health_check = simulation.run_simulation:_health_check
