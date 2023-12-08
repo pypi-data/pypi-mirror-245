@@ -1,0 +1,76 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: no_vtf
+Upstream-Contact: b5327157 <b5327157@protonmail.com>
+Source: https://sr.ht/~b5327157/no_vtf
+
+Files:
+	*/*.pyd
+	*/python3*.dll
+Copyright: 2001-2023 Python Software Foundation, 2000 BeOpen.com, 1995-2000 Corporation for National Research Initiatives, 1991-1995 Stichting Mathematisch Centrum
+License: LicenseRef-Python
+
+Files:
+	*/api-ms-*.dll
+Copyright: Microsoft Corporation
+License: LicenseRef-WIN10SDK-RTM-AUG_2018
+
+Files:
+	*/libcrypto-*.dll
+	*/libssl-*.dll
+Copyright: OpenSSL authors
+License: OpenSSL
+
+Files:
+	*/libffi-*.dll
+Copyright: 1996-2022 Anthony Green, Red Hat, Inc and others
+License: MIT
+
+Files:
+	*/grapheme/*
+Copyright: Alvin Lindstam
+License: MIT
+
+Files:
+	*/imageio/resources/freeimage/*
+Copyright: FreeImage
+License: GPL-3.0-only
+
+Files:
+	*/numpy/*
+Copyright: NumPy Developers AND 1992-2013 The University of Tennessee and The University of Tennessee Research Foundation, 2000-2013 The University of California Berkeley, 2006-2013 The University of Colorado Denver AND Ryan Juckett AND 2010 - 2019 ridiculous_fish, <libdivide@ridiculousfish.com>, 2016 - 2019 Kim Walisch, <kim.walisch@gmail.com>
+License: BSD-3-Clause AND BSD-3-Clause AND MIT AND Zlib
+
+Files:
+	*/numpy.libs/libopenblas64_*.dll
+Copyright: 2011-2014, The OpenBLAS Project
+License: BSD-3-Clause
+
+Files:
+	*/PIL/*
+Copyright: Jeffrey A. Clark (Alex)
+License: HPND
+
+Files:
+	*/base_library.zip
+Copyright: 2001-2023 Python Software Foundation, 2000 BeOpen.com, 1995-2000 Corporation for National Research Initiatives, 1991-1995 Stichting Mathematisch Centrum
+License: LicenseRef-Python
+
+Files:
+	*/ucrtbase.dll
+Copyright: Microsoft Corporation
+License: LicenseRef-WIN10SDK-RTM-AUG_2018
+
+Files:
+	*/vcomp140.dll
+Copyright: Microsoft Corporation
+License: LicenseRef-mlt687465
+
+Files:
+	*/VCRUNTIME140.dll
+Copyright: Microsoft Corporation
+License: LicenseRef-mlt687465
+
+Files:
+	no_vtf.exe
+Copyright: b5327157 <b5327157@protonmail.com>
+License: LicenseRef-no_vtf
