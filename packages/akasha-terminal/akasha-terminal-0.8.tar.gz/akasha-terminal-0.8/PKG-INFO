@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: akasha-terminal
+Version: 0.8
+Summary: document QA package using langchain and chromadb
+Home-page: https://gitlab-devops.iii.org.tw/root/qaiii-1
+Author: chih chuan chang
+Author-email: ccchang@iii.org.tw
+Requires-Python: >=3.8
+License-File: License
+
+Akasha simplifies document-based Question Answering (QA) by harnessing the power of Large Language Models to accurately answer your queries while searching through your provided documents.
+With Akasha, you have the flexibility to choose from a variety of language models, embedding models, and search types. Adjusting these parameters is straightforward, allowing you to optimize your approach and discover the most effective methods for obtaining accurate answers from Large Language Models.
