@@ -1,0 +1,2 @@
+[console_scripts]
+nalibsHello = nalibsUtils:sayHello
