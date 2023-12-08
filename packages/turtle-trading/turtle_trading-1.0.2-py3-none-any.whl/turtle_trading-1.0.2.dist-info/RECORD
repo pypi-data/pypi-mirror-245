@@ -1,0 +1,11 @@
+turtle_trading/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turtle_trading/__version__.py,sha256=JqmBIiZnO_c1ce6zv6JZzf01tRk6jFq-SGGuvkL_r1U,21
+turtle_trading/entries/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turtle_trading/position_sizing/__init__.py,sha256=M0NZuQ7-112l8K2h1eayVvSmvQrufrOcD5AYKgIf_Is,1
+turtle_trading/position_sizing/adjusting_size.py,sha256=-cFuzVKjprRgKJg5mXa1sxjhjs8ODypocMoYQt_buso,2279
+turtle_trading/position_sizing/risk_management.py,sha256=8miReKs5GQ2ISpqkdA5fWovv-r9ejcTzthbQ-IyO63Y,2639
+turtle_trading/position_sizing/units.py,sha256=d-0-N0ilifmmFjbdu9PrevmciLTo0dtqWOTCL5WoMhg,5183
+turtle_trading-1.0.2.dist-info/METADATA,sha256=IensS-Y34iFNvCYlPpjP95GCsyoIBy2b1ze01Kx1zIU,3159
+turtle_trading-1.0.2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+turtle_trading-1.0.2.dist-info/licenses/LICENSE,sha256=4EXzqFLUu9VMa7HuGSI2GmhRyh7vKVW-ThJQTtpOlJQ,1067
+turtle_trading-1.0.2.dist-info/RECORD,,
