@@ -1,0 +1,14 @@
+pokeapi_sdk/__init__.py,sha256=l1gR1yCbEVcGIBrdapSBQXwStbc32m_Otdiv8vVJoX8,106
+pokeapi_sdk/nature.py,sha256=IXTE57bPVoeW6EnGqMgLZlTxH0i6--PhXTwfO40VNeI,746
+pokeapi_sdk/pokemon.py,sha256=nQvH9saBRJDOY9uoPhGjpqGx75wfYyVrLkV61N--2wM,3817
+pokeapi_sdk/sdk.py,sha256=6JGNH7faL3Fns4gb-7goocYrCK9t6ot8SnuwfMldZb8,1875
+pokeapi_sdk/stat.py,sha256=G6xbGanV2pRbWtZwEUzcdo6Y1e9xZ81lDfD840UgFS4,611
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/nature_test.py,sha256=U8_pB-dRDbM2wBuKdgvAtzQ4mHzhoF2I0nUJ6-e_HvM,501
+tests/pokemon_test.py,sha256=2jgWEJjRLEuBAMvMC8NlHC37MsAL7UdWc6QIUpVWctk,1660
+tests/stat_test.py,sha256=QBCEPZAfdplEOrlnkNx_-8_sfJA1AYxy0tNuBXTdgcc,492
+pokeapi_sdk_demo-1.0.1.dist-info/LICENSE,sha256=d9Bb7vIfWaMurhKOH5Hm3zqB49TcagczTwUxtqNgoLs,1069
+pokeapi_sdk_demo-1.0.1.dist-info/METADATA,sha256=WCpBZdCJjRLaoT74O9cQtmMUxbVlqZAlQoiQkL5ITE8,5196
+pokeapi_sdk_demo-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pokeapi_sdk_demo-1.0.1.dist-info/top_level.txt,sha256=xew5p-lfge8VyL2cIhSgVkFUzfKfvvv43nNl4uw1A3Y,18
+pokeapi_sdk_demo-1.0.1.dist-info/RECORD,,
