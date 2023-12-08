@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/pvr2image.py
+src/pvr2img.egg-info/PKG-INFO
+src/pvr2img.egg-info/SOURCES.txt
+src/pvr2img.egg-info/dependency_links.txt
+src/pvr2img.egg-info/top_level.txt

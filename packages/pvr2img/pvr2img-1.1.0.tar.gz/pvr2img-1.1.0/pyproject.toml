@@ -1,0 +1,18 @@
+[project]
+name = "pvr2img"
+version = "1.1.0"
+authors = [
+  { name = "VincentNL", email = "zgoro@protonmail.com" },
+]
+description = "A Python library to easily convert Dreamcast/Naomi .PVR and .PVP files to images + palettes"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/VincentNLOBJ/pvr2image"
+Issues = "https://github.com/VincentNLOBJ/pvr2image/issues"
