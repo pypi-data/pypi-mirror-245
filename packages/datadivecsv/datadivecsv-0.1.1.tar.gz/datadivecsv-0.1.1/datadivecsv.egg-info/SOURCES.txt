@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+datadivecsv.egg-info/PKG-INFO
+datadivecsv.egg-info/SOURCES.txt
+datadivecsv.egg-info/dependency_links.txt
+datadivecsv.egg-info/requires.txt
+datadivecsv.egg-info/top_level.txt
