@@ -1,0 +1,7 @@
+utility_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utility_manager/dbdelta_manager.py,sha256=7Ho2H6HC9_8RpMexFNWStZQ69Yzqmyfkp-gOCQkW4ok,4374
+databricks_delta_utility-0.1.0.dist-info/License.lic,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+databricks_delta_utility-0.1.0.dist-info/METADATA,sha256=2GBd1FLApDxpvX_oNh3QfjZr5_wrPLcylXHvcBJM0Aw,1356
+databricks_delta_utility-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+databricks_delta_utility-0.1.0.dist-info/top_level.txt,sha256=R-qaKOTEysS55gLQmbKEJQNQa6Z5lge_tNazvjl9tUo,16
+databricks_delta_utility-0.1.0.dist-info/RECORD,,
