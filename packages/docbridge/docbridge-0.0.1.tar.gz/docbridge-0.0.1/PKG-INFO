@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: docbridge
+Version: 0.0.1
+Summary: A thin abstraction layer over BSON documents, to keep your data model agile.
+Author-email: Mark Smith <mark.smith@mongodb.com>
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Requires-Python: >=3.7
+Requires-Dist: pymongo[srv]~=4.6.0
+Description-Content-Type: text/markdown
+
+# Docbridge
+
+This is an experimental Object-Document Mapping library for MongoDB.
+You can watch it being developed *live* on [MongoDB's YouTube channel](https://www.youtube.com/@MongoDB)!
+
+## Mission Statement
+
+* Managing large amounts of data in MongoDB while keeping a data schema flexible is challenging.
+* This ODM is not an active record implementation, mapping documents in the database directly into similar objects in code.
+* This ODM *is* designed to abstract underlying documents, mapping potentially multiple document schemata into a shared object representation.
+* It should also simplify the evolution of documents in the database, automatically migrating individual documents' schemas either on-read or on-write.
+* There should be "escape hatches" so that unforeseen mappings can be implemented, hiding away the implementation code behind hopefully reuseable components.
