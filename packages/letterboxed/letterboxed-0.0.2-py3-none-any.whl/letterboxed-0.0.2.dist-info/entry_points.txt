@@ -1,0 +1,2 @@
+[console_scripts]
+letterboxed = letterboxed.__main__:main
