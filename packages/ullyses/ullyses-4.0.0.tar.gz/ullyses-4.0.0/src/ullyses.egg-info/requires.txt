@@ -1,0 +1,13 @@
+setuptools
+numpy
+cython
+astropy>=5.0.4
+ullyses_utils>=3.0.0
+pandas>2.0
+calcos>=3.4.0
+costools
+stistools>=1.4.2
+matplotlib
+pyyaml
+plotly
+hasp>=0.9.5
