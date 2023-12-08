@@ -1,0 +1,12 @@
+pose_db_io/__init__.py,sha256=UlIn1mOwjGr8c4wfKrzQtaL6N9UTqb32eq5449aO16I,493
+pose_db_io/config.py,sha256=41irnWNDE9XxMCzfvofv2y3Dq0dRnPlBE1i0BMLenXg,303
+pose_db_io/core.py,sha256=Ice4B3eFDPacfN1U3Z1ncx_3bhgLVYeZmWIpGVIgfIg,18
+pose_db_io/handle/__init__.py,sha256=HDe0QtXYMDGSQD6dSTkTrAed3VqrTJVtac7_26RUHeg,31
+pose_db_io/handle/handle.py,sha256=XZ8X4g8OPhYJx67tmjGjuVE-dylPvxoiW7Mt7BOco9c,13516
+pose_db_io/handle/models/pose_2d.py,sha256=rybzWUxIsR-7hAnuSVfq2iQZouOeFlmXl5QFTDut-g0,3870
+pose_db_io/handle/models/pose_3d.py,sha256=h_VJPhsqAySiHZ2ftpAXhDCpZvA8mP1K9674TzRlitA,2172
+pose_db_io/log.py,sha256=On__Mv64z9czd1_Ps8d7lAxS-QcLMpR96McdHKDrRmc,839
+wf_pose_db_io-0.1.0.dist-info/LICENSE,sha256=VV4EHqsjRsZIw9RC6SYL63Tm9kzPQsYaZn7a1cT9X3w,1088
+wf_pose_db_io-0.1.0.dist-info/METADATA,sha256=EbgoSVP_TGMRPvth491Hb8zeUwxJr6KcA6vaLx7a9JM,1673
+wf_pose_db_io-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+wf_pose_db_io-0.1.0.dist-info/RECORD,,
