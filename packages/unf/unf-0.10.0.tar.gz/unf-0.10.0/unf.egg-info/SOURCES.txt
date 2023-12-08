@@ -1,0 +1,12 @@
+CHANGES
+COPYING
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+tests.py
+unf.py
+unf.egg-info/PKG-INFO
+unf.egg-info/SOURCES.txt
+unf.egg-info/dependency_links.txt
+unf.egg-info/top_level.txt

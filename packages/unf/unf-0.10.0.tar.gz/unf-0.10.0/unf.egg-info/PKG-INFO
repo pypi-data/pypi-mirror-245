@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: unf
+Version: 0.10.0
+Summary: Universal Numeric Fingerprints
+Home-page: https://github.com/chaselgrove/python-unf
+Author: Christian Haselgrove
+Author-email: christian.haselgrove@umassmed.edu
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: COPYING
+
+# python-unf
+
+unf contains Python code for Universal Numeric Fingerprints (UNFs).
+
+UNFs are defined at 
+http://guides.dataverse.org/en/latest/developers/unf/index.html.
+
+Usage:
+
+    >>> import unf
+    >>> unf.unf(1.23456789)
+    'UNF:6:vcKELUSS4s4k1snF4OTB9A=='
+    >>> unf.unf(1.23456789, digits=9)
+    'UNF:6:N9:IKw+l4ywdwsJeDze8dplJA=='
+
+Please see ROUNDING.md for a note about rounding.

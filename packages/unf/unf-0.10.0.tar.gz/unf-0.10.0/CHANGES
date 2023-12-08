@@ -1,0 +1,76 @@
+change log for unf
+https://github.com/chaselgrove/python-unf
+
+0.1.0 -- 18 April 2017
+
+    Initial version.
+
+    UNF class for calculating Universal Numeric Fingerprints.
+
+0.2.0 -- 19 April 2017
+
+    Added full support for non-default precision (type and value checking, 
+    header in printable UNF, and unit tests).
+
+0.3.0 -- 19 April 2017
+
+    Added support for booleans and vectors (tuples and lists).
+
+0.4.0 -- 19 April 2017
+
+    Added support for numpy arrays (as vectors).
+
+0.4.1 -- 20 April 2017
+
+    Requiring numpy arrays to be one-dimensional.
+
+    Added code to speed up normalization of numpy arrays if all values are 
+    numeric.
+
+0.5.0 -- 21 April 2017
+
+    Requiring tuples and lists to contain only primitives.
+
+    Allowing multi-dimensional numpy arrays.
+
+0.5.1 -- 21 April 2017
+
+    Removed debugging print statement.
+
+0.6.0 -- 22 November 2021
+
+    Updated for Python 3.
+
+    Removed UNFs for multi-dimensional numpy arrays.
+
+    Updated build process.
+
+0.7.0 -- 7 December 2021
+
+    Change API to use unf.unf() rather than a UNF class.
+
+0.7.1 -- 7 December 2021
+
+    Fixed date in CHANGES.
+
+0.8.0 -- 22 December 2021
+
+    Fixed a bug in numpy array handling.
+
+    Simplified the numeric normalization code.
+
+    Added a test for scaling down before rounding.
+
+    Updated the rounding notes.
+
+0.9.0 -- 23 December 2021
+
+    Removed Python 3.6 support.
+
+    Using tox for testing.
+
+0.10.0 -- 7 December 2023
+
+    Removed Python 3.7 support.
+
+    Added Python 3.11 and 3.12 to tests.
