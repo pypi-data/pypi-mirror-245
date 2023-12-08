@@ -1,0 +1,9 @@
+tess_locator/__init__.py,sha256=zv8CHqoVGApmdExIlLWcn2BvIoosCSTZXOOtECodpWk,689
+tess_locator/data/tess-sector-dates.csv,sha256=styx7sIpq--U67ZWe3EzaB4MVuyvIr2YBVKG6B0zOdU,1995
+tess_locator/dates.py,sha256=214cwwFVafoYpdJ3P9CTWSHrqQJqw8TJ9nsuJM9f0nA,930
+tess_locator/locate.py,sha256=kibTtimULlCBFVx_gTxn8oBg7mUE6VLi-NaiFJIwAC4,2819
+tess_locator/tesscoord.py,sha256=e-mPGAPhLDPtL92XrgS42ovsPOObrVg_bILgek3iJuI,5933
+tess_locator-0.6.0.dist-info/LICENSE,sha256=YIurXE5uHFo-DHYozgDPSlhTHedYReVaCkffFMkuumQ,1105
+tess_locator-0.6.0.dist-info/METADATA,sha256=VnaEft_FNbNX7gj1OA7qld6U9P11uLxxrYIhZliA6Gs,5456
+tess_locator-0.6.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+tess_locator-0.6.0.dist-info/RECORD,,
