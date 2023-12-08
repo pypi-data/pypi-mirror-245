@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lau
+Version: 0.1.1
+Summary: A small example package
+Home-page: http://github.com/bruc3lau/lau
+Author: Bruce Lau
+Author-email: lqx404@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
