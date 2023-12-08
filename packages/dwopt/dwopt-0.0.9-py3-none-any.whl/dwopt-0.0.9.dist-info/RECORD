@@ -1,0 +1,10 @@
+dwopt/__init__.py,sha256=ouAWAZqKEkyO2GZwxj0DlzZIeT90Yl24sJjaO3qtY9E,727
+dwopt/_qry.py,sha256=h17FF2D0uZ-h6yeVZrGmdi_f_8S-ZJ4UJwNZ1Qp3EuU,40594
+dwopt/dbo.py,sha256=fGIbLdw9vkNMPVMvc3phigf9eeuo2c5tYkh7u4Fjh0E,42312
+dwopt/set_up.py,sha256=ONQWHcNl7G7itbJlTj9oQdzGq7-ZnPbPoXBuCGukNAw,26689
+dwopt/testing.py,sha256=l_qIg2wh0_CbYGo27aKlGdiNUBOvbwSG3PND7vEH7ps,8997
+dwopt-0.0.9.dist-info/LICENSE,sha256=AYUO1A-48gP8rr2MkYB_OKWWQydVnCuIWWxyjh0qJVM,1064
+dwopt-0.0.9.dist-info/METADATA,sha256=68Fdh4B-vp3G7r7FVrsj3Hyppzhzc16KCD4jKUkVyMk,17650
+dwopt-0.0.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dwopt-0.0.9.dist-info/top_level.txt,sha256=3jTbxhYz_vX0sq43GIy0pPWplsMvc6X8_opajiPV8N4,6
+dwopt-0.0.9.dist-info/RECORD,,
