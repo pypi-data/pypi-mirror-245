@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+lassoreg/__init__.py
+lassoreg/regression.py
+lassoreg.egg-info/PKG-INFO
+lassoreg.egg-info/SOURCES.txt
+lassoreg.egg-info/dependency_links.txt
+lassoreg.egg-info/requires.txt
+lassoreg.egg-info/top_level.txt
+lassoreg/__pycache__/regression.cpython-311.pyc
