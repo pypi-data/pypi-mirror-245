@@ -1,0 +1,241 @@
+Metadata-Version: 2.1
+Name: geopmpy
+Version: 3.0.1
+Summary: GEOPM - Global Extensible Open Power Manager Runtime Tools
+Author-email: Christopher Cantalupo <christopher.m.cantalupo@intel.com>, Brad Geltz <brad.geltz@intel.com>
+Maintainer-email: Christopher Cantalupo <christopher.m.cantalupo@intel.com>, Brad Geltz <brad.geltz@intel.com>
+License: Copyright (c) 2015 - 2023, Intel Corporation
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions
+        are met:
+        
+            * Redistributions of source code must retain the above copyright
+              notice, this list of conditions and the following disclaimer.
+        
+            * Redistributions in binary form must reproduce the above copyright
+              notice, this list of conditions and the following disclaimer in
+              the documentation and/or other materials provided with the
+              distribution.
+        
+            * Neither the name of Intel Corporation nor the names of its
+              contributors may be used to endorse or promote products derived
+              from this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+        "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+        LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+        A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+        OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+        SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+        LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+        DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+        THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY LOG OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://geopm.github.io
+Project-URL: Source, https://github.com/geopm/geopm/
+Project-URL: Documentation, https://geopm.github.io/geopmpy.7.html
+Keywords: runtime,hardware,telemetry,configuration
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: System :: Hardware :: Symmetric Multi-processing
+Classifier: Topic :: System :: Power (UPS)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: COPYING
+License-File: AUTHORS
+Requires-Dist: cffi >=1.14.5
+Requires-Dist: cycler >=0.11.0
+Requires-Dist: natsort >=8.1.0
+Requires-Dist: numpy >=1.19.5
+Requires-Dist: pandas >=1.1.5
+Requires-Dist: psutil >=5.8.0
+Requires-Dist: pyyaml >=6.0.0
+Requires-Dist: setuptools >=53.0.0
+Requires-Dist: tables >=3.7.0
+Requires-Dist: geopmdpy
+
+<img src="https://geopm.github.io/images/geopm-banner.png" alt="GEOPM logo">
+
+GEOPM - Global Extensible Open Power Manager
+============================================
+
+[![Build Status](https://github.com/geopm/geopm/actions/workflows/build.yml/badge.svg)](https://github.com/geopm/geopm/actions)
+[![version](https://img.shields.io/badge/version-3.0.0-blue)](https://github.com/geopm/geopm/releases)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
+
+Web Pages
+---------
+https://geopm.github.io <br>
+https://geopm.github.io/service.html <br>
+https://geopm.github.io/reference.html <br>
+https://geopm.slack.com
+
+
+Summary
+-------
+
+The Global Extensible Open Power Manager (GEOPM) is a collaborative
+framework for exploring power and energy optimizations on
+heterogeneous platforms. GEOPM is open-source (BSD licensed) and
+developed to enable efficient power management and performance
+optimizations. With this powerful tool, users are able to monitor
+their system's energy and power consumption, and safely optimize
+system hardware settings to achieve energy efficiency and/or
+performance objectives.
+
+With GEOPM you can:
+
+- Interact with hardware settings and sensors using a
+  platform-agnostic interface
+- Restore changes to hardware settings when configuring process
+  terminates
+- Profile applications to study their power and energy behavior
+- Automatically detect MPI and OpenMP phases in an application
+- Optimize applications to improve energy efficiency or reduce the
+  effects of work imbalance, system jitter, and manufacturing variation
+  through built-in control algorithms
+- Develop your own runtime control algorithms through the extensible
+  plugin architecture
+
+
+Repository Organization
+-----------------------
+
+The GEOPM repository supports two software packages: the
+`geopm-service` package and the `geopm` package.  The `geopm-service`
+package provides a Linux systemd service.  The `geopm` package
+provides a runtime for distributed HPC applications.
+
+- A build of the `geopm-service` package is required to build and run
+  the `geopm` HPC runtime
+
+- All `geopm-service` package features may be used independently of
+  the features provided by the `geopm` package
+
+- All run and build requirements of the `geopm-service` package are
+  provided by commonly used Linux distributions
+
+- The run and build requirements of the `geopm` package include
+  several additional HPC specific dependencies
+
+
+GEOPM Service
+-------------
+
+The files supporting the `geopm-service` package are all within the
+`service` subdirectory located in the root directory of the the GEOPM
+repository.  Please refer to the `service/README.rst` file for further
+documentation about the GEOPM Service.  Additionally a comprehensive
+overview of the GEOPM service is posted here:
+
+https://geopm.github.io/service.html
+
+
+GEOPM Runtime
+-------------
+
+The GEOPM Service provides a foundation for manipulating hardware
+settings to optimize an objective defined by an unprivileged user.
+The GEOPM Runtime is a software platform built on top of the GEOPM
+Service that enables users to select a runtime algorithm and policy to
+meet energy efficiency or performance objectives.  More documentation
+on the GEOPM Runtime is posted with our web documentation here:
+
+https://geopm.github.io/runtime.html
+
+
+Guide for Contributors
+----------------------
+
+We appreciate all feedback on our project.  Please see our
+contributing guide for how some guidelines on how to participate.
+This guide is located in the root of the GEOPM repository in a file
+called `CONTRIBUTING.rst`.  This guide can also be viewed here:
+
+https://geopm.github.io/contrib.html
+
+
+Guide for GEOPM Developers
+--------------------------
+
+GEOPM is an open development project and we use Github to plan, review
+and test our work.  The process we follow is documented here:
+
+https://geopm.github.io/devel.html
+
+this web page provides a guide for developers wishing to modify source
+code anywhere in the GEOPM repository for both the `geopm-service` and
+the `geopm` packages.
+
+
+Status
+------
+
+GEOPM version 3.0 enables the GEOPM Runtime to be used with any
+application.  It shifts responsibility for managing inter-process
+communication between the application and the GEOPM controller to the
+GEOPM Service.  The start up of the GEOPM runtime is done by the
+libgeopm library initialization rather than through interposition on
+MPI initialization functions.
+
+GEOPM version 2.0 provides a number of important changes since the
+previous tagged release v1.1.0.  Some of the most significant new
+features are the GEOPM Service, support for Intel and NVIDIA GPUs, and
+improved consistency of signal and control names provided by
+PlatformIO.  A wide range of other improvements have also been made,
+including a higher performance profiling interface to support highly
+parallel applications, and support for the ``isst_interface`` driver.
+
+This software is production quality as of version 1.0.  We will be
+enforcing [semantic versioning](https://semver.org/) for all releases
+following version 1.0. Please refer to the ChangeLog for a high level
+history of changes in each release.  The test coverage report from
+gcov as reported by gcovr for the latest release are
+[posted to our web page](http://geopm.github.io/coverage/index.html).
+
+Some new features of GEOPM are still under development, and their
+interfaces may change before they are included in official releases.
+To enable these features in the GEOPM install location, configure
+GEOPM with the `--enable-beta` configure flag.  The features currently
+considered unfinalized are the endpoint interface, and the
+`geopmendpoint` application.  The CPU-CA and GPU-CA agents are also
+beta features.
+
+The GEOPM developers are very interested in feedback from the
+community.  See the [contributing guide](CONTRIBUTING.md) to learn how
+to provide feedback.
+
+License
+-------
+
+The GEOPM source code is distributed under the 3-clause BSD license.
+
+SEE COPYING FILE FOR LICENSE INFORMATION.
+
+Last Update
+-----------
+2023 October 17
+
+Christopher Cantalupo <christopher.m.cantalupo@intel.com> <br>
+Brad Geltz <brad.geltz@intel.com> <br>
+
+ACKNOWLEDGMENTS
+---------------
+Development of the GEOPM software package has been partially funded
+through contract B609815 with Argonne National Laboratory.
