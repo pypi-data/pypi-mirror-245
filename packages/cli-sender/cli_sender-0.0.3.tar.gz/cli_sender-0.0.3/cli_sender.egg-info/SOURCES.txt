@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cli_sender/__init__.py
+cli_sender/main.py
+cli_sender.egg-info/PKG-INFO
+cli_sender.egg-info/SOURCES.txt
+cli_sender.egg-info/dependency_links.txt
+cli_sender.egg-info/top_level.txt
