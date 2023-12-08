@@ -1,0 +1,11 @@
+mxpyserializer/__init__.py,sha256=ijBfcKFy7-xvWikzr37NsrpX6eBbz90s6K5pFdIw57w,131
+mxpyserializer/__main__.py,sha256=27iFjK_lS2F_FMcRQGJ-lFD6o8O6ttpPt6vMR7wjaEg,329
+mxpyserializer/abi_serializer.py,sha256=2ArwFjxtGyBrkInjQDP9Jd9MeBkj4Y4kQ5X3DdJW1L8,26996
+mxpyserializer/basic_type.py,sha256=RS7SKS4jSpdIe_z2y2rc61NBCj4Y-p1cQimhk9qvopA,10783
+mxpyserializer/data_models.py,sha256=xGnXCuZIKEncXn8TSwnft2mSURLgDzV2zej7vkSz6nw,3286
+mxpyserializer-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mxpyserializer-0.1.0.dist-info/METADATA,sha256=HwNvU-V1wZVNeioIFhORxXFLJpls8Ei98UPhRjFjCfQ,2782
+mxpyserializer-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mxpyserializer-0.1.0.dist-info/entry_points.txt,sha256=jfCRDrUJNyjKw7-tPtlegIFwMWrBvFXRemSTuIBUXsc,64
+mxpyserializer-0.1.0.dist-info/top_level.txt,sha256=2znIFV6IoimNgiMyZcjMmad7KXl2zKbhSYp60WqDFfQ,15
+mxpyserializer-0.1.0.dist-info/RECORD,,
