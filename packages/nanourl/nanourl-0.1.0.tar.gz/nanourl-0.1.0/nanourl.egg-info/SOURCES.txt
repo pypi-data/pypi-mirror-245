@@ -1,0 +1,6 @@
+README.md
+setup.py
+nanourl.egg-info/PKG-INFO
+nanourl.egg-info/SOURCES.txt
+nanourl.egg-info/dependency_links.txt
+nanourl.egg-info/top_level.txt
