@@ -1,0 +1,13 @@
+spotrpy/API.py,sha256=fMw5M-MY7YriaK807AboLxwNjwaexm2GHFde_AlGSjM,4100
+spotrpy/ASCII.py,sha256=P8TlKvudfcwtFaa7Ry3LO698IXa1nq3iGZfKtLkXGdk,2667
+spotrpy/Configuration.py,sha256=MdNDeef7mCLROBkuOxpQIqBPGkAxib0UnTmSeb1sRX4,7648
+spotrpy/Helpers.py,sha256=_RB0yk5VtxgFM7l_-BlYnV2yIxchXL8Bit_P-N2U_hE,3920
+spotrpy/Router.py,sha256=McP9sXaGvpyC85X_mouMcW4YmbK10UVl2trBV4cva1M,16752
+spotrpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spotrpy/spotr.py,sha256=Pbf1G3Xuxa3CA4gpPHIfpkUzY0GkNYPqif0yvT2eHeA,3587
+spotrpy-0.1.dist-info/LICENSE.md,sha256=Vv2LsGk0t1SeXtFT3EBwj2PDSAmYebPjtvrOGPUYimU,1065
+spotrpy-0.1.dist-info/METADATA,sha256=VmfKAhF-8Heymt5OLJMYN9i5cv6bQftfR53EatgozVk,4923
+spotrpy-0.1.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+spotrpy-0.1.dist-info/entry_points.txt,sha256=c6f-ZYFT6ygaNq7ZUgwOoYS4yE5CemeTWytCTaKeMh8,45
+spotrpy-0.1.dist-info/top_level.txt,sha256=giqiY_jhDUTqan04NTQN0CY-acVK740wVkTf5eUQAQI,8
+spotrpy-0.1.dist-info/RECORD,,
