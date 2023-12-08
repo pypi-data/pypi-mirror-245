@@ -1,0 +1,15 @@
+numpy
+numba
+
+[dev]
+pipic[examples,test]
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[examples]
+matplotlib
+
+[test]
+pytest
