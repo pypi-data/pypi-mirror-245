@@ -1,0 +1,3 @@
+[console_scripts]
+extract_field_from_maps = warpkit.scripts.extract_field_from_maps:main
+medic = warpkit.scripts.medic:main
