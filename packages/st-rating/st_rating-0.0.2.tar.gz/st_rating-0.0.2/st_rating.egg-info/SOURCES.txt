@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+st_rating/__init__.py
+st_rating.egg-info/PKG-INFO
+st_rating.egg-info/SOURCES.txt
+st_rating.egg-info/dependency_links.txt
+st_rating.egg-info/requires.txt
+st_rating.egg-info/top_level.txt
+st_rating/frontend/build/asset-manifest.json
+st_rating/frontend/build/bootstrap.min.css
+st_rating/frontend/build/index.html
+st_rating/frontend/build/static/js/main.b0be312f.js
+st_rating/frontend/build/static/js/main.b0be312f.js.LICENSE.txt
+st_rating/frontend/build/static/js/main.b0be312f.js.map
