@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+grabbygram/__init__.py
+grabbygram/grabbygram.py
+grabbygram.egg-info/PKG-INFO
+grabbygram.egg-info/SOURCES.txt
+grabbygram.egg-info/dependency_links.txt
+grabbygram.egg-info/entry_points.txt
+grabbygram.egg-info/requires.txt
+grabbygram.egg-info/top_level.txt
