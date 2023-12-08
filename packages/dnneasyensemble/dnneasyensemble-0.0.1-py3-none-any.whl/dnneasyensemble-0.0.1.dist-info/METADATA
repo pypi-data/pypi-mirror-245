@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dnneasyensemble
+Version: 0.0.1
+Summary: a package for easyensemble whose basemodel is dnn
+Author: VCz
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.18.0)
+Requires-Dist: scikit-learn (>=0.22.0)
+Requires-Dist: tensorflow (>=2.0.0)
+Requires-Dist: imbalanced-learn (>=0.10.1)
+Requires-Dist: imblearn
+
+UNKNOWN
+
