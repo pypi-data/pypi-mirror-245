@@ -1,0 +1,44 @@
+[project]
+name = "slim-helper"
+version = "2.0.1"
+description = ""
+authors = [
+    { name = "", email = "" },
+]
+dependencies = []
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+postgres = [
+    "psycopg>=3.1.14",
+]
+oracle = [
+    "oracledb>=1.4.2",
+]
+all = [
+    "slim-helper[postgres,oracle]",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pylance>=0.8.8",
+    "yapf>=0.40.2",
+    "psycopg>=3.1.13",
+    "oracledb>=1.4.2",
+    "jedi>=0.19.1",
+]
+
+[tool.pdm.build]
+excludes = [
+    "tests",
+]
