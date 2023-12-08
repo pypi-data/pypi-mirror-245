@@ -1,0 +1,9 @@
+README.md
+setup.py
+docx2html/__init__.py
+docx2html/convert.py
+html4docx.egg-info/PKG-INFO
+html4docx.egg-info/SOURCES.txt
+html4docx.egg-info/dependency_links.txt
+html4docx.egg-info/requires.txt
+html4docx.egg-info/top_level.txt
