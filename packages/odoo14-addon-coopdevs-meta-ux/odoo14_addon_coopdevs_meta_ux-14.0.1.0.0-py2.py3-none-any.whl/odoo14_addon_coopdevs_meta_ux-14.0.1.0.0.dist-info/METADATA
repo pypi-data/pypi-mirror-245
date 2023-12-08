@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: odoo14-addon-coopdevs-meta-ux
+Version: 14.0.1.0.0
+Summary: Module to automate the installation of a set of modules
+Home-page: https://www.coopdevs.org
+Author: Coopdevs
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Python: >=3.6
+Requires-Dist: odoo14-addon-base-archive-date
+Requires-Dist: odoo14-addon-base-custom-filter
+Requires-Dist: odoo14-addon-base-export-manager
+Requires-Dist: odoo14-addon-base-optional-quick-create
+Requires-Dist: odoo14-addon-base-user-locale
+Requires-Dist: odoo14-addon-date-range
+Requires-Dist: odoo14-addon-date-range-account
+Requires-Dist: odoo14-addon-filter-multi-user
+Requires-Dist: odoo14-addon-mass-editing
+Requires-Dist: odoo14-addon-report-qweb-element-page-visibility
+Requires-Dist: odoo14-addon-sequence-reset-period
+Requires-Dist: odoo14-addon-web-access-rule-buttons
+Requires-Dist: odoo14-addon-web-advanced-search
+Requires-Dist: odoo14-addon-web-group-expand
+Requires-Dist: odoo14-addon-web-refresher
+Requires-Dist: odoo14-addon-web-remember-tree-column-width
+Requires-Dist: odoo14-addon-web-search-with-and
+Requires-Dist: odoo14-addon-web-widget-datepicker-fulloptions
+Requires-Dist: odoo14-addon-web-widget-numeric-step
+Requires-Dist: odoo14-addon-web-widget-open-tab
+Requires-Dist: odoo <14.1dev,>=14.0a
+
+UNKNOWN
+
+
