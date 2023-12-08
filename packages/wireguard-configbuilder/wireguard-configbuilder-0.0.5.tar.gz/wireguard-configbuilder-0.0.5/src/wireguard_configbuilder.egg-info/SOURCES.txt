@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/wgconfigbuilder/__init__.py
+src/wgconfigbuilder/app.py
+src/wgconfigbuilder/lib/build.py
+src/wgconfigbuilder/lib/util.py
+src/wgconfigbuilder/model/Peer.py
+src/wgconfigbuilder/model/Server.py
+src/wgconfigbuilder/to-delete/ssetup.py
+src/wireguard_configbuilder.egg-info/PKG-INFO
+src/wireguard_configbuilder.egg-info/SOURCES.txt
+src/wireguard_configbuilder.egg-info/dependency_links.txt
+src/wireguard_configbuilder.egg-info/entry_points.txt
+src/wireguard_configbuilder.egg-info/requires.txt
+src/wireguard_configbuilder.egg-info/top_level.txt

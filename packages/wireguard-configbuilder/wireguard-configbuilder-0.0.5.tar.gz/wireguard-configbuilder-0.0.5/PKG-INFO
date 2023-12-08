@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: wireguard-configbuilder
+Version: 0.0.5
+Summary: Generates server and client .conf files from yaml including key auto-generation.
+Author-email: Foo JH <foojihaw@hotmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+Requires-Dist: pydantic
+
+# wg-configbuilder
+Generates Wireguard server and client config from yaml
+
+# Requirements
+- Python 3.9
+- Rust (builds dependencies)
+- Wireguard (specifically wg binary)
+
+# Install
+```
+git clone https://github.com/jhfoo/wg-configbuilder.git
+./bin/install
+```
+
+# Usage
+```
+./bin/wg-configbuilder build <yaml file>
+# drops .conf files in data/
+# updates yaml file with keys
+```
+
