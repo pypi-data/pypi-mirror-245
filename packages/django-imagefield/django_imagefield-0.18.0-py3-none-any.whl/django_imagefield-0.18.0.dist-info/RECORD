@@ -1,0 +1,17 @@
+imagefield/__init__.py,sha256=0EHw4xygmgkGSyfwNfEoMlQyN0uHxjHtlSFF79s6120,23
+imagefield/fields.py,sha256=F1Xctku59P8DNDNnseKCv7DdJY04HUrZUyiEMR1pm4U,17153
+imagefield/processing.py,sha256=AsYBIWH52SfciE1wisHq5Vzso_6pLcAp5l8oOou2QD0,5244
+imagefield/webp.py,sha256=10asSM3uW6Jp6sOy7UWAft-2cMhKzV3OhNlXa0sgmSg,461
+imagefield/websafe.py,sha256=_Vs57z-MJq-GnAviWkjQ3duO4xT8kOu2TgVDs7pGpIo,787
+imagefield/widgets.py,sha256=smpYb2esQbSNAqDOmhXDmXjpjZNpk0Qlq3d1psEuUI8,3246
+imagefield/locale/de/LC_MESSAGES/django.mo,sha256=DxLhgdwbR235hCaHNieDPQRaBJOqjjA_bjszrGHxXSI,774
+imagefield/locale/de/LC_MESSAGES/django.po,sha256=nnqx_V-AUHvSdUBSG5pELAY-PnmxAgZRyEQXLtSkX8U,1105
+imagefield/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imagefield/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imagefield/management/commands/process_imagefields.py,sha256=qvypCsfDVqnx40Z9DaE441CyLfW09Q4achuppT_wIiQ,4369
+imagefield/static/imagefield/ppoi.css,sha256=DZd8F01UBGkH6VbCUmymkHMcwrUNIlp08EYHjlBAQiI,549
+imagefield/static/imagefield/ppoi.js,sha256=x_KPM2qGaN0MKhWGt95KQYbkse-ilCEiHSQDEaZh1LY,1784
+django_imagefield-0.18.0.dist-info/METADATA,sha256=F3fTUDzG3ils-aRpMoiFs0W6WaUuAzpBH5Qhd6-wAJY,9811
+django_imagefield-0.18.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+django_imagefield-0.18.0.dist-info/licenses/LICENSE,sha256=FSwkgNk6-4kfC7UYFMgAEA45Q2-4aI3Vt3QP2LRrkjE,1548
+django_imagefield-0.18.0.dist-info/RECORD,,
