@@ -1,0 +1,17 @@
+pandaq/__init__.py,sha256=lp_iveDvuAuzkVOf1bLPgXeN268NB0Sywl001j1tqf4,44
+pandaq/config.py,sha256=tbNlTiz3x0lsJep2lAAAxjFV2j-Izrn4jAHeERTRVB8,181
+pandaq/patch.py,sha256=NdKiGHLKgERrWeMETrbRy150SPV1LdRu87joCAj7udM,509
+pandaq/query.py,sha256=F7KaxMC9vrNmmbfjtNiMzUUDI4dPRH1Bnifesc_krT0,3145
+pandaq/utils.py,sha256=rWsCzg9_BWd5R6caAJFngg8mDaMBp_nOy5nQGpG8v3k,1632
+pandaq/vtypes/__init__.py,sha256=ZapfzX4XatDAlXj-udSK1gIc5YxMObqHZddBxNqB5No,274
+pandaq/vtypes/base.py,sha256=5AnhgM4IxpDaI1a474d2lbZSc0aawQeVl0Q6ivC3vLM,825
+pandaq/vtypes/boolean.py,sha256=uuuPaeEABwDwTZIF5nI-Cy5UglVlX_DAn6rkFt7LeAM,173
+pandaq/vtypes/datetimes.py,sha256=nYNenezKGA1v2uVv1QbK1hZpb6Lv7uxh3DH9pd7xBgY,182
+pandaq/vtypes/ntuple.py,sha256=Et1RcxKW21p4B-xX8FzX1pNOAQ97NLOBrzf1Fu5nss0,728
+pandaq/vtypes/number.py,sha256=Sa86nOnsQK7yrTM5n0JdmTqTBhioCi5NCB1KeCMUMTY,134
+pandaq/vtypes/string.py,sha256=UcVxaBEp91XVtebzOteWXtmQGmq0htPSin2rB5s5eLk,1910
+pandaq-0.1.0.dist-info/LICENSE,sha256=X5J_nUi7A4afcguJB0KVRMcSzDc4Igwh2U-rASGjEGo,1067
+pandaq-0.1.0.dist-info/METADATA,sha256=bK1YCfbADV21HL8bPkc5wQaVN5TcWBASiNaMoYKFlGc,7145
+pandaq-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pandaq-0.1.0.dist-info/top_level.txt,sha256=6_LkA-YSWGpToIMDU04jRq9QjxP_qmgYo5iF0UmChII,7
+pandaq-0.1.0.dist-info/RECORD,,
