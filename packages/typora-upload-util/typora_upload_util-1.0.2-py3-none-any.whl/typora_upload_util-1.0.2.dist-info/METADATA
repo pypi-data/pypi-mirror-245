@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: typora-upload-util
+Version: 1.0.2
+Summary: Typora Git Uploader Plugins
+Home-page: 
+Download-URL: 
+Author: Revi1337
+Author-email: david122123@gmail.com
+Keywords: TYPORA UPLOADER,typora uploader,TYPORA GIT UPLOADER,typora git uploader,GIT UPLOADER,git uploader
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: requests
+
