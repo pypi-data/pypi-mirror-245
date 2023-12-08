@@ -1,0 +1,2 @@
+[xblock.v1]
+jupyter = jupyterxblock.xblock:JupyterXBlock
