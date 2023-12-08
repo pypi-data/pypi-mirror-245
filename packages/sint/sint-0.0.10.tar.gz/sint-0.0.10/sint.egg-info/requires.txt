@@ -1,0 +1,7 @@
+ptyp
+atyp
+ltyp
+chck
+bflag
+
+[dev]
