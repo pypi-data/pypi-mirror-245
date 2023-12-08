@@ -1,0 +1,2 @@
+[console_scripts]
+tsession = pm.tsession.__main__:main
