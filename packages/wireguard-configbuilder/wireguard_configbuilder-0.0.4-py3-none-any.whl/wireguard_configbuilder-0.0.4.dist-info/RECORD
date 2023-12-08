@@ -1,0 +1,8 @@
+configbuilder/__init__.py,sha256=MJ46L_zSiFpUUVqmDlB3De74YdNIxEUzLWk93b8ll9Y,25
+configbuilder/app.py,sha256=UI2u9IhQ0l3ymiB1aBWT9maVUEC9gM4B0ifdm5RjoH0,32
+wireguard_configbuilder-0.0.4.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wireguard_configbuilder-0.0.4.dist-info/METADATA,sha256=relMQw_awvCTMuwLp5TciqyQTuPY3P6u_1lHPcqEwkc,376
+wireguard_configbuilder-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+wireguard_configbuilder-0.0.4.dist-info/entry_points.txt,sha256=4tm_O9aEoL1ic4CQ9XObVrRRCxn9b-Om0zJgAuSqsOE,51
+wireguard_configbuilder-0.0.4.dist-info/top_level.txt,sha256=TzTZLCOcrJOKUz8RuqrxL2KPUvi3378sheov5SLB1BM,14
+wireguard_configbuilder-0.0.4.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+wgbuild = configbuilder.app:main
