@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=mi6PC318QDH6Mays3pLUBYj6mNbOHrPGf-AyrUl8NIA,5774
+gitlab_deployment_changelog/__version__.py,sha256=Wzf5T3NBDfhQoTnhnRNHSlAsE0XMqbclXG-M81Vas70,22
+gitlab_deployment_changelog/gdc.py,sha256=bB3HKC5AT7zru8Q5e-RSr1koyOavSrkCZM1T-8MhaHM,2066
+gitlab_deployment_changelog/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitlab_deployment_changelog/utils/gitlab_connector.py,sha256=hvtNSVQ8TGCjE0zl1UIe6GsmHbH8i9O5EI7w9m0Fw3Q,4113
+gitlab_deployment_changelog/utils/slack.py,sha256=cBy_siNC7-btnrDRtsw7bilZCAW8OyCHCn46yL9_KiE,818
+gitlab_deployment_changelog-0.1.4.dist-info/entry_points.txt,sha256=3gQbpe-2u3dmDLNuFnd-NmvMEUr64jG9l76S8zxDZaU,60
+gitlab_deployment_changelog-0.1.4.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+gitlab_deployment_changelog-0.1.4.dist-info/METADATA,sha256=s26ZGIPJzGqPO4CEROPv7XZQ-_im09sRJYH8uGrQ2v4,2433
+gitlab_deployment_changelog-0.1.4.dist-info/RECORD,,
