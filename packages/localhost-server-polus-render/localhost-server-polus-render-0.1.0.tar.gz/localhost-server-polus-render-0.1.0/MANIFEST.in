@@ -1,0 +1,17 @@
+include polus/apps/updog-render/*
+include polus/apps/updog-render/updog/*
+include polus/apps/updog-render/updog/static/*
+include polus/apps/updog-render/updog/templates/*
+include polus/apps/updog-render/updog/utils/*
+include polus/apps/updog-render/updog/static/css/*
+include polus/apps/updog-render/updog/static/fonts/poppins/*
+include polus/apps/updog-render/updog/static/images/*
+include polus/apps/updog-render/updog/static/js/*
+include polus/apps/updog-render/updog/static/vendor/datatable/*
+include polus/apps/updog-render/updog/static/vendor/datatable/DataTables-1.10.18/images/*
+include polus/apps/updog-render/updog/static/vendor/fontawesome-5.1/*
+include polus/apps/updog-render/updog/static/vendor/fontawesome-5.1/css/*
+include polus/apps/updog-render/updog/static/vendor/fontawesome-5.1/webfonts/*
+include polus/apps/render-ui/*
+exclude polus/apps/http-server/*
+exclude polus/polus-render-wrapper.py

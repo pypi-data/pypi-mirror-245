@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["polus"]
+namespaces = true
+
+[project]
+name = "localhost-server-polus-render"
+version = "0.1.0"
+authors = [
+  { name="Jeff Chen", email="Jeff.Chen@axleinfo.com" },
+]
+description = "Displays Polus Render dashboard in JupyterLabs."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "colorama==0.4.6",
+  "flask==3.0.0",
+  "Flask-HTTPAuth==4.8.0",
+  "werkzeug==3.0.0",
+  "pyopenssl==23.2.0",
+  "flask_cors==3.0.10"
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/jcaxle/polus-render"
+
+[tool.setuptools]
+include-package-data = true
