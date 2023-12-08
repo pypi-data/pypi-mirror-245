@@ -1,0 +1,8 @@
+setuptools
+numpy
+scipy
+srxraylib>=1.0.45
+syned
+wofry
+wofrysrw
+wofryimpl
