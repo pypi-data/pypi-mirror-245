@@ -1,0 +1,8 @@
+setup.py
+dnneasyensemble/__init__.py
+dnneasyensemble/dnneasyensemble.py
+dnneasyensemble.egg-info/PKG-INFO
+dnneasyensemble.egg-info/SOURCES.txt
+dnneasyensemble.egg-info/dependency_links.txt
+dnneasyensemble.egg-info/requires.txt
+dnneasyensemble.egg-info/top_level.txt
