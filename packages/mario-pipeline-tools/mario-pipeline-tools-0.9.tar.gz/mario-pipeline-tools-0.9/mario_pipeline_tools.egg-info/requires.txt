@@ -1,0 +1,6 @@
+pandas
+tableauhyperapi
+pantab
+tableau-builder==0.18
+pypika
+sqlalchemy
