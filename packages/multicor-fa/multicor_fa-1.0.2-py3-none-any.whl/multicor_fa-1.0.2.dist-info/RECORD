@@ -1,0 +1,10 @@
+multicor_fa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multicor_fa/_em.py,sha256=8uUjY-OcXr-wI5Rm9aLuUbCXsGxPJlCM9Vj7DAoynNs,9039
+multicor_fa/gsea.py,sha256=cP8QsLw_AXDycbYJl3pZOBRonEI1NzhZWgVhJWvfFnY,6448
+multicor_fa/mcfa_model.py,sha256=c-AuDBfy6zTWcQGcZMmpu_dSBqNPhKwXewslp6RGHhg,26409
+multicor_fa/simulate_model_gaussian.py,sha256=uvC-22kTw_0vfWGIU-aVN_msMVl0suDI3Xh63sBKXtU,2611
+multicor_fa-1.0.2.dist-info/LICENSE,sha256=T3wnJF825k-BfjCXi1XolWiFRbxZQBHBqGmP15JRibo,1461
+multicor_fa-1.0.2.dist-info/METADATA,sha256=xfQEn52IglKZCCIGM7s8bW--wSow3Ejc0wdo8gYwdmE,9368
+multicor_fa-1.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+multicor_fa-1.0.2.dist-info/top_level.txt,sha256=_5DFzGu224b2g4yfTD3yP-M8kApFxTSJwupcu2z6qxQ,12
+multicor_fa-1.0.2.dist-info/RECORD,,
