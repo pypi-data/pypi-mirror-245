@@ -1,0 +1,9 @@
+README.md
+setup.py
+ifrc_go_py/__init__.py
+ifrc_go_py/module.py
+ifrc_go_py.egg-info/PKG-INFO
+ifrc_go_py.egg-info/SOURCES.txt
+ifrc_go_py.egg-info/dependency_links.txt
+ifrc_go_py.egg-info/requires.txt
+ifrc_go_py.egg-info/top_level.txt
