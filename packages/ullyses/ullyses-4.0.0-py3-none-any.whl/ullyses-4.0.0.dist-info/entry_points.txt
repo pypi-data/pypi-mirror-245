@@ -1,0 +1,2 @@
+[console_scripts]
+coadd = ullyses.ullyses_coadd_abut_wrapper:coadd_parser
