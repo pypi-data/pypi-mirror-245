@@ -1,0 +1,4 @@
+[console_scripts]
+app-thehive-count-alerts=tenzir.apps.thehive:count_alerts
+app-thehive-run=tenzir.apps.thehive:run
+
