@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: logicplum_ai
+Version: 1.0.2
+Requires-Dist: requests
+Requires-Dist: pandas
