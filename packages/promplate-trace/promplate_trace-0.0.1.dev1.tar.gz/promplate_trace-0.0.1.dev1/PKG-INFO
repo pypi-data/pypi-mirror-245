@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: promplate-trace
+Version: 0.0.1.dev1
+Summary: Observability for Promplate
+Author-Email: Muspi Merol <me@promplate.dev>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: promplate==0.3.0a5
+Requires-Dist: pydantic-settings>=2
+Requires-Dist: langsmith>=0.0.69; extra == "langsmith"
+Provides-Extra: langsmith
+Description-Content-Type: text/markdown
+
+# promplate-trace
+
+## Installation
+
+```shell
+pip install promplate-trace
+```
