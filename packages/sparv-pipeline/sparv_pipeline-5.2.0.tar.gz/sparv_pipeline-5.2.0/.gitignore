@@ -1,0 +1,36 @@
+# Sparv's data directory
+data
+
+# Snakemake
+.snakemake
+
+# Example corpora zip
+tests/example_corpora.zip
+
+# Editors
+.idea/
+.vscode
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Unit test / coverage reports
+.pytest_cache/
+logs/
