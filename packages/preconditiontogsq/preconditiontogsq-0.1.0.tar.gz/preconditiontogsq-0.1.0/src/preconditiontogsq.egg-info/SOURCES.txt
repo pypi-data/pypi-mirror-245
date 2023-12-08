@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/preconditiontogsq/__init__.py
+src/preconditiontogsq/preconditiontogsq.py
+src/preconditiontogsq.egg-info/PKG-INFO
+src/preconditiontogsq.egg-info/SOURCES.txt
+src/preconditiontogsq.egg-info/dependency_links.txt
+src/preconditiontogsq.egg-info/top_level.txt
