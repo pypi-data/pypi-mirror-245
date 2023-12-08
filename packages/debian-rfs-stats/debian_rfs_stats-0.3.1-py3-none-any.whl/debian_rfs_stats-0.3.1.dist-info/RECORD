@@ -1,0 +1,12 @@
+debianrfs/__init__.py,sha256=d2xUUp7ZQaYWGE5KEijlXeuM3TcZdszITO_DZmaevKg,1218
+debianrfs/bug.py,sha256=l06ZEdhathQpvyw_aWzsTtSeFw-ufKcurUr6ICizpHA,3312
+debianrfs/cache.py,sha256=4WVDiR2Ilfq6M-GLKK-fzKhemFW5vzaBOpmN5axm-yQ,2705
+debianrfs/entry.py,sha256=26fVmCZ-03AGj-SWypNu8rmP_OvZcUPGPJNRQNcyfyE,1666
+debianrfs/main.py,sha256=FNL8pp2NMyhe8U1kDQlKyi06CfyziKUutKbx3t2h3GE,3969
+debianrfs/math.py,sha256=Rwt9c2lmcLc5OOcKw37fF1xypYI3JHGsSh2nr-F2xms,2986
+debianrfs/uploads.py,sha256=pHetP87xA9Q66ErU0YyddTPjOri7TJ7X5iwUNqCIPSs,4190
+debian_rfs_stats-0.3.1.dist-info/LICENSE,sha256=aOXibfMJXp4tZn7N9WUUpE_hyLp7sJwVYOAYqPhBzhU,1086
+debian_rfs_stats-0.3.1.dist-info/METADATA,sha256=vW-ZLhl5u-_HiSxs0VAIK6Y9zLNC7ypy2aevjJT7BKk,2314
+debian_rfs_stats-0.3.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+debian_rfs_stats-0.3.1.dist-info/entry_points.txt,sha256=sCSvoceM0PovGlgxkzc8Gz3qwIS3I9fERdK2Yhrfnnw,56
+debian_rfs_stats-0.3.1.dist-info/RECORD,,
