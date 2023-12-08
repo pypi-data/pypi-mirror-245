@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: decision_trees_rap
+Version: 0.1.0
+Summary: This package implements a decision tree classifier.
+Author-Email: Ramon Perez <ramonpzg@protonmail.com>
+License: MIT
+Project-URL: Source, https://github.com/ramonpzg/architecting_tools/second_package
+Requires-Python: >=3.10
+Requires-Dist: numpy>=1.26.2
+Description-Content-Type: text/markdown
+
+# decision_tree
