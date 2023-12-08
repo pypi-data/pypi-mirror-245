@@ -1,0 +1,13 @@
+airflow/providers/github/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/github/__init__.py,sha256=KZtIRDvj2L6gdzVRAtK60XZcRZD8GtDoH31k3C3ozJo,1581
+airflow/providers/github/get_provider_info.py,sha256=v728xwpleRIv60TekL6iXhBpaclZizu_Tcfnl3xhbX4,2517
+airflow/providers/github/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/github/hooks/github.py,sha256=cpVSLRpEcwW-UWsPOfBSgmtVk7mNkzA11JaekO5ccPk,3334
+airflow/providers/github/operators/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/github/operators/github.py,sha256=E_f1KQvuJAym3dPiE6Nyij10rYGFzDD56gH8H7LPZBs,3007
+airflow/providers/github/sensors/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/github/sensors/github.py,sha256=1Mwyi_ossNR9r9UsYs4oEHidF6xY_uAaIC-Bf1pOhvo,5252
+apache_airflow_providers_github-2.5.0rc1.dist-info/entry_points.txt,sha256=dwUyN-wMk5Ua221CPhBL3Y0zjtYP-2KrLNqoApzUWwA,102
+apache_airflow_providers_github-2.5.0rc1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_github-2.5.0rc1.dist-info/METADATA,sha256=TOu_hmx1DLbulvPVdHUddi5chBJQ-C8YS8YGpe_FfVs,4687
+apache_airflow_providers_github-2.5.0rc1.dist-info/RECORD,,
