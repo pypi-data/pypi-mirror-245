@@ -1,0 +1,5 @@
+snakemake_storage_plugin_gcs/__init__.py,sha256=dH7mclZ3Ye1lAWp5nUyJhmoMIuSoxosUOLL-IjDnH4Y,17088
+snakemake_storage_plugin_gcs-0.1.0.dist-info/LICENSE,sha256=AlyLB1m_z0CENCx1ob0PedLTTohtH2VLZhs2kfygrfc,1108
+snakemake_storage_plugin_gcs-0.1.0.dist-info/METADATA,sha256=GAaI8PaBO1fnVTVMdTCpvrN2pAsW3CtNEUxzQCCGNvo,1312
+snakemake_storage_plugin_gcs-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+snakemake_storage_plugin_gcs-0.1.0.dist-info/RECORD,,
