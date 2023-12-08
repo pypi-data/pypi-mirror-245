@@ -1,0 +1,6 @@
+setup.py
+src/upload_eggest/__init__.py
+src/upload_eggest.egg-info/PKG-INFO
+src/upload_eggest.egg-info/SOURCES.txt
+src/upload_eggest.egg-info/dependency_links.txt
+src/upload_eggest.egg-info/top_level.txt
