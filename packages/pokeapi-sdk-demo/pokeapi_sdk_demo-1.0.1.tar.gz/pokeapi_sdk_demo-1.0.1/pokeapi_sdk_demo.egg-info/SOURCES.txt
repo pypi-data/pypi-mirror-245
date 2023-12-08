@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+pokeapi_sdk/__init__.py
+pokeapi_sdk/nature.py
+pokeapi_sdk/pokemon.py
+pokeapi_sdk/sdk.py
+pokeapi_sdk/stat.py
+pokeapi_sdk_demo.egg-info/PKG-INFO
+pokeapi_sdk_demo.egg-info/SOURCES.txt
+pokeapi_sdk_demo.egg-info/dependency_links.txt
+pokeapi_sdk_demo.egg-info/requires.txt
+pokeapi_sdk_demo.egg-info/top_level.txt
+tests/__init__.py
+tests/nature_test.py
+tests/pokemon_test.py
+tests/stat_test.py
