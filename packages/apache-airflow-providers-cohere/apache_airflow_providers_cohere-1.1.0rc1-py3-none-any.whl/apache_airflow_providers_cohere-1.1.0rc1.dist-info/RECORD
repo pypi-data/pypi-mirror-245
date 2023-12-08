@@ -1,0 +1,11 @@
+airflow/providers/cohere/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/cohere/__init__.py,sha256=rNi5gmAZhBsiRKo5e0oBdwafXtGxy82LmN4aDh1hRu0,1581
+airflow/providers/cohere/get_provider_info.py,sha256=o34LMUch2TDyFY2tlDAyxT26JOYh0tu1j_msJ-seSiA,2223
+airflow/providers/cohere/hooks/__init__.py,sha256=h9YaOHsHa6a7IrJjzUqViwwFxsB0g3c50MYN9re6-dM,1053
+airflow/providers/cohere/hooks/cohere.py,sha256=gvoQm6cFOs_xtwd-JVnkSxLdU0acPGXlSLpmpap2r1k,2697
+airflow/providers/cohere/operators/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/cohere/operators/embedding.py,sha256=fcwW502ZaNScMVCBNW3IW5K0Fvrp0xyFEzDRtoG3tMs,2640
+apache_airflow_providers_cohere-1.1.0rc1.dist-info/entry_points.txt,sha256=Y7mHRxJxwqdi8_7WEQUbLzm20p71zbyoc4vNGztm550,102
+apache_airflow_providers_cohere-1.1.0rc1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_cohere-1.1.0rc1.dist-info/METADATA,sha256=Eh5x_f3gHtwbKiQf4ipUVOQp4wixgmXM4I2h65KAr_A,4690
+apache_airflow_providers_cohere-1.1.0rc1.dist-info/RECORD,,
