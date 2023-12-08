@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+django_decorators_inkar.egg-info/PKG-INFO
+django_decorators_inkar.egg-info/SOURCES.txt
+django_decorators_inkar.egg-info/dependency_links.txt
+django_decorators_inkar.egg-info/requires.txt
+django_decorators_inkar.egg-info/top_level.txt
