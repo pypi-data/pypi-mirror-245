@@ -1,0 +1,12 @@
+airflow/providers/yandex/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/yandex/__init__.py,sha256=Xpiph5bpcodYHA6EXRMqBOWVrZWZoo1_vxtoXLBqBrI,1581
+airflow/providers/yandex/get_provider_info.py,sha256=VG3EkQTNH0UM3Ff0BneBb936pElNuzeAlqGxsgl75Uk,3743
+airflow/providers/yandex/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/yandex/hooks/yandex.py,sha256=d27v9qnjbfnL4FME2FDznW8HbrDxHITGkN_4crlsRSg,8414
+airflow/providers/yandex/hooks/yandexcloud_dataproc.py,sha256=1UdqxDMI7uL6fNkG6oU6l2tFITF_nHXiV1VUgRqF7KY,1379
+airflow/providers/yandex/operators/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/yandex/operators/yandexcloud_dataproc.py,sha256=F7CHR-_BFQ4DVL-jpO7LxJs5qCUQHJJ4Q26GXiHPXP8,25763
+apache_airflow_providers_yandex-3.7.0rc1.dist-info/entry_points.txt,sha256=ApXKRkvdgU2QNSQovjewC0b-LptwfBGBnJB3LTgBNx8,102
+apache_airflow_providers_yandex-3.7.0rc1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_yandex-3.7.0rc1.dist-info/METADATA,sha256=hn5T6Z7TK2RqqEBp7FQ0bKxYC5fAcBIjSavKe9ZUp58,4721
+apache_airflow_providers_yandex-3.7.0rc1.dist-info/RECORD,,
