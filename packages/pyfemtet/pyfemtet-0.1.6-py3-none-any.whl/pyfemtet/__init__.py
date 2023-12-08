@@ -1,0 +1,1 @@
+__version__ = '0.1.6'  # will be replace by poetry dynamic versioning
