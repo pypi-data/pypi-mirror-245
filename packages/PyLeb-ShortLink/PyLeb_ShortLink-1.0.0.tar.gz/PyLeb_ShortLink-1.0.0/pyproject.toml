@@ -1,0 +1,29 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyLeb_ShortLink"
+version = "1.0.0"
+description = "a library to short links using tinyurl"
+readme = "README.md"
+authors = [{ name = "mesteranas", email = "anasformohammed@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["links", "short links", "link shortner"]
+dependencies = [
+    "requests"
+]
+requires-python = ">=3.9"
+
+
+[project.urls]
+Homepage = "https://github.com/mesteranas/PyLeb_ShortLink"
+
+[project.scripts]
+shortlink= "shortlink.__main__:main"

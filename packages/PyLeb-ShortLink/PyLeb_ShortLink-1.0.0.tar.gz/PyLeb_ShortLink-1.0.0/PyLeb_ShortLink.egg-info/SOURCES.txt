@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+PyLeb_ShortLink.egg-info/PKG-INFO
+PyLeb_ShortLink.egg-info/SOURCES.txt
+PyLeb_ShortLink.egg-info/dependency_links.txt
+PyLeb_ShortLink.egg-info/entry_points.txt
+PyLeb_ShortLink.egg-info/requires.txt
+PyLeb_ShortLink.egg-info/top_level.txt
+shortlink/__init__.py
+shortlink/__main__.py
