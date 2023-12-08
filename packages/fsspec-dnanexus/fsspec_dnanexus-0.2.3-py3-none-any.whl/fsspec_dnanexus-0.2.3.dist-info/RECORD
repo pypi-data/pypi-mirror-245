@@ -1,0 +1,14 @@
+fsspec_dnanexus/__init__.py,sha256=MjYEkNdRp_WhZ3oV-HgRUhfu6QyQNH1ZtVS959YZfzU,1960
+fsspec_dnanexus/core.py,sha256=_WNFM6W1W4avNEfWw_98Ugluaim7n24MHk5dZOoOuMg,31105
+fsspec_dnanexus/utils.py,sha256=byZVNTAGQTw3pJNU8RtJoQYuX1iYSt1m7j29NgpFD5U,535
+fsspec_dnanexus/factories/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fsspec_dnanexus/factories/dxdispatchers.py,sha256=XBWUKiK33Da3Bv6WRwhrQBBdadXaVYP1GKtBXc4Zt60,9866
+fsspec_dnanexus/factories/dxfactory.py,sha256=vnE3FUQqNXMBaGlmi0btkBycNQ4O_6sjuuzykxzQf1U,1980
+fsspec_dnanexus/factories/dxpandas_on_python.py,sha256=4oJo3NxGmCVVrXVSVSRTmjA_fzpBG06IPb9nYGTgoAk,347
+fsspec_dnanexus/factories/dxpandas_on_ray.py,sha256=v6yr6zYGny0C4pg8x0yxMyqM9CVbDIEhEmQ6r2XwEPQ,11113
+fsspec_dnanexus-0.2.3.dist-info/LICENSE.txt,sha256=xw5rRrmGcck7yjci2gFi_mdLQMqoJ4z_wj9V-v1f8kc,1064
+fsspec_dnanexus-0.2.3.dist-info/METADATA,sha256=b7qKZickOVKkR2AX4ihijP4NphgI06uaihqAuiIwgZo,7732
+fsspec_dnanexus-0.2.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fsspec_dnanexus-0.2.3.dist-info/entry_points.txt,sha256=zedbecJMg3jDda3NJosZuAeXyQcyvjjtxoPOUzaxvpA,55
+fsspec_dnanexus-0.2.3.dist-info/top_level.txt,sha256=fhiQuqx3PFbiSpzgyHwTk5k8oC2um96uzf3YTKNwpIE,16
+fsspec_dnanexus-0.2.3.dist-info/RECORD,,
