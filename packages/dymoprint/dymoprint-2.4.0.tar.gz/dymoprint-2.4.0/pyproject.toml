@@ -1,0 +1,124 @@
+[build-system]
+requires = [
+    "hatchling >=1.11.1,<2.0.0",
+    "hatch-vcs >=0.3.0,<0.4",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "dymoprint"
+description = "Linux Software to print with LabelManager PnP from Dymo"
+readme = "README.md"
+url = "https://github.com/computerlyrik/dymoprint"
+authors = [{name = "Sebastian J. Bronner", email = "waschtl@sbronner.com"}]
+maintainers = [{name = "Ben Mares", email = "services-dymoprint@tensorial.com"}]
+license = "Apache-2.0"
+license-file = "LICENSE"
+dependencies = [
+    "importlib-metadata; python_version<'3.8'",
+    "appdirs",
+    "Pillow>=8.1.2,<11",
+    "PyQRCode>=1.2.1,<2",
+    "python-barcode>=0.13.1,<1",
+    "pyusb",
+    "PyQt6",
+]
+classifiers = [
+    "Operating System :: POSIX :: Linux",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Printing"
+]
+dynamic = ["version"]
+requires-python = ">=3.8,<4"
+
+[project.urls]
+Homepage = "https://github.com/computerlyrik/dymoprint"
+source = "https://github.com/computerlyrik/dymoprint"
+tracker = "https://github.com/computerlyrik/dymoprint/issues"
+
+[project.scripts]
+dymoprint = "dymoprint.command_line:main"
+dymoprint_gui = "dymoprint.gui:main"
+
+[tool.hatch.version]
+source = "vcs"
+# See configuration details in https://github.com/pypa/setuptools_scm
+raw-options = {version_scheme = "no-guess-dev"}
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/dymoprint/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dymoprint"]
+
+[tool.isort]
+src_paths = ["src"]
+profile = "black"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist =
+  py38
+  py39
+  py310
+  py311
+  py312
+
+[gh-actions]
+python =
+    3.8: py38
+    3.9: py39
+    3.10: py310
+    3.11: py311
+    3.12: py312
+
+[testenv]
+commands =
+  pip check
+  pip freeze
+  dymoprint --version
+  dymoprint --help
+  dymoprint --preview "single line"
+  dymoprint --preview multiple lines
+  dymoprint --preview -qr "qr text"
+  dymoprint --preview -c code128 "bc txt"
+  dymoprint --preview -qr "qr text" qr caption
+  dymoprint --preview -c code128 "bc txt" barcode caption
+
+[testenv:{clean,build}]
+description =
+    Build (or clean) the package in isolation according to instructions in:
+    https://setuptools.readthedocs.io/en/latest/build_meta.html#how-to-use-it
+    https://github.com/pypa/pep517/issues/91
+    https://github.com/pypa/build
+# NOTE: build is still experimental, please refer to the links for updates/issues
+skip_install = True
+changedir = {toxinidir}
+deps =
+    build: build[virtualenv]
+commands =
+    clean: python -c 'from shutil import rmtree; rmtree("build", True); rmtree("dist", True)'
+    build: python -m build .
+
+[testenv:publish]
+description =
+    Publish the package you have been developing to a package index server.
+    By default, it uses testpypi. If you really want to publish your package
+    to be publicly accessible in PyPI, use the `-- --repository pypi` option.
+skip_install = True
+changedir = {toxinidir}
+passenv =
+    TWINE_USERNAME
+    TWINE_PASSWORD
+    TWINE_REPOSITORY
+deps = twine
+commands =
+    python -m twine check dist/*
+    python -m twine upload {posargs:--repository testpypi} dist/*
+"""
