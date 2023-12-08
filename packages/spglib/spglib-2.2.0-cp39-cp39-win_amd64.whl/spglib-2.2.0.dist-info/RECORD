@@ -1,0 +1,10 @@
+spglib/__init__.py,sha256=Mr6zXELnkSXnWHGiY9nOQuAbbwTLnEh-J-Byoc3anK0,2529
+spglib/_spglib.cp39-win_amd64.pyd,sha256=r32nwvenwxEkaeoUdBTTfdFaaQCn4POmjEoAy_FsMSE,27136
+spglib/spglib.h,sha256=gCCRjsJIXaEnXKgN_Km_j3P_zmx-aRD9vGDYE-vWrdA,25964
+spglib/spglib.py,sha256=cyBJqtt-015p2zTpi1RGTYvT-8qyAJPnFQUw2xOong0,55840
+spglib/symspg.dll,sha256=JkOFGcT2OdvQcC9qdS3CXg39ONmIWaGR8Ie1Wu6WoMQ,1854976
+spglib-2.2.0.dist-info/METADATA,sha256=V0Wrf84GV6tunpBvjXlVJak-pLn2B_v6YP1fz2saUuE,3301
+spglib-2.2.0.dist-info/WHEEL,sha256=8M3tCeSbuIPqzNDALzP1Gqz5ajcvQ7Kh5mc0IA65Zn4,103
+spglib-2.2.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spglib-2.2.0.dist-info/licenses/COPYING,sha256=yvcCcQ1n7DZUQSeetZn3Z5WQzajw1zUuvdRQE_6r6aQ,1495
+spglib-2.2.0.dist-info/RECORD,,
