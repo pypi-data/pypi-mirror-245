@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+chrome_fingerprints/__init__.py
+chrome_fingerprints/fingerprint_typing.py
+chrome_fingerprints/fingerprints.json.xz
+chrome_fingerprints/fingerprints.py
+chrome_fingerprints/vars.py
+chrome_fingerprints.egg-info/PKG-INFO
+chrome_fingerprints.egg-info/SOURCES.txt
+chrome_fingerprints.egg-info/dependency_links.txt
+chrome_fingerprints.egg-info/not-zip-safe
+chrome_fingerprints.egg-info/requires.txt
+chrome_fingerprints.egg-info/top_level.txt
+tests/test_fingerprints.py

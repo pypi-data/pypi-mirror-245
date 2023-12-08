@@ -1,0 +1,8 @@
+orjson
+dacite
+
+[testing]
+pytest
+mypy
+flake8
+tox
