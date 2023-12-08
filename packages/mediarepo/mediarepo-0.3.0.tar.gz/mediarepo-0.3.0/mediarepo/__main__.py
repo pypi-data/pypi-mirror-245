@@ -1,0 +1,218 @@
+import importlib.metadata
+import json
+import logging
+import os
+import shutil
+import subprocess
+import time
+from datetime import datetime
+from pathlib import Path
+
+import typer
+from typing_extensions import Annotated, List, Optional
+
+dist = importlib.metadata.distribution(__package__)
+
+app = typer.Typer(
+    help=f"{dist.metadata['summary']} (Version {dist.version})", no_args_is_help=True
+)
+
+log_level = logging.WARNING
+log_format = "%(asctime)s %(levelname)s: %(message)s"
+
+logging.basicConfig(level=log_level, format=log_format)
+
+
+@app.command()
+def info():
+    """
+    Provides more information about media repository
+    """
+
+
+@app.command("import", no_args_is_help=True)
+def import_media(
+    # Arguments
+    import_path: Annotated[
+        List[Path], typer.Argument(exists=True, dir_okay=True, readable=True)
+    ],
+    # Options
+    verbose: Annotated[
+        Optional[int],
+        typer.Option("--verbose", "-v", help="Increase command verbosity", count=True),
+    ] = 0,
+    recurse: Annotated[
+        Optional[bool],
+        typer.Option(
+            "--recurse",
+            "-r",
+            help="Import media files recursively",
+        ),
+    ] = False,
+    symlinks: Annotated[
+        Optional[bool],
+        typer.Option(
+            "--symlinks",
+            "-s",
+            help="Do not copy media files and create symlinks instead",
+        ),
+    ] = False,
+    delete: Annotated[
+        Optional[bool],
+        typer.Option("--delete", help="Delete source file upon sucessfull import"),
+    ] = False,
+    dryrun: Annotated[
+        Optional[bool],
+        typer.Option(
+            "--dry-run",
+            help="Run import withou actual importing files (simulation)",
+        ),
+    ] = False,
+    repo: Annotated[
+        Optional[Path],
+        typer.Option(
+            help="Media repository (directory)",
+            dir_okay=True,
+            writable=True,
+        ),
+    ] = "./",
+):
+    """
+    Import media from <IMPORT_PATH> into media repository
+    """
+    EXIF_DATETIME_FMT = "%Y:%m:%d %H:%M:%S"
+
+    if verbose >= 2:
+        logging.getLogger().setLevel(logging.DEBUG)
+    elif verbose == 1:
+        logging.getLogger().setLevel(logging.INFO)
+
+    scanned_files = []
+
+    start = time.perf_counter()
+
+    try:
+        # use json output (-j) in exiftool
+        import_abs_paths = [ str(p.absolute()) for p in import_path ]
+        exiftool_cmd = ["exiftool", "-j"] + import_abs_paths
+
+        if recurse:
+            exiftool_cmd.insert(1, "-r")
+
+        logging.info(
+            f"Searching / parsing media files in {' '.join(import_abs_paths)} started"
+        )
+        
+        logging.debug(f"Running external command: {' '.join(exiftool_cmd)}")
+
+        p = subprocess.run(exiftool_cmd, capture_output=True)
+        # sometimes exiftool exits with 1 without apparent reason, so only warning 
+        # is raised, and processing continues
+        if p.returncode != 0:
+            raise Warning(f"exiftool error: {p.stderr}")
+        # we have json exiftool output
+        if len(p.stdout) > 0:
+            # parse list of dictionaries from exiftool json output
+            scanned_files = json.loads(p.stdout)
+        else:
+            raise Warning("No files have been found")
+    except Warning as e:
+        logging.warning(e)
+    except FileNotFoundError:
+        logging.error("exiftool command not available on system PATH")
+        raise typer.Abort()
+    except json.decoder.JSONDecodeError:
+        logging.error("parsing json exiftool json output failed")
+    except Exception as e:
+        logging.error(e)
+        raise typer.Abort()
+
+    # further processing only on media files (image/video)
+    media_files = [
+        f for f in scanned_files if f["MIMEType"].split("/")[0] in ["image", "video"]
+    ]
+
+    logging.info(
+        f"Found {len(media_files)} media files "
+        f"(out of {len(scanned_files)}) "
+        f"in {duration(start)}s"
+    )
+
+    import_stats = {"ok": 0, "failed": 0, "duplicates": 0}
+
+    for f in media_files:
+        file_start = time.perf_counter()
+        src_file_path = Path(f["Directory"]).absolute() / Path(f["FileName"])
+        logging.info(f"Importing <{src_file_path}>")
+
+        try:
+            # parsing EXIF yelded warning/error
+            if f.get("Warning") is not None:
+                raise Exception(f["Warning"])
+
+            datetime_original = f.get("DateTimeOriginal") or f.get("CreateDate")
+            dst_dir = Path("unclassified")
+            dst_file_path = repo / dst_dir / Path(f["FileName"])
+
+            if datetime_original:
+                datetime_original = datetime.strptime(
+                    datetime_original, EXIF_DATETIME_FMT
+                )
+                dst_dir = Path(datetime_original.strftime("%Y/%m"))
+                dst_file_path = (
+                    repo
+                    / dst_dir
+                    / Path(
+                        datetime_original.strftime("%Y-%m-%d_%H%M%S")
+                        + "_"
+                        + f["FileName"]
+                    )
+                )
+
+            if not dst_file_path.is_file():
+                if not dryrun:
+                    # create destination dir
+                    os.makedirs(repo / dst_dir, exist_ok=True)
+                    # copy or create symlink
+                    if symlinks:
+                        dst_file_path.symlink_to(src_file_path)
+                    else:
+                        shutil.copy2(src_file_path, dst_file_path)
+            else:
+                raise Exception(f"File/symlink <{dst_file_path}> already exists")
+
+        except Exception as e:
+            logging.error(f"File <{src_file_path}> not imported, reason: {e}")
+            import_stats["failed"] += 1
+            continue
+
+        logging.info(
+            f"File <{src_file_path}> successfuly imported "
+            f"as <{dst_file_path}> "
+            f"in {duration(file_start, 3)}s"
+        )
+        import_stats["ok"] += 1
+
+        if not dryrun and delete:
+            try:
+                src_file_path.unlink()
+                logging.warning(f"File <{src_file_path}> was deleted")
+            except Exception as e:
+                logging.warning(f"File <{src_file_path}> could not be deleted")
+
+    logging.info(
+        "Importing files finished: "
+        f"{import_stats['ok']} (Imported), "
+        f"{import_stats['failed']} (Failed), "
+        f"{len(media_files)} (Total media), "
+        f"{len(scanned_files)} (Total scanned) "
+        f"in {duration(start)}s"
+    )
+
+
+def duration(start, decimals=2):
+    return round(time.perf_counter() - start, decimals)
+
+
+if __name__ == "__main__":
+    app()

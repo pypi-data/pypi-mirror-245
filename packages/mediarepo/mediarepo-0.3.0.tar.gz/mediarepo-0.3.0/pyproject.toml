@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "mediarepo"
+version = "0.3.0"
+description = "Tool for management home media library"
+authors = ["Peter Mozolík <petermozolik@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.9.0"
+exif = "^1.6.0"
+tqdm = "^4.66.1"
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.24.4"
+black = "^23.11.0"
+isort = "^5.12.0"
+
+[tool.poe.tasks]
+style = "poetry run black mediarepo"
+isort = "poetry run isort mediarepo"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
