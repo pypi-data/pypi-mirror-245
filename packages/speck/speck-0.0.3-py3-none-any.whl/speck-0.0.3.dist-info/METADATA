@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: speck
+Version: 0.0.3
+Summary: Speck - LLM observability framework.
+Home-page: https://github.com/speckai/speck
+Download-URL: https://github.com/speckai/speck/archive/refs/tags/v0.0.3.tar.gz
+Author: Lucas Jaggernauth
+Author-email: luke@speck.chat
+Keywords: speck,openai,llm,ai,chat,bot,gpt,gpt-3,gpt-4,anthropic,replicate
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+Requires-Dist: annotated-types ==0.6.0
+Requires-Dist: anyio ==3.7.1
+Requires-Dist: certifi ==2023.7.22
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: distro ==1.8.0
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: httpcore ==1.0.2
+Requires-Dist: httpx ==0.25.1
+Requires-Dist: idna ==3.4
+Requires-Dist: openai ==1.2.4
+Requires-Dist: pydantic ==2.5.0
+Requires-Dist: pydantic-core ==2.14.1
+Requires-Dist: replicate ==0.21.0
+Requires-Dist: requests ==2.31.0
+Requires-Dist: sniffio ==1.3.0
+Requires-Dist: tqdm ==4.66.1
+Requires-Dist: typing-extensions ==4.8.0
+Requires-Dist: urllib3 ==2.1.0
+
+<p align="center">
+    <img src="assets/speck_banner.jpg">
+</p>
+<p align="center">
+    <a href="https://discord.com/invite/frnaYYaKj3">
+        <img src="https://dcbadge.vercel.app/api/server/frnaYYaKj3?style=flat" />
+    </a>
+    <a href="https://github.com/speckai/speck">
+        <img src="https://img.shields.io/github/commit-activity/m/speckai/speck" />
+    </a>
+</p>
+
+🎊 _We recently launched our python package: `pip install speck`_
+
+---
+
+<b>Speck</b> is an LLM debugging and observability platform. Prompt engineer, A/B test, and track your production LLM app metrics in one place.
+
+### Features
+
+- Unified model input/output format
+- LLM and app log tracking
+
+---
+
+## Getting Started
+
+### Python
+
+```shell
+pip install speck
+```
+
+---
+
+## Background
+
+Monitoring LLM apps in production isn't easy.
+
+---
+
+## Development
+
+### Installing Latest Version
+
+```shell
+pip3 install --upgrade git+https://github.com/speckai/speck.git#subdirectory=src/python
+```
