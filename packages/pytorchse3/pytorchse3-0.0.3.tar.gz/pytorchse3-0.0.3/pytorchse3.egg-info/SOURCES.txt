@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+pytorchse3/__init__.py
+pytorchse3/_modidx.py
+pytorchse3/se3.py
+pytorchse3/so3.py
+pytorchse3/utils.py
+pytorchse3.egg-info/PKG-INFO
+pytorchse3.egg-info/SOURCES.txt
+pytorchse3.egg-info/dependency_links.txt
+pytorchse3.egg-info/entry_points.txt
+pytorchse3.egg-info/not-zip-safe
+pytorchse3.egg-info/requires.txt
+pytorchse3.egg-info/top_level.txt
