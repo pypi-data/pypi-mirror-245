@@ -1,0 +1,11 @@
+README.md
+setup.py
+crescience_websocket_py/__init__.py
+crescience_websocket_py/check_updates.py
+crescience_websocket_py/client.py
+crescience_websocket_py/message.py
+crescience_websocket_py.egg-info/PKG-INFO
+crescience_websocket_py.egg-info/SOURCES.txt
+crescience_websocket_py.egg-info/dependency_links.txt
+crescience_websocket_py.egg-info/requires.txt
+crescience_websocket_py.egg-info/top_level.txt
