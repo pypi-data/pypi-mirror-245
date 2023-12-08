@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ucla-geotech-tools.auto-fchp"
+version = "2.0.0"
+description = "A Python package for selecting a high-pass corner frequency for filtering ground motion records"
+authors = ["Scott J. Brandenberg"]
+license = "LICENSE.txt"
+readme = "README.md"
+packages = [
+    { include = "src/ucla_geotech_tools"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.22"
+scipy = "^1.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
