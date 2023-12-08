@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: kaas-admin
+Version: 0.1.2
+Requires-Dist: os
+Requires-Dist: sys
+Requires-Dist: pathlib
+
