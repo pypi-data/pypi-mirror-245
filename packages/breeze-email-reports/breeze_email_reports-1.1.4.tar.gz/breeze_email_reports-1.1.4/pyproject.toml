@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0",
+            "combine_settings>=1.0.1",
+            "breeze_chms_api>=1.3.0",
+            "configured_mail_sender>=1.1.1",
+            ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "breeze_email_reports"
+version = "1.1.4"
+authors = [
+  { name="David A. Willcox", email="daw30410@yahoo.com" },
+]
+description = "Utilities to email Breeze CHMS reports"
+readme = "README.rst"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+]
+dependencies = [
+    "breeze_chms_api>=1.3.0",
+    "configured_mail_sender>=1.1.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/dawillcox/breeze_email_reports"
+"Bug Tracker" = "https://github.com/dawillcox/breeze_email_reports/issues"
+README = "https://github.com/dawillcox/breeze_email_reports/blob/master/README.rst"
+DOCUMENTATION = "https://github.com/dawillcox/breeze_email_reports/blob/master/DOCUMENTATION.rst"
+CHANGELOG = "https://github.com/dawillcox/breeze_email_reports/blob/master/CHANGELOG.md"
+REPOSITORY = "https://github.com/dawillcox/breeze_email_reports.git"
+
+[project.scripts]
+email_profile_report = "breeze_email_reports.EmailProfileReport:main"

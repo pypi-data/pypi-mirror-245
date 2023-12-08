@@ -1,0 +1,2 @@
+[console_scripts]
+email_profile_report = breeze_email_reports.EmailProfileReport:main

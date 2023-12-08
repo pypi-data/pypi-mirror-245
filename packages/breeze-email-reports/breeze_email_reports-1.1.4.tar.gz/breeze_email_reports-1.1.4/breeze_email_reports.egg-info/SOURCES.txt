@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+pyproject.toml
+breeze_email_reports/EmailProfileReport.py
+breeze_email_reports/table_format.py
+breeze_email_reports.egg-info/PKG-INFO
+breeze_email_reports.egg-info/SOURCES.txt
+breeze_email_reports.egg-info/dependency_links.txt
+breeze_email_reports.egg-info/entry_points.txt
+breeze_email_reports.egg-info/requires.txt
+breeze_email_reports.egg-info/top_level.txt
+tests/test_sender.py
+tests/test_table_format.py
