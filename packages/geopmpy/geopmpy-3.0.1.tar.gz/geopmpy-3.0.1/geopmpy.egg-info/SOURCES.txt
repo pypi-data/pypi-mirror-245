@@ -1,0 +1,10 @@
+AUTHORS
+COPYING
+README.md
+pyproject.toml
+geopmpy.egg-info/PKG-INFO
+geopmpy.egg-info/SOURCES.txt
+geopmpy.egg-info/dependency_links.txt
+geopmpy.egg-info/entry_points.txt
+geopmpy.egg-info/requires.txt
+geopmpy.egg-info/top_level.txt
