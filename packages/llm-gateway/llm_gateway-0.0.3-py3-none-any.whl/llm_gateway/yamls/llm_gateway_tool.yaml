@@ -1,0 +1,10 @@
+llm_gateway.tools.llm_gateway_tool.LLM_Gateway_Tool:
+  name: My Custom LLM Tool
+  description: This is a tool to demonstrate how to customize an LLM tool with a PromptTemplate.
+  type: custom_llm
+  module: llm_gateway.tools.llm_gateway_tool
+  function: LLM_Gateway_Tool
+  inputs:
+    connection:
+      type:
+        - CustomConnection

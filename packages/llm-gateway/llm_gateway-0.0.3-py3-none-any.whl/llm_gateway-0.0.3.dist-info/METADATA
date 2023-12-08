@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: llm-gateway
+Version: 0.0.3
+Summary: This is LLM Gateway package
+Provides-Extra: azure
+Requires-Dist: azure-ai-ml <2.0.0,>=1.11.0 ; extra == 'azure'
+
