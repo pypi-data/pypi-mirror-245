@@ -1,0 +1,5 @@
+item-local>=0.0.4
+star-local
+boto3
+sms-message-aws-sns-local>=0.0.7
+api-management-local>=0.0.27
