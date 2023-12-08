@@ -1,0 +1,8 @@
+README.md
+setup.py
+porrametict-first-package/__init__.py
+porrametict-first-package/module.py
+porrametict_first_package.egg-info/PKG-INFO
+porrametict_first_package.egg-info/SOURCES.txt
+porrametict_first_package.egg-info/dependency_links.txt
+porrametict_first_package.egg-info/top_level.txt
