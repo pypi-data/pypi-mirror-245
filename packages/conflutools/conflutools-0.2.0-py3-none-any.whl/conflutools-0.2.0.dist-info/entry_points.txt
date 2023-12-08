@@ -1,0 +1,3 @@
+[console_scripts]
+export-pagetree=conflutools.cli:export_tree
+
