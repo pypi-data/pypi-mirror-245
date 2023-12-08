@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: breads-ad
+Version: 1.0.3a0
+Summary: Breaking Active Directory Security (BREADS) is a tool design to attack Active Directory environments
+Home-page: https://github.com/inferigang/breads
+Author: oppsec (inferigang)
+Author-email: opps3c@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.12
+License-File: LICENSE
+
+UNKNOWN
+
