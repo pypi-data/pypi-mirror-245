@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+aoc_tool/__init__.py
+aoc_tool.egg-info/PKG-INFO
+aoc_tool.egg-info/SOURCES.txt
+aoc_tool.egg-info/dependency_links.txt
+aoc_tool.egg-info/top_level.txt
+tests/test_aoc.py
