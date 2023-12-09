@@ -1,0 +1,3 @@
+[console_scripts]
+berlin-de-appointment-finder=berlin_de_appointment_finder.cli:app
+

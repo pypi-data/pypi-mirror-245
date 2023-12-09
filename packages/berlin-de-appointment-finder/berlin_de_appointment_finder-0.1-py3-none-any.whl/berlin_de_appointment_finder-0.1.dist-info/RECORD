@@ -1,0 +1,8 @@
+berlin_de_appointment_finder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+berlin_de_appointment_finder/cli.py,sha256=-qW5Le9Ciitj5EZ5BNkX_2tfIxHYSkIvfkdoFWs-FLE,2813
+berlin_de_appointment_finder/service.py,sha256=PeSK8dESOSMM4DqegwMR-kJOU4IbZnAUL0gvxznbcBU,3284
+berlin_de_appointment_finder/telegram.py,sha256=GhkBmVoxFdskPLWrw_-JJfsgai_Yt22ixzDsTbXGjKQ,1796
+berlin_de_appointment_finder-0.1.dist-info/METADATA,sha256=8L4VbA6I29R9mjAa4A4BZZEjBacEaLTFogV0T5HeTMA,1039
+berlin_de_appointment_finder-0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+berlin_de_appointment_finder-0.1.dist-info/entry_points.txt,sha256=eKq4psgho8XiIXv3TeB5jgMdqpBO3dtSnjiB457eEAc,85
+berlin_de_appointment_finder-0.1.dist-info/RECORD,,
