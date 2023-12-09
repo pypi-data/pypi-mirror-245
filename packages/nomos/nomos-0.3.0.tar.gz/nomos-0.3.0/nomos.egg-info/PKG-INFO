@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: nomos
+Version: 0.3.0
+Summary: Python client library for the Nomos SDK
+Author-email: Nomos <developers@getnomos.com>
+License: MIT License
+        
+        Copyright (c) 2023 Nomos
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: documentation, https://docs.getnomos.com/
+Project-URL: homepage, https://getnomos.com/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi~=2023.7.22
+Requires-Dist: frozendict~=2.3.8
+Requires-Dist: openai~=1.1.0
+Requires-Dist: pydantic>=2
+Requires-Dist: python-dateutil~=2.8.2
+Requires-Dist: typing_extensions>=4.7.1
+Requires-Dist: urllib3<2.1.0,>=1.25.3
+
+# Nomos
+
+[![Visit Us](https://img.shields.io/badge/visit_us-nomos-orange)](https://docs.getnomos.com) [![documentation](https://img.shields.io/badge/docs-docs?label=documentation)](https://docs.getnomos.com) [![](https://img.shields.io/badge/Join%20our%20community-Discord-blue)](https://discord.gg/xEPFsvSmkb)
+
+Nomos is a Generative AI development platform that empowers teams to create, monitor, and improve their production LLM applications through rigorous data-driven experimentation.
+
+The Nomos Python library provides convenient access to the Nomos SDK and API for applications written in Python.
+
+## Installation
+
+```bash
+pip install nomos
+```
+
+## Usage
+
+### 1. Authentication
+
+First, get your Nomos client_id and secret from the Nomos dashboard. Go to **Settings > Manage API Keys** and copy your client_id and secret.
+
+- Define them as environment variables.
+
+```bash
+export NOMOS_CLIENT_ID="YOUR-NOMOS-CLIENT-ID"
+export NOMOS_SECRET="YOUR-NOMOS-SECRET-KEY"
+export OPENAI_API_KEY="YOUR-OPENAI-API-KEY"
+```
+
+- Or, initialize the Nomos client with client_id and secrets.
+
+```python
+client = Nomos(
+    client_id="<YOUR-NOMOS-CLIENT-ID>",
+    secret="<YOUR-NOMOS-SECRET-KEY>",
+    openai_api_key="<YOUR-OPENAI-API-KEY>"
+)
+```
+
+### 2. Using Nomos in your application
+
+```python
+from nomos import Nomos
+
+client = Nomos()
+
+project = client.project.get(project_id="NOMOS-PROJECT-ID")
+task = project.get_first_task()
+response = task.execute(variables={})
+
+print(response.data)
+```
+
+## Documentation
+
+For more information on how to use Nomos and our SDK, please refer to our [documentation](https://docs.getnomos.com/).
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
