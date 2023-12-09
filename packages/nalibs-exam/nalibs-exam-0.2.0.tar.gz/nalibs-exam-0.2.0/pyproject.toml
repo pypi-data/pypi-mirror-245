@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+# [build-system]
+# requires = ["hatchling"]
+# build-backend = "hatchling.build"
+
+[project]
+name = "nalibs-exam"
+description = "qana - tiny package - nalibsExam"
+dynamic = ["version"]
+authors = [{ name = "Ron", email = "naq0310@gmail.com" }]
+maintainers = [{ name = "Ron", email = "naq0310@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
+
+# [tool.hatch.version]
+# path = "src/nalibs_exam/__init__.py"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.dynamic]
+version = { attr = "nalibsExam.__version.__version__" }
