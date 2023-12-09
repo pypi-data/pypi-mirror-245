@@ -1,0 +1,2 @@
+from packagehim.pkg_guess_number import guess_number
+from packagehim.pkg_weight_conversion import weight_conversion
