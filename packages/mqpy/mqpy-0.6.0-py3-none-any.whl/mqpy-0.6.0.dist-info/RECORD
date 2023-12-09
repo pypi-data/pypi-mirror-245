@@ -1,0 +1,11 @@
+mqpy/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mqpy/src/book.py,sha256=JiZO_QGsS0fytEfrP_iSAip0eiERQmeFDmS0FnaVmUg,1191
+mqpy/src/indicator_connector.py,sha256=3eXrOxJpU7kmaKpUFl8yLFB3rZG9mMrko6S49_WXoS8,47171
+mqpy/src/rates.py,sha256=BI-l2UgdoyFfC9aPaFREVsa8y0oPvifgvOFFygjJZvk,2478
+mqpy/src/tick.py,sha256=CGQGtLQzjPNRQfWNovaAs1E-TX-lg-iJ8rQEEI0pNf8,1827
+mqpy/src/trade.py,sha256=fAVY3scBw313yGuaV0qukJaAZiVrAO8kDw6w7P-sjow,14386
+mqpy/src/utilities.py,sha256=rEB-oUL4BTohMprMi4h0F-V-h--PWqIgmxIAvGQ8x4Y,2054
+mqpy-0.6.0.dist-info/LICENSE,sha256=GO1MfgSR5sW6WAl9KMVAJUZypI72cnffdO1Q3aSCuds,1087
+mqpy-0.6.0.dist-info/METADATA,sha256=tZoEg68aQniGFoCAXn-XdoUW25FMbkavZtQj55XIxBI,1529
+mqpy-0.6.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mqpy-0.6.0.dist-info/RECORD,,
