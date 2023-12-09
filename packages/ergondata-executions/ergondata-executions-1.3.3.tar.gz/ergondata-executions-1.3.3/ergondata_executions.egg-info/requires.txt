@@ -1,0 +1,4 @@
+wrapt
+requests
+typing_extensions
+pydantic
