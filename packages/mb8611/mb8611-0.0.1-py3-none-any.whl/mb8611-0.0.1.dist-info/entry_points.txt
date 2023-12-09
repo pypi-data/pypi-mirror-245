@@ -1,0 +1,3 @@
+[console_scripts]
+mb8611=mb8611:mb8611_main
+
