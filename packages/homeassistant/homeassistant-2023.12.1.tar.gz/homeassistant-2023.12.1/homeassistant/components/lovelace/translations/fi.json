@@ -1,0 +1,9 @@
+{
+    "system_health": {
+        "info": {
+            "dashboards": "Kojelaudat",
+            "mode": "Tila",
+            "resources": "Resurssit"
+        }
+    }
+}

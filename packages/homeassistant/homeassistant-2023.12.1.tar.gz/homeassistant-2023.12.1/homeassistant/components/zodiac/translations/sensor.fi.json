@@ -1,0 +1,16 @@
+{
+    "state": {
+        "zodiac__sign": {
+            "aquarius": "Vesimies",
+            "aries": "Oinas",
+            "cancer": "Sy\u00f6p\u00e4",
+            "capricorn": "Kauris",
+            "gemini": "Kaksoset",
+            "leo": "Leijona",
+            "libra": "Vaaka",
+            "pisces": "Kalat",
+            "sagittarius": "Jousimies",
+            "scorpio": "Skorpioni"
+        }
+    }
+}

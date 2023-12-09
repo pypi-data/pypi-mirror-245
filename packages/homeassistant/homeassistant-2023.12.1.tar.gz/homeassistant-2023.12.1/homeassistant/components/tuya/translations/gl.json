@@ -1,0 +1,162 @@
+{
+    "config": {
+        "error": {
+            "login_error": "Erro de inicio de sesi\u00f3n ({code}): {msg}"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "access_id": "ID de acceso Tuya IoT",
+                    "access_secret": "Segredo de acceso Tuya IoT"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "feeding": {
+                "name": "Alimentaci\u00f3n"
+            },
+            "formaldehyde": {
+                "name": "Formaldehido"
+            },
+            "methane": {
+                "name": "Metano"
+            },
+            "pm25": {
+                "name": "PM2.5"
+            },
+            "pressure": {
+                "name": "Presi\u00f3n"
+            },
+            "tilt": {
+                "name": "Inclinaci\u00f3n"
+            },
+            "voc": {
+                "name": "VOCs"
+            }
+        },
+        "button": {
+            "reset_duster_cloth": {
+                "name": "Restablecer pano de limpeza"
+            },
+            "reset_edge_brush": {
+                "name": "Restablecer o cepillo lateral"
+            },
+            "reset_filter": {
+                "name": "Restablecer filtro"
+            },
+            "reset_map": {
+                "name": "Restablecer mapa"
+            },
+            "reset_roll_brush": {
+                "name": "Restablecer o cepillo de rodar"
+            },
+            "snooze": {
+                "name": "Soneca"
+            }
+        },
+        "cover": {
+            "curtain_2": {
+                "name": "Cortina 2"
+            },
+            "curtain_3": {
+                "name": "Cortina 3"
+            },
+            "door_2": {
+                "name": "Porta 2"
+            },
+            "door_3": {
+                "name": "Porta 3"
+            }
+        },
+        "light": {
+            "backlight": {
+                "name": "Luz de fondo"
+            },
+            "light_2": {
+                "name": "Luz 2"
+            },
+            "light_3": {
+                "name": "Luz 3"
+            },
+            "night_light": {
+                "name": "Luz nocturna"
+            }
+        },
+        "number": {
+            "cloud_recipe": {
+                "name": "Receita de nube"
+            },
+            "cook_temperature": {
+                "name": "Temperatura de cocci\u00f3n"
+            },
+            "cook_time": {
+                "name": "Tempo de cocci\u00f3n"
+            },
+            "down_delay": {
+                "name": "Retraso de baixada"
+            },
+            "far_detection": {
+                "name": "Detecci\u00f3n a distancia"
+            },
+            "feed": {
+                "name": "Alimentar"
+            },
+            "heat_preservation_time": {
+                "name": "Tempo de conservaci\u00f3n do calor"
+            },
+            "maximum_brightness": {
+                "name": "Brillo m\u00e1ximo"
+            },
+            "maximum_brightness_2": {
+                "name": "Brillo m\u00e1ximo 2"
+            },
+            "maximum_brightness_3": {
+                "name": "Brillo m\u00e1ximo 3"
+            },
+            "minimum_brightness": {
+                "name": "Brillo m\u00ednimo"
+            },
+            "minimum_brightness_2": {
+                "name": "Brillo m\u00ednimo 2"
+            },
+            "minimum_brightness_3": {
+                "name": "Brillo m\u00ednimo 3"
+            },
+            "move_down": {
+                "name": "Mover cara abaixo"
+            },
+            "move_up": {
+                "name": "Mover cara arriba"
+            },
+            "near_detection": {
+                "name": "Detecci\u00f3n pr\u00f3xima"
+            },
+            "powder": {
+                "name": "Po"
+            }
+        },
+        "select": {
+            "motion_sensitivity": {
+                "name": "Sensibilidade \u00e1 detecci\u00f3n de movemento",
+                "state": {
+                    "0": "Baixa sensibilidade",
+                    "1": "Sensibilidade media",
+                    "2": "Alta sensibilidade"
+                }
+            }
+        },
+        "switch": {
+            "motion_alarm": {
+                "name": "Alarma de movemento"
+            },
+            "motion_recording": {
+                "name": "Gravaci\u00f3n de movemento"
+            },
+            "motion_tracking": {
+                "name": "Seguimento do movemento"
+            }
+        }
+    }
+}
