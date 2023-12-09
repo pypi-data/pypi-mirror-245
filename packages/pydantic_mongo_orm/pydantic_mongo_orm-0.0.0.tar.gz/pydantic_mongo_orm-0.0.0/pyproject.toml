@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "pydantic_mongo_orm"
+version = "0.0.0"
+description = "ORM working with MongoDb and using Pydantic as a model."
+authors = ["Jakub Tesarek <jakub@tesarek.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.5.2"
+pymongo = "^4.6.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+ruff = "^0.1.7"
+mypy = "^1.7.1"
+poethepoet = "^0.24.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+explicit_package_bases = true
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+python_files = "*.py"
+addopts = "--showlocals -rxs -v --color=yes --durations=5 --maxfail=1 --cov=pydantic_mongo_orm --cov-report html --cov-report term"
+
+[tool.coverage.report]
+fail_under=100
+exclude_also = [
+    "if TYPE_CHECKING:"  # exclude type checking from coverage
+]
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["tests"]
+select = ["E", "F", "C90", "W", "N", "D", "DTZ", "ERA", "PTH", "A", "T201", "SIM"]  # see https://beta.ruff.rs/docs/rules/
+ignore = ["D105", "D106", "D107", "D203", "D213", "SIM102", "N813", "A002", "A003"]
+
+[tool.ruff.mccabe]
+max-complexity = 6
+
+[tool.poe.tasks.typing]
+help = "Run Mypy type checker"
+cmd = "mypy pydantic_mongo_orm"
+
+[tool.poe.tasks.style]
+help = "Run Ruff style checker"
+cmd = "ruff check pydantic_mongo_orm"
+
+[tool.poe.tasks.test]
+help = "Run Pytest tests"
+cmd = "pytest tests"
+
+[tool.poe.tasks.check]
+help = "Run all checks"
+sequence = ["typing", "style", "test"]
