@@ -1,0 +1,10 @@
+denseclus/DenseClus.py,sha256=rwV9qTq_SERxEIrJmWhr2c8FMVroYMyJihwZSBTVBKY,23028
+denseclus/__init__.py,sha256=Hhso2orUD5Bw1x1IfjMBOzHb-eprusXMRMU0i3km4wM,274
+denseclus/__version__.py,sha256=kZbojEoyRCbZvieAhFMlqRRbtA7Lv-Kl89g15lujHJM,256
+denseclus/categorical.py,sha256=UoYYJ0N3JE7xhiO0QGtko4TXgFEJE0C0HhCO6zAass4,3887
+denseclus/numerical.py,sha256=LcSR0zlWh-8nJqBjNELIjvPip5OP-vodZLds8wrIjfE,2512
+denseclus/utils.py,sha256=c8boia20IlJXRjDvtSuuGAw2XI130vJm7qaGoA89hw0,2008
+amazon_denseclus-0.2.1.dist-info/METADATA,sha256=aFW9k0h_jI4gdG8A9_9uzxGz5CZL7LFSJXYa5FlTe0I,7345
+amazon_denseclus-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+amazon_denseclus-0.2.1.dist-info/top_level.txt,sha256=8oAkM5SXxQGpPUg7NS8o-igQpr8E8ahOVyWPeyqz9Bo,10
+amazon_denseclus-0.2.1.dist-info/RECORD,,
