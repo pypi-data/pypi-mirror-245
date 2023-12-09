@@ -1,0 +1,14 @@
+vo_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vo_models/xml/__init__.py,sha256=9gfTl8I1sOEArn9krLDG4R5z3oARbHsc6niepIY7WIU,70
+vo_models/xml/uws/__init__.py,sha256=c5iZKSCKv1KXFUiwO6tnGNOwKqsu9XeVf6XEtW3z3NY,430
+vo_models/xml/uws/models.py,sha256=q8atAh9UX2kR7uUEqjHo6HSV76AhwgP3Tuvd1ElkJis,10187
+vo_models/xml/uws/types.py,sha256=MrMgS8ylbT5nIJK11DoazXRhynWqXZQqQqRn5R5LJe0,1765
+vo_models/xml/voresource/__init__.py,sha256=zgqeFE-8xs721k9jQk-7-y2FARXrVj95fma9qkEylqU,46
+vo_models/xml/voresource/types.py,sha256=Ym7NRG0VOas_SF6o3Cy4guAnc0ehnQ1rJ-D8J7HOjBY,3497
+vo_models/xml/xlink/__init__.py,sha256=Xmq__Vh0aVpThpa3siY4ulvtz9IDA1f3N9QPxJFN2MQ,235
+vo_models/xml/xlink/xlink.py,sha256=49J9CuXZmiF64rWRRA5NVvv33854wDvS-QQsu-IlmyE,253
+vo_models-0.1.1.dist-info/LICENSE,sha256=RFN5SeM_w6U1gMgSLRdWCapt7lUw8ow6QvsOhdDY-vY,1067
+vo_models-0.1.1.dist-info/METADATA,sha256=ykyKNO0gcJHK_vUAqjzLITB4MJRer3Ql2wRvaZZW4h0,4553
+vo_models-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+vo_models-0.1.1.dist-info/top_level.txt,sha256=mqNKFNXMntz2R3kVn6nxkKQ5cpue6R7ulI5oQ3ucXro,10
+vo_models-0.1.1.dist-info/RECORD,,
