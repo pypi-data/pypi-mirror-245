@@ -1,0 +1,2 @@
+class KhulnasoftError(Exception):
+    pass
