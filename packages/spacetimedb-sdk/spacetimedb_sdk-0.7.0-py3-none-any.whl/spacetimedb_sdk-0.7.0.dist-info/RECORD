@@ -1,0 +1,13 @@
+gen_lazydocs.py,sha256=kNaHRLdS965VzJz9daQEkBrWgqJx6I_PbN7TNqr3zrI,452
+spacetimedb_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spacetimedb_sdk/_version.py,sha256=ynRenBwvWro2NonmK6iUMvtHFPGK08rJxxwVKNfoBLM,218
+spacetimedb_sdk/client_cache.py,sha256=9yzGKNXtRYp23Pr7VP2erA4dGbaQk-iBefpTBviZJ-M,3469
+spacetimedb_sdk/local_config.py,sha256=XOvgTe3mfDox1mTSX7AdDRjU6d9RSVwwROpO7tlNywk,3676
+spacetimedb_sdk/spacetime_websocket_client.py,sha256=WOsaYVMZYSdb-NKQyDT4l4UB55B3T8BvBm02OupV8QI,2885
+spacetimedb_sdk/spacetimedb_async_client.py,sha256=TpSx-aVBdVjM02Fif_JjSV5Ij2vqPTyyQMzjeDVvd9g,11389
+spacetimedb_sdk/spacetimedb_client.py,sha256=FIPIItj02fgxc61Dv1Mq66CFLYCd7P6Rmqqhy-Gm84g,27294
+spacetimedb_sdk-0.7.0.dist-info/LICENSE.txt,sha256=kmSms8E0URzPyuSO04CDIGiK5pM-xPxUdHagBQlfwe8,10349
+spacetimedb_sdk-0.7.0.dist-info/METADATA,sha256=BhRykKD-87St8IzZKOMXtDDw2ABMYwo-TIdrMIJeDn0,5707
+spacetimedb_sdk-0.7.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+spacetimedb_sdk-0.7.0.dist-info/top_level.txt,sha256=ir5LClkyVxAvK7ONk9sbR9dSQZDiRlRGXD9Z8qkAaWI,29
+spacetimedb_sdk-0.7.0.dist-info/RECORD,,
