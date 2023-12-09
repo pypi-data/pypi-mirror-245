@@ -1,0 +1,15 @@
+menglingtool_sqltools/__init__.py,sha256=hkk0eirf_kh9h3jrikXJjo1ChR-O56BxblNbUuPV_t4,40
+menglingtool_sqltools/mysql.py,sha256=xZIdKEvwnsbTFYsfeWEPzuKHCkU0U_Ed7ah4eZEBF78,2004
+menglingtool_sqltools/pgsql.py,sha256=pARh0TkfNW53zdF81YEHPEbflor0r0u_DiLuPuPmpcQ,4220
+menglingtool_sqltools/sqlite.py,sha256=DcVyqFW0HOz56qgMdGXBHsDhNoRFls5EhvIFUclzsUY,1472
+menglingtool_sqltools/sqlserver.py,sha256=RYrqOThazZqq9fsFyRr4hCMlihuiBWd8jYsTOhWKf0U,2210
+menglingtool_sqltools/sqlserver驱动17.msi,sha256=uys5LZ5YKg9Ft9xevwNlmaFQyaNTmkkMiUlN66Q_zMc,4698112
+menglingtool_sqltools/tools.py,sha256=-tYJEPVsjuktiki8vevuqoX41Fjy1528ewodJviGxb0,3690
+menglingtool_sqltools/__sqltool__/action.py,sha256=VH8RB7Oa_M5Ud8nX58XHE_1a8_eGW8iUqU2RRxJMmOk,5493
+menglingtool_sqltools/__sqltool__/alter.py,sha256=atZeftbqUQbAx0R6iss7GuOIKgbLa-cpSjIdfjAM-s8,1665
+menglingtool_sqltools/__sqltool__/base/body.py,sha256=uXp2SuGgb5m9RnnLSerdY3jWaTlMO6jJmtETB6QZnBI,3189
+menglingtool_sqltools/__sqltool__/base/sql_data.py,sha256=WMtkVRH8K7cIW8MDvnUoNc3r5EgcE4uJWxPGLD5HjXs,2150
+menglingtool_sqltools-1.0.4.dist-info/METADATA,sha256=5fKAYvXrT2AmeBivFGG_erXxAY1fxKjl-ZY1qOLa7tE,317
+menglingtool_sqltools-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+menglingtool_sqltools-1.0.4.dist-info/top_level.txt,sha256=v56oCFYL9sqdRpJYI3FvJgBAKmONhW2P5jAf8Uxa3Vg,22
+menglingtool_sqltools-1.0.4.dist-info/RECORD,,
