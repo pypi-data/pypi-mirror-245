@@ -1,0 +1,8 @@
+LICENSE
+README.md
+fairness_metrics.py
+setup.py
+fairness_metrics.egg-info/PKG-INFO
+fairness_metrics.egg-info/SOURCES.txt
+fairness_metrics.egg-info/dependency_links.txt
+fairness_metrics.egg-info/top_level.txt
