@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_test_isachenko.egg-info/PKG-INFO
+yandex_test_isachenko.egg-info/SOURCES.txt
+yandex_test_isachenko.egg-info/dependency_links.txt
+yandex_test_isachenko.egg-info/top_level.txt
