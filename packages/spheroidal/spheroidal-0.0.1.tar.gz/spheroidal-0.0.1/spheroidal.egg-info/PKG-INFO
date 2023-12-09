@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: spheroidal
+Version: 0.0.1
+Summary: Library for computing spin-weighted spheroidal harmonics
+Home-page: https://github.com/syp2001/spheroidal
+Author: Seyong Park
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: numba

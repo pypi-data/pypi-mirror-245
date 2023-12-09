@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+spheroidal/__init__.py
+spheroidal/leaver.py
+spheroidal/spectral.py
+spheroidal/spherical.py
+spheroidal/wrapper.py
+spheroidal.egg-info/PKG-INFO
+spheroidal.egg-info/SOURCES.txt
+spheroidal.egg-info/dependency_links.txt
+spheroidal.egg-info/requires.txt
+spheroidal.egg-info/top_level.txt
+tests/test_derivatives.py
+tests/test_eigenvalue.py
+tests/test_harmonics.py
+tests/test_spherical.py
