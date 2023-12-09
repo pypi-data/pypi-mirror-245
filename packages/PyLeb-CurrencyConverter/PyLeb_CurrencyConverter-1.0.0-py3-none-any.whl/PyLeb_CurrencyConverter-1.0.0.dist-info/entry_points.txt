@@ -1,0 +1,2 @@
+[console_scripts]
+CurrencyConverter = CurrencyConverter.__main__:main
