@@ -1,0 +1,3 @@
+[console_scripts]
+check-keepass-passwords=check_keepass_passwords.cli:app
+

@@ -1,0 +1,7 @@
+check_keepass_passwords/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+check_keepass_passwords/checker.py,sha256=hzQucoCQd_3jum-2pqxD18qMhzPLLvH3xfwglXobtIs,2266
+check_keepass_passwords/cli.py,sha256=Mp24y8m_PQlOqITi264ssentsRLwph2oSUVE6STAV3M,4711
+check_keepass_passwords-0.1.dist-info/METADATA,sha256=JcYHfALOcIMvOHqFACGR9_cIOdT9sRpT7RVZQdn9K3U,1692
+check_keepass_passwords-0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+check_keepass_passwords-0.1.dist-info/entry_points.txt,sha256=vY46eMsAReTrPHoTUJDwiNG3lrffsAn4miv0NWgIYt0,75
+check_keepass_passwords-0.1.dist-info/RECORD,,
