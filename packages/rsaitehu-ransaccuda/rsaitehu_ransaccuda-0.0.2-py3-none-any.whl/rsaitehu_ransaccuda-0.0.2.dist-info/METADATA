@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: rsaitehu-ransaccuda
+Version: 0.0.2
+Summary: ransac utilities with cuda support
+Requires-Dist: numpy >=1.22.0
+Requires-Dist: open3d >=0.16.0
+Requires-Dist: numba >=0.56.4
+Requires-Dist: rsaitehu-ransac >=0.0.1
+Requires-Dist: rsaitehu-geometry >=0.0.1
+Requires-Dist: rsaitehu-sampling >=0.0.1
+
