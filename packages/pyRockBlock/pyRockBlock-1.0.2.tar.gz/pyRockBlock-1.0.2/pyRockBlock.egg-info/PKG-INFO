@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyRockBlock
+Version: 1.0.2
+Summary: The definitive RockBLOCK Python 3 package.
+Home-page: https://cathedral30.github.io/pyRockBlock/
+Author: Henry Cooper
+Author-email: cooper.henry30@gmail.com
+License-File: LICENSE
+
+pyRockBLOCK
+===========
+
+**pyRockBLOCK** is the definitive Python 3 library for users of the RockBLOCK.
