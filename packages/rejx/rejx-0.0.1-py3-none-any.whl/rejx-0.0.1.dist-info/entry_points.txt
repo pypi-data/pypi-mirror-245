@@ -1,0 +1,3 @@
+[console_scripts]
+rejx=rejx.__main__:app
+
