@@ -1,0 +1,9 @@
+click
+pytest
+hypothesis
+prettytable
+negmas>=0.10.6
+tqdm
+joblib
+jupyter
+gif
