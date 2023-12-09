@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: yol-app
+Version: 0.1
+License: Apache License 2.0
+Classifier: License :: OSI Approved :: Apache Software License
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
