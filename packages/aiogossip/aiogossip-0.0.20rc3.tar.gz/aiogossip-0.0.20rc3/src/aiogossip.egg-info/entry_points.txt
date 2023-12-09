@@ -1,0 +1,2 @@
+[console_scripts]
+aiogossip = aiogossip.__main__:main
