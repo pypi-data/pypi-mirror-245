@@ -1,0 +1,45 @@
+[project]
+name = "promplate-trace"
+version = "0.0.1dev2"
+description = "Observability for Promplate"
+authors = [
+    { name = "Muspi Merol", email = "me@promplate.dev" },
+]
+dependencies = [
+    "promplate==0.3.0a6",
+    "pydantic-settings>=2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+langsmith = [
+    "langsmith>=0.0.69",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "isort>=5.12.0",
+    "black>=23.11.0",
+]
+
+[tool.pdm.scripts.fmt]
+composite = [
+    "isort ./{args}",
+    "black ./{args}",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 140
