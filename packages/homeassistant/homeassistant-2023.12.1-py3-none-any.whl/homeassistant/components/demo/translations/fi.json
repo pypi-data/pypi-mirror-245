@@ -1,0 +1,50 @@
+{
+    "entity": {
+        "climate": {
+            "ubercool": {
+                "state_attributes": {
+                    "swing_mode": {
+                        "state": {
+                            "off": "Pois"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "thermostat_mode": {
+                "state": {
+                    "away": "Poissa"
+                }
+            }
+        },
+        "vacuum": {
+            "model_s": {
+                "state_attributes": {
+                    "cleaned_area": {
+                        "name": "Puhdistettu alue"
+                    }
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "options_1": {
+                "data": {
+                    "bool": "Valinnainen boolean",
+                    "constant": "Jatkuva",
+                    "int": "Numeerinen sy\u00f6tt\u00f6"
+                }
+            },
+            "options_2": {
+                "data": {
+                    "multi": "Monivalinta",
+                    "select": "Valitse vaihtoehto",
+                    "string": "Merkkijonon arvo"
+                }
+            }
+        }
+    },
+    "title": "Demo"
+}

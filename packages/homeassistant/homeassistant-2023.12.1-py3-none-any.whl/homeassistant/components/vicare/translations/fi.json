@@ -1,0 +1,109 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "Uudelleentodennus onnistui",
+            "single_instance_allowed": "Jo m\u00e4\u00e4ritetty. Vain yksi konfiguraatio mahdollinen.",
+            "unknown": "Odottamaton virhe"
+        },
+        "error": {
+            "invalid_auth": "Virheellinen todennus"
+        },
+        "flow_title": "{name} ({host})",
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "client_id": "API-avain",
+                    "password": "Salasana"
+                }
+            },
+            "user": {
+                "data": {
+                    "client_id": "API-avain",
+                    "password": "Salasana",
+                    "username": "S\u00e4hk\u00f6posti"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "compressor_phase": {
+                "name": "Kompressorin vaihe"
+            },
+            "compressor_starts": {
+                "name": "Kompressorik\u00e4ynnistyksi\u00e4"
+            },
+            "gas_consumption_heating_this_month": {
+                "name": "L\u00e4mmityskaasun kulutus t\u00e4ss\u00e4 kuussa"
+            },
+            "gas_consumption_heating_this_week": {
+                "name": "L\u00e4mmityskaasun kulutus t\u00e4ll\u00e4 viikolla"
+            },
+            "gas_consumption_heating_this_year": {
+                "name": "L\u00e4mmityskaasun kulutus t\u00e4n\u00e4 vuonna"
+            },
+            "gas_consumption_heating_today": {
+                "name": "L\u00e4mmityskaasun kulutus t\u00e4n\u00e4\u00e4n"
+            },
+            "gas_summary_consumption_heating_currentday": {
+                "name": "L\u00e4mmityskaasun kulutus kuluva p\u00e4iv\u00e4"
+            },
+            "gas_summary_consumption_heating_currentmonth": {
+                "name": "L\u00e4mmityskaasun kulutus kuluva kuukausi"
+            },
+            "gas_summary_consumption_heating_currentyear": {
+                "name": "L\u00e4mmityskaasun kulutus kuluva vuosi"
+            },
+            "gas_summary_consumption_heating_lastsevendays": {
+                "name": "L\u00e4mmityskaasun kulutus viimeisen seitsem\u00e4n p\u00e4iv\u00e4n aikana"
+            },
+            "hotwater_gas_consumption_heating_this_month": {
+                "name": "LKV kaasun kulutus t\u00e4ss\u00e4 kuussa"
+            },
+            "hotwater_gas_consumption_heating_this_week": {
+                "name": "LKV kaasun kulutus t\u00e4ll\u00e4 viikolla"
+            },
+            "hotwater_gas_consumption_heating_this_year": {
+                "name": "LKV kaasun kulutus t\u00e4n\u00e4 vuonna"
+            },
+            "hotwater_gas_consumption_today": {
+                "name": "LKV kaasun kulutus t\u00e4n\u00e4\u00e4n"
+            },
+            "hotwater_gas_summary_consumption_heating_currentday": {
+                "name": "LKV kaasun kulutus kuluva p\u00e4iv\u00e4"
+            },
+            "hotwater_gas_summary_consumption_heating_currentmonth": {
+                "name": "LKV kaasun kulutus kuluva kuukausi"
+            },
+            "hotwater_gas_summary_consumption_heating_currentyear": {
+                "name": "LKV kaasun kulutus kuluvan vuosi"
+            },
+            "hotwater_gas_summary_consumption_heating_lastsevendays": {
+                "name": "LKV kaasunkulutus viimeisten seitsem\u00e4n p\u00e4iv\u00e4n aikana"
+            },
+            "hotwater_max_temperature": {
+                "name": "LKV max l\u00e4mp\u00f6tila"
+            },
+            "hotwater_min_temperature": {
+                "name": "LKV min l\u00e4mp\u00f6tila"
+            },
+            "hotwater_out_temperature": {
+                "name": "LKV ulkol\u00e4mp\u00f6tila"
+            },
+            "outside_temperature": {
+                "name": "Ulkol\u00e4mp\u00f6tila"
+            }
+        }
+    },
+    "exceptions": {
+        "program_not_activated": {
+            "message": "ViCare -ohjelmaa {program} ei pystyt\u00e4 aktivoimaan."
+        },
+        "program_not_deactivated": {
+            "message": "ViCare -ohjelmaa {program} ei voida poistaa k\u00e4yt\u00f6st\u00e4."
+        },
+        "program_unknown": {
+            "message": "Esiasetusta {preset} ei voida k\u00e4\u00e4nt\u00e4\u00e4 kelvolliseksi ViCare-ohjelmaksi."
+        }
+    }
+}

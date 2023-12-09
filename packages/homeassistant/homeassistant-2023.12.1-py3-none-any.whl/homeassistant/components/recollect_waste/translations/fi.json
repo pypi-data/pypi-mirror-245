@@ -1,0 +1,17 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "friendly_name": "K\u00e4yt\u00e4 kutsumanimi\u00e4 noutotyypeiss\u00e4 (jos mahdollista)"
+                },
+                "title": "M\u00e4\u00e4rit\u00e4 Recollec Waste"
+            }
+        }
+    }
+}

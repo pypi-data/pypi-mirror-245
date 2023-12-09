@@ -1,0 +1,12 @@
+{
+    "services": {
+        "adb_command": {
+            "fields": {
+                "command": {
+                    "name": "Comando"
+                }
+            },
+            "name": "Comando ADB"
+        }
+    }
+}

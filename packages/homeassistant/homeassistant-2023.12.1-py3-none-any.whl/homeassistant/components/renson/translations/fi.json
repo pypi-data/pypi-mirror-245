@@ -1,0 +1,49 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Yhteyden muodostaminen ep\u00e4onnistui",
+            "unknown": "Odottamaton virhe"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Palvelin"
+                },
+                "data_description": {
+                    "host": "Renson Endura delta -laitteen is\u00e4nt\u00e4nimi tai IP-osoite."
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "reset_filter": {
+                "name": "Suodattimen laskurin nollaus"
+            }
+        },
+        "sensor": {
+            "breeze_level": {
+                "state": {
+                    "off": "Pois"
+                }
+            },
+            "manual_level": {
+                "state": {
+                    "off": "Pois"
+                }
+            },
+            "ventilation_level": {
+                "state": {
+                    "off": "Pois"
+                }
+            }
+        }
+    },
+    "selector": {
+        "level_setting": {
+            "options": {
+                "off": "Pois"
+            }
+        }
+    }
+}

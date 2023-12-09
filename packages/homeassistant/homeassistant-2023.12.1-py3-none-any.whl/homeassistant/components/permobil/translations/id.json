@@ -1,0 +1,45 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Perangkat sudah dikonfigurasi"
+        },
+        "error": {
+            "unknown": "Kesalahan yang tidak diharapkan, informasi lebih lanjut tersedia di log"
+        },
+        "step": {
+            "email_code": {
+                "data": {
+                    "code": "Kode email"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "max_distance_left": {
+                "name": "Jarak pengisian penuh"
+            },
+            "max_watt_hours": {
+                "name": "Jam watt maksimum baterai"
+            },
+            "record_adjustments": {
+                "name": "Rekam jumlah penyesuaian"
+            },
+            "state_of_charge": {
+                "name": "Pengisian daya baterai"
+            },
+            "state_of_health": {
+                "name": "Kesehatan baterai"
+            },
+            "usage_adjustments": {
+                "name": "Jumlah penyesuaian"
+            },
+            "usage_distance": {
+                "name": "Jarak yang ditempuh"
+            },
+            "watt_hours_left": {
+                "name": "Watt jam tersisa"
+            }
+        }
+    }
+}
