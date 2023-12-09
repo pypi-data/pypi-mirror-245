@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mlx-geometric"
+version = "0.1.0"
+description = "MLX library for Geometric Deep Learning."
+authors = ["Jake Tae <jaesungtae@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src/mlx_geometric"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mlx = "^0.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
