@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gamecreator_auth_database
+Version: 1.0.1
+Summary: GameCreator Auth database 配置相关
+Home-page: https://github.com/myally/GameCreator-Auth-database
+Author: BlackWhite
+Author-email: jierong8215@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: django (>=5.0,<6.0)
+Project-URL: Repository, https://github.com/myally/GameCreator-Auth-database
+Description-Content-Type: text/markdown
+
+## 说明
+
+GameCreator Auth database 配置相关
+

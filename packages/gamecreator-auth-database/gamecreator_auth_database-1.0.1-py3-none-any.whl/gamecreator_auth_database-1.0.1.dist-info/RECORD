@@ -1,0 +1,6 @@
+gamecreator_auth_database/__init__.py,sha256=HDtOwKDVlBl8OR838Nn4ksaht-S_NRWM6gp4mqEnTwg,89
+gamecreator_auth_database/auth_secret_key.py,sha256=wrwb-y4ZN0RrWRiqXiQvnvcPQLIycik6csWvgAmJEnY,328
+gamecreator_auth_database/gamecreator_auth.py,sha256=OGULszwFUCo1DyVOJjeuqhK0hZKxB2awEsLbM2hIQcY,467
+gamecreator_auth_database-1.0.1.dist-info/METADATA,sha256=G0uadp_N7SXqE3MzciAUn5xYkPaSejvL9PK2JdC_Po8,669
+gamecreator_auth_database-1.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gamecreator_auth_database-1.0.1.dist-info/RECORD,,
