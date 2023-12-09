@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pygam2
+Version: 0.8.0
+Summary: GAM toolkit
+Home-page: https://github.com/MikeHLee/pyGAM2
+Keywords: machine-learning data-science scientific-computing
+Author: MikeHLee
+Author-email: leemichael289@gmail.com
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy<1.24.0
+Requires-Dist: progressbar2
+Requires-Dist: scipy
