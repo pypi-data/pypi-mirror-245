@@ -1,0 +1,4 @@
+[gui_scripts]
+MatDB = RepTate.MatDB:main
+RepTate = RepTate.__main__:main
+UV = RepTate.UV:main
