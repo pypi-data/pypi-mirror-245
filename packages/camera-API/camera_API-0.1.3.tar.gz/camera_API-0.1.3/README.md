@@ -1,0 +1,55 @@
+Supported OS’s - Windows 10 (64-bit), Windows 8.1 (64-bit)
+This document contains how to use Camera API.
+
+Pre-request
+	
+1.	Python – 3.10.
+2.	OpenCV – pip install opencv-python==4.5.5.62 (Need to replace the e-con OpenCV .pyd file).
+3.	Pretty table – pip install prettytable==3.8.0.
+4.	HID – pip install hidapi==0.13.1.
+5.	Numpy – pip install numpy==1.24.3.
+
+Using Camera API
+	This API is provided with a set of features that can be used to test the functionality of cameras.
+
+get_devices
+	get_devices API is used to get the connected camera names and nodes. Using the camera nodes user can open and accessing the camera.
+	
+Syntax- Camera_API.get_devices()
+
+Example –
+	from camera_API import Camera_API
+Camera_API.get_devices()
+
+Output-
+	0: Integrated Camera
+1: See3CAM_CU55
+Here,
+0 – refers to connected node
+1 – refers to camera name.
+
+open_camera
+	open_camera API is used to open the camera using the node. Once open the camera then only user able to access the camera.
+
+Syntax- Camera_API.open_camera(node)
+
+Example –
+	from camera_API import Camera_API
+Camera_API.open_camera(1)
+
+Output-
+	Object – It assigned the camera.
+Error- 
+	Error code: 101 Camera not found.
+
+get_device_path
+	get_device_path is used to getting the path of the camera, It is unique for the connected camera. Using the node user get the device path.
+
+Syntax- Camera_API.get_device_path(node)
+
+Example –
+	from camera_API import Camera_API
+Camera_API.open_camera(1)
+Camera_API.get_device_path(1)
+Output-
+	\\?\usb#vid_2560&pid_c154&mi_00#6&686f1de&6&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global
