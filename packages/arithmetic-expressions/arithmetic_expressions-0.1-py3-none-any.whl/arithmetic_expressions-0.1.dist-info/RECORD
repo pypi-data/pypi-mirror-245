@@ -1,0 +1,6 @@
+arithmetic_expressions/__init__.py,sha256=bjUc7gMTPxAh4rD_fTOuY4_unJqfrek8rQhzlv5XyWY,162
+arithmetic_expressions/engine.py,sha256=9HSBtiR7YOE4jY_BeVe2SsNzm3u4ZNJM-2OFewA01pg,5561
+arithmetic_expressions/expression.py,sha256=4z73KtLCCovwJYiZnLoat_DtBHSwfVO3c3Q8fU7XgRU,6503
+arithmetic_expressions-0.1.dist-info/METADATA,sha256=CWlN5yTdqhQRK9b-8wKy77JM4Rhz7l-1DWo_oN6UY9w,1750
+arithmetic_expressions-0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+arithmetic_expressions-0.1.dist-info/RECORD,,
