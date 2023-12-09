@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/loadotenv/__init__.py
+src/loadotenv/main.py
+src/loadotenv.egg-info/PKG-INFO
+src/loadotenv.egg-info/SOURCES.txt
+src/loadotenv.egg-info/dependency_links.txt
+src/loadotenv.egg-info/top_level.txt
+tests/test.py
