@@ -1,0 +1,6 @@
+pytest
+nbval
+nbqa
+ruff
+black[jupyter]
+jupyterlab
