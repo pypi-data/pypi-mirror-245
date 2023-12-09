@@ -1,0 +1,55 @@
+[project]
+name = "multiformats-fix"
+version = "0.2.3"
+authors = [{ name = "aviksaikat", email = "saikickkarma@protonmail.com" }]
+description = "Python implementation of multiformats protocols."
+readme = "README.rst"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.8",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Typing :: Typed",
+]
+
+dependencies = [
+    "typing-extensions",
+    #"bases", "multiformats-config",
+    "makkus.bases",               # fix to pydantic v2
+    "makkus.multiformats-config", # fix to pydantic v2
+    "typing-validation-fix",
+]
+
+[project.urls]
+Homepage = "https://github.com/aviksaikat/multiformats"
+Issues = "https://github.com/aviksaikat/multiformats/issues"
+
+[project.optional-dependencies]
+dev = [
+    "mypy",
+    "pylint",
+    "pytest",
+    "pytest-cov",
+    "pysha3",
+    "blake3",
+    "pyskein",
+    "mmh3",
+    "pycryptodomex",
+]
+full = ["pysha3", "blake3", "pyskein", "mmh3", "pycryptodomex"]
+
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+# # see https://github.com/pypa/setuptools_scm
+# [tool.setuptools_scm]
+# version_scheme = "post-release"   # use post-release scheme (default is pre-release of next version)
+# local_scheme = "no-local-version" # interferes with PyPI
