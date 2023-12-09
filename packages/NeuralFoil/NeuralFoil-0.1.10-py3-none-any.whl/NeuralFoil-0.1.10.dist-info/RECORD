@@ -1,0 +1,16 @@
+neuralfoil/CL_linear_regression.py,sha256=tfg6YpeR26QGjI3BGCZ1qG1KQoMisLz609O_DAL-iCA,3164
+neuralfoil/__init__.py,sha256=8FmP8owCcr1pt4arkZahobGcEUpB-SBGLSdHyQD5SXU,173
+neuralfoil/neuralfoil.py,sha256=EHjacycFOkPwiyCtZytHjlFePhe2qqrU0bnOufQ83OA,8538
+neuralfoil/nn_weights_and_biases/nn-large.npz,sha256=Cfov7XXf3r4W9IwXW1yRN7svysQWZQyK0MYI5jtxc4k,139249
+neuralfoil/nn_weights_and_biases/nn-medium.npz,sha256=3cQorVLrniPMl3KlHplL-16NPF7T8E40S7wzDQz9D6k,39605
+neuralfoil/nn_weights_and_biases/nn-small.npz,sha256=lquFBfg87NUT2ew_8y7YTLJlcQdDwnRNliJFT9jeryk,15252
+neuralfoil/nn_weights_and_biases/nn-xlarge.npz,sha256=LAH_3ONg8sFesvKBviSZtzA4u04Jc4KaXwKarRoawUQ,531632
+neuralfoil/nn_weights_and_biases/nn-xsmall.npz,sha256=rRS2ap7J18s7KCe5iaALRQQVJpOgNxYtdm8jSU97x7Y,8717
+neuralfoil/nn_weights_and_biases/nn-xxlarge.npz,sha256=66P1s8vYvTD85kQaq-ZA7ODFvG6mhUrLnuoC2fCGMSI,778985
+neuralfoil/nn_weights_and_biases/nn-xxsmall.npz,sha256=K1Dj14xF1DIcsZ-I2I2Poa21yjxFYftNp7ZsYUdHjUk,4328
+neuralfoil/nn_weights_and_biases/nn-xxxlarge.npz,sha256=9uoYsxXFnDqfsY92GyESSt64efhOhapo3ATyaBPL7FU,3076097
+NeuralFoil-0.1.10.dist-info/LICENSE.txt,sha256=86OFfwv6sXM7zqSL6LbxrSxDF2-FU2LN1sM0o2CpNFA,1074
+NeuralFoil-0.1.10.dist-info/METADATA,sha256=Nlcyq6pvSlk0x81GKd6j8nEai8ZrbXyg7F8tUsSrO0Y,24885
+NeuralFoil-0.1.10.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+NeuralFoil-0.1.10.dist-info/top_level.txt,sha256=tIgkusri7OL_Chu1yBrVzHLz2YSF77ZuzubnvDKmtA4,11
+NeuralFoil-0.1.10.dist-info/RECORD,,
