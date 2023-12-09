@@ -1,0 +1,7 @@
+Cartopy
+matplotlib
+numpy
+pandas
+rasterio
+scikit_image
+skimage
