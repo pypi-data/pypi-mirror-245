@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: snakemake-executor-plugin-azure-batch
+Version: 0.1.0
+Summary: A Snakemake executor plugin for submitting jobs to Microsoft Azure Batch.
+Home-page: https://github.com/snakemake/snakemake-executor-plugin-azure-batch
+License: MIT
+Keywords: snakemake,plugin,executor,azure-batch
+Author: Johannes Koester
+Author-email: johannes.koester@uni-due.de
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: azure-batch (>=14.0.0,<15.0.0)
+Requires-Dist: azure-identity (>=1.14.0,<2.0.0)
+Requires-Dist: azure-mgmt-batch (>=17.1.0,<18.0.0)
+Requires-Dist: azure-storage-blob (>=12.17.0,<13.0.0)
+Requires-Dist: msrest (>=0.7.1,<0.8.0)
+Requires-Dist: snakemake-interface-common (==1.14.4)
+Requires-Dist: snakemake-interface-executor-plugins (==8.1.1)
+Project-URL: Documentation, https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/azure-batch.html
+Project-URL: Repository, https://github.com/snakemake/snakemake-executor-plugin-azure-batch
+Description-Content-Type: text/markdown
+
+# snakemake-executor-plugin-azure-batch
+
+A Snakemake executor plugin for submitting jobs to Microsoft Azure Batch.
