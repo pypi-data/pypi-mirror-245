@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: finam_mhm
+Version: 0.1.0
+Summary: FINAM module for mHM.
+Project-URL: Homepage, https://FINAM.pages.ufz.de/
+Project-URL: Documentation, https://FINAM.pages.ufz.de/finam-mhm/
+Project-URL: Source, https://git.ufz.de/FINAM/finam-mhm
+Project-URL: Tracker, https://git.ufz.de/FINAM/finam-mhm/-/issues
+Project-URL: Changelog, https://git.ufz.de/FINAM/finam-mhm/-/blob/main/CHANGELOG.md
+Author-email: FINAM Developers <finam@ufz.de>
+License-Expression: LGPL-3.0
+License-File: AUTHORS.md
+License-File: COPYING
+License-File: COPYING.LESSER
+License-File: LICENSE.md
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Requires-Dist: f90nml
+Requires-Dist: finam>=0.5.1
+Requires-Dist: mhm>=5.13.1
+Requires-Dist: numpy>=1.17.0
+Provides-Extra: doc
+Requires-Dist: docutils>=0.18; extra == 'doc'
+Requires-Dist: myst-parser>=1.0; extra == 'doc'
+Requires-Dist: numpydoc>=1.1; extra == 'doc'
+Requires-Dist: pydata-sphinx-theme==0.13; extra == 'doc'
+Requires-Dist: sphinx-design>=0.4; extra == 'doc'
+Requires-Dist: sphinx>=6; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest-cov>=3; extra == 'test'
+Description-Content-Type: text/markdown
+
+# FINAM-mHM component
+
+FINAM component for the mesoscale Hydrological Model - [mHM](https://mhm-ufz.org/)
+
+<a href="https://finam.pages.ufz.de/finam-mhm/" title="FINAM-mHM homepage" target="_blank">
+  <img width="300" src="https://git.ufz.de/FINAM/finam-mhm/-/raw/main/docs/source/_static/logo_large.svg" />
+</a>
+
+## Installation
+
+```shell
+$ pip install finam-mhm
+```
+
+## Resources
+
+* FINAM-mHM [documentation](https://finam.pages.ufz.de/finam-mhm/)
+* FINAM-mHM [source code](https://git.ufz.de/FINAM/finam-mhm)
+* FINAM [homepage](https://finam.pages.ufz.de)
+* FINAM [documentation](https://finam.pages.ufz.de/finam/)
+* FINAM [source code](https://git.ufz.de/FINAM/finam)
+* FINAM [GitLab group](https://git.ufz.de/FINAM), containing further related projects
+
+## License
+
+LGPLv3 (c) 2023 CHS- and FINAM-Developers from Helmholtz-Zentrum für Umweltforschung GmbH - UFZ. All rights reserved.
