@@ -1,0 +1,42 @@
+[project]
+name = "typing-validation-fix"
+version = "1.0.4"
+authors = [{ name = "aviksaikat", email = "saikickkarma@protonmail.com" }]
+description = "Forked from the original author until they incorporate latest fixes; a simple library for runtime type-checking."
+readme = "README.rst"
+requires-python = ">=3.8"
+
+dependencies = ["typing_extensions>=4.6.0"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.8",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/hashberg-io/typing-validation"
+Issues = "https://github.com/hashberg-io/typing-validation/issues"
+
+# [project.dependencies]
+# typing_extensions = ">=4.6.0"
+
+[project.optional-dependencies]
+dev = ["mypy", "pylint", "pytest", "pytest-cov", "rich"]
+
+
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+# see https://github.com/pypa/setuptools_scm
+[tool.setuptools_scm]
+version_scheme = "post-release"   # use post-release scheme (default is pre-release of next version)
+local_scheme = "no-local-version" # interferes with PyPI
