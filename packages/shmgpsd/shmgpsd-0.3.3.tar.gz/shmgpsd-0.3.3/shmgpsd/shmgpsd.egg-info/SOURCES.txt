@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+shmgpsd/shmgpsd.py
+shmgpsd/shmgpsd.egg-info/PKG-INFO
+shmgpsd/shmgpsd.egg-info/SOURCES.txt
+shmgpsd/shmgpsd.egg-info/dependency_links.txt
+shmgpsd/shmgpsd.egg-info/top_level.txt
