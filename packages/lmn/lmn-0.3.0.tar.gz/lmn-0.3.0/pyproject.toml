@@ -1,0 +1,50 @@
+[project]
+name = "lmn"
+version = "0.3.0"
+description = "LMN: LaMbda functions across servers for Noobs"
+authors = [
+    { name = "Takuma Yoneda", email = "takuma-yoneda@users.noreply.github.com" },
+    { name = "Takuma Yoneda", email = "takuma.ynd@gmail.com" },
+]
+dependencies = [
+    "colorlog",
+    "docker",
+    "fabric",
+    "randomname",
+    "simple_slurm_command",
+    "dockerpty>=0.4.1",
+    "pyjson5",
+    "python-dotenv",
+    "python-on-whales>=0.53.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+
+[project.license]
+text = "MIT License"
+
+[project.urls]
+Homepage = "https://github.com/takuma-yoneda/lmn"
+
+[project.scripts]
+lmn = "lmn.cli:main"
+
+[tool.pdm]
+package-dir = "."
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
