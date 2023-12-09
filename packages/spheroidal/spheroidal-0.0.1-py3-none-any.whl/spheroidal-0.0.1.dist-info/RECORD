@@ -1,0 +1,10 @@
+spheroidal/__init__.py,sha256=wbZQc6ODnAZ4DoeF8BvtLyfzLVacR4IjVKualdYcfuA,269
+spheroidal/leaver.py,sha256=UPHnVbGi6W_C9EjrAc6BGNNL3zhXhPifgUt7aWeKXfU,13136
+spheroidal/spectral.py,sha256=ob-ptN5178yW6VgagfK-Ch_W24i07KLbMSU9i6jxHVw,5804
+spheroidal/spherical.py,sha256=NXHEZFanvBx4pT94IZix6FecGijoAxJJOGcIoXQmKAc,11508
+spheroidal/wrapper.py,sha256=iWhS-vUr8s2gFKe1siBVVimz6PGxotnzCV4J7UFYxnY,7138
+spheroidal-0.0.1.dist-info/LICENSE,sha256=Lx-FaYsRSpk7YOYne8kCKuB0XC8M4DPk8pVlOi3jQCE,1068
+spheroidal-0.0.1.dist-info/METADATA,sha256=OGIYVijgL1iTjK4l_oaSEh2_jhh_VB_0KsQiUEdC8yM,363
+spheroidal-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+spheroidal-0.0.1.dist-info/top_level.txt,sha256=IhHziLJAfSvNCUYExIjowfqF3tMZIPfnekwqK7sy7fI,11
+spheroidal-0.0.1.dist-info/RECORD,,
