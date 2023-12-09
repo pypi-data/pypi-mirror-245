@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/freemailchecker/__init__.py
+src/freemailchecker/freemailchecker.py
+src/freemailchecker.egg-info/PKG-INFO
+src/freemailchecker.egg-info/SOURCES.txt
+src/freemailchecker.egg-info/dependency_links.txt
+src/freemailchecker.egg-info/top_level.txt
+src/freemailchecker/data/freemaildomains.csv
+tests/test_freemailchecker.py
