@@ -1,0 +1,81 @@
+# S-Engine CLI (Sonic Engine CLI)
+
+S-Engine CLI is a command-line interface for the Sonic Engine extensions manager.
+
+## Installation
+
+You can install S-Engine CLI using pip:
+
+```bash
+pip install sengine-cli
+```
+
+## Usage
+
+After installation, you can use the `sengine-cli` command to interact with the Sonic Engine extensions manager.
+
+### Example:
+
+```bash
+sengine-cli start my_config.yaml -l
+```
+
+- `start`: Command to start the Sonic Engine with the specified configuration file.
+- `my_config.yaml`: Path to the configuration file.
+- `-l` or `--logs`: Enable logging.
+
+## Features
+
+- Easy-to-use command-line interface.
+- Manage extensions for the Sonic Engine effortlessly.
+- No need to code anything, just use the CLI commands along with a configuration file.
+
+## Configuration file
+
+The configuration file is a YAML file that contains the configuration for the Sonic Engine. Here's an example:
+
+```yaml
+# Path: my_config.yaml
+# Metadata section for general configuration
+metadata:
+  # Folder where extensions are stored
+  extensions_folder: extensions
+
+# Categories section for grouping extensions
+categories:
+  - name: feature
+    description: Extensions that extract features from flows
+  - name: inference
+    description: Extensions that infer information from flows and request predictions
+  - name: reporting
+    description: Extensions that report the results
+
+# Extensions section for defining individual extensions
+extensions:
+  - id: hello_world_feature_0
+    category: feature
+    # Source repository for the hello_world_feature_0 extension
+    source: https://github.com/AhmedCoolProjects/sonic-engine-hello-world-feature.git
+    # Configurations for controlling extension instances
+    override:
+      # Override the default extension instance configs for hello_world_feature_0
+      hello_world_feature_0:
+        branch: main
+      # # Add a new extension instance named hello_world_feature_1 with different branch
+      # hello_world_feature_1:
+      #   branch: dup/1
+      # # Override local configs for a new instance named hello_world_feature_2 _(i.e different description in this case)_
+      # hello_world_feature_2:
+      #   branch: main
+      #   description: This is a new instance of the hello world feature extension overriding the default configs
+
+  - id: hello_world_inference_0
+    category: inference
+    # Source repository for the hello_world_inference_0 extension
+    source: https://github.com/AhmedCoolProjects/sonic-engine-hello-world-inference.git
+
+  - id: hello_world_reporting_0
+    category: reporting
+    # Source repository for the hello_world_reporting_0 extension
+    source: https://github.com/AhmedCoolProjects/sonic-engine-hello-world-reporting.git
+```

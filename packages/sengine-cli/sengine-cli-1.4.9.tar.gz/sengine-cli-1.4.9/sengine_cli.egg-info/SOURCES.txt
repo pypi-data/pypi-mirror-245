@@ -1,0 +1,10 @@
+README.md
+setup.py
+sengine_cli/__init__.py
+sengine_cli/__main__.py
+sengine_cli.egg-info/PKG-INFO
+sengine_cli.egg-info/SOURCES.txt
+sengine_cli.egg-info/dependency_links.txt
+sengine_cli.egg-info/entry_points.txt
+sengine_cli.egg-info/requires.txt
+sengine_cli.egg-info/top_level.txt
