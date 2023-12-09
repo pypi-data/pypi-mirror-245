@@ -1,0 +1,12 @@
+libXML-Parser.so,sha256=lBfLTnkB2jSLS_GjO2-FWwvhl9c5ltI8rnZlTbTDm6I,265304
+libEFG.so,sha256=bLV-vK2iydW8AucPkq8lN7AbhvCYmWKPhzwdugwuXN0,1201441
+libTrainingTools.so,sha256=vULwLtX66GY9ijKRXA0RH_myoyAMtzrtcTuvB14pHSU,107992
+efg.pypy37-pp73-x86_64-linux-gnu.so,sha256=a-7VUuZb9nPdM4K2JajpteeJu16EEQDS7CShjF2yDzE,494929
+efg-0.0.2.dist-info/RECORD,,
+efg-0.0.2.dist-info/WHEEL,sha256=q9dACjjc9G4BWGDyt1YJXSsK2l1cs4Mf5BbjFTFXjus,162
+efg-0.0.2.dist-info/LICENSE,sha256=SgyEQniK1Tmkhsv7elDcupnP9ElRXjHS061a0QLjfVM,1071
+efg-0.0.2.dist-info/METADATA,sha256=Z5EmjZIGC2bqvYwXfJ752PM89xLOouBa5GivYbsPyF4,624
+efg-0.0.2.dist-info/top_level.txt,sha256=rK74hneFUNlKqj5pio_V4XH127olSucm_7zt7aZyDCc,4
+efg.libs/libXML-Parser-9417cb4e.so,sha256=X2wpmq5yHF3Zka5vJJzCUUzisD0eTvLp0KxbZZVlen8,343473
+efg.libs/libTrainingTools-bd42f02e.so,sha256=tQGnBjlLvjxzJOKlYZKBgPprYRd_ED2l9SAxvnbE4H8,124649
+efg.libs/libEFG-2283ba78.so,sha256=sxiIXwHDW2jPL8zFzISXm8yPj5D_qR20_KxJJ2cQu3Y,1290977
