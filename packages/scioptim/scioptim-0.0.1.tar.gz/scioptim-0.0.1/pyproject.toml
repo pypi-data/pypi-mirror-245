@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "scioptim"
+version = "0.0.1"
+description = "collection and wrapper for different optimizer"
+authors = ["Julian Kimmig <julian.kimmig@gmx.net>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/JulianKimmig/scioptim"
+repository = "https://github.com/JulianKimmig/scioptim"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9" # Adjust to your Python version
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+PyYAML = "*"
+wrapconfig = "*"
+optuna = "^3.4.0"
+scipy = "^1.11.4"
+sympy = "^1.12"
+torch = "^2.1.1"
+botorch = "^0.9.4"
+matplotlib = "^3.8.2"
+
+[[tool.poetry.source]]
+name = "torchcuda118"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "supplemental"
+
+
+[tool.poetry.group.cpu.dependencies]
+torch = "^2.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[[tool.poetry_bumpversion.replacements]]
+files = ["envpicker/__init__.py"]
+
+[tool.pylint.MASTER]
+extension-pkg-whitelist = "numpy"

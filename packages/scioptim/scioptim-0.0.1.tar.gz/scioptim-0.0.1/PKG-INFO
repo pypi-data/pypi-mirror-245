@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: scioptim
+Version: 0.0.1
+Summary: collection and wrapper for different optimizer
+Home-page: https://github.com/JulianKimmig/scioptim
+License: MIT
+Author: Julian Kimmig
+Author-email: julian.kimmig@gmx.net
+Requires-Python: >=3.9,<3.12
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: PyYAML
+Requires-Dist: botorch (>=0.9.4,<0.10.0)
+Requires-Dist: matplotlib (>=3.8.2,<4.0.0)
+Requires-Dist: optuna (>=3.4.0,<4.0.0)
+Requires-Dist: scipy (>=1.11.4,<2.0.0)
+Requires-Dist: sympy (>=1.12,<2.0)
+Requires-Dist: torch (>=2.1.1,<3.0.0)
+Requires-Dist: wrapconfig
+Project-URL: Repository, https://github.com/JulianKimmig/scioptim
+Description-Content-Type: text/markdown
+
+
