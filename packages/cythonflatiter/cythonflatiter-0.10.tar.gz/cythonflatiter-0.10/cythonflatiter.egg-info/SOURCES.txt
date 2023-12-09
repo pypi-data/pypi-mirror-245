@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cythonflatiter/README.MD
+cythonflatiter/__init__.py
+cythonflatiter/requirements.txt
+cythonflatiter/thirdparty.json
+cythonflatiter.egg-info/PKG-INFO
+cythonflatiter.egg-info/SOURCES.txt
+cythonflatiter.egg-info/dependency_links.txt
+cythonflatiter.egg-info/requires.txt
+cythonflatiter.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+include cythonflatiter/requirements.txt
+include cythonflatiter/thirdparty.json
+include cythonflatiter/README.MD
