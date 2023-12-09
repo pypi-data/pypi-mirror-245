@@ -1,0 +1,10 @@
+pyproject.toml
+readme.md
+src/mag4/__init__.py
+src/mag4/display_databases.py
+src/mag4/get_data.py
+src/mag4/write_json_file.py
+src/mag4.egg-info/PKG-INFO
+src/mag4.egg-info/SOURCES.txt
+src/mag4.egg-info/dependency_links.txt
+src/mag4.egg-info/top_level.txt
