@@ -1,0 +1,7 @@
+README.rst
+setup.cfg
+setup.py
+lacucaracha.egg-info/PKG-INFO
+lacucaracha.egg-info/SOURCES.txt
+lacucaracha.egg-info/dependency_links.txt
+lacucaracha.egg-info/top_level.txt
