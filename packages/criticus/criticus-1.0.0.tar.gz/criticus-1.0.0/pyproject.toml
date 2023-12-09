@@ -1,0 +1,90 @@
+[tool.hatch]
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+    "lxml>=4.8.0",
+    "PySimpleGUI>=4.57.0",
+    "natsort>=8.1.0",
+    "Markdown==3.2.2",
+    "markdown-del-ins>=1.0.0",
+    "python-docx>=0.8.11",
+]
+description = "A suite of tools for transcribing, collating and creating an apparatus criticus."
+dynamic = ["version"]
+keywords = ["TEI", "transcription", "collation", "critical", "apparatus"]
+license = "MIT"
+name = "criticus"
+readme = "README.md"
+
+[project.urls]
+documentation = "https://github.com/d-flood/criticus#readme"
+issues = "https://github.com/d-flood/criticus/issues"
+source = "https://github.com/d-flood/criticus"
+
+[tool.hatch.version]
+path = "criticus/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+  "rich",
+]
+[tool.hatch.envs.default.scripts]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.10", "3.11"]
+
+[tool.hatch.envs.lint]
+dependencies = []
+detached = true
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github",
+  "/docs",
+  "/tests",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["criticus"]
+
+[tool.coverage.run]
+branch = true
+omit = [
+  "criticus/__about__.py",
+]
+parallel = true
+source_pkgs = ["criticus"]
+
+[tool.coverage.paths]
+apiiif = ["criticus", "*/criticus"]
+tests = ["tests", "*/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
