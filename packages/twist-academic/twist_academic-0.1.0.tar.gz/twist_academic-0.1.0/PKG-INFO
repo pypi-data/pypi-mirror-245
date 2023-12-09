@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: twist-academic
+Version: 0.1.0
+Summary: A suite kit for personal academic life.
+Author: SongshGeo
+Author-email: songshgeo@gmail.com
+Requires-Python: >=3.9,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: qcloudsms-py (>=0.1.4,<0.2.0)
+Description-Content-Type: text/markdown
+
+# twist-academic
+A suite kit for personal academic life.
+
