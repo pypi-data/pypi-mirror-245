@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: python-uime
+Version: 1.0.1
+Summary: A python library to help you build simple UI forms for your python functions
+Home-page: https://github.com/livetheoogway/python-uime
+Author: Tushar Naik
+Author-email: tushar.knaik@gmail.com
+License:  License 2.0
+Keywords: ui,generate-ui,ui-generate,ui-enable,function to ui,flask style,decorator,tushar
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Distributed Computing
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Python UI-ME
+
+[![PyPI version](https://img.shields.io/pypi/v/python-uime?style=for-the-badge)](https://pypi.org/project/python-uime)
+[![Docker Image](https://img.shields.io/docker/v/tusharknaik/python-uime?style=for-the-badge)](https://hub.docker.com/repository/docker/tusharknaik/python-uime)
+
+
+A python library to help you build simple UI forms for your python functions
+
+## UI Me
+
+Similar details can be found at [PyPi](https://pypi.org/project/python-uime/)
+
+### Installation
+
+```shell
+python3 -m pip install python-uime
+```
