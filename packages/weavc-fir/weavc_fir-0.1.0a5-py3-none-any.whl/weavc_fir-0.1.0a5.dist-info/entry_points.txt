@@ -1,0 +1,3 @@
+[console_scripts]
+fir=fir.cmd:cmd
+
