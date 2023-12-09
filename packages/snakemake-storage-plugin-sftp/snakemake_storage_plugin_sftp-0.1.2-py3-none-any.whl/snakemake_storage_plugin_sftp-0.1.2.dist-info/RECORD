@@ -1,0 +1,6 @@
+snakemake_storage_plugin_sftp/__init__.py,sha256=mzlLNA3gEPVSfRh9n_KL6CJzwgkSAogMHqArQj7VXGc,11767
+snakemake_storage_plugin_sftp/cnopts.py,sha256=2MAfPmYApq6S97epFoSwn1cyZ137TmwyPhath66uGMM,357
+snakemake_storage_plugin_sftp-0.1.2.dist-info/LICENSE,sha256=jpg1rXzRGPY4l7MAusB21rpc-5SrPkesCFTHCSO0-Vs,1066
+snakemake_storage_plugin_sftp-0.1.2.dist-info/METADATA,sha256=nceFEeRVBF25ewibjjvrq7_0ioVRkWWjtz4WemoX5UM,1066
+snakemake_storage_plugin_sftp-0.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+snakemake_storage_plugin_sftp-0.1.2.dist-info/RECORD,,
