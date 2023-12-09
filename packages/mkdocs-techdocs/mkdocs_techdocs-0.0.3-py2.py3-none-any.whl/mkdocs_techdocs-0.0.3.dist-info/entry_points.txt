@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+modethirteen.techdocs-frontmatter = modethirteen.mkdocs.frontmatter:TechDocsFrontmatterPlugin
