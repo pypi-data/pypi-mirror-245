@@ -1,0 +1,3 @@
+[console_scripts]
+boom = boomgame.main:main
+boom_version = boomgame:display_version
