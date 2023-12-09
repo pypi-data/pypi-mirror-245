@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: LoCyanFrpLib
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/LxHTT/LoCyanFrpLib
+Author: LxHTT
+Author-email: lxhtt@vip.qq.com
+License: MIT
+Project-URL: Documentation, https://github.com/LxHTT/LoCyanFrpLib/blob/master/README.md
+Project-URL: Source Code, https://github.com/LxHTT/LoCyanFrpLib
+Project-URL: Bug Tracker, https://github.com/LxHTT/LoCyanFrpLib/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7, <=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.31.0
+
+## LoCyanFrpLib
+
+<p align="right">presented by LxHTT</p>
+
+这是一个封装了LoCyanFrp API的Python库。
+
+### 安装
+
+___
+
+```command
+pip install LoCyanFrpLib
+```
+
+### 开始使用  
+
+___
+
+#### 导入  
+
+```python
+import LCFLib
+```
+
+#### 设置是否绕过系统代理  
+
+```python
+from LCFLib import BYPASS_SYSTEM_PROXY
+
+BYPASS_SYSTEM_PROXY(True) # True为开启绕过, False不绕过
+```
+
+...
+
+### 提示
+
+API分v1（未完工）与v2，如`LCFLib.v2`
+
+
