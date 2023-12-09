@@ -1,0 +1,15 @@
+LICENSE
+README.md
+rideology2gpx
+setup.py
+rideology2gpx.egg-info/PKG-INFO
+rideology2gpx.egg-info/SOURCES.txt
+rideology2gpx.egg-info/dependency_links.txt
+rideology2gpx.egg-info/requires.txt
+rideology2gpx.egg-info/top_level.txt
+rideology2gpx_tool/__init__.py
+rideology2gpx_tool/app_info.py
+rideology2gpx_tool/cli.py
+rideology2gpx_tool/data_file.py
+rideology2gpx_tool/gpx_file.py
+rideology2gpx_tool/main.py
