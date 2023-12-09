@@ -1,0 +1,4 @@
+[console_scripts]
+gfpro-irrigation-control=gfpro_irrigation_control.cli:ValveControlCLI.run
+gfpro-irrigation-control-mqtt=gfpro_irrigation_control.cli:ValveControlMQTTDaemon.run
+
