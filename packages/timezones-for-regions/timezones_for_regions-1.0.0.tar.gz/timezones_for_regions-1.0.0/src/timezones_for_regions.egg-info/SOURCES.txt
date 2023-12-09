@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/timezones_for_regions/__init__.py
+src/timezones_for_regions/timezones.py
+src/timezones_for_regions.egg-info/PKG-INFO
+src/timezones_for_regions.egg-info/SOURCES.txt
+src/timezones_for_regions.egg-info/dependency_links.txt
+src/timezones_for_regions.egg-info/top_level.txt
