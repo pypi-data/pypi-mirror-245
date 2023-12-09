@@ -1,0 +1,17 @@
+quanto/__init__.py,sha256=wOJN3HxAgnSon5vWYU3Txm2UZ_7tBHDKXUKZIH-mXX8,22
+quanto/quantization/__init__.py,sha256=KpR11CnrUATy5pR9cNbURN6wTb8qpRYjnJmlDGsDBMo,90
+quanto/quantization/calibrate.py,sha256=Z7sp1AGBWLgbYnijGq3dhHcC-wI0QLs0CfOjReaBOD0,2622
+quanto/quantization/quantize.py,sha256=n4kocyAHg5Qrb4m3ncxVO9BeYQphnZQsPMS5Ey3PP0g,1308
+quanto/quantization/nn/__init__.py,sha256=bsYmCba5One9pZpQjgPyW23BHgEONc-omg_5q-TkuJA,72
+quanto/quantization/nn/qlayernorm.py,sha256=RjOGlq9Gvk2PXfLoSz52Z5_gC6UEYOUGIuqmNRf1hYI,1102
+quanto/quantization/nn/qlinear.py,sha256=mdvoduBn2ejU3SP_pW0whB-eeM8N9gHWEsSGMV38ObM,2146
+quanto/quantization/nn/qmodule.py,sha256=Xkcw6lgW87D0fQME__03LUQhItB7nguXVtHiKb7CqNA,3133
+quanto/quantization/qtensor/__init__.py,sha256=Ya4tJY_ocAGQSHXMHUXybeq2qGVR2ioTSyoIH50lxFM,39
+quanto/quantization/qtensor/core.py,sha256=G9-s4cYZIqaUDVuwZfR9O4W0Umomza9leF80lh4pDgg,7648
+quanto/quantization/qtensor/func.py,sha256=MlGi7zH924AOGKC8S90wnOUbgw-wZ9adcnA24p1wV-c,1085
+quanto/quantization/qtensor/ops.py,sha256=_1qh3qkqMzrxBG_tYse0qroyywbnMptySQUtOpFaL9s,12257
+quanto-0.0.8.dist-info/LICENSE,sha256=_qUzP-KIxQzOSqB_wmj445jbIjSoSf5UNGYYqIU2OLs,11419
+quanto-0.0.8.dist-info/METADATA,sha256=MJpOsFWBVgGPkpbP50jUB-NJbCbaL54nTIsDdrV4MlE,8226
+quanto-0.0.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+quanto-0.0.8.dist-info/top_level.txt,sha256=k6TrpSaYfaSqPEzFl_W2DkgsWy0abhq-SDLq9HH2pW8,7
+quanto-0.0.8.dist-info/RECORD,,
