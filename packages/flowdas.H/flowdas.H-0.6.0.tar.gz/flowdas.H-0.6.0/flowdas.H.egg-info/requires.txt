@@ -1,0 +1,12 @@
+falcon
+nest-asyncio
+pyyaml
+uvicorn[standard]
+
+[:python_version < "3.10"]
+importlib_metadata
+
+[:python_version < "3.9"]
+typing-extensions
+
+[dev]

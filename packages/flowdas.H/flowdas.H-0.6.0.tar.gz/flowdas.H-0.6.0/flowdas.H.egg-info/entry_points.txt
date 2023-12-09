@@ -1,0 +1,6 @@
+[console_scripts]
+f = flowdas.boot.main:main
+
+[flowdas.boot]
+plugin.http = flowdas.http.boot
+plugin.runner = flowdas.runner.boot
