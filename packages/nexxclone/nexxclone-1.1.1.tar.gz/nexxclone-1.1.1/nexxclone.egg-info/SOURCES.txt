@@ -1,0 +1,8 @@
+nexxclone.py
+setup.py
+nexxclone.egg-info/PKG-INFO
+nexxclone.egg-info/SOURCES.txt
+nexxclone.egg-info/dependency_links.txt
+nexxclone.egg-info/entry_points.txt
+nexxclone.egg-info/requires.txt
+nexxclone.egg-info/top_level.txt

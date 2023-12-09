@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: nexxclone
+Version: 1.1.1
+Summary: A Discord Selfbot for Clone Discord Server
+Home-page: https://github.com/noritem/nexx_clone
+Author: nexxrar
+Author-email: tech@moxx.tech
+License: MIT
+Keywords: discord selfbot clone nexxclone
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+
+    # nexxclone
+
+A Discord Selfbot for Cloning Discord Servers.
+
+## Installation
+
+```bash
+pip install nexxclone
+```
+
+# Usage
+
+```py
+from nexxclone import Clone
+import discord
+
+def main():
+    # Get user input
+    token = input('Your Token > ')
+    input_guild_id = input('Your Source Server ID > ')
+    output_guild_id = input('Your Destination Server ID > ')
+
+    # Initialize the Discord client
+    client = discord.Client()
+
+    @client.event
+    async def on_ready():
+        print(f"Logged in as: {client.user}")
+        print("Cloning Server")
+
+        # Get source and destination guilds
+        guild_from = client.get_guild(int(input_guild_id))
+        guild_to = client.get_guild(int(output_guild_id))
+
+        # Prompt user for cloning options
+        all_in_one = input('Do you want to perform an all-in-one clone? [y/n] > ').lower() == 'y'
+        
+        if all_in_one:
+            await Clone.all(guild_from, guild_to)
+        else:
+            # Perform individual cloning steps
+            await Clone.roledelete(guild_to)
+            await Clone.chdelete(guild_to)
+            await Clone.rolecreate(guild_to, guild_from)
+            await Clone.catcreate(guild_to, guild_from)
+            await Clone.chcreate(guild_to, guild_from)
+            await Clone.guedit(guild_to, guild_from)
+
+
+        print("Cloning completed. Exiting in 5 seconds.")
+
+
+    # Run the bot with the provided token
+    client.run(token, bot=False)
+
+if __name__ == "__main__":
+    main()
+
+
+```
+
+# Contributing
+Feel free to contribute by opening issues or creating pull requests. Your feedback and suggestions are welcome!
+
