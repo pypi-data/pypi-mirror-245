@@ -1,0 +1,6 @@
+httpx
+openbabel
+python-dotenv
+rdkit
+rdkit_pypi
+supabase
