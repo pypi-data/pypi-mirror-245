@@ -1,0 +1,107 @@
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
+
+
+[project]
+name = 'samlib'
+version = '1.0'  # The API version
+description = "High-level library for NREL's SAM Simulation Core (SSC)"
+readme = 'README.md'
+requires-python = '>=3.10'
+license = 'BSD-3-clause'
+authors = [
+    {name = 'Brandon Carpenter', email = 'brandon@avantus.com'},
+]
+keywords = [
+    'model',
+    'NREL',
+    'SAM',
+    'SSC',
+    'System Advisor Model',
+    'techno-economic',
+]
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Science/Research',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: MacOS',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX :: Linux',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Topic :: Scientific/Engineering',
+    'Typing :: Typed',
+]
+dependencies = [
+    # cffi is included by hatch build hooks and will match the version used during the build
+]
+
+
+[project.license-files]
+paths = [
+    'LICENSE',
+    'SSC-LICENSE',
+]
+
+
+[project.urls]
+'Source Code' = 'https://bitbucket.org/avantus/samlib'
+
+
+[tool.hatch.build.targets.sdist]
+include = [
+    '/build-samlib.py',
+    '/hatch_build/metadata.py',
+    '/hatch_build/sdist.py',
+    '/hatch_build/wheel.py',
+    '/patches/limits.patch',
+    '/samlib/__init__.py',
+    '/samlib/_ssc.pyi',
+    '/samlib/_ssc_cffi.pyi',
+    '/samlib/_util.py',
+    '/samlib/modules/__init__.py',
+    '/samlib/modules/_types.pyi',
+    '/samlib/py.typed',
+    '/samlib/ssc.py',
+]
+
+
+[tool.hatch.build.targets.wheel]
+packages = ['samlib']
+zip-safe = false  # Allow mypy to perform type checking using py.typed marker
+
+[tool.hatch.metadata.hooks.custom]
+path = 'hatch_build/metadata.py'
+
+[tool.hatch.build.targets.sdist.hooks.custom]
+path = 'hatch_build/sdist.py'
+
+[tool.hatch.build.targets.wheel.hooks.custom]
+path = 'hatch_build/wheel.py'
+dependencies = [
+    'cffi ~= 1.16',  # Will be injected into [project.dependencies] by hatch_build.py
+    'requests',
+    'setuptools; python_version >= "3.12"',
+]
+
+
+[tool.mypy]
+allow_redefinition = true
+check_untyped_defs = true
+disallow_any_unimported = true
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+follow_imports = 'silent'
+ignore_missing_imports = true
+incremental = true
+scripts_are_modules = true
+show_error_codes = true
+strict_optional = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unused_ignores = true
