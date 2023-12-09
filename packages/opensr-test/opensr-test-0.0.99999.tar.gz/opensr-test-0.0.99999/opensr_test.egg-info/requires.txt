@@ -1,0 +1,13 @@
+torch>=1.9.0
+numpy
+matplotlib
+scikit-image
+scikit-learn
+requests
+kornia
+pydantic
+opencv-python
+
+[perceptual]
+open_clip_torch
+lpips
