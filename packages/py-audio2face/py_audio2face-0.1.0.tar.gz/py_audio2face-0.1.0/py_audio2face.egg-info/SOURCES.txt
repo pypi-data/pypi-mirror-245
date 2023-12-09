@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+py_audio2face/__init__.py
+py_audio2face/audio2face.py
+py_audio2face/settings.py
+py_audio2face/utils.py
+py_audio2face.egg-info/PKG-INFO
+py_audio2face.egg-info/SOURCES.txt
+py_audio2face.egg-info/dependency_links.txt
+py_audio2face.egg-info/requires.txt
+py_audio2face.egg-info/top_level.txt
+py_audio2face/assets/mark_arkit_solved_default.usd
