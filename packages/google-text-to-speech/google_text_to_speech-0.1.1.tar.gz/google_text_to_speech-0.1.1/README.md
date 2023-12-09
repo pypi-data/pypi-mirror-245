@@ -1,0 +1,28 @@
+![img](images/google_translate.png)
+
+# Google Translate TTS
+
+The `google_text_to_speech` package is a Python-based solution designed to provide versatile and user-friendly text-to-speech (TTS) capabilities. Leveraging the Google Translate TTS API, it enables users to convert written text into spoken words in various languages, catering to a wide range of applications.
+
+## Directory tree structure
+
+![dir_tree](images/dir_tree.png)
+
+## Key Features
+
+* **Multiple Language Support:** Utilizes Google's TTS service to offer speech synthesis in numerous languages.
+* **Handling of Large Texts:** Splits long texts into sentences to avoid limitations related to URL length and TTS service constraints.
+* **Real-Time Audio Playback:** Converts text to speech in real-time, with the capability to play the audio immediately.
+* **Concurrency and Resource Management:** Implements threading to manage audio playback and file operations simultaneously, ensuring smooth performance and optimal resource usage.
+
+## Technologies
+
+* **Python:** The module is written in Python, making it versatile and easy to integrate into various applications.
+* **External Libraries:** Uses `requests` for API calls and `playsound` for audio playback, along with standard libraries like `re` for text processing.
+* **Google Translate TTS API:** Leverages this API for reliable and high-quality text-to-speech conversion.
+
+## Potential Use Cases
+
+* **Language Learning Tools:** Assists in pronunciation and language learning by providing auditory examples.
+* **Accessibility Tools:** Helps in creating applications that can read out content to users with visual impairments.
+* **Content Consumption:** Enables users to listen to articles, books, or any text content, enhancing the experience of consuming written material.
