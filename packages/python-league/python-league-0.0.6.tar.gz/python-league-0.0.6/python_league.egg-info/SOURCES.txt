@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+league/__init__.py
+league/main.py
+league/models.py
+league/utils.py
+python_league.egg-info/PKG-INFO
+python_league.egg-info/SOURCES.txt
+python_league.egg-info/dependency_links.txt
+python_league.egg-info/requires.txt
+python_league.egg-info/top_level.txt
+tests/test_main.py
+tests/test_models.py
+tests/test_utils.py
