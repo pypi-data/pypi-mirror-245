@@ -1,0 +1,100 @@
+# Reliable Meta Brain（RMB）
+# 数据管家
+
+
+# 功能
+
+- DataSource 支持 MySQL/Hive
+- 支持以对话方式查询数据 
+- 支持多轮对话
+- 支持更新 Meta，以提高准确率 
+- 支持设置『字典』，提供『同义词』，便于RMB理解用户意图
+- 提供Restful API & Python SDK
+
+# Backlog
+1. 支持跨数据源查询
+
+
+# Restful API
+
+python run.py 打开Web可见
+
+
+# Python SDK
+
+```
+import ReliableMetaBrain as RMB
+
+data = RMB(token="xxxxx")
+data.debug=True
+
+# 关联数据源
+datasource1 = data.register_datasource(
+    ds_type="MySQL", ds_name="我的MySQL库",
+    ds_access_config={
+        "host": "localhost",
+        "port": 3306,
+        "user": "root",
+        "password": ""
+    }
+)
+
+# 根据名字查询数据源
+datasource2 = data.datasources.get(name="我的MySQL库")
+
+# 查看数据源的信息
+datasource_name = datasource1.name
+datasource_summary = datasource1.summary
+
+# 查看运行中的Meta
+datasource_meta_runtime = datasource1.metadata.get("runtime")
+print(datasource_meta_runtime.to_string())
+
+# 查看MetaBrain中的Meta
+datasource_meta_in_brain = datasource1.metadata.get("in_brain")
+
+# 使用 runtime Meta 更新 Meta Brain
+datasource1.metadata.sync()
+
+# 删除数据源
+datasource1.delete()
+
+
+# 查询数据
+chat = data.create_chat(datasources=ds_list)
+answer = chat.ask(question="昨天的营业额总共有多少？")
+answer_type = answer.type # 更新Meta，SQL结果，最终答案，无法理解问题，无法回答这个问题
+text = answer.text
+images = answer.images
+
+# 查看会话历史
+history = chat.history
+
+chat_list = data.chats
+
+```
+
+
+
+# Python SDK
+
+- Data
+- DataSource
+- DataSourceGroup
+- Chat
+- Question 类型
+  - ModifyMeta 修改Meta
+  - AnalysisData  分析数据
+  - CommonKnowledge 通用知识
+  - NotUnderstand 不能理解问题
+  - ProvideInformation  提供信息（分析数据）
+- Answer 类型
+  - CannotFindAnswer   找不到答案
+  - NeedMoreInformation   需要更多信息
+  - FinalAnswer   最终答案
+- Answer 格式
+  - Text
+  - Image（早期 可以代替JSON Chart）
+  - Table
+  - JSON for Chart（待定）
+
