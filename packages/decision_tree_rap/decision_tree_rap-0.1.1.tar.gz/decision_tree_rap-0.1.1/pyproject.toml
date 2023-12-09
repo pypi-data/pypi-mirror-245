@@ -1,0 +1,23 @@
+[project]
+name = "decision_tree_rap"
+version = "0.1.1"
+description = "This package is an implementation of Decision Trees in Python."
+authors = [
+    { name = "Ramon Perez", email = "ramonpzg@protonmail.com" },
+]
+dependencies = [
+    "numpy>=1.26.2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]

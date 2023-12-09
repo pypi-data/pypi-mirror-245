@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: decision_tree_rap
+Version: 0.1.1
+Summary: This package is an implementation of Decision Trees in Python.
+Author-Email: Ramon Perez <ramonpzg@protonmail.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: numpy>=1.26.2
+Description-Content-Type: text/markdown
+
+# decision_trees
