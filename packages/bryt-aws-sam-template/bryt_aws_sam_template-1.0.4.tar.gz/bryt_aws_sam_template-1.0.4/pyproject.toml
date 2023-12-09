@@ -1,0 +1,40 @@
+[project]
+name = "bryt_aws_sam_template"
+version = "1.0.4"
+authors = [
+  { name="Bryt", email="bryt.xin.li@gmail.com" },
+]
+description = "AWS SAM Template"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'python-dotenv',
+  'termcolor',
+  'boto3'
+]
+
+[project.scripts]
+aws_sam_template = "bryt_aws_sam_template.cli:entry"
+aws_sam_get_stack_output_value = "bryt_aws_sam_template.cli:get_stack_output_value"
+
+[project.urls]
+Homepage = "https://github.com/xin-at-marathon/makefile"
+Issues = "https://github.com/xin-at-marathon/makefile/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"bryt_aws_sam_template" = ['**/*']
