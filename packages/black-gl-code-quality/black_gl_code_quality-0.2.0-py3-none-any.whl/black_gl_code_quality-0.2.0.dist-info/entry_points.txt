@@ -1,0 +1,4 @@
+[console_scripts]
+black-gl-code-quality=black_gl_code_quality.__main__:main
+black-gl-cq=black_gl_code_quality.__main__:main
+
