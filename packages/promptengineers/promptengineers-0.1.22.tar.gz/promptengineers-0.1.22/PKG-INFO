@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: promptengineers
+Version: 0.1.22
+Summary: A collection of utilities by Prompt Engineers
+Home-page: https://github.com/promptengineers-ai/core
+Author: Ryan Eggleston
+Author-email: kre8mymedia@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: ujson
+Provides-Extra: fastapi
+Requires-Dist: fastapi; extra == "fastapi"
+Requires-Dist: uvicorn; extra == "fastapi"
+Requires-Dist: motor; extra == "fastapi"
+Requires-Dist: pymongo; extra == "fastapi"
+Requires-Dist: cryptography; extra == "fastapi"
+Requires-Dist: minio; extra == "fastapi"
+Requires-Dist: python-multipart; extra == "fastapi"
+Requires-Dist: langchain; extra == "fastapi"
+Requires-Dist: openai; extra == "fastapi"
+Requires-Dist: redis; extra == "fastapi"
+Requires-Dist: pinecone-client; extra == "fastapi"
+Requires-Dist: youtube-transcript-api; extra == "fastapi"
+Requires-Dist: pypdf; extra == "fastapi"
+Requires-Dist: numexpr; extra == "fastapi"
+Requires-Dist: tiktoken; extra == "fastapi"
+Requires-Dist: nest_asyncio; extra == "fastapi"
+Requires-Dist: beautifulsoup4; extra == "fastapi"
+
+# Prompt Engineers AI Open Source Package
+
+#### Build and Publish
+
+```bash
+## Build Package
+bash scripts/build.sh
+
+## Publish Package to PyPi
+bash scripts/publish.sh
+```
+
+
+#### Development
+
+```bash
+## In the application directory start your virtual env (this would be the workspace
+## where your API server that you would like to install the model)
+source .venv/bin/activate
+
+## Then change directory to where your package is, make changes and run the following.
+pip install .
+
+## Switch back to the directory of your where your workspace is for you app server.
+cd <path>/<app>/<server>
+pip install -r requirements.txt
+
+## Make sure your app server has the packages shown in setup.py and run your server...
+```
