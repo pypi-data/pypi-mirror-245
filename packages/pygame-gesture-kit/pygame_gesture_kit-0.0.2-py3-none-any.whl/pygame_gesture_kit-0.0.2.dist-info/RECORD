@@ -1,0 +1,14 @@
+pygame_gesture_kit/__init__.py,sha256=NCcwPGvaIbDjF5uBHTwJqXuJ7A1t5U__IXWP1RMzfuA,140
+pygame_gesture_kit/camera.py,sha256=BCFNDZhKDlIUW1h3_K6BVLa_b6xesDQtmsKEcEAPzOU,1457
+pygame_gesture_kit/gesture_recognizer.py,sha256=jXaY0EnpLyLGJKxZ9lyUoHflm5xO-M1ziuCIelhZLMg,5355
+pygame_gesture_kit/hand.py,sha256=ZoV47kCjBNUYsDqaKtQmZnNBfUN8i4eKMy_GNxi6eOE,742
+pygame_gesture_kit/hand_visualizer.py,sha256=v6gXvRw1OT1o83meVqqa7WCm1zzDWGqioli92RelaAw,1234
+pygame_gesture_kit/example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygame_gesture_kit/example/main.py,sha256=adxWLbTjT7VUy4QfRWJnFzdHr9d47ESLdA8tCZlhBlE,2361
+pygame_gesture_kit/model/hagrid.task,sha256=8w4iz61lg1sKm14sseR3tpwbw4l8riJoQjqurSJBTI0,8466623
+pygame_gesture_kit/model/rps.task,sha256=S1crv352MQC94yS3PqDMsK3WgnMInCXDLItxRcpXLgQ,8460859
+pygame_gesture_kit-0.0.2.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+pygame_gesture_kit-0.0.2.dist-info/METADATA,sha256=Owlm0BQQNb-BKLS36F68lSrMm1rDClV5UiG0giTkquQ,4583
+pygame_gesture_kit-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pygame_gesture_kit-0.0.2.dist-info/top_level.txt,sha256=WXyKW1lUl8WT4YAM5LYT8fmzy5FJrq45JMdeN7ZAGVI,19
+pygame_gesture_kit-0.0.2.dist-info/RECORD,,
