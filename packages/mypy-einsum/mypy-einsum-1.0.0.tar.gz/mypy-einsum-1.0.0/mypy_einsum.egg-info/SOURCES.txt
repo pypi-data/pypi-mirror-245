@@ -1,0 +1,9 @@
+LICENSE
+README.md
+mypy_einsum.py
+pyproject.toml
+mypy_einsum.egg-info/PKG-INFO
+mypy_einsum.egg-info/SOURCES.txt
+mypy_einsum.egg-info/dependency_links.txt
+mypy_einsum.egg-info/top_level.txt
+tests/test_typing.py
