@@ -1,0 +1,12 @@
+cantofilter/__init__.py,sha256=s8HnHeJt8sB4MS5rCsOBwNHlzS5Ky9NR4bxtiEMzEO4,58
+cantofilter/cli.py,sha256=X3zfipHdL564k2X0tCOf_iaHGZurXLJcU3j7K32a0rI,1351
+cantofilter/judge.py,sha256=LRJvT1l9qREgKRphEPBnqYWwsbCtOtJwJEG4xzb2PA8,6086
+cantofilter/version.py,sha256=j9q3lYMZra0QrErNnn9E5GNXxWLOlDgeOkmX8oXa7ro,23
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_judge.py,sha256=x-EzU8x33jA5ZuZLr9QRfXSCsxMkzffU5fnN6VbqM9k,708
+canto_filter-1.0.1.dist-info/LICENSE,sha256=NA8VxQkCKnGDQcKHisdcZGPstPRBNw4lkLN7eqrZjJs,1091
+canto_filter-1.0.1.dist-info/METADATA,sha256=Ke37w7VG9koZ4U6JgWjVZQjjjh3sbv1Cz8yuwJbvgwk,6802
+canto_filter-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+canto_filter-1.0.1.dist-info/entry_points.txt,sha256=Rqjhrmv4q3da9J0YG3TIvWZBrr1MiHbyED62kUulz9s,53
+canto_filter-1.0.1.dist-info/top_level.txt,sha256=TO93BIzKnWs1zymF36dOopIKuqSDwqpijUVavamOSLE,18
+canto_filter-1.0.1.dist-info/RECORD,,
