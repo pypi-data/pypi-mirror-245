@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/veriftools/__init__.py
+src/veriftools/veriftools.py
+src/veriftools.egg-info/PKG-INFO
+src/veriftools.egg-info/SOURCES.txt
+src/veriftools.egg-info/dependency_links.txt
+src/veriftools.egg-info/requires.txt
+src/veriftools.egg-info/top_level.txt
