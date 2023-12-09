@@ -1,0 +1,2 @@
+include ta_bitwarden_cli/binaries/*.zip
+include requirements.txt
