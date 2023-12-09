@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: spatialdata-xenium-explorer
+Version: 0.1.0
+Summary: Converting any SpatialData object into files that can be open by the Xenium Explorer
+Author: Quentin Blampey
+Author-email: quentin.blampey@gmail.com
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: botocore (>=1.31.47,<2.0.0)
+Requires-Dist: spatialdata (>=0.0.12,<0.0.13)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
