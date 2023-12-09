@@ -1,0 +1,6 @@
+setup.py
+gestureops.egg-info/PKG-INFO
+gestureops.egg-info/SOURCES.txt
+gestureops.egg-info/dependency_links.txt
+gestureops.egg-info/requires.txt
+gestureops.egg-info/top_level.txt
