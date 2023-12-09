@@ -1,0 +1,126 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - main
+  repository_dispatch:
+    # to run this, send a POST API call at repos/IDAES/idaes-pse/dispatches with the specified event_type
+    # e.g. `gh repos/IDAES/idaes-pse/dispatches -F event_type=ci_run_tests`
+    types: [ci_run_tests]
+  workflow_dispatch:
+    inputs:
+      git-ref:
+        description: Git hash (optional)
+        required: false
+  pull_request:
+    types:
+      - opened
+      # ready_for_review occurs when a draft PR is turned to non-draft
+      - ready_for_review
+      # synchronize occurs whenever commits are pushed to the PR branch
+      - synchronize
+
+concurrency:
+  # NOTE: the value of `group` should be chosen carefully,
+  # otherwise we might end up over- or under-canceling workflow runs
+  # e.g. if we want to have Codecov results for each commit on `main`,
+  # we should use something `github.sha` instead of `github.ref_name`
+  # to avoid over-canceling runs from `main`
+  # in which case we'd need to access the PR number from somewhere else rather than `github.ref_name`
+  # to avoid under-canceling runs from PRs
+  group: ${{ github.workflow }}-${{ github.ref_name }}
+  cancel-in-progress: true
+
+env:
+  PYTEST_ADDOPTS: "--color=yes"
+
+defaults:
+  run:
+    # -l: login shell, needed when using Conda run:
+    shell: bash -l {0}
+
+jobs:
+
+  pytest:
+    # description: Run pytest test suite
+    name: pytest (${{ matrix.install-variant }}/py${{ matrix.python-version }}/${{ matrix.os }})
+    runs-on: ${{ matrix.runner-image }}
+    strategy:
+      fail-fast: false
+      matrix:
+        install-variant:
+          - standard
+          - dev
+        python-version:
+          - '3.8'
+        #   - '3.9'
+        #   - '3.10'
+          - '3.11'
+        os:
+          - linux
+          - win64
+        include:
+          - os: linux
+            runner-image: ubuntu-20.04
+          - os: win64
+            runner-image: windows-2022
+    steps:
+      - uses: IDAES/idaes-ui/.github/actions/install@main
+        with:
+          variant: ${{ matrix.install-variant }}
+          python-version: ${{ matrix.python-version }}
+      - name: Run pytest
+        run: pytest -v --pyargs idaes_ui.fv
+
+  cypress:
+    name: cypress (${{ matrix.install-variant }}/py${{ matrix.python-version }}/${{ matrix.os }})
+    #setup python environment for python server, install UI
+    runs-on: ${{ matrix.runner-image }}
+    strategy:
+      fail-fast: false
+      matrix:
+        install-variant:
+          - standard
+          - dev
+        python-version:
+          - '3.8'
+        #   - '3.9'
+        #   - '3.10'
+          - '3.11'
+        os:
+          - linux
+          - win64
+        include:
+          - os: linux
+            runner-image: ubuntu-20.04
+          - os: win64
+            runner-image: windows-2022
+    steps:
+      #python starts here
+      - name: Install python code
+        uses: IDAES/idaes-ui/.github/actions/install@main
+        with:
+          variant: ${{ matrix.install-variant }}
+          python-version: ${{ matrix.python-version }}
+      #cypress starts here
+      - name: Check out files needed to run cypress tests
+        if: matrix.install-variant != 'dev'
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            cypress
+            package.json
+            package-lock.json
+            cypress.config.js
+      - name: Install node packages
+        run: npm install
+      - name: Start UI
+        run: npm run ui & echo "UI Server started"
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with:
+          wait-on-timeout: 20
+          command: npm run test
+          browser: chrome

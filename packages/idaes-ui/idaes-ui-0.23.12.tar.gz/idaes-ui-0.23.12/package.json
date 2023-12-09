@@ -1,0 +1,27 @@
+{
+  "name": "idaes-ui",
+  "version": "0.1.0",
+  "description": "idaes-ui is a visualizer for idaes",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "cypress run",
+    "ui": "python -m idaes_ui.fv.example",
+    "ui-dev": "watchmedo auto-restart --directory=\"./\" --pattern=\"*.py\" --recursive -- python -m idaes_ui.fv.example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IDAES/idaes-ui.git"
+  },
+  "author": "Sheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IDAES/idaes-ui/issues"
+  },
+  "homepage": "https://github.com/IDAES/idaes-ui#readme",
+  "devDependencies": {
+    "cypress": "^12.15.0"
+  }
+}
