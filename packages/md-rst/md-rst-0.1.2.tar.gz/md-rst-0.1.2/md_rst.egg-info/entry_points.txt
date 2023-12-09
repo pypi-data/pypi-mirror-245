@@ -1,0 +1,3 @@
+[console_scripts]
+md-rst = src.mdtorst:convert_md_to_rst
+
