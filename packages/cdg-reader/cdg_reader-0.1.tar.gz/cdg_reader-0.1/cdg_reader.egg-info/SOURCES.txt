@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+cdg_reader/cdg_reader.py
+cdg_reader.egg-info/PKG-INFO
+cdg_reader.egg-info/SOURCES.txt
+cdg_reader.egg-info/dependency_links.txt
+cdg_reader.egg-info/requires.txt
+cdg_reader.egg-info/top_level.txt
