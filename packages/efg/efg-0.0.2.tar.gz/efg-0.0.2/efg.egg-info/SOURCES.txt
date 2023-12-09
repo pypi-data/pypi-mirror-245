@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+setup.py
+efg.egg-info/PKG-INFO
+efg.egg-info/SOURCES.txt
+efg.egg-info/dependency_links.txt
+efg.egg-info/not-zip-safe
+efg.egg-info/top_level.txt
