@@ -1,0 +1,6 @@
+README.md
+setup.py
+tkintervideo.egg-info/PKG-INFO
+tkintervideo.egg-info/SOURCES.txt
+tkintervideo.egg-info/dependency_links.txt
+tkintervideo.egg-info/top_level.txt
