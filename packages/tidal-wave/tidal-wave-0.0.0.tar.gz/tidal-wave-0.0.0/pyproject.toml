@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "tidal-wave"
+authors = [
+    {name = "Colin Coe", email = "pypi@colin.technology"}
+]
+description = "A package to wave at the Tidal music service"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+dynamic = ["version"]
+dependencies = [
+    "dataclass-wizard",
+    "ffmpeg-python",
+    "mutagen",
+    "requests",
+    "typer"
+]
