@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=64.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "launchflow"
+version = "0.2.0"
+authors = [
+    { name = "Caleb Van Dyke", email = "caleb@launchflow.com" },
+    { name = "Josh Tanke", email = "josh@launchflow.com" },
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "aiohttp",
+    "fastapi",
+    "google-auth",
+    "httpx[http2]",
+    "nest-asyncio",
+    "pydantic",
+    "pydata-google-auth",
+    "pyaml!=5.4.1",
+    "pytz",
+    "requests",
+    "urwid",
+    "uvicorn",
+    "typer[all]",
+    "websockets",
+    "websocket-client",
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx",
+    "pyinstaller",
+    "pytest",
+    "flake8",
+    "requests-mock",
+    "setuptools",
+    "wheel",
+]
+
+[project.scripts]
+launch = "launch.main:main"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = ["launch*"]
+exclude = ["static*"]
