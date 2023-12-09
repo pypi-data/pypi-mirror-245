@@ -1,0 +1,8 @@
+setup.py
+lazycodet/__init__.py
+lazycodet/helper.py
+lazycodet/nlp.py
+lazycodet.egg-info/PKG-INFO
+lazycodet.egg-info/SOURCES.txt
+lazycodet.egg-info/dependency_links.txt
+lazycodet.egg-info/top_level.txt
