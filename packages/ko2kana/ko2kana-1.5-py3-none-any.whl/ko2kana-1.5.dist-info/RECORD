@@ -1,0 +1,14 @@
+ko2kana/__init__.py,sha256=pN45R13ODkdzoL0jv7dVTKvQ3f8gbgQp74sOVmNG4BY,103
+ko2kana/english.py,sha256=oUNg8tj883XYz8lfWTOlWhrHLZDwN4aemtcJvcMFzTU,5915
+ko2kana/g2pk3.py,sha256=qAgQKj4-Kx1tAxdRHGdsDH0FGQxedj89lntfUIjiEPM,7600
+ko2kana/k2j.py,sha256=6_K9hBwstTn8MDEcdHKbKiQIVq7S6Qcpd262ykjC0eQ,5584
+ko2kana/korean.py,sha256=34-FYB36qs6qpnfu2HnoeskWAN0jU8gjK5dk0ZU1nso,8893
+ko2kana/numerals.py,sha256=vxyOMz5ymYU2ciehMA32g63eEbK2Kg0T3eri62bpYSM,4724
+ko2kana/regular.py,sha256=pSEAXY5XAHAoXhL7l7dP6zlpBn2x24SH2iLN-DuWV40,2887
+ko2kana/special.py,sha256=pN3HqTLwpKLtFg3xnIQEMB-tGtT0iqN_6K8Ub_ts4Jo,5298
+ko2kana/utils.py,sha256=Cb8iWFVmAYfQbA9OdXeNVykC_oYlssPLqsAtvz2stQ8,7537
+ko2kana-1.5.dist-info/LICENSE,sha256=c8VsLJOLyL-En13Y_YEewq1TxJSE6ezWfOReJ64u180,1090
+ko2kana-1.5.dist-info/METADATA,sha256=-YYW6hTrCn6Ykf9cwiDDnPXbaJCQ79INpBCpm3YRQsI,1639
+ko2kana-1.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ko2kana-1.5.dist-info/top_level.txt,sha256=fD419NrZIEB5ctYxQDhiPH2FRpAD23YzDmTxBzCAWuw,8
+ko2kana-1.5.dist-info/RECORD,,
