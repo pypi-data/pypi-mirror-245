@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: loadotenv
+Version: 0.1.0
+Summary: Reinventing the wheel to load .env variables
+Home-page: UNKNOWN
+Author: Jarlem Red J. de Peralta
+Author-email: lmoa.jhdp@gmail.com
+License: UNKNOWN
+Keywords: .env environment utility
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# `loadotenv`
+
+Reinventing the wheel to load .env variables
+
+<!--
+TODO:
+- [ ] add `## Installation`
+- [ ] Complete `## Usage`
+-->
+
+## Usage
+
+Still under construction!
+
+
