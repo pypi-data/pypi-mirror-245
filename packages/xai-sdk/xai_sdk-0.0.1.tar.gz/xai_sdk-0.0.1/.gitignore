@@ -1,0 +1,24 @@
+dataset/testdata/db-dump.tar.gz
+grok_cache/
+
+# Rust
+debug/
+target/
+**/*.rs.bk
+
+# Python
+*.so
+*.egg-info
+__pycache__
+python-lib/build
+python-lib/dist
+.pytest_cache
+
+# Mac
+.DS_STORE
+
+# Uncompressed cross-compilation artifacts
+.cross_artifacts
+
+# vscode settings
+.vscode/
