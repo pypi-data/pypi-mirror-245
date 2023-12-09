@@ -1,0 +1,11 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/openphoton/__init__.py,sha256=tC61_SlD94cD0GTnFnyCnGOdHAzuGVaRVwK-KlLFpb8,134
+src/openphoton/aperture_functions.py,sha256=EmhkG1SdlccjvAluQ_7McMamAcyYQrlNLrni4pLRCr8,620
+src/openphoton/devices.py,sha256=5ZhGz8S8tekZhocyIfg9KQLEBmSXwpYAlFoCzICg9ho,1491
+src/openphoton/lenses.py,sha256=eLvgc3p3Wiuziwi7wiXL2rHJ5P9S5T-PahE6XsMcRXw,1794
+src/openphoton/rayleigh_sommerfeld.py,sha256=9iwVwvG4l55WQDK_Kvy9spBfwo1K34eiKtB1dZol6Cs,2631
+openphoton-0.0.3.dist-info/LICENSE,sha256=OgHWeUj0qZVYdFFhiWbeIVs-3_mljA3_qYAzqz0zIp8,1062
+openphoton-0.0.3.dist-info/METADATA,sha256=MRo12-HRZhGHxFzFU6epTSO0DGmhWWbgIazIgdgRe7M,725
+openphoton-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+openphoton-0.0.3.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+openphoton-0.0.3.dist-info/RECORD,,
