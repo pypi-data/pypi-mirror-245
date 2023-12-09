@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: acm-hamburg-legacy
+Version: 0.2
+Summary: Legacy code of the former ACM group in Hamburg
+Home-page: https://github.com/molinfo-vienna/acm-hamburg-legacy
+Maintainer: Johannes Kirchmair
+Maintainer-email: johannes.kirchmair@univie.ac.at
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
+
+# acm-hamburg-legacy
+
+Legacy code used by comp3d NERDD modules.
+
+## Installation
+
+```pip install -U acm-hamburg-legacy```
+
+## Contributors
+
+* Conrad Stork
+* Anke Wilm
+* Steffen Hirte
+* Axinya Tokareva
+
+
