@@ -1,0 +1,36 @@
+name: Windows conda installation (conda in PATH)
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    types: [opened, reopened, edited, synchronize]
+
+jobs:
+  build:
+    name: Windows conda installation (conda in PATH)
+    runs-on: windows-2019
+
+    steps:
+
+    - name: Skip Duplicate Actions
+      uses: fkirc/skip-duplicate-actions@v5
+
+    - uses: actions/checkout@v3
+      with:
+        lfs: false
+
+    - uses: conda-incubator/setup-miniconda@v2
+      with:
+        auto-update-conda: true
+        auto-activate-base: true
+        activate-environment: ""
+
+    - name: Create and update environment
+      working-directory: .\examples\Jupyter_Notebook\
+      run: |
+        .\create-env.bat
+        .\update-env.bat
