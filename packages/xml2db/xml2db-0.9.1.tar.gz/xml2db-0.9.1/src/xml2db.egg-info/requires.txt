@@ -1,0 +1,10 @@
+sqlalchemy>1.4
+xmlschema==2.5.0
+lxml==4.9.3
+
+[docs]
+mkdocs-material==9.5.0
+mkdocstrings[python]==0.24.0
+
+[tests]
+pytest>=7.0
