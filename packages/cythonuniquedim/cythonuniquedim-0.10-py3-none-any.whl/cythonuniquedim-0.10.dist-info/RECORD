@@ -1,0 +1,12 @@
+cythonuniquedim/README.MD,sha256=3Ot__qlkgpeqGqR6COXozePRiVY6r4VXmUh_OiYpxVI,7599
+cythonuniquedim/__init__.py,sha256=KLKLwFz-xCGF4kqJCGzSQXGu57U0smWGxhHyMi1uXM8,11282
+cythonuniquedim/gmp.h,sha256=LzyKUiWcw3VaXNGbIZTG4esUbMD48OhrqSHt06Dc6es,83940
+cythonuniquedim/mpc.h,sha256=D9qi2dh1GTtnl6upuitqyr8kxjIUZ8Ykucp0aKYT71o,13197
+cythonuniquedim/mpfr.h,sha256=7Pu-XELZSMv4kOrd9onVPSqgirGyDfMNXMbmQftHyI4,53751
+cythonuniquedim/requirements.txt,sha256=_s4Gkr1Lf5-oTzZitUyzBUVlm7e6QzeLms51jC7yNjE,36
+cythonuniquedim/thirdparty.json,sha256=y_0ebIINqiCinSmSi_eiP5XYKum7A1fNh_dhquYnw70,87262
+cythonuniquedim-0.10.dist-info/LICENSE.rst,sha256=lzzJLSXoiLXRAsvtnE0Sj1r7tvLXW3xYgq2WzEEscMg,34341
+cythonuniquedim-0.10.dist-info/METADATA,sha256=2Qb9YGLaYvPit_grKSxaN_NHGm7OWI7pppaY87iuc3M,8371
+cythonuniquedim-0.10.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+cythonuniquedim-0.10.dist-info/top_level.txt,sha256=VZLIml41ieY_BtEO7_evKemvSZfoQId-MiW1Cq8Sz6s,16
+cythonuniquedim-0.10.dist-info/RECORD,,
