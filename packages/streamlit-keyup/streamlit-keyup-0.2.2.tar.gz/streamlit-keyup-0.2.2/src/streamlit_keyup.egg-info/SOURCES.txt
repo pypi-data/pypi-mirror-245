@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/st_keyup/__init__.py
+src/st_keyup/frontend/index.html
+src/st_keyup/frontend/main.js
+src/st_keyup/frontend/streamlit-component-lib.js
+src/st_keyup/frontend/style.css
+src/streamlit_keyup.egg-info/PKG-INFO
+src/streamlit_keyup.egg-info/SOURCES.txt
+src/streamlit_keyup.egg-info/dependency_links.txt
+src/streamlit_keyup.egg-info/requires.txt
+src/streamlit_keyup.egg-info/top_level.txt
