@@ -1,0 +1,41 @@
+[project]
+dynamic = ["version"]
+name = 'fastapi-magic-router'
+description = '🪄 FastAPI router with magical powers ✨'
+keywords = [
+    'fastapi',
+    'router',
+    'rest',
+    'api',
+]
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Information Technology',
+    'Intended Audience :: Other Audience',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3',
+    'Topic :: Software Development',
+    'Topic :: Software Development :: Libraries',
+]
+authors = [
+  {name = "Arijit Basu", email = "sayanarijit@gmail.com"}
+]
+maintainers = [
+  {name = "Arijit Basu", email = "sayanarijit@gmail.com"}
+]
+readme = 'README.md'
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["fastapi"]
+
+[project.urls]
+"Homepage" = "https://github.com/sayanarijit/fastapi-magic-router"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "./magic_router/__init__.py"
