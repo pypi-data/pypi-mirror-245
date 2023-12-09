@@ -1,0 +1,9 @@
+flake8
+pytest
+pep8-naming
+tox
+wheel
+mypy
+types-jsonschema
+types-setuptools
+types-PyYAML
