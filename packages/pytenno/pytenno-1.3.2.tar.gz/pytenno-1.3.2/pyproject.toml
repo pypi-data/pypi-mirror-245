@@ -1,0 +1,31 @@
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pytenno"
+version = "1.3.2"
+description = "A asynchronous Python library for interacting with the warframe.market API"
+license = "MIT"
+authors = ["Ryan Peckham <86629697+ShadowMagic896@users.noreply.github.com>"]
+maintainers = ["Ryan Peckham <86629697+ShadowMagic896@users.noreply.github.com>"]
+readme = "README.md"
+
+repository = "https://github.com/ShadowMagic896/pytenno"
+documentation = "https://pytenno.readthedocs.io"
+
+keywords = ["warframe", "market", "api", "asyncio", "aiohttp", "wrapper"]
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+]
+
+[tool.poetry.dependencies]
+aiohttp = "^3.8.1"
+python = "^3.10"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/ShadowMagic896/pytenno/issues"
