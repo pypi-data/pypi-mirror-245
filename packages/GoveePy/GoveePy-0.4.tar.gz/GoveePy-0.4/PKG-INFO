@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: GoveePy
+Version: 0.4
+Summary: A Govee API Wrapper for Python
+Home-page: https://github.com/WhyDoWeLiveWithoutMeaning/GoveePy
+Author: Meaning
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.31.0
+
+# GoveePy
+
+GoveePy is a WIP Python wrapper for the Govee API.
+
+## Table of Contents
+
+- [GoveePy](#goveepy)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+
+## Installation
+
+Installation is easy just do  
+`pip install GoveePy`
+
+## Usage
+
+```python
+from govee import Govee
+
+g = Govee("API-KEY")
+g.get_devices()
+
+device = g.get_device_by_name("Living Room Light")
+if device is None:
+    exit()
+
+device.turn_on()
+device.set_brightness(100)
+```
+
+You can also use the Local API.   
+Make sure you have enabled it for the light you want to use.
+
+```python
+from govee import GoveeLocal
+
+g = GoveeLocal()
+g.get_devices()
+device = g.get_device_by_ip("192.169.0.143")
+
+if device is None:
+    exit()
+
+device.turn_on()
+device.set_brightness(100)
+
+```
+
+
