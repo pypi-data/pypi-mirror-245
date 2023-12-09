@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: optunacy
+Version: 0.3.0
+Summary: Optunacy is a contour plot generator for Optuna studies.
+Home-page: https://github.com/retospect/optunacy
+License: GPL-3
+Keywords: optuna,contour,plot,snn,hyperparameter,optimization
+Author: Reto Stamm
+Maintainer: Reto Stamm
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.8.2,<4.0.0)
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Requires-Dist: optuna (>=3.4.0,<4.0.0)
+Requires-Dist: plotly (>=5.18.0,<6.0.0)
+Requires-Dist: scipy (>=1.11.4,<2.0.0)
+Project-URL: Repository, https://github.com/retospect/optunacy
+Description-Content-Type: text/markdown
+
+[![check](https://github.com/retospect/optunacy/actions/workflows/check.yml/badge.svg)](https://github.com/retospect/optunacy/actions/workflows/check.yml)
+# Optunacy - a better Optuna contour plotter
+
+Plots Optuna contour plots trivially and with detailed mouseovers.
+It collects data from all the hashes in Optuna, as well as the Objectives if you provide them.
+
+The plot function has these options:
+
+``` python
+def plot(self, 
+         x_name, # string
+         y_name, # string
+         z_name=None,  # string
+         x_range=None, # range, ex: x_range=(3,9)
+         y_range=None, # range
+         z_clip=None,  # Clamps colors to max and min
+         interpol="linear"): # <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.griddata.html">interpolation method</a>
+```
+
+## Example
+
+```python
+def optuna_objective(trial, train_loader, test_loader):
+    ...
+    trial.set_user_attr("Neurons per Hidden Layer", nphl)
+    ...
+    # The objectives have a printable name and direction
+    return             validation_accuracy,   spikes_per_digit
+objective_names      = ["Validation Accuracy", "Spikes per Digit"]
+objective_directions = ["maximize",            "minimize"]
+
+study = optuna.create_study(study_name="Minimize spikes, maximize accuracy",
+                            directions=objective_directions)
+
+study.optimize( lambda trial:
+                optuna_objective(trial, train_loader, test_loader),
+                n_trials=100)
+
+see = OPlot(study, objective_names)
+see.plot("Hidden Layers", "Neurons per Hidden Layer", "Validation Accuracy", z_clip=(0.8,1))
+```
+![Sample output](imgs/sample1.png)
+
+## Installation
+
+```pip install optunacy```
+
