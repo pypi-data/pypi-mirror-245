@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/bmi260/BMI270.py
+src/bmi260/config_file.py
+src/bmi260/definitions.py
+src/bmi260/registers.py
+src/bmi260.egg-info/PKG-INFO
+src/bmi260.egg-info/SOURCES.txt
+src/bmi260.egg-info/dependency_links.txt
+src/bmi260.egg-info/requires.txt
+src/bmi260.egg-info/top_level.txt
