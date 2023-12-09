@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: RighiDiary
+Version: 1.0
+Summary: Obtaining data from the electronic diary of the lyceum "Liceo Scientifico A. Righi"
+Home-page: https://github.com/Komo4ekoI/RighiRegisterAPI
+Author: Vadym Teliatnyk
+Author-email: laivhakin@gmail.com
+Project-URL: Documentation, https://github.com/Komo4ekoI/RighiRegisterAPI
+Project-URL: Bug Reports, https://github.com/Komo4ekoI/RighiRegisterAPI/issues
+Project-URL: Source Code, https://github.com/Komo4ekoI/RighiRegisterAPI
+Keywords: example,pypi,package,righi,righiAPI,register,diary
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Communications
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp >=3.8.5
+Requires-Dist: beautifulsoup4 >=4.12.2
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/Komo4ekoI/RighiDiaryAPI/blob/master/LICENSE/) [![wakatime](https://wakatime.com/badge/user/90c8afe4-47c1-4f14-9423-4474ab0618ae/project/018c3029-0cbb-4c30-a3a6-3eb80dfefcc1.svg)](https://wakatime.com/badge/user/90c8afe4-47c1-4f14-9423-4474ab0618ae/project/018c3029-0cbb-4c30-a3a6-3eb80dfefcc1)
+
+## INFO
+
+This library makes it easy to retrieve data from a Mastercom account for `Liceo Shientifico A. Righi (Cesena)`.
+
+All operations are performed using http requests and data scraping using the `beautifulsoup4` library. I had to use scraping because Mastercom does not have a full API, so some operations can be a bit slow.
+
+Any operations can be performed with a login and password from Mastercom account.
+
+In some cases you may get false data or a library error because I can take into account all possible scenarios of Mastercom. The data from my account was taken into account during development, but the diary has features that I don't have access to.
+
+If you find a bug and are willing to help improve the project, you can [write about it](https://github.com/Komo4ekoI/RighiDiaryAPI/issues).
+## Documentation
+
+#### In progress
+
+
+## Installation
+
+The library is available on PyPi, so you can install it in the standard way:
+
+##### Windows
+```bash
+  pip install RighiDiary
+```
+##### Ubuntu/macOS
+```bash
+  pip3 install RighiDiary
+```
+## Example
+
+```Python
+from RighiDiary import authorize_user
+import asyncio
+
+my_password: str = "CoolPassword"
+my_login: int = 123456
+
+
+async def main():
+    user = await authorize_user(login=my_login, password=my_password)
+    print(user.full_name)
+    print(user.agenda[0])
+
+if __name__ == '__main__':
+    asyncio.run(main())
+```
+
