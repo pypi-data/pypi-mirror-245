@@ -1,0 +1,5 @@
+databend-1.2.246.dist-info/METADATA,sha256=q4crpl0odleKDGAVun7SaiwZ20tfe1c0djIcI6Un3YM,2425
+databend-1.2.246.dist-info/WHEEL,sha256=DjEu2RyCIfZzsYnJ4shXCsTzJwiZqnYDaAS0ysskosc,102
+databend/__init__.py,sha256=pAwtemDbMCIpRCsAulrSAzE8fkB8NTkl3-p9-LPwPow,115
+databend/databend.abi3.so,sha256=ZxM9n1WIRfj4e4fHgR_GC0geWkAvnUFDpxRf69O33cc,110345821
+databend-1.2.246.dist-info/RECORD,,
