@@ -1,0 +1,3 @@
+include cythonanyarray/requirements.txt
+include cythonanyarray/thirdparty.json
+include cythonanyarray/README.MD

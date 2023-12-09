@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cythonanyarray/README.MD
+cythonanyarray/__init__.py
+cythonanyarray/requirements.txt
+cythonanyarray/thirdparty.json
+cythonanyarray.egg-info/PKG-INFO
+cythonanyarray.egg-info/SOURCES.txt
+cythonanyarray.egg-info/dependency_links.txt
+cythonanyarray.egg-info/requires.txt
+cythonanyarray.egg-info/top_level.txt
