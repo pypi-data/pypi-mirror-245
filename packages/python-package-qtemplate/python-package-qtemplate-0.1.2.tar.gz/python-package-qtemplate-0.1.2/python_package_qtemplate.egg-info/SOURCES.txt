@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+python_package_qtemplate.egg-info/PKG-INFO
+python_package_qtemplate.egg-info/SOURCES.txt
+python_package_qtemplate.egg-info/dependency_links.txt
+python_package_qtemplate.egg-info/entry_points.txt
+python_package_qtemplate.egg-info/requires.txt
+python_package_qtemplate.egg-info/top_level.txt
+python_package_template/main/main.py
+tests/test_testing.py
