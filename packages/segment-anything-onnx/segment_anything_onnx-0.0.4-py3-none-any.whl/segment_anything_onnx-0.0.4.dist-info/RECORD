@@ -1,0 +1,9 @@
+segment_anything_onnx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+segment_anything_onnx/cli.py,sha256=woLO7GbhsVuYj0r4Xdv9LAQ9EqWe15407oDttyaSIpw,1202
+segment_anything_onnx/inference.py,sha256=OdmtdZIWvAJJF244G-cW7xHIvrYddcrY-y5a6iW9k-E,1547
+segment_anything_onnx/sam_onnx.py,sha256=x671x3_NiX3shK_4z-UtNY66OJ0m-yAniDRISKN8ADE,7086
+segment_anything_onnx-0.0.4.dist-info/LICENSE,sha256=nZT8zCkq19cSWUp-DCBXhMFHKHmNkxToNVnXcdCjDno,1069
+segment_anything_onnx-0.0.4.dist-info/METADATA,sha256=14-O5kRUOFUx6JpsX58esZeqIEDsBVm_9T0hEpr0xHM,2908
+segment_anything_onnx-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+segment_anything_onnx-0.0.4.dist-info/top_level.txt,sha256=fEi1YE7hVxT37k08A8fPpWG7r9Fd1CzepD6tdZvyAd4,22
+segment_anything_onnx-0.0.4.dist-info/RECORD,,
