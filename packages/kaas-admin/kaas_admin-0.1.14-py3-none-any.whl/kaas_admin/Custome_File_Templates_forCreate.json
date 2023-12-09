@@ -1,0 +1,28 @@
+{
+    "staging": ["inventory file for staging environment"],
+    "group_vars": ["group1.yml", "group2.yml"],
+    "host_vars": ["hostname1.yml", "hostname2.yml"],
+    "library": [],
+    "module_utils": [],
+    "filter_plugins": [],
+    "roles": {
+        "common": {
+            "tasks": ["main.yml"],
+            "handlers": ["main.yml"],
+            "templates": ["ntp.conf.j2"],
+            "files": ["bar.txt", "foo.sh"],
+            "vars": ["main.yml"],
+            "defaults": ["main.yml"],
+            "meta": ["main.yml"],
+            "library": [],
+            "module_utils": [],
+            "lookup_plugins": []
+        },
+        "webtier": {
+
+        }
+    },
+    "site.yml": "",
+    "webservers.yml": "",
+    "dbservers.yml": ""
+}
