@@ -1,0 +1,14 @@
+jupyter_ydoc/__init__.py,sha256=NFQ5TQJckgA8rJzJ4KjA4RICxe66f7hFzELwV4W8QIw,631
+jupyter_ydoc/_version.py,sha256=f7u2IbPTVFFS8bKGZTKl3nx6NuGUHFCdwBfoZSmLCWs,171
+jupyter_ydoc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyter_ydoc/utils.py,sha256=jnjF2uNmioh0z_4ymmMSYiB_2dAKSLmNFzVvR5V5Td0,883
+jupyter_ydoc/ybasedoc.py,sha256=5Sz3hiuSIPYZFRaKlFPbTAj00ORXpWSEpKkn_Is055U,3915
+jupyter_ydoc/yblob.py,sha256=zMBVZ9HTty2_i9aGl15vwNl_oaKEk5ebXSo1SGXyqzo,2294
+jupyter_ydoc/yfile.py,sha256=XTMtAXDWgIOLU2KUQxkLJz2cGvSPlOxpvJc4daXCV6I,198
+jupyter_ydoc/ynotebook.py,sha256=JUREKDyxxubHfVhfy4hCWevu_h9Gj75m-cEYhai6aYY,8024
+jupyter_ydoc/yunicode.py,sha256=Xsnr7AiaHF7KqqKTOOO4BKBv9vtVPAtvU2F6fHCXOm0,2071
+jupyter_ydoc-2.0.0.dist-info/METADATA,sha256=IpExkqnGSlSTNrFbPBJlXNtJeiVeB_hwBL_5Tj-eKrU,2885
+jupyter_ydoc-2.0.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+jupyter_ydoc-2.0.0.dist-info/entry_points.txt,sha256=lgvRG-rpsjRKf8cy7LpO7fqwwXy0sBVMCwhGOHgn4mc,164
+jupyter_ydoc-2.0.0.dist-info/licenses/LICENSE,sha256=dqphsFbhnlzPK7Vlkc66Zc7g7PS-e1dln07GXIVpFCQ,1567
+jupyter_ydoc-2.0.0.dist-info/RECORD,,
