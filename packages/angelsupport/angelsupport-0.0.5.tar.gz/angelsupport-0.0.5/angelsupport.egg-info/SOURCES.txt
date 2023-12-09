@@ -1,0 +1,13 @@
+setup.py
+angelsupport/GPTRequest.py
+angelsupport/Logic.py
+angelsupport/Model.py
+angelsupport/Prompt.py
+angelsupport/Tokenizer.py
+angelsupport/__init__.py
+angelsupport.egg-info/PKG-INFO
+angelsupport.egg-info/SOURCES.txt
+angelsupport.egg-info/dependency_links.txt
+angelsupport.egg-info/not-zip-safe
+angelsupport.egg-info/requires.txt
+angelsupport.egg-info/top_level.txt
