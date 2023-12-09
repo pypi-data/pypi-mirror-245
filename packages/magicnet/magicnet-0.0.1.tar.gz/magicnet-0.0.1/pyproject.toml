@@ -1,0 +1,61 @@
+[project]
+name = "magicnet"
+authors = [
+    {name = "Wizzerinus", email = "quillinde@gmail.com"}
+]
+description = "MagicNet is a modern and flexible networking library"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Typing :: Typed",
+]
+dynamic = ["version"]
+keywords = ["networking", "astron"]
+
+[tool.ruff]
+
+select = ["E", "F", "W", "I", "N", "UP", "YTT", "ASYNC", "S", "BLE", "FBT", "B",
+          "A001", "A002", "DTZ", "G", "PIE", "T20", "RET", "TID", "PTH",
+          "ERA", "PERF", "ISC", "TRY"]
+ignore = ["PERF203", "N818", "PTH123"]
+
+line-length = 90
+target-version = "py310"
+src = ["src"]
+extend-exclude = ["examples", "tests"]
+
+[tool.ruff.lint.pyflakes]
+extend-generics = [
+    "magicnet.core.transport_handler.TransportHandler",
+    "magicnet.core.network_manager.NetworkManager",
+    "magicnet.util.messenger.MessengerNode",
+]
+
+[tool.hatch]
+version.path = "src/magicnet/__about__.py"
+
+[tool.hatch.build]
+exclude = ["/tests", "/examples"]
+sources = ["src"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.optional-dependencies]
+standard = ["msgpack~=1.0"]
+dev = ["magicnet[standard]", "black", "ruff", "pytest", "hatch"]
+
+[project.urls]
+homepage = "https://github.com/wizzerinus/magicnet"
+bugtracker = "https://github.com/wizzerinus/magicnet/issues"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
