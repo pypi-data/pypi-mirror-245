@@ -1,0 +1,17 @@
+autopub/__init__.py,sha256=qEStdLBp3kmz78ThFjI_xDJeITDDli5U_zyZ6ZhBZ-w,5927
+autopub/cli/__init__.py,sha256=2tpSa8AVa2dnE62GSG5R8fnalAqybcCK-aV2flQItjQ,3068
+autopub/cli/plugins.py,sha256=0wzL1ipSrNWh2hi2fp0k0HL15GPncSqKgt15tHRM_pw,1117
+autopub/exceptions.py,sha256=JYn8sIYWCedhtO3XfftZ0M5M_rAPxiGQ4MGbWUaTYwE,1243
+autopub/plugins/__init__.py,sha256=a5BK-onl3KBM37vCcuWERlgA1OyeYQGSL4_mMIvK7B8,1351
+autopub/plugins/bump_version.py,sha256=rNKczSd9lxR7uhzugH7pppq4k1Q8oaVN_WApxk4xDSU,1441
+autopub/plugins/git.py,sha256=Dge-AK8jQd0KXFWB60Y3iY7ffit7_9Qe--AQ8b82HLY,382
+autopub/plugins/pdm.py,sha256=Pczye06fKg8_HMJDkEfMXQyvao9rZ7sqzTHFd6lLEpU,532
+autopub/plugins/poetry.py,sha256=d2LvW9RI7ZB3reBOXbcp1mqWmzQ06Uyg_T-MxTvlSBg,517
+autopub/plugins/update_changelog.py,sha256=PVFww5CG9XsF8lNyIhSlOWA7CkjpmPCWiBxUOI90RIg,1525
+autopub/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autopub/types.py,sha256=FcRH4l27nrkQFUQrbAKxNzPPJfzg_0DExZYsCu9Jdzk,249
+autopub-1.0.0a7.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+autopub-1.0.0a7.dist-info/METADATA,sha256=LwOcmwOshRvDFxyVibSnecIT9rWcY-taOP3IW5HrjPo,3757
+autopub-1.0.0a7.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+autopub-1.0.0a7.dist-info/entry_points.txt,sha256=oeTav5NgCxif6mcZ_HeVGgGv5LzS4DwdI01nr4bO1IM,43
+autopub-1.0.0a7.dist-info/RECORD,,
