@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: predica
+Version: 0.1.1
+Summary: Predicates for use in higher-order functions.
+Project-URL: Repository, https://github.com/y-src/predica
+Project-URL: Issues, https://github.com/y-src/predica/issues
+Author: Rahul Yadav
+License: MIT License
+        
+        Copyright (c) 2023 Rahul Yadav
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: composition,fp,functional programming,predicates,type-safety
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# predica
+
+-----
+
+Predicates for use in higher-order functions.
+
+## Installation
+
+```bash
+pip install predica
+```
+
+## Usage
+
+Let's illustrate usage with three examples, gradually improving the composability of the code:
+
+Simple example -
+
+```python
+from predica import P  # you can import `Predicates` too
+
+ages = [1, 10, 100, 1000, '1']
+
+# before
+ages_no_str = list(filter(lambda x: not isinstance(x, str), ages)) # [1, 10, 100, 1000]
+
+# after
+new_ages_no_str = list(filter(P.not_instanceof(str), ages)) # [1, 10, 100, 1000]
+```
+
+Suppose you have a pre-existing function `is_str` -
+
+```python
+def is_str(x: str) -> bool:
+    return isinstance(x, str)
+
+# before
+ages_no_str = list(filter(lambda x: not is_str(x), ages))  # [1, 10, 100, 1000]
+
+# after
+new_ages_no_str = list(filter(P.negation(is_str), ages))  # [1, 10, 100, 1000]
+```
+
+IMO this works best with `returns` [library](https://github.com/dry-python/returns) 
+(and is why I made this library to begin with) -
+
+
+```python
+from returns.result import Result
+from functools import partial
+
+ages = Result.from_value([1, 10, 100, 1000, '1'])
+
+ages.map(partial(filter, P.not_instanceof(str))).map(list)  # Success([1, 10, 100, 1000])
+# or
+ages.map(partial(filter, P.negation(is_str))).map(list)  # Success([1, 10, 100, 1000])
+```
+
+Much better 😮
