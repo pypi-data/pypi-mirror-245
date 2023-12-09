@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: gfpro-irrigation-control
+Version: 0.1
+Summary: 
+License: MIT
+Author: Tomas Bayer
+Author-email: mail@tomas.berlin
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bluepy (>=1.3.0,<2.0.0)
+Requires-Dist: paho-mqtt (>=1.5.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# gfpro-irrigation-control
+
+`gfpro-irrigation-control` contains `gfpro_irrigiation_control`, a Python module that provides Bluetooth-LE-based control of the [GFPRO Eco irrigation valve](https://gfgarden.it/en/products/programmatore-d-irrigazione-gfpro-eco-watering-computer-bluetooth%C2%AE-1). It supports reading and toggling the valve status, as well as checking the battery status.
+
+The package also includes two command line interfaces that interact with the module: one for manual control of valves and another for integrating valves into automated systems through MQTT.
+
