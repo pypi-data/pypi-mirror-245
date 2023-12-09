@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: canto-filter
+Version: 1.0.0
+Summary: 粵文分類篩選器 Cantonese text filter
+Author: CanCLID (Cantonese Computational Linguistics Infrastructure Development Workgroup)
+Author-email: support@jyutping.org
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
