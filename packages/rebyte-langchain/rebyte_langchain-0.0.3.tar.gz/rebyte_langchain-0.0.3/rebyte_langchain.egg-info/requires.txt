@@ -1,0 +1,13 @@
+requests>=2.20
+aiohttp
+rebyte>=0.0.2
+langchain>=0.0.240
+
+[:python_version < "3.8"]
+typing_extensions
+
+[dev]
+black~=21.6b0
+pytest==6.*
+pytest-asyncio
+pytest-mock
