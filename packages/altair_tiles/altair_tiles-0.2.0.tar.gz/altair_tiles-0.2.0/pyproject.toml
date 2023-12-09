@@ -1,0 +1,164 @@
+# this file contains:
+# 1 build system configuration
+# 2 project configuration
+# 3 tool configuration, for:
+# - hatch
+# - ruff
+# - pytest
+# - mypy
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "altair_tiles"
+authors = [{ name = "altair_tiles contributors" }]
+dependencies = ["altair", "xyzservices", "mercantile"]
+description = "altair_tiles"
+readme = "README.md"
+keywords = ["altair", "basemaps", "tiles"]
+requires-python = ">=3.9"
+dynamic = ["version"]
+license-files = { paths = ["LICENSE"] }
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Source = "https://github.com/altair-viz/altair_tiles"
+
+[project.optional-dependencies]
+dev = [
+    "hatch",
+    "ruff>=0.1.4",
+    "ipython",
+    "ipykernel",
+    "pytest",
+    "geopandas",
+    "vega_datasets",
+    "vl-convert-python",
+    "mypy",
+    "ghp-import",
+]
+
+doc = [
+    "jupyter-book",
+    # We need vl-convert-python to build the docs which use the png renderer
+    "vl-convert-python",
+]
+
+[tool.hatch.version]
+path = "altair_tiles/__init__.py"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build]
+include = ["/altair_tiles"]
+
+[tool.hatch.envs.default]
+features = ["dev"]
+
+[tool.hatch.envs.doc]
+features = ["dev", "doc"]
+
+[tool.hatch.envs.default.scripts]
+test = [
+    "ruff format --diff --check .",
+    "ruff check .",
+    "mypy altair_tiles tests",
+    "python -m pytest tests",
+]
+
+[tool.hatch.envs.doc.scripts]
+clean = "rm -rf doc/_build"
+build = ["jupyter-book build doc/"]
+serve = "(cd doc/_build/html && python -m http.server)"
+publish = "ghp-import -n -p -f -o doc/_build/html"
+build-and-publish = ["clean", "build", "publish"]
+
+
+[tool.ruff]
+target-version = "py39"
+line-length = 88
+select = [
+    # flake8-bugbear
+    "B",
+    # flake8-comprehensions
+    "C4",
+    # pycodestyle-error
+    "E",
+    # pycodestyle-warning
+    "W",
+    # pyflakes
+    "F",
+    # flake8-tidy-imports
+    "TID",
+    "I",
+    "C90",
+    "UP",
+    "YTT",
+    "S",
+    "BLE",
+    "A",
+    "T10",
+    "ISC",
+    "ICN",
+    "INP",
+    "PIE",
+    "T20",
+    "PT",
+    "RET501",
+    "RET502",
+    "RET503",
+    "SLF",
+    "SIM",
+    "TCH",
+    "ARG",
+    "PTH",
+    "ERA",
+    "PD",
+    "PGH",
+    "RUF",
+]
+ignore = [
+    # Rule prefers implicitly concatenated strings over explicitly.
+    # We prefer explicitly concatenated strings.
+    "ISC003",
+    "ISC001",
+]
+exclude = [".git", "build", "__pycache__"]
+
+[tool.ruff.per-file-ignores]
+# Allow assert statements in test files
+"tests/**/*.py" = ["S101"]
+
+[tool.mypy]
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+strict_equality = true
+strict_concatenate = true
+check_untyped_defs = true
+disallow_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = [
+    "vega_datasets.*",
+    "vl_convert.*",
+    "altair",
+    "xyzservices.*",
+    "mercantile.*",
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
