@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+fluxo/init_server.py
+fluxo/settings.py
+fluxo/uttils.py
+fluxo.egg-info/PKG-INFO
+fluxo.egg-info/SOURCES.txt
+fluxo.egg-info/dependency_links.txt
+fluxo.egg-info/requires.txt
+fluxo.egg-info/top_level.txt
+fluxo/screens/footer.py
+fluxo/screens/home/fluxo.py
+fluxo/screens/home/home.py
+fluxo/screens/home/status_execution.py
+fluxo/screens/task/task.py
