@@ -1,0 +1,31 @@
+/* 
+  Unless explicitly stated otherwise all files in this repository are licensed under the BSD 3-Clause License.
+  This product includes software developed at Datadog (https://www.datadoghq.com/) Copyright 2023 Datadog, Inc.
+*/
+
+
+/*
+    See the JupyterLab Developer Guide for useful CSS Patterns:
+
+    https://jupyterlab.readthedocs.io/en/stable/developer/css.html
+*/
+
+.jp-Cell {
+    --jp-frozen-bg: #71b8e7;
+    --jp-readonly-bg: #ffec8a;
+}
+
+/*
+    Using !important is bad practice and should generally be avoided.
+    I opted to use it here because some of the JupyterLab CSS selectors are extremely specific and hard
+    to overrule, but if we find ourselves significantly modifying this file or ever running into
+    conflicts, we should make these selectors more specific and drop !important
+    More info on CSS Specificity: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+*/
+.jp-Notebook .jp-Cell.jp-mod-frozen {
+    background: var(--jp-frozen-bg) !important;
+}
+
+.jp-Notebook .jp-Cell.jp-mod-frozen-readonly {
+    background: var(--jp-readonly-bg) !important;
+}
