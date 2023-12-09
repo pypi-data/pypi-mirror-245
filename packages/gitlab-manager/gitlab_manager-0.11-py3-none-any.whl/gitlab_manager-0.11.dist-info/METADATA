@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gitlab-manager
+Version: 0.11
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: python-dotenv
+Requires-Dist: python-gitlab
+Requires-Dist: requests
+
+UNKNOWN
+
