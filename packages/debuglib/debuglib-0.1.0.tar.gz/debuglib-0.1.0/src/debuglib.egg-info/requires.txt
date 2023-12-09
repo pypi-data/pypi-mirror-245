@@ -1,0 +1,14 @@
+
+[all]
+better-exceptions
+orjson
+textual
+
+[cli]
+textual
+
+[dev]
+better-exceptions
+
+[orjson]
+orjson
