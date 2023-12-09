@@ -1,0 +1,8 @@
+freemailchecker/__init__.py,sha256=pBCciwLXMnMF_w7XZ_CrDd6jiuukjGWcHMFNQCFNDpE,106
+freemailchecker/freemailchecker.py,sha256=cN3G9AMYVE14aoqiYWpUZGRa9XtDcJbIGvI7evKh2F8,1298
+freemailchecker/data/freemaildomains.csv,sha256=dl-Mkwh77LORuea9xHtp6jQOjl6mx4xHTEW0u7wqQvs,71650
+freemailchecker-0.1.0.dist-info/LICENSE,sha256=bmV0AlgfASkfNjshM3CmEaDatxZDmR15ZI2ArIiwYE4,1072
+freemailchecker-0.1.0.dist-info/METADATA,sha256=qbLD_Phq-OkEVxrSWImJhEs1KENS9obdQOeg-ht2vn8,618
+freemailchecker-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+freemailchecker-0.1.0.dist-info/top_level.txt,sha256=93L96XOLF720id3IgqvTyQ2EROpzl6PH8UciuzTawEU,16
+freemailchecker-0.1.0.dist-info/RECORD,,
