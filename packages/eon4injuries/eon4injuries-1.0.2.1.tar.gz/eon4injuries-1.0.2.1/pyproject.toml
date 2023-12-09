@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+eon4injuries = ["skadetabell.txt"]
+
+[project]
+name = "eon4injuries"
+version = "1.0.2.1"
+authors = [
+  { name="Oliver Glant", email="oliver.glant@gmail.com" },
+]
+description = "A library that generates injuries for the Swedish roleplaying game EON IV (https://helmgast.se/eon/)."
+readme = "README.md"
+dependencies = ["eon4dice"]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Leopaexd/eon4injuries"
+"Bug Tracker" = "https://github.com/Leopaexd/eon4injuries/issues"

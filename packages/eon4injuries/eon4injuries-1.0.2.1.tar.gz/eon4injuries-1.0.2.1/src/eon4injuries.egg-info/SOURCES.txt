@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/eon4injuries/Skadetabell.py
+src/eon4injuries/__init__.py
+src/eon4injuries/injuries.py
+src/eon4injuries/skadetabell.txt
+src/eon4injuries.egg-info/PKG-INFO
+src/eon4injuries.egg-info/SOURCES.txt
+src/eon4injuries.egg-info/dependency_links.txt
+src/eon4injuries.egg-info/requires.txt
+src/eon4injuries.egg-info/top_level.txt
+tests/test_injuries.py
