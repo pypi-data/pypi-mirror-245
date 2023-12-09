@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lambda-lite
+Version: 0.0.2
+Summary: Combinatory Logic implemented in Python.
+Project-URL: Homepage, https://github.com/MichaelLePera/lambda-lite
+Project-URL: Issues, https://github.com/MichaelLePera/lambda-lite/issues
+Author-email: Michael LePera <lepmt001@mymail.unisa.edu.au>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12.0
+Description-Content-Type: text/markdown
+
+# lambda-lite
+Python library for combinatory logic
