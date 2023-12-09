@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+main/__init__.py
+main/ls.py
+wechat_auto_ls.egg-info/PKG-INFO
+wechat_auto_ls.egg-info/SOURCES.txt
+wechat_auto_ls.egg-info/dependency_links.txt
+wechat_auto_ls.egg-info/requires.txt
+wechat_auto_ls.egg-info/top_level.txt
