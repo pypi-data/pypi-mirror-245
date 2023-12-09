@@ -1,0 +1,14 @@
+ipyvuetable/__init__.py,sha256=dqw-ZcymgFbes6TXr2tUm8Kl5v8O76I3GcM9TQS_Gfw,300
+ipyvuetable/custom.css,sha256=YyOm_Q72c4JUKoE5B1f66xH15Yd-rdfoRI6BJ-AOyJY,556
+ipyvuetable/editing_table.py,sha256=NRTZty7R5I1W5xsP81bXleUeFfTYMOW1DREEodqrPfQ,10610
+ipyvuetable/table.py,sha256=2xc1JDgfmkyDIXAntSAfONBWjTCPxXpxAJLPd697Lhw,21328
+ipyvuetable/utils.py,sha256=0a1gyH-mDU2UKII1P5LvWtB9xO-m2X2KlDXBXe9hfmc,2283
+ipyvuetable/filters/__init__.py,sha256=xAVUCx05P4tClMKf0Vd7oed0885bQxDIaZB9IghcjmU,280
+ipyvuetable/filters/filter.py,sha256=JK5qCe_maKd4bjzOxumnsKenffd5Np5KfyjVcbAYRe8,1558
+ipyvuetable/filters/filter_combo.py,sha256=u8jzBO6vxN6nsY5GpAD9flNdx8kLZILBCjJ7jHZ7-5I,4777
+ipyvuetable/filters/filter_date.py,sha256=xi8_FKjHvulNE8sLyFjitd_q2jFhugCquBbdBIWa56s,3024
+ipyvuetable/filters/filter_slider.py,sha256=J2qfEISOI83vt4LQ-cD5eJHkAwIk69QTB5yPYhLh8fk,3181
+ipyvuetable-0.2.3.dist-info/METADATA,sha256=Y7ZMcTNGtudBsrfPaFaBqlAg9Br2nTDHCg_2wgkeBUI,1959
+ipyvuetable-0.2.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ipyvuetable-0.2.3.dist-info/top_level.txt,sha256=Vpj_M4W0vWb-gG_cDtTrpWz-KVe8G3KW19Fa6rjn2l0,12
+ipyvuetable-0.2.3.dist-info/RECORD,,
