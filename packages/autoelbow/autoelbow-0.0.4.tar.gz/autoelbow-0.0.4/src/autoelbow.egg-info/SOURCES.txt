@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/autoelbow.egg-info/PKG-INFO
+src/autoelbow.egg-info/SOURCES.txt
+src/autoelbow.egg-info/dependency_links.txt
+src/autoelbow.egg-info/top_level.txt
+src/autoelbow_rupakbob/__init__.py
+src/autoelbow_rupakbob/autoelbow.py

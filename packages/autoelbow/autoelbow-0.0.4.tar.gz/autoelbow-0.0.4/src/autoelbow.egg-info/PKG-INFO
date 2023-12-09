@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: autoelbow
+Version: 0.0.4
+Summary: Auto Elow For Clustering
+Home-page: https://github.com/rupak-roy
+Author: rupak_bob_roy
+Author-email: rupak2013bob1@gmail.com
+Project-URL: Bug Tracker, https://github.com/rupak-roy
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+
+# Dependencies 
+### Make sure you have install the sklearn ~ Kmeans
+import
+```
+from sklearn.cluster import KMeans
+```
+### Install the package
+```
+pip install package_name
+```
+
+
+### Import the package 
+```
+from autoelbow_rupakbob import autoelbow
+```
+
+### Call the package function
+```
+autoelbow.auto_elbow_search(data)
+```
+
