@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/simplesingletable/__init__.py
+src/simplesingletable/models.py
+src/simplesingletable/utils.py
+src/simplesingletable.egg-info/PKG-INFO
+src/simplesingletable.egg-info/SOURCES.txt
+src/simplesingletable.egg-info/dependency_links.txt
+src/simplesingletable.egg-info/requires.txt
+src/simplesingletable.egg-info/top_level.txt
+tests/test_nonversioned_resource.py
+tests/test_simplesingletable.py
