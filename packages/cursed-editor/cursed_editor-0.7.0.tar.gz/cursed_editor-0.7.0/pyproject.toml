@@ -1,0 +1,133 @@
+[tool.poetry]
+name = "cursed_editor"
+version = "0.7.0"
+description = "A Vim Inspired Text Editor Written in Pure Python"
+readme = ["readme.md"]
+license = "GPL-3.0-or-later"
+homepage = "https://gitlab.com/grocksalot/cursed_editor"
+repository = "https://gitlab.com/grocksalot/cursed_editor"
+authors = ["Philip Zerull <cursed_editor@grocksalot.com>"]
+classifiers=[
+    "Environment :: Console :: Curses",
+    "Intended Audience :: Developers",
+    "Topic :: Text Editors",
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+[tool.poetry.group.dev.dependencies]
+coverage = {extras = ["toml"], version = "^6.5.0"}
+black = "^22.10.0"
+pylint = "^2.15.5"
+poethepoet = "^0.16.4"
+pyte = "^0.8.1"
+mypy = "^1.5.1"
+
+[tool.poetry.scripts]
+cursed = "cursed_editor.application:main"
+
+[tool.poe.tasks]
+    _erase = "coverage erase"
+    _combine = "coverage combine -q"
+    _run = "coverage run"
+    _report = "coverage report --fail-under 100"
+
+[tool.poe.tasks.coverage]
+    sequence = ["_erase", "_run", "_combine", "_report"]
+    ignore_fail = "return_non_zero"
+    help = "Run unit tests and print coverage report"
+
+[tool.poe.tasks.unit]
+    sequence = ["_erase", "_run"]
+    ignore_fail = "return_non_zero"
+    help = "Run unit tests collecting coverage data"
+
+[tool.poe.tasks.type]
+    shell = "mypy ."
+    help = "Performs mypy type checks"
+
+[tool.poe.tasks.format_check]
+    shell = "black --check ."
+    help = "Check to ensure all code is formatted"
+
+[tool.poe.tasks.lock_check]
+    shell = "poetry lock --check"
+    help = "Check to ensure the lock file is up to date"
+
+[tool.poe.tasks.format]
+    shell = "black ."
+    help = "Apply format rules to code"
+
+[tool.poe.tasks.lint]
+    shell = "pylint ."
+    help = "Run linter checks"
+
+[tool.poe.tasks.test]
+    sequence = ["lock_check", "format_check", "type", "lint", "coverage"]
+    ignore_fail = "return_non_zero"
+    help = "Run all tests"
+
+[tool.poe.tasks.clean]
+    cmd = "git clean -idx"
+    help = "Remove files not tracked by git"
+
+[tool.poe.tasks.write_version]
+    shell = "echo \"VERSION = \\\"$(poetry version -s)\\\"\" >> cursed_editor/application.py"
+    help = "Write Version Number to Application Code"
+
+[tool.poe.tasks.set_verbose_version]
+    shell = "poetry version $(poetry version -s).$(date +%Y%m%d.%H%M%S)"
+    help = "Make the poetry version verbose"
+
+[tool.poe.tasks.build]
+    shell = "poetry build"
+    help = "Build the Application"
+
+[tool.poe.tasks.release_build]
+    sequence = ["set_verbose_version", "write_version", "build"]
+    help = "Do a full release build"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 80
+
+[tool.coverage.run]
+branch=true
+parallel=true
+command_line = "-m unittest"
+source=["cursed_editor"]
+
+[tool.coverage.report]
+sort = "Miss"
+show_missing = true
+exclude_lines = [
+    "raise NotImplementedError",
+    'if __name__ == "__main__"',
+    "pragma: no cover",
+]
+
+[tool.pylint]
+ignore-paths=[
+    "build",
+    "dist",
+]
+min-public-methods=0
+design.max-attributes=12
+"messages control".disable = [
+    "missing-function-docstring",
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "useless-parent-delegation",
+    "logging-fstring-interpolation",
+]
+recursive="y"
+format.good-names=["x", "y", "i"]
+load-plugins = ["tests.custom_pylint_check"]
+
+[tool.mypy]
+strict=true
