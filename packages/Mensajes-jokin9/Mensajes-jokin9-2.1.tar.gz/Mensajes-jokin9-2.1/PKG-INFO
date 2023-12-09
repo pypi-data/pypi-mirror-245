@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Mensajes-jokin9
+Version: 2.1
+Summary: Un paquete para saludar y despedir
+Home-page: 
+Author: Joaquin Corbo
+Author-email: joaquin.corbo9@gmail.com
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.23.0
+
+# Mensajes
+
+El paquete de mensajerias para pruebas de Joaquin Corbo
