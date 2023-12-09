@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: semverkit
+Version: 1.1.0
+Summary: Semantic Versioning CLI
+Author-email: Elmer Nocon <elmernocon@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Elmer Nocon
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click==8.1.7
+Requires-Dist: semver==3.0.2
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+
+# semverkit
+
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/semverkit?logo=python&logoColor=yellow)](https://github.com/elmernocon/semverkit)
+[![PyPI - Version](https://img.shields.io/pypi/v/semverkit?logo=pypi&logoColor=yellow)](https://pypi.org/project/semverkit/)
+[![Static Badge](https://img.shields.io/badge/executable-latest-blue?logo=github)](https://github.com/elmernocon/semverkit/releases/latest/download/semverkite)
+[![GitHub License](https://img.shields.io/github/license/elmernocon/semverkit?logo=github)](https://raw.githubusercontent.com/elmernocon/semverkit/main/LICENSE)
+[![Docker Image Size (tag)](https://img.shields.io/docker/image-size/elmernocon/semverkit/latest?logo=docker&label=size)](https://hub.docker.com/repository/docker/elmernocon/semverkit)
+
+A thin CLI wrapper for the Python package [semver](https://python-semver.readthedocs.io/).
+
+## Installation and Usage
+
+PyPI
+
+```shell
+$ pip install semverkit
+```
+
+```shell
+$ python -m semverkit
+```
+
+or
+
+```shell
+$ semverkit
+```
+
+---
+
+Docker
+
+```shell
+$ docker run --rm elmernocon/semverkit
+```
+
+---
+
+Curl
+
+```shell
+$ curl -Ls https://github.com/elmernocon/semverkit/releases/latest/download/semverkite -o semverkit && chmod +x semverkit
+```
+
+```shell
+$ semverkit
+```
+
+---
+
+```text
+Usage: semverkit [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  bump          Bumps a PART of VERSION.
+  compare       Compares VERSION against OTHER.
+  extract       Extracts a PART of VERSION.
+  finalize      Removes any prerelease and build metadata from VERSION.
+  iscompatible  Exits with 1 if VERSION is not compatible with OTHER.
+  ismatch       Exits with 1 if VERSION does not match EXPRESSION.
+  isvalid       Exits with 1 if VERSION is invalid.
+  replace       Replaces one or more parts of VERSION.
+  split         Splits parts of VERSION.
+```
