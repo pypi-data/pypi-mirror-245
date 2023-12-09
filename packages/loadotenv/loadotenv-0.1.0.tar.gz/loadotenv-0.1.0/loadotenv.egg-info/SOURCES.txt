@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+loadotenv/__init__.py
+loadotenv/__main__.py
+loadotenv.egg-info/PKG-INFO
+loadotenv.egg-info/SOURCES.txt
+loadotenv.egg-info/dependency_links.txt
+loadotenv.egg-info/top_level.txt
