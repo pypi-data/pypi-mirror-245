@@ -1,0 +1,9 @@
+league/__init__.py,sha256=u8F7pimljRzfUB63re2KjKKOXSmPPHRQ1T-OsH6nebc,73
+league/main.py,sha256=nFNYA2u9Ms4ir-iBDmMW9JYNjfUw83qLSF3AJIdupAQ,3117
+league/models.py,sha256=MNxuZjs2nQgYXbwkyva8xU7_IXTDhZCFWtdHj38P9O0,3081
+league/utils.py,sha256=AsyrmMnt2aNe8dqOFSTcmszn2pbjd1LlPB6UQ81G9a4,1451
+python_league-0.0.6.dist-info/LICENSE,sha256=IB5CZHJzWT8GdUpIfEXYWgu5EtlBqYsxln9Uv7Jxtx0,1068
+python_league-0.0.6.dist-info/METADATA,sha256=P3bl3JhUcr6WbuIpaPaQdLW67tjo1ZFEuh8X-S6NOrg,262
+python_league-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+python_league-0.0.6.dist-info/top_level.txt,sha256=jPlRBmbYNwOqJPwB2sLPw20FZNwdXhbtLwfejsQMM28,7
+python_league-0.0.6.dist-info/RECORD,,
