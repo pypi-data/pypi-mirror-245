@@ -1,0 +1,4 @@
+snakemake_executor_plugin_cluster_generic/__init__.py,sha256=yp7X6ZAEuB6qLuSHlUD17vO8HcujVgmvWsldSdTgFXE,14491
+snakemake_executor_plugin_cluster_generic-1.0.6.dist-info/METADATA,sha256=Ctg1zZVbOmyTZkdnzR5S1rK3bCok1lotGLxFlZd1DxY,1138
+snakemake_executor_plugin_cluster_generic-1.0.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+snakemake_executor_plugin_cluster_generic-1.0.6.dist-info/RECORD,,
