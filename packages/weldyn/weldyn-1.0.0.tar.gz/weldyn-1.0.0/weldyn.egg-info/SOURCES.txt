@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_configurable_model.py
+tests/test_model_to_yaml_interface.py
+tests/test_utils.py
+weldyn.egg-info/PKG-INFO
+weldyn.egg-info/SOURCES.txt
+weldyn.egg-info/dependency_links.txt
+weldyn.egg-info/top_level.txt
