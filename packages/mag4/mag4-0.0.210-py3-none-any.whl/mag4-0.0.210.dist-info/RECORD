@@ -1,0 +1,8 @@
+mag4/__init__.py,sha256=dH4BefDlrn7TeCJokgvD4i0pE_pANPvCgsAvbb_tLOg,108
+mag4/display_databases.py,sha256=0TKM5yFBmuEKNO9JtluE4fslVgXYXjBdu0x_YlWt6UY,262
+mag4/get_data.py,sha256=gAmilN-VJAPC48RhcXiSj8mZutCgsaRg0ohdJeWqOTk,1548
+mag4/write_json_file.py,sha256=ON5D2bJlTCRyQodsABVxfUMMGq-2oZ9QerfhE8mIAAs,740
+mag4-0.0.210.dist-info/METADATA,sha256=vWJErvytWVEiFfhakF-4Y59FIm6fplCJGVnkNafxyL4,553
+mag4-0.0.210.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mag4-0.0.210.dist-info/top_level.txt,sha256=2PZ5fepTgE0FpAi76JS8VDpVuTy0qMaJNZrphCnFs5M,5
+mag4-0.0.210.dist-info/RECORD,,
