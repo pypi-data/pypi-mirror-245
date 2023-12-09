@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: nexxclone
+Version: 1.1.0
+Summary: A Discord Selfbot for Clone Discord Server
+Home-page: https://github.com/noritem/nexx_clone
+Author: nexxrar
+Author-email: tech@moxx.tech
+License: MIT
+Keywords: discord selfbot clone nexxclone
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+
+    # nexxclone
+
+A Discord Selfbot for Cloning Discord Servers.
+
+## Installation
+
+```bash
+pip install nexxclone
+```
+
+# Usage
+
+```py
+from nexxclone import Clone
+import discord
+import asyncio
+
+client = discord.Client()
+
+def main():
+    token = input('Your Token > ')
+    guild_s = input('Your Server ID That You Want To Copy > ')
+    guild = input('Your Server ID To Copy The Server In There > ')
+    input_guild_id = guild_s
+    output_guild_id = guild
+
+    @client.event
+    async def on_ready():
+        print(f"Logged In as: {client.user}")
+        print("Cloning Server")
+        guild_from = client.get_guild(int(input_guild_id))
+        guild_to = client.get_guild(int(output_guild_id))
+
+        anser = input('Do You Want To all in one clone? [y/n] > ')
+        if anser.lower() == 'y':
+            await Clone.all(guild_from, guild_to)
+        else:
+            await Clone.roledelete(guild_to)
+            await Clone.chdelete(guild_to)
+            await Clone.rolecreate(guild_to, guild_from)
+            await Clone.catcreate(guild_to, guild_from)
+            await Clone.chcreate(guild_to, guild_from)
+            await Clone.guedit(guild_to, guild_from)
+
+        answer = input('Do You Want To Clone The Template Of The Server? [y/n] > ')
+        if answer.lower() == 'y':
+            await Clone.gutemplate(guild_to)
+        else:
+            pass
+
+        await asyncio.sleep(5)
+        exit()
+
+    client.run(token, bot=False)
+
+main()
+
+```
+
+# Contributing
+Feel free to contribute by opening issues or creating pull requests. Your feedback and suggestions are welcome!
+
