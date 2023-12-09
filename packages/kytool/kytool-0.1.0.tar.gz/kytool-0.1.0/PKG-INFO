@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kytool
+Version: 0.1.0
+Summary: Kytool is a tool for creatng
+License: Apache-2.0
+Author: Dmytro Maior
+Author-email: mayor4090@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+Personal tool for creating backends for web applications.
+
