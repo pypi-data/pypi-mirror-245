@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: df-autosk
+Version: 0.0.1
+Summary: A CascadeForestClassifier extension of AutoSklearn classifier 
+Author-email: Katarina Nocarova <469381@mail.muni.cz>
+Project-URL: Homepage, https://gitlab.fi.muni.cz/xsvecova/deep-forest-and-after/-/tree/main/df_autosk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DF for AutoSklearn
+
+Extension of AutoSklearnClassifier with DF21 - [CascadeForestClassifier](https://deep-forest.readthedocs.io/en/latest/index.html) - a Deep Forest implementantion.
+
+## Requirements
+
+* numpy version <= 1.19
+* installation of CascadeForestClassifier
+* input variables have to be converted to numeric without missing values 
+* output variables also should be converted to numeric values (you can use sklearn LabelEncoder)
+
