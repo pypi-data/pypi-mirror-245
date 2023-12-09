@@ -1,0 +1,29 @@
+[project]
+name = "cs3560cli"
+version = "0.1.4a2"
+description = "A set of internal tools for Ohio University's CS3560 course"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+    "click",
+    "Pygments",
+    "rich",
+    "ruamel.yaml",
+    "tqdm",
+    "watchdog",
+    'importlib-metadata; python_version>"3.8"',
+    "requests",
+]
+
+[project.urls]
+Homepage = "https://github.com/OU-CS3560/cs3560cli"
+Repository = "https://github.com/OU-CS3560/cs3560cli.git"
+Issues = "https://github.com/OU-CS3560/cs3560cli/issues"
+Changelog = "https://github.com/OU-CS3560/cs3560cli/blob/main/CHANGELOG.md"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+cs3560cli = "cs3560cli.main:cli"
