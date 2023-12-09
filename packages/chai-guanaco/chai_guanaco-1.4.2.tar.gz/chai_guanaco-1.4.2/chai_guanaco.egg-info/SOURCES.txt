@@ -1,0 +1,9 @@
+README
+setup.cfg
+setup.py
+chai_guanaco.egg-info/PKG-INFO
+chai_guanaco.egg-info/SOURCES.txt
+chai_guanaco.egg-info/dependency_links.txt
+chai_guanaco.egg-info/not-zip-safe
+chai_guanaco.egg-info/requires.txt
+chai_guanaco.egg-info/top_level.txt
