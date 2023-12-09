@@ -1,0 +1,12 @@
+README.md
+setup.py
+gitlab_manager/__init__.py
+gitlab_manager/gitlab_api.py
+gitlab_manager/main.py
+gitlab_manager/utils.py
+gitlab_manager.egg-info/PKG-INFO
+gitlab_manager.egg-info/SOURCES.txt
+gitlab_manager.egg-info/dependency_links.txt
+gitlab_manager.egg-info/entry_points.txt
+gitlab_manager.egg-info/requires.txt
+gitlab_manager.egg-info/top_level.txt
