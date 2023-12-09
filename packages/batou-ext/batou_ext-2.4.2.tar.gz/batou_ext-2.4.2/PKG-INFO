@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: batou_ext
+Version: 2.4.2
+Summary: A library of components for batou.
+Home-page: https://github.com/flyingcircusio/batou_ext
+Author: Flying Circus <support@flyingcircus.io>
+Author-email: support@flyingcircus.io
+License: BSD (2-clause)
+Keywords: deployment
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: batou>=2.3b4
+Requires-Dist: pyaml
+Requires-Dist: setuptools
+Requires-Dist: six
+Provides-Extra: test
+Requires-Dist: boto3; extra == "test"
+Requires-Dist: passlib>=1.7; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-mock; extra == "test"
+Provides-Extra: version-select
+Requires-Dist: InquirerPy; extra == "version-select"
+
+# batou_ext - a library of components for batou
+
+`batou_ext` master is now supporting Python3 and is depending on batou2. If you still want to use batou_ext with batou 1.x running Python2 you still can use the [batou1-py2](https://github.com/flyingcircusio/batou_ext/tree/batou1-py2) branch.
+
+To add `batou_ext` to your deployment, add a like to the `requirements.txt` of your batou deployment::
+
+```
+batou_ext>=2.4
+```
+
+## Development and release process
+
+* Changes should be accompanied with a changelog entry. Use `./changelog.sh` to create one.
+
+* Releasing will create a tag and publishes the package to pypi. Use `./release-this.sh` to create a release.
+
+
+
+## 2.4.2 (2023-12-08)
+
+
+* Make it possible to add arbitrary additional configuration to a service created by a `SystemdTimer()`.
+
+* Add `nixos.NixOSModule` to inject component attributes into .nix files.
+
+
+## 2.4.1 (2023-11-16)
+
+
+* Add `*.md` to the release, so it can actually be used.
+
+
+## 2.4.0 (2023-11-16)
+
+- Add release process with changelog (FC-33250).
