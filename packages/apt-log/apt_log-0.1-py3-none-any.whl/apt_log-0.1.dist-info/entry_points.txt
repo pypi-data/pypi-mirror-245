@@ -1,0 +1,3 @@
+[console_scripts]
+apt-log=apt_log.cli:app
+

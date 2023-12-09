@@ -1,0 +1,8 @@
+apt_log/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apt_log/cli.py,sha256=T96aVTLTBsPumJ467pDaIPcwr_cNY9PN2Vya50RlUT0,6799
+apt_log/log.py,sha256=dPM2bHEVPHQWANoIICEI7zt6rSgeTOlJQPGsufCIC2A,4398
+apt_log/reader.py,sha256=zLtI1OGCRgvfPjjxXykPjzL5uoMPmlP4_S1LMMeM4Yk,3697
+apt_log-0.1.dist-info/METADATA,sha256=UgzPs67Toer5fGKH31FhbIT8ftMbHEIarsliUn5_R3U,1825
+apt_log-0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+apt_log-0.1.dist-info/entry_points.txt,sha256=UkbpXhEgvwnK4LK4I68J3cOgO-liuxPtUuZFsOxxB8c,43
+apt_log-0.1.dist-info/RECORD,,
