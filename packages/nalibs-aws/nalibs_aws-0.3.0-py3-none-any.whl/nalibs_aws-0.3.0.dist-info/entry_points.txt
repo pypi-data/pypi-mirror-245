@@ -1,0 +1,2 @@
+[console_scripts]
+nalibs_cicd_get_secrets = nalibsAWS.x0_cli_cicd:run_cicd_aws_sm

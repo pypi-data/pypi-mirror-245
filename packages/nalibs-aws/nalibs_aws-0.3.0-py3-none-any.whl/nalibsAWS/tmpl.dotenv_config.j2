@@ -1,0 +1,4 @@
+## Environment export from Secrets Manager
+{% for key, value in list_env.items() -%}
+{{ key.upper() }}={{ value }}
+{% endfor %}

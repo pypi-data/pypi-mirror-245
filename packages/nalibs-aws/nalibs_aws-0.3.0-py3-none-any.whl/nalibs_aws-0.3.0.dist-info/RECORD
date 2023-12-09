@@ -1,0 +1,13 @@
+nalibsAWS/__base.py,sha256=bm89vrIP2yGV6oHnhE3nv7hA1qJwhx7W6Ri51G0vlxM,1252
+nalibsAWS/__init__.py,sha256=RCjc3CKM5MWa_sWXfrZcpK-XnDHGDrMT1SpWa3BYWK0,85
+nalibsAWS/__version.py,sha256=VznCw5rm5mKyjiL2lK_sQZE7R6-QqnBq4PtI3wI5sPQ,658
+nalibsAWS/aws_sm_func.py,sha256=bc1M4OFpjVikElg6bRu2VaBozA0D6WCuTLxBxLtrHMA,712
+nalibsAWS/common.py,sha256=4S99tMg71zWADC5g16w_A7U4hnm1DUxe6mLzEOfDjFg,1688
+nalibsAWS/tmpl.dotenv_config.j2,sha256=YRNsq1T84sPvzcNJ7st8br6BiTc-FaniBA0dg6yWJAw,127
+nalibsAWS/x0_cli_cicd.py,sha256=6W9Rne6FOWPZdev6IFJZyWDvkE8kjS9dmoNgDAhfm58,5519
+nalibs_aws-0.3.0.dist-info/LICENSE,sha256=23tRc0wLCYQHwSFTDYEAJnQxRfETM7yum1i0Qhl_lpU,1056
+nalibs_aws-0.3.0.dist-info/METADATA,sha256=R55h6kyRo8DSMm1khxNtRwJEslffBAREJZSUZbV2v_U,636
+nalibs_aws-0.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+nalibs_aws-0.3.0.dist-info/entry_points.txt,sha256=EH7dYqpGWosufvmAeFobc3QFFT6YuLcJRLudvd-ottk,82
+nalibs_aws-0.3.0.dist-info/top_level.txt,sha256=pPi63w0WTFFfTg4lf8ffBXkpMGCGGnLRWggeXwPhCOk,10
+nalibs_aws-0.3.0.dist-info/RECORD,,
