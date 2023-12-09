@@ -1,0 +1,106 @@
+[project]
+name = "brainglobe-segmentation"
+description = "Segmentation of anatomical structures in a common coordinate space"
+readme = "README.md"
+authors = [
+    { name = "Adam Tyson, Horst Obenhaus", email = "code@adamltyson.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: napari",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "bg-atlasapi",
+    "brainglobe-napari-io >=0.3.0",
+    "brainglobe-utils >=0.2.7",
+    "imio",
+    "napari >=0.4.5",
+    "numpy",
+    "pandas[hdf5]",
+    "qtpy",
+    "scikit-image",
+    "scipy",
+    "tifffile",
+]
+license = { text = "BSD-3-Clause" }
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://brainglobe.info/"
+"Source Code" = "https://github.com/brainglobe/brainglobe-segmentation"
+"Bug Tracker" = "https://github.com/brainglobe/brainglobe-segmentation/issues"
+Documentation = "https://docs.brainglobe.info/brainglobe-segmentation"
+"User Support" = "https://forum.image.sc/tag/brainglobe"
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "gitpython",
+    "pre-commit",
+    "pytest",
+    "coverage",
+    "pytest-cov",
+    "pytest-qt",
+    "napari-time-slicer", # to test non ndarray-types
+]
+
+[project.entry-points."napari.manifest"]
+cellfinder-napari = "brainglobe_segmentation:napari.yaml"
+
+[project.scripts]
+brainglobe-segmentation = "brainglobe_segmentation.segment:main"
+
+[project.entry-points."napari.plugin"]
+brainglobe-segmentation = "brainglobe_segmentation.plugins"
+
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["brainglobe_segmentation*"]
+
+[tool.setuptools_scm]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "error",
+    # Emitted by scikit-image on import, see https://github.com/scikit-image/scikit-image/issues/6663
+    # This filter should be removed when scikit-image 0.20 is released
+    "ignore:`np.bool8` is a deprecated alias for `np.bool_`",
+    # Emitted by nptyping, see https://github.com/ramonhagenaars/nptyping/issues/102
+    # for upstream issue
+    "ignore:`np.object0` is a deprecated alias for ``np.object0`",
+    "ignore:`np.int0` is a deprecated alias for `np.intp`",
+    "ignore:`np.uint0` is a deprecated alias for `np.uintp`",
+    "ignore:`np.void0` is a deprecated alias for `np.void`",
+    "ignore:`np.bytes0` is a deprecated alias for `np.bytes_`",
+    "ignore:`np.str0` is a deprecated alias for `np.str_`",
+    # Warning comes from vispy - fixed in vispy 0.12.0. napari 0.5.0 will bump
+    # vispy to 0.5.0, so this filter should be removed when napari 0.5.0
+    # is released
+    "ignore:distutils Version classes are deprecated:DeprecationWarning",
+]
+
+[tool.black]
+target-version = ['py38', 'py39', 'py310']
+skip-string-normalization = false
+line-length = 79
+
+[tool.ruff]
+line-length = 79
+exclude = ["__init__.py", "build", ".eggs"]
+select = ["I", "E", "F"]
+fix = true
