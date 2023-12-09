@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: openphoton
+Version: 0.0.2
+Summary: A scalar diffraction simulation package
+Author: Gilbert M. Oca
+Author-email: <boyfriendnibluefairy@gmail.com>
+License: MIT
+Keywords: python,optics,diffraction,simulation,lens,SLM,light,wave,propagation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: Pillow
+
+A basic optics package for scalar diffraction simulation.
