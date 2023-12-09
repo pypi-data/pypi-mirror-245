@@ -1,0 +1,2 @@
+heaserver<1.0.0b48,>=1.0.0b47
+aiostream~=0.5.1
