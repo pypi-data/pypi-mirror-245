@@ -1,0 +1,16 @@
+tvallogging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tvallogging/api.py,sha256=QFsWied0ffbtz2ItcttTiTjEJQWq4-orQOz-sr_FSfM,3575
+tvallogging/chat_objects.py,sha256=3TgE5iWWZQCUHo0xPETvDgwoRdVlh-8VF72l4tBFt40,4073
+tvallogging/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tvallogging/classes/http_client.py,sha256=XjGlv3l0tOugyRR4vBbsyOQIQkRUCpMDmfYRU45UX04,1788
+tvallogging/classes/project.py,sha256=1EZKRNWxh1vNYtVaPrwcRNaNP1X52bSCZPkWJNeagMk,4266
+tvallogging/classes/run.py,sha256=XJjCQcdbMmE58vu1UCBgxhM-D_uEqy9d34SvC7XWbhQ,4156
+tvallogging/logging_util.py,sha256=YGRY_j1DU0XjEcfRuIPhA8q2u_fy26HaesimK8_vHCU,918
+tvallogging/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tvallogging/services/benchmark_service.py,sha256=CF9t1Pn5g9aqiYxTbN6PsRBsr14ujJj0dkY0GBjVTkU,1031
+tvallogging/services/project_service.py,sha256=Xzt34xxQgwWVeZVZxXtwEZO6pYdJXo1Xu9P_WPSOVkc,1005
+tvallogging/services/run_service.py,sha256=C-gzAkEu_-2thNqSUi-Wj5ji5L5HJ0jSxdIGO0vdIqc,2364
+tvallogging-1.0.0.dist-info/LICENSE,sha256=Om1V_BGUHcZoFCgLYE9wEN6qMYWIsSPjJmmFRRzMSpA,1063
+tvallogging-1.0.0.dist-info/METADATA,sha256=S_YYMPxT4Yo6H_GITKgiAiqvK_XI1fp5k_O6ea9y-YI,4202
+tvallogging-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tvallogging-1.0.0.dist-info/RECORD,,
