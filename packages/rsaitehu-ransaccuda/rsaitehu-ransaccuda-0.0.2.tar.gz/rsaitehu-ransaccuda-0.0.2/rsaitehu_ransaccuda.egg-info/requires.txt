@@ -1,0 +1,6 @@
+numpy>=1.22.0
+open3d>=0.16.0
+numba>=0.56.4
+rsaitehu-ransac>=0.0.1
+rsaitehu-geometry>=0.0.1
+rsaitehu-sampling>=0.0.1
