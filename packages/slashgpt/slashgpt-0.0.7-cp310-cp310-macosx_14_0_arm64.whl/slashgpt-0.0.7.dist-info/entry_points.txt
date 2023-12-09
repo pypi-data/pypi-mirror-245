@@ -1,0 +1,4 @@
+[console_scripts]
+slashGPT=slashgpt.cli:cli
+slashbot=slashgpt.slashbot:run_bot
+
