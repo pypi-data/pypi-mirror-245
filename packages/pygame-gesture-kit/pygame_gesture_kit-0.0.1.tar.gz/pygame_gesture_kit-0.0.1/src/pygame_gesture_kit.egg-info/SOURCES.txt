@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/pygame_gesture_kit/__init__.py
+src/pygame_gesture_kit/camera.py
+src/pygame_gesture_kit/gesture_recognizer.py
+src/pygame_gesture_kit/hand.py
+src/pygame_gesture_kit/hand_visualizer.py
+src/pygame_gesture_kit.egg-info/PKG-INFO
+src/pygame_gesture_kit.egg-info/SOURCES.txt
+src/pygame_gesture_kit.egg-info/dependency_links.txt
+src/pygame_gesture_kit.egg-info/requires.txt
+src/pygame_gesture_kit.egg-info/top_level.txt
+src/pygame_gesture_kit/example/__init__.py
+src/pygame_gesture_kit/example/main.py
+src/pygame_gesture_kit/model/hagrid.task
+src/pygame_gesture_kit/model/rps.task
