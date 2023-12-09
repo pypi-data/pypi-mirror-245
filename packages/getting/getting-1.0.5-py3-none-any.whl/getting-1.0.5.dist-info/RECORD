@@ -1,0 +1,8 @@
+getting/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getting/auth.py,sha256=ipsbUpZZPBDiroQlrYKMoDFkTzOG39IzBRzagDmE-zY,1108
+getting/file.py,sha256=O6weUR4mbaOpZnn2zGtu2u8xzKfqesOGUh_qgDLpIts,10205
+getting/json.py,sha256=asxbe4eIR-ImLqhTRJ9UaNyINAqDxMVA4uDWX9Epe3I,1686
+getting/response.py,sha256=_-hZtnZZ5-u6cbphSGozl--O3sEckdYL35rmBdcfjzg,2457
+getting-1.0.5.dist-info/METADATA,sha256=_1_dkWs9kAbG5VGModnlf-SmDvsLwoo3zqBB29N74Es,706
+getting-1.0.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+getting-1.0.5.dist-info/RECORD,,
