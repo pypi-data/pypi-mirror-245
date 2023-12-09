@@ -1,0 +1,9 @@
+README.md
+setup.py
+ml_optimizers/__init__.py
+ml_optimizers/text_reader.py
+ml_optimizers.egg-info/PKG-INFO
+ml_optimizers.egg-info/SOURCES.txt
+ml_optimizers.egg-info/dependency_links.txt
+ml_optimizers.egg-info/top_level.txt
+ml_optimizers/data/my_code.py
