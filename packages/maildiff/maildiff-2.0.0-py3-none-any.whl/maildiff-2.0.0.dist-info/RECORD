@@ -1,0 +1,12 @@
+emaildiff/__init__.py,sha256=bET2tv8g4qTQvZqZpH8QDDLLts4iMBZnsPFDXBSaYMQ,20
+emaildiff/maildiff_cmd.py,sha256=oRdnsLOy601y_DulNYtNa3xcC7MQRCzaUIMFz_hOa6I,12847
+emaildiff/mail/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+emaildiff/mail/send.py,sha256=f1631YvMD-CYGKSsi44JpOSzep2ex00tlD62c8yrhwA,2477
+maildiff-2.0.0.data/data/VERSION,sha256=wo_MpTY3vIjhJK8XJd8Ty5jGne3v1i-zzb4c22t2BiQ,6
+maildiff-2.0.0.data/scripts/git-maildiff,sha256=bvYL8oAz-JdSuzK_PyhB6pK7c3tcfiHPuRuNSIzekcg,308
+maildiff-2.0.0.dist-info/LICENSE,sha256=4ifAM_uJaJaKys_Hs8vQmYihVCsP46Xcz4s9q6dOtsE,1568
+maildiff-2.0.0.dist-info/METADATA,sha256=XiXGg7SIc0qWz-ocGRVj7q4vOiGY3kN1Kk456ZxhPbU,3465
+maildiff-2.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+maildiff-2.0.0.dist-info/entry_points.txt,sha256=fVN03xjRcmyfjPv2anTLZOxZEsVOXEA0NLe6yYjTdJ4,61
+maildiff-2.0.0.dist-info/top_level.txt,sha256=l8ZEPDsmELr1cyX6vtUJX-u4p9iBM4LkgO1Kg-l6i9Q,25
+maildiff-2.0.0.dist-info/RECORD,,
