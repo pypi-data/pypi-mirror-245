@@ -1,0 +1,3 @@
+[console_scripts]
+ftp2telegram=ftp2telegram.cli:app
+

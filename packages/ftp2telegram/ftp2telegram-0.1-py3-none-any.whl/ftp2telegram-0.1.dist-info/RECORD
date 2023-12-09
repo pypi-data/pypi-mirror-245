@@ -1,0 +1,9 @@
+ftp2telegram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ftp2telegram/cli.py,sha256=ntmBpTQdeewVPeCNcoPT_C-W1x2sQtDMACTyACn0LwU,2370
+ftp2telegram/config.py,sha256=O9pOSAw3ryEVhG3RRvqUb9cioLFrF0FURATfX5xRsso,1202
+ftp2telegram/resources/example-config.yml,sha256=Kl7sPpjA1JipMi3ruPrJmXCqCWxgtJRfyvVx_gOWkZQ,248
+ftp2telegram/server.py,sha256=NB9eiIak86ZeudSLzOdjzHwSJ5GkmYpelX6Rkrbw2Cg,1846
+ftp2telegram-0.1.dist-info/METADATA,sha256=zPWDHefXLO5vQm8a7kEbrzggIy3HNqjE9Eej6HQhZcg,3861
+ftp2telegram-0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ftp2telegram-0.1.dist-info/entry_points.txt,sha256=gu-zLnI2XIWj9K_z0HIVJ1H4tF3N8pSwLLMzgWCdxxQ,53
+ftp2telegram-0.1.dist-info/RECORD,,
