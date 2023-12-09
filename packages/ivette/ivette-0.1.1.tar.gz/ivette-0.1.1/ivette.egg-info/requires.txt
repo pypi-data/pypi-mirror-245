@@ -1,0 +1,6 @@
+httpx
+openbabel-wheel
+python-dotenv
+rdkit
+rdkit_pypi
+supabase
