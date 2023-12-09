@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "febug"
+version = "1.0.0"
+authors = [
+  { name="наб", email="nabijaczleweli@nabijaczleweli.xyz" },
+]
+description = "User-space debugfs ABI wrapper library for Python"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "0BSD"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Zero-Clause BSD (0BSD)",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: POSIX :: BSD :: NetBSD",
+    "Operating System :: POSIX :: BSD :: OpenBSD",
+    "Operating System :: POSIX :: BSD :: FreeBSD",
+    "Operating System :: MacOS",
+]
+
+[project.urls]
+Homepage = "https://sr.ht/~nabijaczleweli/febug"
