@@ -1,0 +1,2 @@
+[mappyfile.plugins]
+mappyfile_geojson = mappyfile_geojson
