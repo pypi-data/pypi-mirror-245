@@ -1,0 +1,12 @@
+target_cratedb/__init__.py,sha256=nbtbH6V6UrkmOm3hQIhr-PleJNj7IMqLnFfDJ4ct9hs,90
+target_cratedb/connector.py,sha256=hstJPSR3kIAX6NseOYRk1VCTTvGmspDL-jHWkiGApa0,9016
+target_cratedb/patch.py,sha256=Vj-NkENtC4ujEKakfVPlf9qG0tixf_q3dK5Hs_fKLws,1733
+target_cratedb/sinks.py,sha256=PCLt4rhmyk5JJlJQ5MdL4eS0Zbm2Fyth9cx-8fWOcNw,12337
+target_cratedb/target.py,sha256=prWISQ082hmUneCgDFejdtRQ6uTsjEPCciiDr0Q84uQ,297
+target_cratedb/tests/__init__.py,sha256=MZOUJZyrC5sv-Kr8BzmpfLHoc7sBxP3ldJHw0d2dtg0,37
+target_cratedb/tests/test_standard_target.py,sha256=Ozzkr-YY6KbSUNjqfGPYbQq255VUBJCak97weuKzdJw,26771
+meltano_target_cratedb-0.0.1.dist-info/METADATA,sha256=mvgUqlot_BLDz9MKkc0SUfeGHfKLFp9GawpuG1CNn8A,11612
+meltano_target_cratedb-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+meltano_target_cratedb-0.0.1.dist-info/entry_points.txt,sha256=aubKngitAr1Z6SS-aiRVBppyqHzHMTvNhSpfKZhOJ9M,75
+meltano_target_cratedb-0.0.1.dist-info/top_level.txt,sha256=I3Ge5pSJxxg3-DCVn7D7t9gSd6j_-pckOKUCSS-W47M,15
+meltano_target_cratedb-0.0.1.dist-info/RECORD,,
