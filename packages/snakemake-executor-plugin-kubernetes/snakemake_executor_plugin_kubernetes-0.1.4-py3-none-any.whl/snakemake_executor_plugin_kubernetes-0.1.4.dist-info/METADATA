@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: snakemake-executor-plugin-kubernetes
+Version: 0.1.4
+Summary: A snakemake executor plugin for submission of jobs to Kubernetes
+Home-page: https://github.com/snakemake/snakemake-executor-plugin-kubernetes
+License: MIT
+Keywords: snakemake,plugin,executor,cloud,kubernetes
+Author: Johannes Koester
+Author-email: johannes.koester@uni-due.de
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: kubernetes (>=27.2.0,<28.0.0)
+Requires-Dist: snakemake-interface-common (>=1.14.1,<2.0.0)
+Requires-Dist: snakemake-interface-executor-plugins (>=8.0.2,<9.0.0)
+Project-URL: Documentation, https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/kubernetes.html
+Project-URL: Repository, https://github.com/snakemake/snakemake-executor-plugin-kubernetes
+Description-Content-Type: text/markdown
+
+# snakemake-executor-plugin-kubernetes
+
+A snakemake executor plugin for submission of jobs to Kubernetes.

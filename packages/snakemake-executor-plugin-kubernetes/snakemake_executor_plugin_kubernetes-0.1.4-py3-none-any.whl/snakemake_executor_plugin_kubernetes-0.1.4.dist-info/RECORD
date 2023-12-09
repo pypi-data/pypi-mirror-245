@@ -1,0 +1,5 @@
+snakemake_executor_plugin_kubernetes/__init__.py,sha256=QVDzwJiUSEXZTqiQf0k39VOMV89AV0aRrBLvzpsH8jM,17502
+snakemake_executor_plugin_kubernetes-0.1.4.dist-info/LICENSE,sha256=YVc4xTLWMqGfFL36120k7rzXtsT6e4RkJsh68VVn12s,1076
+snakemake_executor_plugin_kubernetes-0.1.4.dist-info/METADATA,sha256=KkyNb6JXPa0Jeci0cppWNJLSKAF1LGVATHz0KMC4rRs,1120
+snakemake_executor_plugin_kubernetes-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+snakemake_executor_plugin_kubernetes-0.1.4.dist-info/RECORD,,
