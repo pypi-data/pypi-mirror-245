@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+contoso_ai_service.egg-info/PKG-INFO
+contoso_ai_service.egg-info/SOURCES.txt
+contoso_ai_service.egg-info/dependency_links.txt
+contoso_ai_service.egg-info/entry_points.txt
+contoso_ai_service.egg-info/requires.txt
+contoso_ai_service.egg-info/top_level.txt
+module/__init__.py
+module/src/__init__.py
+module/src/mailing/__init__.py
+module/src/mailing/mail_class.py
+tests/__init__.py
+tests/tests.py
