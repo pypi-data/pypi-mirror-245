@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cd2datamanager
+Version: 1.0.10
+Summary: Canvas Data 2 Data Manager
+Home-page: https://github.com/tiberhealth/CanvasData2
+Author: Tiber Health Innovations
+Author-email: tiber-tools@tiberhealth.com
+License-File: LICENSE
+Requires-Dist: asyncio
+Requires-Dist: instructure-dap-client
+Requires-Dist: tqdm
+Requires-Dist: PyYaml
+Requires-Dist: typer
+
+Canvas Data 2 Data Manager by Tiber Health Innovations. Script is used to pull data from the CanvasData2 portals and create sql and load files for MySQL version 8.x
