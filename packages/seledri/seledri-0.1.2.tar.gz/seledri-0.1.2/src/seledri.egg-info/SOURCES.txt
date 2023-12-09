@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/seledri/__init__.py
+src/seledri/functionmap.py
+src/seledri/timekeeper.py
+src/seledri/worker.py
+src/seledri.egg-info/PKG-INFO
+src/seledri.egg-info/SOURCES.txt
+src/seledri.egg-info/dependency_links.txt
+src/seledri.egg-info/top_level.txt
+src/seledri/tests/__init__.py
+src/seledri/tests/test_function_map.py
+src/seledri/tests/test_module.py
