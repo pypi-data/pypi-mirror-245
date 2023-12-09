@@ -1,0 +1,10 @@
+fluentiter/__init__.py,sha256=rhf7w7di8zU3p8en8amzgh-KeqfNf87kiaUGBQWD0f0,249
+fluentiter/core.py,sha256=t4_E6ALrF4duVehB2GbCd79kag5N9UCuLHQnsmKOrFk,34385
+fluentiter/exceptions.py,sha256=HBhRSne7XD_WC0m3lG1iFxTY-kGXk3dyETvWbQ1FqLc,523
+fluentiter/itertypes.py,sha256=MGBbp1WF5iSor89AfeGF5geRJZA9UGHXBnCd_zRvh8I,8622
+fluentiter/more.py,sha256=JnA7U6bpXH_NoFkX5CfdGDg19NNWvmJD3I1Jpx1zBew,697
+fluentiter/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fluentiter-1.2.1.dist-info/LICENSE,sha256=NssyeSDt9cpc0KhKAvxGV8V5Nkq45KhLEi0tk18rfd8,1069
+fluentiter-1.2.1.dist-info/METADATA,sha256=fzDuMX_Rve311y79lzhapi6-A_c0TXn_T_fjzZOwBeY,5549
+fluentiter-1.2.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+fluentiter-1.2.1.dist-info/RECORD,,
