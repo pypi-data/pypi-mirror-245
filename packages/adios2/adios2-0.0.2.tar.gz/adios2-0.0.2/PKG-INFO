@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: adios2
+Version: 0.0.2
+Summary: adios2
+Description-Content-Type: text/markdown
+
+# adios2
+adios2 - The Adaptable Input Output System version 2
+
+Coming soon: ADIOS2 automatically packaged and shipped from the [source](https://github.com/ornladios/adios2).

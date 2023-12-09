@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+adios2.egg-info/PKG-INFO
+adios2.egg-info/SOURCES.txt
+adios2.egg-info/dependency_links.txt
+adios2.egg-info/top_level.txt
