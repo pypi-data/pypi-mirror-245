@@ -1,0 +1,14 @@
+CHANGELOG.md,sha256=416Uc9RkPKYTefsMG_3hdg72tDa-HRw9ImGds4mep3g,791
+bootloader/__init__.py,sha256=HKO4RgbXyYgW1OH-QVmOHj0ySIJuMHwr9p7CJuX4Dxg,859
+bootloader/cli/__init__.py,sha256=HKO4RgbXyYgW1OH-QVmOHj0ySIJuMHwr9p7CJuX4Dxg,859
+bootloader/cli/cmstats.py,sha256=g8oLAcGvR7nUjB1nCHDaF36fJnqQVpJHJ4h4wX_EBl8,5694
+bootloader/utils/__init__.py,sha256=HKO4RgbXyYgW1OH-QVmOHj0ySIJuMHwr9p7CJuX4Dxg,859
+bootloader/utils/plasticscm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bootloader/utils/plasticscm/model.py,sha256=Gr3MXd6znP8_HpvcRLHPPdA5yNj0oPGaLxsHU0NFFJo,8905
+bootloader/utils/plasticscm/reporting.py,sha256=eTNgPOXXgGciSJlfGH9kjAAkyfluD7QuMeFip4IAWcA,10352
+bootloader/utils/plasticscm/utility.py,sha256=hHvmpnOXT9ZWdZSvW28ndyNy2RpHJYhQ_Ux2q-pldUM,1459
+plasticscm_statistics-0.0.14.dist-info/LICENSE.md,sha256=Uli3Lc4UGzAU6Jj_C6O0ObxPGdC5zgd5hicox6bYQQk,761
+plasticscm_statistics-0.0.14.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+plasticscm_statistics-0.0.14.dist-info/entry_points.txt,sha256=4RpDjuw0YoMlFZKJBEjWxPEeFjRWafQYbFnXXvFNWv0,54
+plasticscm_statistics-0.0.14.dist-info/METADATA,sha256=s6ZvI5Ssf4DvIBkSZsaGMq5I49ua-lCIjX7TrzsE_5M,3226
+plasticscm_statistics-0.0.14.dist-info/RECORD,,
