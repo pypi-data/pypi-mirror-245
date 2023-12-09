@@ -1,0 +1,5 @@
+[console_scripts]
+f3 = files3:_cmd_show
+f3assoc = files3:_cmd_assoc
+f3open = files3:_cmd_open
+f3unassoc = files3:_cmd_unassoc
