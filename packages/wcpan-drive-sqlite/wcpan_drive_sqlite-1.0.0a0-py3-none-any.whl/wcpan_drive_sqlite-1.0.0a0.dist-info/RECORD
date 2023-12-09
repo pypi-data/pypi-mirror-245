@@ -1,0 +1,9 @@
+wcpan/drive/sqlite/__init__.py,sha256=phBBl1FHDLL3bJ79KJWPkP4GqLG_idrgsuzdiDMWTbE,174
+wcpan/drive/sqlite/_lib.py,sha256=QdCxERrnMg9vFu5G7WOSWc0tJi1Zu-c17E8AgAoj4Jc,8482
+wcpan/drive/sqlite/lib.py,sha256=pAr_yFdsXyN9at_bIvZiMd4WuXkLy_tZxPu906Iolrc,1636
+wcpan/drive/sqlite/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wcpan/drive/sqlite/snapshot.py,sha256=I6r7hU8rwajP0nDNvi3wRiE4qjUD0VA1fBl4qc-_SpU,9642
+wcpan_drive_sqlite-1.0.0a0.dist-info/LICENSE.txt,sha256=xIqnsGQGKkBDiVnNJIvHx-EZg8tFZ-iXub1vYAaG9lA,1102
+wcpan_drive_sqlite-1.0.0a0.dist-info/METADATA,sha256=c63qxDVVku2TLc4q33RqbAY7Iserx19IoYAB4mmLEzY,1517
+wcpan_drive_sqlite-1.0.0a0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+wcpan_drive_sqlite-1.0.0a0.dist-info/RECORD,,
