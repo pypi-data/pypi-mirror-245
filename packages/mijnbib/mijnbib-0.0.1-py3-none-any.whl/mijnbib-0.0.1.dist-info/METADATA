@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: mijnbib
+Version: 0.0.1
+Summary: Python API voor de website mijn.bibliotheek.be
+Author-email: Ward Van Heddeghem <wardvh@fastmail.fm>
+License: MIT License
+        
+        Copyright (c) 2023 Ward
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/wvanhed/mijnbib
+Keywords: mijn bibliotheek,bibliotheek
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mechanize
+Requires-Dist: bs4
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+
+# mijnbib
+
+Python API voor (mijn.) bibliotheek.be
+
+Met deze Python library kan je jouw ontleende items, reservaties en
+accountinfo opvragen indien je een account hebt op <https://bibliotheek.be>.
+
+## Installatie
+
+Installeer via:
+
+    pip install mijnbib
+
+## Gebruik
+
+Bijvoorbeeld, het opvragen van je ontleende items kan als volgt (na installatie):
+
+    from mijnbib import MijnBibliotheek
+
+    city = "gent"           # jouw gemeente of stad
+    username = "johndoe"
+    password = "12345678"
+    account_id = "12345"    # zie het getal in de URL, of via mb.get_accounts()
+
+    mb = MijnBibliotheek(username, password, city)
+    loans = mb.get_loans(account_id)
+    print(loans)
+
+Voor meer voorbeelden, zie de code in de folder `examples`.
+Daarin wordt ook `pprint` gebruikt voor een meer leesbare output.
+
+## Opmerkingen
+
+Deze Python API haalt zijn gegevens via webscraping van de bibliotheek.be website.
+Daardoor is ze afhankelijk van de structuur van de website. Bij een wijziging aan
+de structuur van de website is het dus heel waarschijnlijk dat alle of bepaalde
+functionaliteit plots niet meer werkt.
+
+In dat geval is het wachten tot deze Python library geupdate is om met de nieuwe
+structuur om te gaan.
+
+## Alternatieven
+
+De Home Assistant plugin <https://github.com/myTselection/bibliotheek_be> scraped
+op een gelijkaardige manier de bibliotheek.be website.
+
+## Development
+
+To install all dependecies for development, install (in a virtualenv) via:
+
+    pip install -e .[dev]      # 'dev' is defined in pyproject.toml
+
+Running the tests and applying code formatting can be done via:
+
+    make test
+    make black
+
+To work around the challenge of testing a web scraper, the following *snapshot
+testing* approach can be used to get some confidence when applying refactoring:
+
+1. Create a file `test_config.py` in the project root folder, and make it contain
+  the `city`, `username`, `password` and and `account_id` (see the next file for
+  expected variable naming and format)
+2. Run `python tests/save_testref.py` to capture and store the current output
+   (a couple of files will be created)
+4. Perform refactoring as needed
+5. Run `pytest tests/tst_mijnbibliotheek.py` (note: it's `pytest` here!) to check
+   if the output still matches the earlier captured output
+
+Creating a distribution archive:
+
+    make clean
+    make build
