@@ -1,0 +1,86 @@
+[tool.poetry]
+name = "django-honeypot"
+packages = [
+     { include = "honeypot" },
+]
+version = "1.1.0"
+description = "Django honeypot field utilities"
+authors = ["James Turk <dev@jamesturk.net>"]
+license = "BSD-2-Clause"
+readme = "README.rst"
+repository = "https://github.com/jamesturk/django-honeypot/"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Environment :: Web Environment",
+]
+
+[tool.poetry.dependencies]
+Django = ">=3.2,<5.1"
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+black = "^23.1.0"
+ruff = "^0.1.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+select = [
+    "A",
+    "B",
+    "BLE",
+    "C4",
+    "C90",
+    "DJ",
+    "DTZ",
+    "E",
+    "EM",
+    "ERA",
+    "EXE",
+    "F",
+    "FBT",
+    "G",
+    "I",
+    "ICN",
+    "INP",
+    "ISC",
+    "N",
+    "NPY",
+    "PD",
+    "PGH",
+    "PIE",
+    "PL",
+    "PTH",
+    "PYI",
+    "Q",
+    "RSE",
+    "RUF",
+    "S",
+    "SIM",
+    "SLF",
+    "T10",
+    "T20",
+    "TCH",
+    "TID",
+    "TRY",
+    "UP",
+    "W",
+    "YTT"
+]
+line-length = 93
+target-version = "py37"
+
+[tool.ruff.per-file-ignores]
+"honeypot/middleware.py" = ["S308"]
+"honeypot/tests.py" = ["N802"]
+"test*" = ["S101", "S105"]
