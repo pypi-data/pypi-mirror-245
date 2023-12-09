@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+pyrusquant/__init__.py
+pyrusquant/async_parsing.py
+pyrusquant/symbols_gigapack.py
+pyrusquant/symbols_gigapack_async.py
+pyrusquant.egg-info/PKG-INFO
+pyrusquant.egg-info/SOURCES.txt
+pyrusquant.egg-info/dependency_links.txt
+pyrusquant.egg-info/requires.txt
+pyrusquant.egg-info/top_level.txt
