@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scoring Sheet Viewer &mdash; Orange3-Prototypes  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=ad6d0c38" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Scoring Sheet" href="scoring-sheet.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Orange3-Prototypes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="scoring-sheet.html">Scoring Sheet</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Scoring Sheet Viewer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Orange3-Prototypes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Scoring Sheet Viewer</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/widgets/scoring-sheet-viewer.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="scoring-sheet-viewer">
+<h1>Scoring Sheet Viewer<a class="headerlink" href="#scoring-sheet-viewer" title="Link to this heading"></a></h1>
+<p>A widget for visualizing the scoring sheet predictions.</p>
+<p><strong>Inputs</strong></p>
+<ul class="simple">
+<li><p>Classifier: a trained scoring sheet model</p></li>
+<li><p>Data: dataset used to visualize the predictions on different instances</p></li>
+</ul>
+<p><strong>Outputs</strong></p>
+<ul class="simple">
+<li><p>Features: features used in the scoring sheet</p></li>
+</ul>
+<p><img alt="../_images/scoring-sheet-viewer-widget.png" src="../_images/scoring-sheet-viewer-widget.png" /></p>
+<p><strong>Scoring Sheet Viewer</strong> widget offers a simple and intuitive way of visualizing the predictions of the scoring sheet model. The widget takes as input a trained scoring sheet model and a optional dataset (instance) on which we want to visualize the predictions. The widget presents us with a table that visualizes each feature’s contribution to the final score, where a higher score indicates a greater chance for an individual to be classified with the target class. Each feature’s contribution can be positive or negative, indicating whether it increases or decreases the risk.</p>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Link to this heading"></a></h2>
+<p><img alt="../_images/scoring-sheet-viewer-workflow.png" src="../_images/scoring-sheet-viewer-workflow.png" /></p>
+<p>In this example, we first sample the data, with a portion used to train the Scoring Sheet model and a part routed to the Table widget. This setup allows us to select instances and observe how the scoring sheet performs with new, unseen data.</p>
+<p>Let’s analyze and learn to interpret the scoring sheet using the example. It features five decision parameters, with points ranging from -5 to 5. We have set the target class to ‘1,’ indicating the ‘presence’ of heart disease. Positive-value decision parameters increase the risk of heart disease, while those with negative values reduce it.</p>
+<p>Consider a selected instance from the Data Table widget. It has a ‘slope peak exc ST’ attribute value of ‘upsloping’, which reduces the heart disease risk by 3 points. However, it also has the ‘chest pain’ attribute set to ‘asymptomatic’, increasing the risk by 5 points. This combination results in a total score of 2, corresponding to a 71.6% probability of having heart disease.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="scoring-sheet.html" class="btn btn-neutral float-left" title="Scoring Sheet" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2018, Biolab, University of Ljubljana.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
