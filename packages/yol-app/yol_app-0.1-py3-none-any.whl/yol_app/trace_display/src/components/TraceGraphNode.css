@@ -1,0 +1,154 @@
+/*
+Copyright 2023 NeuralBridge AI
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+ */
+ 
+ @import "../NeuralBridge.css";
+
+/* Block: trace-graph-node */
+.trace-graph-node {
+  min-width: 250px;
+  max-width: 400px;
+  min-height: 200px;
+  max-height: 600px;
+  padding: 10px;
+  border: 2px solid var(--accent-color-blue-1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  overflow: ellipsis;
+}
+
+.trace-graph-node__title-text {
+  color: var(--primary-text-color);
+  font: --font-heading;
+}
+
+.trace-graph-node__title,
+.trace-graph-node__inputs-button,
+.trace-graph-node__return-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--accent-color-blue-1);
+  padding: 5px 0;
+}
+
+.input-output-button {
+  box-sizing: border-box;
+  width: 100%; /* Makes width responsive to the container */
+  height: auto; /* Adjust height as per content */
+}
+
+/* Container for code and latency */
+.trace-graph-node__code-latency-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.trace-graph-node__code,
+.trace-graph-node__latency {
+  width: 49%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: top;
+  /* border-top: 2px solid var(--accent-color-blue-1); */
+  padding: 5px 0;
+}
+
+.trace-graph-node__code {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  white-space: pre-wrap;
+  font-family: monospace;
+  overflow: auto;
+  max-height: 100px;
+  border-right: 2px solid var(--accent-color-blue-1);
+  padding-right: 5px;
+}
+
+.trace-graph-node__latency {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trace-graph-node__latency-text,
+.trace-graph-node__latency-value {
+  font: --font-main-text;
+  color: var(--primary-text-color);
+  font-size: larger;
+}
+
+/*.trace-graph-node__inputs-popup
+.trace-graph-node__return-popup
+{
+  
+}*/
+
+.trace-graph-node__popup {
+  position: absolute;
+  bottom: 0;
+  right: 100%; /* display to the left of the node */
+  z-index: 10;
+  border: 1px solid --accent-color;
+  padding: 10px;
+  background-color: --primary-bg-color;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  overflow: auto;
+}
+
+.trace-graph-node__code button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid var(--accent-color-blue-1);
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: var(--primary-bg-color);
+  color: var(--accent-color-blue-1);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-family: var(--font-heading);
+}
+
+.trace-graph-node__code button:hover {
+  background-color: var(--accent-color-blue-1);
+  color: var(--primary-bg-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trace-graph-node__code button:focus {
+  outline: none; /* Remove default browser outline */
+  box-shadow: 0 0 0 2px --primary-text-color;
+}
+
+.trace-graph-node__code-button-icon {
+  font-size: inherit; /* ensures icon size matches the text */
+}
+
+.trace-graph-node__code-button-text {
+  font-family: --font-heading;
+  font-size: 1.2em;
+}

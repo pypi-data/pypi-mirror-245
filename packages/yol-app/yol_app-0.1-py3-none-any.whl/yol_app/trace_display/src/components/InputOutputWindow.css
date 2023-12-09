@@ -1,0 +1,115 @@
+/*
+Copyright 2023 NeuralBridge AI
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+ */
+ 
+@import "../NeuralBridge.css";
+
+.react-draggable {
+  border: 2px solid var(--primary-color);
+  margin: 10px;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+  font-family: var(--font-heading);
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  /* resize: both; */
+  z-index: 100000001;
+}
+
+.react-draggable::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+.react-draggable::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(97, 97, 97, 0.316);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.react-draggable::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.input-output-window__header {
+  display: flex;
+  align-items: center;
+}
+
+.input-output-window:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: scale(0.97);
+}
+
+.input-output-window__title {
+  font-size: 1em;
+}
+
+.input-output-window__list {
+  list-style: none;
+  padding: 0;
+}
+
+.input-output-window__item {
+  font-family: var(--font-main-text);
+  color: var(--primary-text-color);
+  font-size: medium;
+  padding: 3px 0;
+}
+
+.input-output-window__name {
+  font-weight: bold;
+}
+
+.input-output-window__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.input-output-window__draghandle {
+  cursor: move;
+  padding: 10px;
+  padding-bottom: 0;
+  display: inline-block;
+}
+
+.input-output-window__content {
+  cursor: text;
+  padding: 10px;
+  padding-top: 0;
+  display: inline-block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.input-output-window__clearbutton {
+  background: none;
+  border: none;
+  /* padding: 0; */
+  cursor: pointer;
+  outline: none;
+  display: flex;
+}
+
+.input-output-window__clearbutton:hover .input-output-window__icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.react-resizable-handle {
+  position: fixed;
+}

@@ -1,0 +1,52 @@
+/*
+Copyright 2023 NeuralBridge AI
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+ */
+ 
+ /* NeuralBridge.css
+ *
+ * This CSS file acts as a bridge for our application's global styling.
+ * The purpose of this file is to define common and global CSS variables for colors and fonts.
+ * By centralizing these variables, we ensure consistency throughout the application and simplify potential future design updates.
+ *
+ * NOTE: Before adding any new styles or colors, consult our brand guideline and make sure to maintain coherence with the existing styles.
+ *
+ * Brand Guideline: https://docs.google.com/presentation/d/1nhVwv4nhkhrAmaaKAkWBGtORnzZeB-UO4HMdc8m4W3A/preview
+ *
+ * REMINDER: All other CSS files within the project should import this file at the top:
+ * @import '../NeuralBridge.css';
+ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Average&display=swap");
+
+:root {
+  --primary-color: #cf4946;
+  --primary-bg-color: #ffffff;
+  --primary-text-color: #384f78;
+
+  --font-heading: "Montserrat", sans-serif;
+  --font-main-text: "EB Garamond", serif;
+  --font-accent: "Average", serif;
+
+  --accent-color-red-1: #b33c39;
+  --accent-color-red-2: #d6605d;
+  --accent-color-yellow: #ffd966;
+  --accent-color-blue-1: #6a8ab4;
+  --accent-color-orange-1: #d97e6a;
+  --accent-color-orange-2: #e07779;
+  --accent-color-orange-3: #ff7f50;
+  --accent-color-blue-2: #5a70a0;
+  --accent-color-blue-3: #203354;
+}
