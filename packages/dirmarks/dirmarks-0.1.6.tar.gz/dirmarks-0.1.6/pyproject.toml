@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dirmarks"
+version = "0.1.6"
+description = "Bookmarks for the filesystem"
+authors = ["Meir Michanie <meirm@riunx.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+six = "^1.16.0"  # Add this line, you can specify the version as per your requirement
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+# we have issues with the build backend, we want to avoid creating an environment
+
+
+
+[tool.poetry.scripts]
+dirmarks = "dirmarks.main:main"
+
