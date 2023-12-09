@@ -1,0 +1,4 @@
+[plaquette.device]
+clifford = plaquette.device._errortrackingbackend:ErrorTrackingBackend
+stim = plaquette.device._stimsim:StimSimulator
+tableau = plaquette.device._circuitsim:CircuitSimulator
