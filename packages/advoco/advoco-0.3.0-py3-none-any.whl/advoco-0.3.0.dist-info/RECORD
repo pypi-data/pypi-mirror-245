@@ -1,0 +1,16 @@
+advoco/__init__.py,sha256=feqSCoalT3HImKRDHXpar6rPg5Jc10US4yrPbLxh9Fw,116
+advoco/cache.py,sha256=eUPRCK5DvRX7WFSmG8iUI6cAYTs-rq-VgncWKxr4IGs,2134
+advoco/cli.py,sha256=52eZ8K56KPY-F30ghh8WtDSDpBf0uDYalokOl2ri_bk,3822
+advoco/config.py,sha256=MQrJWGBXQIzFlb5OGaNimLP2ieOVH_7VzdQEGq_P2j8,2155
+advoco/connect.py,sha256=k7sTWQmeAHs6Dgl_yy7PbRoiVUT63c1KPHpLEAqNV9E,1497
+advoco/do.py,sha256=GNvsDiSgaiC9wkELjrIfnyjLXfdeMdFZMJZsMsNcDXs,5017
+advoco/exceptions.py,sha256=n0Yfjdt77ANNPg2s72s0J2AEE5RMbd1RoUKPk-IfqSk,361
+advoco/live.py,sha256=5XNdkimdeuM6rAcNpok_X4Vg8IbkS15ZGSJYgyabRxU,1595
+advoco/sample.py,sha256=yqVjX_XMAKtPuh8cbts8yQckCYcRwuSwWcqerhmhR4g,2990
+advoco/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+advoco/tests/test_grid.py,sha256=96DJi3b6fp2iLhnaqg3fDTjYFOTxC8pT1LKKegKrQ6Y,6236
+advoco/tools/grid.py,sha256=6zCDHjejkCSeu0jEY0hVosIpzm5KjD3siUhjsWNLf4U,6227
+advoco-0.3.0.dist-info/METADATA,sha256=9DoDv5FWewJjaHsL7bKmlh0jEQqUCQnm_F_ZucGBlU0,4779
+advoco-0.3.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+advoco-0.3.0.dist-info/entry_points.txt,sha256=Mhn8fOoFHTwaklE2qOoa4uJGzyBkT3oxqU9-W54aDzg,41
+advoco-0.3.0.dist-info/RECORD,,
