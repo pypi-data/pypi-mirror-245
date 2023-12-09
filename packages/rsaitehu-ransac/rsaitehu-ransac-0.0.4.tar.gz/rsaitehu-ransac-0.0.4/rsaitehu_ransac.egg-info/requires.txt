@@ -1,0 +1,4 @@
+numpy>=1.22.0
+open3d>=0.16.0
+rsaitehu-geometry>=0.0.1
+rsaitehu-sampling>=0.0.1
