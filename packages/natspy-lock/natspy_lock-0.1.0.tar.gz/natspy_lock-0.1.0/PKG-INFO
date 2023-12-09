@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: natspy-lock
+Version: 0.1.0
+Summary: Distributed lock library using nats.py
+Project-URL: Documentation, https://github.com/HHongSeungWoo/natspy-lock#readme
+Project-URL: Issues, https://github.com/HHongSeungWoo/natspy-lock/issues
+Project-URL: Source, https://github.com/HHongSeungWoo/natspy-lock
+Author-email: Seungwoo Hong <qksn1541@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: Distributed lock,nats.py,python lock
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: nats-py>=2.0.0
+Description-Content-Type: text/markdown
+
+# natspy-lock
+
+[![PyPI - Version](https://img.shields.io/pypi/v/natspy-lock.svg)](https://pypi.org/project/natspy-lock)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/natspy-lock.svg)](https://pypi.org/project/natspy-lock)
+
+-----
+
+`natspy-lock` is a distributed lock library using nats.
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [Example](#example)
+- [License](#license)
+
+
+## Installation
+
+```console
+pip install natspy-lock
+```
+
+## Example
+
+```python
+import nats
+from natspy_lock import NatsLock
+
+async def main():
+    nc = await nats.connect("nats://127.0.0.1:4222")
+    await NatsLock.init(nc.jetstream(), "test_lock", 60)
+    async with NatsLock.get_lock("test_lock", 1):
+    #     do something
+        pass
+    await nc.drain()
+```
+
+## License
+
+`natspy-lock` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
