@@ -1,0 +1,16 @@
+jupyterlab_freeze/__init__.py,sha256=FzcszMQGpHs6R-jUKWpQSRdt8iqbotZBXuvW21yFkd4,817
+jupyterlab_freeze/_version.py,sha256=ac3tgjoOzsODOlacRPCwz99LbZv0NK7ZYAaBWulFo7E,171
+jupyterlab_freeze-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_freeze/package.json,sha256=usvxvRzf5MIve7J5CqNfxPInx6yaRjqDPS1jtn4IIPU,5751
+jupyterlab_freeze-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_freeze/static/434.8508b439caf511ea332f.js,sha256=hQi0Ocr1EeozL03RDooziRF2PS4_CXRkWBbfYp2oMwM,3078
+jupyterlab_freeze-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_freeze/static/580.3e3db72cf67fe0d112ac.js,sha256=Pj23LPZ_4NESrIBrq4FyzzDeJuUS0qgIRaghnOP2_VQ,2782
+jupyterlab_freeze-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_freeze/static/747.419c94063f9a169fedc1.js,sha256=QZyUBj-aFp_twXL_wuZozNeahhebtWBpjrFVSlywcI0,4987
+jupyterlab_freeze-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_freeze/static/remoteEntry.2a8edb999907279e3e8e.js,sha256=Ko7bmZkHJ54-jjh5_I2iFxe0HYfy89fHHFfL6q-Qsmw,7159
+jupyterlab_freeze-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_freeze/static/style.js,sha256=8Ujgy-gjhEzDLar_yzl_YJ2x2lzOJDXFNhXsVIQx1NQ,160
+jupyterlab_freeze-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_freeze/static/third-party-licenses.json,sha256=tmDwvYiFg3_6QUwr5sh079PgeDaG6isf5YNv7l2U-7w,7506
+jupyterlab_freeze-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_freeze/install.json,sha256=Fg38q4MbiUb7ga765Ebp-vYZwzbQMDMoDsg0YuuGNvI,195
+jupyterlab_freeze-0.1.0.dist-info/METADATA,sha256=yXRsDq1NQ0852s_p7a2McAgMeRBTD0n1unOoWNO055g,6586
+jupyterlab_freeze-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+jupyterlab_freeze-0.1.0.dist-info/licenses/LICENSE,sha256=ZtQ-e2oCDeQg5cjEwrvfu-WqBqA9t-PRhViIYviwwSY,1500
+jupyterlab_freeze-0.1.0.dist-info/licenses/LICENSE-3rdparty.csv,sha256=d4-HLhh9uqxbgEoDV2YTov0nv81oeca2khFW2k6cp6A,3348
+jupyterlab_freeze-0.1.0.dist-info/licenses/NOTICE,sha256=6TytOU2yzkJyfWlJ3zxk1bL1cXo0X49FGZtjZBzPSKw,146
+jupyterlab_freeze-0.1.0.dist-info/RECORD,,
