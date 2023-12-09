@@ -1,0 +1,10 @@
+megham/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+megham/mds.py,sha256=2RCITnjj-QHXUtEhbU1P9SG1Bdkj0lDD2LS2H7zZ2SI,15192
+megham/transform.py,sha256=Z122pHNPe_BO5nCsH6h2mLBVOsZUFihb7UV7ZuKmMxs,8786
+megham/registration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+megham/registration/cpd.py,sha256=pDHm_4bD74wuM7x52DBuUwsNv2GPa4643ZjNlLyyhTw,13159
+megham-0.5.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+megham-0.5.0.dist-info/METADATA,sha256=Upd_tw2GwU68SD5uPn_7vrI-VL9-KC4gr_43-ljO6Z0,4427
+megham-0.5.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+megham-0.5.0.dist-info/top_level.txt,sha256=dP2TIvjlc3oQf0Lt3IZzEAO3caxLFU9DymbCsX_y_JY,7
+megham-0.5.0.dist-info/RECORD,,
