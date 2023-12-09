@@ -1,0 +1,11 @@
+CHANGES
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+yydict/__init__.py
+yydict/yy_dict.py
+yydict.egg-info/PKG-INFO
+yydict.egg-info/SOURCES.txt
+yydict.egg-info/dependency_links.txt
+yydict.egg-info/top_level.txt
