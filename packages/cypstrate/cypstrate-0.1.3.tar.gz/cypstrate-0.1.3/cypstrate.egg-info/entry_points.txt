@@ -1,0 +1,3 @@
+[console_scripts]
+cypstrate = cypstrate.__main__:main
+
