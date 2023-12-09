@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+regression-meriem-mk-seds/ __init__.py
+regression-meriem-mk-seds/regression.py
+regression-meriem-mk-seds/test.py
+regression_meriem_mk_seds.egg-info/PKG-INFO
+regression_meriem_mk_seds.egg-info/SOURCES.txt
+regression_meriem_mk_seds.egg-info/dependency_links.txt
+regression_meriem_mk_seds.egg-info/requires.txt
+regression_meriem_mk_seds.egg-info/top_level.txt
