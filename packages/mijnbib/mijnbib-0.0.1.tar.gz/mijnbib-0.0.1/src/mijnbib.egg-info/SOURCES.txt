@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/mijnbib/__init__.py
+src/mijnbib/mijnbibliotheek.py
+src/mijnbib/plugin_errors.py
+src/mijnbib.egg-info/PKG-INFO
+src/mijnbib.egg-info/SOURCES.txt
+src/mijnbib.egg-info/dependency_links.txt
+src/mijnbib.egg-info/requires.txt
+src/mijnbib.egg-info/top_level.txt
+tests/test_mijnbibliotheek.py

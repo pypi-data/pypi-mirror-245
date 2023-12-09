@@ -1,0 +1,8 @@
+mechanize
+bs4
+
+[dev]
+black
+isort
+pytest
+ruff
