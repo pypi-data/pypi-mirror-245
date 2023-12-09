@@ -1,0 +1,5 @@
+jupyter-book
+sphinx
+sphinx_rtd_theme
+matplotlib
+ipywidgets
