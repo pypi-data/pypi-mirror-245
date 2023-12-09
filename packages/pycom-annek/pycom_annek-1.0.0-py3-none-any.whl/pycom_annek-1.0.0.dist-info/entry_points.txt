@@ -1,0 +1,3 @@
+[console_scripts]
+pycom=pycom_annek.cli:main
+
