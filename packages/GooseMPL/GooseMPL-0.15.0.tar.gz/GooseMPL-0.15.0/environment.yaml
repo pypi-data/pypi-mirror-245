@@ -1,0 +1,14 @@
+channels:
+- conda-forge
+dependencies:
+- deprecation
+- furo
+- h5py
+- matplotlib
+- numpy
+- pip
+- python
+- pyyaml
+- scipy
+- setuptools_scm
+- sphinx
