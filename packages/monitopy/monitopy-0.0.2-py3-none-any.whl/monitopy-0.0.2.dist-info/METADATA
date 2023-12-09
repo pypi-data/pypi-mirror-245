@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: monitopy
+Version: 0.0.2
+Summary: Une bibliothèque de surveillance (watchdog) simple mais puissante pour les changements dans les fichiers et répertoires, avec une prise en charge avancée de la gestion d'événements.
+Author: Rachid Jeffali
+Requires-Dist: watchdog
+
