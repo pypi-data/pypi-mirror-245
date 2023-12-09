@@ -1,0 +1,2 @@
+[console_scripts]
+wurfapi = wurfapi.wurfapi_directive:main
