@@ -1,0 +1,11 @@
+makim/__init__.py,sha256=vvOK-9SxU3LyudtRxf87VH2yrEwqauw8vojHF16431o,194
+makim/__main__.py,sha256=frzsCPLXC1gPbPRxCqI1brSOBdGU_ooyhgACy_y9j3I,111
+makim/cli.py,sha256=KQZDUutCTymlbG5yqytZEe26fSWWOxAYcZNfFp5imgk,5117
+makim/errors.py,sha256=9EyyKngj5mDhmLv_1TBRXTKjBmzfMAWTmJk1xua7JFg,418
+makim/makim.py,sha256=6r-c5fTmaCTTps6AxuQ9SU0iBHNfyLrs3T6x0UPDorY,17184
+makim/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+makim-1.9.0.dist-info/LICENSE,sha256=VdNe-RCjB8ySHZb0705-5jspey66C9W1Fj5-cJ2Vfjo,1514
+makim-1.9.0.dist-info/METADATA,sha256=v_b8fD9BB44r1zqvJGmQSZtMNmw0PsuJr7_hpWsAxWs,6213
+makim-1.9.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+makim-1.9.0.dist-info/entry_points.txt,sha256=VL8M421mjo4zBnIhc1Zwp36CE11sBWtOLD5iVv179Zw,44
+makim-1.9.0.dist-info/RECORD,,
