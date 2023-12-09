@@ -1,0 +1,2 @@
+[console_scripts]
+ElecPhys = src.main:main

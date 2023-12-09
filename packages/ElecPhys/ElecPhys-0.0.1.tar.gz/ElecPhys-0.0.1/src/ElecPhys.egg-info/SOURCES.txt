@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/ElecPhys.egg-info/PKG-INFO
+src/ElecPhys.egg-info/SOURCES.txt
+src/ElecPhys.egg-info/dependency_links.txt
+src/ElecPhys.egg-info/entry_points.txt
+src/ElecPhys.egg-info/requires.txt
+src/ElecPhys.egg-info/top_level.txt
