@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: cuBNM
+Version: 0.0.1
+Summary: A toolbox for biophysical network modeling on GPUs 
+Author-email: Amin Saberi <amnsbr@gmail.com>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2023, cuBNM Developers
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: Unix
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.20
+Requires-Dist: GPUtil==1.4
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: pymoo==0.6
+Requires-Dist: scikit-optimize==0.9
+
+<div align="center">
+<img src="./assets/logo_text.png" style="width:300px; margin:auto;">
+</div>
+
+The cuBNM toolbox performs efficient simulation and optimization of biophysical network models (BNM) of the brain on GPUs.
+
+## Overview
+The toolbox currently supports simulation of network nodes activity based on reduced Wong-Wang model with analytical-numerical feedback inhibition control. The Balloon-Windkessel model is used for calculation of simulated BOLD signals. It calculates goodness of fit of the simulated BOLD to the empirical BOLD based on functional connectivity (FC) and functional connectivity dynamics (FCD) matrices. The parameter optimization of the model can be done using grid search or evolutionary optimizers. Parallelization of the entire grid or each iteration of evolutionary optimizers is done at two levels: 1) simulations (across the GPU ‘blocks’), and 2) nodes (across each block’s ‘threads’). The toolbox additionally supports running the simulations on single- or multi-core CPUs, which will be used if no GPUs are detected or when requested by user (but the toolbox mainly focuses on GPUs).
+
+This is a simplified flowchart of the different components of the program written in Python, C++ and CUDA.
+
+![flowchart](./assets/flowchart_extended.png)
+
+## Installation
+```
+git clone https://github.com/amnsbr/cuBNM.git
+cd cuBNM && pip install .
+```
+
+Installation requires Python (tested with 3.9) and g++. Currently Windows, Mac and non-Nvidia GPUs are not supported. 
+
+[GSL](https://www.gnu.org/software/gsl/) is another requirement which will be installed by the package (in `~/.cuBNM/gsl`) but it takes a rather long time and is only done if `libgsl.a` and `libgslcblas.a` are not found in `"/usr/lib", "/lib", "/usr/local/lib", $LIBRARY_PATH, $LD_LIBRARY_PATH`. If you have GSL on your system but it is installed elsewhere, please add the `libgsl.a` and `libgslcblas.a` directories to `$LIBRARY_PATH`.
+
+## Usage
+In `./examples/examples.py` you can find some examples of running a single simulation (`run_sims`), grid search (`run_grid`) or CMAES optimization (`run_cmaes_optimizer`). More comprehensive documentations and examples will be added.
