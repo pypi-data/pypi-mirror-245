@@ -1,0 +1,8 @@
+include ladock/config/*
+include ladock/share/mdp/*
+include ladock/share/*
+include ladock/knn/*
+include ladock/tensor/*
+include ladock/rf/*
+include ladock/PrepareData/*
+include ladock/*

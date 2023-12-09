@@ -1,0 +1,6 @@
+# simulation parameter setting
+lismode = morgan_fp # option: "2d, 3d, lipinski, maccs_fp, morgan_fp, daylight_fp, ap_fp, tt_fp, avalon_fp, or pubchem_fp
+geom = uff # other option for geometry optimization: mff4, uff
+num_conformers = 20 #Conformation numbers when geometry optimization of molecules  
+maxIters = 500 #  maximum amount of iteration when geometry optimization of molecules
+input_column = smiles

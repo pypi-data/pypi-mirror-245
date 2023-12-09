@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ladock
+Version: 0.1.0
+Summary: LADOCK is an innovative and free tool designed for conducting simultaneous simulations in computer-aided drug discovery, encompassing molecular docking and molecular dynamics. In molecular docking, LADOCK excels in handling single or double ligands. It supports ligands from various online sources. In molecular dynamics, LADOCK efficiently manages protein-ligand interactions and even ligand-ligand interactions, accommodating scenarios with one or multiple proteins and ligands.
+Author: La Ode Aman
+Author-email: laode_aman@ung.ac.id
+License: Apache License 2.0
+Requires-Python: >=3.6
+Requires-Dist: subprocess
+Requires-Dist: glob
+Requires-Dist: shutil
+Requires-Dist: requests
+Requires-Dist: biopython
+Requires-Dist: tqdm
+Requires-Dist: argparse
+Requires-Dist: gzip
+Requires-Dist: csv
+Requires-Dist: numpy
+Requires-Dist: futures
+Requires-Dist: acpype
+Requires-Dist: rdkit
+Requires-Dist: tensorflow
+Requires-Dist: matplotlib
+Requires-Dist: itertools
+Requires-Dist: pandas
+Requires-Dist: joblib
