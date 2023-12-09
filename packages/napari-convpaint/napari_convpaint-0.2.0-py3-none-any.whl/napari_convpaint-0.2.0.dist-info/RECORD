@@ -1,0 +1,17 @@
+napari_convpaint/__init__.py,sha256=1Bu74Aaspjhq9-hqIg3WSgIGWMkv20ooy4WM1D7nHEI,145
+napari_convpaint/_version.py,sha256=H-qsvrxCpdhaQzyddR-yajEqI71hPxLa4KxzpP3uS1g,411
+napari_convpaint/conv_paint.py,sha256=47H45WsdWbHipgIt1jsiyqkAHbMsR08es_cfH34Tbd0,33610
+napari_convpaint/conv_paint_utils.py,sha256=WNolNX7ijFCVKvuXgynPi2daPw7vTZsh431Vbqcf33o,45036
+napari_convpaint/conv_parameters.py,sha256=1xRlV-PgaN_eOAHGnYC4Dtvz_FHAhWsuQd8P_mLSNjY,1636
+napari_convpaint/convpaint_sample.py,sha256=6ks2qMsFIXms6RCoquLMOHRb6AfnrY1v5Ac63lZ3t1Q,423
+napari_convpaint/napari.yml,sha256=H_gqtFMkilzS1jtLd1c0KwDXLp9Xnv_gu2_ckjEu_3U,560
+napari_convpaint/utils.py,sha256=cZkVb-ITV5LjGASHJ-p2HgO3VWAAd-_GJYKgGBoZ6fc,1246
+napari_convpaint/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_convpaint/_tests/test_conv_paint.py,sha256=6TOWkOE8JITEPmyvmpBlXFDcrJ0OmP8uUiTNE3VW7bg,5882
+napari_convpaint/_tests/test_conv_paint_utils.py,sha256=jtseqWAyZbLJiFIXRm7ghPWoQraidIBR2dEyUglrbfA,1882
+napari_convpaint-0.2.0.dist-info/LICENSE,sha256=JEno45DUw9_4t12Uq_fcwToJPXYt2m0mSUHIwisoPEg,1550
+napari_convpaint-0.2.0.dist-info/METADATA,sha256=Pg6JexYlvd8qGIEY9pgUf0RHSbLaKPxy-bXH8Kmao0A,5873
+napari_convpaint-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+napari_convpaint-0.2.0.dist-info/entry_points.txt,sha256=95abkh6p8bcFU3aBz3a6eBDqnMWNsdxguJAx7mHexY8,65
+napari_convpaint-0.2.0.dist-info/top_level.txt,sha256=z1S_K9XzzStGBkIjAnbIJd-lNlcVYoJQ3lI4r_PrGn0,17
+napari_convpaint-0.2.0.dist-info/RECORD,,
