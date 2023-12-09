@@ -1,0 +1,3 @@
+[console_scripts]
+aws_sam_get_stack_output_value = bryt_aws_sam_template.cli:get_stack_output_value
+aws_sam_template = bryt_aws_sam_template.cli:entry
