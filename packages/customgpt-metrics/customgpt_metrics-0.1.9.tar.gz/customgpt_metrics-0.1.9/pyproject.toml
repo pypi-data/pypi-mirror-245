@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "customgpt-metrics"
+version = "0.1.9"
+description = "Allow users to calculate RAG metrics"
+authors = ["authentichamza <hamzashams446@gmail.com>"]
+readme = "README.md"
+packages = [{include = "customgpt_metrics"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+openai = "^0.28.1"
+tiktoken = "^0.5.1"
+pymysql= "1.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
