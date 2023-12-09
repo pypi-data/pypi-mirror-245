@@ -1,0 +1,2 @@
+[console_scripts]
+kaas-admin = kaas_admin.__main__:main
