@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: YW-matchups
+Version: 0.1.1
+Summary: Find satellite matchups for aquatic remote sensing
+Author: Yulun Wu
+Author-email: yulunwu8@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyproj
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: netCDF4
+
+# Find satellite matchups for aquatic remote sensing
+
+Supported AC: POLYMER
+
+matchups 
+
+currently support NetCDF input 
+
+
+
