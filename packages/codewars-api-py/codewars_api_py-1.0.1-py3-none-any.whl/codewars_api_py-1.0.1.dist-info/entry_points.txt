@@ -1,0 +1,3 @@
+[console_scripts]
+codewars-api-py=codewars_api_py.__main__:main
+
