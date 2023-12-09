@@ -1,0 +1,3 @@
+[console_scripts]
+cursed=cursed_editor.application:main
+
