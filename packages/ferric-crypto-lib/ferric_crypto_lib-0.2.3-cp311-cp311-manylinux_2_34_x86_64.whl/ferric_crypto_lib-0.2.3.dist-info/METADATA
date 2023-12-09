@@ -1,0 +1,208 @@
+Metadata-Version: 2.1
+Name: ferric_crypto_lib
+Version: 0.2.3
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Summary: A library for Ferric Crypto
+Keywords: ferric,crypto,rust,cryptography,brute-force
+Home-Page: https://gitlab.com/ferric1/ferric_crypto
+Author: Tosic.Killer <emil.schutt@gmail.com>
+Author-email: Tosic.Killer <emil.schutt@gmail.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://gitlab.com/ferric1/ferric_crypto
+
+# Ferric Crypto Lib
+
+This is a collection of cryptographic algorithms implemented in Rust for use during the crypto courses I attend.
+
+The structure of the project might change in the future, but for now it is a single crate with all the algorithms implemented as functions. In the future I might make structs for each algorithm and implement the `Encrypt` and `Decrypt` traits for them.
+
+
+## Implemented Algorithms
+
+- [ ] Affine Hill (Custom algorithm)
+- [ ] Bernel-Fibonaccis (Custom algorithm)
+- [ ] Bifid Chiffre
+- [x] Ceasar
+- [ ] DES
+- [ ] Dubbel Sick-Sack (Custom algorithm)
+- [ ] Enigma
+- [ ] Kid-RSA (Custom algorithm)
+- [ ] Minigma (Custom algorithm)
+- [x] Hill (no decrypt yet, but simple to do by hand to get a new key)
+- [x] Monoalphabetic
+- [ ] MIX (Custom algorithm)
+- [ ] Sick-Sack (Custom algorithm)
+- [x] Transposition (no decrypt yet)
+- [ ] TrissDES (Custom algorithm)
+- [ ] Vernam
+- [ ] Vernam (LKG28)
+- [ ] Vigenere
+- [ ] Vokkon (Custom algorithm)
+
+## Usage
+
+### Add to your project
+
+Add the following to your `Cargo.toml`:
+
+#### From Gitlab
+
+```toml
+[dependencies]
+ferric_crypto_lib = { git = "https://gitlab.com/ferric1/ferric_crypto.git" }
+```
+
+#### From Path
+    
+```toml
+[dependencies]
+ferric_crypto_lib = { path = "/path/to/ferric_crypto" }
+```
+
+
+### Use in your code
+
+All algorithms are implemented as functions in the `ferric_crypto_lib` crate. To use them, simply import the crate and call the function you want to use. All encryption functions are withing the `encrypt` module and all decryption functions are within the `decrypt` module.
+
+
+#### Example
+***TODO: fix example***
+```rust
+use ferric_crypto_lib::encrypt::ceasar::*;
+use ferric_crypto_lib::decrypt::ceasar::*;
+
+fn main() {
+    let encrypted = encrypt("Hello World");
+    let decrypted = decrypt(&encrypted);
+    println!("Encrypted: {}", encrypted);
+    println!("Decrypted: {}", decrypted);
+}
+```
+
+## Building 
+
+### Prerequisites
+
+You will need some tools to build the library, click the links to go to the instructions for installing them:
+
+* [Rust](#Rust)
+* [Git](#Git)
+* [Just](#Just) (The build system used)
+* [Maturin](#Maturin) (for building the python module) 
+
+After installing the prerequisites, follow these steps to build:
+
+### 1. Clone the repository
+    
+#### Using HTTPS    
+    ```bash
+    git clone https://gitlab.com/ferric1/ferric_crypto.git
+    ```
+
+#### Using SSH
+    ```bash
+    git clone git@gitlab.com:ferric1/ferric_crypto.git
+    ```
+
+### 2. Test the library
+
+***This is optional, but recommended***
+
+```bash
+just test
+```
+
+### 3. Build the library
+
+#### Build for Rust
+
+```bash
+just build
+```
+
+#### Build for Python
+
+*Here you need [Maturin](#Maturin) in order to build*
+
+```bash
+just build-py
+```
+
+### 4. Install the library
+
+If you intend to use the library in a python project, you need to install it. This is done with the following command:
+
+```bash
+just install-py
+```
+
+This will force install it to your python environment, this is so we dont need to remove it before installing a new version during development.
+
+## Development
+
+### Adding Crypto Algorithms
+
+To add a new algorithm, simply run this command:
+
+```bash
+just add-algo <name>
+```
+
+This will create a new file in the [`src`](src) folder with the name `<name>.rs` and add the following code to it:
+
+```rust
+use crate::error::CharacterParseError;
+use crate::Traits::{Encrypt, Decrypt};
+
+/// Enum representing possible errors in the name cipher.
+#[derive(Debug, PartialEq)]
+pub enum nameError {
+    CharacterParseError(CharacterParseError),
+    // Define error variants here
+}
+
+/// Represents a name cipher.
+#[cfg_attr(feature = "python-integration", pyclass)]
+pub struct name {
+    // Define struct fields here
+}
+
+impl name {
+    // Define methods here
+    fn new() -> Self {
+        Self {
+            // Define struct fields here
+        }
+    }
+}
+
+#[cfg(feature = "python-integration")]
+mod python_integration {
+    use super::*;
+    use pyo3::prelude::*;
+    use pyo3::{pyclass, PyResult, pymethods};
+
+    #[pymethods]
+    impl name {
+        // Define Python integration methods here
+    }
+}
+```
+
+Where we replace `name` with the name of the new algorithm. This will also add the new algorithm to the [`mod.rs`](src/crypto_systems/mod.rs) file inside the [`src/crypto_systems`](src/crypto_systems/mod.rs) folder. We also make new standard files for the `Encrypt`, `Decrypt` and `BruteForce` traits in their respective modules, this is where the implementations of the algorithm will go.
+
+You will also need to add the new algorithm to the [`lib.rs`](src/lib.rs) file where we define our python module.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Owner
+
+* **Emil Schutt** - [Tosic.Killer](https://gitlab.com/retrokiller543)
+
