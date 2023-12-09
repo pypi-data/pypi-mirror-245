@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cdg-reader
+Version: 0.3
+Summary: Check the NCAR Climate Data Guide for information relevant to your netCDF data file
+Home-page: https://github.com/dylangrant01/cdg-reader
+Download-URL: https://github.com/dylangrant01/cdg-reader/archive/refs/tags/v03.tar.gz
+Author: YDylan Grant
+Author-email: dg3311@columbia.edu
+License: MIT
+Keywords: ncar,cdg,climate,guide,xarray
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
