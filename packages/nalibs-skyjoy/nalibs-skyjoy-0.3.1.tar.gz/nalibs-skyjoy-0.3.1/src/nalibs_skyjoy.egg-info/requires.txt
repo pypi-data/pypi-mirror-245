@@ -1,0 +1,2 @@
+nalibs-utility==1.0.0
+nalibs-aws==0.3.0
