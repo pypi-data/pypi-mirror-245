@@ -1,0 +1,7 @@
+numpy
+configmypy
+pytest
+black
+tensorly
+tensorly-torch
+opt-einsum
