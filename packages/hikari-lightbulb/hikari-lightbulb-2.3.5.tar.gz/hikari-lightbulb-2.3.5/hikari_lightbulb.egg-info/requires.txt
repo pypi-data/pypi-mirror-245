@@ -1,0 +1,5 @@
+hikari~=2.0.0.dev122
+
+[crontrigger]
+croniter~=2.0.1
+types-croniter~=2.0.0
