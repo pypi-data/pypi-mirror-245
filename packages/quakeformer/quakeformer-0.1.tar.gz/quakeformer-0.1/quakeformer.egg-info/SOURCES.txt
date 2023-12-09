@@ -1,0 +1,5 @@
+setup.py
+quakeformer.egg-info/PKG-INFO
+quakeformer.egg-info/SOURCES.txt
+quakeformer.egg-info/dependency_links.txt
+quakeformer.egg-info/top_level.txt
