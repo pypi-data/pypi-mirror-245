@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: snakemake-executor-plugin-tes
+Version: 0.1.2
+Summary: A Snakemake executor plugin for submitting jobs via GA4GH TES.
+Home-page: https://github.com/snakemake/snakemake-executor-plugin-tes
+License: MIT
+Keywords: snakemake,plugin,executor,tes
+Author: Sven Twardziok
+Author-email: sven.twardziok@bih-charite.de
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: py-tes (>=0.4.2,<0.5.0)
+Requires-Dist: snakemake-interface-common (>=1.14.0,<2.0.0)
+Requires-Dist: snakemake-interface-executor-plugins (>=8.1.1,<9.0.0)
+Project-URL: Documentation, https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/tes.html
+Project-URL: Repository, https://github.com/snakemake/snakemake-executor-plugin-tes
+Description-Content-Type: text/markdown
+
+# snakemake-executor-plugin-tes
+
+A Snakemake executor plugin for submitting jobs via GA4GH TES.
