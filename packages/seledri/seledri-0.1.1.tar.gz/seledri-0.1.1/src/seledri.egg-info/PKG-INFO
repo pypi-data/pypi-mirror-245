@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: seledri
+Version: 0.1.1
+Summary: Persistent and dynamic function scheduler
+Author-email: dennis <denngohis@gmail.com>
+Project-URL: Homepage, https://github.com/dennsgh/seledri
+Project-URL: Issues, https://github.com/dennsgh/seledri/issues
+License-File: LICENSE

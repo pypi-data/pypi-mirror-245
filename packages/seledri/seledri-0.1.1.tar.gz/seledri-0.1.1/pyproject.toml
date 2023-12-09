@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seledri"
+version = "0.1.1"
+description = "Persistent and dynamic function scheduler"
+authors = [
+    { name="dennis", email="denngohis@gmail.com" },
+]
+
+[project.urls]
+Homepage = "https://github.com/dennsgh/seledri"
+Issues = "https://github.com/dennsgh/seledri/issues"
