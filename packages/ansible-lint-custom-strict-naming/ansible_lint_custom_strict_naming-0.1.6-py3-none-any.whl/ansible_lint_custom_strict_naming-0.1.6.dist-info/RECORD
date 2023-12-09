@@ -1,0 +1,10 @@
+ansible_lint_custom_strict_naming/__init__.py,sha256=-AaJKJvN5k4JJiUkvCJCAxqmrtroW4VQjOOipAfgGnQ,1370
+ansiblelint/rules/custom/ansible_lint_custom_strict_naming/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ansiblelint/rules/custom/ansible_lint_custom_strict_naming/debug.py,sha256=_cZ_q2IKqJwWOZUO_j5EWP6vuXXkL_0HbIlvOswpAzg,731
+ansiblelint/rules/custom/ansible_lint_custom_strict_naming/register_prefix.py,sha256=FvnMGTgdR5lN_SG_fm66gr_1ROWysNR3QFXe2EmDQs8,1965
+ansiblelint/rules/custom/ansible_lint_custom_strict_naming/var_name_prefix.py,sha256=hNIZ47fRzUSv2zSE7K6XVjem6j-16KuKehwGKTrDESo,5264
+ansible_lint_custom_strict_naming-0.1.6.dist-info/LICENSE,sha256=WMGqZf21-rAMu6PyLjLOLdNkEipMFPuu2CHPBGRy5Dw,1065
+ansible_lint_custom_strict_naming-0.1.6.dist-info/METADATA,sha256=Kwy818JKZXhmB-xJmfOFrN0rQn2Hf3d6fQipi6bFrJg,4220
+ansible_lint_custom_strict_naming-0.1.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ansible_lint_custom_strict_naming-0.1.6.dist-info/top_level.txt,sha256=Dn2_aTZ-m8dmvw_92AX-_m4XnZ5x_LODwK4TEsiV7Zo,46
+ansible_lint_custom_strict_naming-0.1.6.dist-info/RECORD,,
