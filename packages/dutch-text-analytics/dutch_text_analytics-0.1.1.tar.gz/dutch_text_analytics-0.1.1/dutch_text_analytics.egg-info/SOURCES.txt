@@ -1,0 +1,10 @@
+README.md
+setup.py
+dutch_text_analytics/__init__.py
+dutch_text_analytics/demo_data.py
+dutch_text_analytics/textanalytics.py
+dutch_text_analytics.egg-info/PKG-INFO
+dutch_text_analytics.egg-info/SOURCES.txt
+dutch_text_analytics.egg-info/dependency_links.txt
+dutch_text_analytics.egg-info/requires.txt
+dutch_text_analytics.egg-info/top_level.txt
