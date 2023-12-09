@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+Modules/__init__.py
+Modules/sport_event.py
+Modules/sport_filter.py
+Utils/__init__.py
+Utils/k8s.py
+Utils/logging.py
+Utils/webscraper.py
+r0p3.egg-info/PKG-INFO
+r0p3.egg-info/SOURCES.txt
+r0p3.egg-info/dependency_links.txt
+r0p3.egg-info/requires.txt
+r0p3.egg-info/top_level.txt
