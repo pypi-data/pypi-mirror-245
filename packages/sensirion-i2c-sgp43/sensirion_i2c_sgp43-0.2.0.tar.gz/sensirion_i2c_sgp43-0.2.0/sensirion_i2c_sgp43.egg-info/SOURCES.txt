@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sensirion_i2c_sgp43/__init__.py
+sensirion_i2c_sgp43/commands.py
+sensirion_i2c_sgp43/device.py
+sensirion_i2c_sgp43/response_provider.py
+sensirion_i2c_sgp43/result_types.py
+sensirion_i2c_sgp43/version.py
+sensirion_i2c_sgp43.egg-info/PKG-INFO
+sensirion_i2c_sgp43.egg-info/SOURCES.txt
+sensirion_i2c_sgp43.egg-info/dependency_links.txt
+sensirion_i2c_sgp43.egg-info/requires.txt
+sensirion_i2c_sgp43.egg-info/top_level.txt
