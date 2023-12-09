@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+test/test.py
+zephram/MDN.py
+zephram/Recorder.py
+zephram/View.py
+zephram/WarmUpLR.py
+zephram/__init__.py
+zephram/train.py
+zephram.egg-info/PKG-INFO
+zephram.egg-info/SOURCES.txt
+zephram.egg-info/dependency_links.txt
+zephram.egg-info/top_level.txt
