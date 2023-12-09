@@ -1,0 +1,52 @@
+name: Report a bug
+description: Report a bug in the aiflows library
+labels: ["needs triage", "bug"]
+body:
+  - type: textarea
+    attributes:
+      label: Bug description
+      description: Describe the bug you found.
+      placeholder: |
+        Give a clear and concise description of the bug.
+        What was the expected behavior? What actually happened?
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "The following information is optional but can help us debug the problem faster."
+
+  - type: textarea
+    attributes:
+      label: Reproducing the bug (optional)
+      description: >
+        Provide a minimal code example that reproduces the problem.
+        You can use the following template to get started.
+      placeholder: |
+        ```python
+        # Sample code to reproduce the problem
+        ```
+      render: python
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Error messages and logs (optional)
+      description: >
+        Provide any error messages and/or logs
+      placeholder: "Copy the complete error messages and logs and traceback here."
+      value: |
+        ```
+        # Error messages and logs here please
+        ```
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Aditional information (optional)
+      description: Add any other information about the problem here.
+    validations:
+      required: false
+
