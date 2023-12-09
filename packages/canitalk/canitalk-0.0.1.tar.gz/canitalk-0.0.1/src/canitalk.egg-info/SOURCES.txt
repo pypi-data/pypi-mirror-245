@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/canitalk/__init__.py
+src/canitalk.egg-info/PKG-INFO
+src/canitalk.egg-info/SOURCES.txt
+src/canitalk.egg-info/dependency_links.txt
+src/canitalk.egg-info/top_level.txt

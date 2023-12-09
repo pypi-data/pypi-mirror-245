@@ -1,0 +1,1 @@
+# A small package based on codeforces Boy or Girl problem.
