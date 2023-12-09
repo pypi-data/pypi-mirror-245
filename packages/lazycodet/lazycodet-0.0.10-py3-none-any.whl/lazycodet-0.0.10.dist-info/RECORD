@@ -1,0 +1,9 @@
+lazycodet/__init__.py,sha256=BWs9uY7H8rc5C9FnFWKSdc1Z5V13eolg0V4jT9G3R-s,48
+lazycodet/helper.py,sha256=ock5XMDJK-gGoO2uIIwOOuYhZVQMqVjofcNr1USVTI0,967
+lazycodet/nlp.py,sha256=A7-x5QOCpdkPZugAiIKZh0dNgRK6oOBySc1V5eOX_6I,7877
+lazycodet/module/helper.py,sha256=ock5XMDJK-gGoO2uIIwOOuYhZVQMqVjofcNr1USVTI0,967
+lazycodet/module/nlp.py,sha256=1RmOT_PRY66sIyHXGfdEZKGCNW7AbRH_Fh6-jbNGa8o,6476
+lazycodet-0.0.10.dist-info/METADATA,sha256=NQomRql1g4ySEq_cmWXxYD-FKu0-ry69bZ8BJcbtMN0,129
+lazycodet-0.0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lazycodet-0.0.10.dist-info/top_level.txt,sha256=U06Yuv5PfoV1y6SJB9XKcOSBOGfXGuYA1wW8UEly_LQ,10
+lazycodet-0.0.10.dist-info/RECORD,,
