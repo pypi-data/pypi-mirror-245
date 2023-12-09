@@ -1,0 +1,2 @@
+[console_scripts]
+skyjoy_cicd_get_secrets = nalibsSkyJoy.main:run_cicd_aws_sm
