@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: efg
+Version: 0.0.1
+Summary: Python bindings of Easy Factor Graph
+Author: Andrea Casalino
+Author-email: andrecasa91@gmail.com
+Requires-Python: >=3.7
+License-File: LICENSE
+
+TODO explain these are just the bindings, but the original C++ code is ...
