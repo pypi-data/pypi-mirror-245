@@ -1,0 +1,9 @@
+h5py>=3.9
+matplotlib>=3.7
+Cartopy>0.21
+numpy>=1.25
+xarray>=2023.3
+
+[:python_version < "3.11"]
+tomli>=1
+typing-extensions
