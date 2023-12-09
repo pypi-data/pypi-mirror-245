@@ -1,0 +1,2 @@
+keyring>=5.3
+colorlog>=2.6.0

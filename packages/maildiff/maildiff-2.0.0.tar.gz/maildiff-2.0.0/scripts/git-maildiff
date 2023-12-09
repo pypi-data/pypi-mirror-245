@@ -1,0 +1,13 @@
+#! /usr/bin/env python
+# -*-coding: utf8-*-
+# file: git-maildiff
+# command: git maildiff
+
+import sys
+from emaildiff import maildiff_cmd as _cmd
+
+if __name__ == '__main__':
+	# no argument is passed through main since 
+	# pkg_resources.load_entry_points doesnt 
+	# allows arguments via console scripts
+	sys.exit(_cmd.main())
