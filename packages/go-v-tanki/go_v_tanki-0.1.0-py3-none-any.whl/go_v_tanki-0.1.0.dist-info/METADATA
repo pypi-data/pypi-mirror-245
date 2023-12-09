@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: go_v_tanki
+Version: 0.1.0
+Summary: Go v tanki package
+Author: Tsyhanok Ivan
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# PLEASE DO NOT READ ME
