@@ -1,0 +1,11 @@
+hdmf_zarr/__init__.py,sha256=EnDxfzOi1KIvrIQmXDvSHSiAQkzn2RkmpuVK80s4nlw,1121
+hdmf_zarr/_due.py,sha256=hLUIv20GdlcNp4FCJ1wVMVG_u_Pm_1E72EEYbETKGx8,2045
+hdmf_zarr/_version.py,sha256=aeBju2l8GTMwAhIRG_c2Q_oVPFacRkZZwGtxmvFCGPQ,411
+hdmf_zarr/backend.py,sha256=HM5gSAMEJ6z6ECQXD5xSWFQsmBwVJHRnrImMuFR1E_A,65137
+hdmf_zarr/nwb.py,sha256=4Dy9wPhQ6f0v9HSbxhDcyU3rcNDqMEx425AUjHkve6I,3553
+hdmf_zarr/utils.py,sha256=l4aLhQ8yPfFNxsfp6OWmQIEI1mJpQAcbP73ovUdrpBQ,22112
+hdmf_zarr/zarr_utils.py,sha256=Q5bQVna5RNmf47asfaGFH_3YB7Z4hMETOKhw1uKSryE,8895
+hdmf_zarr-0.5.0.dist-info/METADATA,sha256=g-cvpz0HIDulavbhd2iA0qnlZJ8LfuCXI-_eUaOvR5w,4762
+hdmf_zarr-0.5.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+hdmf_zarr-0.5.0.dist-info/licenses/LICENSE.txt,sha256=pbzGJVvd6tTIHHn4PQvMd6rdFT5icdUIijQllpEWglE,2412
+hdmf_zarr-0.5.0.dist-info/RECORD,,
