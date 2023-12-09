@@ -1,0 +1,6 @@
+include csrc/*
+include csrc/commonnbis/include/*
+include csrc/imgtools/include/*
+include wsq2/tests/*
+include README.rst
+

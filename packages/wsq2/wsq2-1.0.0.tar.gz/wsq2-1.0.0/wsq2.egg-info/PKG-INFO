@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: wsq2
+Version: 1.0.0
+Summary: NBIS/WSQ lib Python wrapper for Pillow
+Home-page: https://github.com/201503600/wsq-quality
+Author: attr: wsq2.__author__
+Author-email: olivier.heurtier@idemia.com
+License: CeCILL-C
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: CeCILL-C Free Software License Agreement (CECILL-C)
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: AUTHORS.rst
