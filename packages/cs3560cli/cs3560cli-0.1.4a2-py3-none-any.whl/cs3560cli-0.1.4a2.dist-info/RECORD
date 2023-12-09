@@ -1,0 +1,13 @@
+cs3560cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cs3560cli/__main__.py,sha256=Jl83BF_5iaefRosgGELiDQG7ggYTjiQHyv70VdlHoIY,59
+cs3560cli/main.py,sha256=tcCEXHcBxhJQ_fN2-tmfH-RJhokw6ABm9nNjVaRulJM,404
+cs3560cli/functions/check_username.py,sha256=v8QT3htUlVmvT9RzB6iXh21nLsUTjLG_SUv2xEr7al4,2266
+cs3560cli/functions/create_gitignore.py,sha256=evvVXqLAVT96FOPOuzKSV7Zi4LkFjYp1jkaD5ktEeE4,3636
+cs3560cli/functions/highlight.py,sha256=9lAMSsQH4Nnoku9MWyIorxYU_egxfJ0aQQiVPxXcBI8,2355
+cs3560cli/functions/watch_zip.py,sha256=yDSmgXjEt4uWbl3wfF8DuimmqU-WazaeA8N-XSSgh7Y,3322
+cs3560cli-0.1.4a2.dist-info/LICENSE,sha256=wcO2ITAIr8HnRgQhOwuyPHNArUhoBhQ6zv6xYMVW4qw,1066
+cs3560cli-0.1.4a2.dist-info/METADATA,sha256=m-zdLHFAsdgnLH1emFpTo8BqWLFCYqv8sY5-npeG0YU,2803
+cs3560cli-0.1.4a2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cs3560cli-0.1.4a2.dist-info/entry_points.txt,sha256=8th4ErQd5YVaGxhJ2mItDKFu5_bwnwLFCxCYkrCq4Kc,49
+cs3560cli-0.1.4a2.dist-info/top_level.txt,sha256=McurWnmxjxLN_nW242ThdQzqB65z-bV_moHOyJaz5Ck,10
+cs3560cli-0.1.4a2.dist-info/RECORD,,
