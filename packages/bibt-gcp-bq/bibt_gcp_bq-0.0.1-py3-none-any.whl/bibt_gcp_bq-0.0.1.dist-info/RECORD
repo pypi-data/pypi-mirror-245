@@ -1,0 +1,11 @@
+bibt/__init__.py,sha256=8tkdZMytST5vyHv-q2abYIZDQje16WBHsRLOKyHYIGA,1014
+bibt/gcp/__init__.py,sha256=8tkdZMytST5vyHv-q2abYIZDQje16WBHsRLOKyHYIGA,1014
+bibt/gcp/bq/__init__.py,sha256=Ti95zqAP5w0RMia2FuDT_ZlQqKI4_bryWfc4Kr45WUk,122
+bibt/gcp/bq/classes.py,sha256=h01HCfGJgfsH4o7xU8InIHoGxO-sQ5103M3CXybfheY,5206
+bibt/gcp/bq/params.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bibt/gcp/bq/version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+docs/conf.py,sha256=IvEC7ZHsAcjvrG2qJoHd7RQ5EYgggSwH1Lz-b3J_Vl8,2747
+bibt_gcp_bq-0.0.1.dist-info/METADATA,sha256=klXYpkl8UrTqr7bvGKLGsZ43m1pCSBanNpfGPStqBkQ,1534
+bibt_gcp_bq-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+bibt_gcp_bq-0.0.1.dist-info/licenses/LICENSE,sha256=TDV6yQwODf_uwPkwskEh6wKRZ1gN2dzn22Dv6Gl0VsE,1054
+bibt_gcp_bq-0.0.1.dist-info/RECORD,,
