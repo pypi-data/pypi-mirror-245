@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ml_iris_backprop
+Version: 0.1
+Summary: Code for backpropogation on Iris Dataset
+Home-page: https://github.com/savioratharv/prac_testing
+Author: davinci003
+Author-email: freegpt00@gmail.com
+Description-Content-Type: text/markdown
