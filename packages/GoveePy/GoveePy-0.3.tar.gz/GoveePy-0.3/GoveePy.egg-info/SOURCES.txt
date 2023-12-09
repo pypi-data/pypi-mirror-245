@@ -1,0 +1,10 @@
+setup.py
+GoveePy.egg-info/PKG-INFO
+GoveePy.egg-info/SOURCES.txt
+GoveePy.egg-info/dependency_links.txt
+GoveePy.egg-info/requires.txt
+GoveePy.egg-info/top_level.txt
+govee/Govee.py
+govee/GoveeLocal.py
+govee/Objects.py
+govee/__init__.py

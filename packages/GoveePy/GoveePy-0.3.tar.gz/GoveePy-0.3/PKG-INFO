@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: GoveePy
+Version: 0.3
+Summary: A Govee API Wrapper for Python
+Home-page: https://github.com/WhyDoWeLiveWithoutMeaning/GoveePy
+Author: Meaning
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Dist: requests>=2.31.0
