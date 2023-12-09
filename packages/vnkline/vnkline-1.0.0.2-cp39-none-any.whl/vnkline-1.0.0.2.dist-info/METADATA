@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: vnkline
+Version: 1.0.0.2
+Summary: vnkline
+Home-page: https://gitee.com/vnpypro/vnkline
+Author: quant lin
+Author-email: 1196999641@qq.com
+License: https://gitee.com/vnpypro/vnklineservice/blob/master/LICENSE
+Keywords: barcode DataMatrix QRCode 1D PDF417
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyqtgraph
+Requires-Dist: PyQt5
+
+####  
+
+Python专用的实时K线数据接口。
+
+
+
+
+
+ 购买说明
+
+从2023年12月7日开始，推出VNklineservice（实时K线数据）。
+
+
+
+因为K线服务涉及数据流量成本和人工维护的成本，也是支持开源模式的一部分 为了保证服务质量，开展收费服务，具体可咨询https://www.vnpy.cn 官网客服 或通过关注微信公众号，向微信公众号提问。
+
+
+
+CTP K线服务 免费， 0元/年，每分钟查询不超过1次
+
+
+
+如果要避免延迟、多用户争夺带宽的问题，请购买商用版本  
+
+
+
+https://gitee.com/vnpypro/vnklineservice
+
+
+
+主要支持CTP接口，支持国内149家期货公司程序化交易，实现程序化交易是免费的。 支持股指期货、商品期货、股指期权、商品期权， 支持中国8大合规交易所中的5所，包括上海期货交易所，大连期货交易所、 郑州期货交易所、中金所、能源所。
+
+
+
+目录说明： .idea：是Pycharm是项目配置文件目录，指定项目路径等等 strategy： 策略存放目录 temp： CTP接口产生的临时流文件存放目录
+
+
+
+软件架构
+
+软件架构说明 这是使用PyQt调用 VNklineservice调用K线数据并显示的例子。
+
+
+
+Demo运行教程
+
+安装Python
+
+安装PyCharm
+
+安装PyQt, pyqtgraph，pandas, numpy 等模块
+
+使用说明
+
+接口文件只有3个文件vnklineservice.dll、vnklineservice.py、vnklineservice.ini
+
+其他属于对接口封装的框架，并用于显示K线
+
+ 
+
