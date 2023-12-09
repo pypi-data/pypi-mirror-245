@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: centrality-common
+Version: 0.0.1
+Summary: Centrality common lib
+Author-email: Armand McQueen <armandmcqueen@gmail.com>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic ~= 2.5.2
+Requires-Dist: ruff ~= 0.1.7 ; extra == "dev"
+Requires-Dist: flit ~= 3.9.0 ; extra == "dev"
+Provides-Extra: dev
+
+# Common Lib
+
+Code that is shared among components. 
+
+## Contents
+
+- Types sent over the network
