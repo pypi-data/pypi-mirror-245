@@ -1,0 +1,6 @@
+umap_learn>=0.5.1
+numpy>=1.20.2
+hdbscan>=0.8.27
+numba>=0.51.2
+pandas>=1.2.4
+scikit_learn>=0.24.2
