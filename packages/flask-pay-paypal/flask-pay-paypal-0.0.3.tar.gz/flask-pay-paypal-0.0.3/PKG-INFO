@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: flask-pay-paypal
+Version: 0.0.3
+Summary: A simple PayPal integration for Flask
+Maintainer-email: 浩 <pythonnic@qq.com>
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+Provides-Extra: async
+Requires-Dist: asgiref>=3.2; extra == "async"
+Provides-Extra: dotenv
+Requires-Dist: python-dotenv; extra == "dotenv"
