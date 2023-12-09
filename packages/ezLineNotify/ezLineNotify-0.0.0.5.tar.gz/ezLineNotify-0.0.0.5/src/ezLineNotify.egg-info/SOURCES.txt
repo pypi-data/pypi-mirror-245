@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/ezLineNotify/__init__.py
+src/ezLineNotify/main.py
+src/ezLineNotify.egg-info/PKG-INFO
+src/ezLineNotify.egg-info/SOURCES.txt
+src/ezLineNotify.egg-info/dependency_links.txt
+src/ezLineNotify.egg-info/requires.txt
+src/ezLineNotify.egg-info/top_level.txt

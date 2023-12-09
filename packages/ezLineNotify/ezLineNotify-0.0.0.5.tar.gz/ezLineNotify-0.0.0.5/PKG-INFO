@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ezLineNotify
+Version: 0.0.0.5
+Summary: Use LINE Notify from Python.
+Home-page: https://twitter.com/Rilm2525
+Author: Rilm2525
+Author-email: rilm2525ce@gmail.com
+License: MIT
+License-File: LICENSE
