@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: sintt
+Version: 1.0.0
+Summary: makes life easier
+Author: SINTT
+Author-email: bbhh66606@gmail.com
+Requires-Dist: pyodbc
+Requires-Dist: Pillow
+
