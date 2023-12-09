@@ -1,0 +1,10 @@
+termcolor
+numpy>=1.17
+opencv-python
+tabulate
+torch
+transformers>=4.25.1
+accelerate>=0.16.0
+diffusers
+pyyaml
+tqdm
