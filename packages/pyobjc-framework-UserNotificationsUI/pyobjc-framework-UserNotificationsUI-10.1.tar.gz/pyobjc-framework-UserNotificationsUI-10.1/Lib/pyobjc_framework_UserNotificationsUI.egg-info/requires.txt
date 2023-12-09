@@ -1,0 +1,4 @@
+pyobjc-core>=10.1
+pyobjc-framework-Cocoa>=10.1
+pyobjc-core>=10.1
+pyobjc-framework-UserNotifications>=10.1
