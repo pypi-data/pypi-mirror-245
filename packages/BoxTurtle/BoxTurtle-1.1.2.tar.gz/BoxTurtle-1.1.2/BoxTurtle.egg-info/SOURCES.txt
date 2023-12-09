@@ -1,0 +1,8 @@
+BoxTurtle.py
+LICENSE
+README.md
+pyproject.toml
+BoxTurtle.egg-info/PKG-INFO
+BoxTurtle.egg-info/SOURCES.txt
+BoxTurtle.egg-info/dependency_links.txt
+BoxTurtle.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "BoxTurtle"
+version = "1.1.2"
+description = "Simple turtle graphics library with 3D integration"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "chadwickjr", email = "chadmillimanjr@gmail.com" }]
+license = { file = "LICENSE" }
+keywords = ["turtle", "3D", "graphics"]
