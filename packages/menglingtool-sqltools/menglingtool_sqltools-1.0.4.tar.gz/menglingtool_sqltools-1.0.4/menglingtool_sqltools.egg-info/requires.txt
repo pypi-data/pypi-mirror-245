@@ -1,0 +1,3 @@
+pyodbc
+pymysql
+psycopg2-binary
