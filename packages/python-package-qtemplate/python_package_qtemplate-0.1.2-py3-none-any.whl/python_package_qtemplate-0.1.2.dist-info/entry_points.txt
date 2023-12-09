@@ -1,0 +1,2 @@
+[console_scripts]
+python_package_template = python_package_template.main.main:main

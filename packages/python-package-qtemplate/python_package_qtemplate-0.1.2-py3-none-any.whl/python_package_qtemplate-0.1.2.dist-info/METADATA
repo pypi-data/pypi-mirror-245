@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: python-package-qtemplate
+Version: 0.1.2
+Summary: Python package
+Author-email: Quinten Roets <qdr2104@columbia.edu>
+License: MIT
+Project-URL: Source Code, https://github.com/quintenroets/python-package-template
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: hypothesis ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# Python Package Template
+Python package published on MyPi
