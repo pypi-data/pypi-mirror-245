@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/BerryEasy/BerryEasy.py
+src/BerryEasy/__init__.py
+src/BerryEasy.egg-info/PKG-INFO
+src/BerryEasy.egg-info/SOURCES.txt
+src/BerryEasy.egg-info/dependency_links.txt
+src/BerryEasy.egg-info/requires.txt
+src/BerryEasy.egg-info/top_level.txt

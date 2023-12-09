@@ -1,0 +1,4 @@
+numpy
+pybinding
+matplotlib
+tqdm

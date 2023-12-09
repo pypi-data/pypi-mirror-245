@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "BerryEasy"
+version = "0.0.6"
+authors = [
+  { name="Alex Tyner", email="alextyner@gmail.com" },
+]
+description = "A package for computing topological properties of TB models"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  "numpy",
+  "pybinding",
+  "matplotlib",
+  "tqdm"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/actyner"
