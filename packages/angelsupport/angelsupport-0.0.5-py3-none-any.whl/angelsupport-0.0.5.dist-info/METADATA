@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: angelsupport
+Version: 0.0.5
+Summary: Angel Support Program
+Home-page: https://ailike.me
+Author: Anthony
+Author-email: webmaster@ailike.me
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Requires-Dist: openai
+Requires-Dist: tiktoken
+
