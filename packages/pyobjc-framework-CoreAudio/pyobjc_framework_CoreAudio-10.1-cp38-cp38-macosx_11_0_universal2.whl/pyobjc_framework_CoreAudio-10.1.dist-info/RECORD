@@ -1,0 +1,8 @@
+CoreAudio/_CoreAudio.cpython-38-darwin.so,sha256=ZGPNKAQ-y3kIqcyFclkNxNFw7Z0y54QsT9_cETionlU,142204
+CoreAudio/__init__.py,sha256=lb5Vw8_VJvmAR8LQrEo9LjA_qMJ6PFpV37Wozeld8Pk,953
+CoreAudio/_inlines.abi3.so,sha256=To6s3rnM6DumiveYO7TBpexHlN6MdtfLWfNeLiwoYRs,133853
+CoreAudio/_metadata.py,sha256=I9ZFqzyhdkRDax9_khdWZQd9-ipHWFKCY-zTwIlVo3w,142733
+pyobjc_framework_CoreAudio-10.1.dist-info/METADATA,sha256=bG1N3bhBDlnwC8ZxdVZqXH8MqMDPI2VBRSImVUgbsWA,2234
+pyobjc_framework_CoreAudio-10.1.dist-info/WHEEL,sha256=nqQ4EYlgEDEyYVT2G0ZxKxHp6B-Jb9kDZYy0aL69vPY,113
+pyobjc_framework_CoreAudio-10.1.dist-info/top_level.txt,sha256=vRI2jCFLgVfpt1iHtd3SG9jjM0YmlXsEiTICu94BHLo,10
+pyobjc_framework_CoreAudio-10.1.dist-info/RECORD,,
