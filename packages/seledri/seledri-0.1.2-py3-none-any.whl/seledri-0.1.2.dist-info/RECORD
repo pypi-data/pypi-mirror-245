@@ -1,0 +1,12 @@
+seledri/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seledri/functionmap.py,sha256=phoE3uEo0TXK71iuyF-e4TV2ssW4aggS3nU4KUpdl8w,4774
+seledri/timekeeper.py,sha256=gkGrHx_RQa1c6liQIzzSPnQpHUnzL9Yk6d39yVKySKk,6464
+seledri/worker.py,sha256=6n5xb71fRsIhHfxrCkRkriqozHihwwlPiYOoFHfRyD0,4675
+seledri/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seledri/tests/test_function_map.py,sha256=-uUjbUXSY1BPbdmrc04sQgX96doR3-M0dseNwULR3qc,1358
+seledri/tests/test_module.py,sha256=Mfa0a4-PpBJ6u70UnbpcFKeMB2eR3t840wrBc2HzwD8,133
+seledri-0.1.2.dist-info/LICENSE,sha256=eb2GVGbcgY6EmEmVnTEo3CyY1EJOv80Zxx-wXD_02a0,1090
+seledri-0.1.2.dist-info/METADATA,sha256=4CXBkxdRM5b-ubBv-cuYHfu-m15RaQ2fGYa8EIIdMaA,298
+seledri-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+seledri-0.1.2.dist-info/top_level.txt,sha256=59hvgZG7CdorCfrbZEfJKW2NBv8hdlli6c1cAl48R2c,8
+seledri-0.1.2.dist-info/RECORD,,
