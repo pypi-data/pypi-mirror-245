@@ -1,0 +1,2 @@
+[console_scripts]
+flopth = flopth.__init__:main
