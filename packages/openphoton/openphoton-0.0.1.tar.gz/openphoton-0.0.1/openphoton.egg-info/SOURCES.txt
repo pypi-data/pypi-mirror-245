@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+openphoton.egg-info/PKG-INFO
+openphoton.egg-info/SOURCES.txt
+openphoton.egg-info/dependency_links.txt
+openphoton.egg-info/requires.txt
+openphoton.egg-info/top_level.txt
