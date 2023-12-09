@@ -1,0 +1,12 @@
+cubicweb_oaipmh/__init__.py,sha256=doBb0dROWJ6XngsMhnFg2OZ5hCKub22rGuEb99yn6sI,4064
+cubicweb_oaipmh/__pkginfo__.py,sha256=dHqyPn59cuWhq9_TlJalmaqoHy5IjpqHFk1amPGTjmA,795
+cubicweb_oaipmh/entities.py,sha256=eHW4400yyPS2bO__U2waBbLEkZCsCvutq2Z-iV3Gvgs,17567
+cubicweb_oaipmh/site_cubicweb.py,sha256=YdnlOeAm0w4a9DU5D2MU_9u__SFBJxkM4DX9E-wrOmo,1386
+cubicweb_oaipmh/views.py,sha256=9Qy7t2Ii3tNbICZSE7iB4hKV9O12K2n7-3NtDMyJY18,23959
+cubicweb_oaipmh/i18n/en.po,sha256=EGZckSBeIJYkvhpjL4dCLHF8-iJCJ6nD0oHu7LmyIW4,248
+cubicweb_oaipmh/i18n/fr.po,sha256=EGZckSBeIJYkvhpjL4dCLHF8-iJCJ6nD0oHu7LmyIW4,248
+cubicweb_oaipmh-1.0.1.dist-info/METADATA,sha256=iyoCNP7vEA5jMWCeV98tKvRWmsA0y4m30D4af30hviw,1710
+cubicweb_oaipmh-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cubicweb_oaipmh-1.0.1.dist-info/entry_points.txt,sha256=mzVgcJKO4S43yb48JdQ_E532SgeoLlNvoXVbUL3iqTo,42
+cubicweb_oaipmh-1.0.1.dist-info/top_level.txt,sha256=R3vHaXiOeRt_ceZAKJt2VyH5xViAolP4lg3W6UdMjcY,16
+cubicweb_oaipmh-1.0.1.dist-info/RECORD,,
