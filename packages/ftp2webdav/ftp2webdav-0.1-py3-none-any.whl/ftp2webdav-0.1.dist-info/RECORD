@@ -1,0 +1,9 @@
+ftp2webdav/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ftp2webdav/cli.py,sha256=33zwsk8vz9oTRhT3A1_W9dscwOPKVfYICj3NMBErzTg,2326
+ftp2webdav/config.py,sha256=2wM7lhNCpnMViMVlHHoCbdZovJyBaddWJYCpvkSwFT4,1267
+ftp2webdav/resources/example-config.yml,sha256=iTJiXV-QRYjsea4iCBbZVzz-olPxFXCxFXK_RmVEiWw,207
+ftp2webdav/server.py,sha256=ujTrH4Ga6BXA1iWOTNuGhOkNlmBkPKCsndx_kKovlgM,1950
+ftp2webdav-0.1.dist-info/METADATA,sha256=_-LxKw0OjNOndIFP7z74oe5r61BP3O8TbPAKwM-CuRk,3556
+ftp2webdav-0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ftp2webdav-0.1.dist-info/entry_points.txt,sha256=Yzk8-0iiU-mkE9mo6KfR1Sfuwu3MELvsx_F-g3PWAyg,49
+ftp2webdav-0.1.dist-info/RECORD,,

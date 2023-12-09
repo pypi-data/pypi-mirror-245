@@ -1,0 +1,3 @@
+[console_scripts]
+ftp2webdav=ftp2webdav.cli:app
+
