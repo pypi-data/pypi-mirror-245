@@ -1,0 +1,14 @@
+README.md
+license
+setup.py
+mail/__init__.py
+mail/models/__init__.py
+mail/models/_email_model.py
+mail/msgraph/__init__.py
+mail/msgraph/_email_service.py
+msgraph_email.egg-info/PKG-INFO
+msgraph_email.egg-info/SOURCES.txt
+msgraph_email.egg-info/dependency_links.txt
+msgraph_email.egg-info/entry_points.txt
+msgraph_email.egg-info/requires.txt
+msgraph_email.egg-info/top_level.txt
