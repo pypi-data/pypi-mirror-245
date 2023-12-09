@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+authors = [
+  {name = "Cody Scott", email = "cody.j.b.scott@gmail.com"},
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "beautifulsoup4",
+  "feedwerk",
+  "Flask",
+  "Flask-FlatPages",
+  "Frozen-Flask",
+  "Pygments",
+  "click",
+  "htmlmin",
+  "jsmin",
+  "csscompressor",
+]
+description = "Write Markdown and Jinja2 templates to create a website"
+maintainers = [
+  {name = "Cody Scott", email = "cody.j.b.scott@gmail.com"},
+]
+name = "htmd"
+readme = "README.md"
+requires-python = ">=3.10"
+version = "2.0.3"
+
+[project.scripts]
+htmd = "htmd.cli:cli"
+
+[project.urls]
+Changelog = "https://github.com/siecje/htmd/blob/main/CHANGELOG.md"
+Documentation = "https://github.com/siecje/htmd"
+Homepage = "https://github.com/siecje/htmd"
+Issues = "https://github.com/siecje/htmd/issues"
+Repository = "https://github.com/siecje/htmd.git"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["htmd"]
+
+[tool.setuptools.package-data]
+htmd = [
+  "example_site/config.py",
+  "example_site/pages/*.html",
+  "example_site/posts/*.md",
+  "example_site/static/*.css",
+  "example_site/templates/*.html",
+]
