@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: beogym
+Version: 0.0.4
+Summary: package for beogym
+Home-page: https://github.com/DrokBing
+Author: Henghui Bao, Kiran Klekkala
+Author-email: henghuib@usc.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
