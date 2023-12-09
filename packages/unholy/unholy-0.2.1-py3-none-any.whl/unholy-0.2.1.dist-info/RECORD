@@ -1,0 +1,13 @@
+unholy/__init__.py,sha256=qxuTrz1dx82PxfafP-Bsp3-R8l4Pr1mk31ZDnDUldCA,6498
+unholy/__main__.py,sha256=kNJJHpz6YbfknF-kYcftGyRlNEJz-NUviGrL05N-P9k,31
+unholy/compose.py,sha256=2M8N9KsTEz66oUUF13B3IfiHVZZ3rEGWLSZf0vbC-QU,15658
+unholy/config.py,sha256=_IWFFCFX6zjm-1MeC0DgAbknFEoJwhu_j4R2OfYxxts,5255
+unholy/core.Unholyfile,sha256=TWgnWlvLoDoleUF7mMn5erpJO3QfW4zheVJNdcvu0FY,1255
+unholy/docker.py,sha256=-u7MOF51f3Plly2RA_ApQVTqqX3hCJDWZuXEYjt_H94,7820
+unholy/git.py,sha256=8lP2WiCI9YhcaIh7S_A0GSXpelesHmwuR5eUYHQ_SAc,3395
+unholy/junk_drawer.py,sha256=N7IW5kdeEQ74hgDr-3Gu7kWWQF2MCacuQvaKP5LuU6A,480
+unholy/processes.py,sha256=BlcGgSks6vW8NDmwZA8nV9oOnzZycpqMT5Fd8r2ccaA,403
+unholy-0.2.1.dist-info/METADATA,sha256=wFGgUg7W7pfhG1jKijZ23ibyhYejycQ8CeV7JCzAJQs,2298
+unholy-0.2.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+unholy-0.2.1.dist-info/entry_points.txt,sha256=hllA7b7HOq0JyNSwA3IcIzXy-ZJ-kLTdSOaGUN0oyAo,38
+unholy-0.2.1.dist-info/RECORD,,
