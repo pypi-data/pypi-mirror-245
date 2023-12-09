@@ -1,0 +1,17 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cythonuniquedim/README.MD
+cythonuniquedim/__init__.py
+cythonuniquedim/gmp.h
+cythonuniquedim/mpc.h
+cythonuniquedim/mpfr.h
+cythonuniquedim/requirements.txt
+cythonuniquedim/thirdparty.json
+cythonuniquedim.egg-info/PKG-INFO
+cythonuniquedim.egg-info/SOURCES.txt
+cythonuniquedim.egg-info/dependency_links.txt
+cythonuniquedim.egg-info/requires.txt
+cythonuniquedim.egg-info/top_level.txt

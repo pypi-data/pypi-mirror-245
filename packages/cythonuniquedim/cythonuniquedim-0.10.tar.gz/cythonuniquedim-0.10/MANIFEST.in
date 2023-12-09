@@ -1,0 +1,6 @@
+include cythonuniquedim/requirements.txt
+include cythonuniquedim/thirdparty.json
+include cythonuniquedim/README.MD
+include cythonuniquedim/mpc.h
+include cythonuniquedim/mpfr.h
+include cythonuniquedim/gmp.h
