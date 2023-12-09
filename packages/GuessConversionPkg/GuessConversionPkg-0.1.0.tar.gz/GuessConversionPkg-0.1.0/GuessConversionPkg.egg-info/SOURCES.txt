@@ -1,0 +1,9 @@
+README.md
+setup.py
+GuessConversionPkg.egg-info/PKG-INFO
+GuessConversionPkg.egg-info/SOURCES.txt
+GuessConversionPkg.egg-info/dependency_links.txt
+GuessConversionPkg.egg-info/top_level.txt
+packagehim/__init__.py
+packagehim/pkg_guess_number.py
+packagehim/pkg_weight_conversion.py
