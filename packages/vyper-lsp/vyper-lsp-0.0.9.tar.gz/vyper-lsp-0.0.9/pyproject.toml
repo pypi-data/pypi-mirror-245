@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "vyper-lsp"
+version = "0.0.9"
+description = "Language server for Vyper, a pythonic smart contract language"
+authors = ["z80 <z80@ophy.xyz>"]
+license = "MIT"
+readme = "README.md"
+keywords = [
+  "vyper",
+  "lsp",
+  "vyper-lsp"
+]
+packages = [
+  { include = "vyper_lsp" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+loguru = "^0.6.0"
+tree-sitter = "^0.20.1"
+pydantic = "^1.10"
+lark = "^1.1.7"
+lsprotocol = "^2023.0.0b1"
+vyper = "^0.3.7"
+vvm = "^0.2.0"
+packaging = "^23.1"
+pygls = "^1.1.2"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^5.0.4"
+pre-commit = "^3.5.0"
+pytest = "^7.4.3"
+
+[tool.poetry.scripts]
+vyper-lsp = 'vyper_lsp.main:main'
+
+[tool.coverage.run]
+source = ["vyper_lsp"]
+omit = ["vyper_lsp/analyzer/SourceAnalyzer.py",
+        "vyper_lsp/__init__.py",
+        "vyper_lsp/__main__.py",
+        ]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
