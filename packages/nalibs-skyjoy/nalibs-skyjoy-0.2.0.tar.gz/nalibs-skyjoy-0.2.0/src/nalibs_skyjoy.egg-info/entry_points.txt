@@ -1,0 +1,2 @@
+[console_scripts]
+skyjoy_cicd_fe = nalibsSkyJoy.main:run_cicd_case2
