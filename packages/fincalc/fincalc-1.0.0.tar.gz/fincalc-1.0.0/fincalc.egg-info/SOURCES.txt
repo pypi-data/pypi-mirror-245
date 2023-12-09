@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+fincalc.egg-info/PKG-INFO
+fincalc.egg-info/SOURCES.txt
+fincalc.egg-info/dependency_links.txt
+fincalc.egg-info/top_level.txt
