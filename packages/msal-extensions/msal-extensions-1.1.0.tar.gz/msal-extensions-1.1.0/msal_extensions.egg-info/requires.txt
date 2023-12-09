@@ -1,0 +1,8 @@
+msal<2.0.0,>=0.4.1
+packaging
+
+[:platform_system != "Windows"]
+portalocker<3,>=1.0
+
+[:platform_system == "Windows"]
+portalocker<3,>=1.6
