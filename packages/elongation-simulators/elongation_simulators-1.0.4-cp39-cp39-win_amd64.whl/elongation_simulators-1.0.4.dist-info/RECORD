@@ -1,0 +1,15 @@
+ribosomesimulator.cp39-win_amd64.pyd,sha256=Z5TCwmpDAtNNWJ2HwLaP5ANDxMEi6hAwNWTlzQZC80c,226304
+translation.cp39-win_amd64.pyd,sha256=wSy45TBwBBXASg7a6uidrl-rk-Hw8kXttn-dvgLWJ_o,474112
+concentrations/Saccharomyces_cerevisiae.csv,sha256=WkZOXtREFlm4c_H0cgL-5o0J-zXDLHt5afQp8k91b-g,3917
+concentrations/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+concentrations/basepairingeditor.py,sha256=9sewfrqjriBCdAEuxBaI1lVd3QRxCaOfhUSIIvcBwuM,9631
+concentrations/concentrations_generator.py,sha256=V7Ld0oZ6Q3wOAApoGfMyXrCOCwHY-t9iHGdtYHf-xGM,11203
+concentrations/default_basepairing.json,sha256=gVVr8g8_RbS7TxlrXC9PtujMBPS_mL_S8CvOksiNoqs,1152
+elongation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elongation/simulationbuilder.py,sha256=1AqZpxmFvqoaPWd4el47dTbWnl-WxxaHmR3mWnQ7GyI,26081
+elongation/utils.py,sha256=fJq0_YLdrjHESNwNR8K0cgd7bblbHb0Bb7tMEPl__Qc,738
+elongation_simulators-1.0.4.dist-info/LICENSE,sha256=Yotd3yBS0SZ6vNTYyy4yvvHuGS74nYd2oCLMW_Eg0v4,1068
+elongation_simulators-1.0.4.dist-info/METADATA,sha256=pCeWT4hQV0v8stWo0peOUlTXbJeUIqhOpT2D4e9AmtQ,1183
+elongation_simulators-1.0.4.dist-info/WHEEL,sha256=GZFS91_ufm4WrNPBaFVPB9MvOXR6bMZQhPcZRRTN5YM,100
+elongation_simulators-1.0.4.dist-info/top_level.txt,sha256=gjhO9VNfAtFDHdKxvKjZ3c_LXix-ZPkT6QHgtx4MBHo,56
+elongation_simulators-1.0.4.dist-info/RECORD,,
