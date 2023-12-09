@@ -1,0 +1,35 @@
+[project]
+name = "predica"
+version = "0.1.0"
+authors = [
+  { name = "Rahul Yadav" },
+]
+description = "Predicates for use in higher-order functions."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Topic :: Utilities",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed"
+]
+keywords = [
+  "predicates",
+  "functional programming",
+  "fp",
+  "composition",
+  "type-safety",
+]
+
+[project.urls]
+Repository = "https://https://github.com/y-src/predica"
+Issues = "https://github.com/y-src/predica/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
