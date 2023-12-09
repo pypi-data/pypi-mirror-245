@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+monitopy/__init__.py
+monitopy/spectator.py
+monitopy.egg-info/PKG-INFO
+monitopy.egg-info/SOURCES.txt
+monitopy.egg-info/dependency_links.txt
+monitopy.egg-info/requires.txt
+monitopy.egg-info/top_level.txt
