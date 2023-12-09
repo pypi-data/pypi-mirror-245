@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: readDiag
+Version: 2.0
+Summary: Read and plot GSI diagnostics files
+Author: Joao Gerd Z. de Mattos
+Author-email: joao.gerd@inpe.br
+Platform: any
+Requires-Python: >=3.9.18
+License-File: LICENSE.md
+Requires-Dist: numpy (>=1.22)
+Requires-Dist: matplotlib
+Requires-Dist: xarray
+Requires-Dist: Cartopy (>=0.22.0)
+Requires-Dist: geopandas
+

@@ -1,0 +1,12 @@
+diag2python.cpython-39-x86_64-linux-gnu.so,sha256=2N999Go7BlQiJuWSGRFLwvibXkbtBrxpMUXdxToOQg4,478184
+gsidiag/__main__.py,sha256=1n5q5HmGFM50Fu-wC4ljhGxkTPfWewDO6kq2Vjf_0SU,75634
+gsidiag/datasources.py,sha256=ADu9Z6nFmYf8BEQJICB8KtQxgRb2aY2wqZqCVf2hZeQ,2150
+gsidiag/table,sha256=ptVEjcGxp1YQgi-NXz8vz8EPVn8HP3tu-H2mjq6ddHU,8433
+gsidiag/__init__.py,sha256=XroUbzspZTBBEfkLJOcapBDBm9Hm2OX1V0jgBfmUMmU,842
+readDiag-2.0.dist-info/top_level.txt,sha256=IjCxIMVPTFXAcCA3ucwMOryNcayXTmiLrD0bwWMHgLU,20
+readDiag-2.0.dist-info/METADATA,sha256=tv4NcdlLxI4zMQ025u8YTCvSo2LEx0AlgttISSQ6Gpk,361
+readDiag-2.0.dist-info/RECORD,,
+readDiag-2.0.dist-info/WHEEL,sha256=QSK99oJHZ5OD0kXw0lOM2wKosPFP5cmehycCIX3llvk,148
+readDiag-2.0.dist-info/LICENSE.md,sha256=EZIN-954VWuSynmBoEBqs-Jeqxp6tXN53zOm6LJmLH0,217
+readDiag.libs/libquadmath-2d0c479f.so.0.0.0,sha256=nw_dV1mLMDFbFsMwYHIwErTgu6dsMaBajxJfe8TohIA,263992
+readDiag.libs/libgfortran-2e0d59d6.so.5.0.0,sha256=iF7pNyumQrHZq6sLPdW_7YahPLHEhykty75kPBU2IyQ,2223184
