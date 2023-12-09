@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "go_v_tanki"
+version = "0.0.7"
+authors = [
+  { name="Tsyhanok Ivan", email="tsyhanok.ivan.dmytrovych@gmail.com" },
+]
+description = "Go v tanki package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
