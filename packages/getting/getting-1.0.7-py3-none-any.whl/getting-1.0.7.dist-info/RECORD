@@ -1,0 +1,15 @@
+getting/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getting/audio.py,sha256=Pr0XE5gC_kvDB9OmofDpl6OIeq5dbJPIl-tHvltycUA,1575
+getting/auth.py,sha256=ipsbUpZZPBDiroQlrYKMoDFkTzOG39IzBRzagDmE-zY,1108
+getting/django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getting/django/config.py,sha256=xaFGJ-15cSCkJbqauzJ6tyS1KpzQoOcG1E5mR8UhjZg,153
+getting/file.py,sha256=Bi7Lf1n-WrJihSR1e95s8KitpULHDXZ4jO0sKrjnEU0,12390
+getting/gamecreator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getting/gamecreator/auth.py,sha256=SEa9FUp9g9MWIxAsBoC2lMWm2VL9RGFSqjDHGQpVCwE,729
+getting/gamecreator/plug_cover.py,sha256=ZfB5pgFmoeLBxpOmwkeaA3xAZkWoFTZvXi4smWg7FyM,4407
+getting/json.py,sha256=asxbe4eIR-ImLqhTRJ9UaNyINAqDxMVA4uDWX9Epe3I,1686
+getting/proxy.py,sha256=HP-ygtDHr2k7DBtdGhlmx8I4HLF2q68s7b6XnxaplF0,1181
+getting/response.py,sha256=_-hZtnZZ5-u6cbphSGozl--O3sEckdYL35rmBdcfjzg,2457
+getting-1.0.7.dist-info/METADATA,sha256=drJJOqnjNl1pzSu1vuP8rEXxEnb0eFul8W0q735vBF0,862
+getting-1.0.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+getting-1.0.7.dist-info/RECORD,,
