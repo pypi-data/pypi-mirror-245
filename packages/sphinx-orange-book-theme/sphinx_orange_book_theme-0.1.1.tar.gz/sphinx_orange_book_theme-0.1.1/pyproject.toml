@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "sphinx-orange-book-theme"
+version = "0.1.1"
+description = "An orange version of sphinx-book-theme."
+authors = ["Kenta Kabashima <kenta_program37@hotmail.co.jp>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://gitlab.com/MusicScience37Projects/utility-libraries/sphinx-orange-book-theme"
+documentation = "https://sphinx-orange-book-theme-musicscience37projects--1dc46f9ab80e60.gitlab.io/"
+repository = "https://gitlab.com/MusicScience37Projects/utility-libraries/sphinx-orange-book-theme.git"
+keywords = ["sphinx"]
+# Classifiers: https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: Sphinx :: Theme",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Software Development :: Documentation",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+sphinx-book-theme = "^1.0.1"
+pydata-sphinx-theme = "^0.14.4"
+sphinx = "^6.2.1"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.5.0"
+black = "^23.11.0"
+isort = "^5.12.0"
+
+[tool.poetry.group.doc.dependencies]
+toml = "^0.10.2"
+types-toml = "^0.10.8.7"
+sphinx-autobuild = "^2021.3.14"
+myst-parser = "^2.0.0"
+doc8 = "^1.1.1"
+
+[tool.poetry.group.test.dependencies]
+breathe = "^4.35.0"
+myst-nb = "^1.0.0"
+jupyter = "^1.0.0"
+plotly = "^5.18.0"
+pandas = "^2.1.4"
+sphinxext-opengraph = "^0.9.0"
+sphinxcontrib-plantuml = "^0.27"
+sphinxcontrib-bibtex = "^2.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry.plugins."sphinx.html_themes"]
+sphinx_orange_book_theme = "sphinx_orange_book_theme"
