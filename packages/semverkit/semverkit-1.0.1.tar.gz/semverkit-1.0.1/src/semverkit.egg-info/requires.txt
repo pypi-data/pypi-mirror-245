@@ -1,0 +1,5 @@
+click==8.1.7
+semver==3.0.2
+
+[dev]
+ruff
