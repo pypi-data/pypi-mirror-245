@@ -1,0 +1,17 @@
+labextension:
+  factory:
+    module: 'dask.distributed'
+    class: 'LocalCluster'
+    args: []
+    kwargs: {}
+  default:
+    workers: null
+    adapt:
+      minimum: 0
+      maximum: 50
+  initial:
+  - name: "Local Cluster"
+    workers: null
+    adapt:
+      minimum: 0
+      maximum: 50
