@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mkdocs-techdocs
+Version: 0.0.4
+Summary: A collection of MkDocs plugins designed to work with Spotify's TechDocs system
+Author-email: James Andrew Vaughn <jamesvaughn@modethirteen.com>
+License-File: LICENSE
+Requires-Dist: mkdocs
+Description-Content-Type: text/markdown
+
+# mkdocs-techdocs
+
+A collection of MkDocs plugins designed to work with Spotify's TechDocs system
