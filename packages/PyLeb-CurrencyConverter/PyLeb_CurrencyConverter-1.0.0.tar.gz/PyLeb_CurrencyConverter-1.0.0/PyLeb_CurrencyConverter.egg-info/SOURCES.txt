@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+CurrencyConverter/__init__.py
+CurrencyConverter/__main__.py
+PyLeb_CurrencyConverter.egg-info/PKG-INFO
+PyLeb_CurrencyConverter.egg-info/SOURCES.txt
+PyLeb_CurrencyConverter.egg-info/dependency_links.txt
+PyLeb_CurrencyConverter.egg-info/entry_points.txt
+PyLeb_CurrencyConverter.egg-info/requires.txt
+PyLeb_CurrencyConverter.egg-info/top_level.txt
