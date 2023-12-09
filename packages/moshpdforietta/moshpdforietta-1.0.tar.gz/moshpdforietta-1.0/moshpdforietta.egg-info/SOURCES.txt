@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+moshpdf/__init__.py
+moshpdf/pdf2image.py
+moshpdf/pdf2text.py
+moshpdforietta.egg-info/PKG-INFO
+moshpdforietta.egg-info/SOURCES.txt
+moshpdforietta.egg-info/dependency_links.txt
+moshpdforietta.egg-info/top_level.txt
