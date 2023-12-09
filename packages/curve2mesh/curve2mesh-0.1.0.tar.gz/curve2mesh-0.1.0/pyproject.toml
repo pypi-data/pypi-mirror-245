@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "curve2mesh"
+version = "0.1.0"
+description = "Python library to create 3D mesh from a 2D curve by revolving."
+authors = ["Chaitanya Kesanapalli <7126460+ckesanapalli@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.group.dev.dependencies]
+numpy = "*"
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
