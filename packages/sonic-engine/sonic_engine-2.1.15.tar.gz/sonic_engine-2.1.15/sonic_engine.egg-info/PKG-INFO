@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: sonic-engine
+Version: 2.1.15
+Summary: Sonic Engine is a python package for the AtlasSonic project
+Home-page: UNKNOWN
+Author: Soufiane Oualil, Ahmed Bargady
+License: UNKNOWN
+Description: # Sonic Engine: Stream Processing and Reporting Extensions Manager
+        
+        Sonic Engine is a robust extension manager tailored for stream processing and reporting in the realm of Network Traffic Analysis (NTA). Powered by Python, Sonic Engine excels at efficiently managing and coordinating a diverse range of extensions designed for various analytical tasks related to network traffic.
+        
+        ## Key Features
+        
+        - **Extension-Based Architecture:** Sonic Engine embraces a modular architecture, allowing users to extend its capabilities through extensions. Each extension is carefully crafted to address specific aspects of network traffic analysis.
+        
+        - **Efficient Extension Coordination:** The engine excels in orchestrating communication between extensions, ensuring a cohesive and efficient workflow. This seamless coordination enhances the overall performance of the analysis.
+        
+        - **Python-Powered:** Implemented as a Python package, Sonic Engine leverages the flexibility and power of Python programming, making it accessible and extensible for users with diverse skill sets.
+        
+        ## Use Cases
+        
+        Sonic Engine finds its application in a variety of scenarios related to Network Traffic Analysis:
+        
+        - **Real-time Stream Processing:** Process incoming network data in real-time, enabling rapid analysis and insights.
+        
+        - **Custom Reporting:** Generate customized reports based on the analyzed network traffic, facilitating comprehensive insights and trend analysis.
+        
+        - **Task-Specific Analysis:** Tailor the engine's capabilities by selecting and configuring extensions designed for specific analysis tasks, ensuring a focused and efficient analysis.
+        
+        ## Templates
+        
+        | Template        | Description                                                                                                                                                                                                                                                                                                                                                                                   | Link                                                                             |
+        | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+        | **Hello World** | This template includes a config.yaml file, acting as the orchestrator for Hello World extensions within the Sonic Engine ecosystem. Developers can customize the configuration to specify how the extensions interact and contribute to the overall functionality. The config.yaml file serves as a central hub for managing the collaboration and coordination between different extensions. | [GitHub](https://github.com/AhmedCoolProjects/sonic-engine-template-hello-world) |
+        
+        ### How to use the template
+        
+        Clone the template repository:
+        
+        ```bash
+        git clone https://github.com/AhmedCoolProjects/sonic-engine-template-hello-world.git
+        ```
+        
+        Install Sonic Engine package:
+        
+        ```bash
+        pip install sonic-engine
+        ```
+        
+        Run the template:
+        
+        ```bash
+        python app.py
+        ```
+        
+        You can check the logs in real-time on the terminal or in the `logs` folder in the **reporting extension**
+        
+        ## Extensions
+        
+        | Extension                           | Description                                                                                                                                                                                                                                                                                                                                                              | Link                                                                              |
+        | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+        | **Hello World Feature Extension**   | A tiny extension that uses scapy package to extract packets infos from a pcap file. For now, it's only intended to extract the src_ip and dst_ip from each packet and publish them as a dictionary object to the dedicated redis channel.                                                                                                                                | [GitHub](https://github.com/AhmedCoolProjects/sonic-engine-hello-world-feature)   |
+        | **Hello World Inference Extension** | A tiny extension that uses VirusTotal API to request a complete analysis and predictions for src_ip addresses extracted by Hello World Feature Extension. After each response, the extension publish an object includes an id, timestamp, the data, result and the requested url into another redis channel to provide this object for other extensions that may use it. | [GitHub](https://github.com/AhmedCoolProjects/sonic-engine-hello-world-inference) |
+        | **Hello World Reporting Extension** | A tiny extension that subscribe a redis channel and log the data in a specific loggin format. The extension write the logs in a log text file logs/log.txt.                                                                                                                                                                                                              | [GitHub](https://github.com/AhmedCoolProjects/sonic-engine-hello-world-reporting) |
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
