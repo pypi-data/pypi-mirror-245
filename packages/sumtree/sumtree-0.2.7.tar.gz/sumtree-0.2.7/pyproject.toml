@@ -1,0 +1,39 @@
+[build-system]
+requires = ["maturin>=1.0"]
+build-backend = "maturin"
+
+[project]
+name = "sumtree"
+description = "Fast and simple SumTree implementation in Rust"
+readme = "readme_pypi.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[tool.maturin]
+profile = "release"
+python-source = "python"
+
+[tool.poetry]
+name = "sumtree"
+version = "0.2.3"
+description = "Fast and simple SumTree implementation in Rust"
+authors = ["Yannick Molinghen <yannick.molinghen@ulb.be>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+toml = "^0.10.2"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["python"]
+
+[tool.ruff]
+line-length = 140
