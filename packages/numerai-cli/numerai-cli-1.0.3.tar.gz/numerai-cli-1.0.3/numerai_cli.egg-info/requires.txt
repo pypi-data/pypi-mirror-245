@@ -1,0 +1,16 @@
+click>=7
+boto3
+botocore
+numerapi>=2.4.5
+colorama
+requests
+azure-identity
+azure-mgmt-subscription
+azure-mgmt-containerregistry
+azure-containerregistry
+azure-data-tables
+azure-mgmt-storage
+google-cloud-storage
+google-cloud-run
+google-cloud-artifact-registry
+google-cloud-logging
