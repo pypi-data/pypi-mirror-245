@@ -1,0 +1,5 @@
+pyobjc-core>=10.1
+pyobjc-framework-Cocoa>=10.1
+pyobjc-framework-CoreLocation>=10.1
+pyobjc-framework-CoreData>=10.1
+pyobjc-framework-Accounts>=10.1
