@@ -1,0 +1,11 @@
+c4m/__init__.py,sha256=jv2YF__bseklT3OWEzlqJ5qE24c4aWd5F4r0TTjOrWQ,65
+c4m/flexio/__init__.py,sha256=Fiis05K6GjHKm1_YXEGxN9zySyE-iQRewzT7gYUSuiI,156
+c4m/flexio/_helpers.py,sha256=q5IrJM4riM_hwb8FbOongaZgN8jaRAdWVJhjKZVHrEQ,18840
+c4m/flexio/cell.py,sha256=ZC4u21KDOXacvSI7E1KxQdYYw7yZnFH7o5aY-AR1xnE,95098
+c4m/flexio/factory.py,sha256=7HgWe3kG3W2n6ROo4mTbm7yjwGsRcjNgvwS1Xwsl-0A,242280
+c4m/flexio/specification.py,sha256=IfBDrajEr9Sl3J9SmEe-5I3iOBuuyYu_zgudBtysvl0,37102
+c4m_flexio-0.4.1.dist-info/LICENSE.md,sha256=rAkXVpUrLnqECjOIIbEutVawE_Yp6z0dMNdSCnuX_uM,336
+c4m_flexio-0.4.1.dist-info/METADATA,sha256=6lhc3UGCwCr-84xp4Ch3n-R5iGcQRWBXGJVGSObngxI,2352
+c4m_flexio-0.4.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+c4m_flexio-0.4.1.dist-info/top_level.txt,sha256=rwsscmrPhblhsY8BXBBAgsXrnjsrBphkOHEG6SBIvLE,4
+c4m_flexio-0.4.1.dist-info/RECORD,,
