@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: vit4.py
+Version: 0.1
+Summary: Creating own pip package for matlab
+Home-page: https://github.com/javatechy/dokr
+Author: AdithiyaaD
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
