@@ -1,0 +1,4 @@
+appdirs>=1.4.4
+
+[dev]
+nox

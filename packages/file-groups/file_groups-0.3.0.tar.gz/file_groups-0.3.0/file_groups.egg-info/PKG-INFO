@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: file-groups
+Version: 0.3.0
+Summary: Group files into 'protect' and 'work_on' and provide operations for safe delete/move and symlink handling.
+Home-page: https://github.com/lhupfeldt/file_groups.git
+Author: Lars Hupfeldt Nielsen
+Author-email: lhn@hupfeldtit.dk
+License: BSD
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: appdirs>=1.4.4
+Provides-Extra: dev
+Requires-Dist: nox; extra == "dev"
+
+Library for grouping files into sets of 'work-on' and 'protect' based on arbitrarily nested directories.
+
+Symlink safe delete and rename/move of files.
+This library can be used for bulk fs cleanup programs.
+
+You probably want to use the `FileHandler` or `FileHandlerCompare` class which provides the file operations.
+The `FileGroups` class is quite lowlevel, and just does the split of file into `must_protect` and `may_work_on` sets.
+
+Any use of these scripts are completely your own responsibility.
+The author cannot be made responsible for any loss of data resulting from your use of these scripts.
