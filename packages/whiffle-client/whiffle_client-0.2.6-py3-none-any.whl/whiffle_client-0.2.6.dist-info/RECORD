@@ -1,0 +1,13 @@
+whiffle_client/__init__.py,sha256=rnOMwSb8sTYjPWqtFUI9rRARY3MvAgq1Vef4aLuCyN4,120
+whiffle_client/client.py,sha256=urAdyKP9cjBiSL8sj0n5Efh3KhchhnLGZ2OLyuwf5t4,7808
+whiffle_client/entrypoints.py,sha256=c4ozZGyIISKei9cL66qxvl4ygLFhAEVfoJxWAETfInw,3088
+whiffle_client/resources/example_generic_params.json,sha256=sL1TE7rGqRRSU6OOBHik92c6p7buZgiRAuVwFEBbj7o,2624
+whiffle_client/resources/example_yaml_include.yaml,sha256=FJy9kUy0N8ka3Z14RfAhABoQiwo3w8Fc6_IkwrAPkXE,1015
+whiffle_client/resources/example_yaml_include_metmasts.yaml,sha256=A2cUKbag3koVC_Qf8OFKxkDkIHmfysTGa0cRpzFy9Eg,154
+whiffle_client/resources/whiffle_config.yaml,sha256=PGauZW-ue1ppmNCf0TVmrO1YE7GMuRuAoi0w4j2AYKA,60
+whiffle_client-0.2.6.dist-info/LICENCE.txt,sha256=W_oMz0KuvW1HGFXmlbypjpfBZjDs0Uu7S-7axSMWHtU,1069
+whiffle_client-0.2.6.dist-info/METADATA,sha256=sAmeU6iqSoTaf3-S2HCuZk0LLcTMJxkDi6qmDAm2PBE,2294
+whiffle_client-0.2.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+whiffle_client-0.2.6.dist-info/entry_points.txt,sha256=83T0_1bqwsqbCMIqaGMJ16r0bW5JJJymOMUlEVwk4OM,63
+whiffle_client-0.2.6.dist-info/top_level.txt,sha256=_mJrxhG3E27kmSjd0oNOrXR5Z8xUPmJQWorDVhouV_c,15
+whiffle_client-0.2.6.dist-info/RECORD,,
