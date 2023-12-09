@@ -1,0 +1,15 @@
+atyp
+nchr
+nlit
+chck
+ensc
+pstr
+ston
+pandas
+importlib_resources
+
+[dev]
+numpy>=1.22
+torch
+anndata
+scipy
