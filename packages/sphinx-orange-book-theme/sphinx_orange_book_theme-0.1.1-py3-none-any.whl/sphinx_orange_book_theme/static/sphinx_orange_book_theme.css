@@ -1,0 +1,88 @@
+/* ****************************************************************************
+ * Customization of sphinx-book-theme.
+ * Reference: https://pydata-sphinx-theme.readthedocs.io/en/latest/user_guide/styling.html
+ *************************************************************************** */
+
+@import url("styles/sphinx-book-theme.css");
+
+/* ****************************************************************************
+ * Colors
+ *************************************************************************** */
+html[data-theme="light"] {
+  /* teal in the original theme */
+  --pst-color-primary: #ef680e;
+  --pst-color-primary-bg: #ffd3a7;
+  --pst-color-inline-code-links: var(--pst-color-primary);
+  /* violet in the original theme */
+  --pst-color-secondary: #8f7e00;
+  --pst-color-secondary-bg: #fdf28b;
+  /* pink in the original theme */
+  --pst-color-accent: #008004;
+  --pst-color-accent-bg: #aff1b2;
+  --pst-color-inline-code: var(--pst-color-accent);
+  /* gray in the original theme */
+  --pst-color-background: white;
+  --pst-color-on-background: white;
+  --pst-color-surface: #fff8f2;
+  --pst-color-on-surface: #2e1708;
+  --pst-color-text-base: var(--pst-color-on-surface);
+  --pst-color-text-muted: #685f5a;
+  --pst-color-border: #cec8c4;
+  --pst-color-border-muted: #e9e4e1;
+  /* warning */
+  --pst-color-warning: var(--pst-color-primary);
+  --pst-color-warning-bg: var(--pst-color-primary-bg);
+  /* info, success */
+  --pst-color-info: var(--pst-color-accent);
+  --pst-color-info-bg: var(--pst-color-accent-bg);
+  --pst-color-success: var(--pst-color-accent);
+  --pst-color-success-bg: var(--pst-color-accent-bg);
+}
+
+html[data-theme="dark"] {
+  /* teal in the original theme */
+  --pst-color-primary: #f07b2d;
+  --pst-color-primary-bg: #4e2701;
+  --pst-color-inline-code-links: var(--pst-color-primary);
+  /* violet in the original theme */
+  --pst-color-secondary: #ac990d;
+  --pst-color-secondary-bg: #534a00;
+  /* pink in the original theme */
+  --pst-color-accent: #08b90e;
+  --pst-color-accent-bg: #003a02;
+  --pst-color-inline-code: var(--pst-color-accent);
+  /* gray in the original theme */
+  --pst-color-background: black;
+  --pst-color-on-background: #221a15;
+  --pst-color-surface: #362d25;
+  --pst-color-on-surface: #f1efec;
+  --pst-color-text-base: var(--pst-color-on-surface);
+  --pst-color-text-muted: #afaba8;
+  --pst-color-border: #615a55;
+  --pst-color-border-muted: #443d38;
+  /* warning */
+  --pst-color-warning: var(--pst-color-primary);
+  --pst-color-warning-bg: var(--pst-color-primary-bg);
+  /* info, success */
+  --pst-color-info: var(--pst-color-accent);
+  --pst-color-info-bg: var(--pst-color-accent-bg);
+  --pst-color-success: var(--pst-color-accent);
+  --pst-color-success-bg: var(--pst-color-accent-bg);
+}
+
+/* ****************************************************************************
+   * Font sizes
+   *************************************************************************** */
+html {
+  --pst-font-size-h1: 2.5rem;
+  --pst-font-size-h2: 2.3rem;
+  --pst-font-size-h3: 1.7rem;
+  --pst-font-size-h4: 1.4rem;
+  --pst-font-size-h5: 1.2rem;
+  --pst-font-size-h6: 1.1rem;
+}
+/* Difference of h1 and h2 in font sizes is small, so add a border line. */
+article section h1 {
+  border-bottom: thin solid var(--pst-color-border);
+  padding-bottom: 0.7rem;
+}
