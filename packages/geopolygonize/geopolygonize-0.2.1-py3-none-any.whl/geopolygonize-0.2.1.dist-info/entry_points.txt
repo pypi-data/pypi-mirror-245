@@ -1,0 +1,2 @@
+[console_scripts]
+geopolygonize = src.geopolygonize:cli
