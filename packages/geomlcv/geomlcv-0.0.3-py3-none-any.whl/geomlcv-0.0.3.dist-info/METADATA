@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: geomlcv
+Version: 0.0.3
+Summary: CV workflow helpers.
+Home-page: https://github.com/pgzmnk/geomlcv
+License: MIT
+Author: pgzmnk
+Author-email: pgzmnk@gmail.com
+Maintainer: pgzmnk
+Maintainer-email: pgzmnk@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3 (>=1.33.10,<2.0.0)
+Requires-Dist: duckdb (>=0.8.1)
+Requires-Dist: googlemaps (>=4.10.0,<5.0.0)
+Requires-Dist: opencv-python (>=4.8.1.78,<5.0.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: roboflow (>=1.1.12,<2.0.0)
+Requires-Dist: scikit-image (==0.19.3)
+Requires-Dist: scikit-learn (>=1.3.2,<2.0.0)
+Project-URL: Repository, https://github.com/pgzmnk/geomlcv
+Description-Content-Type: text/markdown
+
+# GeoML - Computer Vision library for Satellite Images
+
+GeoML runs image processing and machine vision algorithms specifically designed for satellite images. It aims to make your life easier with powerful tools and utilities.
+
+
+## Present functionality
+
+- Download data from Google Map Tiles API and load into S3
+- Generate datasets of preprocessed images with PCA+HOG, SV+HOG, etc.
+
+## Development Setup
+
+To get started with contributing or using the Geoml library, follow these steps to set up your development environment:
+
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/pgzmnk/geoml.git
+cd geoml
+```
+
+Install project dependencies in virtual environment using Poetry:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+poetry install
+```
+
+## Getting Started
+
+Once the development environment is set, you can start using the Geoml library in your projects. The library provides various machine vision algorithms tailored for satellite image analysis. Before diving into the specifics, make sure you have a basic understanding of satellite images and their properties.
+
+Environment variables:
+```
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
+export GOOGLE_API_KEY=
+export ROBOFLOW_API_KEY=
+```
+
+To use GeoML in your Python script, import it as follows:
+
+```python
+import geoml
+```
+
+Now you can access the various functions and classes provided by the library to analyze satellite images. For example, to apply a machine learning classifier on an image, you can use the following code snippet:
+
+```
+wip...
+```
+
+## Contributing
+
+If you find a bug, have a feature request, or want to contribute code, please open an issue or PR.
+
+## Publish
+
+```
+poetry config pypi-token.pypi pypi-token-...
+poetry build
+poetry publish
+```
+
+
+## License
+
+The GeoML library is distributed under the MIT License.
+
