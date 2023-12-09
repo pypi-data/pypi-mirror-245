@@ -1,0 +1,9 @@
+geomlcv/__init__.py,sha256=qI6QvPJG8qAppj3fYfKZJP5SrmdyD0-piNOOhajoPjM,705
+geomlcv/utils/download_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geomlcv/utils/download_data/aws.py,sha256=-YSq23NckgmqJQXMZPMKZs97ci3EKkD7myfHX8kv4uU,779
+geomlcv/utils/download_data/utils.py,sha256=C_cHL863agtZwD5kfRt9Be5sEFTaN1L5dtMNUbYjZUY,4805
+geomlcv/utils/process_images/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geomlcv/utils/process_images/utils.py,sha256=fn0Nt0NBw-thQvI-XJaDSNx8-Z0BJ0NvbEL3_fO61o4,2933
+geomlcv-0.0.1.dist-info/METADATA,sha256=FcYCDOs-_kZw4jbQJdO0_-zq15Y-t5qw0UKjUW-u_Ik,2701
+geomlcv-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+geomlcv-0.0.1.dist-info/RECORD,,
