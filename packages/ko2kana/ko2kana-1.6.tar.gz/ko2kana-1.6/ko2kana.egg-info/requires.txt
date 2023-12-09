@@ -1,0 +1,2 @@
+jamo
+g2p_en
