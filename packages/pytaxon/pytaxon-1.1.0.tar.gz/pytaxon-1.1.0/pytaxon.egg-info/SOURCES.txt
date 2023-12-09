@@ -1,0 +1,16 @@
+README.md
+setup.py
+pytaxon/__init__.py
+pytaxon/pytaxon.py
+pytaxon/pytaxonGBIF.py
+pytaxon/pytaxonOpenTree.py
+pytaxon.egg-info/PKG-INFO
+pytaxon.egg-info/SOURCES.txt
+pytaxon.egg-info/dependency_links.txt
+pytaxon.egg-info/entry_points.txt
+pytaxon.egg-info/requires.txt
+pytaxon.egg-info/top_level.txt
+test/test.py
+test/test1.py
+test/test_LINEAGE.py
+test/testa.py
