@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: files3
+Version: 0.4.17
+Summary: (pickle+lz4 based) save Python objects in binary to the file system and manage them.
+Author-email: 2229066748@qq.com
+Maintainer: Eagle'sBaby
+Maintainer-email: 2229066748@qq.com
+License: Apache Licence 2.0
+Keywords: pickle,lz4,file system,file management
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3
+Requires-Dist: lz4
+
