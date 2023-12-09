@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: gitlab-manager
+Version: 0.12
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: python-gitlab
