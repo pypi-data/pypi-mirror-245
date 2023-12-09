@@ -1,0 +1,15 @@
+disdial/__chat.py,sha256=IrSzP4cHekKNmrACv42uAH6hXklzQjl1m2VSCjpzynk,1893
+disdial/__constants.py,sha256=onlX4hzwdGilurnp7ROJM1jbybu06yzOHnz_Rh8sqbk,238
+disdial/__dependencies.py,sha256=pTskM-fEgx7vkScGzTiK8F_VsfNmSehJedCI6nkvsaE,239
+disdial/__init__.py,sha256=MigXIT7A1M9YZuH2MyjKReSziFwzbZX2boVYsLosR6s,22
+disdial/__user_name.py,sha256=mEri0E1YiygMBa6PIn90sCfTQcJYw56Y0IqVRrM1dfE,890
+disdial/__utils.py,sha256=PKffBcFId6MARoRx-eihj9Owqi2s3C4xrIy-4aXXOk8,1835
+disdial/main.py,sha256=vuT5MsjIYZHLuJSadrqUEPFoa75aLbJyXFRC7yf_e3Y,1593
+disdial/data/config.json,sha256=Gw-f-1wxVwXeywGHcVqwIQ1VtDyc7VF_isPXl4h8oAQ,90
+disdial/data/logs.txt,sha256=VDM_4L3edLo_mBStJ0PtWKHtM-FtRsIGWQgjQEr_DQg,90
+disdial-1.1.3.dist-info/LICENSE,sha256=riUDAF7VyMgpdp83_De85Wtz5yv4HCu4NBcEf2qhf-w,1082
+disdial-1.1.3.dist-info/METADATA,sha256=Iwtx-iO_4BZPzQ3JuOjdaHI3wnnJA3tJgMQ2fsqsBFg,622
+disdial-1.1.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+disdial-1.1.3.dist-info/entry_points.txt,sha256=zQViD-_olLdMaSL1zGbtqWFRsQqycD2lcPJytZYoH-o,46
+disdial-1.1.3.dist-info/top_level.txt,sha256=sFsbTTB8v1P2L7LTrgHIyLr_6JCwbfZ2mLEa_Q4QK_Q,8
+disdial-1.1.3.dist-info/RECORD,,
