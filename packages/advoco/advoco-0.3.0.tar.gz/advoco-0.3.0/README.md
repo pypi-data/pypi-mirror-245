@@ -1,0 +1,94 @@
+# Advoco
+Advent of Code helper library - why not??
+Dear future contributor traipsing through history,
+this was when this was a private repo that me and a buddy were collaborating on.
+If this README does not look more polished in the current version, hunt me down
+and slap me.
+
+## Install
+```bash
+poetry install
+```
+I'm still working actively so do this often.
+
+## tl;dr
+Do this once a year:
+```bash
+advoco generate-year
+```
+Then grab your session cookie from AoC using browser tools and add it to the
+environment as `AOC_TOKEN`. Put it in your `.bashrc` and never think about it
+again (until next year). The session lasts like a month so you shouldn't have to
+do this that often.
+
+Then, every day, _from the directory created with the generate-year command_:
+```bash
+advoco generate -d <day you want to generate>
+```
+or if it's after midnight, AoC time (Eastern):
+```bash
+advoco generate
+```
+In the generated script file, you'll find a function for part1 and part2 of the
+daily AoC puzzle. You'll also find a `transform` function. This function will act
+on each _line_ of the input. For instance, input always comes in as a string, so
+if you want your puzzle input to be a list of ints, do this:
+```python
+def transform(line):
+    return int(line)
+```
+The last thing you'll find in the script is the call to `advoco.do()`. It starts
+out with `sample=True` and will therefore attempt to parse the sample input Eric
+uses on the webpage of the daily puzzle. It'll throw an error and give you advice
+if it can't find sample input. When you're ready to try your solutions on your
+real input, remove the sample argument.
+
+## Explanations
+Some context...
+
+### WTF is `do` doing?
+When you call `do()`, advoco inspects the call stack for the file that called it.
+It looks through that file (as a module, using `getattr`) for a few things:
+* A `transform` func. If it doesn't find one, the default one is basically
+`lambda x: return x`
+* Some part functions, i.e. `part1`, `part2`
+
+It gets the raw input for the puzzle you're working on (more on that below), runs
+that through whatever transform it's using, then passes it as the arg to the `part`
+functions it found in your script file.
+
+Finally, it gets the result of your `part` function and prints it. It does not yet
+attempt to submit the answer for you, and it may not do that ever (not sure yet).
+
+### WHAT *YEAR* (AND DAY) IS IT???
+Advoco needs to figure out which puzzle input to go get, both the puzzle year and
+the puzzle day. To determine this - really in all instances where advoco needs to
+figure out a year and/or day - the following order is honored:
+1. Anything explicitly passed. If you pass a `day` or `year` arg to `do`, that is
+what advoco is going to work with. End of discussion. Explicit declaration trumps
+all.
+2. The calling context. Where is `do` being called from? Where is a cli command
+being invoked? If `do` is being called from a python file, and that file name contains
+digits, those digits are assumed to represent the day you want to work on. Further,
+if that python file lives in a directory whose name contains the regex `r"20\d{2}"`,
+then that regex match is assumed to be the year. For cli invocations, the folder
+== year convention holds, but the day is never inferred from calling context.
+3. The current day and year, in the AoC timezone (America/New_York).
+
+### Notes
+This still assumes that we're gonna be working with a list of lines as our input.
+I haven't yet figured out the best way to handle the case where you want the whole
+damn input string as one blob. Good ideas are welcome here.
+
+Any input fetched from the AoC site is cached in `~/.cache/advoco` to not pester
+the site. The inputs, as far as I can tell, have never and will never change, so
+there's no cache expiry mechanism.
+
+The `generate-year` command creates a top level folder called `_localonly_2022`.
+This is just so you can AoC from within the advoco repo without git stressing out.
+When it's ready for prime time, I'll change it to make a `2022` directory.
+
+## Contributing
+Bug reports are awesome but if you see something and you know how to fix it, by
+all means! Just make a new branch and open a PR. Hell, just push directly to main
+if you're super confident.
