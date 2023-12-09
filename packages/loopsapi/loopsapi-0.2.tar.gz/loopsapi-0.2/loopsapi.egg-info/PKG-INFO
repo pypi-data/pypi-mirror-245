@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: loopsapi
+Version: 0.2
+Summary: Python wrapper for the Loops.so API
+Home-page: https://github.com/abrihter/loopsapi
+Download-URL: https://github.com/abrihter/loopsapi/archive/refs/tags/v0.2.tar.gz
+Author: abrihter
+Author-email: 
+License: MIT
+Keywords: LOOPS,LOOPS.SO,API,WRAPPER
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# loopsapi
+Python wrapper for Loops.so API
+
+#### Install
+```
+pip3 install loopsapi
+```
+
+### Example
+```Python
+import os
+import loopsapi
+
+API_KEY = os.environ['LOOPS_API_KEY']
+
+api = loopsapi.Loops(api_key=API_KEY)
+test = api.apikey.test()
+print(print)
+```
+
+## Classes and methods
+```
+Loops.apikey.test - Test if API KEY is valid
+
+Loops.custom_fields.list - List custom fields
+
+Loops.transactional_emails.send - Send transactional email
+
+Loops.events.send - Send event
+
+Loops.contacts.find - Find contact
+Loops.contacts.create - Create contact
+Loops.contacts.update - Update contact
+Loops.contacts.delete - Delete contact
+```
