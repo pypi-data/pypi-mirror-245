@@ -1,0 +1,12 @@
+dialogflow_log_parser/__init__.py,sha256=pQTvUaEADHAFeBsGz3kUxJKtjVUf70Ky5QA3IjVMi3Y,17
+dialogflow_log_parser/es/__init__.py,sha256=kMHIwm-VbfS4x3v7CAvTivraVyCD86UaMFqdY3yyUi8,527
+dialogflow_log_parser/es/parser.py,sha256=VM1wOqh62p48BZ34NSSDgiYQdFtKJ1PsFpcyTZxWQ80,1173
+dialogflow_log_parser/es/logic/__init__.py,sha256=E5eiUkBqPsGiLMBS3Gn9UXDePX2pQxDUG2mHST0OhQo,213
+dialogflow_log_parser/es/logic/conf_logic.py,sha256=_YxJjPpVQ9rrZ46feuNaAWyjC2tbDUITOq4ohvszBnk,11665
+dialogflow_log_parser/es/logic/dict_logic.py,sha256=dsiEXQip-0Chk0xbdVyfRJm_F1LYRLDtkQn4KjJe9P0,2274
+dialogflow_log_parser/es/logic/hocon_logic.py,sha256=kew2sZ3AvUEQi1dKiBQxSpOW5OguM5hYK5SccHzxrJg,6310
+dialogflow_log_parser-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dialogflow_log_parser-0.0.4.dist-info/METADATA,sha256=Py-La1x2nAzObsLQAS_MF8xUnpyRdK1agNi5rlLBS1Y,3277
+dialogflow_log_parser-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dialogflow_log_parser-0.0.4.dist-info/top_level.txt,sha256=S56rp6v8LKCrKjrpBtxBm_Hx_qzc6mSA4Xg3_L-aEew,22
+dialogflow_log_parser-0.0.4.dist-info/RECORD,,
