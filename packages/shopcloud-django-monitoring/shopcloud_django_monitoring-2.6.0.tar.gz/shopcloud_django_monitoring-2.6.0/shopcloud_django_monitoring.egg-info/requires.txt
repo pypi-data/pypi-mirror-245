@@ -1,0 +1,7 @@
+Django<5.0,>=3.2
+shopcloud-streams
+shopcloud-django-toolbox
+shopcloud-django-instrumenting
+djangorestframework
+django-filter
+markdown
