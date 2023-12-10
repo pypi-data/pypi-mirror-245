@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+crispr_array_generator/__init__.py
+crispr_array_generator/constants.py
+crispr_array_generator/crisprarraygenerator.py
+crispr_array_generator.egg-info/PKG-INFO
+crispr_array_generator.egg-info/SOURCES.txt
+crispr_array_generator.egg-info/dependency_links.txt
+crispr_array_generator.egg-info/top_level.txt
