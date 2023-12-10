@@ -1,0 +1,9 @@
+detectaicore/__init__.py,sha256=_nlw8FAIVyiRUGlOqRn1Gs08dwdgBRdTc9Y0J5wDde4,96
+detectaicore/classes/__init__.py,sha256=E18Pl9T_d0W_t1XX58C2tYVbwt6lDNxHm0b7FooV5Nk,54
+detectaicore/classes/datadetectclasses.py,sha256=ZeKMQxdB5rFMBgKOmKE7c5VuOonIKNgrs4LkvqWXkwc,5846
+detectaicore/src/__init__.py,sha256=QVO7sGjtUJLCG0yqtPdtRKR1OMr9EjzhJk5gJZCCtWY,42
+detectaicore/src/constants.py,sha256=NZomYJSxmM95HvPSFTJXhGEmqOCCmo6bXCpD0-XcOwQ,1727
+detectaicore-0.0.17.dist-info/METADATA,sha256=2jHqj2eAhes47hOBPZF7laK820oDPD9gQbMu4Qw26JI,362
+detectaicore-0.0.17.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+detectaicore-0.0.17.dist-info/top_level.txt,sha256=bWXhfAUlO9rJazPL6ebL0kLTYgeX4IqECgK_NET984A,13
+detectaicore-0.0.17.dist-info/RECORD,,
