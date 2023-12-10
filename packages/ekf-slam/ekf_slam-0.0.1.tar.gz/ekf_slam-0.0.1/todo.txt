@@ -1,0 +1,9 @@
+16362 todo
+- simulation changes
+    - add a couple more environments
+- write docs for running dev simulation
+- write docs / homepage for entire package
+    - ** README
+        - example usage snippet
+        - copy docstrings
+- flit publish!
