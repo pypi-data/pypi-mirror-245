@@ -1,0 +1,10 @@
+libwebview/__init__.py,sha256=TAcbs0LRNk7_VLEtE1DWnOxZseaFqIZy39f_EakIZh4,2462
+libwebview/wrapper.py,sha256=XkzPVy-pUG1qbAwjy6L-HAXJIi4Yg_5VPZ-Z3OLUE9Q,2833
+libwebview/lib/x86_64/WebViewEdge.dll,sha256=h0JoNOKDiMKCYggBQzz2Z6_O2Kqe-euaQR3xwjijMbw,369152
+libwebview/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libwebview/tests/test_app.py,sha256=JR-9TnDy1gOLyiDLWoNX3XjqSCLYFXOjBmf4vzWxWwA,292
+libwebview-1.0.0.dist-info/LICENSE,sha256=nS01SeCNt240lZbP4POw_O0mnseiRx81mxirv_zXUy8,1095
+libwebview-1.0.0.dist-info/METADATA,sha256=2H0MMsz0VJjG-lTeIRvQyNLFLqYbpiw1u5sQyUUPExY,1645
+libwebview-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+libwebview-1.0.0.dist-info/top_level.txt,sha256=0EHLcti-ENJ8nWOX0JH2h8uz30isV7RX0ai1cHP0s4k,11
+libwebview-1.0.0.dist-info/RECORD,,
