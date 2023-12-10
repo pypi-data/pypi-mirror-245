@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+neura_dual_quaternions/DualQuaternion.py
+neura_dual_quaternions/Quaternion.py
+neura_dual_quaternions/__init__.py
+neura_dual_quaternions.egg-info/PKG-INFO
+neura_dual_quaternions.egg-info/SOURCES.txt
+neura_dual_quaternions.egg-info/dependency_links.txt
+neura_dual_quaternions.egg-info/requires.txt
+neura_dual_quaternions.egg-info/top_level.txt

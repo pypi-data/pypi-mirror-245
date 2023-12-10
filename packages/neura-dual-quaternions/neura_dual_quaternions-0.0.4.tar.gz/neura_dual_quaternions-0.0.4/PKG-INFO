@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: neura_dual_quaternions
+Version: 0.0.4
+Summary: A simple package for Dualquaternion and Quaternion maths
+Author: Jens Temminghoff
+Author-email: jens.temminghoff@neura-robotics.com
+Keywords: quaternion,dualquaternion,robotics,geometric algebra,kinematics
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: numpy
