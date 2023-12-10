@@ -1,0 +1,16 @@
+numpy
+contextlib
+cupy
+matplotlib
+urllib
+requests
+logging
+onnx
+onnxruntime
+PIL
+librosa
+collections
+tqdm
+gzip
+pickle
+tqdm
