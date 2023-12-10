@@ -1,0 +1,7 @@
+ml_mnist_cnn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml_mnist_cnn/text_reader.py,sha256=3jbHIGEaa5eChW8XBNh2_37i9S4tzJn-wsVcx6pJE2c,206
+ml_mnist_cnn/data/my_code.py,sha256=jwvfKiemqS8NvpTNAzyLrwrpunSbqpfSmchT8OeEnpQ,2651
+ml_mnist_cnn-0.1.dist-info/METADATA,sha256=Beq75fWXSwPY9tRhCjVCDk0gqPnXlw4qgZi9lncizZQ,259
+ml_mnist_cnn-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ml_mnist_cnn-0.1.dist-info/top_level.txt,sha256=Ig-DNwNPLNfUSQFvuFIC4_eZXO-gObo0h6ro22rzdAE,13
+ml_mnist_cnn-0.1.dist-info/RECORD,,
