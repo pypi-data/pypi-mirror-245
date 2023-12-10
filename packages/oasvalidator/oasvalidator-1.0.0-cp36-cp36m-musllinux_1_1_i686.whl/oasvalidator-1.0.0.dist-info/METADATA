@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: oasvalidator
+Version: 1.0.0
+Summary: A FAST Python module to validate the HTTP requests against the OpenAPI specifications of the REST server.
+Home-page: https://github.com/nawaz1991/py-oasvalidator
+Author: Muhammad Nawaz
+Author-email: m.nawaz2003@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/nawaz1991/py-oasvalidator/issues
+Project-URL: Documentation, https://nawaz1991.github.io/py-oasvalidator
+Project-URL: Source Code, https://github.com/nawaz1991/py-oasvalidator
+Keywords: openapi rest http validation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: C++
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Requires-Python: >=3.6
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+
+Test
+
