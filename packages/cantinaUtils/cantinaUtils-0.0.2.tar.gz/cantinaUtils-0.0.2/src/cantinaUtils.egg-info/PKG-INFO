@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cantinaUtils
+Version: 0.0.2
+Summary: The Utils package for Cantina
+Author-email: Matyu9 <mathieu.degueurce@icloud.com>
+Project-URL: Homepage, https://github.com/Cantina-Org/CantinaUtils
+Project-URL: Issues, https://github.com/Cantina-Org/CantinaUtils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+The Utils package for Cantina
