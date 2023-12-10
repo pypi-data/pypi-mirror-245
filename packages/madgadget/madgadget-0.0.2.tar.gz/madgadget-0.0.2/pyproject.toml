@@ -1,0 +1,33 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "madgadget"
+authors = [{name = "Jacopo antipatico Scannella", email = "code@bootkit.dev"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+dynamic = ["version", "description"]
+dependencies = [
+    "lief ~= 0.13.2",
+    "requests ~= 2.31.0",
+    "semver ~= 3.0.2",
+    "pure-python-adb ~= 0.3.0.dev0"
+]
+classifiers=[
+        'Development Status :: 4 - Beta',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.11',
+]
+
+[project.urls]
+Github = "https://github.com/antipatico/madgadget"
+Home = "https://github.com/antipatico/madgadget"
+Issues = "https://github.com/antipatico/madgadget/issues"
+
+[project.scripts]
+madgadget = "madgadget.commands.main:main"
