@@ -1,0 +1,37 @@
+[project]
+name = "pixelgreat-gui"
+version = "1.0.5"
+dynamic = ["readme"]
+description = "A GUI for Pixelgreat: A highly realistic RGB pixel filter"
+license= {file = "LICENSE"}
+authors = [
+    {name = "Ella Jameson", email = "ellagjameson@gmail.com"}
+]
+classifiers = [
+    "Topic :: Artistic Software",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion"
+]
+dependencies = [
+    "Pillow>10.0",
+    "pixelgreat",
+    "PyQt5"
+]
+
+[project.urls]
+homepage = "https://github.com/nimaid/pixelgreat-gui"
+repository = "https://github.com/nimaid/pixelgreat-gui"
+Issues = "https://github.com/nimaid/pixelgreat-gui/issues"
+
+
+[project.scripts]
+pixelgreat-gui = "pixelgreat_gui:run"
+
+[tool.setuptools.dynamic]
+readme = {file=["README_pypi.MD"], content-type="text/markdown"}
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["pixelgreat_gui"]
