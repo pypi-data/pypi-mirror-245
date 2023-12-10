@@ -1,0 +1,6 @@
+gempipe/__init__.py,sha256=_79O7GZJNi6s7MMs4ElpX4T2cKcnRKkzC_uiGJERtXs,59
+gempipe/moduleA.py,sha256=eBrZ0rMDeOmwhi1gDBxC4AnggrhaBtv6lbYTxfaBmD4,68
+gempipe/moduleB.py,sha256=5QZTwlPItmV1xp8iK1arFmTQRUEnCsCDFPkTwpk9Ryo,39
+gempipe-0.0.1.dist-info/METADATA,sha256=_6KJI80upjgPyS1evRuM118QJalAEY6VJaOH7KeGj8k,449
+gempipe-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gempipe-0.0.1.dist-info/RECORD,,
