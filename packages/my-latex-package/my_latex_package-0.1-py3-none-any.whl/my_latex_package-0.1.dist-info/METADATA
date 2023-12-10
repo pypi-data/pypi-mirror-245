@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: my-latex-package
+Version: 0.1
+Summary: A small LaTeX table generation package
+Home-page: https://github.com/anxieuse/my_latex_package
+Author: Leo K
+Author-email: essacult@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# My test latex package
+
+Some text here.
+
