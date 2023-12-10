@@ -1,0 +1,15 @@
+GeocodingCHN/Geocoding.py,sha256=d0YEtdL-kNp7sAJnCzsWR5tXR36dx40pkm-Cma45MTw,7418
+GeocodingCHN/__init__.py,sha256=c7UePHy2FxXw9MmnlwgrT5HgUOnynS6kAt06BnccEu4,45
+GeocodingCHN/geocoding.jar,sha256=JwSuuHRLior1OnDZsYZ9Bej1a1L-lQZs8yXk5dQg2-g,9268575
+GeocodingCHN/model/__init__.py,sha256=2qET7_UCqnaGd-j_BNV9cKFub_E5617VUG0YQp1fSYQ,348
+GeocodingCHN/model/address.py,sha256=Yf9K0VCSLyCvdazGI4vC0ORmVVFP3HCEoBJAYTA52rE,5581
+GeocodingCHN/model/document.py,sha256=OYUXi26scZSCFhc5cVs-VF7NCv8bkPGlT0cKQPm8oOs,1865
+GeocodingCHN/model/matched.py,sha256=CP4j4gTxKNem4ZyRC1eoHlmhQ-wgky-U__seyG3IrI0,2693
+GeocodingCHN/model/region_type.py,sha256=x6ibAsLu7feGRNg_-bQLBPPZskQrqMWt3oYuA7K_FiU,1939
+GeocodingCHN/model/term.py,sha256=Q4e-DmiHzAHiwEc6YeCb48e0pEFNjXVc64YJWD8jVfw,877
+GeocodingCHN/model/version.py,sha256=5HiKpaKXwzRK4sKYXp-ESrVsz_FfJ90bYABxrUQT24k,543
+GeocodingCHN-1.4.5.dist-info/LICENSE,sha256=yU0dBrlJVFNsFPrHmzlA7JZ9vOt9pUWPxeNcklcr_9s,1077
+GeocodingCHN-1.4.5.dist-info/METADATA,sha256=bbZSKppkjpimu5RazvocuzAk2GUe-M6ORBZtURX1oXo,8120
+GeocodingCHN-1.4.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+GeocodingCHN-1.4.5.dist-info/top_level.txt,sha256=_Q5q_ormiMyIYSKWymyPAByUZ-h6ocSQPhwGCqrhmiY,13
+GeocodingCHN-1.4.5.dist-info/RECORD,,
