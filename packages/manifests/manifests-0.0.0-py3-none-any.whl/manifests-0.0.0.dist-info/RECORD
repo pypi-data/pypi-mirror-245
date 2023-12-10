@@ -1,0 +1,6 @@
+manifests/__init__.py,sha256=SMNSDSwr8oTBvIU9ztCFSYGTs_AKyNttpJqL8saSw5o,99
+manifests/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+manifests-0.0.0.dist-info/LICENSE,sha256=bx8I3dVGrNok18sRtFhlS82hbfbrVDF9UdaMhcNki8g,1092
+manifests-0.0.0.dist-info/METADATA,sha256=_pTm5pa55R3mdoBj8W2i4yVLs9-Rx9QkdgyMxf5BZqs,4527
+manifests-0.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+manifests-0.0.0.dist-info/RECORD,,
