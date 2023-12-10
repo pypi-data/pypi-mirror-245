@@ -1,0 +1,6 @@
+beanie
+mechanize
+pandas
+requests
+scikit-learn
+numpy
