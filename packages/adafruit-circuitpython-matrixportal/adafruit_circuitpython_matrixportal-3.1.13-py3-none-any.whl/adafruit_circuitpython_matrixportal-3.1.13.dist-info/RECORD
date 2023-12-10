@@ -1,0 +1,10 @@
+adafruit_matrixportal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adafruit_matrixportal/graphics.py,sha256=WCY67HBczGOMTex8KiAHV_aWqpsl-GOq2eJO6dw-Pvs,2576
+adafruit_matrixportal/matrix.py,sha256=_753KujTJDMeZJWr_XY70pLiA2c-G5BbvHogujNQ7iQ,7814
+adafruit_matrixportal/matrixportal.py,sha256=9NV1haM_O5BFe80DTZ-XvZsRE2CrC-tKSKHZQ3tW8_k,10650
+adafruit_matrixportal/network.py,sha256=XG78rH7kIEEiVCZDj0_MSylsy_xEmBpcB-qKk6NEkDw,3055
+adafruit_circuitpython_matrixportal-3.1.13.dist-info/LICENSE,sha256=ql5UE2yEDtLjM_ZdQ_7LxsDo__Yuuuzk_ygc0qZnIIg,1115
+adafruit_circuitpython_matrixportal-3.1.13.dist-info/METADATA,sha256=XzufILKujUgZRGiLUc8wGHX50XlYt5kClc-RyqI9V3M,4075
+adafruit_circuitpython_matrixportal-3.1.13.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+adafruit_circuitpython_matrixportal-3.1.13.dist-info/top_level.txt,sha256=p-JmapbCnlhGLuGS-RyUqWnMZHkdr69jWOr0RqlIHcw,22
+adafruit_circuitpython_matrixportal-3.1.13.dist-info/RECORD,,
