@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: itaxotools-common
+Version: 0.3.3
+Summary: Common resources for iTaxoTools
+Author-email: StefanPatman <stefanpatman91@gmail.com>
+Project-URL: Homepage, https://itaxotools.org/
+Project-URL: Source, https://github.com/iTaxoTools/itt-common
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: <4,>=3.10.2
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Provides-Extra: dev
+Requires-Dist: setuptools-scm ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-qt ; extra == 'dev'
+Requires-Dist: pytest-xvfb ; extra == 'dev'
+Requires-Dist: pyinstaller ; extra == 'dev'
+Provides-Extra: gui
+Requires-Dist: pyside6 ; extra == 'gui'
+
+# iTaxoTools common resources
+
+[![PyPI - Version](https://img.shields.io/pypi/v/itaxotools-common)](
+    https://pypi.org/project/itaxotools-common)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/itaxotools-common)](
+    https://pypi.org/project/itaxotools-common)
+[![PyPI - License](https://img.shields.io/pypi/l/itaxotools-common)](
+    https://pypi.org/project/itaxotools-common)
+[![GitHub - Tests](https://img.shields.io/github/actions/workflow/status/iTaxoTools/itt-common/test.yml?label=tests)](
+    https://github.com/iTaxoTools/itt-common/actions/workflows/test.yml)
+
+This package contains common modules and resources for use by other iTaxoTools projects:
+
+- Logos and icon resources, including import machinery
+- Custom binding interface for PySide6 properties
+- Multi-processing utilities for PySide6
+- PyInstaller hook directory definition
