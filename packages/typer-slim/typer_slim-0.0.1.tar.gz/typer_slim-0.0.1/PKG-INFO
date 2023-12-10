@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: typer-slim
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/tiangolo/typer#readme
+Project-URL: Issues, https://github.com/tiangolo/typer/issues
+Project-URL: Source, https://github.com/tiangolo/typer
+Author-email: Sebastián Ramírez <tiangolo@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# typer-slim
+
+[![PyPI - Version](https://img.shields.io/pypi/v/typer-slim.svg)](https://pypi.org/project/typer-slim)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/typer-slim.svg)](https://pypi.org/project/typer-slim)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install typer-slim
+```
+
+## License
+
+`typer-slim` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
