@@ -1,0 +1,8 @@
+splitdataloader/__init__.py,sha256=ZNLN3bt5PdVS0V9zrukqSijvvQXW5p6HWZnJBvoIvvE,138
+splitdataloader/data_writer_and_loader.py,sha256=pzI0YSu7Cyp1g_uT8M1nmGiarU3BRp6BW8D_KWBfFI8,6738
+splitdataloader/multiproc_queue_itr.py,sha256=khfr8VCj0P5o0vzm8WesR5be0B3c4TcasyXakKkWtss,1477
+splitdataloader-0.0.1.dist-info/LICENSE,sha256=iYhIBUAkyPspUwuWc_97i3cdlrW-20A_Bud1lX2GoJY,1062
+splitdataloader-0.0.1.dist-info/METADATA,sha256=mHr31IWKRE4hxiyPlEmIp96jL1GHzgDRMkSCJSYol5Q,4493
+splitdataloader-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+splitdataloader-0.0.1.dist-info/top_level.txt,sha256=SVHKBC3Y_nYnfmZ68osJ4hc4hWaUoJ1DlGKl6mgzOAc,16
+splitdataloader-0.0.1.dist-info/RECORD,,
