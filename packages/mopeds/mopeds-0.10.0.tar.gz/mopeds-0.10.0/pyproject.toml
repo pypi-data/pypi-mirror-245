@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "mopeds"
+version = "0.10.0"
+description = "Simulate and Optimize (Parameter Estimation, Optimal Experimental Design) NLE, ODE and DAE"
+authors = ["Volodymyr Kozachynskyi <vovakozach@gmail.com>"]
+repository = "https://git.tu-berlin.de/dbta/optimization/mopeds"
+license = "MIT"
+homepage= "https://mopeds.readthedocs.io/en/latest/"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<=3.12"
+casadi = ">=3.6.4"
+numpy = [
+    {version = ">=1.21", python = ">=3.8,<3.12"},
+    {version = ">=1.26.0", python = ">=3.12"}
+]
+scipy = [
+    {version = "<1.9.2", python = ">=3.8,<3.12"},
+    {version = ">=1.9.2", python = ">=3.12"}
+]
+matplotlib = ">=3.6.0"
+pandas = [
+    {version = ">=1.4,<2.1.0", python = "=3.8"},
+    {version = ">=1.4", python = ">3.8"}
+]
+tqdm = ">=4.64.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = ">6.0.0"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^9.4.14"
+mkdocs-jupyter = {version = "0.24.6", python = ">=3.9"}
+notebook = "^7.0.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
