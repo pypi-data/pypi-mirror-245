@@ -1,0 +1,7 @@
+README.md
+setup.py
+console_color_writer/__init__.py
+console_color_writer.egg-info/PKG-INFO
+console_color_writer.egg-info/SOURCES.txt
+console_color_writer.egg-info/dependency_links.txt
+console_color_writer.egg-info/top_level.txt
