@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/zender/__init__.py
+src/zender/cli.py
+src/zender.egg-info/PKG-INFO
+src/zender.egg-info/SOURCES.txt
+src/zender.egg-info/dependency_links.txt
+src/zender.egg-info/entry_points.txt
+src/zender.egg-info/requires.txt
+src/zender.egg-info/top_level.txt
