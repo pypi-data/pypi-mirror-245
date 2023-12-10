@@ -1,0 +1,12 @@
+sphinx_api_relink/__init__.py,sha256=DSjqiSqpblz0uWUIOyBfwScwBdq2Qmc_oaCEEAS2gg4,7986
+sphinx_api_relink/helpers.py,sha256=iazuELL8JXR6n9QA0feh_OOH0WCTU9-mTVVCiRuH6D0,5215
+sphinx_api_relink/linkcode.py,sha256=_t-WWSngIDYwGQLMun98baRi0uK-MCZ1nLcMBUC9Ujo,5165
+sphinx_api_relink/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinx_api_relink/templates/module.rst_t,sha256=O13YbBTYD3-gjE7VoNYOxm_EZdzjm4ks5I7A__3WXlM,250
+sphinx_api_relink/templates/package.rst_t,sha256=v_HdWdKOIFPSkd-vDa8W1rEdlhZmgae9QobrNiTlUj4,1021
+sphinx_api_relink/templates/toc.rst_t,sha256=U1WNHDy0wy4bnevrug68RDnsjHAalGFbCuNdEMFBLgM,125
+sphinx_api_relink-0.0.8.dist-info/LICENSE,sha256=dbALJNF4UJEWoQzUNIjISdyiqGbFY1U4FGatyKrumnA,1536
+sphinx_api_relink-0.0.8.dist-info/METADATA,sha256=aNv0ocpp02TILYpmbaIbaSKy8VoPUxFi4lCT11HddKk,6822
+sphinx_api_relink-0.0.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sphinx_api_relink-0.0.8.dist-info/top_level.txt,sha256=S0-OGMken6Nbckd3swxyycRkYZ2mE09kFHkF-Sdq6z8,18
+sphinx_api_relink-0.0.8.dist-info/RECORD,,
