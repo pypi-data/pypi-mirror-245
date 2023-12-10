@@ -1,0 +1,16 @@
+gameart/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gameart/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gameart/api.py,sha256=gMrT440Wa3TqQJwqz7aOn0MsYstr7042-NTJwkrQFbA,748
+gameart/cli.py,sha256=tjUz2qBVjIhrARvvyxb8t8pkea951Zg9ZnV-iuxc6DE,424
+gameart/draw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gameart/draw/art.py,sha256=aNbICnBeT_J5CcZiyknYxwqrp_QtSmf4bVgj0WknJnA,2937
+gameart/inputs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gameart/inputs/mousetracker.py,sha256=GJpZ7YNYW-Mnw58BsRh7mV93yT6viUwiQWVTR70TSW8,3335
+gameart/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gameart/utils/utils.py,sha256=qFELhKHNtEOWhNIoB6YMsUZ3NqloyavESgrKrA9PxFk,2173
+gameart-0.0.12.dist-info/LICENSE,sha256=QKNg9WFZNNl8vYEV7RJZmBdu7A6w4NENGBfTkoojBGY,1095
+gameart-0.0.12.dist-info/METADATA,sha256=my5GngVTXq_kEusdyEOdLs_rQhqdIA9KKM96mO130aM,6843
+gameart-0.0.12.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gameart-0.0.12.dist-info/entry_points.txt,sha256=xB_qsXZxZUZcfsV7AvsVDeDswyddIZone60y8AaWAFY,45
+gameart-0.0.12.dist-info/top_level.txt,sha256=bzF9g660I4Kv30SIV191AC50HJHxCJyX7JpLsFoEzHg,8
+gameart-0.0.12.dist-info/RECORD,,
