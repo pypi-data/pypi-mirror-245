@@ -1,0 +1,1342 @@
+{
+    "kind": "supp",
+    "identity": {
+        "name": "Chia Seeds",
+        "FDC ID": "",
+        "UPC": "8 18423 02863 7",
+        "DSLD ID": "214893"
+    },
+    "brand": {
+        "name": "BareOrganics"
+    },
+    "measures": {
+        "form": {
+            "unit": "gram",
+            "amount per package": "454",
+            "serving size amount": "12",
+            "amount is an estimate": "yes"
+        }
+    },
+    "essential nutrients": {
+        "natures": [
+            {
+                "amount": "1",
+                "identity": {
+                    "name": "Chia Seeds",
+                    "FDC ID": "",
+                    "UPC": "8 18423 02863 7",
+                    "DSLD ID": "214893"
+                }
+            }
+        ],
+        "measures": {
+            "mass + mass equivalents": {
+                "per recipe": {
+                    "grams": {
+                        "fraction string": "258598041683502089157/1125899906842624000"
+                    }
+                }
+            },
+            "energy": {
+                "per recipe": {
+                    "food calories": {
+                        "fraction string": "720"
+                    }
+                }
+            }
+        },
+        "grove": [
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "protein"
+                    ],
+                    "region": 1
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "24"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Chia Seeds",
+                            "FDC ID": "",
+                            "UPC": "8 18423 02863 7",
+                            "DSLD ID": "214893"
+                        },
+                        "ingredient": {
+                            "name": "Protein"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "24.000",
+                                        "Gram(s)"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "24.000",
+                                        "fraction string": "24"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [
+                        "carbohydrate, by difference",
+                        "total carbohydrates"
+                    ],
+                    "includes": [
+                        6,
+                        7
+                    ],
+                    "names": [
+                        "carbohydrates"
+                    ],
+                    "region": 2
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "60"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Chia Seeds",
+                            "FDC ID": "",
+                            "UPC": "8 18423 02863 7",
+                            "DSLD ID": "214893"
+                        },
+                        "ingredient": {
+                            "name": "Total Carbohydrates"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "60.000",
+                                        "Gram(s)"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "60.000",
+                                        "fraction string": "60"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": [
+                    {
+                        "essential": {
+                            "includes": [],
+                            "names": [
+                                "dietary fiber",
+                                "fiber, total dietary"
+                            ],
+                            "region": 6
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per recipe": {
+                                    "grams": {
+                                        "fraction string": "60"
+                                    }
+                                }
+                            }
+                        },
+                        "natures": [
+                            {
+                                "amount": "1",
+                                "source": {
+                                    "name": "Chia Seeds",
+                                    "FDC ID": "",
+                                    "UPC": "8 18423 02863 7",
+                                    "DSLD ID": "214893"
+                                },
+                                "ingredient": {
+                                    "name": "Dietary Fiber"
+                                },
+                                "measures": {
+                                    "mass + mass equivalents": {
+                                        "per package": {
+                                            "is equivalent": "no",
+                                            "listed": [
+                                                "60.000",
+                                                "Gram(s)"
+                                            ],
+                                            "grams": {
+                                                "decimal string": "60.000",
+                                                "fraction string": "60"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "unites": []
+                    },
+                    {
+                        "essential": {
+                            "accepts": [
+                                "sugars, total including nlea"
+                            ],
+                            "includes": [
+                                8
+                            ],
+                            "names": [
+                                "sugars, total",
+                                "total sugar",
+                                "sugar",
+                                "total sugars"
+                            ],
+                            "region": 7
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per recipe": {
+                                    "grams": {
+                                        "fraction string": "0"
+                                    }
+                                }
+                            }
+                        },
+                        "natures": [
+                            {
+                                "amount": "1",
+                                "source": {
+                                    "name": "Chia Seeds",
+                                    "FDC ID": "",
+                                    "UPC": "8 18423 02863 7",
+                                    "DSLD ID": "214893"
+                                },
+                                "ingredient": {
+                                    "name": "Total Sugars"
+                                },
+                                "measures": {
+                                    "mass + mass equivalents": {
+                                        "per package": {
+                                            "is equivalent": "no",
+                                            "listed": [
+                                                "0.000",
+                                                "Gram(s)"
+                                            ],
+                                            "grams": {
+                                                "decimal string": "0.000",
+                                                "fraction string": "0"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "unites": [
+                            {
+                                "essential": {
+                                    "includes": [],
+                                    "names": [
+                                        "added sugars",
+                                        "sugars, added"
+                                    ],
+                                    "region": 8
+                                },
+                                "measures": {
+                                    "mass + mass equivalents": {
+                                        "per recipe": {
+                                            "grams": {
+                                                "fraction string": "0"
+                                            }
+                                        }
+                                    }
+                                },
+                                "natures": [
+                                    {
+                                        "amount": "1",
+                                        "source": {
+                                            "name": "Chia Seeds",
+                                            "FDC ID": "",
+                                            "UPC": "8 18423 02863 7",
+                                            "DSLD ID": "214893"
+                                        },
+                                        "ingredient": {
+                                            "name": "Added Sugars"
+                                        },
+                                        "measures": {
+                                            "mass + mass equivalents": {
+                                                "per package": {
+                                                    "is equivalent": "no",
+                                                    "listed": [
+                                                        "0.000",
+                                                        "Gram(s)"
+                                                    ],
+                                                    "grams": {
+                                                        "decimal string": "0.000",
+                                                        "fraction string": "0"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "unites": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "essential": {
+                    "includes": [
+                        4,
+                        5,
+                        15,
+                        51
+                    ],
+                    "names": [
+                        "fats",
+                        "total fat",
+                        "lipids",
+                        "total lipid (fat)"
+                    ],
+                    "region": 3
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "42"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Chia Seeds",
+                            "FDC ID": "",
+                            "UPC": "8 18423 02863 7",
+                            "DSLD ID": "214893"
+                        },
+                        "ingredient": {
+                            "name": "Total Fat"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "42.000",
+                                        "Gram(s)"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "42.000",
+                                        "fraction string": "42"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": [
+                    {
+                        "essential": {
+                            "includes": [],
+                            "names": [
+                                "saturated fat",
+                                "fatty acids, total saturated"
+                            ],
+                            "region": 4
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per recipe": {
+                                    "grams": {
+                                        "fraction string": "10268207150404731/2251799813685248"
+                                    }
+                                }
+                            }
+                        },
+                        "natures": [
+                            {
+                                "amount": "1",
+                                "source": {
+                                    "name": "Chia Seeds",
+                                    "FDC ID": "",
+                                    "UPC": "8 18423 02863 7",
+                                    "DSLD ID": "214893"
+                                },
+                                "ingredient": {
+                                    "name": "Saturated Fat"
+                                },
+                                "measures": {
+                                    "mass + mass equivalents": {
+                                        "per package": {
+                                            "is equivalent": "no",
+                                            "listed": [
+                                                "4.560",
+                                                "Gram(s)"
+                                            ],
+                                            "grams": {
+                                                "decimal string": "4.560",
+                                                "fraction string": "10268207150404731/2251799813685248"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "unites": []
+                    },
+                    {
+                        "essential": {
+                            "includes": [],
+                            "names": [
+                                "trans fat",
+                                "fatty acids, total trans"
+                            ],
+                            "region": 5
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per recipe": {
+                                    "grams": {
+                                        "fraction string": "0"
+                                    }
+                                }
+                            }
+                        },
+                        "natures": [
+                            {
+                                "amount": "1",
+                                "source": {
+                                    "name": "Chia Seeds",
+                                    "FDC ID": "",
+                                    "UPC": "8 18423 02863 7",
+                                    "DSLD ID": "214893"
+                                },
+                                "ingredient": {
+                                    "name": "Trans Fat"
+                                },
+                                "measures": {
+                                    "mass + mass equivalents": {
+                                        "per package": {
+                                            "is equivalent": "no",
+                                            "listed": [
+                                                "0.000",
+                                                "Gram(s)"
+                                            ],
+                                            "grams": {
+                                                "decimal string": "0.000",
+                                                "fraction string": "0"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "unites": []
+                    },
+                    {
+                        "essential": {
+                            "includes": [],
+                            "names": [
+                                "polyunsaturated fat",
+                                "fatty acids, total polyunsaturated"
+                            ],
+                            "region": 15
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per recipe": {
+                                    "grams": {
+                                        "fraction string": "9457559217478041/281474976710656"
+                                    }
+                                }
+                            }
+                        },
+                        "natures": [
+                            {
+                                "amount": "1",
+                                "source": {
+                                    "name": "Chia Seeds",
+                                    "FDC ID": "",
+                                    "UPC": "8 18423 02863 7",
+                                    "DSLD ID": "214893"
+                                },
+                                "ingredient": {
+                                    "name": "Polyunsaturated Fat"
+                                },
+                                "measures": {
+                                    "mass + mass equivalents": {
+                                        "per package": {
+                                            "is equivalent": "no",
+                                            "listed": [
+                                                "33.600",
+                                                "Gram(s)"
+                                            ],
+                                            "grams": {
+                                                "decimal string": "33.600",
+                                                "fraction string": "9457559217478041/281474976710656"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "unites": []
+                    },
+                    {
+                        "essential": {
+                            "includes": [],
+                            "names": [
+                                "monounsaturated fat",
+                                "fatty acids, total monounsaturated"
+                            ],
+                            "region": 51
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per recipe": {
+                                    "grams": {
+                                        "fraction string": "3"
+                                    }
+                                }
+                            }
+                        },
+                        "natures": [
+                            {
+                                "amount": "1",
+                                "source": {
+                                    "name": "Chia Seeds",
+                                    "FDC ID": "",
+                                    "UPC": "8 18423 02863 7",
+                                    "DSLD ID": "214893"
+                                },
+                                "ingredient": {
+                                    "name": "Monounsaturated Fat"
+                                },
+                                "measures": {
+                                    "mass + mass equivalents": {
+                                        "per package": {
+                                            "is equivalent": "no",
+                                            "listed": [
+                                                "3.000",
+                                                "Gram(s)"
+                                            ],
+                                            "grams": {
+                                                "decimal string": "3.000",
+                                                "fraction string": "3"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "unites": []
+                    }
+                ]
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "calcium",
+                        "calcium, ca"
+                    ],
+                    "region": 9
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "3196148360549499/3518437208883200"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Chia Seeds",
+                            "FDC ID": "",
+                            "UPC": "8 18423 02863 7",
+                            "DSLD ID": "214893"
+                        },
+                        "ingredient": {
+                            "name": "Calcium"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "908.400",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.908",
+                                        "fraction string": "3196148360549499/3518437208883200"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "cholesterol"
+                    ],
+                    "region": 12
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "0"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Chia Seeds",
+                            "FDC ID": "",
+                            "UPC": "8 18423 02863 7",
+                            "DSLD ID": "214893"
+                        },
+                        "ingredient": {
+                            "name": "Cholesterol"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "0.000",
+                                        "Gram(s)"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.000",
+                                        "fraction string": "0"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin a",
+                        "vitamin a, iu"
+                    ],
+                    "region": 16
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin e"
+                    ],
+                    "region": 19
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "iodine"
+                    ],
+                    "region": 29
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "magnesium"
+                    ],
+                    "region": 30
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [],
+                    "includes": [],
+                    "names": [
+                        "Zinc, Zn",
+                        "Zinc"
+                    ],
+                    "region": 31
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "selenium"
+                    ],
+                    "region": 32
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "copper"
+                    ],
+                    "region": 33
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "manganese"
+                    ],
+                    "region": 34
+                },
+                "measures": {},
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Chia Seeds",
+                            "FDC ID": "",
+                            "UPC": "8 18423 02863 7",
+                            "DSLD ID": "214893"
+                        },
+                        "ingredient": {
+                            "name": "Manganese"
+                        },
+                        "measures": {}
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "chromium"
+                    ],
+                    "region": 35
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "molybdenum"
+                    ],
+                    "region": 36
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "choline"
+                    ],
+                    "region": 37
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "lutein"
+                    ],
+                    "region": 40
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "betaine hydrochloride"
+                    ],
+                    "region": 43
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "rutin"
+                    ],
+                    "region": 44
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "strontium"
+                    ],
+                    "region": 47
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vanadium"
+                    ],
+                    "region": 49
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [],
+                    "includes": [],
+                    "names": [
+                        "Phosphorus, P",
+                        "Phosphorus"
+                    ],
+                    "region": 57
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "171/125"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Chia Seeds",
+                            "FDC ID": "",
+                            "UPC": "8 18423 02863 7",
+                            "DSLD ID": "214893"
+                        },
+                        "ingredient": {
+                            "name": "Phosphorus"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "1368.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "1.368",
+                                        "fraction string": "171/125"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "potassium",
+                        "potassium K",
+                        "potassium, K",
+                        "K"
+                    ],
+                    "region": 58
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "3242591731706757/14073748835532800"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Chia Seeds",
+                            "FDC ID": "",
+                            "UPC": "8 18423 02863 7",
+                            "DSLD ID": "214893"
+                        },
+                        "ingredient": {
+                            "name": "Potassium"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "230.400",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.230",
+                                        "fraction string": "3242591731706757/14073748835532800"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "sodium Na",
+                        "sodium, Na",
+                        "sodium",
+                        "Na"
+                    ],
+                    "region": 59
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "0"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Chia Seeds",
+                            "FDC ID": "",
+                            "UPC": "8 18423 02863 7",
+                            "DSLD ID": "214893"
+                        },
+                        "ingredient": {
+                            "name": "Sodium"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "0.000",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.000",
+                                        "fraction string": "0"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin d",
+                        "vitamin d (d2 + d3)",
+                        "vitamin d2",
+                        "vitamin d3",
+                        "vitamin d (d2 + d3), international units"
+                    ],
+                    "region": 63
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "0"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Chia Seeds",
+                            "FDC ID": "",
+                            "UPC": "8 18423 02863 7",
+                            "DSLD ID": "214893"
+                        },
+                        "ingredient": {
+                            "name": "Vitamin D"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "0.000",
+                                        "mcg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.000",
+                                        "fraction string": "0"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin c",
+                        "vitamin c (form: as calcium ascorbate)",
+                        "vitamin c, total ascorbic acid"
+                    ],
+                    "region": 64
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin k",
+                        "vitamin k1",
+                        "vitamin k2"
+                    ],
+                    "region": 65
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "thiamin",
+                        "thiamine",
+                        "vitamin b1"
+                    ],
+                    "region": 66
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "riboflavin",
+                        "vitamin b2"
+                    ],
+                    "region": 67
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin b3",
+                        "niacin",
+                        "nicotinamide",
+                        "nicotinamide riboside"
+                    ],
+                    "region": 68
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin b5",
+                        "pantothenic acid"
+                    ],
+                    "region": 69
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [
+                        "pyridoxine",
+                        "pyridoxal",
+                        "pyridoxamine"
+                    ],
+                    "includes": [],
+                    "names": [
+                        "Vitamin B6",
+                        "Vitamin B-6"
+                    ],
+                    "region": 70
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin b7",
+                        "biotin",
+                        "vitamin h"
+                    ],
+                    "region": 71
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "vitamin b9",
+                        "folate",
+                        "folacin"
+                    ],
+                    "region": 72
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [],
+                    "includes": [],
+                    "names": [
+                        "Vitamin B12",
+                        "Vitamin B-12",
+                        "cobalamin"
+                    ],
+                    "region": 73
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "calories",
+                        "energy"
+                    ],
+                    "region": 74
+                },
+                "measures": {
+                    "energy": {
+                        "per recipe": {
+                            "food calories": {
+                                "fraction string": "720"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Chia Seeds",
+                            "FDC ID": "",
+                            "UPC": "8 18423 02863 7",
+                            "DSLD ID": "214893"
+                        },
+                        "ingredient": {
+                            "name": "Calories"
+                        },
+                        "measures": {
+                            "energy": {
+                                "per package": {
+                                    "listed": [
+                                        "720.000",
+                                        "Calorie(s)"
+                                    ],
+                                    "food calories": {
+                                        "decimal string": "720.000",
+                                        "fraction string": "720"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "includes": [],
+                    "names": [
+                        "iron",
+                        "iron, fe"
+                    ],
+                    "region": 75
+                },
+                "measures": {
+                    "mass + mass equivalents": {
+                        "per recipe": {
+                            "grams": {
+                                "fraction string": "3242591731706757/225179981368524800"
+                            }
+                        }
+                    }
+                },
+                "natures": [
+                    {
+                        "amount": "1",
+                        "source": {
+                            "name": "Chia Seeds",
+                            "FDC ID": "",
+                            "UPC": "8 18423 02863 7",
+                            "DSLD ID": "214893"
+                        },
+                        "ingredient": {
+                            "name": "Iron"
+                        },
+                        "measures": {
+                            "mass + mass equivalents": {
+                                "per package": {
+                                    "is equivalent": "no",
+                                    "listed": [
+                                        "14.400",
+                                        "mg"
+                                    ],
+                                    "grams": {
+                                        "decimal string": "0.014",
+                                        "fraction string": "3242591731706757/225179981368524800"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [],
+                    "includes": [],
+                    "names": [
+                        "Folate, DFE"
+                    ],
+                    "region": 76
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            },
+            {
+                "essential": {
+                    "accepts": [],
+                    "includes": [],
+                    "names": [
+                        "Folate",
+                        "Folate, Total"
+                    ],
+                    "region": 77
+                },
+                "measures": {},
+                "natures": [],
+                "unites": []
+            }
+        ],
+        "exclusions": []
+    }
+}
