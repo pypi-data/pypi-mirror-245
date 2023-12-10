@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: einvoice
+Version: 0.0.1
+Summary: Extract embedded information from einvoice Secure QR Code.
+Author: Hemanth Sai
+Author-email: mannehemanthsai@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+This library helps you extract the embedded information in einvoice Secure QR code.
+
+How it works!!!
+
+```python
+from einvoice import secure_qr
+
+received_qr_code_data = 'encodedstring'
+output = secure_qr(received_qr_code_data)
+print(output)
+```
