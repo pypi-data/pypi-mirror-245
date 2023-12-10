@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ultr-bias-toolkit"
+version = "0.0.5"
+description = "Toolkit for bias estimation in unbiased learning to rank"
+authors = ["Philipp Hager <philipp.konstantin.hager@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.1.4"
+torch = "^2.1.1"
+tqdm = "^4.66.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
