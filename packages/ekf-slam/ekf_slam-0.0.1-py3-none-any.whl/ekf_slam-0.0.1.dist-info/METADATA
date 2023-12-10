@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: ekf-slam
+Version: 0.0.1
+Summary: Python implementation of EKF SLAM
+Author-email: Andrew Chen <alchen2@andrew.cmu.edu>, Marian Qian <marianq@andrew.cmu.edu>
+Requires-Python: >=3.8.1
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy
+Requires-Dist: bandit[toml]==1.7.5 ; extra == "test"
+Requires-Dist: black==23.3.0 ; extra == "test"
+Requires-Dist: check-manifest==0.49 ; extra == "test"
+Requires-Dist: flake8-bugbear==23.5.9 ; extra == "test"
+Requires-Dist: flake8-docstrings ; extra == "test"
+Requires-Dist: flake8-formatter_junit_xml ; extra == "test"
+Requires-Dist: flake8 ; extra == "test"
+Requires-Dist: flake8-pyproject ; extra == "test"
+Requires-Dist: pre-commit==3.3.1 ; extra == "test"
+Requires-Dist: pylint==2.17.4 ; extra == "test"
+Requires-Dist: pylint_junit ; extra == "test"
+Requires-Dist: pytest-cov==4.0.0 ; extra == "test"
+Requires-Dist: pytest-mock<3.10.1 ; extra == "test"
+Requires-Dist: pytest-runner ; extra == "test"
+Requires-Dist: pytest==7.3.1 ; extra == "test"
+Requires-Dist: pytest-github-actions-annotate-failures ; extra == "test"
+Requires-Dist: shellcheck-py==0.9.0.2 ; extra == "test"
+Requires-Dist: matplotlib ; extra == "test"
+Project-URL: Documentation, https://github.com/achen4290/ekf-slam
+Project-URL: Source, https://github.com/achen4290/ekf-slam
+Project-URL: Tracker, https://github.com/achen4290/ekf-slam/issues
+Provides-Extra: test
+
+## Installation
+`pip install ekf-slam`
+
+## Development
+1. Clone this repo
+2. Create a new python environment
+3. `pip install flit`
+4. `flit install -s`
