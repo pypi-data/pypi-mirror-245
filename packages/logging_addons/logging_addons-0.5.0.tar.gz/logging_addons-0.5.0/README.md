@@ -1,0 +1,76 @@
+# Add-ons for the logging standard library
+
+Why any alternative or add-on to the standard logging lib?
+
+While the std lib provides the essential need, there are situations where you do not get what you might expect. Or, the more you use logging, the more you want to get rid of some boiler-plate.
+
+This package addresses some need for developers.
+
+
+# Alternatives
+
+- [Alternative logger propagation flow](#alternative-logger-propagation-flow) (alt_logger)
+- [Log handler debugger for threads](#log-handler-debugger-for-threads) (HandlerDebugged)
+- [Global lock for loggers](#global-lock-for-loggers) (GlobalLockedLogger)
+
+Usage:
+```
+import logging
+import logging_alt
+logging_alt.enable(<list of patch names>)
+```
+
+When an alternative is enabled, the logging package is patched so that logging behaves in an alternative way. Patches can be enabled individually by providing the patch name or list of names. If nothing is passed to enable() it only enables the recommended list (currently _alt_logger_ only). Or, passing "all" enables all possible patches.
+
+No issue with importing logging_alt several times, or trying to enable a patch multiple times, as any consequent imports or applies will be ignored.
+
+You can switch back to the standard behaviour with
+```
+logging_alt.disable()
+```
+
+Run [demos](demo) to see the difference between standard and alternative behaviour.
+
+
+## Alternative logger propagation flow
+
+The original [logging algorithm](https://docs.python.org/howto/logging.html#logging-flow) is a bit confusing.
+
+Log records bubble up the logger hierarchy. The log level or isEnabled settings or filters of ancestor loggers are not checked. E.g. an INFO log record bubbles through ancestor logger even if their level is set to WARNING. Or, the filters of ancestor loggers are not invoked and cannot manipulate passing log records.
+
+While this behaviour is documented, it still can be surprising, if one does not read the documentation carefully.
+
+Let's look at a real-life example that actually motivated me to create this package. My application used a 3rd party package, which created log records with a message including a hard-coded time stamp. I needed to log the messages without these time stamps, and instead use the time-date format specified in my logging.
+
+Not having access to the 3rd party package to fix it there, I had to manipulate the log message when it bubbled up through my application. A filter on my logger was a logical choice, but it was not invoked for 3rd party log records. As a work-around, I could have set the log record modification filter on all handlers of all ancestor loggers (for DB logging, terminal logging, etc) but it would have been cumbersome and error-prone (due to repetition). Also, it would
+have added unnecessary code execution (log record propagation and manipulation).
+
+So, I could then use the alternative logger, the _alt_logger_, which changes the algorithm, see [alternative algorithm](docs/alt_algorithm.png). It is a consistent behaviour throughout the logger hierarchy, where all log levels and filters are consulted the same way in ancestor loggers, as in the originating logger.
+
+
+## Log handler debugger for threads
+
+A new _HandlerDebugged_ class is an enhanced Handler, which prints info, so that the sequence of actions of different LogRecords can be seen and debugged. The _HandlerDebugged_ patch replaces the stock _Handler_ with the new _HandlerDebugged_ class.
+
+
+## Global lock for loggers
+
+Intorduction of a global lock, so that only 1 thread can use logger at a time. This may be useful for programs that cannot make their logging thread-safe. The lock is aquired before _LogRecord_ creation and not released until all filtering, propagation and handling is done for that _LogRecord_. The _GlobalLockedLogger_ patch replaces the _RootLogger_ with the new _RootLoggerGlobalLocked_ class.
+
+
+# Add-on classes
+
+- [Define filters in the config](#define-filters-in-the-config)
+- [NullHandler with filter](#nullhandler-with-filter)
+
+
+## Define filters in the config
+
+[``SimpleFilter``](logging_alt.py#lines-196) is a conveniency class for defining logging filters in the config easily as stings. E.g. a filter definition in the config as `"text" in record.msg` will filter out *LogRecord*s not containing "text". See the class documentation.
+
+
+## NullHandler with filter
+
+A _NullHandlerWithFilter_ class is a NullHandler from emitting point of view, i.e. does not emit, but it flows the _LogRecord_ through the attached filters, as other handlers would do. Filters can manipulate the _LogRecord_.
+
+While the same result can be achieved by attaching the filters to the loggers themselves, there may be some use of _NullHandlerWithFilter_ as a container of filters. You then need to attach **one** handler (with its bunch of filters) to the loggers where needed, instead of attaching the same set of filters individually to the loggers.
