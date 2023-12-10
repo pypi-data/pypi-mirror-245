@@ -1,0 +1,13 @@
+{
+  "production": "directory",
+  "staging": "directory",
+  "group_vars": "directory",
+  "host_vars": "directory",
+  "library": "directory",
+  "module_utils": "directory",
+  "filter_plugins": "directory",
+  "site.yml": "file",
+  "webservers.yml": "file",
+  "dbservers.yml": "file",
+  "roles": "directory"
+}
