@@ -1,0 +1,21 @@
+def _get_common_kwargs() -> Dict[str, Any]:
+    return dict(title=TITLE, authors=AUTHORS)
+
+
+def _get_slides() -> lp.Presentation:
+    return lp.Presentation(get_content(), **_get_common_kwargs())
+
+
+def _get_handouts() -> lp.Presentation:
+    return lp.Presentation(get_content(), **_get_common_kwargs(), handouts=True)
+
+
+def get_outputs() -> List[BuildConfig]:
+    slides_options = BuildOptions(output_folder=OUTPUT_LOCATION, file_name=OUTPUT_NAME)
+    handouts_options = BuildOptions(
+        output_folder=HANDOUTS_OUTPUT_LOCATION, file_name=OUTPUT_NAME
+    )
+    return [
+        BuildConfig(model=_get_slides(), options=slides_options),
+        BuildConfig(model=_get_handouts(), options=handouts_options),
+    ]

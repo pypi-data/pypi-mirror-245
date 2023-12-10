@@ -1,0 +1,4 @@
+def get_outputs() -> List[BuildConfig]:
+    document = pl.Document(get_content(), title=TITLE, authors=AUTHORS)
+    options = BuildOptions(output_folder=OUTPUT_LOCATION, file_name=OUTPUT_NAME)
+    return [BuildConfig(model=document, options=options)]

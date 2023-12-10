@@ -1,0 +1,5 @@
+pyexlatex
+fire
+watchdog
+jinja2
+pydantic>=2
