@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: doit-watch
+Version: 0.1.0
+Summary: A watch plugin for the Python task manager doit
+License: MIT
+Author: Rico Hermans
+Author-email: rix0rrr@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: multiprocess (>=0.70.15,<0.71.0)
+Requires-Dist: watchfiles (>=0.21.0,<0.22.0)
+Description-Content-Type: text/markdown
+
+# doit_watch
+A 'watch' plugin for the Python task manager doit
+
