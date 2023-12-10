@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: GrabWinPy
+Version: 1.0.0
+Summary: Take Screenshots of specific window
+Requires-Dist: pyautogui (>=0.9.53)
+Requires-Dist: pygetwindow (>=0.0.9)
+
