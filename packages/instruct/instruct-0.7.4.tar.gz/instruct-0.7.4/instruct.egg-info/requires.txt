@@ -1,0 +1,14 @@
+Jinja2<4.0.0a0,>=3.0.0
+inflection<1.0.0a0
+typing-extensions<5.0.0a0,>=4.2.0
+
+[devel]
+twine
+build
+black
+invoke
+
+[test]
+pytest
+pytest-mock
+flake8
