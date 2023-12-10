@@ -1,0 +1,2 @@
+[console_scripts]
+ifscSearch = ifsc_search.ifsc_search:main
