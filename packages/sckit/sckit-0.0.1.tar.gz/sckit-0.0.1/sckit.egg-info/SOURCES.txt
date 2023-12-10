@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+sckit/__init__.py
+sckit.egg-info/PKG-INFO
+sckit.egg-info/SOURCES.txt
+sckit.egg-info/dependency_links.txt
+sckit.egg-info/requires.txt
+sckit.egg-info/top_level.txt
