@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: TaoWa
+Version: 1.0.4
+Summary: 建议使用python3.9以内的版本,高版本可能需要自己提前安装一些模块
+Author: 陈炳强
+Author-email: 99396686@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+Requires-Dist: wxPython
+Requires-Dist: requests
+Requires-Dist: PyExecjs
+Requires-Dist: web3
+Requires-Dist: pywin32
