@@ -1,0 +1,12 @@
+name: pixelgreat-gui
+channels:
+  - defaults
+dependencies:
+  - python=3.10*
+  - pip
+  - pip:
+    - pyinstaller
+    - pyinstaller-versionfile
+    - Pillow
+    - pixelgreat
+    - PyQt5
