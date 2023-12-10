@@ -1,0 +1,8 @@
+blocklist_aggregator/__init__.py,sha256=NMj8OcfiQ1H0dYHXcjjClL4X3hc1PgEgOTixLcEkvKU,211
+blocklist_aggregator/aggregator.py,sha256=5Rh_zr8TiTHh6w0Hqgawjf02J0mcf18W1W_JnH9aV24,4438
+blocklist_aggregator/blocklist.conf,sha256=56NjXY3UH0_7zu4HtBvl0g-R2ICAiQnftkpm40x6v5o,1842
+blocklist_aggregator-0.9.1.dist-info/LICENSE,sha256=XBHyIx1N2_ffyQwo_AjEalytAHWSGQpMkUxnvlJ20AM,1070
+blocklist_aggregator-0.9.1.dist-info/METADATA,sha256=SzcUKfa9LB-8gXdD-_x3TM39mWuO9Nf5y_aqF30xIhU,3738
+blocklist_aggregator-0.9.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+blocklist_aggregator-0.9.1.dist-info/top_level.txt,sha256=j7taSTQ_07ht_Or4iacq2oSpjnp4elS4tAlHDmaPhKw,21
+blocklist_aggregator-0.9.1.dist-info/RECORD,,
