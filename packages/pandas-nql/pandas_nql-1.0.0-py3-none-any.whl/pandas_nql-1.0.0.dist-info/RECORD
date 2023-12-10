@@ -1,0 +1,11 @@
+pandas_nql/__init__.py,sha256=vyXkp5WUbyFGeO8XeBZBJ7adULL4PEv4CapOPXCCULU,296
+pandas_nql/openai_api_client.py,sha256=XtPQkA49TYhCYzb6mUKPob69UYktVWoh7PBfDDLA8JA,1031
+pandas_nql/openai_sql_generator.py,sha256=tHFyrUTTHcF1vMj2fY2iY65TBgrHRM9Da7U-gzbkVbw,1553
+pandas_nql/pandas_nql.py,sha256=UtwDFx8uhWKl8EnRxJcGwFa8MZyeCurmx97iPDKWnqM,3385
+pandas_nql/sql_generator_base.py,sha256=a-pQxtEj9F8p3FnFHCn1VkAyV0QPqLBdg4k46Zeum2c,379
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/pandas_nql_tests.py,sha256=5fRBzOWaF_N0W81H_12sY4oLparDk7JFo1iBs4hV3Hs,1426
+pandas_nql-1.0.0.dist-info/METADATA,sha256=LIVfy5dV0zEf2tVfJZMNj1x9GjhYPHbBkyXQFMAYFo0,4671
+pandas_nql-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pandas_nql-1.0.0.dist-info/top_level.txt,sha256=B09m9s_WExz0NNJvhtQ_6Ur89WvQvtX6S6t5vf9PH4E,17
+pandas_nql-1.0.0.dist-info/RECORD,,
