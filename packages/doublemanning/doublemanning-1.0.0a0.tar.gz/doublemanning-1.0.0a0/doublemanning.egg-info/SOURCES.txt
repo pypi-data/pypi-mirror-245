@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+doublemanning/ForwardModel.py
+doublemanning/ManningFit.py
+doublemanning/__init__.py
+doublemanning/_version.py
+doublemanning/cli.py
+doublemanning.egg-info/PKG-INFO
+doublemanning.egg-info/SOURCES.txt
+doublemanning.egg-info/dependency_links.txt
+doublemanning.egg-info/entry_points.txt
+doublemanning.egg-info/requires.txt
+doublemanning.egg-info/top_level.txt
