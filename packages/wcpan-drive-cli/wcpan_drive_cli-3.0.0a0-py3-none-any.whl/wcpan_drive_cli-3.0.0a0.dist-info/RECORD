@@ -1,0 +1,15 @@
+wcpan/drive/cli/__init__.py,sha256=bb2uH-iiT6KFbtfgwxv-3O39xOVhMg42X7buW3-nWAU,88
+wcpan/drive/cli/__main__.py,sha256=CqvlQWsCqexU4m9pWu2-ngwrz0tfy1y6p9c-QD-nipc,54
+wcpan/drive/cli/_download.py,sha256=kJrzRWbozn2345cjWMT20vQSZ0LamnLLj5CvTiv20oU,1851
+wcpan/drive/cli/_lib.py,sha256=KP81_Z1uUXDAH97l6hM_kqUOowiIqYoc5y6x277z3_s,5098
+wcpan/drive/cli/_queue.py,sha256=4G1w1AfnGDmEr3EFUmA9xdJ4fQHjtogbPCiQOPDnfrk,3813
+wcpan/drive/cli/_upload.py,sha256=YLlW28-JA9h5nhLXC6o0E7bffmmsgx1_X3cVTDVns74,2261
+wcpan/drive/cli/cfg.py,sha256=8CVUtVnH44zIpd3mQtn8ysr_BzS_YL5ufjvijIQ3xlg,1688
+wcpan/drive/cli/interaction.py,sha256=vg27VYlWosDjkvO2D4QpVfjJE0q623J2CKj2N8_xicc,15394
+wcpan/drive/cli/lib.py,sha256=8udDkqNuggHbDOlFqyw9vxzkkd6WwtLobrwN00ea-Pg,724
+wcpan/drive/cli/main.py,sha256=TrTIZqxIgee-7Bn22JFkqob_K7h1EKpOz0lyIFs1ojI,11212
+wcpan/drive/cli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wcpan_drive_cli-3.0.0a0.dist-info/LICENSE.txt,sha256=uOppBWSdxDMjjlDJ2o07rnUPC2MZppj6_wWId86JuhE,1102
+wcpan_drive_cli-3.0.0a0.dist-info/METADATA,sha256=D_5APNnBetmo65BpPpM-k1VKWjAZnz9cGQjfhG6k5n4,1990
+wcpan_drive_cli-3.0.0a0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+wcpan_drive_cli-3.0.0a0.dist-info/RECORD,,
