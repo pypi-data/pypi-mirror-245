@@ -1,0 +1,10 @@
+message_local/Message.py,sha256=q4-UuTBwe_kWFthX6uvk-jo6xlZyKTppD-Kujy8ofVs,11350
+message_local/MessageConstants.py,sha256=AU-jxhGT6HE6XnZjiwQ08MI5cCWuVBUseRzzfQ5cdig,627
+message_local/MessageImportance.py,sha256=NnSFsPoIWe_rw8F7sORliwNyBDvNvFapEy3Qpk4TqKQ,192
+message_local/Recipient.py,sha256=BCKxDciX5SbMA_AbBahwMQM6O3x7tv1e15pRGzslwOo,1110
+message_local/SmsMessage.py,sha256=4gcLBRhPDslJutzUBlbZ9VK26s1yWAf-E23yUIRsB3A,177
+message_local/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+message_local-0.0.18.dist-info/METADATA,sha256=Ejgr4xUbW9jhblOV70kfDrMa1r136u3Of_rcK_cTKhE,456
+message_local-0.0.18.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+message_local-0.0.18.dist-info/top_level.txt,sha256=ihAaVTdaQSJWddaNv8xm5_cwCm9s7vfhgUjtVAffdaA,14
+message_local-0.0.18.dist-info/RECORD,,
