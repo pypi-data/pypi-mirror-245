@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/st_query_input/__init__.py
+src/st_query_input/frontend/index.html
+src/st_query_input/frontend/main.js
+src/st_query_input/frontend/streamlit-component-lib.js
+src/st_query_input/frontend/style.css
+src/streamlit_query_input.egg-info/PKG-INFO
+src/streamlit_query_input.egg-info/SOURCES.txt
+src/streamlit_query_input.egg-info/dependency_links.txt
+src/streamlit_query_input.egg-info/requires.txt
+src/streamlit_query_input.egg-info/top_level.txt
