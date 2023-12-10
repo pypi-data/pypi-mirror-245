@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+splitdataloader/__init__.py
+splitdataloader/data_writer_and_loader.py
+splitdataloader/multiproc_queue_itr.py
+splitdataloader.egg-info/PKG-INFO
+splitdataloader.egg-info/SOURCES.txt
+splitdataloader.egg-info/dependency_links.txt
+splitdataloader.egg-info/requires.txt
+splitdataloader.egg-info/top_level.txt
+test/test_mpqitr.py
+test/test_split_data_loader.py
