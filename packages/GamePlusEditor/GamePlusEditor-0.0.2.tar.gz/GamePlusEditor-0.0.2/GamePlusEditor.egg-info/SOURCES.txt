@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+GamePlusEditor.egg-info/PKG-INFO
+GamePlusEditor.egg-info/SOURCES.txt
+GamePlusEditor.egg-info/dependency_links.txt
+GamePlusEditor.egg-info/requires.txt
+GamePlusEditor.egg-info/top_level.txt
