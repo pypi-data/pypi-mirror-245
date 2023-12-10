@@ -1,0 +1,82 @@
+from typing import List
+from sqlalchemy.orm import Session
+from fastapi import HTTPException
+from app.models.{{storage_name}} import {{service_name}}
+from app.requests.{{storage_name}} import {{service_name}}CreateRequest, {{service_name}}UpdateRequest
+from app.responses.{{storage_name}} import {{service_name}}CreateResponse, {{service_name}}Response, {{service_name}}UpdateResponse
+from sqlalchemy.exc import DatabaseError
+
+class {{service_name}}Service:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def get_by_id(self, id: int) -> {{service_name}}:
+        {{storage_name}} = self.db.query({{service_name}}).filter({{service_name}}.id == id).first()
+        if not {{storage_name}}:
+            raise HTTPException(status_code=404, detail="{{service_name}} not found")
+        return {{storage_name}}
+
+    def all(
+        self, page: int, items_per_page: int
+    ) -> List[{{service_name}}Response]:
+        try:
+            offset = (page - 1) * items_per_page
+            {{storage_name}}s = self.db.query({{service_name}}).offset(offset).limit(items_per_page).all()
+            responses = [
+                {{service_name}}Response(id={{storage_name}}.id, {{storage_name}}name={{storage_name}}.{{storage_name}}name, email={{storage_name}}.email)
+                for {{storage_name}} in {{storage_name}}s
+            ]
+            return responses
+        except DatabaseError as e:
+            raise HTTPException(status_code=500, detail="Internal server error")
+        except Exception as e:
+            raise HTTPException(status_code=500, detail="Internal server error")
+
+    def find(self, id: int) -> {{service_name}}Response:
+        {{storage_name}} = self.get_by_id(id)
+        return {{service_name}}Response(id={{storage_name}}.id, {{storage_name}}name={{storage_name}}.{{storage_name}}name, email={{storage_name}}.email)
+
+    def save(self, {{storage_name}}: {{service_name}}CreateRequest) -> {{service_name}}CreateResponse:
+        existing = self.db.query({{service_name}}).filter({{service_name}}.email == {{storage_name}}.email).first()
+        if existing:
+            raise HTTPException(
+                status_code=422, detail="{{service_name}} with this email already exists"
+            )
+        hashed_password = "hashed_" + {{storage_name}}.password
+        item = {{service_name}}({{storage_name}}name={{storage_name}}.{{storage_name}}name, email={{storage_name}}.email, password=hashed_password)
+        self.db.add(item)
+        self.db.commit()
+        self.db.refresh(item)
+        response_data = {
+            "id": item.id,
+            "{{storage_name}}name": item.{{storage_name}}name,
+            "email": item.email,
+        }
+        return response_data
+
+    def update(self, id: int, {{storage_name}}: {{service_name}}UpdateRequest) -> {{service_name}}UpdateResponse:
+        item = self.get_by_id(id)
+        data = {{storage_name}}.dict(exclude_unset=True)
+        if "password" in data:
+            data["password"] = "hashed_" + data["password"]
+        for key, value in data.items():
+            setattr(item, key, value)
+        self.db.commit()
+        self.db.refresh(item)
+        response_data = {
+            "id": item.id,
+            "{{storage_name}}name": item.{{storage_name}}name,
+            "email": item.email,
+        }
+        return response_data
+
+    def delete(self, id: int):
+        item = self.get_by_id(id)
+        self.db.delete(item)
+        self.db.commit()
+        response_data = {
+            "id": item.id,
+            "{{storage_name}}name": item.{{storage_name}}name,
+            "email": item.email,
+        }
+        return response_data

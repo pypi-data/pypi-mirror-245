@@ -1,0 +1,21 @@
+import json
+
+class InvalidJsonDataError(Exception):
+    pass
+
+class EmptyJsonDataError(Exception):
+    pass
+
+class {{name}}Parse:
+    def load(self, file_path):
+        try:
+            with open(file_path, 'r') as json_file:
+                data = json.load(json_file)
+                if not data:
+                    raise EmptyJsonDataError("JSON data is empty")
+                return data
+        except FileNotFoundError:
+            print(f"Error: File '{file_path}' not found.")
+        except json.JSONDecodeError as e:
+            raise InvalidJsonDataError(f"Error decoding JSON: {e}")
+        return []
