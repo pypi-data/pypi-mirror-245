@@ -1,0 +1,3 @@
+[console_scripts]
+lobrow=lobrow:LoBrowApp.main
+
