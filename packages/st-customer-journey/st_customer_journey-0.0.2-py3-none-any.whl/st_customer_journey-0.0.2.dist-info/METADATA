@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: st-customer-journey
+Version: 0.0.2
+Summary: Streamlit Component to display a customer journey
+Author: 
+Author-email: 
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit >=0.63
+
+
+# Display pretty Customer Journeys in Streamlit 
+
+## Overview
+The `st_customer_journey` component is designed for Streamlit applications to visualize and interact with customer journeys or similar flows. It allows the creation of a customizable and interactive journey map with main and child nodes, each representing different stages or steps in a customer journey. The component is highly customizable with options for colors, icons, labels, tooltips, and more.
+
+## Installation
+To install the `st_customer_journey` component, run the following command:
+
+```bash
+pip install st-customer-journey
+```
+
+## Usage
+First, import the `st_customer_journey` function in your Streamlit app:
+
+```python
+from st_customer_journey import st_customer_journey
+```
+
+### Basic Example
+Here's a basic example of how to use the `st_customer_journey` component in a Streamlit app:
+
+```python
+import streamlit as st
+from st_customer_journey import st_customer_journey
+
+# Define your nodes
+input_data = [ 
+   {
+    "id": 1,
+    "name":"r&d",
+    "label": "Research & Discover",
+    "color": "#A3D2CE",
+    "icon": "fa fa-magnifying-glass",
+    "return_value": "r&d",
+    "size": 20,
+    "label_position": "top",
+    "expand_direction": "down",
+    "label_style": "font-weight: bold; font-size:15px;",
+    "icon_style": "color: white;",
+    "tooltip": "<b>Pretty Tooltip</b>",
+    "children": [
+        {
+            "id": 2,
+            "name": "advertising",
+            "label": "See advertising",
+            "color": "#A3D2CE",
+            "return_value": "advertising",
+            "size": 5,
+            "label_position": "right",
+            "label_style": "font-size:13px;",
+            "tooltip": "Tooltip over multiple <br> lines.",
+        },
+        {
+            "id": 3,
+            "name": "read_marketing",
+            "label": "Read marketing content on website",
+            "color": "#A3D2CE",
+            "return_value": "read_marketing",
+            "size": 5,
+            "label_position": "right",
+            "label_style": "font-size:13px;",
+            "disabled": True,
+            "tooltip": "<code> Disabled = True </code>",
+        },
+    ],
+},
+    # Add more nodes as needed
+]
+
+# Render the customer journey component
+clicked_node = st_customer_journey(input_data, key="cj1")
+
+# Display the clicked node
+st.write("Clicked Node: ", clicked_node)
+```
+
+### Parameters
+- `content`: A list of dictionaries where each dictionary represents a node in the customer journey.
+- `space_main_nodes`: Horizontal space between main nodes.
+- `space_between_child_nodes`: Vertical space between child nodes.
+- `key`: A unique key for the component instance.
+- `defaultValue`: Default value to be used in the component; returned if nothing is clicked.
+- `custom_font_awesome_url`: URL for FontAwesome icons.
+- `tooltipStyle`: CSS properties for styling the tooltip.
+- `height`: Height of the component.
+- `max_width`: Maximum width of the component.
+- `first_child_extra_space`: Additional vertical space for the first child node.
+- `mainLabelOffset`: Offset for the main label.
+- `custom_css`: Custom CSS string for additional styling. Can be useful to add padding left or right if labels are cut off.
+
+### Node Attributes
+Each node in the `content` list can have the following attributes:
+- `id` (int): Unique identifier for the node. It is mandatory and must be unique.
+- `name` (str): Name of the node. This is a mandatory field.
+- `label` (str, optional): Display label for the node. It can include HTML content.
+- `color` (str, optional): The fill color of the node. It can be specified in CSS color formats, like hex codes or color names.
+- `size` (int, optional): Size of the node, determining its diameter if circular. Default size differs for main nodes and child nodes.
+- `icon` (str, optional): FontAwesome icon class for display on the node. Example: 'fa fa-home'.
+- `icon_style` (str, optional): CSS styling applied to the icon. Example: 'color: white; background-color: red; border-radius: 50%;'.
+- `expand_direction` (str, optional): Direction ('up' or 'down') for child nodes expansion.
+- `children` (list, optional): Child nodes of this node. Each child can have the same attributes as the parent node except 'children'.
+- `label_position` (str, optional): Position of the label relative to the node ('bottom', 'top', 'left', 'right').
+- `label_style` (str, optional): CSS styling for the label text.
+- `node_style` (str, optional): Additional CSS styling for the node.
+- `tooltip` (str, optional): Tooltip text displayed on hover over the node. HTML content can be used for tooltips.
+- `return_value` (any, optional): Value returned when the node is interacted with. Default is the node's name.
+- `disabled` (bool, optional): If set to True, the node will not be interactive (i.e., it cannot be clicked).
+
+
+### Advanced Customization
+You can further customize nodes with additional attributes like `label_style`, `node_style`, `expand_direction`, `children`, `tooltip`, etc., to create a detailed and interactive customer journey.
+
+## Example App
+Click here to see the component in action [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](...)
+
+
