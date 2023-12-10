@@ -1,0 +1,9 @@
+# Include project info
+include README.md
+include LICENSE.txt
+include pyproject.toml
+
+# Include extension module
+include CMakeLists.txt
+recursive-include src/itaxotools/_popart_networks *
+recursive-include src/popart *

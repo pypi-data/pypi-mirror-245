@@ -1,0 +1,3 @@
+[submodule "src/popart"]
+	path = src/popart
+	url = https://github.com/iTaxoTools/popart-current.git
