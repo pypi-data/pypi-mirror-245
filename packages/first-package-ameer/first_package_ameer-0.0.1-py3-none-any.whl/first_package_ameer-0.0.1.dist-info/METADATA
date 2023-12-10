@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: first-package-ameer
+Version: 0.0.1
+Summary: A sample test package
+Home-page: https://github.com/ahussain23/ameer_hussain
+Author: Ameer
+Author-email: contact@g.com
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+Read me
