@@ -1,0 +1,14 @@
+adafruit_pybadger/__init__.py,sha256=IOldg2c_ZMBuhe_PJ_cY8gkF81tUZZt0BM8tenRjea4,806
+adafruit_pybadger/clue.py,sha256=xW1vTNZwD3Is-JnUVXQmBVp_inTCnBCLWlXRH1pp-aA,2703
+adafruit_pybadger/cpb_gizmo.py,sha256=tSP-LM219GJmJtFUaJf53U8xSNkn0luBnDQB68PPHJM,3260
+adafruit_pybadger/magtag.py,sha256=g-wmrjW8thyhpOSrdcQaIZ6ma0UMF2JaW8yRVm_QmEg,2168
+adafruit_pybadger/pewpewm4.py,sha256=jaSh7NDhh-VELZlBnoZ9x4g9tk-JyVv5XdLZsqjLmuQ,2894
+adafruit_pybadger/pybadge.py,sha256=wsMcyheHYQqCi6oODIECC_wLRVewbpjG6A8dIqXC0SE,4070
+adafruit_pybadger/pybadger_base.py,sha256=MDQrVgrSnTdbmsHuT9axVkc3xx_PCzvbtiHBt776ckU,31867
+adafruit_pybadger/pygamer.py,sha256=a2zp_wEIQVA_80h8YP9TwjPu5CoKY3cxzPNRM6mmAXI,3514
+adafruit_pybadger/pyportal.py,sha256=yrg_ezm_H6nnA2IxE0Zjdp69_TmZ1SZYnU5sejmPAd4,1840
+adafruit_circuitpython_pybadger-3.8.1.dist-info/LICENSE,sha256=qd6vXe8_0jyxqgNnfy7VfaJymw-40uHgiPS2vqtGNow,1104
+adafruit_circuitpython_pybadger-3.8.1.dist-info/METADATA,sha256=_Mh_k-A2_I7tG29PgfoNLy-Y7LEJibTRefH2ksh-8aM,4410
+adafruit_circuitpython_pybadger-3.8.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+adafruit_circuitpython_pybadger-3.8.1.dist-info/top_level.txt,sha256=n4EQz0uHlVY0n6lNy1BGPsYM5Imo3XzpOeuhyIt19vE,18
+adafruit_circuitpython_pybadger-3.8.1.dist-info/RECORD,,
