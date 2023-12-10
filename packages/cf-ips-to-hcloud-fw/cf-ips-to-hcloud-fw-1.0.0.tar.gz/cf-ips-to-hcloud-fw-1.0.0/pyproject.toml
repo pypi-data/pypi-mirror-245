@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cf-ips-to-hcloud-fw"
+authors = [{ name = "Jürgen Kreileder", email = "jk@blackdown.de" }]
+description = "Update Hetzner Cloud firewall rules with Cloudflare IP ranges"
+keywords = ["cloudflare", "hcloud", "hetzner", "firewall", "cli"]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dynamic = ["version"]
+dependencies = ["cloudflare", "hcloud", "pydantic", "PyYAML"]
+
+[project.scripts]
+cf-ips-to-hcloud-fw = "cf_ips_to_hcloud_fw.__main__:main"
+
+[project.urls]
+Documentation = "https://github.com/jkreileder/cf-ips-to-hcloud-fw"
+Source = "https://github.com/jkreileder/cf-ips-to-hcloud-fw"
+Changelog = "https://github.com/jkreileder/cf-ips-to-hcloud-fw/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+dev = ["build", "pyright", "ruff", "wheel"]
+
+[tool.setuptools.dynamic]
+version = { attr = "cf_ips_to_hcloud_fw.__VERSION__" }
+
+[tool.setuptools]
+packages = ["cf_ips_to_hcloud_fw"]
+
+[tool.pyright]
+include = ["cf_ips_to_hcloud_fw"]
+strict = ["cf_ips_to_hcloud_fw"]
+reportMissingImports = true
+reportMissingTypeStubs = true
+venv = "venv"
+
+[tool.ruff]
+select = ["B", "C", "E", "F", "W", "B9", "SIM", "C90", "I", "UP"]
+target-version = "py311"

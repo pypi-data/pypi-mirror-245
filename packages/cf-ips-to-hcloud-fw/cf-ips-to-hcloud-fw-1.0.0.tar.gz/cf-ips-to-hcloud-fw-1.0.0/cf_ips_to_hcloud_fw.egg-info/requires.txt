@@ -1,0 +1,10 @@
+cloudflare
+hcloud
+pydantic
+PyYAML
+
+[dev]
+build
+pyright
+ruff
+wheel
