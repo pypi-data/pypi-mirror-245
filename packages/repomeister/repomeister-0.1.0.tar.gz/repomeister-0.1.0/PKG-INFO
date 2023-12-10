@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: repomeister
+Version: 0.1.0
+Summary: GitHub Repository Manager
+License: MIT
+Author: Rob van der Leek
+Author-email: 5324924+robvanderleek@users.noreply.github.com
+Requires-Python: >=3.11,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pygithub (>=2.1.1,<3.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: textual (>=0.42.0,<0.43.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# Repo Meister
+
+GitHub Repository Manager
+
+<div align="center">
+  <img src="docs/repo-meister-logo.png" width="384"/>
+</div>
+
+# Introduction
+
+# Feedback, suggestions and bug reports
+
+If you have suggestions for how Repo Meister could be improved, or want to
+report a bug, [open an
+issue](https://github.com/robvanderleek/repomeister/issues)! All and any
+contributions are appreciated.
+
+To show your project uses Repo Meister place this badge in the README markdown:
+
+[![Repo Meister](https://img.shields.io/badge/Repo%20Meister-green.svg)](https://github.com/robvanderleek/repomeister)
+
+```
+[![Repo Meister](https://img.shields.io/badge/Repo%20Meister-green.svg)](https://github.com/robvanderleek/repomeister)
+```
+
+# License
+
+[MIT](LICENSE) © 2023 Rob van der Leek <robvanderleek@gmail.com>
+(https://twitter.com/robvanderleek)
+
