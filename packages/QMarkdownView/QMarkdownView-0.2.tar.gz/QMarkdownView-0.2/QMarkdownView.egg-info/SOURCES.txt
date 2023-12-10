@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+QMarkdownView/__init__.py
+QMarkdownView/resources.py
+QMarkdownView.egg-info/PKG-INFO
+QMarkdownView.egg-info/SOURCES.txt
+QMarkdownView.egg-info/dependency_links.txt
+QMarkdownView.egg-info/requires.txt
+QMarkdownView.egg-info/top_level.txt
