@@ -1,0 +1,9 @@
+README.md
+setup.py
+ml_som/__init__.py
+ml_som/text_reader.py
+ml_som.egg-info/PKG-INFO
+ml_som.egg-info/SOURCES.txt
+ml_som.egg-info/dependency_links.txt
+ml_som.egg-info/top_level.txt
+ml_som/data/my_code.py
