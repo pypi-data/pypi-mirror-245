@@ -1,0 +1,8 @@
+README.rst
+pyproject.toml
+supa_auth/__init__.py
+supa_auth.egg-info/PKG-INFO
+supa_auth.egg-info/SOURCES.txt
+supa_auth.egg-info/dependency_links.txt
+supa_auth.egg-info/requires.txt
+supa_auth.egg-info/top_level.txt
