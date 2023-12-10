@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/Markdown_SPA.egg-info/PKG-INFO
+src/Markdown_SPA.egg-info/SOURCES.txt
+src/Markdown_SPA.egg-info/dependency_links.txt
+src/Markdown_SPA.egg-info/entry_points.txt
+src/Markdown_SPA.egg-info/requires.txt
+src/Markdown_SPA.egg-info/top_level.txt
+src/markdown_spa/__init__.py
+src/markdown_spa/__main__.py
+src/markdown_spa/generator.py
