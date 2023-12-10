@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: exactcli
+Version: 0.0.1
+Summary: CLI utility and python client package for Exact headless CMS
+Project-URL: Homepage, https://github.com/yaroslaff/exactcli
+Project-URL: Issues, https://github.com/yaroslaff/exactcli/issues
+Author-email: Yaroslav Polyakov <yaroslaff@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# exactcli
+
+## Install
+
+~~~
+pipx exactcli
+~~~
+
+But you may use pip as well.
+
+## Config example
+
+Config file is either `.env` in current directory or override it with `EXACT_DOTENV=/path/file` env variable.
+
+config example:
+~~~
+EXACT_URL=http://localhost:8000/
+EXACT_PROJECT=sandbox
+EXACT_TOKEN=envtoken
+EXACT_DSNAME=products
+~~~
+These defaults will make your commands shorter.
+
+## Usage
+
+Get info about your project and datasets
+~~~
+exactcli --info
+~~~
+
+Upload new JSON file to project
+~~~
+exactcli --upload ~/repo/exact/tests/products.json --ds products --keypath products
+~~~
+
+Query it
+~~~
+exactcli --ds products --expr 'True' --sort price --limit 1
+exactcli --ds products --expr 'brand=="Apple" and price<1000' --fields id brand title description price
+~~~
+
+~~~
+exactcli --ds products --filter brand=\"Apple\" price__lt=2000
+exactcli --ds products --filter 'brand="Apple"' price__lt=2000
+~~~

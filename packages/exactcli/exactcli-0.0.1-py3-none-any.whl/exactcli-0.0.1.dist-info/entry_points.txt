@@ -1,0 +1,2 @@
+[console_scripts]
+exactcli = exactcli:__main__.main
