@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: samar
+Version: 0.0.2
+Summary: 
+License: MIT
+Author: Minghong Li
+Author-email: lmh0066@outlook.com
+Requires-Python: >=3.9,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fancyimpute (>=0.7.0,<0.8.0)
+Requires-Dist: matplotlib (>=3.8.2,<4.0.0)
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: pandas (>=2.1.3,<3.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: scikit-learn (>=1.3.2,<2.0.0)
+Requires-Dist: seaborn (>=0.13.0,<0.14.0)
+Description-Content-Type: text/markdown
+
+# samar
+[![PyPI version](https://img.shields.io/pypi/pyversions/samar.svg)](https://pypi.org/project/samar/)
+[![PyPI version](https://img.shields.io/pypi/v/samar.svg)](https://pypi.org/project/samar/)
+[![PyPI version](https://img.shields.io/pypi/l/ansicolortags.svg)](https://github.com/LMH0066/samar/blob/main/LICENSE)
+
+**A machine learning tool for medical research.**
+
+## Features
+
+- ✅ Straight forward from **.xlsx file** to **charts and tables**.
+- ✅ Robust comparison and prediction of multiple methods.
+- ✅ Feature importance analysis with RandomForest.
+- ✅ Robust comparison in independent verification dataset.
+
+
+## Quick start
+
+1. Install the samar via pip.
+
+```sh
+pip install samar
+```
+
+2. Use samar like [examples.py](https://github.com/LMH0066/samar/blob/main/examples.py)
+
+Once the package is installed, the main ways of use are in examples.py.
+
+
