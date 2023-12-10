@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: jinjacraft
+Version: 1.1.2
+Summary: Python command-line tool to generates text files based on Jinja2 template and YAML data file.
+Home-page: https://github.com/sdejongh/jinjacraft
+License: MIT
+Keywords: jinja2,yaml,template,command-line
+Author: Steve De Jongh
+Author-email: dejongh.st@gmail.com
+Requires-Python: >=3.9
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Utilities
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: pytest (>=7.4.0,<8.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Project-URL: Bug Tracker, https://github.com/sdejongh/jinjacraft/issues
+Project-URL: Repository, https://github.com/sdejongh/jinjacraft
+Description-Content-Type: text/markdown
+
+![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue)
+# JINJACRAFT
+
+JinjaCraft is a simple Python command-line tool which can generate text file based on a Jinja2 template
+and a YAML data file.
+
+## Installation
+```
+git clone https://github.com/sdejongh/jinjacraft.git
+cd jinjacraft
+pip install -r requirements.txt
+pip install .
+```
+
+## Usage
+```
+usage: jinjacraft [-h] [-o OUTPUT_FILE] data_file template_file
+
+positional arguments:
+  data_file             Yaml data file path
+  template_file         Jinja2 template file path
+
+options:
+  -h, --help            show this help message and exit
+  -o OUTPUT_FILE, --output_file OUTPUT_FILE
+                        Output file path
+```
+
