@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.py
+parcelfile/__init__.py
+parcelfile/parcel.py
+parcelfile.egg-info/PKG-INFO
+parcelfile.egg-info/SOURCES.txt
+parcelfile.egg-info/dependency_links.txt
+parcelfile.egg-info/top_level.txt
