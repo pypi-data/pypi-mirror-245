@@ -1,0 +1,9 @@
+README.md
+setup.py
+ml_mnist_cnn/__init__.py
+ml_mnist_cnn/text_reader.py
+ml_mnist_cnn.egg-info/PKG-INFO
+ml_mnist_cnn.egg-info/SOURCES.txt
+ml_mnist_cnn.egg-info/dependency_links.txt
+ml_mnist_cnn.egg-info/top_level.txt
+ml_mnist_cnn/data/my_code.py
