@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pypi_mirror.py
+pyproject.toml
+setup.cfg
+setup.py
+python_pypi_mirror.egg-info/PKG-INFO
+python_pypi_mirror.egg-info/SOURCES.txt
+python_pypi_mirror.egg-info/dependency_links.txt
+python_pypi_mirror.egg-info/entry_points.txt
+python_pypi_mirror.egg-info/top_level.txt
