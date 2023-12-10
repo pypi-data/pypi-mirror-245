@@ -1,0 +1,9 @@
+kheritage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kheritage/api.py,sha256=WTVJw2vDCpWOfN8_mXG_ONGtbemGAu-uZwUAMTaYumc,5915
+kheritage/models.py,sha256=NY2vgTGgbWmf535HOS-9S0LZl2M_q1dWlMt5cq0RuIA,25167
+kheritage/utils.py,sha256=8cMer5pPX_9N4p0rODtxGlG88JM5mZ6nV4sJNBgEcfQ,7387
+kheritage-0.0.2.dist-info/LICENSE,sha256=MSdHWHVjoHs3s8FRJxnou4bEh67kyzTu3ZpSGQbAZ-c,1041
+kheritage-0.0.2.dist-info/METADATA,sha256=Oa6B9jXTLaS5-h-9672mcMA5VInajzR7DZ4z0wm6QsU,2943
+kheritage-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+kheritage-0.0.2.dist-info/top_level.txt,sha256=ZELvFJl8v24IvkN0Srv_VQ5N6pn95978TSzdtUanGt0,10
+kheritage-0.0.2.dist-info/RECORD,,
