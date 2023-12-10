@@ -1,0 +1,8 @@
+extended_algo/__init__.py,sha256=PbqEt2AsQXy5_iy4i0rs-Ui3ila4pkwquW_eHPs0KV4,788
+extended_algo/engine/VectorStrategy.py,sha256=1D84lTFGWOKv1F6uCTqTn_SBMgFAdSFzfs8zh5Q0Wgk,7655
+extended_algo/market/OHLCBars.py,sha256=eQEOeqfONXC3bsE812XRYIMrqsnU7z5QJIV_pPsVDRc,1454
+extended_algo/market/common.py,sha256=4fhspg9nG_fdYwWlRlM_GHdN92K4kYdhl5hDDszjbi0,1507
+extended_algo-0.1.dist-info/METADATA,sha256=cddXeMpf18J6VHcOyiVLCK1FtKo95nBRCaUiBMXm0ro,342
+extended_algo-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+extended_algo-0.1.dist-info/top_level.txt,sha256=fE1VG7936bF0vYuUE2kHfl7tx7fOahQhk65DgJga5cs,14
+extended_algo-0.1.dist-info/RECORD,,
