@@ -1,0 +1,3 @@
+sympy
+ply
+numpy
