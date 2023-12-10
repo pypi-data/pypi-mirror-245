@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+DanGam.egg-info/PKG-INFO
+DanGam.egg-info/SOURCES.txt
+DanGam.egg-info/dependency_links.txt
+DanGam.egg-info/requires.txt
+DanGam.egg-info/top_level.txt
+dangam/__init__.py
+dangam/config.py
+dangam/dangam.py
+dangam.egg-info/PKG-INFO
+dangam.egg-info/SOURCES.txt
+dangam.egg-info/dependency_links.txt
+dangam.egg-info/requires.txt
+dangam.egg-info/top_level.txt
