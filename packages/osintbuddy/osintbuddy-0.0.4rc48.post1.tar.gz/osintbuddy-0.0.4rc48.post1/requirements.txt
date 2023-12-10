@@ -1,0 +1,17 @@
+selenium>=4.9.0
+sqlalchemy-json==0.7.0
+SQLAlchemy-Utils==0.41.1
+playwright==1.39.0
+httpx>=0.25.0
+beautifulsoup4==4.12.2
+gremlinpy @ git+https://github.com/jerlendds/gremlinpy.git@eaba7dca12ad0156eb0d6d8ba2eb5751551c6a6d
+pyfiglet==0.8.post1
+termcolor==2.3.0
+fastapi==0.103.2
+uvicorn==0.22.0
+uvloop==0.17.0
+pydantic==2.4.2
+pydantic-settings==2.0.3
+yq==3.2.3
+jedi-language-server==0.41.1 
+websockets==11.0.3
