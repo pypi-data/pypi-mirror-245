@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gasflow
+Version: 0.0.5
+Summary: A python library for calculating natural gas properties and gas pipeline simulation
+Home-page: https://github.com/codingmagical/gaspy
+Author: qxd
+Author-email: qxd_cup@163.com
+License: Apache 2.0
+Keywords: gas,property,simulation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
