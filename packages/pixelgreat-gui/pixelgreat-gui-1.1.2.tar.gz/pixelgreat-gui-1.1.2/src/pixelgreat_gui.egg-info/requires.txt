@@ -1,0 +1,4 @@
+pyyaml
+Pillow>10.0
+pixelgreat
+PyQt5
