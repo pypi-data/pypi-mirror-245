@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/rsyncdaemon/__init__.py
+src/rsyncdaemon/confbuilder.py
+src/rsyncdaemon/rsyncdaemon.py
+src/rsyncdaemon.egg-info/PKG-INFO
+src/rsyncdaemon.egg-info/SOURCES.txt
+src/rsyncdaemon.egg-info/dependency_links.txt
+src/rsyncdaemon.egg-info/entry_points.txt
+src/rsyncdaemon.egg-info/requires.txt
+src/rsyncdaemon.egg-info/top_level.txt

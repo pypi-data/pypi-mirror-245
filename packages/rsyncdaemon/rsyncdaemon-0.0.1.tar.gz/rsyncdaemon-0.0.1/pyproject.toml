@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.0", "wheel",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rsyncdaemon"
+version = "v0.0.1"
+description = "Python based CLI Remote Syncing Daemon service."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [ "paramiko", "watchdog", "toml",]
+keywords = [ "rsync", "sync", "transfer", "backup",]
+classifiers = [ "Programming Language :: Python :: 3", "Development Status :: 4 - Beta", "Intended Audience :: System Administrators", "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)", "Operating System :: Unix",]
+[[project.authors]]
+name = "Pankaj Jackson"
+email = "pankajackson@live.co.uk"
+
+[project.license]
+file = "LICENSE"
+
+[project.scripts]
+rsyncdaemon = "rsyncdaemon.rsyncdaemon:main"
+
+[project.urls]
+Homepage = "https://github.com/pankajackson/RSyncDaemon"
+"Bug Tracker" = "https://github.com/pankajackson/RSyncDaemon/issues"
+Source = "https://github.com/pankajackson/RSyncDaemon"
