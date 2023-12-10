@@ -1,0 +1,12 @@
+AUTHORS
+ChangeLog
+LICENSE
+setup.cfg
+setup.py
+vesselasid.egg-info/PKG-INFO
+vesselasid.egg-info/SOURCES.txt
+vesselasid.egg-info/dependency_links.txt
+vesselasid.egg-info/not-zip-safe
+vesselasid.egg-info/pbr.json
+vesselasid.egg-info/requires.txt
+vesselasid.egg-info/top_level.txt

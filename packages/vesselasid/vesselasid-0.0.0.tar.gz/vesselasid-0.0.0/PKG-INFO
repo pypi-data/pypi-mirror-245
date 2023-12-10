@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: vesselasid
+Version: 0.0.0
+Summary: Vessel ASID client
+Home-page: https://github.com/anarkiwi/vessel
+Author: Josh Bailey
+Author-email: josh@vandervecken.com
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: Unix
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: mido
+Requires-Dist: numpy
+Requires-Dist: pyaudio
+Requires-Dist: pydub
+Requires-Dist: wave
+
+Vessel ASID client
