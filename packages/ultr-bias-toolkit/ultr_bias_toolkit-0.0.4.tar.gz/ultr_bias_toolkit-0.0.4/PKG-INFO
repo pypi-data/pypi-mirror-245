@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ultr-bias-toolkit
+Version: 0.0.4
+Summary: Toolkit for bias estimation in unbiased learning to rank
+Author: Philipp Hager
+Author-email: philipp.konstantin.hager@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Requires-Dist: torch (>=2.1.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Personal toolkit for bias estimation in unbiased learning to rank
+
+## Offline bias estimation methods
+We implement multiple offline position bias estimation methods, including [three intervention harvesting](https://arxiv.org/abs/1812.05161) approaches:
+
+```
+from ultr_bias_toolkit.bias.naive import NaiveCtrEstimator
+from ultr_bias_toolkit.bias.intervention_harvesting import PivotEstimator, AdjacentChainEstimator, AllPairsEstimator
+
+estimators = {
+    "CTR Rate": NaiveCtrEstimator(),
+    "Pivot One": PivotEstimator(pivot_rank=1),
+    "Adjacent Chain": AdjacentChainEstimator(),
+    "Global All Pairs": AllPairsEstimator(),
+}
+examination_dfs = []
+
+for name, estimator in estimators.items():
+    examination_df = estimator(df)
+    examination_df["estimator"] = name
+    examination_dfs.append(examination_df)
+
+examination_df = pd.concat(examination_dfs)
+examination_df.head()
+```
+
