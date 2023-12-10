@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+mkdocs.yml
+pyproject.toml
+docs/index.md
+src/bacore/__init__.py
+src/bacore.egg-info/PKG-INFO
+src/bacore.egg-info/SOURCES.txt
+src/bacore.egg-info/dependency_links.txt
+src/bacore.egg-info/requires.txt
+src/bacore.egg-info/top_level.txt
+src/bacore/domain/__init__.py
+src/bacore/domain/credentials.py
+src/bacore/interactors/__init__.py
