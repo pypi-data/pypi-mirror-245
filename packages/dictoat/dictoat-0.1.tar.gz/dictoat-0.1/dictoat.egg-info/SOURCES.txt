@@ -1,0 +1,12 @@
+._README.md
+._dictoat.py
+._setup.py
+LICENSE
+README.md
+__init__.py
+dictoat.py
+setup.py
+dictoat.egg-info/PKG-INFO
+dictoat.egg-info/SOURCES.txt
+dictoat.egg-info/dependency_links.txt
+dictoat.egg-info/top_level.txt
