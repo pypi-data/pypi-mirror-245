@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/libwebview/__init__.py
+src/libwebview/wrapper.py
+src/libwebview.egg-info/PKG-INFO
+src/libwebview.egg-info/SOURCES.txt
+src/libwebview.egg-info/dependency_links.txt
+src/libwebview.egg-info/top_level.txt
+src/libwebview/lib/x86_64/WebViewEdge.dll
+src/libwebview/tests/__init__.py
+src/libwebview/tests/test_app.py
