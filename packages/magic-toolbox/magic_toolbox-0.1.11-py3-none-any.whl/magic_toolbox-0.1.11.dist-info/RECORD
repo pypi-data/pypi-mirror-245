@@ -1,0 +1,15 @@
+magic_toolbox/.pytest_cache/.gitignore,sha256=Ptcxtl0GFQwTji2tsL4Gl1UIiKa0frjEXsya26i46b0,37
+magic_toolbox/.pytest_cache/CACHEDIR.TAG,sha256=N9yI75oKvt2-gQU6bdj9-xOvthMEXqHrSlyBWnSjveQ,191
+magic_toolbox/.pytest_cache/README.md,sha256=c_1vzN2ALEGaay2YPWwxc7fal1WKxLWJ7ewt_kQ9ua0,302
+magic_toolbox/.pytest_cache/v/cache/lastfailed,sha256=RBNvo1WzZ4oRRq0W9-hknpT7T8If536DEMBg9hyq_4o,2
+magic_toolbox/.pytest_cache/v/cache/nodeids,sha256=qRk2bJKVe69VCu5QtdvjJeV2OEUNk4PXCRuq6HC0FSg,50
+magic_toolbox/.pytest_cache/v/cache/stepwise,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+magic_toolbox/foo/foo.py,sha256=TvmJg4mHGmOfwSlE2fAxAfJlh2omPwQFeKqGehrjy2w,526
+magic_toolbox/foo/tools.py,sha256=ZbFiZ7UWdSMHHu3-PyUAAlARGjaE_FNmOa0oRdFEcIY,223
+magic_toolbox/magic_toolbox.py,sha256=OQHELRPaQakAf8-_jJBLFKJMsGwba25F5pC5Pt77A_o,4008
+magic_toolbox/test_magic_toolbox.py,sha256=Wx-ty2jHYTa2qhBjpmnm1hOqUGhFTKsRvcYDVrfPu9s,688
+magic_toolbox-0.1.11.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+magic_toolbox-0.1.11.dist-info/METADATA,sha256=EqgDb9OXGYoShBiNxvgxhJ_ZW5FiLUYVfNx-gvpfWL8,1772
+magic_toolbox-0.1.11.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+magic_toolbox-0.1.11.dist-info/entry_points.txt,sha256=Jqma15s3MqaEI-ZMKSYYlOlFBUHdVyUO3pYVXImwwKE,60
+magic_toolbox-0.1.11.dist-info/RECORD,,
