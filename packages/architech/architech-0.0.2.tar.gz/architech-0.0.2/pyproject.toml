@@ -1,0 +1,19 @@
+[project]
+name = "architech"
+version = "0.0.2"
+authors = [
+  { name="Atlas", email="vtlvs.0@gmail.com" },
+]
+description = "AI Python Package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+GitHub = "https://github.com/AtlasL1/Architech"
+Issues = "https://github.com/AtlasL1/Architech/issues"
+Docs = "https://atlas.is-not-a.dev/architech"
