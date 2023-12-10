@@ -1,0 +1,4 @@
+ultralytics>=8.0.209
+opencv-python
+pyzbar==0.1.9
+pdf2image
