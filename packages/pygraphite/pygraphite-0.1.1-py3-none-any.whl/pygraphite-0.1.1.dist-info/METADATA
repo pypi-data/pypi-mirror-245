@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pygraphite
+Version: 0.1.1
+Summary: A custom Python package for snark graph operations
+Home-page: https://github.com/AlexCheema/Graphite
+Author: TT
+Author-email: tommyet@btinternet.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: networkx
+Requires-Dist: pickle
+
+ETH India 2023
+
+
