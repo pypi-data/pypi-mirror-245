@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: itaxotools-popart-networks
+Version: 0.1.2
+Summary: Python bindings for PopArt network algorithms
+Author: Jan-Christopher Schmidt
+Author-Email: Stefanos Patmanidis <stefanpatman91@gmail.com>
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Project-URL: Homepage, https://itaxotools.org/
+Project-URL: Source, https://github.com/iTaxoTools/popart_networks
+Requires-Python: <4,>=3.10.2
+Provides-Extra: dev
+Requires-Dist: setuptools_scm; extra == "dev"
+Requires-Dist: cibuildwheel; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: networkx; extra == "dev"
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# PopArt networks - Python bindings
+
+[![PyPI - Version](https://img.shields.io/pypi/v/itaxotools-popart-networks)](
+    https://pypi.org/project/itaxotools-popart-networks)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/itaxotools-popart-networks)](
+    https://pypi.org/project/itaxotools-popart-networks)
+[![PyPI - License](https://img.shields.io/pypi/l/itaxotools-popart-networks)](
+    https://pypi.org/project/itaxotools-popart-networks)
+[![GitHub - Tests](https://img.shields.io/github/actions/workflow/status/iTaxoTools/popart_networks/test.yml?label=tests)](
+    https://github.com/iTaxoTools/popart_networks/actions/workflows/test.yml)
+
+Build haplotype networks from sequence data.
+
+## Installation
+
+popart_networks is available on PyPI. You can install it through `pip`:
+
+```
+pip install itaxotools-popart-networks
+```
+
+## Available algorithms:
+- Minimum spanning network
+- Median joining network
+- Tight span walker
+- TCS network
+
+## Requirements:
+- C++ compiler
