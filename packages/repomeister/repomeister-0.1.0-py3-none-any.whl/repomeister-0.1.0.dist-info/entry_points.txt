@@ -1,0 +1,3 @@
+[console_scripts]
+repomeister=repomeister.__main__:main
+
