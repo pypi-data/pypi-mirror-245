@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: st-deta-connection
+Version: 0.0.1
+Summary: A Streamlit component to connect to Deta Base and fetch data from it.
+Home-page: https://github.com/mohitrajsinha/st_deta_connection
+Author: Mohit Raj Sinha
+Author-email: mhtrajsinha@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Streamlit Deta Connection Module
+
+## Overview
+
+This module provides a Streamlit connection to Deta Base, allowing users to easily fetch and cache data from Deta Base collections in a Streamlit app.
+
+## Installation
+
+You can install the module using the following pip command:
+
+```bash
+pip install st_deta_connection
