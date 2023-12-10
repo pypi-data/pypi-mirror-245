@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+requirements.txt.txt
+setup.py
+py_num_methods/__init__.py
+py_num_methods.egg-info/PKG-INFO
+py_num_methods.egg-info/SOURCES.txt
+py_num_methods.egg-info/dependency_links.txt
+py_num_methods.egg-info/requires.txt
+py_num_methods.egg-info/top_level.txt
