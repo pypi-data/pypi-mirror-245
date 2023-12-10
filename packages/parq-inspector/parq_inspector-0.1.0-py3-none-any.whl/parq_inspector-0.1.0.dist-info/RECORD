@@ -1,0 +1,12 @@
+inspector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inspector/main.py,sha256=uaCC0tUYVvjJfX15WGNBNHLR0O1hAGQRdHod-Y3jKbg,3452
+inspector/src/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+inspector/src/parq_table.py,sha256=8GmSmDsYSYMuD0ZlHgyPiOEosbtvCMlLtfoG_f6pia0,1407
+inspector/src/sidebar.py,sha256=ZwNnxl0Qj3DxCMiM6gaqhS1QuK4RwDvwxTl_1902ho0,1977
+inspector/src/storage_options.py,sha256=CHZxX4sBC3isSLlPhmVW3BmBlP-HM22gLmZXACni1zo,1817
+inspector/styles/basic.tcss,sha256=ab5FYcuOyxE3LFW_eM1OpFvIvFNiVWGGTGN5KuVll7k,1060
+parq_inspector-0.1.0.dist-info/LICENSE,sha256=ByW4CYPbczZkFgdikKYCduBy_o-eBWB7Q9IWV8DmssE,1064
+parq_inspector-0.1.0.dist-info/METADATA,sha256=kF5Kuyw6qJKQqYDTTSpksWmyvFhl7dYhy-DwVAT2m6A,3467
+parq_inspector-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+parq_inspector-0.1.0.dist-info/entry_points.txt,sha256=kSHKd_KEUyl-xMJZtRRJhhhwNc5bJuLMbJanxce8Vmk,54
+parq_inspector-0.1.0.dist-info/RECORD,,
