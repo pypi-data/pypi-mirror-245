@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+monkeytype/__init__.py
+monkeytype/errors.py
+monkeytype/request.py
+monkeytype.py.egg-info/PKG-INFO
+monkeytype.py.egg-info/SOURCES.txt
+monkeytype.py.egg-info/dependency_links.txt
+monkeytype.py.egg-info/requires.txt
+monkeytype.py.egg-info/top_level.txt
