@@ -1,0 +1,10 @@
+gempipe/.ipynb_checkpoints/__init__-checkpoint.py,sha256=ezHh6kjUSQXQWqo9YUNex0ml59wURBh4JVPJ3eqH8cY,1028
+gempipe/.ipynb_checkpoints/moduleA-checkpoint.py,sha256=eBrZ0rMDeOmwhi1gDBxC4AnggrhaBtv6lbYTxfaBmD4,68
+gempipe/.ipynb_checkpoints/moduleB-checkpoint.py,sha256=5QZTwlPItmV1xp8iK1arFmTQRUEnCsCDFPkTwpk9Ryo,39
+gempipe/__init__.py,sha256=ezHh6kjUSQXQWqo9YUNex0ml59wURBh4JVPJ3eqH8cY,1028
+gempipe/moduleA.py,sha256=eBrZ0rMDeOmwhi1gDBxC4AnggrhaBtv6lbYTxfaBmD4,68
+gempipe/moduleB.py,sha256=5QZTwlPItmV1xp8iK1arFmTQRUEnCsCDFPkTwpk9Ryo,39
+gempipe-0.0.2.dist-info/METADATA,sha256=_MwddncbCGjUwyimt4Cfyd_Bp3pNJQPFx9Vxf_oGr8Y,596
+gempipe-0.0.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gempipe-0.0.2.dist-info/entry_points.txt,sha256=Bg7NZhJf57vSzky63uqedxKzLNc_Xrk1qu_9wNQfSBE,40
+gempipe-0.0.2.dist-info/RECORD,,
