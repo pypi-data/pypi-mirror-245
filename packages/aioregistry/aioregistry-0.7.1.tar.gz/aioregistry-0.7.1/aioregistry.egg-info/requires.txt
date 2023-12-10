@@ -1,0 +1,5 @@
+aiohttp<4,>=3.8
+pydantic<3,>=1.8
+
+[tqdm]
+tqdm<5,>=4.20.0
