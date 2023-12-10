@@ -1,0 +1,42 @@
+import pyxmlfrag
+import xml.sax
+import xml.etree.ElementTree as ET
+
+class Customer(object):
+    def __init__(self, customerId = None, name = None, accountCount = None, totalBalance = None):
+        if customerId is not None:
+            self.customerId = int(customerId)
+        else:
+            self.customerId = None
+        self.name = name
+        if accountCount is not None:
+            self.accountCount = int(accountCount)
+        else:
+            self.accountCount = None
+        if totalBalance is not None:
+            self.totalBalance = float(totalBalance)
+        else:
+            self.totalBalance = None
+
+all_customers = {}
+
+class MyExample(pyxmlfrag.XmlFragContentHandler):
+    def startXMLElement(self, name, attrs):
+        if self.check(["allCustomers", "customer"]):
+            self.startFragmentCollection()
+    def endXMLElement(self, name, df):
+        if self.check(["allCustomers", "customer"]):
+            cid = int(df.attrib["id"])
+            all_customers[cid] = Customer(customerId = cid, name = df.find("name").text, accountCount = int(df.find("accountCount").text), totalBalance = float(df.find("totalBalance").text))
+with open("file.xml", "r") as f:
+    p = xml.sax.make_parser()
+    handler = MyExample()
+    p.setContentHandler(handler)
+    p.parse(f)
+for k,v in all_customers.items():
+    print("----")
+    print("Customer id: %d" % (v.customerId,))
+    print("Customer name: %s" % (v.name,))
+    print("Customer account count: %d" % (v.accountCount,))
+    print("Customer total balance: %.2f" % (v.totalBalance,))
+    print("----")
