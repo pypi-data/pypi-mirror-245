@@ -1,0 +1,8 @@
+#!/usr/bin/env -S pip install -r
+
+platformdirs
+pygls
+# get_completion_list_by_enum()
+tree-sitter-lsp >= 0.0.9
+tree-sitter-zathurarc >= 0.0.3
+webcolors
