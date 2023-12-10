@@ -1,0 +1,10 @@
+README.md
+setup.py
+MainContentExtractor.egg-info/PKG-INFO
+MainContentExtractor.egg-info/SOURCES.txt
+MainContentExtractor.egg-info/dependency_links.txt
+MainContentExtractor.egg-info/requires.txt
+MainContentExtractor.egg-info/top_level.txt
+main_content_extractor/__init__.py
+main_content_extractor/main_content_extractor.py
+main_content_extractor/trafilatura_extends.py

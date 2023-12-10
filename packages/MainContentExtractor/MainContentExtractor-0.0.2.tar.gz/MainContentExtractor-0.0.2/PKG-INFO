@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: MainContentExtractor
+Version: 0.0.2
+Home-page: https://github.com/HawkClaws/main_content_extractor
+Author: HawkClaws
+License: MIT
+Project-URL: Source Code, https://github.com/HawkClaws/main_content_extractor
+Requires-Python: >=3.6
