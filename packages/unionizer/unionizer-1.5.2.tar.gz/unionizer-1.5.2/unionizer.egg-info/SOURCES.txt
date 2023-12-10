@@ -1,0 +1,10 @@
+README.md
+setup.py
+unionizer/__init__.py
+unionizer.egg-info/PKG-INFO
+unionizer.egg-info/SOURCES.txt
+unionizer.egg-info/dependency_links.txt
+unionizer.egg-info/top_level.txt
+unionizer/_core/__init__.py
+unionizer/_core/_assign_core.py
+unionizer/_core/_bond_core.py
