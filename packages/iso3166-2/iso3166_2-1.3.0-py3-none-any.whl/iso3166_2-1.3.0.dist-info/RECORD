@@ -1,0 +1,16 @@
+iso3166_2/__init__.py,sha256=Zfy-uw75pLAd68WhK4y-Ptm2lDahvMKODeofhX8vjTc,765
+iso3166_2/iso3166_2.py,sha256=xd5dL1P-zr6F0oS5O--IjZJgcdn7Uafhj8tctGYKa9E,24820
+iso3166_2/iso3166-2-data/README.md,sha256=vZsTFJjvs_Kk5xLHCYtkXdR897IrG1t9EiaBDIsBMX0,115
+iso3166_2/iso3166-2-data/iso3166-2.json,sha256=gV6AGr7eiEK5uOayKt9CHeKfvoS4EsQAT5AwCXPb3BU,1696432
+iso3166_2_scripts/__init__.py,sha256=aNJHUIuccVSKt8k9uQRiNaynT1fRgSw1OC7LfnpcHOg,63
+iso3166_2_scripts/get_iso3166_2.py,sha256=qx2JQdy6sJRCcV40G6hfGvJpGz6faATVWgZLGNMGvjU,12420
+iso3166_2_scripts/update_subdivisions.py,sha256=SIsNFzfxxGSb0ORh1hUJ2iJOI2Kc1x1kym4f9eDNDKI,24125
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_get_iso3166_2.py,sha256=RK7oGMxfrvOoslteUfWtQpHe7JeUWd-WAmltebSO3_w,25627
+tests/test_iso3166_2.py,sha256=aR7OD6Ia3X_N-q-W1mQ2VuJCSvZ0fSPqqutJZoS2AxQ,41642
+tests/test_iso3166_2_api.py,sha256=mp9JJLU-z_sg6RWzCBls9lcvgUaBhCHVJJastjp46yE,43910
+iso3166_2-1.3.0.dist-info/LICENSE,sha256=CUJxuoQ-Wr3Jhq8nFgOVXKBiKDM8o6szg7542eUwF7A,1487
+iso3166_2-1.3.0.dist-info/METADATA,sha256=cA2HvlY_LyTjKDmHE16ENsLwZR55QO5BM9gccU7fiio,19432
+iso3166_2-1.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+iso3166_2-1.3.0.dist-info/top_level.txt,sha256=XxNWjTDF-yby8CQKgGYTk6iDk7WeGwmMYMisR06Sm8E,34
+iso3166_2-1.3.0.dist-info/RECORD,,
