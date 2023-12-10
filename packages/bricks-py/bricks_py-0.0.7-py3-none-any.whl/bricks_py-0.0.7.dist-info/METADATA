@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: bricks-py
+Version: 0.0.7
+Summary: quickly build your crawler
+Home-page: UNKNOWN
+Author: Kem
+Author-email: 531144129@qq.com
+License: MIT
+Keywords: bricks
+Platform: UNKNOWN
+Requires-Python: >=3.8.0
+Requires-Dist: loguru ==0.7.2
+Requires-Dist: jmespath ==1.0.1
+Requires-Dist: lxml ==4.9.3
+Requires-Dist: jsonpath ==0.82.2
+Requires-Dist: w3lib ==2.1.2
+Requires-Dist: curl-cffi ==0.5.9
+Requires-Dist: redis ==5.0.1
+Provides-Extra: mongo
+Requires-Dist: pymongo ==4.6.0 ; extra == 'mongo'
+
+UNKNOWN
+
+
