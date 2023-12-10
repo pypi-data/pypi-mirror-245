@@ -1,0 +1,5 @@
+configmate_plugins/yaml_parser/__init__.py,sha256=xkXAHhTOaEaVczoLdzIcpFQ9AXWM2lYKEO0oWU4SbHY,77
+configmate_plugins/yaml_parser/yaml_parser.py,sha256=l7bCLs_oQejdrYdsPTmISfVqZ1E_zzkmjjEmZx8XT4w,507
+configmate_yamlparser-0.1.0.dist-info/METADATA,sha256=Hky7QmnPmsjQE8IVgK63OxdQzUq8Ev5bL007A-ye_3M,624
+configmate_yamlparser-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+configmate_yamlparser-0.1.0.dist-info/RECORD,,
