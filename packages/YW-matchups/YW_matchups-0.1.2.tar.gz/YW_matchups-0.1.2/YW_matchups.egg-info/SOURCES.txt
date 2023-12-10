@@ -1,0 +1,11 @@
+setup.py
+YW_matchups/AC_polymer.py
+YW_matchups/__init__.py
+YW_matchups/polymer_matchups.py
+YW_matchups/run.py
+YW_matchups.egg-info/PKG-INFO
+YW_matchups.egg-info/SOURCES.txt
+YW_matchups.egg-info/dependency_links.txt
+YW_matchups.egg-info/requires.txt
+YW_matchups.egg-info/top_level.txt
+tests/test_1.py
