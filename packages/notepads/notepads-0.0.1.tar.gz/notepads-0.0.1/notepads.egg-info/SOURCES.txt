@@ -1,0 +1,7 @@
+README.md
+setup.py
+notepads/__init__.py
+notepads.egg-info/PKG-INFO
+notepads.egg-info/SOURCES.txt
+notepads.egg-info/dependency_links.txt
+notepads.egg-info/top_level.txt
