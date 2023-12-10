@@ -1,0 +1,6 @@
+assets
+build
+dist
+docs
+folioflex
+notebook
