@@ -1,0 +1,10 @@
+license.txt
+pyproject.toml
+structure.txt
+structures/modules/homeostasis/__init__.py
+structures/modules/homeostasis.egg-info/PKG-INFO
+structures/modules/homeostasis.egg-info/SOURCES.txt
+structures/modules/homeostasis.egg-info/dependency_links.txt
+structures/modules/homeostasis.egg-info/top_level.txt
+structures/modules/homeostasis/clique/__init__.py
+structures/modules/homeostasis/clique/group/__init__.py
