@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: libmiyoushe-next
+Version: 0.0.4.3
+Summary: A module for miyoushe(米游社), include mihoyo account authentication, some actions for miyoushe(米游社), etc.
+Author: Error063
+Author-email: admin@error063.work
+License: GNU General Public License v3 (GPLv3)
+Keywords: HoYoLab,米游社,miyoushe
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.10
+Requires-Dist: pywebview (>=4.3.2)
+Requires-Dist: requests (>=2.31.0)
+Requires-Dist: setuptools (>=65.5.1)
+
