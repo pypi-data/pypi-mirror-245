@@ -1,0 +1,2 @@
+recursive-include ansaotuvi_website/static *
+recursive-include ansaotuvi_website/templates *
