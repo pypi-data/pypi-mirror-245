@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: multifutures
+Version: 0.1.2
+Summary: 
+Author: Panos Mavrogiorgos
+Author-email: pmav99@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: limits
+Requires-Dist: pydantic (>2)
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# multifutures
+
+[![PyPI - Version](https://img.shields.io/pypi/v/multifutures.svg)](https://pypi.org/project/multifutures)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/multifutures.svg)](https://pypi.org/project/multifutures)
+
+---
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install multifutures
+```
+
+## License
+
+`my-scripts` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
