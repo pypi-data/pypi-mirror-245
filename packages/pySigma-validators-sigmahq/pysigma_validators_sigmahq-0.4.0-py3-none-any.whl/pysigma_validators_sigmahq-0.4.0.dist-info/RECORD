@@ -1,0 +1,14 @@
+sigma/validators/sigmahq/__init__.py,sha256=qUZ9-8uHn8CnKctD2wMEvPyc2A36SzSjaF4ui0lKSU0,823
+sigma/validators/sigmahq/data/sigmahq_logsource_prefix.json,sha256=bGJq0Hal0sfWyvmaPZ7Wfozv3gnYwqfPL2bNladTZJ4,8936
+sigma/validators/sigmahq/data/sigmahq_logsource_valid.json,sha256=k2ZBugVCP8fL9jGBcFU-ws_wX8OOTl9i-DmRz8zoSWY,10845
+sigma/validators/sigmahq/data/sigmahq_product_cast.json,sha256=riOWGvLQnRuucAabJPSoJu6oj_xKjNOz83digJ7aA0I,25013
+sigma/validators/sigmahq/data/sigmahq_product_prefix.json,sha256=53AjiH0ABNEpe5iuw9JTvxFPtHsX2i1MW080wG0Lkxk,225
+sigma/validators/sigmahq/field.py,sha256=MJWp_2Mncy9nItFLvlqgnp2LxSp5css3MrrQf0-L4JA,5066
+sigma/validators/sigmahq/filename.py,sha256=Q0xDFMqzMKByJYg4LCvj41uGLFYzve8NFwD4-EcXy_0,4316
+sigma/validators/sigmahq/logsource.py,sha256=WxgG2zgiT482yuBMKPUPIqehpA7aGXHsRYGoTfaiJI4,1828
+sigma/validators/sigmahq/metadata.py,sha256=6eXE6vGeY75n-LX9Q1bL95rOVz8vjcr44wHitkPBsCU,8424
+sigma/validators/sigmahq/title.py,sha256=hRa02ONBFDW94phFBLLRlJgq-dtNMLhCT3zw2Ou28ws,3229
+pysigma_validators_sigmahq-0.4.0.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+pysigma_validators_sigmahq-0.4.0.dist-info/METADATA,sha256=caYMIhsGVEphrdwwJo7o5bThau0UOuEBT3pfDoeTVHI,755
+pysigma_validators_sigmahq-0.4.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pysigma_validators_sigmahq-0.4.0.dist-info/RECORD,,
