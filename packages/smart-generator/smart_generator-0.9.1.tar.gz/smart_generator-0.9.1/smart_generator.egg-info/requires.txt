@@ -1,0 +1,6 @@
+marshmallow-dataclass>=8.5.14
+typeguard>=3.0.0
+pandas>=1.4.0
+cachetools>=5.0.0
+sqlalchemy
+exrex
