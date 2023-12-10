@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+PyConversionKit.egg-info/PKG-INFO
+PyConversionKit.egg-info/SOURCES.txt
+PyConversionKit.egg-info/dependency_links.txt
+PyConversionKit.egg-info/top_level.txt

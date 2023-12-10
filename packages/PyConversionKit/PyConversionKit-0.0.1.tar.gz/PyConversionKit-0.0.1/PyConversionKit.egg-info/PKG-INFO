@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: PyConversionKit
+Version: 0.0.1
+Summary: A comprehensive toolkit for converting various file formats in Python
+Home-page: https://github.com/FanFeast/PyConversionKit.git
+Author: Mukul Ganwal
+Author-email: mukulgawnal@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyConversionKit
+This is a collection of tools to convert various data formats to one another.
