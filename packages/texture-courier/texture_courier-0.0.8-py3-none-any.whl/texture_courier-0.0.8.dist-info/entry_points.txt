@@ -1,0 +1,2 @@
+[console_scripts]
+texture-courier = texture_courier:main
