@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+modethirteen.techdocs-metadata = modethirteen.mkdocs.metadata:TechDocsMetadataPlugin
