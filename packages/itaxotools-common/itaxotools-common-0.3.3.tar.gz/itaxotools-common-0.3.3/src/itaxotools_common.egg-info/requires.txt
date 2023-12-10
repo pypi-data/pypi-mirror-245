@@ -1,0 +1,12 @@
+
+[dev]
+setuptools-scm
+pre-commit
+ruff
+pytest
+pytest-qt
+pytest-xvfb
+pyinstaller
+
+[gui]
+pyside6
