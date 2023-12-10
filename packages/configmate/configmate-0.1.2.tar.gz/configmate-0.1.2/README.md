@@ -1,0 +1,149 @@
+# configmate: universal, practical configuration parser for Python.
+configmate is designed for parsing configuration files in various formats. Key features:
+- [Layering](#configuration-layering)
+- [File slicing](#subsectioning)
+- [Command line interface (CLI)](#command-line-interface-cli)
+- [Environment variable interpolation](#environment-variable-interpolation)
+- [Validation](#validation)
+- Config debugging
+
+With support for multiple file format backends, this package provides robust validation and allows for configuration overrides. Engineered for straightforward and reliable integration into Python applications.
+
+# Usage
+## Installation
+Configmate is available on PyPI:
+```bash
+pip install configmate
+```
+To keep it dependency-light, `configmate` does not include any file format backends. Out of the box, it supports .json and .ini. To get support for yaml and toml you can install extra backends:
+```bash
+pip install configmate[yaml] # reads .yml and .yaml
+pip install configmate[toml] # reads .toml
+```
+For more flexible validation, you can install validation backends:
+```bash
+pip install configmate[pydantic]
+```
+# Features:
+## Configuration layering
+`configmate` supports configuration layering. This is useful for example if you want to have a default configuration file and override it with a user-specific configuration file. For example:
+```json
+# config.json
+{
+    "host": "localhost",
+    "port": 8080
+}
+```
+```json
+# override.json
+{
+    "host": "override"
+}
+```
+```python
+import configmate
+config = configmate.ConfigMate("config.json", overlays=["override.json"])
+print(config['host']) # override
+print(config['port']) # 8080
+```
+
+## Subsectioning
+`configmate` supports file subsectioning. This is useful if you want to keep your configuration for different parts of the application in a single file. For example:
+```json
+# config.json
+{
+    "database": {
+        "host": "localhost",
+        "port": 8080
+    },
+    "server": {
+        "host": "localhost",
+        "port": 9090
+    }
+}
+```
+```python
+import configmate
+
+databaseconfig = configmate.ConfigMate("config.json", slices=["database"])
+print(databaseconfig['host']) # localhost
+print(databaseconfig['port']) # 8080
+
+serverconfig = configmate.ConfigMate("config.json", slices=["server"])
+print(serverconfig['host']) # localhost
+print(serverconfig['port']) # 9090
+```
+
+
+## Environment variable interpolation
+`configmate` supports environment variable interpolation. This is useful if you want to use environment variables in your configuration files. For example:
+```json
+# config.json
+{
+    "host": "${DB_HOST}",
+    "port": "${DB_PORT}"
+}
+```
+```bash
+export DB_HOST=localhost
+export DB_PORT=8080
+```
+```python
+from configmate import ConfigMate
+config = ConfigMate("config.json")
+print(config['host']) # localhost
+print(config['port']) # 8080
+```
+## Validation
+configmate supports validation of configuration files. This is useful if you want to ensure that your configuration files are valid. For example:
+```json
+# config.json
+{
+    "host": "localhost",
+    "port": 8080
+}
+```
+```python
+import configmate
+import dataclasses
+
+@dataclasses.dataclass
+class Config:
+    host: str
+    port: int
+
+config = configmate.ConfigMate("config.json", validator=Config)
+print(config.host) # localhost
+```
+
+## Command Line Interface (CLI):
+configmate supports overrides and section-specific updates via CLI. You can specify multiple configuration files and also directly update settings via CLI arguments. This enables flexible and robust configuration management for Python applications.
+
+### Syntax 
+```bash
+python path/to/script.py [Config1] [-override/path ...] [--section.key value]
+```
+### Examples:
+```bash
+# Single config, multiple overrides
+python path/to/script.py -over/ride/1.json -over/ride/2.json
+
+# Single config, multiple section modifications
+python path/to/script.py --database.host localhost --server.port 8080
+
+# Multiple configs
+python path/to/script.py Config1 -over/ride1.json Config2 -over/ride2.json
+
+# All together
+python path/to/script.py Config1 -over/ride1.yaml --database.host localhost Config2 -over/ride2.yaml --server.port 8080
+```
+
+### Flags
+Use an empty -- to separate CLI arguments from flags. This is useful if you want to pass CLI arguments to your script without them being parsed by `configmate`. For example:
+The available options are:
+- `-h`, `--help`: Print help message
+- `-d`, `--debug`: Print debug information
+- `-p`, `--print`: Print configuration files
+```bash
+python path/to/script.py -- --help
+```
