@@ -1,0 +1,8 @@
+#!/usr/bin/env -S pip install -r
+
+# get_package_names
+pip-cache
+platformdirs
+tomli; python_version < "3.11"
+tree-sitter-lsp >= 0.0.6
+tree-sitter-requirements
