@@ -1,0 +1,47 @@
+# IFSC Search
+
+IFSC Search is a Python module that facilitates searching for bank details using the Indian Financial System Code (IFSC). The module fetches data from the Razorpay IFSC API.
+
+## Installation
+
+You can install the module using pip:
+
+```bash
+pip install ifscSearch
+```
+
+## Usage
+
+Here is an example of how to use the `ifscSearch` module in your Python script:
+
+```python
+from ifscSearch import get_details
+
+# Replace "PYTM0123456" with the IFSC code you want to search
+ifsc_code_to_search = "PYTM0123456"
+result = get_details(ifsc_code_to_search)
+
+if result:
+    print(f"Details for IFSC code {ifsc_code_to_search}:\n{result}")
+else:
+    print(f"IFSC code {ifsc_code_to_search} not found in the Razorpay IFSC database.")
+```
+
+Replace `"PYTM0123456"` with the actual IFSC code you want to search. The `get_details` function fetches information from the Razorpay IFSC API, and the result is printed. The expected output will either display the details for the given IFSC code or indicate that the code was not found.
+
+## Contributing
+
+If you want to contribute to this project, feel free to open issues or submit pull requests. Contributions are welcome!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Razorpay for providing the IFSC API data.
+
+Happy coding!
+```
+
+Feel free to add or modify sections based on your project's requirements. This template includes sections for installation, usage, contributing, license information, and acknowledgments. Adjust it as needed to provide comprehensive information about your module.
