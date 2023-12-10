@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: timeanalysismoon
+Version: 0.1
+Summary: A time analysis decorator for Python functions
+Home-page: https://github.com/CoderMungan/timeanalysismoon
+Author: CoderMungan
+Author-email: codermungan@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+
+A decorator that measures and prints the execution time of a function.
