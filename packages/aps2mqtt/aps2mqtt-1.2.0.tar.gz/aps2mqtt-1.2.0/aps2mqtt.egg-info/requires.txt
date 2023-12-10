@@ -1,0 +1,7 @@
+requests~=2.31
+paho.mqtt~=1.6
+pyyaml~=6.0
+numpy~=1.26
+suntime~=1.2
+str2bool~=1.1
+tzdata>=2023.3
