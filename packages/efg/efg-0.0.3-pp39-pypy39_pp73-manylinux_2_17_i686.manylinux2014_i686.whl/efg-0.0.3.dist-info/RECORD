@@ -1,0 +1,10 @@
+libXML-Parser.so,sha256=gAmWTJQzj0exJUeoAEUh9MN6tXTsNb5KSiusApPKtMY,272696
+efg.pypy39-pp73-x86-linux-gnu.so,sha256=tgh3-ZsMc7890e5Rid8yKMXL7Op0dLhdNZ8aMYi09Jk,624045
+libEFG.so,sha256=ug9Sow-SJa7vzsueSe4i75NPu2OS2gGq4S4jQqS_M0Y,1183901
+efg.libs/libXML-Parser-8009964c.so,sha256=rS5tXyvUFUdvFPMsMxdrNEpx6LOG4p47Il-NYCyRWs8,351285
+efg.libs/libEFG-4bd6344f.so,sha256=ZH5SSg0JF9x6dPlHq7kj5AY2hEL2IZcf5E4qifXH6xw,1273737
+efg-0.0.3.dist-info/RECORD,,
+efg-0.0.3.dist-info/WHEEL,sha256=qChgozpdh1s_CxkI3REUe84-2eyYeCLDUqyV1q8q1xs,158
+efg-0.0.3.dist-info/LICENSE,sha256=SgyEQniK1Tmkhsv7elDcupnP9ElRXjHS061a0QLjfVM,1071
+efg-0.0.3.dist-info/METADATA,sha256=T3KAmFrVBjsz72kr__ERMLOPbA-yFfa0KCsFI4wDkIE,624
+efg-0.0.3.dist-info/top_level.txt,sha256=rK74hneFUNlKqj5pio_V4XH127olSucm_7zt7aZyDCc,4
