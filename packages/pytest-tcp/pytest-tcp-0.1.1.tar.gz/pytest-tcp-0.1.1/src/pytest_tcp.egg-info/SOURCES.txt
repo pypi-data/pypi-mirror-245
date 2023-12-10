@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+src/pytest_tcp/__init__.py
+src/pytest_tcp/plugin.py
+src/pytest_tcp.egg-info/PKG-INFO
+src/pytest_tcp.egg-info/SOURCES.txt
+src/pytest_tcp.egg-info/dependency_links.txt
+src/pytest_tcp.egg-info/entry_points.txt
+src/pytest_tcp.egg-info/requires.txt
+src/pytest_tcp.egg-info/top_level.txt
+tests/test_pytest_tcp.py
