@@ -1,0 +1,11 @@
+cythonnestednumpy/README.MD,sha256=2WXK_xYmZj-W-XKjtHt6gpqPgCnQdK6aaBMexvXaigI,11871
+cythonnestednumpy/__init__.py,sha256=_2ZOkR2anoiQIiVP_oF7wE-FT-ni-rdKvi6DqEhTjrk,11480
+cythonnestednumpy/requirements.txt,sha256=n8-LJIX5TuggbYLBLOvmb6mwBO4-OZkaGBXGkHidMkg,29
+cythonnestednumpy/thirdparty.json,sha256=iw4sBS1qalFwz4-zHPsULsakg2yrDqKfSKpBtgLn4C8,51219
+cythonnestednumpy/xxhash.c,sha256=XDWR_m5shqYZ6yZ2DpUg43pv1RUogqta2T-RLiqFWWY,1855
+cythonnestednumpy/xxhash.h,sha256=K3Iva6aCy71G74g5Yzt0yio1MnMI3aLe248PVvdQriw,262851
+cythonnestednumpy-0.10.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+cythonnestednumpy-0.10.dist-info/METADATA,sha256=4P7BD7_W6BADIVUxx4Sxamqc-02RPZkvLW8-UK7hors,12646
+cythonnestednumpy-0.10.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+cythonnestednumpy-0.10.dist-info/top_level.txt,sha256=hssKEz0Rejr0hIRjYHZMgfr-o9WXZZbpI6_pdEuWR-U,18
+cythonnestednumpy-0.10.dist-info/RECORD,,
