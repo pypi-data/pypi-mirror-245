@@ -1,0 +1,9 @@
+pip_abandoned/__init__.py,sha256=touMGFqQx6RccJna3fLjbjctwkCDaXYfZfDPPNKRCvg,158
+pip_abandoned/__version__.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+pip_abandoned/cli.py,sha256=6Oi1yYa58pxauBea4wTEN4fj3Z07oWjsu2Va4sX_8ao,2485
+pip_abandoned/lib.py,sha256=ebnenaxGglp0j3SZNA7hmpNp1Q2PEhDWcYMae2uzH3U,9148
+pip_abandoned-0.4.0.dist-info/entry_points.txt,sha256=N45DYdNteBHPnPCnBMaVzguebtJWyk5ICpPnthsP-H8,52
+pip_abandoned-0.4.0.dist-info/LICENSE,sha256=4iN0vsHtZAkIyAqV59DT4W_GI1C69O9-2dhMTSkE894,1065
+pip_abandoned-0.4.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+pip_abandoned-0.4.0.dist-info/METADATA,sha256=nKzYr0cMSMx-a_bRfsXg4zDdCIaI9iZwhzIdBiLlXkY,4732
+pip_abandoned-0.4.0.dist-info/RECORD,,
