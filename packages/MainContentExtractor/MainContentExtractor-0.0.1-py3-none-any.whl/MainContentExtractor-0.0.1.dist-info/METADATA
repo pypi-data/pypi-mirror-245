@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: MainContentExtractor
+Version: 0.0.1
+Home-page: 
+Author: HawkClaws
+License: MIT
+Requires-Python: >=3.6
+Requires-Dist: trafilatura >=1.6.2
+Requires-Dist: html2text >=2020.1.16
+Requires-Dist: beautifulsoup4 >=4.12.2
+
