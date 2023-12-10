@@ -1,0 +1,13 @@
+parroter/Library/ai_artworksBot.py,sha256=qTgumDrNV3-9ToDDMIOllV-cAYbZXa8szX_1vF3XKnc,3167
+parroter/Library/parroterBase.py,sha256=5GD5OzaYtkUE18B5dHtLSJp_42dkAG2K5gLcXyLIyBg,10088
+parroter/Library/parroterConfig.py,sha256=2uTqNOQwpr_MqZEBssZSZeJTdqU2fxB75GcpaUC_qk4,4837
+parroter/Library/parroterConfiger.py,sha256=eTdQcrpAUjQORomFFynY3ntGSnxZhp8dRFs7JF-XJYM,409
+parroter/Library/parroterGlobals.py,sha256=lyC14RL2FpEs2hB6zyT5AM2lOuwYGpWZyBg_XL0FyO4,592
+parroter/Library/ai_artworks/ai_artworksConfig.py,sha256=K2D0beGXAoiCIuWbPxOxBgCuYrFU3MCJx459W3VvNqQ,2965
+parroter/Library/ai_artworks/ai_artworksConfiger.py,sha256=0dDBbmBeGaZHqagbnqpMesMreTI3n6hRGIc81gYjgqU,898
+parroter/Library/ai_artworks/ai_artworksGlobals.py,sha256=BxbxL7Wmp7Ov8d9PwnROgoZp8QZqEy74u7oirJK811A,624
+parroter/Models/trn_last_name.py,sha256=5_MQtthHkBt6YeZTX7iYEEk4dRJUITbc1rCEwJCA-lQ,447
+parroter-1.0.7.dist-info/METADATA,sha256=0M1ZMbU09o1umpwWIv0CvoPomwqVEOjvj0fw401_zlQ,2913
+parroter-1.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+parroter-1.0.7.dist-info/top_level.txt,sha256=RixI05jN9E5E7rON5Yyv3qsK_EvnRgtyGb6BlZPOEME,62
+parroter-1.0.7.dist-info/RECORD,,
