@@ -1,0 +1,8 @@
+PyPDF2
+matplotlib
+openai
+openpyxl
+pandas
+python-docx
+tiktoken
+wolframalpha
