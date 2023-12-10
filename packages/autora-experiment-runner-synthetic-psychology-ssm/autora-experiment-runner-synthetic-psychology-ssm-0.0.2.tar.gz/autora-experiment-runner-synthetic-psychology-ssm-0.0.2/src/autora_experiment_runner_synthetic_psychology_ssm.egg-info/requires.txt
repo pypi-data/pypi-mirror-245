@@ -1,0 +1,6 @@
+autora-core
+autora-synthetic
+ssm-simulators==0.5.3
+
+[dev]
+autora-core[dev]
