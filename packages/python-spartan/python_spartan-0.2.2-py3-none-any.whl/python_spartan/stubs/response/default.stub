@@ -1,0 +1,79 @@
+from typing import List
+from pydantic import BaseModel
+
+
+class {{name}}Response(BaseModel):
+    """
+    Pydantic model representing a response for a {{name}}.
+
+    Attributes:
+        id (int): The unique identifier of the user.
+        username (str): The username of the user.
+        email (str): The email address of the user.
+    """
+    id: int
+    username: str
+    email: str
+
+class Single{{name}}Response(BaseModel):
+    """
+    Pydantic model representing a response for a single {{name}}.
+
+    Attributes:
+        data ({{name}}Response): The user response data.
+        status_code (int): The HTTP status code of the response.
+    """
+    data: {{name}}Response
+    status_code: int
+
+class Pagination(BaseModel):
+    """
+    Pydantic model representing pagination information.
+
+    Attributes:
+        page (int): The current page number.
+        items_per_page (int): The number of items per page.
+        total_items (int): The total number of items.
+    """
+    current_page: int
+    items_per_page: int
+    total: int
+
+class Paginated{{name}}Response(BaseModel):
+    """
+    Pydantic model representing a paginated response for a list of users.
+
+    Attributes:
+        users (List[{{name}}Response]): The list of users.
+        pagination (Pagination): The pagination information.
+    """
+    data: List[{{name}}Response]
+    meta: Pagination
+    status_code: int
+
+class {{name}}CreateResponse(BaseModel):
+    """
+    Pydantic model representing a response for creating a {{name}}.
+
+    Attributes:
+        id (int): The unique identifier of the created user.
+        username (str): The username of the created user.
+        email (str): The email address of the created user.
+    """
+    id: int
+    username: str
+    email: str
+
+
+class {{name}}UpdateResponse(BaseModel):
+    """
+    Pydantic model representing a response for updating a {{name}}.
+
+    Attributes:
+        id (int): The unique identifier of the updated user.
+        username (str): The updated username of the user.
+        email (str): The updated email address of the user.
+    """
+    id: int
+    username: str
+    email: str
