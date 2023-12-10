@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "youtube_data_extractor"
+version = "0.1.2"
+description = "This is a package that allow you to extract useful information about any youtube video!"
+authors = ["YunhongFeng"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+sphinx = "^7.2.6"
+sphinxcontrib-napoleon = "^0.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
