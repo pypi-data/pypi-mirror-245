@@ -1,0 +1,8 @@
+setup.py
+src/GrabWinPy/GrabWinPy.py
+src/GrabWinPy/__init__.py
+src/GrabWinPy.egg-info/PKG-INFO
+src/GrabWinPy.egg-info/SOURCES.txt
+src/GrabWinPy.egg-info/dependency_links.txt
+src/GrabWinPy.egg-info/requires.txt
+src/GrabWinPy.egg-info/top_level.txt
