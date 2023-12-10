@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: qpyr
+Version: 0.1.7
+Summary: Create QR Codes.
+License: Apache-2.0
+Keywords: qr,qrcode,qrcode-generator
+Author: Sabi
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Pillow (>=10.1.0,<11.0.0)
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Project-URL: Documentation, https://sabih-h.github.io/qpyr/
+Project-URL: Source, https://github.com/sabih-h/qpyr
+Description-Content-Type: text/markdown
+
+![Status](https://img.shields.io/badge/status-under%20development-orange)
+![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+![moon](https://img.shields.io/badge/🚀🚀🚀-🌓-blue)
+
+
+# QPYR
+Circumference of a circle is $2\pi r$, what is the circumference of a QR Code?
+
+---
+
+Python library for generating QR Codes, written with emphasis on readability. Ideal for learning QR Code standard at a deeper level. Production ready in near future 🚀🚀🚀.
+
+
+## Basic usage
+To use the package, import and call the `main` function as follows:
+
+```python
+import qpyr
+qpyr.main("google.com")
+```
+<img src="./qrcode-example.png" alt="QR Code" width="200" height="200"/>
+
+
+## Contributing
+Contributions are warmly welcomed! Whether you're tackling a bug, adding a new feature, or improving documentation, your input is invaluable in making this library better.
+
