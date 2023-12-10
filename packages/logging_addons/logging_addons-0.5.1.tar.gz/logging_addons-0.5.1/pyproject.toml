@@ -1,0 +1,29 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "logging_addons"
+authors = [
+    {name = "netcreator"}
+]
+readme = "docs/README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dynamic = ["version", "description"]
+keywords = [
+    "logging",
+]
+dependencies = []
+
+[project.urls]
+Home = "http://bitbucket.org/netcreator/logging_addons"
+Documentation = "http://bitbucket.org/netcreator/logging_addons/docs/README.md"
+
+[project.scripts]
+logging_addons = "demo"
