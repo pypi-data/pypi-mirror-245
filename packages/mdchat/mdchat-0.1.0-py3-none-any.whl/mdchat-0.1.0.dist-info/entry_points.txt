@@ -1,0 +1,3 @@
+[console_scripts]
+mdchat=mdchat.__main__:main
+

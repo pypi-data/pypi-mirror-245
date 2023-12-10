@@ -1,0 +1,11 @@
+mdchat/__init__.py,sha256=QfTU3NT9g5SjiQLyhFyHOcEuxN7ggZQPN8UUvBOTu3k,45
+mdchat/__main__.py,sha256=G9bHXMOx9QGxJdWBgMEvBEN90N6BZhOcUXbkd45TU1k,237
+mdchat/chatbot.py,sha256=If70vdu3gXCLpCTUe1wAm96_mVIoodi0ygJGR5g7BV8,4843
+mdchat/cli.py,sha256=QySq7D0NcZ3fIWSst68eC7E5I8Lkwd11xs59uLy2B-c,2916
+mdchat/config.py,sha256=DZTr8_7rif-uT4p7pU573gmO_dsAhBAuRhV3guST0ec,1810
+mdchat/logger.py,sha256=Rpga5AhtYajWMBUyrJU6zKnEfHc7kyJ98tHwfAKvSzw,573
+mdchat-0.1.0.dist-info/LICENSE,sha256=Tb5Vh0cEDdTgYf-ilV_2YsZ74kepgNCfwBI2dXB2Txs,1069
+mdchat-0.1.0.dist-info/METADATA,sha256=DOJPTq58G2ztVyQED4I4RRXu3Gy9GKNkA7XuoPooywM,2420
+mdchat-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mdchat-0.1.0.dist-info/entry_points.txt,sha256=kOcrj-2yI4LP1q5TKnN9AECUktknYXsKFBzoC_1dpOE,47
+mdchat-0.1.0.dist-info/RECORD,,
