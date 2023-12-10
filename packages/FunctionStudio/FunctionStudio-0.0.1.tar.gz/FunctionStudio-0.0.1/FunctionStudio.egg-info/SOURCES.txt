@@ -1,0 +1,14 @@
+README.md
+setup.py
+FunctionStudio.egg-info/PKG-INFO
+FunctionStudio.egg-info/SOURCES.txt
+FunctionStudio.egg-info/dependency_links.txt
+FunctionStudio.egg-info/requires.txt
+FunctionStudio.egg-info/top_level.txt
+src/CompositeFunction.py
+src/__init__.py
+src/functions.py
+src/geneticAlgorithms.py
+src/gpt2Function.py
+src/neuralNetworkEstimator.py
+src/utils.py
