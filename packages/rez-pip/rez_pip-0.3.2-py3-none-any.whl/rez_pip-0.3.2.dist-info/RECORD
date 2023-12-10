@@ -1,0 +1,16 @@
+rez_pip/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rez_pip/__main__.py,sha256=VWl4WTCLtIEO3OkfnL_kiX_2OL0wD3QlST62zwo-DxU,38
+rez_pip/cli.py,sha256=KTsUyUFxeoJXPQ2jfu6IJaApKfOQUUKtkLZSYd7NpRA,10703
+rez_pip/download.py,sha256=VuLV3qgfIkXa_4TgYPUK8ucv0Tny7JdlS_9jT0xVllU,4944
+rez_pip/exceptions.py,sha256=0xxNvB6B6CDUd0n7yjdrZwPAfHOn5UvBlAnftDpHfnc,464
+rez_pip/install.py,sha256=fG2i_AtBYYxoWH9jKEwqy0QmPSysabb8xYr1P9tjU6k,7382
+rez_pip/pip.py,sha256=cYk27_uBy9UAQwMJCfhgdS70I11DGrUy8FwbjgfYtuk,4374
+rez_pip/rez.py,sha256=LTotJFJTcgoNZpyEzelouJ-AkiOJpduPmZ9aOfMl7eY,9291
+rez_pip/utils.py,sha256=CivlZeDXMcsdqir4jaNnQg39xwSyMxnYu8tjN361YeU,23742
+rez_pip/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rez_pip/data/pip.pyz,sha256=_BXhGZb4BGnnlHYTFRIjcg1lcgjtFnL5vIGyeL081-U,2076610
+rez_pip-0.3.2.dist-info/METADATA,sha256=ea16CAr-tjuwP3kr6wxUSNWeZ3x25Z_3TfaHHAcij-U,17151
+rez_pip-0.3.2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+rez_pip-0.3.2.dist-info/entry_points.txt,sha256=kihMpglM_FxossknHIWSOYctZVsAYn-QLv-lDhTNYh8,45
+rez_pip-0.3.2.dist-info/licenses/LICENSE,sha256=96x0oZ6xv5BJMu3M_X_0K9i-M2DqznhqbUykn2Xr7NU,11351
+rez_pip-0.3.2.dist-info/RECORD,,
