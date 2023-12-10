@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: rosemary
+Version: 1.0.0
+Summary: 
+Author: Chris Odi
+Author-email: chris.odi76@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: asyncpg (>=0.29.0,<0.30.0)
+Requires-Dist: importlib (>=1.0.4,<2.0.0)
+Requires-Dist: logger (>=1.4,<2.0)
+Requires-Dist: pydantic (>=2.5.2,<3.0.0)
+Requires-Dist: setuptools (>=69.0.2,<70.0.0)
+Requires-Dist: sqlalchemy (>=2.0.23,<3.0.0)
+Description-Content-Type: text/markdown
+
+in progress...
+
