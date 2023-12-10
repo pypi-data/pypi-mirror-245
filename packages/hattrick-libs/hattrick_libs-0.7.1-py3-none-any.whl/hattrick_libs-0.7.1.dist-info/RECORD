@@ -1,0 +1,12 @@
+__main__.py,sha256=3QAuCdpO4QHdNSysc9ibeAHnhoPlu8zCM8E9CvX4wX8,5462
+ht_libs/config.py,sha256=RXc4FzZ3DhClIju9BRI3fg8Jx6Mm_zfp7Dq4C6vcaPg,9414
+ht_libs/do_challenge.py,sha256=O95F0DPlRV0JlfjDZgx_t7srEqZVUy-8CyN3M3te9Yw,1694
+ht_libs/do_hattrick_request.py,sha256=gIyHoM9sOIf7ZaV6Wzn6L1eJvWBMlc2RebNg1t-VAi4,1635
+ht_libs/get_flags.py,sha256=7s5fa7y_vCr8Qn-27kPjQb8zx7wfwqJMaHb1uVmu-hU,2475
+ht_libs/get_series.py,sha256=HsO_7fA2jitJJXBiKCoX4VnB-s4qozpy-bY1OKFjm0Q,1506
+ht_libs/get_teamdetails.py,sha256=UwmFgZFw1CP6yjD-uYXNNCI2TaT8wqfeRBq8EalIALA,1992
+ht_libs/get_worlddetails.py,sha256=NJF-rhJxwLHNPhghBC8L4zj1f6XraajBEKV5PP9KEK4,614
+hattrick_libs-0.7.1.dist-info/METADATA,sha256=-5oBRJ8AqAgsIZF2kO8PH3KgeAQXDzXUMifqKkraRi0,494
+hattrick_libs-0.7.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+hattrick_libs-0.7.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hattrick_libs-0.7.1.dist-info/RECORD,,
