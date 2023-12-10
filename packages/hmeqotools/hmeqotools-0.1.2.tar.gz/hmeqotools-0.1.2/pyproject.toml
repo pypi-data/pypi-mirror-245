@@ -1,0 +1,37 @@
+[project]
+name = "hmeqotools"
+version = "0.1.2"
+description = "A simple toolkit for Python."
+authors = [
+    { name = "hmeqo", email = "hmeqo@qq.com" },
+]
+dependencies = [
+    "httpx>=0.25.2",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.optional-dependencies]
+music163 = [
+    "pycryptodome>=3.19.0",
+]
+mathutil = [
+    "rich>=13.6.0",
+]
+crypto = [
+    "cryptography>=41.0.7",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]
