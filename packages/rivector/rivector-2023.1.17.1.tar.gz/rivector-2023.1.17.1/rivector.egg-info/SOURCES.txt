@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+rivector/__init__.py
+rivector/errors.py
+rivector/vector2.py
+rivector/wrapper.py
+rivector.egg-info/PKG-INFO
+rivector.egg-info/SOURCES.txt
+rivector.egg-info/dependency_links.txt
+rivector.egg-info/top_level.txt
+rivector/include/vectors.h
+rivector/lib/vectors.so
+rivector/src/vectors.cpp
