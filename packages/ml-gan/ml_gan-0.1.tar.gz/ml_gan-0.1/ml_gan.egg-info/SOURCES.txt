@@ -1,0 +1,9 @@
+README.md
+setup.py
+ml_gan/__init__.py
+ml_gan/text_reader.py
+ml_gan.egg-info/PKG-INFO
+ml_gan.egg-info/SOURCES.txt
+ml_gan.egg-info/dependency_links.txt
+ml_gan.egg-info/top_level.txt
+ml_gan/data/my_code.py
