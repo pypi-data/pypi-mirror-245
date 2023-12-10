@@ -1,0 +1,5 @@
+include cythonnestednumpy/requirements.txt
+include cythonnestednumpy/thirdparty.json
+include cythonnestednumpy/README.MD
+include cythonnestednumpy/xxhash.c
+include cythonnestednumpy/xxhash.h

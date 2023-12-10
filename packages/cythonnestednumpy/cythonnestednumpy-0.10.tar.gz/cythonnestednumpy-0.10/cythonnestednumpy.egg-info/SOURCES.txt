@@ -1,0 +1,16 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cythonnestednumpy/README.MD
+cythonnestednumpy/__init__.py
+cythonnestednumpy/requirements.txt
+cythonnestednumpy/thirdparty.json
+cythonnestednumpy/xxhash.c
+cythonnestednumpy/xxhash.h
+cythonnestednumpy.egg-info/PKG-INFO
+cythonnestednumpy.egg-info/SOURCES.txt
+cythonnestednumpy.egg-info/dependency_links.txt
+cythonnestednumpy.egg-info/requires.txt
+cythonnestednumpy.egg-info/top_level.txt
