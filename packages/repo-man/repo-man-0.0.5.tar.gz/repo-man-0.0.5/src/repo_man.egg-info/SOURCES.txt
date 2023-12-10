@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/repo_man/__init__.py
+src/repo_man/cli.py
+src/repo_man/py.typed
+src/repo_man.egg-info/PKG-INFO
+src/repo_man.egg-info/SOURCES.txt
+src/repo_man.egg-info/dependency_links.txt
+src/repo_man.egg-info/entry_points.txt
+src/repo_man.egg-info/requires.txt
+src/repo_man.egg-info/top_level.txt
+test/test_repoman.py
