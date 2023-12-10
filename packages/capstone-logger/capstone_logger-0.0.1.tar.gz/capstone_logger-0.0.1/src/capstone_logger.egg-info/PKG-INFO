@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: capstone-logger
+Version: 0.0.1
+Summary: Logger for Capstone
+Home-page: https://github.com/proxyserver2023/capstone_logger
+Author: Author
+Author-email: rootproxy@duck.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-json-logger>=2.0.7
+Requires-Dist: python-logstash>=0.4.8
+
+Install
+
+```
+pip install git+https://github.com/proxyserver2023/capstone_logger_proxyserver2023.git
+```
