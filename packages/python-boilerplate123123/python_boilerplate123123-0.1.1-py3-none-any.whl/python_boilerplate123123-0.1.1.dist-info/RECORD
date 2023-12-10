@@ -1,0 +1,14 @@
+myapplication/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+myapplication/core/mushroomdb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myapplication/core/mushroomdb/body.py,sha256=tjIkoTrbOuruixgQHbOjwWuZ2vo4v2Y74itcKABXF64,132
+myapplication/core/mushroomdb/gaia.py,sha256=r5fpi--MSKf28TNnF21sPFKlUJq1QBlaR-P2Y2eI-BU,383
+myapplication/core/mushroomdb/mycelium.py,sha256=sypg1Tk4UVCEt9o4YzJS3rH11waY9hw-xfawP8uig4c,578
+myapplication/implementations/FakeMycelium.py,sha256=GrDdVYofbrGIsPBc-cWWpA3IgYMZnq7eWN45PbrQ-jM,391
+myapplication/implementations/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+myapplication/implementations/fake_gaya.py,sha256=a619f6vWLVdysnOj4JssVAMp0ba_aRCXTX1w9qtuuos,773
+myapplication/main.py,sha256=DlxFsf15CBA0a8JpsgDt09fZBQxDOZw3jMeod-BBSsY,124
+python_boilerplate123123-0.1.1.dist-info/LICENSE,sha256=k2I7n3bUOTHRvNg4-0LqUBJNUslUSFlWmJ9bF9ImRQc,1072
+python_boilerplate123123-0.1.1.dist-info/METADATA,sha256=TjzbaCvxv75Jdxb-DFiDoBw4A5qKNLlkpe7JoEG8VXM,7621
+python_boilerplate123123-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+python_boilerplate123123-0.1.1.dist-info/entry_points.txt,sha256=MR50qlCgVfxTuE1FLmI7rvozX4-4IetqZ0ZWvQyFNRI,57
+python_boilerplate123123-0.1.1.dist-info/RECORD,,
