@@ -1,0 +1,3 @@
+[console_scripts]
+i3-gnome-pomodoro=i3_gnome_pomodoro.pomodoro_client:main
+
