@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: GamePlusEditor
+Version: 0.0.1
+Summary: A gui game maker written in python
+Author: Prince
+Project-URL: Homepage, https://github.com/
+Project-URL: Bug Tracker, https://github.com/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GamePlus editor is a gui editor for ursina engine.
+It is the single-developer version. 
+
+
+This editor will currently write your games in python. But I'll add the feture to turn your .py into .exe ^_~
