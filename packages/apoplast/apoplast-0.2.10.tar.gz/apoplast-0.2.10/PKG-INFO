@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: apoplast
+Version: 0.2.10
+Summary: The search for an abundant panacea of vivaciously invigorating utopian absorbables.
+License: >1
+Description-Content-Type: text/plain
+Requires-Dist: tinydb
+Requires-Dist: numpy
+Requires-Dist: botany
+
+
+
+
+apoplast
+
