@@ -1,0 +1,9 @@
+numpy>=1.19
+scipy>=1.8
+pandas>=1.2
+linearmodels>=4.25
+statsmodels<1.0,>=0.13
+formulaic<0.4.0,>=0.3.4
+tqdm>=4.64.1
+joblib>=1.2.0
+typing_extensions>=4.0.0
