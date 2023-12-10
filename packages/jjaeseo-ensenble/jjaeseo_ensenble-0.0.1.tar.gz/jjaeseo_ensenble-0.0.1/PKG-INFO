@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jjaeseo_ensenble
+Version: 0.0.1
+Summary: Machine Learning Week7 Ensenble Model Making Practice
+Home-page: https://github.com/JJaeseo
+Author: jjaeseo
+Author-email: js.chong220@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# ml_week7
+
+SKKU COMEDU 22
+4th Semester - Machine Learning [Ensemble Model Package Making Practice]
