@@ -1,0 +1,17 @@
+build/
+dist/
+_build/
+_generate/
+*.so
+*.py[cod]
+*.egg-info
+wheelhouse
+site
+data/*
+!data/Makefile
+*.whl
+cache
+
+/*.json
+/*.pkl
+/*.svg

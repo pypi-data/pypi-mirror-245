@@ -1,0 +1,19 @@
+site_name: nano-fmm
+site_url: https://nano-fmm.readthedocs.io
+site_description: nano-fmm
+site_author: district10
+
+repo_url: https://github.com/cubao/nano-fmm
+edit_uri: blob/master/docs/
+
+theme: readthedocs
+nav:
+  - Home: index.md
+  - Code: code.md
+  - About:
+      - Release Notes: about/release-notes.md
+      - License: about/license.md
+plugins:
+  - include-markdown
+
+copyright: Copyright &copy; 2023 <a href="https://cubao.readthedocs.io">cubao team</a>.

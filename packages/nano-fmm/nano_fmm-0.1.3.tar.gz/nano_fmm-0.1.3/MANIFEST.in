@@ -1,0 +1,7 @@
+global-include CMakeLists.txt *.cmake
+graft 3rdparty
+graft nano_fmm
+graft pybind11/include
+graft pybind11/tools
+graft src
+include README.md LICENSE pybind11/LICENSE
