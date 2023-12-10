@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+habitica/__init__.py
+py_habitica.egg-info/PKG-INFO
+py_habitica.egg-info/SOURCES.txt
+py_habitica.egg-info/dependency_links.txt
+py_habitica.egg-info/top_level.txt
