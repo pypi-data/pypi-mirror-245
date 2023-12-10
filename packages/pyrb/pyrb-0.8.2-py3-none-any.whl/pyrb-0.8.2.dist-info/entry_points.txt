@@ -1,0 +1,3 @@
+[console_scripts]
+pyrb=pyrb.controller.cli.main:app
+
