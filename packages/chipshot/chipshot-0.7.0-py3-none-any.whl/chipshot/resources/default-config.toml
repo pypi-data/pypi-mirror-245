@@ -1,0 +1,261 @@
+encoding = "utf-8"
+
+
+# Prologues
+# ---------
+
+[prologues.css-charset]
+pattern = '^@charset: ".+";.*$'
+
+[prologues.hashbang]
+pattern = "^#!.+$"
+
+[prologues.hashbang-with-encoding]
+# Some programming languages support hashbangs and optional encoding comments.
+# These must be kept unseparated at the top of the file.
+#
+# https://peps.python.org/pep-0263/
+# https://docs.ruby-lang.org/en/master/syntax/comments_rdoc.html#label-Magic+Comments
+#
+# The following pattern matches:
+#   '#!hashbang'
+#   '# encoding'
+#   '#!hashbang' '\n' '# encoding'
+# It also matches empty strings, which is undesirable.
+pattern = "\\A(^#!.+$)?(?:(?(1)\\n|)^#.*(?:en)?coding[\\t ]*[:=].*$)?"
+
+[prologues.html_doctype]
+pattern = "(?i)^<\\!doctype(.|\\n)+>$"
+
+[prologues.xhtml_declaration_and_doctype]
+pattern = "^(<\\?xml(.|\\n)+\\?>)?\\s*(?i)(^<\\!doctype(.|\\n)+>)?$"
+
+[prologues.xml_declaration]
+pattern = "^<\\?xml(.|\\n)+\\?>$"
+
+
+# Styles
+# ------
+
+[styles.apostrophe]
+line_prefix = "' "
+
+[styles.batch]
+line_prefix = "rem "
+
+[styles.dash-dash]
+line_prefix = "-- "
+
+[styles.hash]
+line_prefix = "# "
+
+[styles.html]
+block_prefix = "<!--\n"
+line_prefix = "    "
+block_suffix = "\n-->"
+
+[styles.jinja]
+block_prefix = "{#\n"
+block_suffix = "\n#}"
+
+[styles.mustache]
+block_prefix = "{{!\n"
+block_suffix = "\n}}"
+
+[styles.percent]
+line_prefix = "% "
+
+[styles.percent-percent]
+line_prefix = "%% "
+
+[styles.restructured-text]
+block_prefix = "..\n"
+line_prefix = "    "
+
+[styles.semicolon]
+line_prefix = "; "
+
+[styles.slash-slash]
+line_prefix = "// "
+
+[styles.slash-star]
+block_prefix = "/*\n"
+line_prefix = " * "
+block_suffix = "\n */"
+
+[styles.xml]
+block_prefix = "<!--\n"
+line_prefix = "    "
+block_suffix = "\n-->"
+
+
+# Extensions
+# ----------
+
+[extensions.adoc]
+style = "slash-slash"
+
+[extensions.ahk]
+style = "semicolon"
+
+[extensions.bat]
+style = "batch"
+
+[extensions.c]
+style = "slash-star"
+
+[extensions.cmd]
+style = "batch"
+
+[extensions.cpp]
+style = "slash-slash"
+
+[extensions.cs]
+style = "slash-slash"
+
+[extensions.css]
+prologue = "css-charset"
+style = "slash-star"
+
+[extensions.go]
+style = "slash-slash"
+
+[extensions.groovy]
+style = "slash-slash"
+
+[extensions.h]
+style = "slash-slash"
+
+[extensions.htm]
+style = "html"
+prologue = "html_doctype"
+
+[extensions.html]
+style = "html"
+prologue = "html_doctype"
+
+[extensions.java]
+style = "slash-slash"
+
+[extensions.jinja]
+style = "jinja"
+
+[extensions.js]
+prologue = "hashbang"
+style = "slash-slash"
+
+[extensions.kt]
+style = "slash-slash"
+
+[extensions.kts]
+style = "slash-slash"
+
+[extensions.markdown]
+style = "xml"
+
+[extensions.md]
+style = "xml"
+
+[extensions.mermaid]
+style = "percent-percent"
+
+[extensions.pl]
+prologue = "hashbang"
+style = "hash"
+
+[extensions.ps1]
+style = "hash"
+prologue = "hashbang"
+
+[extensions.py]
+prologue = "hashbang-with-encoding"
+style = "hash"
+
+[extensions.r]
+style = "hash"
+prologue = "hashbang"
+
+[extensions.rb]
+prologue = "hashbang-with-encoding"
+style = "hash"
+
+[extensions.rs]
+style = "slash-slash"
+
+[extensions.rst]
+style = "restructured-text"
+
+[extensions.sc]
+style = "slash-slash"
+
+[extensions.scala]
+style = "slash-slash"
+
+[extensions.sh]
+style = "hash"
+prologue = "hashbang"
+
+[extensions.sql]
+style = "dash-dash"
+
+[extensions.swift]
+style = "slash-slash"
+
+[extensions.ts]
+style = "slash-slash"
+
+[extensions.ttl]
+style = "semicolon"
+
+[extensions.vbs]
+style = "apostrophe"
+
+[extensions.xhtml]
+style = "xml"
+prologue = "xhtml_declaration_and_doctype"
+
+[extensions.xml]
+style = "xml"
+prologue = "xml_declaration"
+
+
+# Interpreters
+# ------------
+
+[interpreters]
+bash = "shell"
+node = "javascript"
+nodejs = "javascript"
+perl = "perl"
+pwsh = "powershell"
+python = "python"
+ruby = "ruby"
+sh = "shell"
+
+
+# Types
+# -----
+
+[types.javascript]
+prologue = "hashbang"
+style = "slash-slash"
+
+[types.perl]
+prologue = "hashbang"
+style = "hash"
+
+[types.powershell]
+prologue = "hashbang"
+style = "hash"
+
+[types.python]
+prologue = "hashbang-with-encoding"
+style = "hash"
+
+[types.ruby]
+prologue = "hashbang-with-encoding"
+style = "hash"
+
+[types.shell]
+prologue = "hashbang"
+style = "hash"
