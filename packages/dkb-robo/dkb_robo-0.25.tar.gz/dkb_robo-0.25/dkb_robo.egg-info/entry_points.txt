@@ -1,0 +1,3 @@
+[console_scripts]
+dkb = dkb_robo.cli:main
+
