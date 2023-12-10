@@ -1,0 +1,21 @@
+# LITELLM PROXY DEPENDENCIES #
+litellm
+openai
+fastapi
+tomli
+pydantic>=2.5
+appdirs
+tomli_w
+backoff
+pyyaml
+uvicorn
+boto3
+redis
+pyyaml
+rq
+prisma
+celery
+psutil
+mangum
+google-generativeai 
+async_generator # for ollama 
