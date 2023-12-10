@@ -1,0 +1,8 @@
+pytest_tcp/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+pytest_tcp/plugin.py,sha256=WJvjsJm7i-JxAFQgCDODz23XfKIhmnVllvOlFRr5Myw,7465
+pytest_tcp-0.1.1.dist-info/LICENSE,sha256=4RKJuNf8SewYWkthDnm16QbdmZwFTToZHGvSoKoqIyc,1091
+pytest_tcp-0.1.1.dist-info/METADATA,sha256=MCf08Tag-L_W6-DhXA7S1zBLgr5vPS7Hk5sdm5dlWbI,4114
+pytest_tcp-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pytest_tcp-0.1.1.dist-info/entry_points.txt,sha256=BC_wNMtEktrl7sTIU-esFXHhYUoAWgEB6VWxWovO86U,42
+pytest_tcp-0.1.1.dist-info/top_level.txt,sha256=WQveOMGzsklckFQkHHjtNDpQPOuN9riF_qHQxfAwN8o,11
+pytest_tcp-0.1.1.dist-info/RECORD,,
