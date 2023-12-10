@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "misago-pypi-plugin"
+description = "Minimal Misago plugin for testing support for installing plugins from PYPI."
+version = "0.1"
+authors = [
+    { name = "Rafał Pitoń", email = "kontakt@rpiton.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.hatch.build]
+include = ["misago_pypi_plugin/**/*.py"]
