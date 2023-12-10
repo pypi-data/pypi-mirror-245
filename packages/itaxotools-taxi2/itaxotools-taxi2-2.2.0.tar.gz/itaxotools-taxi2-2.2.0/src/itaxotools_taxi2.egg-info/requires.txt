@@ -1,0 +1,17 @@
+itaxotools-common
+itaxotools-spart-parser
+itaxotools-calculate-distances
+BioPython
+alfpy
+numpy
+openpyxl
+pandas
+seaborn
+
+[dev]
+setuptools-scm
+pre-commit
+ruff
+pytest
+pytest-cov
+coverage

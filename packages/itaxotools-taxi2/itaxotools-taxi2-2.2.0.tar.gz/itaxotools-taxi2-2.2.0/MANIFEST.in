@@ -1,0 +1,4 @@
+# Include project info
+include README.md
+include LICENSE.txt
+include pyproject.toml
