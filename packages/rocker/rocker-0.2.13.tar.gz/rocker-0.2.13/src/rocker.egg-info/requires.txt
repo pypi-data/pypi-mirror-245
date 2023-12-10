@@ -1,0 +1,8 @@
+docker
+empy
+packaging
+pexpect
+urllib3
+
+[test]
+pytest
