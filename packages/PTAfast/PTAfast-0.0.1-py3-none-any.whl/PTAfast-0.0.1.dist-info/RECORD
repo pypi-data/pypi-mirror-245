@@ -1,0 +1,10 @@
+PTAfast/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PTAfast/hellingsdowns.py,sha256=rRkKpky6r2KhdSSty4DM5wqYbD71M2c-MkkeGbB7anU,3162
+PTAfast/scalar.py,sha256=1Gij2mqVkutcgNemJpJsJqZXj5z4ZD1DGemjuvhSGjc,15006
+PTAfast/tensor.py,sha256=KgI-uujd2Q5po2mmrErw5ge9-Vsf5simr37wEE7Byc4,7439
+PTAfast/vector.py,sha256=Y3zadfDAxyO1EeHqiNJ2VoYVD1K1TI06XDGl6D6Xl48,7266
+PTAfast-0.0.1.dist-info/LICENSE,sha256=LrPoWp7nCnjG8QvK978UdLsTzSUmz1Nt5oi1DbDtfb4,1072
+PTAfast-0.0.1.dist-info/METADATA,sha256=ycRKTYW1UbV9VggurVepyEBpj5ISRyeV1WcQ71kmJ40,368
+PTAfast-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+PTAfast-0.0.1.dist-info/top_level.txt,sha256=XF81IHz8VL15d9XepHsJNpJ_MaMJ1oK_AopeRcxJZAQ,8
+PTAfast-0.0.1.dist-info/RECORD,,
