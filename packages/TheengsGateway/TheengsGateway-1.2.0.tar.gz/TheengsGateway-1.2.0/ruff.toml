@@ -1,0 +1,12 @@
+select = ["ALL"]
+ignore = [
+  "ANN101",  # missing-type-self
+  "D107",    # undocumented-public-init
+  "N999",    # invalid-module-name
+  "T201",    # print
+]
+# Always generate Python 3.8-compatible code
+target-version = "py38"
+
+[pydocstyle]
+convention = "google"
