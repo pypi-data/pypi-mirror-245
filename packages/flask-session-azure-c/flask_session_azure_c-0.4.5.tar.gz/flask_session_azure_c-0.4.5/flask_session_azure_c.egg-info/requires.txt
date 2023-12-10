@@ -1,0 +1,3 @@
+azure-data-tables
+pycryptodomex~=3.9.7
+flask

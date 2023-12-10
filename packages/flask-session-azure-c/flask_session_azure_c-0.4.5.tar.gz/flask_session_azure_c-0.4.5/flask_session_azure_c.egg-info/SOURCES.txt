@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+flask_session_azure/__init__.py
+flask_session_azure/storage_account.py
+flask_session_azure/storage_account_session.py
+flask_session_azure_c.egg-info/PKG-INFO
+flask_session_azure_c.egg-info/SOURCES.txt
+flask_session_azure_c.egg-info/dependency_links.txt
+flask_session_azure_c.egg-info/requires.txt
+flask_session_azure_c.egg-info/top_level.txt
