@@ -1,0 +1,20 @@
+size:
+  width: 1200
+  height: 600
+min_size:
+  width: 800
+  height: 400
+
+
+colors:
+  primary: "#0077ff"
+  secondary: "#000000"
+  third: "#e0e7ee"
+  forth: "#ffffff"
+  border: "#bbbbbb"
+  hover: "#222222"
+
+images:
+  logo: "/assets/images/logo.png"
+  icon: "/assets/images/icon.png"
+  path: "/assets/images"
