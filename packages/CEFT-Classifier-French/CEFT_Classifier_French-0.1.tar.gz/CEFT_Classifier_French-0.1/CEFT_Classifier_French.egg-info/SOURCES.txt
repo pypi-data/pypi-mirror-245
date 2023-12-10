@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+CEFT_Classifier_French.egg-info/PKG-INFO
+CEFT_Classifier_French.egg-info/SOURCES.txt
+CEFT_Classifier_French.egg-info/dependency_links.txt
+CEFT_Classifier_French.egg-info/requires.txt
+CEFT_Classifier_French.egg-info/top_level.txt
+inference/__init__.py
+inference/predict.py
+pages/File_Inference.py
+pages/Sentence_Inference.py
+pages/Training.py
+pages/__init__.py
+train/__init__.py
+train/trainer.py
+train/utils.py
