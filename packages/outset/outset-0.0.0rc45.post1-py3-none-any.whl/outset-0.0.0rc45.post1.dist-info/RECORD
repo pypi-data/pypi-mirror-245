@@ -1,0 +1,9 @@
+outset/__init__.py,sha256=OpgF6EuDDi2jX6r0es0UZp8WxXhWNH1n90xtqsYp80Y,99
+outset/_auxlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+outset/_auxlib/compose_zoom_trapezoid_.py,sha256=YM0PQ_mDQpsPmXpJy5UKKBlvRR1kKcO-E0nNRzrMjeI,3234
+outset/_auxlib/make_radial_gradient_.py,sha256=FHyK60Lz7ywNEn2QALSwIpDHMAtc1A4k7X1Sespr3QY,776
+outset/_auxlib/minimal_perimeter_permutation_.py,sha256=qSxUJk7ULJyl0eKFx75gSzsb3LQJz-PLYSK9_gMKEqI,1413
+outset-0.0.0rc45.post1.dist-info/LICENSE,sha256=JJbC44cqogXon7mTd-OYu3WaXaFAxUwwTzFB0QVQu4g,1236
+outset-0.0.0rc45.post1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+outset-0.0.0rc45.post1.dist-info/METADATA,sha256=8BDKyO8nNYtKwlV17uFl7MR-WTF5JsDGfeb7Uuopca8,16826
+outset-0.0.0rc45.post1.dist-info/RECORD,,
