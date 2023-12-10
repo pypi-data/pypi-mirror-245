@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+nn_names/__init__.py
+nn_names/generator.py
+nn_names/py.typed
+nn_names/weights.json
+nn_names/weights2.json
+nn_names.egg-info/PKG-INFO
+nn_names.egg-info/SOURCES.txt
+nn_names.egg-info/dependency_links.txt
+nn_names.egg-info/top_level.txt
