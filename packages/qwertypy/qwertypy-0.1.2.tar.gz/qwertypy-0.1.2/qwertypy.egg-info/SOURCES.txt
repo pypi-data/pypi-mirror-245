@@ -1,0 +1,8 @@
+README.md
+setup.py
+qwertypy/__init__.py
+qwertypy/try.py
+qwertypy.egg-info/PKG-INFO
+qwertypy.egg-info/SOURCES.txt
+qwertypy.egg-info/dependency_links.txt
+qwertypy.egg-info/top_level.txt
