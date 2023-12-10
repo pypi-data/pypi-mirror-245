@@ -1,0 +1,16 @@
+elecphys/__init__.py,sha256=I-3DEJfs0k789tz5GeVjZIbmP-xHLGdhdWsbEJrM4EM,81
+elecphys/conversion.py,sha256=8e0DJrMIHbKMSTPHS6bZOVKP2w1WzLft71Z2aKgVWys,2233
+elecphys/data_loading.py,sha256=H8aLDzZMIO3t0ixX2BnBOafvweXFQD25lIHu6ZkIWE8,1564
+elecphys/dimensionality_reduction.py,sha256=UtiF-ox9MhNBaSqQ5kcTl-n4GTXpUNjhgORz_Afkhg8,1001
+elecphys/fourier_analysis.py,sha256=yxYwpZvN08cpY4gjMM3-506E3APkPeBAAJF-D65BsRs,4658
+elecphys/handlers.py,sha256=5CJ_xjxK2c6zlJV2_-3BOLjN3Q0zSGQeJsR0pv_dLJw,538
+elecphys/main.py,sha256=yftXd76UOL_cbJQKQ05rUxVGlGp5y8LIwtj_aA9hSKw,16391
+elecphys/preprocessing.py,sha256=yJAH-5ulQMTLg8RcZUC8mhley10toiBPsibL-UmMPUw,3174
+elecphys/utils.py,sha256=NUx3piegRAds17Fmlh3AWlwVg68l65eHxBn0r4GVmJ4,1310
+elecphys/visualization.py,sha256=yxMWK1_2Eo6tMH7uuqbkJ2X1tSRmCTi3dup3OGIvuPM,10823
+ElecPhys-0.0.3.dist-info/LICENSE,sha256=3na-zZLeh6vPeDswDFIueVxhEaDfoRpYef_0_3Itwb4,1066
+ElecPhys-0.0.3.dist-info/METADATA,sha256=SgDQzUVWjxLgQLVjHi3RwBi9X7_TKndJy0AASdzz7iA,3660
+ElecPhys-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ElecPhys-0.0.3.dist-info/entry_points.txt,sha256=_aFxBg-WygOZu8qmln5EMTd3pbWvjYJ0mrS56grnHFM,48
+ElecPhys-0.0.3.dist-info/top_level.txt,sha256=SYaBrSGUB8gB-4NjZFp6_vhlapJwHNTsWJ-I2gYFGr8,9
+ElecPhys-0.0.3.dist-info/RECORD,,
