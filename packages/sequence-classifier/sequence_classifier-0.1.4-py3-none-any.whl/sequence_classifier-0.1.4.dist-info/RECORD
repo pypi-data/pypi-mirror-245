@@ -1,0 +1,10 @@
+sequence_classifier/__about__.py,sha256=Wzf5T3NBDfhQoTnhnRNHSlAsE0XMqbclXG-M81Vas70,22
+sequence_classifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sequence_classifier/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sequence_classifier/semiring.py,sha256=GRJBuF-x0DqwItDD-Brpg4LqpNnykkC2zVWszc3VBck,1774
+sequence_classifier/crf/__init__.py,sha256=UpbBTi9o7e-wtgE6Eh542VZTef-cpK7DeYseE4iJV6I,108
+sequence_classifier/crf/core.py,sha256=wAwP0ckJawYWHZn6izfxeaVawdeWwE1Nwt-bJdcqgMw,13108
+sequence_classifier-0.1.4.dist-info/METADATA,sha256=fGRhAMDsl27EBeDeYKk71L8ljyi3WSPOmJRUC2wQFMg,3369
+sequence_classifier-0.1.4.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+sequence_classifier-0.1.4.dist-info/licenses/LICENSE,sha256=oovK31wZ4qBSs5IfrMqp6GhyB0AaztIETU4O-Fqfk1o,1075
+sequence_classifier-0.1.4.dist-info/RECORD,,

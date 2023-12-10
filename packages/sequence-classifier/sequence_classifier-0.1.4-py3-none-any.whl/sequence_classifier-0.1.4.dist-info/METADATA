@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: sequence-classifier
+Version: 0.1.4
+Author-email: Yasufumi Taniguchi <yasufumi.taniguchi@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: <3.12,>=3.8
+Requires-Dist: torch>=2.1.0
+Provides-Extra: ci
+Requires-Dist: black>=23.10.1; extra == 'ci'
+Requires-Dist: hypothesis>=6.88.4; extra == 'ci'
+Requires-Dist: mypy>=1.7.0; extra == 'ci'
+Requires-Dist: pytest-cov>=4.1.0; extra == 'ci'
+Requires-Dist: pytest>=7.4.3; extra == 'ci'
+Requires-Dist: pytorch-crf>=0.7.2; extra == 'ci'
+Requires-Dist: ruff>=0.1.3; extra == 'ci'
+Requires-Dist: sequence-classifier[example]; extra == 'ci'
+Requires-Dist: sequence-label>=0.1.6; extra == 'ci'
+Requires-Dist: torch-struct>=0.5; extra == 'ci'
+Provides-Extra: dev
+Requires-Dist: ipdb>=0.13.13; extra == 'dev'
+Requires-Dist: ipython>=8.12.3; extra == 'dev'
+Requires-Dist: pdbpp>=0.10.3; extra == 'dev'
+Provides-Extra: example
+Requires-Dist: datasets>=2.15.0; extra == 'example'
+Requires-Dist: evaluate>=0.4.1; extra == 'example'
+Requires-Dist: seqeval>=1.2.2; extra == 'example'
+Requires-Dist: transformers[torch]>=4.35.2; extra == 'example'
+Description-Content-Type: text/markdown
+
+# sequence-classifier
+
+`sequence-classifier` is an open-source library designed for sequence classification in PyTorch. It provides utilities for sequence classifiers, particularly Conditional random fields (CRFs), and it can calculate the log likelihood of tag sequences and retrieve the best label sequences. `sequence-classifier` also offers the capability to compute the marginal log likelihood and the marginal probability. These features are handy when working with partially annotated datasets.
+
+If you are searching for libraries to handle sequence labeling tasks such as named-entity recognition or part-of-speech tagging combined with the use of foundation models like BERT, RoBERTa, or DeBERTa, you will find `sequence-classifier` to be helpful.
+
+## Prerequisites
+
+- Python 3.8+
+
+## Installation
+
+You can install sequence-classifier via pip:
+
+```bash
+pip install sequence-classifier
+```
+
+## Basic Usage
+
+```python
+import torch
+from sequence_classifier.crf import Crf
+
+batch_size = 3
+sequence_length = 15
+num_tags = 6
+
+logits = torch.randn(batch_size, sequence_length, num_tags)
+tag_indices = torch.randint(0, num_tags, (batch_size, sequence_length))
+
+model = Crf(num_tags)
+
+dist = model(logits)
+
+nll_loss = dist.log_likelihood(tag_indices).sum().neg()
+best_sequence = dist.argmax
+```
+
+## References
+
+- Alexander Rush. 2020. [Torch-Struct: Deep Structured Prediction Library](https://aclanthology.org/2020.acl-demos.38/). In _Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics: System Demonstrations_, pages 335–342, Online. Association for Computational Linguistics.
+- Yuta Tsuboi, Hisashi Kashima, Shinsuke Mori, Hiroki Oda, and Yuji Matsumoto. 2008. [Training Conditional Random Fields Using Incomplete Annotations](https://aclanthology.org/C08-1113/). In _Proceedings of the 22nd International Conference on Computational Linguistics (Coling 2008)_, pages 897–904, Manchester, UK. Coling 2008 Organizing Committee.
