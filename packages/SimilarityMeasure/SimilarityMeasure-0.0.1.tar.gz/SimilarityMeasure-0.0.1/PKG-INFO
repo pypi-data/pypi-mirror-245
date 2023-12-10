@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: SimilarityMeasure
+Version: 0.0.1
+Summary: Biblioteca com implementações das principais medidas de similaridade e relacionalidade
+Home-page: UNKNOWN
+Author: Edgar Henrique de Oliveira Lira
+Author-email: edgar.jj.29@gmail.com
+License: GNU GENERAL PUBLIC LICENSE
+Keywords: Relatedness Measure,Similarity Measure,Ontology Measure,Ontology
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Similarity and Relatedness Measures
+
+Biblioteca criada com o intuito de calcular a similaridade entre classes dentro de uma ontologia. 
+

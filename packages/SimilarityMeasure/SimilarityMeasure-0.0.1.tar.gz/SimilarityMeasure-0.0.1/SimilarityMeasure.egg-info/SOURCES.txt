@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+SimilarityMeasure/__init__.py
+SimilarityMeasure/master.py
+SimilarityMeasure/relatedness_measures.py
+SimilarityMeasure/sim_caminhos.py
+SimilarityMeasure/sim_hibrid.py
+SimilarityMeasure/sim_info_content.py
+SimilarityMeasure.egg-info/PKG-INFO
+SimilarityMeasure.egg-info/SOURCES.txt
+SimilarityMeasure.egg-info/dependency_links.txt
+SimilarityMeasure.egg-info/requires.txt
+SimilarityMeasure.egg-info/top_level.txt
