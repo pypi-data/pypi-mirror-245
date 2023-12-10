@@ -1,0 +1,6 @@
+folder: ".logs"
+level: 20 # INFO
+expiry_days: 30
+header: time,level,message
+format: '%(asctime)s,%(levelname)s,"%(message)s"'
+date_format: "%Y-%m-%d %H:%M:%S"
