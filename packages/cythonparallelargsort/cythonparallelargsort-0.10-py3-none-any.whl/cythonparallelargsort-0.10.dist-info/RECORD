@@ -1,0 +1,10 @@
+cythonparallelargsort/README.MD,sha256=n1P1xJxq9RR58EGY7H2LtNGhcl9WQAPDa4rhgEE75m4,3392
+cythonparallelargsort/__init__.py,sha256=xntPEmGApDGOkqxTAC76Qm074Ucinuh9TXRZDF3PZ3I,5544
+cythonparallelargsort/parallelargsort.h,sha256=P9uShUdigV7oKlYMsP63v2cZQDPE_MWSgPt01fw05Pc,1020
+cythonparallelargsort/requirements.txt,sha256=XQ286R9IpCmKNDlj6hmgJ6CkBLw9x63tizM5jQliGU4,13
+cythonparallelargsort/thirdparty.json,sha256=JA69rec2oAi5cAaiVKRJTbjA1tVQI0RIKXbSgyhUmnI,49968
+cythonparallelargsort-0.10.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+cythonparallelargsort-0.10.dist-info/METADATA,sha256=KOomuaXv1N7yG3TqXi3SiTuom3LYUwfo8dxtedCwpyM,4099
+cythonparallelargsort-0.10.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+cythonparallelargsort-0.10.dist-info/top_level.txt,sha256=gv5WTNT1hfY4OrljDdxH2G2Q2wwD5SVSXqbNKpYPOyA,22
+cythonparallelargsort-0.10.dist-info/RECORD,,
