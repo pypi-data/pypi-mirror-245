@@ -1,0 +1,28 @@
+{% extends "admin/change_list.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'taskmonitor/css/admin.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'taskmonitor/css/tasklog.css' %}">
+{% endblock %}
+
+{% block object-tools-items %}
+    {{ block.super }}
+    <li>
+        <a href="{% url 'taskmonitor:admin_taskmonitor_reports' %}" class="btn btn-high">
+            {% translate "Reports" %}
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'taskmonitor:admin_taskmonitor_download_csv' %}" class="btn btn-high">
+            {% translate "Download as CSV" %}
+        </a>
+    </li>
+{% endblock %}
+
+{% block content %}
+    {{ block.super }}
+    {% include "admin/taskmonitor/_task_info.html" %}
+{% endblock %}
