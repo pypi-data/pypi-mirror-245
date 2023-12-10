@@ -1,0 +1,10 @@
+pxctl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pxctl/layout.py,sha256=Eu4TQDRbchUaWdTysbeWtrc8Sp40DTmEpkCSfn0F3OE,3142
+pxctl/notifications.py,sha256=zGfoVcFPEhlOVA8McrB8eYFgQo5fW4LHv0gzjuyXQgA,772
+pxctl/printer.py,sha256=ZywIKoNepa1xMIM717zXnhO7X21xh6eFgC3gOEY_Ql4,5257
+pxctl/pxctl.py,sha256=uSN9YYAmpG1Od-qWVwsYVkkh20wSTPBPwDIbdhXWW3o,3167
+pxctl-0.0.3.dist-info/METADATA,sha256=445uFXcGYu731LHTyE1236kmalLe8CR_yxFCXoxq4Vk,1356
+pxctl-0.0.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+pxctl-0.0.3.dist-info/entry_points.txt,sha256=9pUEPTqHzI9frBBQ1h4RAkla7PvfbW5c7KFiciKyMo4,43
+pxctl-0.0.3.dist-info/licenses/LICENSE,sha256=Lt1zTl87t--vnCWtjskrCd8a6o5VMYXjI_vkUyjOxAs,1062
+pxctl-0.0.3.dist-info/RECORD,,
