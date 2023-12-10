@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cythonparallelargsort/README.MD
+cythonparallelargsort/__init__.py
+cythonparallelargsort/parallelargsort.h
+cythonparallelargsort/requirements.txt
+cythonparallelargsort/thirdparty.json
+cythonparallelargsort.egg-info/PKG-INFO
+cythonparallelargsort.egg-info/SOURCES.txt
+cythonparallelargsort.egg-info/dependency_links.txt
+cythonparallelargsort.egg-info/requires.txt
+cythonparallelargsort.egg-info/top_level.txt

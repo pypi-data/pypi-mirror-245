@@ -1,0 +1,4 @@
+include cythonparallelargsort/requirements.txt
+include cythonparallelargsort/thirdparty.json
+include cythonparallelargsort/README.MD
+include cythonparallelargsort/parallelargsort.h
