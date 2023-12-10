@@ -1,0 +1,2 @@
+[console_scripts]
+taxi2 = itaxotools.taxi2.taxi2:main
