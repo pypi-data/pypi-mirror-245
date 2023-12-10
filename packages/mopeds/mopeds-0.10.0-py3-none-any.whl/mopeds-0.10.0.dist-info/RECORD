@@ -1,0 +1,17 @@
+mopeds/__init__.py,sha256=gxjPOuU86AvsuDjTwzIL6m_jGO88Kx3YMR90tekouiQ,1133
+mopeds/casados_integrator.py,sha256=Utnrf2ULQmDPi2dmiw-0tNgzMd3YB-wbOuQ4FPJorus,25873
+mopeds/examples.py,sha256=5fOAkBRmrFaYh61CkC_oqVFqeKgVbhnuWlX0nEPk7rA,54985
+mopeds/model.py,sha256=Y_UUxnL-ic4gyQ5rMqwVmQowhbvxzdaSp_hDegeu8dQ,3090
+mopeds/mpc.py,sha256=kFwEXSC3jz65HuOodvcBduVcfQCpj5LM5GMtTGy5Sco,9531
+mopeds/optimization.py,sha256=1pYViAJZXSWnO0W4jUSruQHk6AOdwfkZfamwAf9HJsU,75987
+mopeds/optimization_oed.py,sha256=PAJ1vcZSYhIbTKKRjjiAwXlhecg2Iv6dqp30bN82Ee0,33641
+mopeds/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mopeds/simulation_dynamic.py,sha256=KoH_OepYRiOQCgi7OaQAEmOoSAxnH9TPOMLRFr4dyDE,35489
+mopeds/simulation_nle.py,sha256=KWrS_DnBKVmB1dx_vJFVt-xku5BmysfRDRg9G6tpRmE,11987
+mopeds/tools.py,sha256=chwSL0x3ZkK8kyp7FEIbKzTZE_79TR9iaTcyRTklIiM,4457
+mopeds/utilities.py,sha256=mDaajCsfzCht9ZNI0n6hfiA8H8T05-eu-My__FnRdXY,5236
+mopeds/variables.py,sha256=UWj-z2XXCgDXFYBPlyMhxWkjcaI4PUkwhCkBVUA-Flc,26087
+mopeds-0.10.0.dist-info/LICENSE.txt,sha256=0WMgBlDX6co68kPRbQJjJCa86F_C5VQzisAEnOKgx2U,1089
+mopeds-0.10.0.dist-info/METADATA,sha256=D88PxoE1lQaLaUH3os89awVDljSaY0ZSfQ4v6uqr_rQ,4674
+mopeds-0.10.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mopeds-0.10.0.dist-info/RECORD,,
