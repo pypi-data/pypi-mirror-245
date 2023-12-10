@@ -1,0 +1,4 @@
+beartype
+matplotlib
+numpy
+scipy

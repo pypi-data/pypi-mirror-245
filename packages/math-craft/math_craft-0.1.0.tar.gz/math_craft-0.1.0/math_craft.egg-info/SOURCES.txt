@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+math_craft.egg-info/PKG-INFO
+math_craft.egg-info/SOURCES.txt
+math_craft.egg-info/dependency_links.txt
+math_craft.egg-info/entry_points.txt
+math_craft.egg-info/requires.txt
+math_craft.egg-info/top_level.txt
+mathcraft/__init__.py
+mathcraft/contexts.py
+mathcraft/curve_fitting.py
+mathcraft/linalg.py
+mathcraft/ode.py
