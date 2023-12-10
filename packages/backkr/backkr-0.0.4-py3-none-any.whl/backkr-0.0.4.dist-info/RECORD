@@ -1,0 +1,13 @@
+backkr/__init__.py,sha256=S78OlwtVSY78InaF4UtGWhe3AoV4wIjbMOtBXxNby20,3252
+backkr/cli.py,sha256=-JUpzFcZzcGjJYE7ojdG0ZHc5X-XVg273Z9m4UCw8e4,659
+backkr/http.py,sha256=7bO029W9G-kSdj5MbeQqDsrSX0zNhba960Ajv3Fd4sY,4876
+backkr/paginations.py,sha256=V32ObWrfI03ct_YjqycM-8OWpggffQyK8ChIQtkkHzA,3671
+backkr/template.py,sha256=pc4h25BCkevlzp_U55GqW1okTNb3WnQ57KReAJ_B7yM,2197
+backkr/urls.py,sha256=bLjpf89HCvm0YwrWj8ACx5bX1r6CvTXMynQVMV3lMCA,3035
+backkr/middlewares/__init__.py,sha256=PfJ6U1i0qBQsHTOCw8biK6a4s2UbI1EFeioEuWfHbsE,848
+backkr-0.0.4.dist-info/LICENSE,sha256=D4r7maMqWd6xizxJ0y_y9lHodaLC_eFzcPdIpPhIgGk,1070
+backkr-0.0.4.dist-info/METADATA,sha256=LDuJ3CedO5L62y21_fh0hNWcN1C4G3MDouCZ8q4Ti9M,1981
+backkr-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+backkr-0.0.4.dist-info/entry_points.txt,sha256=KaUOxRXfUGrimlQKdrncphohmuCgw706tBJ9BGBSp00,43
+backkr-0.0.4.dist-info/top_level.txt,sha256=nSa-R6AYDe8y1uZU2A8d6w8YDPAK81J9oW66f829ZmQ,7
+backkr-0.0.4.dist-info/RECORD,,
