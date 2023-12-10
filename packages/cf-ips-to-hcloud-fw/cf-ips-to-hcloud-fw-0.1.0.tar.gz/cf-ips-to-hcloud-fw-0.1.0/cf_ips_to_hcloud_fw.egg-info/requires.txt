@@ -1,0 +1,8 @@
+cloudflare
+hcloud
+pydantic
+PyYAML
+
+[dev]
+build
+ruff
