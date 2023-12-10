@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+wlgen_lib.egg-info/PKG-INFO
+wlgen_lib.egg-info/SOURCES.txt
+wlgen_lib.egg-info/dependency_links.txt
+wlgen_lib.egg-info/requires.txt
+wlgen_lib.egg-info/top_level.txt
