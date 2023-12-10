@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: libmg
+Version: 1.0.5
+Summary: 
+Home-page: https://github.com/quasylab/mG
+License: MIT
+Author: Matteo Belenchia
+Requires-Python: >=3.11,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bidict
+Requires-Dist: lark (>=1,<2)
+Requires-Dist: numpy
+Requires-Dist: pyvis
+Requires-Dist: scipy
+Requires-Dist: spektral (>=1.3,<1.4)
+Requires-Dist: tensorflow (>=2.12,<2.13)
+Project-URL: Documentation, https://quasylab.github.io/mG/
+Project-URL: Repository, https://github.com/quasylab/mG
+Description-Content-Type: text/markdown
+
+# mG
+
+[![Tests](https://github.com/quasylab/mG/actions/workflows/testing.yml/badge.svg)](https://github.com/Unicam-mG/mG/actions/workflows/testing.yml)
+
+## Usage
+- Install libmg by running `pip install git+https://github.com/Unicam-mG/mG.git`
+- Create a `Dataset` object containing the `Graph` instances to process
+- Define dictionaries of `Psi`, `Phi`, `Sigma` objects as needed by your application
+- Define a `CompilationConfig` that is appropriate for your `Dataset`
+- Create a `GNNCompiler` using the dictionaries and the `CompilationConfig`
+- Create an appropriate `Loader` for your `Dataset`: use the `SingleGraphLoader` if your Dataset contains a single graph and use the `MultipleGraphLoader` otherwise.
+- Build a model from your mG formulas using the `model = GNNCompiler.compile(expr)` method.
+- Use `output = model.predict(loader.load(), steps=loader.steps_per_epoch)` or a loop like
+    ```
+    for x, y in loader.load():
+        output = model(x)
+    ```
+  to run your model on the dataset.
+- Check the tests folder for some examples of the above steps.
+
+## Compatibility
+Python 3.10
+
