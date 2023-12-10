@@ -1,0 +1,61 @@
+Mã nguồn mở chương trình an sao Tử vi ansaotuvi
+===========================================
+
+This is a wrapper of ansaotuvi into django application.
+
+
+1. Create virtual environment and activate it
+
+* `pip install virtualenv`
+
+* `virtualenv .env`
+
+* If you are *nix users
+
+`source .env/bin/activate`
+
+* if you are Window users, just type
+
+`.env/Scripts/activate.bat` and make sure you are working on command prompt (cmd.exe) not PowerShell
+
+
+2. Now you are working on the virtual environment
+
+* If you do not have Django project, go and install django and ansaotuvi applications
+
+`pip install django ansaotuvi_website`
+
+* If you have django project already, just install the ansaotuvi_website application
+
+`pip install ansaotuvi_website`
+
+3. Add the `ansaotuvi_website` application to your INSTALLED_APPS
+by adding 
+
+```
+# settings.py
+INSTALLED_APPS = [
+    # Your others applications 
+    'ansaotuvi_website',
+]
+```
+
+4. Add router to the `urls.py`
+
+```
+# urls.py
+from django.urls import path, include
+
+urlpatterns = [
+    # ....
+    path('ansaotuvi/', include('ansaotuvi_website.urls'))
+]
+
+```
+
+
+Here is a tutorial to show you how to add ansaotuvi app into a django project.
+
+[![Tutorial](http://i.vimeocdn.com/video/717548888_640.jpg)](https://vimeo.com/283303258 "Tutorial")
+
+Hope this help!
