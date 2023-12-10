@@ -1,0 +1,17 @@
+madgadget/FridaGadget.py,sha256=TFWMY-EBY98sdXjdSTfv4Ax7nbCkr2ntixGD6G_bSeY,1089
+madgadget/FridaGithub.py,sha256=CXpr-JOJYEqyamJH5EXTZaXcbk9oJdUq9uB8t19wLi4,1810
+madgadget/FridaScript.py,sha256=K_EetJ6Hr_6nR8xlTlHrRVNl02pqt3w_qweVmjPHOgo,617
+madgadget/GadgetManager.py,sha256=bdo4yRMcY9y062Jk5apgy8MwRgT_aLT_tH7l1ujmnXg,1504
+madgadget/__init__.py,sha256=nUlSZiINjvGjhS4cAQ3tOmAEOyvYYzrw_Ybi6Ys8dP0,141
+madgadget/exceptions.py,sha256=MynSAPHYZATAezwG-npftO_g3qEePMvuzvFK0oHC4qI,255
+madgadget/android/AndroidPatcher.py,sha256=4vwyHOy12fdQryijf5my1oEmA-88T3Td9GS81ppOpQM,4039
+madgadget/android/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+madgadget/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+madgadget/commands/inject.py,sha256=KasHMw22-vRIdsqPSn_F5wdgtRNpVuNIx4b6QsG8ayE,1178
+madgadget/commands/main.py,sha256=he6jlCxlq0XUVK-SrPrIXQpuHD8Kq6FwZzU9SAMiWRQ,1659
+madgadget/commands/pull.py,sha256=ba5hmpuKebK2eIxz-NErMpJWyPBS7jCzg9Kj83vqWV0,1009
+madgadget-0.0.2.dist-info/entry_points.txt,sha256=-nn4phaNjKNsyEk6ZNNStakoSYm5TAOiwFr7nYICxPI,58
+madgadget-0.0.2.dist-info/LICENSE,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+madgadget-0.0.2.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+madgadget-0.0.2.dist-info/METADATA,sha256=J5sXJISB25PvgYmZ3cmzkvfU-qm2mKz7hQCTGcntDTE,3352
+madgadget-0.0.2.dist-info/RECORD,,
