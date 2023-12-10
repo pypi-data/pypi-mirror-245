@@ -1,0 +1,2 @@
+[console_scripts]
+obt = obt.cli.main:cli
