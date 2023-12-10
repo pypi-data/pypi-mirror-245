@@ -1,0 +1,2 @@
+[console_scripts]
+pixelgreat-gui = pixelgreat_gui:run
