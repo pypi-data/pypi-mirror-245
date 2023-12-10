@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "lobrow"
+version = "0.0.2"  # Will be replaced at build time in CI/CD
+description = "Browse local files with a local server. Read documentation on an airplane."
+authors = ["Steampunk Wizard <lobrow@steampunkwizard.ca>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+wizlib = "^2.0.5"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.3.1"
+pycodestyle = "^2.11.0"
+autopep8 = "^2.0.4"
+sphinx = "^7.2.6"
+sphinx-bootstrap-theme = "^0.8.1"
+myst-parser = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+lobrow = "lobrow:LoBrowApp.main"
+
