@@ -1,0 +1,7 @@
+setup.py
+OTU_predictor.egg-info/PKG-INFO
+OTU_predictor.egg-info/SOURCES.txt
+OTU_predictor.egg-info/dependency_links.txt
+OTU_predictor.egg-info/requires.txt
+OTU_predictor.egg-info/top_level.txt
+tests/test_OTU_predictor.py
