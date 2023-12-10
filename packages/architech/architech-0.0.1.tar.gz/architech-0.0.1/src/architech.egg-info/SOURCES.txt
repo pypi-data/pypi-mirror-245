@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/architech.egg-info/PKG-INFO
+src/architech.egg-info/SOURCES.txt
+src/architech.egg-info/dependency_links.txt
+src/architech.egg-info/top_level.txt
+src/architechture/__init__.py
+src/architechture/start.py
