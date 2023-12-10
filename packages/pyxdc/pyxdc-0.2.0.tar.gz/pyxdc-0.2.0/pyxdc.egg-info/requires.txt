@@ -1,0 +1,17 @@
+ecdsa<1,>=0.13
+mnemonic<1,>=0.19
+pysha3<2,>=1.0.2
+ed25519<2,>=1.5
+base58<3,>=2.0.1
+requests<3,>=2.25.0
+hdwallet<3,>=2.2.1
+rlp<5,>=4.0.0
+web3<7,>=6.11.4
+
+[docs]
+sphinx<4,>=3.5.4
+sphinx-rtd-theme<1,>=0.5.2
+
+[tests]
+pytest<8,>=7.4.3
+pytest-cov<5,>=4.1.0
