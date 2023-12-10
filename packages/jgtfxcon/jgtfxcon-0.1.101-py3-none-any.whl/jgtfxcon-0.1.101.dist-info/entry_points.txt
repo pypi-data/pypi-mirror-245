@@ -1,0 +1,2 @@
+[console_scripts]
+jgtfxcli = jgtfxcon.jgtcli:main
