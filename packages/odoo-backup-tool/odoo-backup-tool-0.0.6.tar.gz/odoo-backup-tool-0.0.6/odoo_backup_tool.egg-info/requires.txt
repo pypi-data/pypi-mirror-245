@@ -1,0 +1,5 @@
+click
+click-odoo-contrib
+google
+pydantic
+pydantic-settings
