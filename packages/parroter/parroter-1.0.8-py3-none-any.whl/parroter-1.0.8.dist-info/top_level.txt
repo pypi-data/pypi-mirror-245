@@ -1,0 +1,3 @@
+parroter/Library
+parroter/Library/ai_artworks
+parroter/Models
