@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+src/timeoff/_version.py
+dist/
+*.egg-info/
+
+# Environments
+venv/
+
+# Linter / type checker
+.mypy_cache/
+.ruff_cache/
