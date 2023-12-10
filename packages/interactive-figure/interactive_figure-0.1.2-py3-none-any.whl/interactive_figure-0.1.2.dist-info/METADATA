@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: interactive-figure
+Version: 0.1.2
+Summary: Create interactive Matplotlib figures!
+Project-URL: Documentation, https://github.com/teuncm/interactive-figure#readme
+Project-URL: Bugs, https://github.com/teuncm/interactive-figure/issues
+Project-URL: Source, https://github.com/teuncm/interactive-figure
+Author-email: Teun Mathijssen <teun.c.mathijssen@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Framework :: Matplotlib
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.9
+Requires-Dist: matplotlib
+Description-Content-Type: text/markdown
+
+# Interactive Figure
+
+Create interactive Matplotlib figures that can be used for simple reaction time experiments. This package serves as a simple playground for students to perform such experiments. For more accurate scientific analysis one should refer to [PsychoPy](https://www.psychopy.org/).
+
+### Installation
+
+```shell
+pip install interactive-figure
+```
+
+### Usage
+
+```python
+from interactive_figure import interactive_figure
+
+interactive_figure.create()
+# Stall until user input is received.
+interactive_figure.wait_for_interaction()
+interactive_figure.close()
+```
+
+A quick example can be found in demo/basic.py.
+
+### Functionality
+
+- Create
+- Fullscreen
+- Clear
+- Wait
+- Wait for interaction (optionally timeout)
+- Draw
+- Close
