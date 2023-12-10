@@ -1,0 +1,6 @@
+setup.py
+shinchina.egg-info/PKG-INFO
+shinchina.egg-info/SOURCES.txt
+shinchina.egg-info/dependency_links.txt
+shinchina.egg-info/not-zip-safe
+shinchina.egg-info/top_level.txt
