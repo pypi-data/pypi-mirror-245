@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bricks-py
+Version: 0.0.7
+Summary: quickly build your crawler
+Home-page: UNKNOWN
+Author: Kem
+Author-email: 531144129@qq.com
+License: MIT
+Description: UNKNOWN
+Keywords: bricks
+Platform: UNKNOWN
+Requires-Python: >=3.8.0
+Provides-Extra: mongo
