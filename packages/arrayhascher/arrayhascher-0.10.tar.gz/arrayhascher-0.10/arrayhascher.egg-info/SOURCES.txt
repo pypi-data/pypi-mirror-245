@@ -1,0 +1,16 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+arrayhascher/README.MD
+arrayhascher/__init__.py
+arrayhascher/requirements.txt
+arrayhascher/thirdparty.json
+arrayhascher/xxhash.c
+arrayhascher/xxhash.h
+arrayhascher.egg-info/PKG-INFO
+arrayhascher.egg-info/SOURCES.txt
+arrayhascher.egg-info/dependency_links.txt
+arrayhascher.egg-info/requires.txt
+arrayhascher.egg-info/top_level.txt

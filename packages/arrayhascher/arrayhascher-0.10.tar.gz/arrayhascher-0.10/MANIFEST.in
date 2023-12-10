@@ -1,0 +1,5 @@
+include arrayhascher/requirements.txt
+include arrayhascher/thirdparty.json
+include arrayhascher/README.MD
+include arrayhascher/xxhash.c
+include arrayhascher/xxhash.h
