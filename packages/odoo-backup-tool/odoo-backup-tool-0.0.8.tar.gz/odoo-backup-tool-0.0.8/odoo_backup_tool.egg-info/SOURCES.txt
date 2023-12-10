@@ -1,0 +1,14 @@
+README.md
+setup.py
+obt/__init__.py
+obt/cli/__init__.py
+obt/cli/main.py
+obt/core/__init__.py
+obt/core/settings.py
+obt/core/tools.py
+odoo_backup_tool.egg-info/PKG-INFO
+odoo_backup_tool.egg-info/SOURCES.txt
+odoo_backup_tool.egg-info/dependency_links.txt
+odoo_backup_tool.egg-info/entry_points.txt
+odoo_backup_tool.egg-info/requires.txt
+odoo_backup_tool.egg-info/top_level.txt

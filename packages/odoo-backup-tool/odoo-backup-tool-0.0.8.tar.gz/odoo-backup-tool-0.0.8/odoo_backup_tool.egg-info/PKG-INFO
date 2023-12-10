@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: odoo-backup-tool
+Version: 0.0.8
+Summary: Odoo Backup Tool
+Home-page: https://github.com/royaurelien/odoo-backup-tool
+Author: Aurelien ROY
+Author-email: roy.aurelien@gmail.com
+License: BSD 2-clause
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: click-odoo-contrib
+Requires-Dist: google
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+
+
+# Odoo Backup Tool
+
+_**ORH** Command Line Tool_
+
+![PyPI](https://img.shields.io/pypi/v/odoo-backup-tool) ![PyPI](https://img.shields.io/pypi/pyversions/odoo-backup-tool)
+
+## Requirements
+
+
+
+## Installation
+
+Install from PyPI:
+```bash
+pip install odoo-backup-tool
+```
+
+## Quickstart
+
+
+### Backup local database
+```bash
+obt backup DBNAME
+```
+
+### Backup and upload
+```bash
+obt backup-and-push --format <format>
+```
+
+```bash
+Options:
+  -d, --dbname TEXT   Database name
+  -f, --format TEXT   Format: zip, dump, folder  [required]
+  -n, --no-filestore  Do not include filestore.
+  -p, --prefix TEXT   Use prefix in filename.
+  -k, --keep          Do not delete files after backup.
+  -a, --auth TEXT     Bucket authentication.
+  -b, --bucket TEXT   Bucket name.
+  --help              Show this message and exit.
+```
