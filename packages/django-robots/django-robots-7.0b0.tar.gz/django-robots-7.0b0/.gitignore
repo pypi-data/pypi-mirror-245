@@ -1,0 +1,14 @@
+*.egg-info
+docs/_build/
+*py[co]
+__pycache__
+/build
+/dist
+.tox
+.coverage
+coverage.xml
+.DS_Store
+
+env/
+.vscode/
+.eggs/
