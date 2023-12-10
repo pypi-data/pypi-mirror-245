@@ -1,0 +1,14 @@
+deepdog/__init__.py,sha256=kLdmXx2VbQkV6QA-pteIWU6OtBVMQ6mfDdN9O6QUUDU,605
+deepdog/bayes_run.py,sha256=cRVCmNzWlcQsbfJ_hi38cFwIdh10pTAF7M-IDZ4xCBQ,8197
+deepdog/bayes_run_simulpairs.py,sha256=AKH6Hp4LlDaY1sCxQ6Zo4ss8lZ3cP_skZ7eJt91tUKA,11705
+deepdog/bayes_run_with_ss.py,sha256=Ystyu_9UXuVu5sWZJeW_I3kRvB5iWQH_CUgIPMieiJ8,7661
+deepdog/direct_monte_carlo/__init__.py,sha256=r7bGYmcCdn-82nVbYvfiELX4NW1uCxj2XjDduCnAkRM,161
+deepdog/direct_monte_carlo/direct_mc.py,sha256=HC9tR4GKsswExDByMB-bQnjO_RJrR4d6wI6CNI-yDvQ,4615
+deepdog/meta.py,sha256=Brs9HsZyBCGpLXdkV6eOdvziQrdiQt__LktEsPlZ0fs,73
+deepdog/real_spectrum_run.py,sha256=aYSDBL2preA643LiEOZQ20rb6_t6dQ_l2gxkZtA7J2s,8471
+deepdog/subset_simulation/__init__.py,sha256=z3_Jc3dzgtPLoOpdG02AbopMABWNw5rbFhTPcYfixyQ,110
+deepdog/subset_simulation/subset_simulation_impl.py,sha256=5TDK2zffDnZrtzjQ06nrZHdQ2J8OmmJZclkAzMkeIN0,11415
+deepdog/temp_aware_real_spectrum_run.py,sha256=IgtcgIJLIJF5Vt7HHfwlCfbwyBYBb8iXteAQlanhTCg,6794
+deepdog-0.7.5.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+deepdog-0.7.5.dist-info/METADATA,sha256=WxuspOFkIjzEEACslFvBjJMSRSHVSWI3KOqTMdLshqw,361
+deepdog-0.7.5.dist-info/RECORD,,
