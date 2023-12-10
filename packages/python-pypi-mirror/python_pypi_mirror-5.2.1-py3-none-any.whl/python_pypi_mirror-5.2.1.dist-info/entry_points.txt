@@ -1,0 +1,2 @@
+[console_scripts]
+pypi-mirror = pypi_mirror:main
