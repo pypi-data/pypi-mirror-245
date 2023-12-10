@@ -1,0 +1,5 @@
+PyPDF2
+tika
+click
+pdfplumber
+tqdm
