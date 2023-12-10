@@ -1,0 +1,3 @@
+[console_scripts]
+doublemanning-calc = doublemanning.cli:doubleManningCalc
+doublemanning-fit = doublemanning.cli:doubleMmanningFit
