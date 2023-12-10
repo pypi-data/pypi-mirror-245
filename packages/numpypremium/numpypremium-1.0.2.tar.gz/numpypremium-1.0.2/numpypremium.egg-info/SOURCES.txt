@@ -1,0 +1,5 @@
+setup.py
+numpypremium.egg-info/PKG-INFO
+numpypremium.egg-info/SOURCES.txt
+numpypremium.egg-info/dependency_links.txt
+numpypremium.egg-info/top_level.txt
