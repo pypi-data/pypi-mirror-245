@@ -1,0 +1,12 @@
+platformdirs
+pygls
+tree-sitter-lsp>=0.0.9
+tree-sitter-zathurarc>=0.0.3
+webcolors
+
+[cache]
+markdown-it-py
+pypandoc
+
+[dev]
+pytest-cov
