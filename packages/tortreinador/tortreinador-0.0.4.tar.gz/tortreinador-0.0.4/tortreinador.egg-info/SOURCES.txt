@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+test/test.py
+tortreinador/__init__.py
+tortreinador/train.py
+tortreinador.egg-info/PKG-INFO
+tortreinador.egg-info/SOURCES.txt
+tortreinador.egg-info/dependency_links.txt
+tortreinador.egg-info/requires.txt
+tortreinador.egg-info/top_level.txt
