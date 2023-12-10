@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dangam
+Version: 0.1.0
+Summary: A brief description of your package
+Home-page: https://github.com/jasonheesanglee/dangam
+Author: Jason Heesang Lee
+Author-email: jason.heesang.lee96@gmail.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch >=1.10.0
+Requires-Dist: numpy >=1.21.0
+Requires-Dist: tqdm >=4.62.0
+Requires-Dist: transformers >=4.10.0
+Requires-Dist: scipy >=1.7.0
+Requires-Dist: pandas >=1.3.0
+Requires-Dist: regex >=2021.8.0
+
+# dangam
