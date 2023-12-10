@@ -1,0 +1,6 @@
+[console_scripts]
+SpartParser = itaxotools.spart_parser.main:main
+SpartParserDemo = itaxotools.spart_parser.main:demo
+
+[gui_scripts]
+SpartParserGui = itaxotools.spart_parser.gui:run

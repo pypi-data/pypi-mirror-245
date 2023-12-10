@@ -1,0 +1,15 @@
+
+[dev]
+setuptools_scm
+pre-commit
+ruff
+pytest
+pytest-qt
+pytest-xvfb
+pyinstaller
+memory-profiler
+matplotlib
+
+[gui]
+itaxotools-common
+pyside6
