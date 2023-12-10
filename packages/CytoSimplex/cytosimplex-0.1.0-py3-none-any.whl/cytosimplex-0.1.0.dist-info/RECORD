@@ -1,0 +1,15 @@
+CytoSimplex/__init__.py,sha256=YUEWi0__N90UrUmbO0WsR6KtWA6i4gu5JexIScFPAnI,314
+CytoSimplex/_binary.py,sha256=kgAzmRd5y7_rk4jy5fPeCDbB-TK7SoHDpt8g-Ao0AZU,9694
+CytoSimplex/_normalize.py,sha256=5C1UphIWGljqcLi5K0Uqk1S_UudqkH6JypO4QcLmBR4,769
+CytoSimplex/_quaternary.py,sha256=kVCOPy9p49093dcC71wnVnRyWCG_Fk9hsSssSAZOkXM,12071
+CytoSimplex/_select_top_features.py,sha256=vDQpqYjalot5IGYIn_-IR_bITm_lsOxXpyGBP6yc1l4,11510
+CytoSimplex/_similarity.py,sha256=1sbCWE72lHXPQYWMO4-dgx3XlDD3-7uL5NOqu-uH-_Q,3002
+CytoSimplex/_ternary.py,sha256=ladxiUAm3p272Zavi-ltZ4minM34LERDcBEHNTCY9cg,13177
+CytoSimplex/_util.py,sha256=EIwDUpsPiKwtK7NStQ506sW40gxCqIBkXBx2bPBNIrE,4719
+CytoSimplex/_velo_grid.py,sha256=Nbs_QJAfhTR_vsjCkfcQardn6VXPYYERoQTPDnP7I7I,4205
+CytoSimplex/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CytoSimplex/tests/test_CytoSimplex.py,sha256=FABBtw-Zop3qi12tNC-SSL9_cGXKLNc2h6Sce91P4-8,7303
+cytosimplex-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cytosimplex-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+cytosimplex-0.1.0.dist-info/METADATA,sha256=NrkU7juNynwGdYDZ9nIwkpLSX_Pi7dyEi7QUt3Y1wD4,3267
+cytosimplex-0.1.0.dist-info/RECORD,,
