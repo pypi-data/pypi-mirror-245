@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: numpypremium
+Version: 1.0.0
+Summary: Fundamental package for array computing in Python
+Author: charlesr.harri
+Description-Content-Type: text/markdown
+
+NumPy Premium is the fundamental package for scientific computing with Python. NumPy requires pytest and hypothesis. NumPy is a community-driven open source project developed by a diverse group of contributors. The NumPy leadership has made a strong commitment to creating an open, inclusive, and positive community. Please read the NumPy Code of Conduct for guidance on how to interact with others in a way that makes our community thrive.
