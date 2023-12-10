@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: notepads
+Version: 2023.12.9.8
+Summary: Create runtime folders, files, and code notes. All stored in notepads environment.
+Home-page: https://github.com
+Author: notepads
+Author-email: toolkitr.email@gmail.com
+License: MIT
+Keywords: entry,entries
+Classifier: Development Status :: 1 - Planning
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Development Status :: 3 - Alpha
+Classifier: Development Status :: 4 - Beta
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+```
+notepads: V2023.12.9.8
+```
+
+Create runtime only directory
+    [1] -> Make folders
+    [2] -> Make files
+    [3] -> Make notes for code
+
+========================================
+
+# Create note:
+```python
+notepads.note(name='notename', content='notecontent', author='OPTIONAL_noteauthor')
+```
+# Find note
+```python
+notepads.get_note(name='notename')
+
+# or
+
+notepads.notes()[<index>]
+```
+========================================
+
+# Create folder:
+```python
+notepads.folder(name='foldername', version='OPTIONAL_0.0.0', description='OPTIONAL_a test folder', author='OPTIONAL_test author'))
+
+# name, *, version=None, description=None, author=None
+```
+
+# Find folder:
+```python
+notepads.get(name='foldername')
+```
+
+# Update folder:
+```python
+folder.update(name='newfoldername', version='0.0.1', description='a new test folder', author='test author)
+```
+
+# Delete folder:
+```python
+folder.delete()
+```
+
+========================================
+
+# Create file:
+```python
+notepads.file(name='filename', description='OPTIONAL_a test file', author='OPTIONAL_test author', parent=NotepadsFolder)
+
+# name, *, version=None, description=None, author=None, parent: NotepadsFolder=None
+```
+
+# Find file:
+```python
+notepads.get(name='filename')
+```
+
+# Update file:
+```python
+file.update(name='newfilename', description='a new test file', author='test author)
+```
+
+# Load file:
+```python
+file.load()
+```
+
+# Write file:
+```python
+file.write(content='newfilecontent')
+```
+
+# Delete file:
+```python
+file.delete()
+```
