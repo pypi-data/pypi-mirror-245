@@ -1,0 +1,2 @@
+include src/pixelgreat_gui/*.yml src/pixelgreat_gui/*.py
+graft src/pixelgreat_gui/resources
