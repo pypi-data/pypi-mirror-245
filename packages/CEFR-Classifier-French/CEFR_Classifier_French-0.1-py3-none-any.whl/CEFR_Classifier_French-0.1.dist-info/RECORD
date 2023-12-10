@@ -1,0 +1,13 @@
+inference/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inference/predict.py,sha256=7CIVE2mspyIB83surmhz6tsOiYd1mx0WpMa0naycbLQ,8779
+pages/File_Inference.py,sha256=402eUnWFTH457uGHDo8u5ap51WZ6Hn6kYB3I6HgfqMA,5159
+pages/Sentence_Inference.py,sha256=pvKEyi9rmZRTrwJr2tzpAczAUhxbTSK9VSCllLFKiDo,989
+pages/Training.py,sha256=9x1BJVA91PT-0NEqzSGaZCSO_FURtiQzz59u3KCr4OA,1650
+pages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+train/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+train/trainer.py,sha256=jfyMVapNVyPugsoQVX-JVmc1rw8Gz8O-xv7AEa1b16c,8211
+train/utils.py,sha256=Mp_zmXn0KCFsgnYZkR2deA0yaHoXjbeNl5vPiFhALdc,2133
+CEFR_Classifier_French-0.1.dist-info/METADATA,sha256=IDd213j3drbczgVGEs7pux5JGSxMdipJ3WjhbuXLzio,460
+CEFR_Classifier_French-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CEFR_Classifier_French-0.1.dist-info/top_level.txt,sha256=eTFK5axXCeywzCL09wB6pZH7jhIWjNA7nG3wQMUjSEw,22
+CEFR_Classifier_French-0.1.dist-info/RECORD,,
