@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: python-access-modifiers
+Version: 1.0.0
+Summary: Python decorators to specify the accessibility or scope of functions
+Author: mxngo
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+![PyPiVersion]
+![SupportedVersions]
+![License]
+
+[PyPiVersion]: https://img.shields.io/pypi/v/python-access-modifiers
+[SupportedVersions]: https://img.shields.io/badge/python-3.12-orange
+[License]: https://img.shields.io/badge/license-MIT-yellow
+
+# Installation
+Built and tested on Python 3.12.<br>
+No requirements other than the module itself.
+```py
+pip install python-access-modifiers
+```
+# Example Usage
+### Creating a private method inside of a class
+```py
+from python_access_modifiers import private
+
+class Example():
+    @private
+    def private_method(self) -> None:
+        print("Private method called")
+
+    def public_method(self) -> None:
+        print("Public method called")
+        self.private_method()
+
+example_class = Example()
+example_class.public_method()
+```
+### Output
+```
+Public method called
+Private method called
+```
+A `PermissionError` would be raised if the `private_method` method was called directly from outside the class scope.
+```py
+example_class.private_method()
+```
+### Output
+```
+PermissionError: Cannot invoke private method "private_method" from scope <module>
+```

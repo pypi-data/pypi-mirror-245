@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "python-access-modifiers"
+version = "1.0.0"
+authors = [
+  {name = "mxngo", email = ""}
+]
+description = "Python decorators to specify the accessibility or scope of functions"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Topic :: Utilities",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
