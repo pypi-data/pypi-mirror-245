@@ -1,0 +1,33 @@
+from app.requests.{{file_name}} import {{name}}Request
+from datetime import datetime
+from pydantic import BaseModel
+
+
+class {{name}}CreateResponse(BaseModel):
+    """
+    Pydantic model representing a response for creating a {{name}}.
+
+    Attributes:
+        id (int): The unique identifier of the created user.
+        username (str): The username of the created user.
+        email (str): The email address of the created user.
+    """
+
+    id: int
+    username: str
+    email: str
+
+
+class {{name}}UpdateResponse(BaseModel):
+    """
+    Pydantic model representing a response for updating a {{name}}.
+
+    Attributes:
+        id (int): The unique identifier of the updated user.
+        username (str): The updated username of the user.
+        email (str): The updated email address of the user.
+    """
+
+    id: int
+    username: str
+    email: str
