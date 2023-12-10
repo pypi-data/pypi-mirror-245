@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: devilsms
+Version: 1.2
+Summary: Python IsntaBot for spaming
+Home-page: https://github.com/Sandeepdhabai/Devilbomber
+Author: sm02present , SM02
+Author-email: rajnikantmahato@gmail.com
+Project-URL: Bug Tracker, https://github.com/Sandeepdhabai/Devilbomber/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<center>Hi  everyone ,
+<marquee> Auther : SM02 , Sm02present </marquee>
+this project only for edeqution perposal 
+
+<mark>apt source only </mark>
+<pre>
+ apt update
+ apt upgrade -y
+ apt install python3-pip -y
+ pip3 install --upgrade pip
+ pip3 install requests
+ pip3 install InstaSpam
+
+ <mark> runing commonds</mark>
+ type 
+ <mark>Insta-spam</mark>
+     </pre>
+
+###  Auther :  
+<mark> SM02 SM01 Sm02present
+### Auther : 
+<mark> Simplehacker1 Community Group
+### Powered by team member :
+### Starting Project date : 02/02/2022
+### update date  : 12/02/2022
+### New Modifed : 20/02/2022
+### Note : Insta-Spam changed To InstaSpam
+### version : 1.0
+### About  : Insagram Spam messageing  Tool for Fun 
+
+</center>
