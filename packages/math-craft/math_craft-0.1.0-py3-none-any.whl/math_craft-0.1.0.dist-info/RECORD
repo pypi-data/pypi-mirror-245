@@ -1,0 +1,11 @@
+mathcraft/__init__.py,sha256=mzafWLxojkdsmP9pf_2AP5IUbk5X6hftgEMotk32QUc,93
+mathcraft/contexts.py,sha256=a-IO8lIIQ7PPps-26M8ZQF_OWKu6ZXr_1n6JnqyECN0,364
+mathcraft/curve_fitting.py,sha256=VqRvVExPdUQ0OHknYvtyq6FD9LV8riVdYTEb-bVGcQ4,1183
+mathcraft/linalg.py,sha256=jTMmeLTu05d-nVARoGOSOQPYAsCiykoU7iEsbBC1K40,1063
+mathcraft/ode.py,sha256=Ih1jSQ5mndjkUiTis5Gxw_ZB98PdQYLNounEU8L2QY8,458
+math_craft-0.1.0.dist-info/LICENSE,sha256=x-pv7Z4BNGTUCEfftM6MRWFDh9mg45_UBn2QFOz7H1g,1091
+math_craft-0.1.0.dist-info/METADATA,sha256=n8O9MySMS5uFwbWCC7JvkRy1BeEiqgL-9bT92P-SsK8,565
+math_craft-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+math_craft-0.1.0.dist-info/entry_points.txt,sha256=yrwXZbhghDzwT_Qb8eMfTjm9n_djwRwbEaZPsoSJNug,61
+math_craft-0.1.0.dist-info/top_level.txt,sha256=Kz0jk9OS9hFe-fPzhujUOO-PMpYU1NC5I-4eD6Y_pPo,10
+math_craft-0.1.0.dist-info/RECORD,,

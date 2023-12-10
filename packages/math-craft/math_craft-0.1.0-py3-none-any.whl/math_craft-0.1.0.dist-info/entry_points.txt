@@ -1,0 +1,3 @@
+[console_scripts]
+mathcraft-script = mathcraft.module1:main
+
