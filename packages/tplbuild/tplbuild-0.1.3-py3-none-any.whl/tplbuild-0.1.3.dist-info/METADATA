@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: tplbuild
+Version: 0.1.3
+Summary: Templated container build tool
+Home-page: http://github.com/msg555/tplbuild/
+Author: Mark Gordon
+Author-email: msg555@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jinja2 ~=3.0
+Requires-Dist: pydantic <3,>=1
+Requires-Dist: pyyaml <7,>=5
+Requires-Dist: aioregistry ~=0.7.2
+
+# tplbuild - Templated reproducible container build tool
+
+*tplbuild* is a wrapper around 
+[Dockerfiles](https://docs.docker.com/engine/reference/builder/#format)
+to make buildilng container images better. The two main features that inspired
+the creaton of *tplbuild* were
+
+- Templating build instructions through [Jinja](https://jinja.palletsprojects.com/)
+- Enabling fast and reproducible builds among developers
+
+## Installation
+
+*tplbuild* can be installed through *pip*. This installs both the `tplbuild`
+CLI utility and the *tplbuild* Python library.
+
+```sh
+pip install tplbuild
+```
+
+*tplbuild* is supported and tested on Python 3.8-3.10
+
+
+## Documentation
+
+Documentation for *tplbuild* can be found
+[here](https://tplbuild.readthedocs.io/)
+
+### Examples
+
+Check out the [examples](examples/) folder in this repo for some example of
+what can be done with `tplbuild`.
+
+### Demo Video
+
+Additionally, you can find a quick tutorial highlighting key features
+[here](https://youtu.be/HDiyABr8Adw)
+
+[![Tplbuild Demo
+Video](https://img.youtube.com/vi/HDiyABr8Adw/0.jpg)](https://www.youtube.com/watch?v=HDiyABr8Adw "Tplbuild Demo")
+
+
