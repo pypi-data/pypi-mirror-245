@@ -1,0 +1,107 @@
+on:
+  release:
+    types:
+      - published
+
+name: release
+
+jobs:
+  release-linux:
+    name: build Linux release dists
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: pyproject.toml
+
+      - name: build wheels
+        run: make dist-pyrage
+
+      - name: upload linux dists
+        uses: actions/upload-artifact@v3
+        with:
+          name: pyrage-dists
+          path: dist/
+
+  release-macos:
+    name: build macOS release dists
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: pyproject.toml
+
+      - name: build wheels
+        run: |
+          rustup target add aarch64-apple-darwin
+          make env
+          source env/bin/activate
+          maturin build --release --strip --target universal2-apple-darwin
+          mv target/wheels/ dist/
+
+      - name: upload macos dists
+        uses: actions/upload-artifact@v3
+        with:
+          name: pyrage-dists
+          path: dist/
+
+  release-windows:
+    name: build Windows release dists
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: pyproject.toml
+
+      - name: build wheels
+        shell: bash
+        run: |
+          make env
+          source env/Scripts/activate
+          maturin build --release --strip
+          mv target/wheels/ dist/
+
+      - name: upload windows dists
+        uses: actions/upload-artifact@v3
+        with:
+          name: pyrage-dists
+          path: dist/
+
+  pypi-publish:
+    name: publish all dists to PyPI
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      # Used for OIDC publishing.
+      # Used to sign the release's artifacts with sigstore-python.
+      id-token: write
+
+      # Used to attach signing artifacts to the published release.
+      contents: write
+    needs:
+      - release-linux
+      - release-macos
+      - release-windows
+
+    steps:
+      - name: fetch dists
+        uses: actions/download-artifact@v3
+        with:
+          name: pyrage-dists
+          path: dist/
+
+      - name: publish
+        uses: pypa/gh-action-pypi-publish@v1.8.11
+
+      - name: sign
+        uses: sigstore/gh-action-sigstore-python@v2.1.0
+        with:
+          inputs: ./dist/*.tar.gz ./dist/*.whl
+          release-signing-artifacts: true
+          bundle-only: true
