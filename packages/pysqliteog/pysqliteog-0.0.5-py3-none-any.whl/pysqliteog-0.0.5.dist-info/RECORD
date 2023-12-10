@@ -1,0 +1,14 @@
+pysqliteog/__init__.py,sha256=VDr7pOww6ELRbm7ggWrv4GdSXvGjQ1VTAxWuwbJCcFc,44
+pysqliteog/dbapi2.py,sha256=X0v88dXVN7Nk5d67IwJbLkemgLDlr1iQkvIfWJoFy74,7931
+pysqliteog/errors.py,sha256=9LxuINT24YqrK4aPmLF6b5Q178dywSDlKf7exswWWMI,438
+pysqliteog/gen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysqliteog/gen/sqliteog_pb2.py,sha256=Wi0sLFNCqakBBN0uItTBT277xKIeroRO-gAlHmtAMWQ,3662
+pysqliteog/gen/sqliteog_pb2.pyi,sha256=FUV4lY0xx7s64uc1QqutmZmO-a2tJFZHkJoiIj5KG24,3777
+pysqliteog/gen/sqliteog_pb2_grpc.py,sha256=YLU6zPmuEJ_jXSDqoAZXpZYP_P8ohgPQPEwcAvfCug0,13972
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_db.py,sha256=Qoo328NkrKGymxkGNuZWbWofbVk6rzE0GRM--6krZco,2202
+pysqliteog-0.0.5.dist-info/LICENSE,sha256=FpkIvjSW9-wFO0xpxWJAfpXquGBzBriNyPC_6v7_M8M,1067
+pysqliteog-0.0.5.dist-info/METADATA,sha256=hJ7LpFFVNuUTpIJZdsLruU2phRjN8GYU5NJHn44NhE8,1715
+pysqliteog-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pysqliteog-0.0.5.dist-info/top_level.txt,sha256=E_XulZ5bGy60zf4oQGuqdHCb7ormzrNRmky3tXAtkXY,17
+pysqliteog-0.0.5.dist-info/RECORD,,
