@@ -1,0 +1,11 @@
+arrayhascher/README.MD,sha256=n1P1xJxq9RR58EGY7H2LtNGhcl9WQAPDa4rhgEE75m4,3392
+arrayhascher/__init__.py,sha256=3V2piyBezzqMXurzVr_ChjaIea-xNCaMWR0TL6qqIFk,8542
+arrayhascher/requirements.txt,sha256=SUBJaKPyKFLjYEhO1EmFEcOyYl588OMC0WexFOamSwU,21
+arrayhascher/thirdparty.json,sha256=ZpV235OHOJQA0yA2pc-93sQf5CmNlAnXZPArv1Fmmhk,51713
+arrayhascher/xxhash.c,sha256=XDWR_m5shqYZ6yZ2DpUg43pv1RUogqta2T-RLiqFWWY,1855
+arrayhascher/xxhash.h,sha256=K3Iva6aCy71G74g5Yzt0yio1MnMI3aLe248PVvdQriw,262851
+arrayhascher-0.10.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+arrayhascher-0.10.dist-info/METADATA,sha256=UHlyGtvn01xR4vYZSsQTTHUuk27Dzxmwi_BXAj0XMhU,4097
+arrayhascher-0.10.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+arrayhascher-0.10.dist-info/top_level.txt,sha256=qlpjB0YE0sGrow_sPiHei3_8cAeAWqvgN7lrB_mdtKE,13
+arrayhascher-0.10.dist-info/RECORD,,
