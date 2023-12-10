@@ -1,0 +1,3 @@
+[console_scripts]
+jinjacraft=jinjacraft.main:main
+
