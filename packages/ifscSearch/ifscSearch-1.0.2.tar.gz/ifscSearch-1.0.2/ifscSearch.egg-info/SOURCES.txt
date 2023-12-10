@@ -1,0 +1,8 @@
+README.md
+setup.py
+ifscSearch.egg-info/PKG-INFO
+ifscSearch.egg-info/SOURCES.txt
+ifscSearch.egg-info/dependency_links.txt
+ifscSearch.egg-info/entry_points.txt
+ifscSearch.egg-info/requires.txt
+ifscSearch.egg-info/top_level.txt
