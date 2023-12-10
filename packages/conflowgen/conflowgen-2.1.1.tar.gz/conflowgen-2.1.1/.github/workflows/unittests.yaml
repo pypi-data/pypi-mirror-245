@@ -1,0 +1,44 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    types: [opened, reopened, edited, synchronize]
+
+jobs:
+  build:
+    name: Run unittests
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Skip Duplicate Actions
+      uses: fkirc/skip-duplicate-actions@v5
+
+    - uses: actions/checkout@v2
+    - run: |
+        curl -LJO "https://media.tuhh.de/mls/software/conflowgen/docs/data/prepared_dbs/demo_poc.sqlite"
+        mkdir -p docs/notebooks/data/prepared_dbs
+        mv demo_poc.sqlite docs/notebooks/data/prepared_dbs/
+
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+
+    - name: Install Python dependencies
+      run: |
+        pip3 install --user -e .[dev]
+
+    - name: Test with pytest
+      run: |
+        pytest --exitfirst --verbose --failed-first --cov="./conflowgen" --cov-report html
+
+    - name: Upload Coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        fail_ci_if_error: false

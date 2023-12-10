@@ -1,0 +1,54 @@
+name: Docs
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    types: [opened, reopened, edited, synchronize]
+
+jobs:
+  build:
+    name: Build documentation and check for warnings
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.8, "3.10"]  # Check the oldest and newest currently supported Python versions
+
+    steps:
+
+    - name: Skip Duplicate Actions
+      uses: fkirc/skip-duplicate-actions@v5
+
+    - name: Update Ubuntu and install pandoc
+      run: |
+        sudo apt-get update && sudo apt-get upgrade && sudo apt-get install pandoc
+
+    - uses: actions/checkout@v3
+    - run: |
+        curl -LJO "https://media.tuhh.de/mls/software/conflowgen/docs/data/prepared_dbs/demo_poc.sqlite"
+        curl -LJO "https://media.tuhh.de/mls/software/conflowgen/docs/data/prepared_dbs/demo_deham_cta.sqlite"
+        mkdir -p docs/notebooks/data/prepared_dbs
+        mv demo_poc.sqlite docs/notebooks/data/prepared_dbs/
+        mv demo_deham_cta.sqlite docs/notebooks/data/prepared_dbs/
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install Python dependencies including sphinx
+      run: |
+        pip3 install --user -e .[dev]
+
+    - name: Build documentation and check for warnings
+      run: |
+        cd ./docs/ && make html SPHINXOPTS="-W --keep-going"
+
+    - name: Check links
+      run: |
+        python -m sphinx -W --keep-going ./docs/ ./docs/_build/linkcheck/ -b linkcheck
