@@ -1,0 +1,14 @@
+markdown
+jinja2
+pygments
+click
+
+[all]
+libsass
+livereload
+
+[sass]
+libsass
+
+[watch]
+livereload
