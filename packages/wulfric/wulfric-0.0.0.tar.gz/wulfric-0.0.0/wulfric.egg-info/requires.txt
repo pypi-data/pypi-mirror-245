@@ -1,0 +1,8 @@
+numpy
+scipy
+tqdm
+termcolor
+
+[visual]
+plotly
+matplotlib
