@@ -1,0 +1,9 @@
+sklik/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sklik/api.py,sha256=rDP0_M5xx_N6Vk2efKjuUeLDX8_5sk5Zv1tv70M9BhA,4209
+sklik/exception.py,sha256=eQyWwMClt25JKDXlT0RSEf7xmY7Le2t16cDsjMxGHzQ,229
+sklik/object.py,sha256=Cfb5R1SliOt9PsBDmKZOM8b1VBIVbFpxcdfbP_TlXP4,2976
+sklik/report.py,sha256=InVGo86tE85-CuOkJAO8fVzbttsjAgyFESnzEgmANL0,6137
+sklik/util.py,sha256=oc_ZKmrPUyqVZcp8s-pD1jhT2L_E9Sagsgh8QldONcc,78
+sklik-0.1.1.dist-info/METADATA,sha256=ur4PrC_DRPADa1lKdf_6lfdtDaPaMKb5a2oXvvN5DC4,3236
+sklik-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sklik-0.1.1.dist-info/RECORD,,
