@@ -1,0 +1,2 @@
+[console_scripts]
+http-bruteforce = http_bruteforce:main
