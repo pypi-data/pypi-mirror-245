@@ -1,0 +1,8 @@
+absl-py
+numpy
+jax
+jaxlib
+matplotlib
+scipy
+torch
+torchaudio
