@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+trapile.egg-info/PKG-INFO
+trapile.egg-info/SOURCES.txt
+trapile.egg-info/dependency_links.txt
+trapile.egg-info/entry_points.txt
+trapile.egg-info/requires.txt
+trapile.egg-info/top_level.txt
