@@ -1,0 +1,6 @@
+base58
+bdkpython>=0.28.0
+pygame
+PySide2
+pyzbar
+mss
