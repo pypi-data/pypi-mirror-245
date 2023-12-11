@@ -1,0 +1,90 @@
+[project]
+name = "gitlab-deployment-changelog"
+description = "Gitlab Deployment Changelog Creator"
+authors = [
+    { name = "Christoph Becker", email = "christoph.becker@exb.de" },
+    { name = "Lukas Jesche", email = "lukas.jesche@exb.de" },
+    { name = "Riccardo Padoan", email = "riccardo.padoan@exb.de" },
+]
+dependencies = [
+    "python-gitlab>=4.1.1",
+    "python-decouple>=3.8",
+    "pyyaml>=6.0.1",
+    "loguru>=0.7.2",
+    "requests>=2.31.0",
+    "pytest-mock>=3.12.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+version = "0.1.5"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/ExB-Group/gitlab-deployment-changelog"
+Repository = "https://github.com/ExB-Group/gitlab-deployment-changelog"
+Changelog = "https://github.com/ExB-Group/gitlab-deployment-changelog/blob/main/CHANGELOG.md"
+
+[project.scripts]
+gdc = "gitlab_deployment_changelog:gdc.main"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.1.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.build]
+includes = [
+    "gitlab_deployment_changelog/",
+    "CHANGELOG.md",
+]
+
+[tool.pdm.version]
+source = "file"
+path = "gitlab_deployment_changelog/__version__.py"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "flake8>=6.0.0",
+    "pytest>=7.4.3",
+    "pytest-cov>=4.1.0",
+    "python-semantic-release>=8.5.0",
+    "twine>=4.0.2",
+]
+
+[tool.semantic_release]
+version_variables = [
+    "gitlab_deployment_changelog/__version__.py:__version__",
+]
+version_toml = [
+    "pyproject.toml:project.version",
+]
+commit_author = "Semantic commit <a_bot_at@exb.de>"
+build_command = "pdm build"
+tag_format = "v{version}"
+
+[tool.semantic_release.branches.main]
+match = "(main|master)"
+prerelease_token = "rc"
+prerelease = false
+
+[tool.semantic_release.branches.packaging_semantic]
+match = "packaging_semantic"
+prerelease_token = "rc"
+prerelease = true
+
+[tool.semantic_release.publish]
+dist_glob_patterns = [
+    "dist/*",
+]
+upload_to_vcs_release = true
+
+[tool.semantic_release.remote]
+name = "origin"
+type = "github"
+ignore_token_for_push = false
+
+[tool.semantic_release.remote.token]
+env = "GH_TOKEN"
