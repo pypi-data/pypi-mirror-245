@@ -1,0 +1,12 @@
+tpltable/__init__.py,sha256=5_Tw6znizvmaXvx1T8DuKkS6y2ajFnmajaOnBUA5QcI,441
+tpltable/box4.py,sha256=OpoPgHrpe3jQqxaSeeFMmOECPmf4Zd73t4UMGO1ClaA,17441
+tpltable/filefinder.py,sha256=Fc9d7Bj80zT2wPgBctlZ6aWEJ-562fekbPh7hneK8l4,8407
+tpltable/pipe.py,sha256=faUoiFNyArKW-gp7Ikd_AwuTVGwZzbdhUZmhCzphueI,17185
+tpltable/tabel_io.py,sha256=_4QyfmNzIRlCmkreZ_mMeAb_6cmiJCPD4i4vLtXXDRk,3526
+tpltable/table_flow.py,sha256=ZOwPQawtsk83FIx1ND7MGE8kLSd2X-WG4YJ1XELHLOQ,116
+tpltable/tpl_format.py,sha256=kdTfzTZAlew1jQHwOUFsY_V9fT6ndXijGJjpWtmx2vU,16192
+tpltable/utils.py,sha256=OR1put-WeS5aWCELkM8HWOby0CF1fJAwMeVegmCDUEc,12795
+tpltable-0.2.0.dist-info/METADATA,sha256=Bebw_hczg4zPsMm54UXGoXlAfyu23Mz-piqkclEyIVo,455
+tpltable-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tpltable-0.2.0.dist-info/top_level.txt,sha256=7VBBdF2Ic3dVKZZGK3b-dhwZSDIwQLBMWbm08pnYLIk,9
+tpltable-0.2.0.dist-info/RECORD,,
