@@ -1,0 +1,17 @@
+Flask
+PyIpernity>=0.1.5
+
+[docs]
+sphinx
+
+[docs:python_version < "3.11"]
+tomli
+
+[login]
+Flask-Login
+
+[test]
+PyYAML
+flake8
+pytest
+pytest-cov

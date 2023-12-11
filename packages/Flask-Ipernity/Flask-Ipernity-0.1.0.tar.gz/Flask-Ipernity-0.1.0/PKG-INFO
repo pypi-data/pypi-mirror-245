@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: Flask-Ipernity
+Version: 0.1.0
+Summary: Flask extension for Ipernity
+Author-email: rcw-2 <mail@rcw-2.de>
+Project-URL: homepage, https://github.com/rcw-2/flask-ipernity
+Keywords: ipernity,photo,web
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: PyIpernity>=0.1.5
+Provides-Extra: login
+Requires-Dist: Flask-Login; extra == "login"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: tomli; python_version < "3.11" and extra == "docs"
+Provides-Extra: test
+Requires-Dist: PyYAML; extra == "test"
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+
+Flask-Ipernity
+===============
+
+Flask-Ipernity is a `Flask`_ extension that offers access to the `Ipernity`_
+API via `PyIpernity`_. It can be used to authorize to Ipernity, and together
+with `Flask-Login`_ provide user login via Ipernity.
+
+.. warning:: This package is still under development. Use at your own risk.
+
+
+Installation
+-------------
+
+.. code-block:: console
+    
+    pip install Flask-Ipernity
+
+The source code is available at `<http://github.com/rcw-2/flask-ipernity>`_.
+
+
+.. _Flask: https://flask.palletsprojects.com/
+.. _Ipernity: http://www.ipernity.com/
+.. _PyIpernity: https://pyipernity.readthedocs.io/
+.. _Flask-Login: https://flask-login.readthedocs.io/
+
