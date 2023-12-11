@@ -1,0 +1,253 @@
+.App {
+  text-align: center;
+  display: flex;
+}
+
+.App-logo {
+  height: 5vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Home page sidebar Menu */
+
+.sidebar {
+  width: 50px; /* Initial width */
+  height: 100vh;
+  background-color: #333;
+  padding-top: 20px;
+  position: fixed;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+.sidebar:hover {
+  width: 200px; /* Expanded width */
+}
+
+.logo-container {
+  width: 50px; /* Logo container width */
+  text-align: center;
+}
+
+.sidebar img {
+  width: 30px; /* Adjust as per your logo's dimensions */
+  cursor: pointer;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar nav ul li {
+  padding: 10px;
+}
+
+.sidebar:hover nav ul li {
+  opacity: 1;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  margin-left: 50px; /* Match the initial width of the sidebar */
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+
+.sidebar:hover ~ .content {
+  margin-left: 200px; /* Match the expanded width of the sidebar */
+}
+
+/* ... existing styles ... */
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar ul li a span {
+  margin-left: 10px;
+  display: none; /* Hide text labels by default */
+}
+
+.sidebar:hover ul li a span {
+  display: inline; /* Show text labels on hover */
+}
+
+/* Icon styles */
+.sidebar nav ul li a .fa-icon {
+  min-width: 20px; /* Ensure icons have space */
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  border: 1px solid #007bff;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #007bff;
+  border-radius: 5px;
+}
+
+.pagination li a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination .active a {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+
+.table th:hover {
+  text-decoration: underline;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+/* Style for Search Container */
+.search-container {
+  margin-bottom: 10px;
+  text-align: right; /* Aligns the search input to the right */
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Stylish Buttons */
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+/* You can add more specific styles for each button type if needed */
+.button-start {
+  background-color: #008CBA; /* Blue */
+}
+
+.button-start:hover {
+  border: 2px solid #008CBA;
+}
+
+.button-stop {
+  background-color: #f44336; /* Red */
+}
+
+.button-stop:hover {
+  border: 2px solid #f44336;
+}
+
+.button-adjust {
+  background-color: #e7e7e7; /* Light Grey */
+  color: black;
+}
+
+.button-adjust:hover {
+  border: 2px solid #e7e7e7;
+}
