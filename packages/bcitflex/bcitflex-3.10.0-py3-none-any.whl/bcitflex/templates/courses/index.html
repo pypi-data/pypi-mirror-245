@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Courses{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+
+    {% if programs|length > 0 %}
+    <div class="programs" style="padding-top: 20px; ">
+        <div>Favourites:
+            {% for program in programs %}
+                <span><a href="{{ url_for('program.show', program_id=program.program_id) }}">{{ program.name }}</a>{% if not loop.last %}, {% endif %}</span>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="filter">
+      <form action="/courses" method="GET">
+        <div class="display: table">
+
+        <label for="term">Term:</label>
+        <select id="term" name="term">
+          <option value="">Select term</option>
+          {% for term in terms %}
+            <option value="{{ term.term_id }}" {% if request.args.get('term') == term.term_id %}selected{% endif %}>{{ term.name }}</option>
+          {% endfor %}
+        </select>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject">
+            <option value="">Select subject</option>
+            {% for subject in subjects %}
+                <option value="{{ subject.subject_id }}" {% if request.args.get('subject') == subject.subject_id %}selected{% endif %}>{{ subject.subject_id }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="campus">Campus:</label>
+        <select id="campus" name="campus">
+          <option value="">Select campus</option>
+          {% for campus in locations %}
+            <option value="{{ campus }}" {% if request.args.get('campus') == campus %}selected{% endif %}>{{ campus }}</option>
+          {% endfor %}
+        </select>
+
+        <label for="code">Code:</label>
+        <input type="text" id="code" name="code" placeholder="Enter code" value="{{ request.args.get('code', '') }}">
+
+        <label for="available">Available:</label>
+        <input type="checkbox" id="available" name="available" value="true" {% if request.args.get('available') == 'true' %}checked{% endif %}>
+
+        <div id="name-container">
+          <label for="name">Search:</label>
+          <input type="text" id="name" name="name" placeholder="Enter name" value="{{ request.args.get('name', '') }}">
+
+            {% if programs|length > 0 %}
+                <label for="favourites">Favs:</label>
+                <input type="checkbox" id="favourites" name="favourites" value="true" {% if request.args and request.args.get('favourites') != 'true' %}{% else %}checked{% endif %}>
+            {% endif %}
+
+          <input type="submit" value="Search">
+        </div>
+
+        </div>
+      </form>
+    </div>
+
+      <table>
+         <thead>
+            <tr>
+               <th>Subject</th>
+               <th>Code</th>
+               <th>Name</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            {% for course in pagination.items %}
+               <tr>
+                  <td>{{ course.subject_id }}</td>
+                  <td>{{ course.code }}</td>
+                  <td><a href="{{url_for('course.show', subject_id=course.subject_id, code=course.code)}}">{{ course.name }}</a></td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+    <div class="pagination">
+    {%- if pagination.has_prev %}
+        <a href="{{ url_for('course.index', page=pagination.prev_num, subject=request.args.get('subject'), campus=request.form.get('campus'), code=request.form.get('code'), available=request.form.get('available') == 'true') }}">&laquo; Previous</a>
+    {%- else %}
+        <span class="disabled">&laquo; Previous</span>
+    {%- endif %}
+
+
+    <span>Page {{ pagination.page }} of {{ pagination.pages }}.</span>
+
+    {%- if pagination.has_next %}
+        <a href="{{ url_for('course.index', page=pagination.next_num, subject=request.args.get('subject'), campus=request.form.get('campus'), code=request.form.get('code'), available=request.form.get('available') == 'true') }}">Next &raquo;</a>
+    {%- else %}
+        <span class="disabled">Next &raquo;</span>
+    {%- endif %}
+
+    </div>
+
+{% endblock %}

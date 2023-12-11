@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Account{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <p><strong>Username:</strong> {{ g.user.username }}</p>
+    <p><strong>Programs:</strong></p>
+    <ul>
+        {% for program in programs %}
+            <li><a href="{{ url_for('program.show', program_id = program.program_id)}}">{{ program.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
