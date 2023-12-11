@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: anycloud
+Version: 0.0.1
+Summary: Always choose the cheapest cloud.
+Home-page: https://github.com/applens-inc/anycloud
+Author: Applens.inc
+Author-email: contact@applens.io
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: requests
+
+# anycloud
+Always choose the cheapest cloud
