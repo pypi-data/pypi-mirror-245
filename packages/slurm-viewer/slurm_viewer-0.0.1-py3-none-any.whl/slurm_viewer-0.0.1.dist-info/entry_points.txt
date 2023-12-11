@@ -1,0 +1,2 @@
+[console_scripts]
+xnat-browser = src.main:app
