@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: anl
+Version: 0.1.2
+Summary: ANAC Automated Negotiations League Platform
+Home-page: https://github.com/autoneg/anl
+Author: Yasser Mohammad
+Author-email: yasserfarouk@gmail.com
+Project-URL: Documentation, https://anl.readthedocs.io/
+Project-URL: Changelog, https://anl.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/autoneg/anl/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: click
+Requires-Dist: pytest
+Requires-Dist: hypothesis
+Requires-Dist: prettytable
+Requires-Dist: negmas >=0.10.6
+Requires-Dist: tqdm
+Requires-Dist: joblib
+Requires-Dist: jupyter
+Requires-Dist: gif
+
+========
+Overview
+========
+
+
+
+ANAC Automated Negotiations League Platform
+
+Overview
+========
+
+This repository is the official platform for running ANAC Automated Negotiation Leagues (starting 2024). It will contain a package
+called `anlXXXX` for the competition run in year XXXX. For example anl2024 will contain all files related to the
+2024's version of the competition.
+
+
+Installation
+============
+
+::
+
+    pip install anl
+
+You can also install the in-development version with::
+
+    pip install https://github.com/autoneg/anl/archive/master.zip
+
+
+Documentation
+=============
+
+
+https://anl.readthedocs.io
+
+
+
+Changelog
+=========
+
+0.1.2 (2023.12.11)
+------------------
+
+* Controlling log path in anl2024_tournament() through the added base_path argument
+
+0.1.1 (2023.12.09)
+------------------
+* Added anl cli for running tournaments.
+* Added the ability to hide or show type names during negotiations
+* Corrected a bug in importing unique_name
+* Now requires negmas 0.10.6
+
+0.1.0 (2023.11.30)
+------------------
+
+* Adding ANL 2024 placeholder
