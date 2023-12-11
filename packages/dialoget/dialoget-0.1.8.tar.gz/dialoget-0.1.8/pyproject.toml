@@ -1,0 +1,196 @@
+[build-system]
+requires = [
+    "hatch-vcs>=0.4",
+    "hatchling>=1.18",
+    "hatch-requirements-txt",
+    "setuptools ~=63.2.0",
+    "wheel ~=0.37.1",
+]
+build-backend = "hatchling.build"
+#build-backend = "setuptools.build_meta"
+
+
+[project.urls]
+homepage = "https://dialoget.github.io"
+repository = "https://github.com/dialoget/python"
+changelog = "https://dialoget.github.io/releases"
+wiki = "https://github.com/dialoget/python/wiki"
+
+
+[project]
+name = "dialoget"
+version = "0.1.8"
+#dynamic = ["dependencies"]
+#dynamic = ["version"]
+description = "A Sentence Python decorator for displaying dynamic log messages."
+readme.content-type = "text/markdown"
+readme.file = "README.md"
+keywords = ["test", "framework", "doalogware", "Sentence", "console", "terminal", "time"]
+license = "Apache-2.0"
+requires-python = ">=3.7"
+
+dependencies = [
+    "packaging>=23.2",
+    'tomli>=2.0.1; python_version < "3.11"',
+    "stringcase ~=1.2.0",
+]
+optional-dependencies.docs = [
+    "furo>=2023.9.10",
+    "sphinx<7.2",
+    "sphinx-autodoc-typehints>=1.25.2",
+    "pylint ~=2.14.0",
+    "toml ~=0.10.2",
+    "yapf ~=0.32.0",
+]
+optional-dependencies.testing = [
+    "covdefaults>=2.3",
+    "pytest>=7.4.3",
+    "pytest-cov>=4.1",
+    "pytest-mock>=3.12",
+    "setuptools>=69.0.2",
+    "wheel>=0.42",
+]
+authors = [
+    { name = "Tom Sapletta", email = "tom@sapletta.com" },
+]
+maintainers = [
+    { name = "dialoget developers", email = "devs@dialoget.com" }
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Environment :: MacOS X",
+    "Environment :: Other Environment",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: X11 Applications",
+    "Framework :: IPython",
+    "Framework :: Jupyter",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Other Audience",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: MacOS",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft",
+    "Operating System :: Microsoft :: MS-DOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: BSD",
+    "Operating System :: POSIX :: BSD :: FreeBSD",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: POSIX :: SunOS/Solaris",
+    "Operating System :: Unix",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation",
+    "Programming Language :: Python :: Implementation :: IronPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Unix Shell",
+    "Topic :: Desktop Environment",
+    "Topic :: Education :: Computer Aided Instruction (CAI)",
+    "Topic :: Education :: Testing",
+    "Topic :: Office/Business",
+    "Topic :: Other/Nonlisted Topic",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Pre-processors",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: System :: Installation/Setup",
+    "Topic :: System :: Logging",
+    "Topic :: System :: Monitoring",
+    "Topic :: System :: Shells",
+    "Topic :: Terminals",
+    "Topic :: Utilities"]
+
+
+[tool.hatch.metadata.hooks.requirements_txt]
+#files = ["requirements.txt"]
+
+[tool.pylint]
+max-line-length = 88
+disable = [
+    "C0103", # (invalid-name)
+    "C0114", # (missing-module-docstring)
+    "C0115", # (missing-class-docstring)
+    "C0116", # (missing-function-docstring)
+    "R0903", # (too-few-public-methods)
+    "R0913", # (too-many-arguments)
+    "W0105", # (pointless-string-statement)
+]
+
+[tool.flake8]
+max_line_length = 99
+exclude = [".git", "__pycache__", "build", "dist", ".eggs", ".asv", ".tox", ".ipynb_checkpoints"]
+
+[tool.yapf]
+spaces_before_comment = [15, 20]
+arithmetic_precedence_indication = true
+allow_split_before_dict_value = false
+coalesce_brackets = true
+column_limit = 99
+each_dict_entry_on_separate_line = false
+space_between_ending_comma_and_closing_bracket = false
+split_before_named_assigns = false
+split_before_closing_bracket = false
+blank_line_before_nested_class_or_def = false
+
+[tool.isort]
+line_length = 99
+multi_line_output = 4
+known_first_party = ["src", "tests"]
+
+[tool.coverage.run]
+#branch = true
+#include = ["dialoget/*"]
+#relative_files = true
+#disable_warnings = ["include-ignored"]
+source = ["src"]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.coverage]
+html.show_contexts = true
+html.skip_covered = false
+paths.source = [
+    "src",
+    ".tox*/*/lib/python*/site-packages",
+    ".tox*/pypy*/site-packages",
+    ".tox*\\*\\Lib\\site-packages",
+    "*/src",
+    "*\\src",
+]
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+src = ["src", "tests"]
+
+[tool.ruff.isort]
+known-first-party = ["pyproject_hooks", "tests"]
+
+[tool.mypy]
+python_version = "3.11"
+show_error_codes = true
+strict = true
+overrides = [{ module = ["virtualenv.*"], ignore_missing_imports = true }]
+
+[tool.hatch.version]
+path = "src/__init__.py"
+#pattern = "BUILD = 'b(?P<version>[^']+)'"
+
+[tool.setuptools.dynamic]
+version = { attr = "my_package.VERSION" }
+readme = { file = ["README.md", "TODO.md"] }
+
+[tool.setuptools_scm]

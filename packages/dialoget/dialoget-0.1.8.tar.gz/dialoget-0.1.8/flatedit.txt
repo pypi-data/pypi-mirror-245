@@ -1,0 +1,6 @@
+docs/HEAD.md
+docs/ABOUT.md
+docs/START.md
+docs/DECORATORS.md
+docs/CONTRIBUTION.md
+docs/FOOT.md
