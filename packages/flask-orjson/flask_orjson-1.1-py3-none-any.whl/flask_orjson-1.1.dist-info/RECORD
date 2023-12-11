@@ -1,0 +1,5 @@
+flask_orjson/__init__.py,sha256=DjgduO53Oen80IUDClc6f7eOubnGJXW8wQ4gPwIpejI,3780
+flask_orjson-1.1.dist-info/LICENSE,sha256=8KHwgw2ogueGIwZ6w8Iq2FzXpP1ryjcVwt8unwjww5I,25319
+flask_orjson-1.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+flask_orjson-1.1.dist-info/METADATA,sha256=Ks4BXIRj-s8RLfucYZju7nqE0yz63kNIqKK2EmpKrjM,1809
+flask_orjson-1.1.dist-info/RECORD,,
