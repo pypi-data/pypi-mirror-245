@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cast-convert
+Version: 0.13.1
+Summary: 📽️ Identify and convert videos to formats that are Chromecast supported.
+Home-page: https://github.com/alexdelorenzo/cast_contvert
+Author: Alex DeLorenzo (https://alexdelorenzo.dev)
+License: CC BY-NC-ND 4.0
+Keywords: chromecast,transcode,convert,video,cli
+Requires-Python: >=3.12
+License-File: LICENSE
+Requires-Dist: aiopath<0.8.0,>=0.7.7
+Requires-Dist: ffmpeg-python<0.3.0,>=0.2.0
+Requires-Dist: more_itertools<11.0.0,>=10.1.0
+Requires-Dist: psutil<6.0.0,>=5.9.4
+Requires-Dist: pymediainfo<7.0.0,>=6.1.0
+Requires-Dist: PyYAML<7.0,>=6.0
+Requires-Dist: rich<14.0.0,>=13.7.0
+Requires-Dist: thefuzz<0.21.0,>=0.20.0
+Requires-Dist: typer[all]<0.10.0,>=0.9.0
+Requires-Dist: unpackable<0.1.0,>=0.0.4
+Requires-Dist: watchfiles<0.22.0,>=0.21.0

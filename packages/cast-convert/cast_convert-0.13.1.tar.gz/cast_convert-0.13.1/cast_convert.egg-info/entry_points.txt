@@ -1,0 +1,2 @@
+[console_scripts]
+cast-convert = cast_convert.cli:cli
