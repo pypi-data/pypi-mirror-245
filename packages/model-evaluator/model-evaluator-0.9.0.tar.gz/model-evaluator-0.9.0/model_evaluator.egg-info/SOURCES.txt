@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+model_evaluator/__init__.py
+model_evaluator/metrics.py
+model_evaluator/trainer.py
+model_evaluator.egg-info/PKG-INFO
+model_evaluator.egg-info/SOURCES.txt
+model_evaluator.egg-info/dependency_links.txt
+model_evaluator.egg-info/requires.txt
+model_evaluator.egg-info/top_level.txt

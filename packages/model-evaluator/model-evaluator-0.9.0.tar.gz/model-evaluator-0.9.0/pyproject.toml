@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools >= 61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "model-evaluator"
+version = "0.9.0"
+authors = [
+    { name = "Artyom Galyan", email = "galyanartyom@gmail.com" }
+]
+description = "Library for beautiful training loop for PyTorch"
+requires-python = ">=3.10.0"
+dependencies = ['numpy', 'torch', 'scikit-learn', 'matplotlib', 'ipython', 'pandas']

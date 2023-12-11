@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: model-evaluator
+Version: 0.9.0
+Summary: Library for beautiful training loop for PyTorch
+Author-email: Artyom Galyan <galyanartyom@gmail.com>
+Requires-Python: >=3.10.0
