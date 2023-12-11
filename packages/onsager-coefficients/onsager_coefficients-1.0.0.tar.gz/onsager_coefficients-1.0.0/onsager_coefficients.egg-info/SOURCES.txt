@@ -1,0 +1,11 @@
+README-no-math.rst
+README.rst
+setup.cfg
+setup.py
+onsager_coefficients/__init__.py
+onsager_coefficients/modifier.py
+onsager_coefficients/onsager.py
+onsager_coefficients.egg-info/PKG-INFO
+onsager_coefficients.egg-info/SOURCES.txt
+onsager_coefficients.egg-info/dependency_links.txt
+onsager_coefficients.egg-info/top_level.txt
