@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "consolechess"
+version = "0.2.20"
+description = ""
+authors = ["Sam <sbrobson@crimson.ua.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^13.6.0"
+textual = "^0.41.0"
+pyperclip = "^1.8.2"
+
+[tool.poetry.scripts]
+chess = "consolechess.__main__:main"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.26.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+select = [
+    "B", "E", "F", "I", "UP", "SIM", "FA", "ANN", "S", "C4", "EM",
+    "RUF", "W", "N", "YTT", "BLE", "FBT", "C4", "DTZ", "T10",
+    "EM", "EXE", "FA", "ISC", "ICN", "G", "PIE", "PTH", "FIX", "ERA",
+    "TRY", "FLY", "PERF", "FURB"
+]
+ignore = ["S101", "BLE001", "E203"]
+line-length = 88
+target-version = "py310"
+preview = true
