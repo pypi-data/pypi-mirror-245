@@ -1,0 +1,7 @@
+LICENSE
+MANIFEST.in
+README.md
+prstat.egg-info/PKG-INFO
+prstat.egg-info/SOURCES.txt
+prstat.egg-info/dependency_links.txt
+prstat.egg-info/top_level.txt
