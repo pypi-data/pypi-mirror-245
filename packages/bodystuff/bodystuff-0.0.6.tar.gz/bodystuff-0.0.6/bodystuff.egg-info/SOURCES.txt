@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+bodystuff/__init__.py
+bodystuff.egg-info/PKG-INFO
+bodystuff.egg-info/SOURCES.txt
+bodystuff.egg-info/dependency_links.txt
+bodystuff.egg-info/top_level.txt
+bodystuff/logs/__init__.py
+bodystuff/logs/abstract_logger.py
+bodystuff/logs/default_logger.py
