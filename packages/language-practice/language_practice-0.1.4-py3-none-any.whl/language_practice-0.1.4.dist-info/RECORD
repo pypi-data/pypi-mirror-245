@@ -1,0 +1,16 @@
+language_practice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+language_practice/cache.py,sha256=n7r06WT45Ou9sjKyCZJa7Y9QN64j5StWnmpHg_fAj4k,894
+language_practice/repetition.py,sha256=sccJoeom7tgYsHIUzNtoVqhwrY4hszm0_uLpff32jew,3958
+language_practice/terminal.py,sha256=2oNK-7zSBig1uBu83ep9AizPqmzHhuv9qXR7BZ3UCZ4,5302
+language_practice/toml.py,sha256=1Q8-1cQ7Awe-FyZ_VHyC7fKbjI4A-GnTiWTynq-5l7o,2874
+language_practice/web/__init__.py,sha256=0gML-4tWLeKtcu1XtoRxzOk6Eak5X7Fwhpk0Bjx3z-g,2230
+language_practice/web/fr.py,sha256=q6W7kkVNmkcY8lwAHp06FA7ZD-Nl9eLC-guQ59y6-TM,1007
+language_practice/web/ru.py,sha256=3N_hfmjGk4TrZH4DIaUUeMeMLt6M1wfZ3kGn_Y88TFE,749
+language_practice/web/shared.py,sha256=PEFvxbNjV35fZXwoNTagLCgOkcr6oN75OiReQqr-veo,798
+language_practice/web/uk.py,sha256=CzeUwkvY_dnw6LW04UA--AgN1ZaLbVdhPf5c1uGZiQ8,435
+language_practice-0.1.4.data/scripts/language-practice,sha256=nC1dqpgdY76-UTG4T8cSQcQOpfqbqyyXjkkPeq7t4OM,1178
+language_practice-0.1.4.dist-info/LICENSE,sha256=gLmAQVrxhSVYkf-qEbDIxLBOs43FSJqbErgwOc1N7sk,1500
+language_practice-0.1.4.dist-info/METADATA,sha256=pU2T77mHqblbyTsnz2PeXDCwEt4wZikzc_lA4dt_VhU,3891
+language_practice-0.1.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+language_practice-0.1.4.dist-info/top_level.txt,sha256=_cWaIHX3bkgso_45-0OjhOYrh8bIjntyLKxwhxZ-dO0,18
+language_practice-0.1.4.dist-info/RECORD,,
