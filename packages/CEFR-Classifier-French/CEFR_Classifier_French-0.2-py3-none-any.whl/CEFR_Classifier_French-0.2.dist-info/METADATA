@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: CEFR-Classifier-French
+Version: 0.2
+Summary: A French text classification package based on CEFR levels.
+Author: Jonathan Stefanov
+Author-email: jonathan.stefanov@ik.me
+Keywords: french text classification cefr
+Requires-Dist: pandas
+Requires-Dist: torch
+Requires-Dist: sentencepiece
+Requires-Dist: transformers
+Requires-Dist: torchvision
+Requires-Dist: stqdm
+Requires-Dist: streamlit
+Requires-Dist: scikit-learn
+Requires-Dist: wget
+

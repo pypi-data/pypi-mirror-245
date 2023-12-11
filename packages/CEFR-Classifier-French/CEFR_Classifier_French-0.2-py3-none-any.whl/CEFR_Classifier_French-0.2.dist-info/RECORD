@@ -1,0 +1,17 @@
+CEFR_Classifier_French/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CEFR_Classifier_French/app.py,sha256=WsXEogW3ujxMZq0ylqt_UlmjQYGW1xPoR6IejlFgcWs,4469
+CEFR_Classifier_French/conf.py,sha256=jWu-TeikVB89sRnhVimZu-o3_FLRKFt-CkLf1yIWOYU,2074
+CEFR_Classifier_French/utils.py,sha256=Mp_zmXn0KCFsgnYZkR2deA0yaHoXjbeNl5vPiFhALdc,2133
+CEFR_Classifier_French/inference/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CEFR_Classifier_French/inference/predict.py,sha256=2lZ_vA3yfnSKk-7JAr5O7CPwFLlgIIibA6ePNO28KoM,8925
+CEFR_Classifier_French/pages/File_Inference.py,sha256=402eUnWFTH457uGHDo8u5ap51WZ6Hn6kYB3I6HgfqMA,5159
+CEFR_Classifier_French/pages/Sentence_Inference.py,sha256=pvKEyi9rmZRTrwJr2tzpAczAUhxbTSK9VSCllLFKiDo,989
+CEFR_Classifier_French/pages/Training.py,sha256=nRSqo98dAVeVtHydMWMcmhZWDE2hmQhfyx5nt4H47MI,2192
+CEFR_Classifier_French/pages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CEFR_Classifier_French/train/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CEFR_Classifier_French/train/trainer.py,sha256=jfyMVapNVyPugsoQVX-JVmc1rw8Gz8O-xv7AEa1b16c,8211
+CEFR_Classifier_French/train/utils.py,sha256=UmaYhAjlx9KMofDdirJZNeFfDzYbzZZX_YxAapxRbN4,2253
+CEFR_Classifier_French-0.2.dist-info/METADATA,sha256=besiQ1HmAQwLzsbr0klruISPUzK4HMpZ0IUvUPW62Og,460
+CEFR_Classifier_French-0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CEFR_Classifier_French-0.2.dist-info/top_level.txt,sha256=Yfix6KkuznhsNVzpZg5xZAGifmjawUMmN3F93tVvNbg,23
+CEFR_Classifier_French-0.2.dist-info/RECORD,,
