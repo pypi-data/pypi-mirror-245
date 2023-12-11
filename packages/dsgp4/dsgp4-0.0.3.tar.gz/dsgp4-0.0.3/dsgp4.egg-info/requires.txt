@@ -1,0 +1,8 @@
+numpy
+torch
+
+[dev]
+pytest
+coverage
+pytest-xdist
+sgp4>=2.21
