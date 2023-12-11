@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: link-duplicates
+Version: 0.0.1
+Summary: Identify duplicate files and optionally create hardlinks to save storage
+License: EUPL 1.2
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: click
+
+# Duplicates
+
+Identify duplicate files and replace them with hardlinks on any OS.
