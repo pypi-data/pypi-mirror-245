@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/florence/__init__.py
+src/florence/client.py
+src/florence_api.egg-info/PKG-INFO
+src/florence_api.egg-info/SOURCES.txt
+src/florence_api.egg-info/dependency_links.txt
+src/florence_api.egg-info/requires.txt
+src/florence_api.egg-info/top_level.txt
