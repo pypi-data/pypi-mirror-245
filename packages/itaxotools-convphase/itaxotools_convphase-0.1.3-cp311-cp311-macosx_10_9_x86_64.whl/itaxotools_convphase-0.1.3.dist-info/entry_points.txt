@@ -1,0 +1,3 @@
+[console_scripts]
+convphase = itaxotools.convphase.__main__:run
+
