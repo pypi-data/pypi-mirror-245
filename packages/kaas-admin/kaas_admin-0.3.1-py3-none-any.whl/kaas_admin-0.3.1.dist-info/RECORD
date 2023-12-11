@@ -1,0 +1,11 @@
+kaas_admin/Custome_File_Templates_forCreate.json,sha256=x-GRmyIqca5hT-OmGscx-1LeJMBthb3RKqKiRmEzm30,771
+kaas_admin/Custome_File_Templates_forPrivacyScan.json,sha256=srYkC079OyVuLHXq4Cn1IhRyhy6qqAkwFaU81Oi8yls,76
+kaas_admin/Custome_File_Templates_forUnittest.json,sha256=_5gohduGSm7bmLgf6ukt12M-j8--OotcHVR82V7TJyU,137
+kaas_admin/Custome_File_Templates_forValidate.json,sha256=yU0sU9vXCjzkPyT55813645F1iamLVLloCg403HTVQg,317
+kaas_admin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaas_admin/__main__.py,sha256=2sef_jirEEkv2z2x2eCbbBOVsM6e1eIp4QRoAHG-FfM,16822
+kaas_admin-0.3.1.dist-info/METADATA,sha256=JBgudmKIoU8-Ou9HkP-8l29Ttfz5ybDZEdAk4BbKb7I,175
+kaas_admin-0.3.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+kaas_admin-0.3.1.dist-info/entry_points.txt,sha256=XAU8wUX0cUJDSVo7YaPfQNtNpK-hj4kwdK0qt_3BY7I,56
+kaas_admin-0.3.1.dist-info/top_level.txt,sha256=LMxw7Fc0VgwuplnN-zwXtd6lESz1Niy6j0eeZcX1_ys,11
+kaas_admin-0.3.1.dist-info/RECORD,,

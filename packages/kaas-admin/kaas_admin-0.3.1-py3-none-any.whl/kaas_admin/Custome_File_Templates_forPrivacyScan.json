@@ -1,0 +1,6 @@
+{
+  "patterns": [
+    "password: (\\S+)",
+    "api_key: (\\S+)"
+  ]
+}

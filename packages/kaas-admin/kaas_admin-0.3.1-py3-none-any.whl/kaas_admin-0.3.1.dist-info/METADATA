@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: kaas-admin
+Version: 0.3.1
+Requires-Dist: pyyaml
+Requires-Dist: pytest
+Requires-Dist: ansible-tower-cli ==3.3.0
+Requires-Dist: shutilwhich
+
