@@ -1,0 +1,13 @@
+rocs_client/__init__.py,sha256=DJMEw-6KjcbVVAKFFrpam34hf2GWxXoYUWqeYNgH79I,1853
+rocs_client/common/__init__.py,sha256=ZSrbEQuYy2NfqnoLL_UQq04l4qbCN_quMDHPwbGKqXs,42
+rocs_client/common/camera.py,sha256=10G6C2R2QCsBFBH9fzjy9S2Rbd5p6ep6m62MXh8xYlI,1490
+rocs_client/common/system.py,sha256=_RqzP6eIYEk8YQvDr2qJILJHrgAi8NKV46TOXClEHnk,200
+rocs_client/robot/__init__.py,sha256=45K99haZN4urlkr5NPZd_6df-blKWbZpXj8SeS_hljw,1293
+rocs_client/robot/car.py,sha256=GQt-d7hfLklPeQ7Nm_-FULlvTXqzeElp6wtF07TEwog,2802
+rocs_client/robot/human.py,sha256=nJip2NjawAHdp4t1nDtyYGh7XrkM_NtdMTA9qXzhPjo,36297
+rocs_client/robot/robot_base.py,sha256=S9ySswWM2LEaI0DiwinEL2XX7XcoB93gohsdTrvIZ20,7910
+rocs_client-1.3.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+rocs_client-1.3.2.dist-info/METADATA,sha256=S1peN88pkDH5eRfH0IYPYAVGSMEI7IDBqqX96RLv0fM,9353
+rocs_client-1.3.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+rocs_client-1.3.2.dist-info/top_level.txt,sha256=Erm9Hxp4CNwpHKmIKjQ72NRQ7YmvHpqFQqCduth11A4,12
+rocs_client-1.3.2.dist-info/RECORD,,
