@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quote_lines"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+]
+license = {text = "GPL"}
+description = "A tiny CLI used for quoting input lines"
+urls = {Homepage = "https://github.com/zwimer/quote"}
+requires-python = ">= 3.8"
+dynamic = ["version"]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.scripts]
+quote = "quote_lines:cli"
+
+[tool.setuptools]
+license-files = ["LICENSE"]
+include-package-data = false
+
+[tool.setuptools.packages]
+find = {namespaces = false}
+
+[tool.setuptools.package-data]
+quote_lines = ["py.typed"]
+
+[tool.setuptools.dynamic]
+version = {attr = "quote_lines.__version__"}
+
+# Tools
+
+[tool.black]
+line-length = 120
+target-version = ["py38"]
+
+[tool.ruff]
+ignore=["E731"]
+line-length = 120
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401", "F403"]

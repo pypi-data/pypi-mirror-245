@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: quote_lines
+Version: 1.1.0
+Summary: A tiny CLI used for quoting input lines
+License: GPL
+Project-URL: Homepage, https://github.com/zwimer/quote
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# quote
+
+A tiny CLI used for quoting input lines
+
+## Example
+
+Consider the directory:
+```bash
+$ find .
+.
+./c
+./a b
+```
+
+Here, `xargs` alone will fail if we do: `find . -type f | xargs cat` with:
+```
+This file is named: c
+cat: ./a: No such file or directory
+cat: b: No such file or directory
+```
+
+This is because the file 'a b' is not quoted!
+
+Instead we can do: `find . -type f | quote | xargs cat` and we will get:
+```
+This file is named: c
+This file is named: a b
+```

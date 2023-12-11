@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+quote_lines/__init__.py
+quote_lines/py.typed
+quote_lines/quote.py
+quote_lines.egg-info/PKG-INFO
+quote_lines.egg-info/SOURCES.txt
+quote_lines.egg-info/dependency_links.txt
+quote_lines.egg-info/entry_points.txt
+quote_lines.egg-info/top_level.txt
