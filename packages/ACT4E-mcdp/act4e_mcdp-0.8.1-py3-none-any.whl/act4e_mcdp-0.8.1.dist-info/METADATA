@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ACT4E-mcdp
+Version: 0.8.1
+Summary: 
+Author: Andrea Censi
+Author-email: AndreaCensi@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: coloredlogs (>=15.0.1,<16.0.0)
+Requires-Dist: pydantic (>=2.5.2,<3.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
