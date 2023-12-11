@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pygpm
+Version: 0.1.1
+Summary: A GitHub repository manager
+Home-page: https://github.com/BrandonPacewic/pygpm
+Author: Brandon Pacewic
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Provides-Extra: git
+Requires-Dist: git ; extra == 'git'
+Provides-Extra: github_cli
+Requires-Dist: gh ; extra == 'github_cli'
+Provides-Extra: linting
+Requires-Dist: pylint ; extra == 'linting'
+Requires-Dist: mypy ; extra == 'linting'
+
+# :open_file_folder
