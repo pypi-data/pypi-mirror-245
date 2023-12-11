@@ -1,0 +1,1 @@
+Implementation of the Iterative Voting Consensus Algorithm and of the Iterative Probabilistic Voting Consensus Algorithm presented in the article Consensus Clustering, N. Nguyen et al.
