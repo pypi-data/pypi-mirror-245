@@ -1,0 +1,11 @@
+noteblock_generator/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+noteblock_generator/cli.py,sha256=IcHxpJXwAg_IamqcFlf6WmpxvYuMe7w8Xwq9NfwBxNs,5213
+noteblock_generator/generator.py,sha256=q535z2Qa4o5FRMl0iKqVp4gd8K0G7RboOe70LIZl5k0,28485
+noteblock_generator/generator_backend.py,sha256=9ZGPvu8ItzLoCRZoLqml8abmceMtLnpQd_yAiaMf6e4,2106
+noteblock_generator/generator_utils.py,sha256=coYDoZ3tWLiF4xgletQK18QV6nwOFkpMpbGYpeBq7HI,7415
+noteblock_generator/parser.py,sha256=2UoDu_rswRRuIHZooOz9DbM9OHx_9spy6I2wRZMfXMM,22722
+noteblock_generator-0.2.0.2.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+noteblock_generator-0.2.0.2.dist-info/METADATA,sha256=DG07mcQKtdgGO8VxkIDci7MOmynasVORnaiacW7XYT4,5073
+noteblock_generator-0.2.0.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+noteblock_generator-0.2.0.2.dist-info/entry_points.txt,sha256=0mAc4nuIJv7zv1ckDlMY30csE1firhcKuB7BEMnTBDI,73
+noteblock_generator-0.2.0.2.dist-info/RECORD,,
