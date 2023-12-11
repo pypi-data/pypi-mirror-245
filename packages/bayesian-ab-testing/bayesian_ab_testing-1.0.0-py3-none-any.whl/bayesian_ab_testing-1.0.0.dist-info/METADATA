@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: bayesian-ab-testing
+Version: 1.0.0
+Summary: AB testing tool, designed for testing data of call tracking services
+Author: Anush Aghinyan, 
+                Anahit Navoyan, 
+                Yeva Avetisyan, 
+                Naira Maria Barseghyan, 
+                Mher Movsisyan
+Author-email: mher@movsisyan.info
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: annotated-types >=0.6.0
+Requires-Dist: anyio >=3.7.1
+Requires-Dist: DateTime >=5.2
+Requires-Dist: Faker ==19.12.0
+Requires-Dist: fastapi >=0.104.0
+Requires-Dist: idna >=3.4
+Requires-Dist: numpy >=1.26.1
+Requires-Dist: pandas >=2.1.2
+Requires-Dist: pydantic >=2.4.2
+Requires-Dist: pydantic-core >=2.10.1
+Requires-Dist: python-dateutil >=2.8.2
+Requires-Dist: pytz >=2023.3.post1
+Requires-Dist: six >=1.16.0
+Requires-Dist: sniffio >=1.3.0
+Requires-Dist: starlette >=0.27.0
+Requires-Dist: typing-extensions >=4.8.0
+Requires-Dist: tzdata >=2023.3
+Requires-Dist: zope.interface >=6.1
+Requires-Dist: sqlalchemy >=2.0.23
+Requires-Dist: uvicorn >=0.24.0
+Requires-Dist: fastapi >=0.104.1
+
+# Bayesian AB Testing  
+
+AB testing tool, designed for testing data of call tracking services
