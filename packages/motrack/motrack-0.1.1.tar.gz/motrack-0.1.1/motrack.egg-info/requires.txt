@@ -1,0 +1,12 @@
+hydra-core
+matplotlib
+numpy
+omegaconf
+opencv_python
+pandas
+PyYAML
+scipy
+tqdm
+
+[yolov8]
+ultralytics
