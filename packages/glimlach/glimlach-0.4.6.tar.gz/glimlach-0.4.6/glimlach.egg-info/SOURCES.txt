@@ -1,0 +1,10 @@
+setup.py
+glimlach/__init__.py
+glimlach/__main__.py
+glimlach/cli.py
+glimlach.egg-info/PKG-INFO
+glimlach.egg-info/SOURCES.txt
+glimlach.egg-info/dependency_links.txt
+glimlach.egg-info/entry_points.txt
+glimlach.egg-info/requires.txt
+glimlach.egg-info/top_level.txt
