@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: playlist-stitcher
+Version: 0.0.2
+Summary: A tool to download and stitch YouTube playlists
+Home-page: https://github.com/you-tools/playlist-stitcher
+Author: Chen Stanilovsky
+Author-email: chen.stanilovsky@gmail.com
+License: GNU GPLv3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click ~=8.1
+Requires-Dist: pytube ~=15.0
+Requires-Dist: moviepy ~=1.0
+
+# YouTube Playlist Downloader & Stitcher
+
+<img src="./youtools.jpeg" alt="youtools" style="width:25vw; min-width: 200px; max-width: 400px; display: block; margin-left: auto; margin-right: auto;"/>
+</br></br>
+
+### A command-line tool that allows you to download all videos in a YouTube playlist and stitch them together into a single video.
+
+## Installation
+
+You can install playlist-stitcher directly from PyPI:
+
+```bash
+pip install playlist-stitcher
+```
+
+## Usage
+
+After installation, you can use the tool directly from your shell:
+
+```bash
+playlist-stitcher --url "PLAYLIST_URL"
+```
+
+Replace "PLAYLIST_URL" with the URL of the YouTube playlist you want to download and stitch.
+
+## How does it work
+
+- Downloads all videos in a YouTube playlist
+- Stitches downloaded videos into a single video
+- Deletes the individual videos
+
+## Features
+
+- Easy to install and use
+
+## Contributing
+
+- Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## Making changes
+
+- Feel free to use the makefile + Docker workflow that is provided
+- `make container`: builds and runs the docker container
+- `make run`: runs an existing built container
+- `make build`: builds the cli and installs it
+- `playlist-stitcher`: commands to run the CLI after building it with make build
+
+## License
+
+[License](./LICENSE)
