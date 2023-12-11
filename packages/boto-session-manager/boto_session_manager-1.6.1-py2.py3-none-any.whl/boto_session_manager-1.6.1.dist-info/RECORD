@@ -1,0 +1,16 @@
+boto_session_manager/__init__.py,sha256=NpPg5b50DxORzUOjgSOa9ivI_Rnj2Z1Y3YJfv46_1XM,803
+boto_session_manager/_version.py,sha256=BINGHaoY1nvcvj6KLVpqtjm1m4ucrM2UZzakW0TZFpY,93
+boto_session_manager/clients.py,sha256=sY8t1JeIs0zq5wEJUdAzK7hzhQ6YodntPuZ-VDZGYl0,116597
+boto_session_manager/exc.py,sha256=DzitmjI7xJqBGdBUUKU3l3W_Ez3WyMKT6tSLLXr3WpU,79
+boto_session_manager/manager.py,sha256=Bslm93KvsEhHzE1XL5uqi4A_Ws6-mJwwJPDuavGUWVM,19805
+boto_session_manager/sentinel.py,sha256=n4DE6mV678G_3ESoZeQkdXcNGX4AEon2A0eBZJwJ4FY,2435
+boto_session_manager/services.py,sha256=qCKzzPiszIL_AZ-NVxR8ro7rSpo6e575626c7_frfY8,11885
+boto_session_manager/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+boto_session_manager/vendor/__init__.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+boto_session_manager/vendor/aws_sts.py,sha256=gwrEPDOSl5cQghex0tc_Rd_VhME5D66jJz9M7_t0BAg,1553
+boto_session_manager-1.6.1.dist-info/AUTHORS.rst,sha256=FXKggxeYVmw-ONio6DyqAHTYQ7qah9du-Xidc9Ys_Eo,607
+boto_session_manager-1.6.1.dist-info/LICENSE.txt,sha256=l9GrrcMEMzW_nbV3QZsGGODQBjuyu4PsZaEPkXDVzP4,11387
+boto_session_manager-1.6.1.dist-info/METADATA,sha256=cblGheqCOFdrBD3A0yxh4W_EAdVKJnnEv4NfpEi31kY,9448
+boto_session_manager-1.6.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+boto_session_manager-1.6.1.dist-info/top_level.txt,sha256=uPGAqte49Ut27eLBw1EHG4hieTyusGH4BT1J62WMRtQ,21
+boto_session_manager-1.6.1.dist-info/RECORD,,
