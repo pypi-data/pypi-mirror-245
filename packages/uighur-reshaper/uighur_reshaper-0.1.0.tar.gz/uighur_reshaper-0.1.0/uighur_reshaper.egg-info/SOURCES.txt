@@ -1,0 +1,7 @@
+README.md
+setup.py
+uighur_reshaper.egg-info/PKG-INFO
+uighur_reshaper.egg-info/SOURCES.txt
+uighur_reshaper.egg-info/dependency_links.txt
+uighur_reshaper.egg-info/entry_points.txt
+uighur_reshaper.egg-info/top_level.txt
