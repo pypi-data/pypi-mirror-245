@@ -1,0 +1,9 @@
+pytessel-1.2.0.dist-info/RECORD,,
+pytessel-1.2.0.dist-info/WHEEL,sha256=qRqaDGG0ZJd6svcFTZBrovF55zOLbLAFeSf3U-3lmpQ,146
+pytessel-1.2.0.dist-info/LICENSE,sha256=4cCtcomD2KVzNeUs8QZPGv_R1FQXPYzr0-2LSnK0hwQ,35121
+pytessel-1.2.0.dist-info/METADATA,sha256=6A4HYSikrmIZvTzQQxQMDxfI-Jjb0UbHscIdJGD1naM,5009
+pytessel-1.2.0.dist-info/top_level.txt,sha256=QDauMEeJ6MuBmtCTV4HZAr1XodXsUesXTlcImp5LE54,9
+pytessel/pytessel.cpython-37m-i386-linux-gnu.so,sha256=eP58vmMRMAfQ3GlDS3Np2Wz1ugHuMBd7Hjd2udDCNyI,1327089
+pytessel/_version.py,sha256=MpAT5hgNoHnTtG1XRD_GV_A7QrHVU6vJjGSw_8qMGA4,22
+pytessel/__init__.py,sha256=vro51HMaT-ePmW0CgIsDkOgTzutYGB2UgmyV7elT09A,66
+pytessel.libs/libgomp-65f46eca.so.1.0.0,sha256=Zagab9rFQS08rPfVDR82oGJr9kuKwgrJok-GGlFBdCo,172293
