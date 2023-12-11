@@ -1,0 +1,3 @@
+[pytest11]
+copier = pytest_copier.plugin
+

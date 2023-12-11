@@ -1,0 +1,11 @@
+pytest_copier-0.4.0.dist-info/METADATA,sha256=-qZZnR7xzSvGu7EHEpfqTia2bQluRF4lEJp4krkE4io,2122
+pytest_copier-0.4.0.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+pytest_copier-0.4.0.dist-info/entry_points.txt,sha256=ocfjkU54rbxzdgTHisX7hCvU3pWm3z_9aQsDSDL31_w,42
+pytest_copier-0.4.0.dist-info/licenses/LICENSE,sha256=mGvg56Jg42sibUwNMD7f55op8yqaWFG9-ELS6HqAocA,1078
+pytest_copier/.gitignore,sha256=T_6cEPGYAfQ6-gdGwpLCLe1SpRnTl4vwi4qfVM1QsYI,8
+pytest_copier/VERSION,sha256=QLjrQACpE6d5EJBTXykdPTaYdBYqie88nj1OiHobnnk,6
+pytest_copier/__init__.py,sha256=jTOLCqoYg_n9dFhpuHS1-BsOK4pSIqX4Or6Twhw2JW4,503
+pytest_copier/errors.py,sha256=SP6UNKmg8Jq-_J32wgU-TVA7EYMNiFETtBVO3kbKPIo,287
+pytest_copier/plugin.py,sha256=fNT9RjiBwyTtJPzVGXPmr4w7LqnQNmajRJbrCdKpWAU,8639
+pytest_copier/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_copier-0.4.0.dist-info/RECORD,,
