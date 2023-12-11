@@ -1,0 +1,2 @@
+[console_scripts]
+excel2case = huihuo_tool_kit.excel_tool:ExcelTool.excel2case
