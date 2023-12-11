@@ -1,0 +1,8 @@
+requests
+websocket-client
+click
+schedule
+objprint
+colorama
+termcolor
+prettytable
