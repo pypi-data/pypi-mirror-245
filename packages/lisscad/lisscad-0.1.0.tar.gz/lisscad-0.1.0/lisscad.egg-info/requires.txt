@@ -1,0 +1,6 @@
+hissp
+inotify_simple
+more-itertools
+pydantic
+rich
+typer

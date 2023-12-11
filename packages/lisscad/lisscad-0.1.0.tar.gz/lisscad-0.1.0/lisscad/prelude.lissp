@@ -1,0 +1,84 @@
+"Lisscad’s bundled macros."
+
+;; This file compiles to prelude.py because Lissp v0.4.0 cannot import .lissp.
+
+;; Define macros for use in defining macros in this module.
+(hissp.macros.._macro_.prelude)
+
+(defmacro standard ()
+  "Provide an OpenSCAD-like API with added consistency, safety and convenience."
+  ;; This is in part a macro of macros, built to be evaluated in the context of
+  ;; a CAD script in such a way that it mutates the namespace of that script,
+  ;; not of this module. As of 2022-09-17, the “defmacro” macro defined by
+  ;; hissp.macros.._macro_.prelude is not safe for this purpose, but it’s also
+  ;; not needed here.
+  `(progn
+     (prelude)
+
+     ;; Imports:
+     (exec "from lisscad.vocab.base import *" (globals))
+     (exec "from lisscad.app import write" (globals))
+     (exec "from lisscad.data.other import Asset" (globals))
+
+     ;; Constants:
+     (define π math..pi)
+
+     ;; OpenSCAD’s single-character modifiers, {% # ! *}:
+     (delattr ,'_macro_ ','%)  ; Drop the Hissp prelude’s %.
+     (define % lisscad.op..background_dict)  ; Replace the Hissp prelude’s %.
+     (delattr ,'_macro_ ','#)  ; Drop the Hissp prelude’s #.
+     (define \# lisscad.op..debug_set)  ; Replace the Hissp prelude’s #.
+     ;; In Lissp, ! is a builtin reader macro; it cannot be dropped.
+     ;; The use of ! as in OpenSCAD therefore requires an escape.
+     (define \! lisscad.vocab.base..root)
+     ;; * inspects its arguments to do either multiplication or disable.
+     (define * lisscad.op..mul)
+
+     ;; Further single-character operators for OpenSCAD and maths:
+     (define | lisscad.vocab.base..union)
+     (define & lisscad.vocab.base..intersection)
+     (define + lisscad.op..add)
+     (define - lisscad.op..sub)
+     (define / lisscad.op..div)
+
+     ;; Other helpers.
+     (define first get#0)
+     (define second get#1)
+     (define third get#2)
+     (define $fa ,(partial lisscad.vocab.base..special "$fa"))
+     (define $fn ,(partial lisscad.vocab.base..special "$fn"))
+     (define $fs ,(partial lisscad.vocab.base..special "$fs"))))
+
+(defmacro lisp ()
+  "Provide unambiguous aliases in kebab case, traditionally idiomatic for Lisp.
+  This is a superset of the standard prelude."
+  `(progn
+     (standard)
+     (define call-module (partial lisscad.vocab.base..module : call True))
+     (define linear-extrude (partial lisscad.vocab.base..extrude : rotate False))
+     (define rotate-extrude (partial lisscad.vocab.base..extrude : rotate True))))
+
+(defmacro english ()
+  "Patch over parts of the OpenSCAD vocabulary with more literal English.
+  This is a superset of the lisp prelude."
+  `(progn
+     (lisp)
+     (exec "from lisscad.vocab.english import *" (globals))))
+
+(defmacro util ()
+  "Provide higher-level utilities only."
+  `(progn
+     (define sliding-hull lisscad.vocab.util..sliding_hull)
+     (define radiate lisscad.vocab.util..radiate)
+     (define round lisscad.vocab.util..round)
+     (define wafer lisscad.vocab.util..wafer)
+     (define |map lisscad.vocab.util..union_map)
+     (define bilateral-symmetry-x lisscad.vocab.util..bilateral_symmetry_x)
+     (define bilateral-symmetry-y lisscad.vocab.util..bilateral_symmetry_y)
+     (define bilateral-symmetry-xy lisscad.vocab.util..bilateral_symmetry_xy)))
+
+(defmacro english-util ()
+  "Provide higher-level utilities with English-language vocabulary."
+  `(progn
+     (english)
+     (util)))

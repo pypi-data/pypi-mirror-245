@@ -1,0 +1,74 @@
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'lisscad'
+description = 'CAD in Lissp'
+readme = 'README.md'
+license = {text = 'GPL-3.0-only'}
+keywords = [
+    'CAD',
+    'CSG',
+    'Lissp',
+    'OpenSCAD',
+    'code generation',
+    'geometry',
+    'lisp',
+    'modeling',
+]
+classifiers = [
+    'Development Status :: 2 - Pre-Alpha',
+    'Intended Audience :: Developers',
+    'Intended Audience :: End Users/Desktop',
+    'Intended Audience :: Manufacturing',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+    'Operating System :: OS Independent',
+    'Programming Language :: Lisp',
+    'Programming Language :: Python :: 3',
+    'Topic :: Multimedia :: Graphics :: 3D Modeling',
+    'Topic :: Software Development :: Libraries :: Application Frameworks',
+]
+requires-python = '>=3.10'
+dependencies = [  # The following information is duplicated from Pipfile.
+    'hissp',
+    'inotify_simple',
+    'more-itertools',
+    'pydantic',
+    'rich',
+    'typer',
+]
+dynamic = ['version']
+
+[project.scripts]
+lisscad = "lisscad.main:app"
+
+[tool.setuptools.dynamic]
+version = {attr = "lisscad.__version__"}
+
+[tool.black]
+line-length = 79
+skip-string-normalization = true
+
+[tool.flake8]
+extend-ignore = 'D102,D103,D105,D107,E203'
+
+[tool.mypy]
+plugins = ['pydantic.mypy']
+show_error_codes = true
+
+[[tool.mypy.overrides]]
+# The following should be checked periodically in case they appear on typeshed.
+module = [
+  'hissp.reader',
+  'inotify_simple',
+  'invoke',
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+# Ignore generated code.
+module = [
+  'lisscad.prelude',
+]
+ignore_errors = true
