@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "matrix_class"
+version = "0.2.0"
+description = "Matrix on class"
+authors = ["Kacper Bukowski <kacperbuko@wp.pl>"]
+readme = "README.md"
+license = "MIT"
+classifiers = ["Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent", ]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+coverage = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
