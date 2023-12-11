@@ -1,0 +1,12 @@
+platformdirs
+tree-sitter-lsp>=0.0.7
+tree-sitter-requirements
+
+[:python_version < "3.11"]
+tomli
+
+[colorize]
+tree-sitter-lsp[colorize]
+
+[dev]
+pytest-cov

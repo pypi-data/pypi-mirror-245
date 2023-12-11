@@ -1,0 +1,7 @@
+#!/usr/bin/env -S pip install -r
+
+platformdirs
+tomli; python_version < "3.11"
+# get_completion_list_by_enum()
+tree-sitter-lsp >= 0.0.7
+tree-sitter-requirements
