@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# 动态获取 git tag最新的值最为build的版本号, 此时setup.py里面的version字段要删除
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "dirty-tag"
+
+[project]
+name = "pypi_templates"
+# version = "0.1.3"
+dynamic = ["version"]
+authors = [{ name = "lgf4591", email = "lgf4591@outlook.com" }]
+maintainers = [{ name = "lgf4591", email = "lgf4591@outlook.com" }]
+description = "A python package template to upload to pypi"
+# readme = "README.md"
+readme = { file = "README.md", content-type = "text/markdown" }
+# readme = {file = "README.rst", content-type = "text/x-rst"}
+requires-python = ">=3.8"
+keywords = ["setuptools", "template"]
+# license = "MIT"
+license = { text = "MIT" }
+# license = {file = "LICENSE"}
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+
+dependencies = ["importlib-metadata"]
+
+
+[project.scripts]
+pypi_templates = "pypi_templates.main:main"
+
+[project.urls]
+Homepage = "https://github.com/lgf4591/pypi_templates"
+Documentation = "https://github.com/lgf4591/pypi_templates/blob/master/README.md"
+Repository = "https://github.com/lgf4591/pypi_templates.git"
+Issues = "https://github.com/lgf4591/pypi_templates/issues"
+Changelog = "https://github.com/lgf4591/pypi_templates/blob/master/CHANGELOG.md"
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov", "coverage"]
+lint = ["ruff", "mypy"]
+format = ["ruff"]
+docs = ["mkdocs"]
+all = ["pytest", "pytest-cov", "coverage", "mypy", "ruff", "mkdocs"]

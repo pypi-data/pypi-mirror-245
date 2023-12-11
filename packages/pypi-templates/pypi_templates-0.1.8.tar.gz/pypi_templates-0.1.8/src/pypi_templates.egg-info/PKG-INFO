@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pypi-templates
+Version: 0.1.8
+Summary: A python package template to upload to pypi
+Author-email: lgf4591 <lgf4591@outlook.com>
+Maintainer-email: lgf4591 <lgf4591@outlook.com>
+License: MIT
+Project-URL: Homepage, https://github.com/lgf4591/pypi_templates
+Project-URL: Documentation, https://github.com/lgf4591/pypi_templates/blob/master/README.md
+Project-URL: Repository, https://github.com/lgf4591/pypi_templates.git
+Project-URL: Issues, https://github.com/lgf4591/pypi_templates/issues
+Project-URL: Changelog, https://github.com/lgf4591/pypi_templates/blob/master/CHANGELOG.md
+Keywords: setuptools,template
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: importlib-metadata
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: coverage; extra == "test"
+Provides-Extra: lint
+Requires-Dist: ruff; extra == "lint"
+Requires-Dist: mypy; extra == "lint"
+Provides-Extra: format
+Requires-Dist: ruff; extra == "format"
+Provides-Extra: docs
+Requires-Dist: mkdocs; extra == "docs"
+Provides-Extra: all
+Requires-Dist: pytest; extra == "all"
+Requires-Dist: pytest-cov; extra == "all"
+Requires-Dist: coverage; extra == "all"
+Requires-Dist: mypy; extra == "all"
+Requires-Dist: ruff; extra == "all"
+Requires-Dist: mkdocs; extra == "all"
+
+# pypi_templates (pyproject-setuptools)
+python package template for publish to pypi
