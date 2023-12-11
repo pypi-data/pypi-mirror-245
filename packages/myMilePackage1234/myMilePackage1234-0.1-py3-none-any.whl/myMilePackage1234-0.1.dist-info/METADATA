@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: myMilePackage1234
+Version: 0.1
+Summary: A test python package
+Home-page: https://github.com/khalad-hasan/myMileConverter
+Author: MK Hasan
+Author-email: khalad.hasan@gmail.com
+License: MIT
+License-File: LICENSE.txt
+
