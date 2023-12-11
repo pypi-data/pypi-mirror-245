@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+prod_cli/__init__.py
+prod_cli.egg-info/PKG-INFO
+prod_cli.egg-info/SOURCES.txt
+prod_cli.egg-info/dependency_links.txt
+prod_cli.egg-info/entry_points.txt
+prod_cli.egg-info/top_level.txt

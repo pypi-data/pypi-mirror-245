@@ -1,0 +1,3 @@
+[console_scripts]
+ovh-cuicui = prod_cli:main
+prod-cli = prod_cli:main
