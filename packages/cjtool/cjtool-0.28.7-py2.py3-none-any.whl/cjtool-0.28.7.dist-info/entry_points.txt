@@ -1,0 +1,8 @@
+[console_scripts]
+ci = cjtool.indent:main
+cm = cjtool.monitor:main
+cs = cjtool.search:main
+ct = cjtool.debugtool:main
+cui = cjtool.indent_ui:main
+stringrep = cjtool.stringtool:main
+
