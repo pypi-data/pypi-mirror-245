@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: symqc
+Version: 1.1.1
+Summary: Symbolic Quantum Computing Simulator
+Home-page: https://gitee.com/quingo/SymQc
+Author: V♂n
+Author-email: huangzixiao@nudt.edu.cn
+Project-URL: Bug Tracker, https://gitee.com/quingo/SymQc/issues
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sympy
+Requires-Dist: ply
+Requires-Dist: numpy
+
+# SymQC：符号化量子计算模拟器
+
+该文档已过时，待更新。
+
+### &#x1F308; 介绍
+`SymQC`是一款符号化的量子计算模拟器，同时提供了符号化量子运算的相关API，旨在帮助用户学习量子计算以及量子算法相关知识。
+
+作为`Quingo`项目的一部分，支持使用 `QCIS` 指令集作为输入, 并集成为**Qunigo 量子-经典异构编程框架**中的量子模拟后端。
+
+### &#x1F31F; 安装
+- 运行依赖
+
+![](https://img.shields.io/badge/Python-3.10-green.svg)
+![](https://img.shields.io/badge/Sympy-1.5.1-green.svg)
+![](https://img.shields.io/badge/ply-3.11-green.svg)
+
+- 安装
+```sh
+pip install symqc
+```
+或者
+```sh
+git clone https://gitee.com/quingo/SymQC.git
+cd SymQC
+pip install -e .
+```
+
+### 使用
+
+- 安装后可以通过如下方式使用SymQC
+```sh
+python -m symqc input -o output
+```
+
+#### 一个简单的示例
+输入文件`test.qcis`
+```qcis
+H       Q1
+CNOT    Q1  Q2
+M       Q1
+M       Q2
+```
+> 关于输入文件格式可以参考[QCIS指令集](https://quantumcomputer.ac.cn/UserBook.html)
+
+然后运行`SymQC`
+```sh
+python -m symqc test.qcis -o result.md
+```
+可以得到运行结果`result.md`
+
+#### The ans of test.qcis
+
+**Init state** is:
+$$
+\left[\begin{matrix}a_{0} & a_{1} & a_{2} & a_{3}\end{matrix}\right]
+$$
+
+**Final state** is:
+$$
+\left[\begin{matrix}0 & 0 & 0 & \frac{\sqrt{2} a_{0}}{2} - \frac{\sqrt{2} a_{1}}{2}\end{matrix}\right]
+$$
+
+- 您也可以通过`--help`选项来了解各个选项的含义
+
+### 测试
+> use `pytest` to run the unittest in SymQC.
+
+### &#x1F975; 文档
+[SymQC API Rference](doc/API.md)
