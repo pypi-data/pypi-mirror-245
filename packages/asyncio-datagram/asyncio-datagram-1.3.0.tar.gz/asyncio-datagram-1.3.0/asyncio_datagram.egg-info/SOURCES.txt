@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+Makefile
+README.md
+requirements-test.txt
+requirements.txt
+setup.cfg
+setup.py
+asyncio_datagram/__init__.py
+asyncio_datagram/aio.py
+asyncio_datagram.egg-info/PKG-INFO
+asyncio_datagram.egg-info/SOURCES.txt
+asyncio_datagram.egg-info/dependency_links.txt
+asyncio_datagram.egg-info/requires.txt
+asyncio_datagram.egg-info/top_level.txt
+test/test_aio.py
