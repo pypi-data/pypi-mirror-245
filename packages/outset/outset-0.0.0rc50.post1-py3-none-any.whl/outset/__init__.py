@@ -1,0 +1,10 @@
+"""Outset Python Package"""
+from __future__ import annotations
+
+__version__ = "0.0.0""-rc50-post1"
+
+from outset.draw_outset_ import draw_outset
+
+__all__ = [
+    "draw_outset",
+]
