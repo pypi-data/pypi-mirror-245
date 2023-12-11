@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: logicplum-ai
+Version: 1.0.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [1.0.2] - 2023-12-08
+- Released for testing
+
+## [1.0.3] - 2023-12-08
+- changed return function of some functions , to return json objects.
+
+## [1.0.4] - 2023-12-11
+- added monitoring for models.
+
+## [1.0.5] - 2023-12-11
+- url changes in monitoring
+
+## [1.0.6] - 2023-12-11
+- response type changes in monitoring
+
+## [1.0.7] - 2023-12-11
+- response type changes in monitoring for image
