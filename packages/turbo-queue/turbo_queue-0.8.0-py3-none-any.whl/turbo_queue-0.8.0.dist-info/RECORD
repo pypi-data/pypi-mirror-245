@@ -1,0 +1,8 @@
+turbo_queue/__init__.py,sha256=MQbdNWMAxjh3277VmxVERj1oaPnSIr_1iIgGA66NvCE,168
+turbo_queue/_turbo_queue_kafka.py,sha256=xPvQuuz87smfpZWnAOAXGZwsH2Ja172Ms4tDqto2Tn0,15422
+turbo_queue/_turbo_queue_multi_task.py,sha256=tbb2SsHUP6su4-wAV9vedt1Bns7FbSLlcQfTzq4H7Fw,3493
+turbo_queue/turbo_queue.py,sha256=8aoSyaZ4aWujhmdrtUK9fyyfJj0c5TBywtWjiJBBjEY,23724
+turbo_queue-0.8.0.dist-info/METADATA,sha256=rCtDKmUt_Zd1U4bECVfHlQBPW32mrxsYPe6BEjVWlcc,4791
+turbo_queue-0.8.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+turbo_queue-0.8.0.dist-info/licenses/LICENSE,sha256=hcd9HbJiX3haZabExNAZH55K7Od1Wd-JbXNSFbu9_Vg,1068
+turbo_queue-0.8.0.dist-info/RECORD,,
