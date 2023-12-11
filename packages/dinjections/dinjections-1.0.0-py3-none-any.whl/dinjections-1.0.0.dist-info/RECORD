@@ -1,0 +1,11 @@
+dinjections/__init__.py,sha256=K3UdhLC275kO67S3w-Y3kweoAbrk9EegwNaCRpAx7d0,19
+dinjections/app.py,sha256=3kCvZl3v7XrSzU95YmJTQt4R3FRNmEDzUJIpd1uugXA,2610
+dinjections/exceptions.py,sha256=CZLdfCrmwWIq46EtZpauREKiWcn3Da-H4O7E0lY3JPg,258
+dinjections/lifecycle.py,sha256=J5KcaqkEjssX4x-ICDrJ52tMz6v1bkG1rZn0Y96Mhj8,496
+dinjections/module.py,sha256=ghxxyNU-KAM8MVU_MD5GkFP8SMCcXT8P9ezqKioK1-Y,1157
+dinjections/options.py,sha256=3rHpTUk87ADcammN-3R6soZxxDIfhtPNsBU1jHpcDAs,2431
+dinjections-1.0.0.dist-info/LICENSE,sha256=mQA3lWYR9DZS3L0t1V3CEs7nWtDFqZaJKdTKYBq8e7k,1092
+dinjections-1.0.0.dist-info/METADATA,sha256=b7SvwRFmXPgmIUaHEEFmVmtR5aPNjyZEvdJM7cjdslg,4623
+dinjections-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dinjections-1.0.0.dist-info/top_level.txt,sha256=zGa72Ad3E2I_HMNZk_5gSSWKLOFaMSOjRvYfAl8qQ7A,12
+dinjections-1.0.0.dist-info/RECORD,,
