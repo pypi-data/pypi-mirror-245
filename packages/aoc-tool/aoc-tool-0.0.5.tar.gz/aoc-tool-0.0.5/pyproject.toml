@@ -1,0 +1,12 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
+
+[project]
+authors = [
+    {name = "Wes Barnett", email = "wes@barnettphd.com"},
+]
+description = "Minimal helper functions for Advent of Code"
+license = {text = "MIT"}
+name = "aoc-tool"
+version = "0.0.5"
