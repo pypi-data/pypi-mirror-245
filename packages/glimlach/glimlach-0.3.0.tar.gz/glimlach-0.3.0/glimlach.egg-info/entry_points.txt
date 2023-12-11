@@ -1,0 +1,2 @@
+[console_scripts]
+run-docker-images = cli:run_docker_images_main
