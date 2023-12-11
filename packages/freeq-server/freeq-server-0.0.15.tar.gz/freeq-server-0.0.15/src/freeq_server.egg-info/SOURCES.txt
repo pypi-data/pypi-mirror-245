@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.in
+requirements.txt
+src/freeq_server.egg-info/PKG-INFO
+src/freeq_server.egg-info/SOURCES.txt
+src/freeq_server.egg-info/dependency_links.txt
+src/freeq_server.egg-info/requires.txt
+src/freeq_server.egg-info/top_level.txt
+src/freeqserver/__init__.py
+src/freeqserver/freeqserver.py
+src/freeqserver/__pycache__/__init__.cpython-312.pyc
+src/freeqserver/__pycache__/freeqserver.cpython-312.pyc
