@@ -1,0 +1,16 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/hatch_test_quasrahub/__about__.py,sha256=LQITZ89-quscarlfsqilmR4KkQlG3MRCqu651_4r-Bo,128
+src/hatch_test_quasrahub/__init__.py,sha256=w3VOw3oxmgAJ48rKcgDd9pGOn7yzO8iwy5eLMZ2mqgo,106
+src/plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/plugin/error.py,sha256=3q5hPbP3tbsfDeMFdvaTOHhwntGn_QpE2cIxAiii2V0,422
+src/plugin/main.py,sha256=u1_xE2pypPN2Ogihrzs7VOy18OZMNi5zA9omPhqbSpg,3305
+src/plugin/connector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/plugin/connector/mimir_connector.py,sha256=yhDKH2SSiLtYpfidX81dCE8VjcBG3ip63ZnMxuXTWEM,5257
+src/plugin/manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/plugin/manager/cost_manager.py,sha256=DHBWoT8ysNhoEII6_Ko_upUkKme7kLXvLCOWtFbGHuo,4912
+src/plugin/manager/data_source_manager.py,sha256=o6UtS_WuaiX3HolgN56LPUiQ_XF-eApN0bezW3MsNgw,888
+src/plugin/manager/job_manager.py,sha256=fHwDCfjU2wOQ_GzekYK-p_0JuOcpx_k3jXA6Iu6JIhE,2959
+plugin_kubernetes_opencost_cost_datasource-1.0.3.dist-info/METADATA,sha256=2gAK1qoRKZyfrhkm99taDXVpKNnTXdc9WP8sMs5-_Aw,1561
+plugin_kubernetes_opencost_cost_datasource-1.0.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+plugin_kubernetes_opencost_cost_datasource-1.0.3.dist-info/licenses/LICENSE.txt,sha256=MvE4b9jLM2nq6N52X8eEYhCVVA0N5oGGJnO0CC7ehSk,1098
+plugin_kubernetes_opencost_cost_datasource-1.0.3.dist-info/RECORD,,
