@@ -1,0 +1,7 @@
+logger-local>=0.0.11
+requests>=2.26.0
+python-sdk-local>=0.0.27
+user-context-remote>=0.0.21
+url-local>=0.0.37
+profile-local>=0.0.35
+user-external-local>=0.0.32
