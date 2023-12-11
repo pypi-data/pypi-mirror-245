@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pytest-timeassert-ethan
+Version: 1.0
+Summary: execution duration
+Home-page: https://github.com/AomiEthan/pytest-timeassert-ethan
+Author: Ethan
+Author-email: 995692858@qq.com
+License: proprietary
+Keywords: pytest,py.test,pytest-timeassert-ethan
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 3.6
+
+assert execution duration using hook
+
