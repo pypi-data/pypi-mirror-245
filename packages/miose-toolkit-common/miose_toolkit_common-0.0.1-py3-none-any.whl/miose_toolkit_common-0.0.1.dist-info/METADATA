@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: miose-toolkit-common
+Version: 0.0.1
+Summary: Miose Toolkit 通用模块
+Author: KroMiose
+Author-email: li_xiangff@163.com
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiohttp (>=3.8.6,<4.0.0)
+Requires-Dist: poetry (>=1.6.1,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: ujson (>=5.8.0,<6.0.0)
