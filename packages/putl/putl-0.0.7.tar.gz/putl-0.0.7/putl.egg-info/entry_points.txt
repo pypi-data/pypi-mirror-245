@@ -1,0 +1,2 @@
+[nbdev]
+putl = putl._modidx:d

@@ -1,0 +1,10 @@
+atyp
+nchr
+nlit
+pfmt
+chck
+asto
+atup
+
+[dev]
+numpy
