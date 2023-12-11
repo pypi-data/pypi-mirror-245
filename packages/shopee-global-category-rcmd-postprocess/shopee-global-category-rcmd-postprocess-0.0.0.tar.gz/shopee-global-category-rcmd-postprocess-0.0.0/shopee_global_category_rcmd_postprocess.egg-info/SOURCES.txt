@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopee_global_category_rcmd_postprocess.egg-info/PKG-INFO
+shopee_global_category_rcmd_postprocess.egg-info/SOURCES.txt
+shopee_global_category_rcmd_postprocess.egg-info/dependency_links.txt
+shopee_global_category_rcmd_postprocess.egg-info/top_level.txt
