@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: WrapperXSelector
+Version: 0.1.13
+Summary: WrapperXSelector is an intuitive tool that empowers users to effortlessly create scraping wrappers. Seamlessly combining the art of crafting with powerful scraping capabilities, it allows users to select and store XPath configurations for later use in efficient website data harvesting.
+Author-email: Kallol Naha <kallolnaha@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Keywords: Scraping,Xpath,Wrapper
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: webdriver_manager
+
+# WrapperXSelector
+
+**WrapperXSelector** is a tool that simplifies the process of generating web scraping wrappers for Selenium-loaded HTML pages. It provides an interactive user interface for users to select and define the elements they want to scrape on a website, and then generates corresponding Selenium XPath selectors for automation.
+
+## Features
+
+- **User-Friendly Interface:** WrapperXSelector offers a user-friendly interface for selecting and defining elements on a Selenium-loaded HTML page.
+- **XPath Generation:** Automatically generates XPath selectors based on user-defined elements for web scraping automation.
+- **Dynamic Wrapping:** Supports dynamic websites by allowing users to interact with elements before generating the wrapper.
+
+## How It Works
+
+1. **Setup:** Start by providing the URL of the Selenium-loaded HTML page you want to scrape.
+2. **Interactive Selection:** Use the interactive interface to click and select elements on the page that you want to scrape.
+3. **XPath Generation:** WrapperXSelector dynamically generates XPath selectors for the selected elements.
+4. **Wrapper Output:** Outputs the generated wrapper in JSON format, ready to be used for web scraping automation.
+
+## Usage
+
+```python
+from WrapperXSelector import generateWrapper
+
+# Provide the wrapper name, URL, and optional repeated pattern parameter
+wrapper_name = "example_wrapper"
+url = "https://example.com"
+repeated_pattern = "yes"  # Set to "yes" if the pattern repeats, otherwise omit or set to "no"
+
+# Generate the wrapper
+wrapper_file = generateWrapper(wrapper_name, url, repeated_pattern)
+print(f"Wrapper generated and saved to {wrapper_file}")
+
+pip install WrapperXSelector
+
+**Dependencies:**
+
+- [Selenium](https://pypi.org/project/selenium/)
+- [ChromeDriver](https://pypi.org/project/webdriver-manager/)
+
+
+## License
+
+**MIT License.** See [LICENSE](LICENSE) for details.
+
+## Disclaimer
+
+Intended for educational and legal use only. Users must comply with the terms of service of scraped websites and applicable laws and regulations.
+
