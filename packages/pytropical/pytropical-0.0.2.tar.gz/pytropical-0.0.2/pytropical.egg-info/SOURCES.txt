@@ -1,0 +1,12 @@
+LICENSE.txt
+setup.py
+pytropical/__init__.py
+pytropical/_version.py
+pytropical/tropical_algebra.py
+pytropical/utils.py
+pytropical.egg-info/PKG-INFO
+pytropical.egg-info/SOURCES.txt
+pytropical.egg-info/dependency_links.txt
+pytropical.egg-info/not-zip-safe
+pytropical.egg-info/requires.txt
+pytropical.egg-info/top_level.txt
