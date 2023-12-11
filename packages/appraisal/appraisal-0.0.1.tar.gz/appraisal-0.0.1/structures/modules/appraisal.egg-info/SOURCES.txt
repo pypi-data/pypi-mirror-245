@@ -1,0 +1,10 @@
+license.txt
+pyproject.toml
+structure.txt
+structures/modules/appraisal/__init__.py
+structures/modules/appraisal.egg-info/PKG-INFO
+structures/modules/appraisal.egg-info/SOURCES.txt
+structures/modules/appraisal.egg-info/dependency_links.txt
+structures/modules/appraisal.egg-info/top_level.txt
+structures/modules/appraisal/clique/__init__.py
+structures/modules/appraisal/clique/group/__init__.py
