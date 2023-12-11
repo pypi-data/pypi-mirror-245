@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: datadivecsv
+Version: 0.1.2
+Summary: Herramienta de Análisis Exploratorio de Datos para archivos CSV
+Home-page: https://github.com/aldomelladop/datadivecsv.git
+Author: Aldo Mellado Opazo
+Author-email: aldomellado.1310@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: numpy
+
+# datadivecsv: AnÃ¡lisis Exploratorio de Datos para CSV
+
+El mÃ³dulo datadivecsv proporciona una herramienta sencilla y eficaz para realizar un anÃ¡lisis exploratorio bÃ¡sico de datos contenidos en archivos CSV. Este mÃ³dulo es ideal para obtener una rÃ¡pida comprensiÃ³n de los datos, especialmente Ãºtil en las etapas iniciales de cualquier proyecto de anÃ¡lisis de datos.
+
+## CaracterÃ­sticas
+
+- Lectura de Archivos CSV: Capacidad para leer archivos CSV desde el directorio actual o subdirectorios especÃ­ficos (datasets, notebooks).
+- NormalizaciÃ³n de Nombres de Columnas: OpciÃ³n para convertir nombres de columnas a snake_case, facilitando el manejo de los datos.
+- VerificaciÃ³n y EliminaciÃ³n de Duplicados: Chequea y elimina filas duplicadas en el conjunto de datos para asegurar la precisiÃ³n del anÃ¡lisis.
+- Resumen del DataFrame: Proporciona un resumen exhaustivo del DataFrame, incluyendo las primeras y Ãºltimas filas, una muestra aleatoria de filas, informaciÃ³n del DataFrame, estadÃ­sticas descriptivas, valores faltantes, y mÃ¡s.
+- VisualizaciÃ³n de Datos: Genera histogramas para variables numÃ©ricas y mapas de calor de correlaciÃ³n, ademÃ¡s de anÃ¡lisis de variables categÃ³ricas.
+
+## Uso
+
+Para utilizar datadivecsv, simplemente importa la funciÃ³n execute_analysis y pÃ¡sale el nombre del archivo CSV que deseas analizar. AquÃ­ tienes un ejemplo bÃ¡sico de uso:
+
+```py
+from datadivecsv import execute_analysis
+
+df = execute_analysis('tu_archivo.csv', normalize_cols=True, check_duplicates=True, show_summary_flag=True)
+```
+
+**ParÃ¡metros de execute_analysis**
+
+- `file_name`: Nombre del archivo CSV a analizar.
+- `normalize_cols` (opcional): Booleano para normalizar los nombres de las columnas a snake_case (por defecto True).
+- `check_duplicates` (opcional): Booleano para verificar y eliminar duplicados (por defecto True).
+- `show_summary_flag` (opcional): Booleano para mostrar un resumen del DataFrame (por defecto True).
+
+## InstalaciÃ³n
+
+Puedes instalar este paquete usando pip:
+
+```bash
+pip install datadivecsv
+```
+
+## Contribuir
+
+Las contribuciones son bienvenidas. Por favor, revisa las `issues` en GitHub para ver cÃ³mo puedes contribuir.
+
+## Licencia
+
+Este proyecto estÃ¡ bajo la Licencia MIT.
