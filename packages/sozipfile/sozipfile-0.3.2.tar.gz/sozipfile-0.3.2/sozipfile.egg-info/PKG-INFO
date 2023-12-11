@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: sozipfile
+Version: 0.3.2
+Summary: Fork of Python zipfile module, adding generation of sozip optimization
+Author-email: "Even Rouault (using code from Python contributors)" <even.rouault@spatialys.com>
+Project-URL: Homepage, https://github.com/sozip/sozipfile
+Project-URL: Bug Tracker, https://github.com/sozip/sozipfile/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sozipfile
+
+sozipfile is a fork of Python [zipfile](https://docs.python.org/3/library/zipfile.html)
+module, from its implementation in CPython 3.11, which implements the
+[SOZip](https://sozip.org) optimization,
+when writing deflate compressed files whose size exceeds the chunk size (defaults
+to 32768 bytes). It also implements efficient seeking within a SOZip file.
+
+Example to generate a SOZip-optimized file:
+
+```python
+import sozipfile.sozipfile as zipfile
+with zipfile.ZipFile('my.zip', 'w',
+                     compression=zipfile.ZIP_DEFLATED,
+                     chunk_size=zipfile.SOZIP_DEFAULT_CHUNK_SIZE) as myzip:
+    myzip.write('my.file')
+```
+
+Example to check if a file within a ZIP is SOZip-optimized:
+
+```python
+import sozipfile.sozipfile as zipfile
+with zipfile.ZipFile('my.zip', 'r') as myzip:
+    if myzip.getinfo('my.gpkg').is_sozip_optimized(myzip):
+        print('SOZip optimized!')
+```
+
+Available on [pypi](https://pypi.org/project/sozipfile):
+```shell
+pip install sozipfile
+```

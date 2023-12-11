@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+sozipfile/__init__.py
+sozipfile/sozipfile.py
+sozipfile.egg-info/PKG-INFO
+sozipfile.egg-info/SOURCES.txt
+sozipfile.egg-info/dependency_links.txt
+sozipfile.egg-info/top_level.txt
+tests/test_reading.py
+tests/test_sozipfile.py
