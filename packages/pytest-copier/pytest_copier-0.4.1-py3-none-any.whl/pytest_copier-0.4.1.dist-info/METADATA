@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pytest-copier
+Version: 0.4.1
+Summary: A pytest plugin to help testing Copier templates
+Author-Email: Axel Haustant <noirbizarre@gmail.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Project-URL: Homepage, https://github.com/noirbizarre/pytest-copier
+Project-URL: Documentation, https://github.com/noirbizarre/pytest-copier#readme
+Project-URL: Repository, https://github.com/noirbizarre/pytest-copier
+Project-URL: Issues, https://github.com/noirbizarre/pytest-copier/issues
+Requires-Python: >=3.8
+Requires-Dist: pytest>=7.3.2
+Requires-Dist: copier>=9.0.0
+Requires-Dist: pytest-dir-equal>=0.2
+Requires-Dist: pytest-gitconfig>=0.4
+Description-Content-Type: text/markdown
+
+# pytest-copier
+
+[![CI](https://github.com/noirbizarre/pytest-copier/actions/workflows/ci.yml/badge.svg)](https://github.com/noirbizarre/pytest-copier/actions/workflows/ci.yml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/noirbizarre/pytest-copier/main.svg)](https://results.pre-commit.ci/latest/github/noirbizarre/pytest-copier/main)
+[![PyPI](https://img.shields.io/pypi/v/pytest-copier)](https://pypi.org/project/pytest-copier/)
+[![PyPI - License](https://img.shields.io/pypi/l/pytest-copier)](https://pypi.org/project/pytest-copier/)
+
+A pytest plugin to help testing Copier templates
+
+**Note:** this was a PoC and it will receive the full code and documentation very soon.
+
+## Getting started
+
+Install `pytest-copier`:
+
+```shell
+# pip
+pip install pytest-copier
+# pipenv
+pipenv install pytest-copier
+# PDM
+pdm add pytest-copier
+```
+
+## Contributing
+
+Read the [dedicated contributing guidelines](./CONTRIBUTING.md).
