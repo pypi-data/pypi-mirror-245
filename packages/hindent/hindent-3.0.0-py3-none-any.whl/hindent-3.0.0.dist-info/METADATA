@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: hindent
+Version: 3.0.0
+Summary: Provides functions to translate and/or execute Hindent code.
+Author-email: Grant Smith <14.gsmith.14@gmail.com>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: home-page, https://github.com/GSmithApps/hindent
+
+Hindent is a new programming language,
+and I think you might like it.
+
+Now that I have your attention,
+Hindent is really just a syntax wrapper around lisps.
+It simply allows you to use hanging indents as
+a way to nest parenthesis. For example, here
+is some Hindent code... it's nice and pretty
+
+```
++
+  2
+  2
+```
+
+And the corresponding lisp code is
+
+```
+(+ 2 2)
+```
+
+Hindent (as an implementation)
+interprets Hindent code by translating
+it to lisp then executing it using
+existing lisp interpreters/compilers.
+You can also simply translate it
+to lisp if you want, but the usual
+use case is to execute the Hindent
+code.
+
+More details are given in the
+parsing section below.
+
+> **More Examples**: `example.hin` 
+
+# Installation
+
+1. `pip install hindent`
+2. [Install clojure](https://clojure.org/guides/install_clojure#java)
+   and make sure it's on your path by running `clojure -Sdescribe`.
+   - This also works with other lisps or schemes. If
+     you want to do that, the
+     notes in the module dosctrings explain how to use a different lisp
+3. The syntax highlighter for vs code is
+   [`Hindent Lang`](https://marketplace.visualstudio.com/items?itemName=GrantSmith.hindent-lang).  You can find
+   it in the normal extensions menu / marketplace.
+
+# Usage
+
+I think a nice way to interactively run programs is with jupyter.
+So, I recommend opening up a jupyter notebook. Then, simply start to
+import ``Hindent`` with `import Hindent as h`, and the docstrings/code-hover
+will guide you from there.
+
+
+# Parsing Spec
+
+## Pre-Parse
+
+- the translater supports literate programming. It does so
+  by putting block comments on equal footing with code. To
+  toggle back and forth between code and block comment,
+  put a lone period on a line.
+  - For reasons of textmate grammars and syntax highlighting,
+    we had to make the file start as code, rather than starting
+    as block comment. We would have preferred it the other way,
+    but we think it's okay.  We're thankful for how awesome vs
+    code and textmate are.
+- the parser/translater will put a new line after the source code
+  to ensure the final dedent is correct
+- any amount of whitespace that contributes to a blank line
+  (other than the last line) should be replaced with a single
+  new line character. For example, `\n\n\n` should be replaced
+  with `\n`, and `\n   \n` should also be replaced with `\n`
+- lines that start with `;` are comments and will be ignored
+
+## Main Parsing
+
+- calculate the number of spaces each line starts with.
+- Then divide by 2 to determine the indentation level
+- then, for each line find the difference in indentation level
+  between that line and the following line
+  - if the indentation level goes up one, then add an opening parenthesis before the current line
+  - if the indentation level goes down, then add a closing parenthesis after the current line
+    according to the number of dedents.
+  - if the indentation level remains the same, do nothing
+- This is best seen in the examples in `example.hin`.
+  To allow the user to pick an indentation level
+  other than what the textual code would otherwise look like,
+  the user can lead a line with `. `.  This forces
+  Hindent to treat the line's indentation where the `.` is
+  rather than where the rest of the code (or lack thereof) is.
+  Again, please see the examples in `example.hin`.
+
+# Miscellaneous Thoughts
+
+This framework works for any language.  We just mostly
+discuss lisps because it has the biggest impact and is
+cleanest on lisps.
+
+One heads up is that if you try to use it on languages that
+are whitespace-sensitive (haskell, python, etc), it will probably
+have trouble because it could theoretically change indentation
+while inserting parenthesis or removing the hindent markup.
+
+In general, I think translating into whitespace-sensitive
+languages is probably harder than translating into whitespace-insensitive
+languages.  But translating *from* whitespace-sensitive languages
+(like Hindent) is totally okay.
+
+# ToDo
+
+- [ ] redo the example code for map
+- [ ] change the verbage from `translate` to something else. I can't think
+      of what. It's hard to say. really all it does is remove comments and whitespace
+      then add parenthesis.
+- [ ] maybe get it out of running as a subprocess so
+      it returns things more easily
+- [ ] make a sphinx site
+  - [ ] convert readme to rst (change in pyproject.toml as well)
+- [ ] push to conda (in addition to pypi)
+
+# unsolved
+
+I'm not sure if this syntax retains lisp's
+homoiconicity. That's something to think more about
+
+# clojure replacements
+
+- list for lists
+- vector for vectors
+- hash-map for maps
+- set or hash-set for sets
+
+# Notes For Grant
+
+- `flit build --format wheel`
+- `twine upload dist/*`
+
