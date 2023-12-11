@@ -1,0 +1,28 @@
+{
+    "embed_dim": 512,
+    "vision_cfg": {
+        "image_size": 224,
+        "layers": 12,
+        "width": 768,
+        "patch_size": 16,
+        "patch_bias": true,
+        "attn_norm": true,
+        "rpe_pretrain": 16,
+        "mlp_ratio": 2.6667,
+        "swi_glu": true,
+        "no_ln_pre": true,
+        "pool_type": "tok",
+        "proj_bias": true,
+        "norm_kwargs":{
+            "eps": 1e-6
+        }
+    },
+    "text_cfg": {
+        "context_length": 77,
+        "vocab_size": 49408,
+        "width": 512,
+        "heads": 8,
+        "layers": 12
+    },
+    "custom_text": true
+}
