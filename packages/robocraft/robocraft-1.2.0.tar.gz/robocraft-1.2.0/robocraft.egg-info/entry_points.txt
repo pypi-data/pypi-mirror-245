@@ -1,0 +1,2 @@
+[console_scripts]
+robocraft = computercraft.server:main

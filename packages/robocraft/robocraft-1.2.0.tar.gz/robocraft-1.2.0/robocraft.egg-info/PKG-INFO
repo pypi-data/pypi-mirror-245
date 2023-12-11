@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: robocraft
+Version: 1.2.0
+Summary: Fix of neumond Computercraft
+Author: Artem Robocodovich
+Author-email: garo109696@gmail.com
+License: MIT
+Keywords: robocraft minecraft
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Games/Entertainment
