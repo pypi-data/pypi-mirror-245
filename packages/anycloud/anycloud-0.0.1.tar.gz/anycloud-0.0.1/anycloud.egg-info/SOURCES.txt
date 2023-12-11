@@ -1,0 +1,7 @@
+README.md
+setup.py
+anycloud.egg-info/PKG-INFO
+anycloud.egg-info/SOURCES.txt
+anycloud.egg-info/dependency_links.txt
+anycloud.egg-info/requires.txt
+anycloud.egg-info/top_level.txt
