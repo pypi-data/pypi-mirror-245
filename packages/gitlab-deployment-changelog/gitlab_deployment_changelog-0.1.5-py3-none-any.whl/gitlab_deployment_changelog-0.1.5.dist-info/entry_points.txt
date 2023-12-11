@@ -1,0 +1,3 @@
+[console_scripts]
+gdc=gitlab_deployment_changelog:gdc.main
+
