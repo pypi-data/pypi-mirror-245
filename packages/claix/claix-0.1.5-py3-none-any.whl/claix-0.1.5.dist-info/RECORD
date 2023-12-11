@@ -1,0 +1,10 @@
+claix/__init__.py,sha256=IHT4mKrIr8eV-C3HtmIVD85iGVH25n2ohoff31kaJ1A,93
+claix/__main__.py,sha256=o1p9PdfuUXKzLAbgHLx6Yoz5mBybju8Lk49oTLIX_aU,46
+claix/ai.py,sha256=kjWldh8RQGJ8-z6R8JRrH5fnstoOXJywa6Pt9QnTRxI,4854
+claix/main.py,sha256=uc6bSWyxMzQCxbl5Aw-nacRgKYt7NcyCp0T29JQgg9o,5942
+claix/typer_utils.py,sha256=TXzIniy9hD7-tHZMyRQJUcPSTxB1gyekdUGCmwig3D0,1051
+claix/utils.py,sha256=BpU7rHO0nkad2JLJH_4haPSKjNV5IjEKOmUdLeGCwuA,4273
+claix-0.1.5.dist-info/METADATA,sha256=DgPeBUZ04DYNiSTKq2RoyICzHilORnfqoTNW2lbYOw4,3416
+claix-0.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+claix-0.1.5.dist-info/entry_points.txt,sha256=rNS_600s2AjszD7qdFF7NiswY09hiApPyDsRXBYrOs8,40
+claix-0.1.5.dist-info/RECORD,,
