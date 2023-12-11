@@ -1,0 +1,6 @@
+matrix_class/__init__.py,sha256=P6vyl6GuLZJs2fFCkUHHKFnGYygWAw_tLGnmKc4gqwM,27
+matrix_class/exceptions.py,sha256=UzL8A7FYxsGUh0hkjQWJNSDXPnxNVENppXgZEfsgzgA,1299
+matrix_class/matrix.py,sha256=i-M0Byp1EYsBHWW9uzy27Pcnc1VdZEichj9j0MkI9aE,7534
+matrix_class-0.2.0.dist-info/METADATA,sha256=5G1TwkSN1F5n1ygg0DDSvmvt0BMSpEQL4j5ateI1KzA,2506
+matrix_class-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+matrix_class-0.2.0.dist-info/RECORD,,
