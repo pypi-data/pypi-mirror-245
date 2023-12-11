@@ -1,0 +1,42 @@
+name: Pull Request Checks
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review, synchronize, edited]
+    branches:
+      - main
+env:
+  CARGO_TERM_COLOR: always
+jobs:
+  pull-request-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: stable
+          components: rustfmt
+          target: x86_64-unknown-linux-gnu
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8
+      - name: Install and configure Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-in-project: true
+          virtualenvs-create: true
+      - name: Setup Python
+        run: |
+          poetry install --sync --no-root --with dev --with docs
+          source .venv/bin/activate && maturin develop
+      - name: Check rust formatting (rustfmt)
+        run: cargo fmt --all -- --check
+      - name: Run Rust Tests
+        run: source .venv/bin/activate && make rust-test
+      - name: Run Python Tests
+        run: source .venv/bin/activate && make pytest
+      - name: Test doc build
+        env:
+          SPHINX_BUILD: "1"
+          LIESYM_VERSION: "0.0.0-ci"
+        run: source .venv/bin/activate && make html
