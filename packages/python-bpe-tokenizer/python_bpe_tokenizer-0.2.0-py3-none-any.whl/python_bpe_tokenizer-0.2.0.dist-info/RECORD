@@ -1,0 +1,8 @@
+bpe_tokenizer/__init__.py,sha256=s9auMNpC2oouwOuRzrnVbBm0q3knR49JHDkvyAdYxjg,158
+bpe_tokenizer/bpe_tokenizer.py,sha256=ZpSrn5iChOqsnwfSj8g-XsGIsFvIs_f5XADmEFabgT0,6402
+bpe_tokenizer/sanitizer.py,sha256=i0DRNBnEeDCgtXIhcGBT4hSZ7v2ig71wMcJuuNNXEus,4243
+python_bpe_tokenizer-0.2.0.dist-info/METADATA,sha256=8Rq6U85MV-VT_SqA8s-UM3fp6oltERzNwUC3MlGiais,873
+python_bpe_tokenizer-0.2.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+python_bpe_tokenizer-0.2.0.dist-info/entry_points.txt,sha256=vGwhPZ3Ii7NWXETH4tPxb1XlJ_P3img2w-MGO4iQVq8,67
+python_bpe_tokenizer-0.2.0.dist-info/top_level.txt,sha256=FOJC_6Hyj7sAlqSAhPh6VHsXwAaKn26u13xC4piUtkQ,14
+python_bpe_tokenizer-0.2.0.dist-info/RECORD,,

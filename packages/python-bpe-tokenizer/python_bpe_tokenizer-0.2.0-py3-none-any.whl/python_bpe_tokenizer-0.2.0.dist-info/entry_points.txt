@@ -1,0 +1,2 @@
+[console_scripts]
+bpe-tokenizer = bpe_tokenizer.bpe_tokenizer:main

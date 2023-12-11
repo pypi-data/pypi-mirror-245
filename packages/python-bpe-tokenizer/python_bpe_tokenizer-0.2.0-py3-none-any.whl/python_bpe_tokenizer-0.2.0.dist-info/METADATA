@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: python-bpe-tokenizer
+Version: 0.2.0
+Summary: Python based BPE Tokenizer
+Author: jafarmahin
+Author-email: jafarmahin107@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: transformers
+Requires-Dist: flask
+Requires-Dist: tqdm
+
+The BPE Tokenizer is a Python package implementing a Byte Pair Encoding (BPE) Tokenizer for code snippets. It tokenizes code based on a predefined vocabulary learned from the input code.
+
+## Features
+
+- Tokenizes code using Byte Pair Encoding (BPE) methodology.
+- Sanitizes code by extracting relevant tokens.
+- Supports various case styles: camel case, Pascal case, snake case, and lowercase.
+
+## Installation
+
+```bash
+pip install bpe-tokenizer
+```
