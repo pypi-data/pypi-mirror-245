@@ -1,0 +1,17 @@
+name: Build a macOS bundle
+description: |
+  Create a zip archive with the bundle.
+  Tags must be pre-fetched and package must be installed.
+
+runs:
+  using: composite
+  steps:
+    - name: Build using pyinstaller
+      shell: bash
+      run: |
+        pip install pyinstaller setuptools_scm
+        VERSION=$(python -m setuptools_scm)
+        VERSION=${VERSION%%+*}
+        PLAT=$(echo ${{ runner.os }} | tr '[:upper:]' '[:lower:]')
+        ARCH=universal2
+        sh ./tools/make-bundle.sh $VERSION $PLAT $ARCH unsigned

@@ -1,0 +1,2 @@
+[gui_scripts]
+taxi-gui = itaxotools.taxi_gui:run
