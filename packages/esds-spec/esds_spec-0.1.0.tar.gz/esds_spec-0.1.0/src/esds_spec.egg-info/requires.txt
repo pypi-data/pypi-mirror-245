@@ -1,0 +1,2 @@
+pyarrow>=12
+jsonschema

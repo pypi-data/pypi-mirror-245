@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/esds_spec/__init__.py
+src/esds_spec/py.typed
+src/esds_spec.egg-info/PKG-INFO
+src/esds_spec.egg-info/SOURCES.txt
+src/esds_spec.egg-info/dependency_links.txt
+src/esds_spec.egg-info/requires.txt
+src/esds_spec.egg-info/top_level.txt
