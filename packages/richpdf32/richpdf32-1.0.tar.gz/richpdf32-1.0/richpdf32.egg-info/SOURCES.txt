@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+richpdf32.egg-info/PKG-INFO
+richpdf32.egg-info/SOURCES.txt
+richpdf32.egg-info/dependency_links.txt
+richpdf32.egg-info/top_level.txt
