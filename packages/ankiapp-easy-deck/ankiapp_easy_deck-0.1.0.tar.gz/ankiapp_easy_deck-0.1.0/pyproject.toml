@@ -1,0 +1,33 @@
+[build-system]
+requires = [
+    "setuptools>=61.0.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ankiapp_easy_deck"
+version = "0.1.0"
+description = "Easy way to make an AnkiApp deck."
+readme = "README.rst"
+authors = [
+    { name = "Johannes", email = "johannes-programming@posteo.org" },
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = []
+dependencies = [
+    "fileunity>=1.1",
+    "wonderparse>=1.4",
+]
+requires-python = ">=3.11"
+
+[project.license]
+file = "LICENSE.txt"
+
+[project.urls]
+Download = "https://pypi.org/project/ankiapp-easy-deck/#files"
+Source = "https://github.com/johannes-programming/ankiapp_easy_deck"
+

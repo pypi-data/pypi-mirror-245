@@ -1,0 +1,4 @@
+include src/ankiapp_easy_deck/drafts/deck.txt
+include src/ankiapp_easy_deck/drafts/card.txt
+exclude src/ankiapp_easy_deck/config.toml
+

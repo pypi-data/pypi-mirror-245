@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/ankiapp_easy_deck/__init__.py
+src/ankiapp_easy_deck/__main__.py
+src/ankiapp_easy_deck.egg-info/PKG-INFO
+src/ankiapp_easy_deck.egg-info/SOURCES.txt
+src/ankiapp_easy_deck.egg-info/dependency_links.txt
+src/ankiapp_easy_deck.egg-info/requires.txt
+src/ankiapp_easy_deck.egg-info/top_level.txt
+src/ankiapp_easy_deck/drafts/card.txt
+src/ankiapp_easy_deck/drafts/deck.txt
