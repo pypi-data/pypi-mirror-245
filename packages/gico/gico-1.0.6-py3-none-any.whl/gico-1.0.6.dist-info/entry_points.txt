@@ -1,0 +1,2 @@
+[console_scripts]
+gico = gico.gico:main
