@@ -1,0 +1,11 @@
+hojo/__init__.py,sha256=sGJDX-VlmiEaHF2DVOCXGomil2DGZ_Zi0fjwt1trlHU,66
+hojo/base.py,sha256=OLRtpH2AKRrKlp066Bje42X6GfTrz6He3xlOWNZb_B4,400
+hojo/connection.py,sha256=DNYRKat7b1mhtgeGM51zBaEX6AIH-S1iWAgEwnUKaHc,2102
+hojo/orm/manager.py,sha256=elf7bXpecHMgL90Ft2HuVcgVh6O36EH0g809ZkqZxHM,3199
+hojo/orm/mapper.py,sha256=ZD3lA_uztGgAq_yMDWxaXvr8YIrjnuG7dOJF61S5yEw,4973
+hojo/orm/queryset.py,sha256=D5O42CPZG4G-1K3ftjrNJk6WoKjPeIml7Id6SQ9x7GY,5685
+hojo/schema.py,sha256=sFxmNVVrtult0j_b2hlLomazcpWZzMhfwpqX-gGbCxw,707
+hojo-0.1.0.dist-info/LICENSE,sha256=qDGjMvNNAnTUjj6mrtrrxF7Qul2mN7B5eIJBEzEAovU,1070
+hojo-0.1.0.dist-info/METADATA,sha256=zp2iGN8RXLnsgAY7__5ajli9Vd6A-LJEjI0PBsXpgTU,1728
+hojo-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+hojo-0.1.0.dist-info/RECORD,,
