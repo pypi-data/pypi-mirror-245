@@ -1,0 +1,13 @@
+ducttape/__init__.py,sha256=X42kED8I0m1m-z7F2gmva0luxYkN4Jq_udOlksk3Ac0,8154
+ducttape/crypt.py,sha256=Njrb-Onm0BXrZaQk4g73JG6fytX2XVHLymidK0uP4hs,3761
+ducttape/header.py,sha256=z32ylZXFsDGZW6wM7EV2rIfa1eG910V4P0g2W0e0FjI,1458
+ducttape/lambdafier.py,sha256=3yjyp-E0Ygkr5kEjjCZzQLwxyp6YMOTjfuCoYXG0OXU,509
+ducttape/main.py,sha256=c94WX3QNdiJdLsC93BJtOJZZnnTrgN8HgAQ5juGvotc,1478
+ducttape/stdlib.py,sha256=Uf3Szh8gMdW126W5sdm7jC2PoBP7GGQ8nP750NaHgiQ,5685
+ducttape/tree.py,sha256=Qp3wrjFhxO9p-YB61ck5wm4Mx2r2lsaBI-xMq3rguOU,875
+pyducttape-0.0.1.dist-info/LICENSE,sha256=dp3kv3IfVed65MJ393qBvdI62qoQkOxif1g3ejnq_n8,1307
+pyducttape-0.0.1.dist-info/METADATA,sha256=snGVgeOye3GFtB7QvFkLYexgtq6DO1WTG-8ty__BKuE,1948
+pyducttape-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyducttape-0.0.1.dist-info/entry_points.txt,sha256=S1wTQGien1-cTF8Odi6aPyYksy0S2Z4IRGVaHpSoaug,48
+pyducttape-0.0.1.dist-info/top_level.txt,sha256=eAXG5gJxtp4ix1f6ShpqNHKEDloT9GZCKR3ugU3iDio,9
+pyducttape-0.0.1.dist-info/RECORD,,
