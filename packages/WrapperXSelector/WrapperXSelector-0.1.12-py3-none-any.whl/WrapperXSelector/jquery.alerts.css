@@ -1,0 +1,160 @@
+#selector-top, #selector-bottom {
+    background: #FF5F15;
+    height:3px;
+    position: fixed;
+    transition:all 300ms ease;
+}
+#selector-left, #selector-right {
+    background: #FF5F15;
+    width:3px;
+    position: fixed;
+    transition:all 300ms ease;
+}
+.bordered{
+    background: #FF5F15;
+}
+.n{
+    -webkit-transform: scale(3) translateX(100px)   
+}
+
+.highlight { outline: 4px solid #FF5F15; }
+
+#done_action {
+  padding: unset !important;
+  appearance: unset !important;
+  border: unset !important;
+  border-radius: unset !important;
+  line-height: unset !important;
+  color:white;
+  background:#ffc107 !important; 
+  position: relative !important; 
+  display: inline-block !important;
+  cursor: pointer !important;
+  padding: 3px !important;
+  margin-right:4px !important; 
+  font-size:12px !important; 
+  border-radius: 2px !important; 
+}
+#add_more {
+  padding: unset !important;
+  appearance: unset !important;
+  border: unset !important;
+  border-radius: unset !important;
+  line-height: unset !important;
+  color:white;
+  background:purple !important; 
+  position: relative !important; 
+  display: inline-block !important;
+  cursor: pointer !important;
+  padding: 3px !important;
+  margin-right:4px !important; 
+  font-size:12px !important; 
+  border-radius: 2px !important; 
+}
+
+.fields_verify_button{
+  padding: unset !important;
+  appearance: unset !important;
+  border: unset !important;
+  border-radius: unset !important;
+  line-height: unset !important;
+  color:white;
+  background:#dc3545  !important;
+  position: absolute; 
+  display: inline-block !important;
+  right: 34px !important;
+  cursor: pointer !important;
+  padding: 3px !important;
+  font-size:12px !important; 
+  border-radius: 2px !important; 
+}
+
+.field_key_value {
+  all: unset !important;
+  padding: 2px !important;
+  background-color: #ffffff !important;
+  border: 1px solid #3498db !important;
+  border-radius: 2px !important;
+  cursor: pointer !important;
+  
+}
+
+#popup_container .alert {
+  all: unset !important;
+}
+
+
+
+/* Custom dialog styles */
+#popup_title {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.75em;
+    color: #FFFFFF;
+    background: #006699;
+    border: solid 1px #006699;
+    border-bottom: solid 1px #006699;
+    cursor: default;
+    padding: 0em;
+    margin: 0em;
+}
+
+#popup_container {
+    font-family: AntipastoRegular, sans-serif;
+    font-size: 14px;
+    min-width: 300px; /* Dialog will be no smaller than this */
+    max-width: 600px; /* Dialog will wrap after this width */
+    background: #FFFFFF;
+    border: solid 5px #006699;
+    color: #000000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#popup_content {
+    /*background: 16px 16px no-repeat url(images/info.gif);*/
+    padding: 1em 1.75em;
+    margin: 0em;
+}
+
+/*
+#popup_content.alert {
+        background-image: url(images/info.gif);
+}
+
+#popup_content.confirm {
+        background-image: url(images/important.gif);
+}
+
+#popup_content.prompt {
+        background-image: url(images/help.gif);
+}
+*/
+
+#popup_message {
+    /*padding-left: 10px;*/
+    margin:0px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#popup_panel {
+    text-align: center;
+    margin: 1em 0em 0em 1em;
+}
+
+#popup_prompt {
+    margin: .5em 0em;
+}
+
+
+#popup_container INPUT[type='button'] {
+    width: 100px;
+    height: 30px;
+    border: outset 2px #006699;
+    color: #FFFFFF;
+    background: #006699;
+    margin-bottom: 10px;
+}
