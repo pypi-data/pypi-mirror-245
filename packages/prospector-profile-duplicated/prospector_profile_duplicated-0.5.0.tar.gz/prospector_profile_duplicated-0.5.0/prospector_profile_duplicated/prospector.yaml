@@ -1,0 +1,6 @@
+inherits:
+  - duplicated:black
+  - duplicated:isort
+  - duplicated:pyupgrade
+  - duplicated:pylint
+  - duplicated:docformatter
