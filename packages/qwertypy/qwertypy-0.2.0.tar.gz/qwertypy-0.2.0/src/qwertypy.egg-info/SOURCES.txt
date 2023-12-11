@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/qwertypy/__init__.py
+src/qwertypy/greetings.py
+src/qwertypy.egg-info/PKG-INFO
+src/qwertypy.egg-info/SOURCES.txt
+src/qwertypy.egg-info/dependency_links.txt
+src/qwertypy.egg-info/top_level.txt
