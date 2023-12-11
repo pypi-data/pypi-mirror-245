@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: vdam_data_crawler
+Version: 0.1.0
+Summary: 
+Author: Vytenis Dambrauskas
+Author-email: vytenisdambrauskas@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: lxml (>=4.9.3,<5.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+

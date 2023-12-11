@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "vdam_data_crawler"
+version = "0.1.0"
+description = ""
+authors = ["Vytenis Dambrauskas <vytenisdambrauskas@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+lxml = "^4.9.3"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
