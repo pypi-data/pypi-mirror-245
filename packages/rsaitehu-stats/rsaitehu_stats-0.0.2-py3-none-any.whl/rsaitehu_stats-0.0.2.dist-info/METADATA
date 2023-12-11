@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rsaitehu-stats
+Version: 0.0.2
+Summary: Stats utilities
+Requires-Dist: numpy >=1.22.0
+Requires-Dist: pandas >=1.5.1
+Requires-Dist: scipy >=1.9.3
+Requires-Dist: scikit-posthocs >=0.7.0
+Requires-Dist: pingouin >=0.5.3
+Requires-Dist: matplotlib >=3.5.3
+Requires-Dist: seaborn >=0.12.1
+Requires-Dist: pyreadr >=0.4.9
+
