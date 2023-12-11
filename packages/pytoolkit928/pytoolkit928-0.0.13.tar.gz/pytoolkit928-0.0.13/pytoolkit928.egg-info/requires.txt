@@ -1,0 +1,17 @@
+certifi
+decorator
+pathlib
+dataclasses
+PyYaml
+pandas
+numpy>=1.22.2
+paramiko
+requests
+
+[test]
+pytest-cov
+pytest
+pytest-mock
+unittest2
+dataclasses
+six
