@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+pursuitlib_qrcode/__init__.py
+pursuitlib_qrcode/pdfhelper.py
+pursuitlib_qrcode/qrhelper.py
+pursuitlib_qrcode.egg-info/PKG-INFO
+pursuitlib_qrcode.egg-info/SOURCES.txt
+pursuitlib_qrcode.egg-info/dependency_links.txt
+pursuitlib_qrcode.egg-info/requires.txt
+pursuitlib_qrcode.egg-info/top_level.txt

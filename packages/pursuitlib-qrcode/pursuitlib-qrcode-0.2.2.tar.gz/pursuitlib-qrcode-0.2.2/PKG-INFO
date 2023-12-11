@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pursuitlib-qrcode
+Version: 0.2.2
+Summary: Provides utility functions for generating QR codes and PDF files
+Home-page: https://gitlab.com/frPursuit/pursuitlib-python
+Author: Pursuit
+Author-email: fr.pursuit@gmail.com
+License: All rights reserved
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pursuitlib
+Requires-Dist: qrcode
+Requires-Dist: reportlab
+
+# Pursuit Library - QR Code
+
+This package provides utility functions for generating QR codes and PDF files.
