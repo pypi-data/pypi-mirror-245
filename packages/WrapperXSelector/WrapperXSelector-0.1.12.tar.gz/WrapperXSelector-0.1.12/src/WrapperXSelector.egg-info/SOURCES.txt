@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/WrapperXSelector/WrapperXSelector.py
+src/WrapperXSelector/__init__.py
+src/WrapperXSelector/jquery-3.7.1.min.js
+src/WrapperXSelector/jquery.alerts.css
+src/WrapperXSelector/jquery.alerts.js
+src/WrapperXSelector/operation.js
+src/WrapperXSelector.egg-info/PKG-INFO
+src/WrapperXSelector.egg-info/SOURCES.txt
+src/WrapperXSelector.egg-info/dependency_links.txt
+src/WrapperXSelector.egg-info/requires.txt
+src/WrapperXSelector.egg-info/top_level.txt

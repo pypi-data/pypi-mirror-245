@@ -1,0 +1,4 @@
+include src/WrapperXSelector/jquery-3.7.1.min.js
+include src/WrapperXSelector/jquery.alerts.js
+include src/WrapperXSelector/operation.js
+include src/WrapperXSelector/jquery.alerts.css
