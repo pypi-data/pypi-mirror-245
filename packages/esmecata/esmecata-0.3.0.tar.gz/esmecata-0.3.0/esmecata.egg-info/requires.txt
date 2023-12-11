@@ -1,0 +1,8 @@
+biopython
+bioservices
+matplotlib
+pandas
+requests
+ete3
+seaborn
+SPARQLWrapper
