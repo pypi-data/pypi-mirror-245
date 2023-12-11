@@ -1,0 +1,13 @@
+WrapperXSelector/WrapperXSelector.py,sha256=KbXEF-I1PSwk7sUYKDKhoXxkquWVkjOmh4apriiw2WU,18101
+WrapperXSelector/__init__.py,sha256=yOG6vYwX3doYKRHuvd5Yp_tGCDY8NZDgtZX34LyfUDQ,496
+WrapperXSelector/general_wrapper.js,sha256=6vpmLUL_oko8H0XU6i2TU7dN34MPYYpfVUDz2bgg7t8,13831
+WrapperXSelector/table_wrapper.js,sha256=jf6jdrYlX1Iy2A7h3gV0H6D0rogiUQYVEZxWznIk3rA,6764
+WrapperXSelector/external_files/css/st.action-panel.css,sha256=-jUVhN0-_YQ1waimnm1spBLsJ46zix3-po1SJfcXIgM,3191
+WrapperXSelector/external_files/js/jquery-3.7.1.min.js,sha256=_JqT3SQfawRcv_BIHPThkBvs0OEvtFFmqPF_lYI_Cxo,87533
+WrapperXSelector/external_files/js/st.action-panel.js,sha256=r1PeLY37eYx9svKu2rv2b8XnE5TMCRn2kItz2lCs2U4,1903
+WrapperXSelector/external_files/js/sweetalert2.all.min.js,sha256=le6Pb8PscF3q-aMzhT81NbTDElYXtgtHR33L4HwhlBs,173497
+WrapperXSelector-0.1.27.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+WrapperXSelector-0.1.27.dist-info/METADATA,sha256=_xFF3XvCHiuAf1uKheaRDat-GmXg4-8jHZnlettYqfA,7846
+WrapperXSelector-0.1.27.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+WrapperXSelector-0.1.27.dist-info/top_level.txt,sha256=DKDjtM4h6pR007LuPt5CDx2TuD-ejQS10w6V7ShkTTU,17
+WrapperXSelector-0.1.27.dist-info/RECORD,,
