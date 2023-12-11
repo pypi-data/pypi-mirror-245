@@ -1,0 +1,27 @@
+[project]
+name = "WrapperXSelector"
+version = "0.1.14"
+authors = [
+  { name="Kallol Naha", email="kallolnaha@gmail.com" },
+]
+dependencies = [
+    'selenium',
+    'webdriver_manager',
+    'beautifulsoup4'
+]
+keywords = ["Scraping", "Xpath", 'Wrapper']
+description = "WrapperXSelector is an intuitive tool that empowers users to effortlessly create scraping wrappers. Seamlessly combining the art of crafting with powerful scraping capabilities, it allows users to select and store XPath configurations for later use in efficient website data harvesting."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
