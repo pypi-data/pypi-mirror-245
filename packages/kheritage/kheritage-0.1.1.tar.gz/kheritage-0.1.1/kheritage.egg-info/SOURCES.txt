@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+kheritage.egg-info/PKG-INFO
+kheritage.egg-info/SOURCES.txt
+kheritage.egg-info/dependency_links.txt
+kheritage.egg-info/top_level.txt
+kheritageapi/__init__.py
+kheritageapi/api.py
+kheritageapi/models.py
+kheritageapi/utils.py
