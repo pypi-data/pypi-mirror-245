@@ -1,0 +1,22 @@
+[console_scripts]
+- = comma.main:app_main
+-c = comma.misc.code:app_c
+-devcon = comma.devcon:app_devcon
+-docker = comma.docker:app_docker
+-filter-links = runtool:CLIFilterLinks.run
+-format-ini = runtool:CLIFormatIni.run
+-gh-install = runtool:GhInstall.run
+-gh-links = runtool:GhLinks.run
+-link-installer = runtool:CLILinkInstaller.run
+-lt = comma.logtool:app_logtool
+-multi-installer = runtool:CLIMultiInstaller.run
+-mux = comma.misc.tmux:app_mux
+-run = runtool:CLIRun.run
+-runFunc = comma.typer.reflection:run_func
+-runtool = runtool:main
+-sh = comma.shell_scripts.shell_utils:app_sh
+-sh-script = comma.shell_scripts.shell_scripts:app_shell_scripts
+-showFunc = comma.typer.reflection:show_func
+-which = runtool:CLIWhich.run
+__comma-fixer = runtool:CommaFixer.run
+dev = comma.main:app_main
