@@ -1,0 +1,8 @@
+pytessel-1.2.0.dist-info/RECORD,,
+pytessel-1.2.0.dist-info/LICENSE,sha256=4cCtcomD2KVzNeUs8QZPGv_R1FQXPYzr0-2LSnK0hwQ,35121
+pytessel-1.2.0.dist-info/WHEEL,sha256=HS_2vgrXyXO7N4Q-5VnuMAgG-fG_r8eemMgfU9Aw3Kk,110
+pytessel-1.2.0.dist-info/top_level.txt,sha256=QDauMEeJ6MuBmtCTV4HZAr1XodXsUesXTlcImp5LE54,9
+pytessel-1.2.0.dist-info/METADATA,sha256=6A4HYSikrmIZvTzQQxQMDxfI-Jjb0UbHscIdJGD1naM,5009
+pytessel/_version.py,sha256=MpAT5hgNoHnTtG1XRD_GV_A7QrHVU6vJjGSw_8qMGA4,22
+pytessel/__init__.py,sha256=vro51HMaT-ePmW0CgIsDkOgTzutYGB2UgmyV7elT09A,66
+pytessel/pytessel.cpython-37m-darwin.so,sha256=9wmI8DzHAfFwJeSwakoFsKuScmjZf2JSe5isI2cFmUY,192864
