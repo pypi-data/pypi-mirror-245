@@ -1,0 +1,8 @@
+pyproject.toml
+rsaitehu/scmamp_python.py
+rsaitehu/stats.py
+rsaitehu_stats.egg-info/PKG-INFO
+rsaitehu_stats.egg-info/SOURCES.txt
+rsaitehu_stats.egg-info/dependency_links.txt
+rsaitehu_stats.egg-info/requires.txt
+rsaitehu_stats.egg-info/top_level.txt
