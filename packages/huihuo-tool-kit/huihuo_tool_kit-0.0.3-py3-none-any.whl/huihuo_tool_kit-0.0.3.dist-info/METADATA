@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: huihuo-tool-kit
+Version: 0.0.3
+Summary: huihuo tool kit
+Home-page: https://github.com/hui-huo
+Author: huihuo
+Description-Content-Type: text/markdown
+Requires-Dist: build
+
