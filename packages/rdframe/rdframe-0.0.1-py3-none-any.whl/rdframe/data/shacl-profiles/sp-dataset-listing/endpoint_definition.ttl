@@ -1,0 +1,13 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX endpoint: <https://prez.dev/endpoint/spaceprez/>
+PREFIX ont: <https://prez.dev/ont/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+@prefix shext: <http://example.com/shacl-extension#> .
+
+
+endpoint:dataset-listing a ont:ListingEndpoint ;
+    sh:targetClass dcat:Dataset ;
+    shext:limit 20 ;
+    shext:offset 0 ;
+    ont:endpointTemplate "/s/datasets" ;
+.

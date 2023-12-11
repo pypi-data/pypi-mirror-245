@@ -1,0 +1,18 @@
+PREFIX dcat:     <http://www.w3.org/ns/dcat#>
+PREFIX dcterms:  <http://purl.org/dc/terms/>
+PREFIX endpoint: <https://prez.dev/endpoint/vocprez/>
+PREFIX ont:      <https://prez.dev/ont/>
+PREFIX prez:     <https://prez.dev/>
+PREFIX sh:       <http://www.w3.org/ns/shacl#>
+PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+@prefix shext: <http://example.com/shacl-extension#> .
+
+
+endpoint:collections
+    a                    ont:ListingEndpoint ;
+    ont:endpointTemplate "/v/collections" ;
+    sh:targetClass       skos:Collection ;
+    shext:limit  20 ;
+    shext:offset 0 ;
+.

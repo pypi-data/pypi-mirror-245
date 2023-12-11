@@ -1,0 +1,25 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX endpoint: <https://prez.dev/endpoint/catprez/>
+PREFIX ont: <https://prez.dev/ont/>
+PREFIX prez: <https://prez.dev/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix shext: <http://example.com/shacl-extension#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+endpoint:resource a ont:ListingEndpoint ;
+    sh:targetClass dcat:Resource ;
+    ont:parentEndpoint endpoint:resource-listing ;
+    ont:endpointTemplate "/c/catalogs/$parent_1/resources" ;
+    sh:target [
+              sh:select """SELECT ?focus_node
+                 WHERE {
+                 $parent_1 dcterms:hasPart ?focus_node .
+                    }
+                 """ ] ;
+    shext:limit 20 ;
+    shext:offset 0 ;
+    shext:orderBy [ sh:path rdfs:label ] ;
+    .

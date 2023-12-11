@@ -1,0 +1,16 @@
+# example07.ttl
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix eo: <http://example.com/eo/> .
+@prefix ro: <http://example.com/ro/> .
+@prefix ex: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Positive test case: OLI instrument and specific geometry
+ex:item456 geosparql:hasGeometry _:geom1 .
+ex:item456 eo:instrument "OLI_TIRS" .
+_:geom1 geosparql:asWKT "<POLYGON WKT REPRESENTATION>"^^geosparql:wktLiteral .
+
+# example05b.ttl - Test data for example05b.json query
+# Positive test cases: cloud cover values 0.1 and 0.2
+ex:item789 ro:cloud_cover "0.1"^^xsd:double .
+ex:item790 ro:cloud_cover "0.2"^^xsd:double .

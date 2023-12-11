@@ -1,0 +1,9 @@
+# example33.ttl
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.com/> .
+
+# Positive test case: value less than or equal to 10
+ex:item1 ex:value "10"^^xsd:integer .
+
+# Negative test case: value greater than 10
+ex:item2 ex:value "15"^^xsd:integer .

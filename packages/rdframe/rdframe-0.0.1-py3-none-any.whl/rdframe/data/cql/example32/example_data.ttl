@@ -1,0 +1,14 @@
+# example32.ttl
+@prefix ex: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix eo: <http://a9.com/-/opensearch/extensions/eo/1.0/> .
+@prefix landsat: <http://example.com/landsat/> .
+
+# Negative test case: value greater than 10
+ex:item101 ex:value "15"^^xsd:integer .
+
+# example06b.ttl - Test data for example06b.json query
+# Positive test case: cloud cover between 0.1 and 0.2, rows and paths specified
+ex:item202 eo:cloud_cover "0.1"^^xsd:double .
+ex:item202 landsat:wrs_row "28"^^xsd:integer .
+ex:item202 landsat:wrs_path "203"^^xsd:integer .

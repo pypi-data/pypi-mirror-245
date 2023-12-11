@@ -1,0 +1,63 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <http://example.org/ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+ex:Resource-A
+    a skos:Concept ;
+    rdfs:label "Resource A" ;
+    skos:inScheme ex:Vocab-A ;
+.
+
+ex:Resource-B
+    a skos:Concept ;
+    rdfs:label "Resource B" ;
+    skos:inScheme ex:Vocab-B ;
+.
+
+ex:Resource-C
+    a skos:Concept ;
+    rdfs:label "Resource C" ;
+    skos:inScheme ex:Vocab-C ;
+.
+
+ex:Resource-D
+    a skos:Concept ;
+    rdfs:label "Resource D" ;
+    skos:inScheme ex:Vocab-D ;
+.
+
+ex:Resource-E
+    a skos:Concept ;
+    rdfs:label "Resource E" ;
+    skos:inScheme ex:Vocab-E ;
+.
+
+ex:Vocab-A
+    a skos:ConceptScheme ;
+    rdfs:label "Vocab A" ;
+    dcterms:publisher "abcd" ;
+.
+
+ex:Vocab-B
+    a skos:ConceptScheme ;
+    rdfs:label "Vocab B" ;
+    prov:qualifiedDerivation [ prov:entity <http://linked.data.gov.au/def/site-status> ;
+            prov:hadRole <http://linked.data.gov.au/def/vocab-derivation-modes/subsetting-and-extension> ] ;
+.
+
+ex:Vocab-C
+    a skos:ConceptScheme ;
+    rdfs:label "Vocab C" ;
+.
+
+ex:Vocab-D
+    a skos:ConceptScheme ;
+    rdfs:label "Vocab D" ;
+.
+
+ex:Vocab-E
+    a skos:ConceptScheme ;
+    rdfs:label "Vocab E" ;
+.

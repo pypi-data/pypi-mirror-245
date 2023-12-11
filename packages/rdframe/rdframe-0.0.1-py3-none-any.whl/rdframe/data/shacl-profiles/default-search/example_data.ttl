@@ -1,0 +1,10 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/> .
+
+ex:Item1 rdfs:label "Testing the first item" .
+ex:Item2 rdfs:label "A second item for testing" .
+ex:Item3 rdfs:label "testing in lowercase" .
+ex:Item4 rdfs:label "An item with Testing occurring somewhere" .
+ex:Item5 rdfs:label "Random text" .
+ex:Item6 rdfs:label "Another test case" .
+ex:Item7 rdfs:label "A case with the word testing in the middle" .

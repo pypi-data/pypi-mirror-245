@@ -1,0 +1,16 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX endpoint: <https://prez.dev/endpoint/catprez/>
+PREFIX ont: <https://prez.dev/ont/>
+PREFIX prez: <https://prez.dev/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix shext: <http://example.com/shacl-extension#> .
+
+
+endpoint:resource a ont:ListingEndpoint ;
+    ont:endpointTemplate "/c/catalogs" ;
+    sh:targetClass dcat:Catalog ;
+    shext:limit 20 ;
+    shext:offset 0 ;
+.

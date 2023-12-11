@@ -1,0 +1,19 @@
+# Test data for a SPARQL query involving cloud cover and landsat rows/paths
+@prefix ex: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix landsat: <http://example.com/landsat/> .
+
+# Item that meets the criteria of cloud cover between 0.1 and 0.2, wrs_row 28, and wrs_path 203
+ex:item1 <eo:cloud_cover> "0.15"^^xsd:double ;
+         landsat:wrs_row "28"^^xsd:integer ;
+         landsat:wrs_path "203"^^xsd:integer .
+
+# Item that does not meet the criteria (cloud cover is too high)
+ex:item2 <eo:cloud_cover> "0.25"^^xsd:double ;
+         landsat:wrs_row "28"^^xsd:integer ;
+         landsat:wrs_path "203"^^xsd:integer .
+
+# Item that does not meet the criteria (different wrs_row and wrs_path)
+ex:item3 <eo:cloud_cover> "0.15"^^xsd:double ;
+         landsat:wrs_row "29"^^xsd:integer ;
+         landsat:wrs_path "204"^^xsd:integer .

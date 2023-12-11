@@ -1,0 +1,38 @@
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex:      <http://example.org/ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Catalog-A
+    a               dcat:Catalog ;
+    dcterms:hasPart ex:Resource-A, ex:Resource-B, ex:Resource-C, ex:Resource-D, ex:Resource-E ;
+    rdfs:label      "Catalog A" .
+
+ex:Resource-A
+    a                 dcat:Resource ;
+    dcterms:creator   "David Habgood" ;
+    dcterms:issued    "2023-11-12" ;
+    dcterms:publisher "Kurrawong AI" ;
+    rdfs:label        "Resource A" .
+
+ex:Resource-B
+    a               dcat:Resource ;
+    dcterms:creator "Fairy Floss" ;
+    dcterms:issued  "1970-11-12" ;
+    rdfs:label      "Resource B" .
+
+ex:Resource-C
+    a                 dcat:Resource ;
+    dcterms:creator   "Creative Creator" ;
+    dcterms:publisher "Kurrawong AI" ;
+    rdfs:label        "Resource C" .
+
+ex:Resource-D
+    a               dcat:Resource ;
+    dcterms:creator "Anon" ;
+    rdfs:label      "Resource D" .
+
+ex:Resource-E
+    a          dcat:Resource ;
+    rdfs:label "Resource E" .
+

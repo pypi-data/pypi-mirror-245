@@ -1,0 +1,15 @@
+# Test data for a SPARQL query that constructs cloud cover data
+@prefix ex: <http://example.com/ro/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Item with a cloud cover of 0.1
+ex:item1 ex:cloud_cover "0.1"^^xsd:double .
+
+# Item with a cloud cover of 0.1
+ex:item1 ex:cloud_cover "0.2"^^xsd:double .
+
+# Item with a cloud cover of 0.2
+ex:item2 ex:cloud_cover "0.2"^^xsd:double .
+
+# Item with a cloud cover of 0.2
+ex:item2 ex:cloud_cover "0.3"^^xsd:double .

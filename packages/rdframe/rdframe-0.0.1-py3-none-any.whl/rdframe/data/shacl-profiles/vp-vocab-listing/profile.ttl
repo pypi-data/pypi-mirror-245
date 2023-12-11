@@ -1,0 +1,21 @@
+PREFIX ex: <http://example.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+ex:VocabListingProfile
+    a sh:NodeShape ;
+    sh:property [
+      sh:minCount 0 ;
+      sh:path (
+        sh:union (
+          dcterms:publisher
+          reg:status
+          ( prov:qualifiedDerivation prov:hadRole )
+          ( prov:qualifiedDerivation prov:entity )
+        )
+      )
+    ]
+.

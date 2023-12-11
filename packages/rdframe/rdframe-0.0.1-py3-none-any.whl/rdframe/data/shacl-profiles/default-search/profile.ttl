@@ -1,0 +1,9 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX ex: <http://example.org/ns#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX shext: <http://example.com/shacl-extension#>
+
+ex:OpenNodeShape
+    a sh:NodeShape ;
+    sh:property [ sh:path shext:allPredicateValues ];
+.

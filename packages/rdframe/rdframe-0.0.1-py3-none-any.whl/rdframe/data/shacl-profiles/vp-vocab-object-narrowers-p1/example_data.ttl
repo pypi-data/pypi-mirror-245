@@ -1,0 +1,34 @@
+@prefix ex: <http://example.org/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ex:Resource-A-1 a skos:Concept ;
+    skos:broader ex:Resource-A ;
+    skos:prefLabel "Resource A 1" .
+
+ex:Resource-A-1.1 a skos:Concept ;
+    skos:broader ex:Resource-A-1 ;
+    skos:prefLabel "Resource A 1.1" .
+
+ex:Resource-A-2 a skos:Concept ;
+    skos:prefLabel "Resource A 2" .
+
+ex:Resource-A-3 a skos:Concept ;
+    skos:prefLabel "Resource A 3" .
+
+ex:Resource-A-4 a skos:Concept ;
+    skos:prefLabel "Resource A 4" .
+
+ex:Resource-A-2.1 a skos:Concept ;
+    skos:broader ex:Resource-A-2 ;
+    skos:prefLabel "Resource A 2.1" .
+
+ex:Concept-Scheme-A a skos:ConceptScheme ;
+    skos:hasTopConcept ex:Resource-A ;
+    skos:prefLabel "Concept Scheme A" .
+
+ex:Resource-A a skos:Concept ;
+    skos:inScheme ex:Concept-Scheme-A ;
+    skos:narrower ex:Resource-A-2 , ex:Resource-A-3 , ex:Resource-A-4 ;
+    skos:prefLabel "Resource A" .
+
+

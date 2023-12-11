@@ -1,0 +1,45 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.com/properties/> .
+
+<http://example.com/datasets/record1>
+    a dcat:Dataset ;
+    rdfs:label "Dataset Record One"@en ;
+    ex:author "Jane Doe" ;
+    ex:entryDate "2023-01-01T00:00:00Z"^^xsd:dateTime ;
+    dcterms:title "Example Dataset One"@en ;
+.
+
+<http://example.com/datasets/record2>
+    a dcat:Dataset ;
+    rdfs:label "Dataset Record Two"@en ;
+    ex:version "1.2.3" ;
+    ex:reviewStatus "Pending" ;
+    dcterms:title "Example Dataset Two"@en ;
+.
+
+<http://example.com/datasets/record3>
+    a dcat:Dataset ;
+    rdfs:label "Dataset Record Three"@en ;
+    ex:category "Research" ;
+    ex:publicationYear "2022"^^xsd:gYear ;
+    dcterms:title "Example Dataset Three"@en ;
+.
+
+<http://example.com/datasets/record4>
+    a dcat:Dataset ;
+    rdfs:label "Dataset Record Four"@en ;
+    ex:accessLevel "Public" ;
+    ex:relatedProject "Project Alpha" ;
+    dcterms:title "Example Dataset Four"@en ;
+.
+
+<http://example.com/datasets/record5>
+    a dcat:Dataset ;
+    rdfs:label "Dataset Record Five"@en ;
+    ex:dataQuality "High" ;
+    ex:updateFrequency "Monthly" ;
+    dcterms:title "Example Dataset Five"@en ;
+.

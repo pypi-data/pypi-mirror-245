@@ -1,0 +1,6 @@
+# example10.ttl
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.com/> .
+
+# Positive test case: taxes less than or equal to 500
+ex:item123 ex:taxes "300"^^xsd:integer .

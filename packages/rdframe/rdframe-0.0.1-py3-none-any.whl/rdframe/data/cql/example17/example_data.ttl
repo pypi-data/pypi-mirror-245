@@ -1,0 +1,17 @@
+# example17.ttl
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.com/> .
+
+# Positive test case: floors more than 5 and material is brick
+ex:item7 ex:floors "6"^^xsd:integer ;
+          ex:material "brick" .
+
+# Positive test case: has a swimming pool (true)
+ex:item8 ex:swimming_pool "true"^^xsd:boolean .
+
+# Negative test case: floors less than 5 and material is not brick
+ex:item9 ex:floors "4"^^xsd:integer ;
+          ex:material "concrete" .
+
+# Negative test case: has no swimming pool (false)
+ex:item10 ex:swimming_pool "false"^^xsd:boolean .

@@ -1,0 +1,7 @@
+# example14.ttl
+@prefix ex: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:item3 ex:swimming_pool "true"^^xsd:boolean .
+ex:item4 ex:swimming_pool "false"^^xsd:boolean .
+ex:item4 ex:second_floor "true"^^xsd:boolean .

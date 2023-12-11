@@ -1,0 +1,19 @@
+@prefix altr-ext: <http://www.w3.org/ns/dx/conneg/altr-ext#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix ex:   <http://example.org/ns#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix shext: <http://example.com/shacl-extension#> .
+
+
+ex:OpenNodeShape
+    a              sh:NodeShape ;
+    sh:property [
+        sh:path rdfs:member ;
+        sh:maxCount 0 ;
+    ] ;
+    shext:bnode-depth 2 ;
+.

@@ -1,0 +1,11 @@
+# example03.ttl
+@prefix ex: <http://example.com/> .
+@prefix landsat: <http://example.com/landsat/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Positive test case: wrs_path values specified in the query
+ex:item19 landsat:wrs_path "153" .
+ex:item20 landsat:wrs_path "154" .
+
+# Negative test case: wrs_path values not specified in the query
+ex:item21 landsat:wrs_path "155" .

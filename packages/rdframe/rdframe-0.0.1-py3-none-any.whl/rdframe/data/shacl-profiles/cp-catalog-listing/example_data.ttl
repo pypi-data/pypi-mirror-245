@@ -1,0 +1,39 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Catalog-A a dcat:Catalog ;
+    dcterms:hasPart ex:Resource-A,
+                    ex:Resource-B,
+                    ex:Resource-C,
+                    ex:Resource-D,
+                    ex:Resource-E ;
+    rdfs:label "Catalog A" .
+
+ex:Catalog-B a dcat:Catalog ;
+    rdfs:label "Catalog B" .
+
+ex:Catalog-C a dcat:Catalog ;
+    rdfs:label "Catalog C" .
+
+ex:Catalog-D a dcat:Catalog ;
+    rdfs:label "Catalog D" .
+
+ex:Catalog-E a dcat:Catalog ;
+    rdfs:label "Catalog E" .
+
+ex:Resource-A a dcat:Resource ;
+    rdfs:label "Resource A" .
+
+ex:Resource-B a dcat:Resource ;
+    rdfs:label "Resource B" .
+
+ex:Resource-C a dcat:Resource ;
+    rdfs:label "Resource C" .
+
+ex:Resource-D a dcat:Resource ;
+    rdfs:label "Resource D" .
+
+ex:Resource-E a dcat:Resource ;
+    rdfs:label "Resource E" .

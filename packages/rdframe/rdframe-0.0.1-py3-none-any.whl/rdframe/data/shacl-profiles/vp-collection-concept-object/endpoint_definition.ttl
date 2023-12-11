@@ -1,0 +1,11 @@
+@prefix endpoint: <https://prez.dev/endpoint/vocprez/> .
+@prefix ont: <https://prez.dev/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+endpoint:cs-children a ont:ObjectEndpoint ;
+    ont:endpointTemplate "/v/collections/$parent_1/$object" ;
+    sh:targetNode "$object" ;
+.

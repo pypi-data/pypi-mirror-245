@@ -1,0 +1,29 @@
+@prefix endpoint: <https://prez.dev/endpoint/vocprez/> .
+@prefix ont: <https://prez.dev/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prez: <https://prez.dev/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix shext: <http://example.com/shacl-extension#> .
+
+endpoint:cs-children a ont:ListingEndpoint ;
+    sh:rule [ sh:subject sh:this ;
+              sh:predicate prez:hasChildren ;
+                sh:object "?hasChildren" ] ;
+    sh:target [ sh:select """SELECT DISTINCT ?focus_node ?hasChildren
+             WHERE {
+             $parent_1 skos:narrower|^skos:broader ?focus_node .
+             BIND(EXISTS{?focus_node skos:narrower|^skos:broader ?grandChildren} AS ?hasChildren)
+                }
+             """ ] ;
+    sh:targetClass skos:Concept ;
+    ont:endpointTemplate "/v/vocabs/$object/narrowers" ;
+    rdfs:comment """The concepts one level under top concepts. This query demonstrates how pagination of 2 items at a
+    time could work, the LIMIT is set to 3 such that we can determine if there are further (i.e. >2) objects available.""" ;
+    shext:limit 20 ;
+    shext:offset 0 ;
+    shext:orderBy [ sh:path skos:prefLabel ] ;
+    .
+

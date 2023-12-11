@@ -1,0 +1,8 @@
+# example01.ttl
+@prefix ex: <http://example.com/> .
+
+# Positive test case: specific scene_id value
+ex:item17 ex:scene_id "LC82030282019133LGN00" .
+
+# Negative test case: different scene_id value
+ex:item18 ex:scene_id "LC82030282019134LGN00" .

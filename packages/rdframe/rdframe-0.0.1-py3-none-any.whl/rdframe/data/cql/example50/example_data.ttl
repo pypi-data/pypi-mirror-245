@@ -1,0 +1,6 @@
+# example50.ttl
+@prefix ex: <http://example.com/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+ex:item10 geosparql:hasGeometry _:geom4 .
+_:geom4 geosparql:asWKT "POLYGON ((-179.912109 1.9, -179.912109 16.897016, 180 16.897016, 180 1.9, -179.912109 1.9))"^^geosparql:wktLiteral .

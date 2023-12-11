@@ -1,0 +1,24 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX endpoint: <https://prez.dev/endpoint/spaceprez/>
+PREFIX ont: <https://prez.dev/ont/>
+PREFIX prez: <https://prez.dev/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+@prefix shext: <http://example.com/shacl-extension#> .
+
+endpoint:feature-listing a ont:ListingEndpoint ;
+    sh:targetClass geo:Feature ;
+    ont:parentEndpoint endpoint:feature-collection-listing ;
+    ont:endpointTemplate "/s/datasets/$parent_2/collections/$parent_1/items" ;
+    sh:target [
+              sh:select """SELECT ?focus_node
+                 WHERE {
+                 $parent_1 rdfs:member ?focus_node .
+                 ?focus_node rdfs:label ?label .
+                    }
+                 """ ] ;
+    shext:limit 20 ;
+    shext:offset 0 ;
+.
