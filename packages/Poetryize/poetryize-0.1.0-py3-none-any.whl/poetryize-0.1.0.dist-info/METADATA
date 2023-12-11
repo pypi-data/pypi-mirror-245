@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: Poetryize
+Version: 0.1.0
+Summary: A script that utilized typer, rich to create a tool that converts requirements.txt to be compatible with poetry
+Home-page: https://github.com/thoth2357/poetry
+License: MIT
+Author: thoth2357
+Author-email: thoth2357@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (==3.8.4)
+Requires-Dist: aiosignal (==1.3.1)
+Requires-Dist: annotated-types (==0.5.0)
+Requires-Dist: asgiref (==3.7.2)
+Requires-Dist: async-timeout (==4.0.2)
+Requires-Dist: asyncio (==3.4.3)
+Requires-Dist: coveralls (>=3.3.1,<4.0.0)
+Requires-Dist: rich (>=13.6.0,<14.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Project-URL: Repository, https://github.com/thoth2357/poetry
+Description-Content-Type: text/markdown
+
+[![Tests](https://github.com/thoth2357/Poetryize/actions/workflows/python-app.yml/badge.svg)](https://github.com/thoth2357/Poetryize/actions/workflows/python-app.yml)
+
+
+# Project Title
+
+A brief description of what this project does and who it's for
+
+## Documentation
+
+[Documentation](https://linktodocumentation)
+
