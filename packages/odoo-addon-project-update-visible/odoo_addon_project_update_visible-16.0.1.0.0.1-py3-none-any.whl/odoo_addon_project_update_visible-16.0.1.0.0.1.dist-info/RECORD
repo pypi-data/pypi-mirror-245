@@ -1,0 +1,14 @@
+odoo/addons/project_update_visible/README.rst,sha256=IKGsDlo5ZGWkDzpN2CiC4kVSG7FGrdkFotBLWxeQuNo,2990
+odoo/addons/project_update_visible/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/project_update_visible/__manifest__.py,sha256=S6ukFnx8L4kSKWjo8A7UHk24oUG6Kx9a5JDZPTy6E1k,553
+odoo/addons/project_update_visible/i18n/project_update_visible.pot,sha256=leB6MlaWiU1sPOdcOTxNVY5KVORnHv0MfD14HgQJIIs,341
+odoo/addons/project_update_visible/readme/CONTRIBUTORS.rst,sha256=000IUBjCTG90_dnAZ6ERTdALU9mzYPYH15fhPrfBu_0,70
+odoo/addons/project_update_visible/readme/DESCRIPTION.rst,sha256=5zd6Cv7qUq39uxtO9PixTjyXYG3qr8pLfu88vfxBSvg,106
+odoo/addons/project_update_visible/readme/USAGE.rst,sha256=8t1H-rODAkeKSGYF3gcJ2FhHlZbQKN_eHNMHvMFpT6k,92
+odoo/addons/project_update_visible/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/project_update_visible/static/description/index.html,sha256=plzFR2wSFHAmE8VPay4xP3zoHfFib4h5kfZ5L3YiDSs,12254
+odoo/addons/project_update_visible/views/project_update_views.xml,sha256=1mFHTPQFzgQ0dKx6IEov8LlrYF3Y2A9rTYRvUufV320,443
+odoo_addon_project_update_visible-16.0.1.0.0.1.dist-info/METADATA,sha256=npI5h5jG9ZPaA8cXJTfO2U0dwQKoMkax8EyXnkyvjIk,3548
+odoo_addon_project_update_visible-16.0.1.0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+odoo_addon_project_update_visible-16.0.1.0.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_project_update_visible-16.0.1.0.0.1.dist-info/RECORD,,
