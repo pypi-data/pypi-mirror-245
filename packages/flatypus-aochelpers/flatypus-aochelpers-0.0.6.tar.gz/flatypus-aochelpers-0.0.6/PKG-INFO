@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: flatypus-aochelpers
+Version: 0.0.6
+Summary: My personal Advent of Code helper functions.
+Author: Hinson Chan
+Author-email: <yhc3141@gmail.com>
+Maintainer: Hinson Chan
+Maintainer-email: <yhc3141@gmail.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+My personal Advent of Code helper functions.
