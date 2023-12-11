@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "cvxsimulator"
+version = "v0.8.12"
+description = "Simple simulator for investors"
+authors = ["Thomas Schmelzer"]
+readme = "README.md"
+repository = "https://github.com/cvxgrp/simulator"
+packages = [{include = "cvx"}]
+homepage = "https://www.cvxgrp.org/simulator"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+numpy = "*"
+pandas = "*"
+quantstats = "*"
+ipython = "*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+pytest-cov = "*"
+mock = "*"
+pre-commit = "*"
+
+[tool.poetry.group.dev.dependencies]
+plotly = "*"
+loguru = "*"
+cvxpy = "*"
+
+[build-system]
+requires = ["poetry>=1.6.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+select = ["E", "F", "I"]
+line-length = 120
+target-version = "py310"
+exclude = [
+    "*__init__.py"
+]
