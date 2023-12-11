@@ -1,0 +1,7 @@
+setup.py
+src/examples/__init__.py
+src/examples/options.py
+src/parzivalpruebauwul.egg-info/PKG-INFO
+src/parzivalpruebauwul.egg-info/SOURCES.txt
+src/parzivalpruebauwul.egg-info/dependency_links.txt
+src/parzivalpruebauwul.egg-info/top_level.txt
