@@ -1,0 +1,7 @@
+cryptography
+httpx
+numpy
+pyngrok
+requests
+toml
+torch
