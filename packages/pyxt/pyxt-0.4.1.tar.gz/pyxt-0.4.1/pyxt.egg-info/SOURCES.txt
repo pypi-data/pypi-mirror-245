@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyxt/future.py
+pyxt/spot.py
+pyxt.egg-info/PKG-INFO
+pyxt.egg-info/SOURCES.txt
+pyxt.egg-info/dependency_links.txt
+pyxt.egg-info/not-zip-safe
+pyxt.egg-info/requires.txt
+pyxt.egg-info/top_level.txt
