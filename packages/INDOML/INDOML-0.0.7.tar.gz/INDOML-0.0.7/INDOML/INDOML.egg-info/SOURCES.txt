@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+INDOML/INDOML/__init__.py
+INDOML/INDOML.egg-info/PKG-INFO
+INDOML/INDOML.egg-info/SOURCES.txt
+INDOML/INDOML.egg-info/dependency_links.txt
+INDOML/INDOML.egg-info/requires.txt
+INDOML/INDOML.egg-info/top_level.txt
+INDOML/INDOML/model/__init__.py
+INDOML/INDOML/model/kombinasi.py
+INDOML/INDOML/model/unsupervised.py
+INDOML/INDOML/post_processing/__init__.py
+INDOML/INDOML/post_processing/evaluasi.py
+INDOML/INDOML/pre_proceesing/EDA.py
+INDOML/INDOML/pre_proceesing/__init__.py
