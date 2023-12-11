@@ -1,0 +1,6 @@
+setup.py
+rtxt_dep3.egg-info/PKG-INFO
+rtxt_dep3.egg-info/SOURCES.txt
+rtxt_dep3.egg-info/dependency_links.txt
+rtxt_dep3.egg-info/not-zip-safe
+rtxt_dep3.egg-info/top_level.txt
