@@ -1,0 +1,10 @@
+qoi/benchmark.py,sha256=oEXTY73ljrO_syD8suEghahNqg2s0CRjVVhvQIaFq0Y,10353
+qoi/_version.py,sha256=1NSg4yHgqJJKYBklxFwmel_5eSNX51umiqsyFgx4770,21
+qoi/__init__.py,sha256=q0obagcj2a-VnIHvosON57bT9bf-n7pHwvoBeLDeLyk,100
+qoi/qoi.cpython-310-darwin.so,sha256=HFx0tI4g1h81umiOwQ8MSYMrzSxNt45yXbodfcIwVPs,236840
+qoi/qoi.pxd,sha256=Eg4kSq-l5TYhzfaCEN2LEBOgzezwwpC2QV3jFqGRTig,547
+qoi-0.4.0.dist-info/RECORD,,
+qoi-0.4.0.dist-info/LICENSE,sha256=JsYO0mRPceEvqyUWIMBwDgfRofQ2ETOGGshxEPvSr2g,1066
+qoi-0.4.0.dist-info/WHEEL,sha256=3ggQLyEtwymd0rFFn7Y7bZeC-TPY--XSbFQw5jO7PyA,111
+qoi-0.4.0.dist-info/top_level.txt,sha256=LWoYKSrABOwLHx5X8OQc2EXjI9a6J_2UM4srvK4KcI8,4
+qoi-0.4.0.dist-info/METADATA,sha256=L1m2WVXvL80us6JkBzRw0npKDjxcBbOXX9xj_S2L_oY,9620
