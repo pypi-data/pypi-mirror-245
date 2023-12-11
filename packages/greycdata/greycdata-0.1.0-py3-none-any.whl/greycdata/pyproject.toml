@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "greycdata"
+version = "0.1.0"
+description = ""
+authors = ["Gauzere Benoit <benoit.gauzere@insa-rouen.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch-geometric = "^2.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
