@@ -1,0 +1,6 @@
+rbot-0.2.7.dist-info/METADATA,sha256=S_EAW7AVEcJ1pcGe7WnJyWwGjGMG84eVJDNMhwGsEyE,253
+rbot-0.2.7.dist-info/WHEEL,sha256=z0TuKcLVRJVTT24biW1YlCUcga4y6fgR5UgmsNCNDec,137
+rbot/__init__.py,sha256=N7Fut5tH4b1M2wl8nznYYzyy88GiwhLhoKACw2nVf0I,462
+rbot/chart/__init__.py,sha256=haKYYHtYTMGd-PrwVmzRzlczW9ZnsfHHNY6uLS_M3zE,8307
+rbot/rbot.pypy310-pp73-x86_64-linux-gnu.so,sha256=AxqBe2-L2OGS9f8KZl3nTCo4G0tahSrc6_MKieShpAs,59680632
+rbot-0.2.7.dist-info/RECORD,,
