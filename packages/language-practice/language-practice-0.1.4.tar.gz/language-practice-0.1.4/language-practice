@@ -1,0 +1,54 @@
+#!/usr/bin/python3
+
+#  pylint: disable=invalid-name
+
+"""
+Flash card app built for the Russian language.
+
+Inflection charts are pulled from wiktionary.
+"""
+
+import asyncio
+import sys
+
+from language_practice.terminal import Application
+
+
+def main():
+    """
+    Main function
+    """
+    traceback = False
+    reset = False
+    try:
+        if "--traceback" in sys.argv:
+            traceback = True
+            sys.argv.remove("--traceback")
+
+        if "--reset" in sys.argv:
+            reset = True
+            sys.argv.remove("--reset")
+
+        try:
+            word_file = sys.argv[1]
+        except IndexError as err:
+            print("USAGE: language-practice [--reset] [--traceback] <WORD_FILE.toml>")
+            raise RuntimeError(
+                "Missing required argument for path to word file"
+            ) from err
+
+        app = Application(word_file, reset)
+        asyncio.run(app.startup())
+        app.run()
+    except Exception as err:  # pylint: disable=broad-exception-caught
+        if traceback:
+            raise err
+
+        print(f"{err}")
+        sys.exit(1)
+    except KeyboardInterrupt:
+        print("Exiting...")
+
+
+if __name__ == "__main__":
+    main()
