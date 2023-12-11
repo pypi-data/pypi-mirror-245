@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/Linkreg.egg-info/PKG-INFO
+src/Linkreg.egg-info/SOURCES.txt
+src/Linkreg.egg-info/dependency_links.txt
+src/Linkreg.egg-info/top_level.txt
