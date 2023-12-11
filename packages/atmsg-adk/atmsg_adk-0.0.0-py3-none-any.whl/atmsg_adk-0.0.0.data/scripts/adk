@@ -1,0 +1,11 @@
+#!python
+import adk
+import sys
+
+# losh it
+argv = [sys.argv[1:], {}]
+
+try:
+    adk.mapping(argv)
+except:
+    exit()
