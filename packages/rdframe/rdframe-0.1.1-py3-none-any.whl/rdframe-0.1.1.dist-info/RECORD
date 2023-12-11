@@ -1,0 +1,11 @@
+rdframe/__init__.py,sha256=YSW-5BaFiYGThtu_xQgM6YL8E7WTCcpSASeoVDxyk38,138
+rdframe/cql_sparql_reference.py,sha256=UCAAotpFMxmGn4r5aB3pYj_Ny0QnkIDSlQdXAC96-WY,730
+rdframe/grammar/__init__.py,sha256=crZSaA0sexdaTPkBj-J3CVGYPlyOGM27yicazMIQUU0,30
+rdframe/grammar/readme.md,sha256=yUTrEOeVVDqwTv_oSXfkzYMy-va28sU87wS-e1O7TC4,444
+rdframe/grammar/sparql_grammar.py,sha256=mSM26UBGQT_pqwezugfCAllppUgb_VyxkzVjbgnxxkE,37970
+rdframe/x_to_sparql/__init__.py,sha256=vJ_uR-ptFmvP1dKg4FX3ODW-mVAPvadxn91gbpCrEsA,72
+rdframe/x_to_sparql/cql2sparql.py,sha256=1j89bD0k5xbNTIWdpR1QKjdvujZg9_yRuzfZIVb2NJs,12918
+rdframe/x_to_sparql/shacl2sparql.py,sha256=erEV83FNosriF41czNK434BWE1Aq-qGQMt1oqFUuGZY,26584
+rdframe-0.1.1.dist-info/METADATA,sha256=e8R-ce07h558x-j_X0BC93k3szcUlRGzqGelDrT8N1U,15307
+rdframe-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+rdframe-0.1.1.dist-info/RECORD,,
