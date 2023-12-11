@@ -1,0 +1,13 @@
+FLApy/DataManagement.py,sha256=dDdku608D0Men858BG66SSF0S1-8KGptUtmiQrhjzt8,33581
+FLApy/LAHanalysis.py,sha256=xqH007D-ULv0beIU_efR1lpRHvwSmpRwRRIdb3XXWfs,63300
+FLApy/LAcalculator.py,sha256=IwmXaqufwP5dA9GXpdB0doF4jiKAGMcFagnyjGROT6c,21436
+FLApy/Visualization.py,sha256=WM3Qr9mTIvFzruICpGSWM0Lc5CPjD8sKECBtoCRUG-Y,3786
+FLApy/__init__.py,sha256=Rq1y3CkV12THb0umdmiy6wfU_uBLV-n5XCpo6nn0bbY,560
+hemipy/__init__.py,sha256=COfjlEbECOH-dWmKnxAlSbZHyh594TyVUpQHXoAoGgw,74
+hemipy/hemipy.py,sha256=EmIEbGSbYhcHfkjXfH5ug17KyxeaaZ7B2DLyrZeSV1c,34467
+hemipy/hemipyRun.py,sha256=XJyAErc9WhKWHPGwZ_azQZ_Bp8MEjV-52DVQ95j6zAw,240
+FLApy-1.1.dist-info/LICENSE,sha256=wcJwAdegsPgqY-s1t6H9m5un6cTY5FD7eG8s8lKy9BU,1062
+FLApy-1.1.dist-info/METADATA,sha256=jF1cVZIyncH24mqAktpuN7dfZdzkumpjE9pFyRdYmF0,9958
+FLApy-1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+FLApy-1.1.dist-info/top_level.txt,sha256=N9dEC2RDLdsHrM-CRpU8kdVFnG1m6dCnvmNohsaIdBE,13
+FLApy-1.1.dist-info/RECORD,,
