@@ -1,0 +1,10 @@
+README.md
+setup.py
+LngDetectoR.egg-info/PKG-INFO
+LngDetectoR.egg-info/SOURCES.txt
+LngDetectoR.egg-info/dependency_links.txt
+LngDetectoR.egg-info/entry_points.txt
+LngDetectoR.egg-info/requires.txt
+LngDetectoR.egg-info/top_level.txt
+lngdetector/__init__.py
+lngdetector/main.py
