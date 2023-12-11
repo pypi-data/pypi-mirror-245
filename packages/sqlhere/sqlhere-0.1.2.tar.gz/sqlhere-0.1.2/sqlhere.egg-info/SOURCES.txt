@@ -1,0 +1,6 @@
+mdsupport/setup.py
+sqlhere.egg-info/PKG-INFO
+sqlhere.egg-info/SOURCES.txt
+sqlhere.egg-info/dependency_links.txt
+sqlhere.egg-info/requires.txt
+sqlhere.egg-info/top_level.txt

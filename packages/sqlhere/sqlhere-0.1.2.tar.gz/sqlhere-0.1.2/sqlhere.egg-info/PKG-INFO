@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: sqlhere
+Version: 0.1.2
+Requires-Dist: csvjsonsqlite3datetime
