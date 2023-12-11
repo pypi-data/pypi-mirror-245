@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+AncIndMatAst/AC.py
+AncIndMatAst/BA.py
+AncIndMatAst/BM.py
+AncIndMatAst/Eclipse.py
+AncIndMatAst/__init__.py
+AncIndMatAst.egg-info/PKG-INFO
+AncIndMatAst.egg-info/SOURCES.txt
+AncIndMatAst.egg-info/dependency_links.txt
+AncIndMatAst.egg-info/top_level.txt

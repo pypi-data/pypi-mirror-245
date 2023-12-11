@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: AncIndMatAst
+Version: 0.0.1
+Summary: Python Module for Ancient Indian Mathematics and Astronomy
+Home-page: 
+Author: Rahul Sah
+Author-email: 
+License: MIT
+Keywords: Ancient Indian Mathematics and Astronomy
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+Python Module for Ancient Indian Mathematics and Astronomy
