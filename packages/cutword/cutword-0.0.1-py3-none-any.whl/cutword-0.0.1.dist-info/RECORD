@@ -1,0 +1,9 @@
+cutword/__init__.py,sha256=ctVOHeIruCdCvre5kS9siJm3tqhTPO-Z4hvCfYEUQoo,71
+cutword/comparewithjieba.py,sha256=wl6QG1Cadoy1b8F215c6zprU80ngmEE0p3pEWVO1pZ4,1885
+cutword/cutword.py,sha256=-cXc3IasWSvlv0th86KRjh0fbeU4tNk4uVFkH3x-DIA,2412
+cutword/dict.txt,sha256=VOJ337uIvQzy9UAl_TJMeyg1KPP8pau4wXw4-zusYgA,2697364
+cutword-0.0.1.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+cutword-0.0.1.dist-info/METADATA,sha256=6B1rR0pjnf3i47vElErwNWSQa8AYIfHXrRhvuxFFVW8,746
+cutword-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cutword-0.0.1.dist-info/top_level.txt,sha256=yn3sFq2Ys7u2o_8bvdzFwwRBcXEpVzWDvHr8zhrUmYM,8
+cutword-0.0.1.dist-info/RECORD,,
