@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+GroupMkr/__init__.py
+GroupMkr/shellster.py
+GroupMkr.egg-info/PKG-INFO
+GroupMkr.egg-info/SOURCES.txt
+GroupMkr.egg-info/dependency_links.txt
+GroupMkr.egg-info/requires.txt
+GroupMkr.egg-info/top_level.txt
