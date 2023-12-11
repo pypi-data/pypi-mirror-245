@@ -1,0 +1,2 @@
+[console_scripts]
+gpm = pygpm.__main__:main

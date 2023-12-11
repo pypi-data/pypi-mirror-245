@@ -1,0 +1,10 @@
+
+[git]
+git
+
+[github cli]
+gh
+
+[linting]
+pylint
+mypy
