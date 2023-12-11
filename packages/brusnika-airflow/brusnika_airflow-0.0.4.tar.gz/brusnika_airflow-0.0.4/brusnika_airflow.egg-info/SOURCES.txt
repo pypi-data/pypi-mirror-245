@@ -1,0 +1,8 @@
+README.md
+airflow_funcs.py
+pyproject.toml
+brusnika_airflow.egg-info/PKG-INFO
+brusnika_airflow.egg-info/SOURCES.txt
+brusnika_airflow.egg-info/dependency_links.txt
+brusnika_airflow.egg-info/requires.txt
+brusnika_airflow.egg-info/top_level.txt
