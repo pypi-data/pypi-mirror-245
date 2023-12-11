@@ -1,0 +1,8 @@
+setup.py
+bigpi/__init__.py
+bigpi/sean_func.py
+bigpi/sean_func1.py
+bigpi.egg-info/PKG-INFO
+bigpi.egg-info/SOURCES.txt
+bigpi.egg-info/dependency_links.txt
+bigpi.egg-info/top_level.txt
