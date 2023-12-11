@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+hdnssod/__init__.py
+hdnssod.egg-info/PKG-INFO
+hdnssod.egg-info/SOURCES.txt
+hdnssod.egg-info/dependency_links.txt
+hdnssod.egg-info/top_level.txt
