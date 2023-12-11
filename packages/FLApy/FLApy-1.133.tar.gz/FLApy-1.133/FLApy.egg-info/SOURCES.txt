@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+FLApy/DataManagement.py
+FLApy/LAHanalysis.py
+FLApy/LAcalculator.py
+FLApy/Visualization.py
+FLApy/__init__.py
+FLApy.egg-info/PKG-INFO
+FLApy.egg-info/SOURCES.txt
+FLApy.egg-info/dependency_links.txt
+FLApy.egg-info/requires.txt
+FLApy.egg-info/top_level.txt
+dependencies/naturalneighbor-0.2.1-cp38-cp38-win_amd64.whl
