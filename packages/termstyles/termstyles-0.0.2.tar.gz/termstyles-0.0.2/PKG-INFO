@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: termstyles
+Version: 0.0.2
+Summary: Simple terminal coloring module
+Author: N0NL0C4L
+Author-email: <n0nl0c4l@gmail.com>
+Keywords: python,color,termstyles,terminal,console
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# termstyles
+
+termstyles is a simple terminal coloring module. Using termstyles you can write colored output to the terminal.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install termstyles.
+
+Windows
+```bash
+pip install termstyles
+```
+Linux/MacOS
+```bash
+python3 -m pip install termstyles
+```
+## Usage
+
+```python
+import termstyles
+
+# print out in color
+print(color.ForeStyles.green + 'Your text')
+# or
+print(termstyles.attach('Your text', attr=termstyles.ForeStyles.yellow))
+
+# reset text color to default
+print(color.ForeStyles.default)
+
+# outputting the background in color
+print(color.BackStyles.white + 'Your text')
+# or
+print(termstyles.attach('Your text', attr=termstyles.ForeStyles.red))
+
+# change text style
+print(color.Styles.bold + 'Your text')
+# or
+print(termstyles.attach('Your text', attr=termstyles.TextStyles.blink))
+
+# randomization
+random = termstyles.random(only=(termstyles.ForeStyles, termstyles.BackStyles))
+print(random + 'Your text')
+# or
+print(color.attach('Your text', attr=random))
+```
