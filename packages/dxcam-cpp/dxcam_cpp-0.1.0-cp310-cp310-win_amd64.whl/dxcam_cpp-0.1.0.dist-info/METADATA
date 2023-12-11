@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dxcam-cpp
+Version: 0.1.0
+Summary: A high performance screen capturing library for Windows
+Author-email: Fidel Yin <fidel.yin@hotmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/Fidelxyz/DXCam-CPP
+Project-URL: Repository, https://github.com/Fidelxyz/DXCam-CPP
+Project-URL: Issues, https://github.com/Fidelxyz/DXCam-CPP/issues
+Keywords: windows,screenshot,capture
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: C++
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Graphics :: Capture
+Classifier: Topic :: Multimedia :: Graphics :: Capture :: Screen Capture
+Requires-Python: >=3.7
+
