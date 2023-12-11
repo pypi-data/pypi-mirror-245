@@ -1,0 +1,77 @@
+[build-system]
+requires = ["scikit-build-core", "setuptools-scm"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "itaxotools-convphase"
+dynamic = ["version"]
+description = "A convenient phase program"
+readme = "README.md"
+requires-python = ">=3.10.2, <4"
+keywords = []
+authors = [
+    { name = "Stefanos Patmanidis", email = "stefanpatman91@gmail.com" },
+    { name = "Jan-Christopher Schmidt" },
+]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = [
+    "itaxotools-common",
+    "itaxotools-taxi2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "setuptools-scm",
+    "cibuildwheel",
+    "delocate",
+    "pre-commit",
+    "ruff",
+    "pytest",
+]
+
+[project.scripts]
+convphase = "itaxotools.convphase.__main__:run"
+
+[project.urls]
+Homepage = "https://itaxotools.org/"
+Source = "https://github.com/iTaxoTools/ConvPhase"
+
+[tool.scikit-build]
+metadata.version.provider = "scikit_build_core.metadata.setuptools_scm"
+wheel.packages = ["src/itaxotools"]
+
+[tool.setuptools_scm]
+
+[tool.ruff]
+ignore-init-module-imports = true
+extend-select = ["I"]
+exclude = [
+    "src/SeqPHASE",
+    "src/phase",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["itaxotools"]
+section-order = [
+    "future",
+    "pyqt",
+    "standard-library",
+    "third-party",
+    "first-party",
+    "local-folder",
+]
+
+[tool.ruff.lint.isort.sections]
+pyqt = ["PySide6"]
+
+[tool.cibuildwheel]
+test-requires = "pytest"
+test-command = "pytest {project}/tests"
