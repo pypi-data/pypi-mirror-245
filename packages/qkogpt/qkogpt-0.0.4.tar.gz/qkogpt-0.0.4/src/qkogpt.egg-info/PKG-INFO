@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: qkogpt
+Version: 0.0.2
+Summary: Quantized KoGPT
+Author: EuiYul Song
+Author-email: EuiYul Song <thddmlduf@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/euiyulsong/qkogpt
+Project-URL: Issues, https://github.com/euiyulsong/qkogpt/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: transformers
+Requires-Dist: bitsandbytes==0.39.0
+Requires-Dist: peft
+Requires-Dist: wandb
+Requires-Dist: accelerate
+Requires-Dist: datasets
+Requires-Dist: evaluate
+Requires-Dist: torchtext==0.2.3
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: rouge-score
+Requires-Dist: setuptools
+Requires-Dist: wheel
+Requires-Dist: twine
+Requires-Dist: build
+Requires-Dist: keyrings.alt
+
+# quantization
