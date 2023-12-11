@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: chemgraph
+Version: 0.0.14
+Summary: Chemical data plotting
+Home-page: https://github.com/eduardob999/chemgraph
+Author: Eduardo Bogado
+Author-email: eduardob1999@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+UNKNOWN
+
+
