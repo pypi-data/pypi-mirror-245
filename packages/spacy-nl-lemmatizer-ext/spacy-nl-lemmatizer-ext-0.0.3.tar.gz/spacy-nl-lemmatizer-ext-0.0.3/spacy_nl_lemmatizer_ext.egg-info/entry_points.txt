@@ -1,0 +1,5 @@
+[console_scripts]
+nl-lemmatizer-util = spacy_nl_lemmatizer_ext.cli:main
+
+[spacy_factories]
+gigant_lemmatizer = spacy_nl_lemmatizer_ext.pipeline.gigant_lemmatizer

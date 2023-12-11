@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: spacy-nl-lemmatizer-ext
+Version: 0.0.3
+Summary: Dutch lemmatizer extensions
+Requires-Python: >=3.6

@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+spacy_nl_lemmatizer_ext/__init__.py
+spacy_nl_lemmatizer_ext.egg-info/PKG-INFO
+spacy_nl_lemmatizer_ext.egg-info/SOURCES.txt
+spacy_nl_lemmatizer_ext.egg-info/dependency_links.txt
+spacy_nl_lemmatizer_ext.egg-info/entry_points.txt
+spacy_nl_lemmatizer_ext.egg-info/requires.txt
+spacy_nl_lemmatizer_ext.egg-info/top_level.txt
+spacy_nl_lemmatizer_ext.egg-info/zip-safe
+spacy_nl_lemmatizer_ext/cli/__init__.py
+spacy_nl_lemmatizer_ext/cli/convert.py
+spacy_nl_lemmatizer_ext/cli/extend_pipeline.py
+spacy_nl_lemmatizer_ext/pipeline/__init__.py
+spacy_nl_lemmatizer_ext/pipeline/gigant_lemmatizer.py
