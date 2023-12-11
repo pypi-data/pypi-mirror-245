@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+glvrd/__init__.py
+glvrd/client.py
+glvrd.egg-info/PKG-INFO
+glvrd.egg-info/SOURCES.txt
+glvrd.egg-info/dependency_links.txt
+glvrd.egg-info/requires.txt
+glvrd.egg-info/top_level.txt
