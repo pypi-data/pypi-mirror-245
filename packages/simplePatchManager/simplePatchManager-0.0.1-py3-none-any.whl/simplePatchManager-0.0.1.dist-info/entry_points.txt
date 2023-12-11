@@ -1,0 +1,2 @@
+[console_scripts]
+spm = simplePatchManager.__main__:main
