@@ -1,0 +1,2 @@
+[console_scripts]
+cleanup = file_manager:main

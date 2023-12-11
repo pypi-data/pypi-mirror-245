@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/__init__.py
+src/file_manager.py
+src/filecleaner.egg-info/PKG-INFO
+src/filecleaner.egg-info/SOURCES.txt
+src/filecleaner.egg-info/dependency_links.txt
+src/filecleaner.egg-info/entry_points.txt
+src/filecleaner.egg-info/requires.txt
+src/filecleaner.egg-info/top_level.txt
