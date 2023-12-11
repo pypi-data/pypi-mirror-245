@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/investlife.py
+src/invest_life.egg-info/PKG-INFO
+src/invest_life.egg-info/SOURCES.txt
+src/invest_life.egg-info/dependency_links.txt
+src/invest_life.egg-info/top_level.txt
+tests/test.py

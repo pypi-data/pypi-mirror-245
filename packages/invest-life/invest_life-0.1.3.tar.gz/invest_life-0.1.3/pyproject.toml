@@ -1,0 +1,18 @@
+[project]
+name = "invest_life"
+version = "0.1.3"
+authors = [
+  { name="kelvin", email="service@investlife.cn" },
+]
+description = "a package from investor"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://investlife.cn/"
+"Bug Tracker" = "https://investlife.cn/info/author.html"

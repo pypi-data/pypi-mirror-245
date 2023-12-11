@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: invest_life
+Version: 0.1.3
+Summary: a package from investor
+Author-email: kelvin <service@investlife.cn>
+Project-URL: Homepage, https://investlife.cn/
+Project-URL: Bug Tracker, https://investlife.cn/info/author.html
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Invest Life
+
+This is a simple package for investor. You can use
+[Invest Life](https://investlife.cn/)
+to know how to use the package, or contact me directly.
