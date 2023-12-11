@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: smpconsole
+Version: 1.0.0
+Summary: best console experience
+Author: khiemndd
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+
+# smpConsole
+
+Replace command print via smpConsole for a better experience
+
+Feature debug, info, printf, printe
+
+# Install
+
+```
+pip install smpconsole
+```
+
+# Usage
+### Demo
+![Demo](demo.png)
