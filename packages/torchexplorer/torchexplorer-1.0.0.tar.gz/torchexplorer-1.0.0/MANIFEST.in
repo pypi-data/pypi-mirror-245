@@ -1,0 +1,2 @@
+exclude torchexplorer/vega/vega_raw.json
+recursive-exclude * *.pyc
