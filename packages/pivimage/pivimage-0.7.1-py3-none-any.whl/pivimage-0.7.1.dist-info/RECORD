@@ -1,0 +1,13 @@
+pivimage/__init__.py,sha256=d8MfanmSJPWWZDHo-kxdu045Cy2P3lkZKvZeBhWb8KM,252
+pivimage/_version.py,sha256=AF93zpZEHVUeplkVzb41dSH3ZuODiPyJ02CgVX_ln0U,362
+pivimage/pivimage.py,sha256=M3Qewz4fUMh4hosg4W38bx1FMOzZ5ENkrDzeBAFb3Ek,20050
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pivimage.py,sha256=uMK8S13zMzcndCMh4DrLoSgx_G6nq-4wBeGDSugK1KY,8698
+tests/test_pivimagepair.py,sha256=u7jvldi4Nk3yCH3peuTRoYAZOVMnZXQr_cBmhyEesEA,988
+tests/test_pivimages.py,sha256=WMCFL3ebauAOmNuOlSas1MJvrCmpuQFfqXhAOLBA0Qc,754
+tests/test_version.py,sha256=O5qsgOJTnibhTlFvr3MchoRokkVfMXT_DNgLJqB8r2A,548
+pivimage-0.7.1.dist-info/LICENSE,sha256=g_5JdLm9CtfJcyvf2TcAh8HoUfX1ScU7q0QvODRJJnw,1090
+pivimage-0.7.1.dist-info/METADATA,sha256=GeyCLlsr5Er2rGrrBmvIKgj6391HDtx_Q71wOZqhoss,2148
+pivimage-0.7.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pivimage-0.7.1.dist-info/top_level.txt,sha256=dG9dswh8ae-tHNrRELwXujI7zHlhs8s_CBShT8yIjtk,15
+pivimage-0.7.1.dist-info/RECORD,,
