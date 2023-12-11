@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/dialoget.egg-info/PKG-INFO
+src/dialoget.egg-info/SOURCES.txt
+src/dialoget.egg-info/dependency_links.txt
+src/dialoget.egg-info/requires.txt
+src/dialoget.egg-info/top_level.txt
