@@ -1,0 +1,8 @@
+image: registry.gitlab.com/adriandc/gitlabci-local/alpine:3
+
+stages:
+  - scripts
+
+'Job 1':
+  stage: scripts
+  script: []

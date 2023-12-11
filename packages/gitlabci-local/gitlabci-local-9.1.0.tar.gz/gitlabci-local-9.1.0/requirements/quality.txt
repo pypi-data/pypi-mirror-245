@@ -1,0 +1,6 @@
+mypy>=0.971
+pylint>=2.6.0
+types-PyYAML>=6.0.12.2
+types-setuptools>=65.3.0
+unify>=0.5
+yapf>=0.29.0

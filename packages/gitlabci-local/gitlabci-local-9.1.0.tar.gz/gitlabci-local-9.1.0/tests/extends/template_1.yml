@@ -1,0 +1,4 @@
+.template_1:
+  image: registry.gitlab.com/adriandc/gitlabci-local/alpine:3.11
+  before_script:
+    - echo 'Template 1 [BEFORE]'

@@ -1,0 +1,854 @@
+image: registry.gitlab.com/adriandc/gitlabci-local/python:3.11-alpine
+
+stages:
+  - development
+  - prepare
+  - build
+  - test
+  - quality
+  - deploy
+
+variables:
+  DOCKER_HOST: tcp://docker:2375
+  EXECUTOR_HOST: preview
+  EXECUTOR_TOOL: gitlabci-local
+  REGISTRY_HOST: registry.gitlab.com
+  REGISTRY_OWNER: adriandc
+  REGISTRY_PROJECT: gitlabci-local
+
+.local:
+  engine: docker,auto
+  real_paths: true
+  sockets: true
+  variables:
+    DOCKER_HOST: ''
+  version: 9.0
+
+# =============================================================================
+# Stage: development
+
+changelog:
+  stage: development
+  image: local:silent
+  script:
+    - mkdir -p ./.tmp/
+    - |
+      if ! ls ./.tmp/git-chglog.tar.gz >/dev/null 2>&1; then
+        wget -O ./.tmp/git-chglog.tar.gz -q https://github.com/git-chglog/git-chglog/releases/download/v0.15.4/git-chglog_0.15.4_linux_amd64.tar.gz
+        tar -xzf ./.tmp/git-chglog.tar.gz -C ./.tmp/
+        rm -f ./.tmp/git-chglog.tar.gz
+        chmod +x ./.tmp/git-chglog
+      fi
+    - 'echo -n " > Current commit : "'
+    - git describe --always
+    - echo ''
+    - 'read -p " > Release tag : " -r tag'
+    - echo ''
+    - git tag -f -m '' "${tag}"
+    - ./.tmp/git-chglog -o ./CHANGELOG.md
+    - sed -i "s#raw/[^/]*/docs#raw/${tag}/docs#g" ./README.md
+    - git add -v ./CHANGELOG.md ./README.md
+    - 'git commit -m "docs(changelog): regenerate release tag changes history" -s'
+    - git tag -f -m '' "${tag}"
+    - ./.tmp/git-chglog -o ./CHANGELOG.md
+    - sh ./.chglog/changelog.sh --clean
+    - git add -v ./CHANGELOG.md
+    - git commit --amend --no-edit
+    - git tag -f -m '' "${tag}"
+  rules:
+    - if: $CI_LOCAL
+
+images:
+  stage: development
+  image: local:silent
+  script:
+    # Rehost standard images
+    - |
+      for image in \
+          alpine:3 \
+          alpine:3.11 \
+          alpine:3.12 \
+          alpine/git:latest \
+          debian:testing-slim \
+          docker:dind \
+          docker:latest \
+          python:3.6 \
+          python:3.6-alpine \
+          python:3.11 \
+          python:3.11-alpine \
+          ruby:3.1 \
+          sonarsource/sonar-scanner-cli:latest \
+          tobix/pywine:3.7 \
+          toopher/centos-i386:centos6 \
+          ubuntu:20.04 \
+      ; do
+        if [ -z "${IMAGE}" ] || echo "${image}" | grep -q "${IMAGE}"; then
+          echo ''
+          echo " [INFO] Pull: ${image}"
+          echo ''
+          docker pull "${image}"
+          docker tag "${image}" "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+          echo ''
+          echo " [INFO] Push: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+          echo ''
+          docker push "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+          docker rmi "${image}" >/dev/null
+        fi
+      done
+    # Prepare build image
+    - |
+      base='python:3.11-alpine'
+      image='gitlabci-local:build'
+      if [ -z "${IMAGE}" ] || echo "${image}" | grep -q "${IMAGE}"; then
+        echo ''
+        echo " [INFO] Pull: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        echo ''
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" || true
+        docker build -t "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" -f - . <<-EOF
+      FROM ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}
+      RUN apk add -q git
+      COPY ./requirements/runtime.txt /tmp/
+      COPY ./requirements/build.txt /tmp/
+      RUN export PIP_DISABLE_PIP_VERSION_CHECK=1 \
+       && pip3 install -q -r /tmp/runtime.txt --no-cache-dir --upgrade \
+       && pip3 install -q -r /tmp/build.txt --no-cache-dir --upgrade \
+       && rm -f /tmp/runtime.txt \
+       && rm -f /tmp/build.txt
+      EOF
+        echo ''
+        echo " [INFO] Push: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+        echo ''
+        docker push "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+      fi
+    # Prepare codestyle image
+    - |
+      base='python:3.11-alpine'
+      image='gitlabci-local:codestyle'
+      if [ -z "${IMAGE}" ] || echo "${image}" | grep -q "${IMAGE}"; then
+        echo ''
+        echo " [INFO] Pull: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        echo ''
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" || true
+        docker build -t "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" -f- . <<-EOF
+      FROM ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}
+      RUN apk add -q git
+      COPY ./requirements/runtime.txt /tmp/
+      COPY ./requirements/quality.txt /tmp/
+      COPY ./requirements/tests.txt /tmp/
+      RUN export PIP_DISABLE_PIP_VERSION_CHECK=1 \
+       && pip3 install -q -r /tmp/runtime.txt --no-cache-dir --upgrade \
+       && pip3 install -q -r /tmp/quality.txt --no-cache-dir --upgrade \
+       && pip3 install -q -r /tmp/tests.txt --no-cache-dir --upgrade \
+       && rm -f /tmp/runtime.txt \
+       && rm -f /tmp/quality.txt \
+       && rm -f /tmp/tests.txt
+      EOF
+        echo ''
+        echo " [INFO] Push: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+        echo ''
+        docker push "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+      fi
+    # Prepare deploy image
+    - |
+      base='python:3.11-alpine'
+      image='gitlabci-local:deploy'
+      if [ -z "${IMAGE}" ] || echo "${image}" | grep -q "${IMAGE}"; then
+        echo ''
+        echo " [INFO] Pull: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        echo ''
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" || true
+        docker build -t "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" -f - . <<-EOF
+      FROM ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}
+      RUN apk add -q gcc git libc-dev libffi-dev sed
+      COPY ./requirements/deploy.txt /tmp/
+      RUN export PIP_DISABLE_PIP_VERSION_CHECK=1 \
+       && pip3 install -q -r /tmp/deploy.txt --no-cache-dir --upgrade \
+       && rm -f /tmp/deploy.txt
+      EOF
+        echo ''
+        echo " [INFO] Push: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+        echo ''
+        docker push "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+      fi
+    # Prepare preview image
+    - |
+      base='python:3.11-alpine'
+      image='gitlabci-local:preview'
+      if [ -z "${IMAGE}" ] || echo "${image}" | grep -q "${IMAGE}"; then
+        echo ''
+        echo " [INFO] Pull: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        echo ''
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" || true
+        docker build -t "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" -f- . <<-EOF
+      FROM ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}
+      RUN apk add docker
+      COPY ./requirements/docs.txt /tmp/
+      COPY ./requirements/tests.txt /tmp/
+      RUN export PIP_DISABLE_PIP_VERSION_CHECK=1 \
+       && pip3 install -q -r /tmp/docs.txt --no-cache-dir --upgrade \
+       && pip3 install -q -r /tmp/tests.txt --no-cache-dir --upgrade \
+       && rm -f /tmp/docs.txt \
+       && rm -f /tmp/tests.txt
+      EOF
+        echo ''
+        echo " [INFO] Push: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+        echo ''
+        docker push "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+      fi
+    # Prepare test-coverage-docker image
+    - |
+      base='python:3.11'
+      image='gitlabci-local:test-coverage-docker'
+      if [ -z "${IMAGE}" ] || echo "${image}" | grep -q "${IMAGE}"; then
+        echo ''
+        echo " [INFO] Pull: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        echo ''
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" || true
+        docker build -t "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" -f- . <<-EOF
+      FROM ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}
+      RUN apt-get update -qq \
+       && apt-get install -qq -y sudo time 2>&1 | grep 'Setting up' \
+       && rm -rf /var/lib/apt/lists/*
+      COPY ./requirements/runtime.txt /tmp/
+      COPY ./requirements/coverage.txt /tmp/
+      COPY ./requirements/tests.txt /tmp/
+      RUN export PIP_DISABLE_PIP_VERSION_CHECK=1 \
+       && pip3 install -q -r /tmp/runtime.txt --no-cache-dir --upgrade \
+       && pip3 install -q -r /tmp/coverage.txt --no-cache-dir --upgrade \
+       && pip3 install -q -r /tmp/tests.txt --no-cache-dir --upgrade \
+       && rm -f /tmp/runtime.txt \
+       && rm -f /tmp/coverage.txt \
+       && rm -f /tmp/tests.txt
+      EOF
+        echo ''
+        echo " [INFO] Push: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+        echo ''
+        docker push "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+      fi
+    # Prepare test-coverage-podman image
+    - |
+      base='python:3.11'
+      image='gitlabci-local:test-coverage-podman'
+      if [ -z "${IMAGE}" ] || echo "${image}" | grep -q "${IMAGE}"; then
+        echo ''
+        echo " [INFO] Pull: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        echo ''
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" || true
+        docker build -t "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" -f- . <<-EOF
+      FROM ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}
+      RUN apt-get update -qq \
+       && apt-get install -qq -y sudo time 2>&1 | grep 'Setting up' \
+       && rm -rf /var/lib/apt/lists/*
+      RUN apt-get update -qq \
+       && apt-get install -qq -y podman 2>&1 | grep 'Setting up podman' \
+       && rm -rf /var/lib/apt/lists/*
+      COPY ./requirements/runtime.txt /tmp/
+      COPY ./requirements/coverage.txt /tmp/
+      COPY ./requirements/tests.txt /tmp/
+      RUN export PIP_DISABLE_PIP_VERSION_CHECK=1 \
+       && pip3 install -q -r /tmp/runtime.txt --no-cache-dir --upgrade \
+       && pip3 install -q -r /tmp/coverage.txt --no-cache-dir --upgrade \
+       && pip3 install -q -r /tmp/tests.txt --no-cache-dir --upgrade \
+       && rm -f /tmp/runtime.txt \
+       && rm -f /tmp/coverage.txt \
+       && rm -f /tmp/tests.txt
+      EOF
+        echo ''
+        echo " [INFO] Push: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+        echo ''
+        docker push "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+      fi
+    # Prepare test-coverage-windows image
+    - |
+      base='tobix/pywine:3.7'
+      image='gitlabci-local:test-coverage-windows'
+      if [ -z "${IMAGE}" ] || echo "${image}" | grep -q "${IMAGE}"; then
+        echo ''
+        echo " [INFO] Pull: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        echo ''
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" || true
+        docker build -t "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" -f- . <<-EOF
+      FROM ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}
+      RUN echo 'wine pip3 "\${@}"' | tee /usr/local/bin/pip3 >/dev/null \
+       && chmod a+x /usr/local/bin/pip3 \
+       && export PIP_DISABLE_PIP_VERSION_CHECK=1 \
+       && pip3 install -q --no-cache-dir --upgrade wheel 2>/dev/null
+      COPY ./requirements/runtime.txt /tmp/
+      COPY ./requirements/coverage.txt /tmp/
+      COPY ./requirements/tests.txt /tmp/
+      RUN export PIP_DISABLE_PIP_VERSION_CHECK=1 \
+       && pip3 install -q -r /tmp/runtime.txt --no-cache-dir --upgrade \
+       && pip3 install -q -r /tmp/coverage.txt --no-cache-dir --upgrade \
+       && pip3 install -q -r /tmp/tests.txt --no-cache-dir --upgrade \
+       && rm -f /tmp/runtime.txt \
+       && rm -f /tmp/coverage.txt \
+       && rm -f /tmp/tests.txt \
+       && echo 'wine coverage "\${@}"' | tee /usr/local/bin/coverage >/dev/null \
+       && chmod a+x /usr/local/bin/coverage
+      EOF
+        echo ''
+        echo " [INFO] Push: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+        echo ''
+        docker push "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+      fi
+    # Prepare test-oldest-docker image
+    - |
+      base='python:3.6'
+      image='gitlabci-local:test-oldest-docker'
+      if [ -z "${IMAGE}" ] || echo "${image}" | grep -q "${IMAGE}"; then
+        echo ''
+        echo " [INFO] Pull: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        echo ''
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" || true
+        docker build -t "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" -f- . <<-EOF
+      FROM ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}
+      RUN apt-get update -qq \
+       && apt-get install -qq -y sudo time 2>&1 | grep 'Setting up' \
+       && rm -rf /var/lib/apt/lists/*
+      COPY ./requirements/tests.txt /tmp/
+      RUN export PIP_DISABLE_PIP_VERSION_CHECK=1 \
+       && pip3 install -q -r /tmp/tests.txt --no-cache-dir --upgrade \
+       && rm -f /tmp/tests.txt
+      EOF
+        echo ''
+        echo " [INFO] Push: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+        echo ''
+        docker push "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+      fi
+    # Prepare test-latest-docker image
+    - |
+      base='python:3.11'
+      image='gitlabci-local:test-latest-docker'
+      if [ -z "${IMAGE}" ] || echo "${image}" | grep -q "${IMAGE}"; then
+        echo ''
+        echo " [INFO] Pull: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        echo ''
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" || true
+        docker build -t "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" -f- . <<-EOF
+      FROM ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}
+      RUN apt-get update -qq \
+       && apt-get install -qq -y sudo time 2>&1 | grep 'Setting up' \
+       && rm -rf /var/lib/apt/lists/*
+      COPY ./requirements/tests.txt /tmp/
+      RUN export PIP_DISABLE_PIP_VERSION_CHECK=1 \
+       && pip3 install -q -r /tmp/tests.txt --no-cache-dir --upgrade \
+       && rm -f /tmp/tests.txt
+      EOF
+        echo ''
+        echo " [INFO] Push: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+        echo ''
+        docker push "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+      fi
+    # Prepare test-oldest-podman image
+    - |
+      base='python:3.6'
+      image='gitlabci-local:test-oldest-podman'
+      if [ -z "${IMAGE}" ] || echo "${image}" | grep -q "${IMAGE}"; then
+        echo ''
+        echo " [INFO] Pull: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        echo ''
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" || true
+        docker build -t "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" -f- . <<-EOF
+      FROM ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}
+      RUN apt-get update -qq \
+       && apt-get install -qq -y sudo time 2>&1 | grep 'Setting up' \
+       && rm -rf /var/lib/apt/lists/*
+      RUN apt-get update -qq \
+       && apt-get install -qq -y podman 2>&1 | grep 'Setting up podman' \
+       && rm -rf /var/lib/apt/lists/*
+      COPY ./requirements/tests.txt /tmp/
+      RUN export PIP_DISABLE_PIP_VERSION_CHECK=1 \
+       && pip3 install -q -r /tmp/tests.txt --no-cache-dir --upgrade \
+       && rm -f /tmp/tests.txt
+      EOF
+        echo ''
+        echo " [INFO] Push: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+        echo ''
+        docker push "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+      fi
+    # Prepare test-latest-podman image
+    - |
+      base='python:3.11'
+      image='gitlabci-local:test-latest-podman'
+      if [ -z "${IMAGE}" ] || echo "${image}" | grep -q "${IMAGE}"; then
+        echo ''
+        echo " [INFO] Pull: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        echo ''
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}"
+        docker pull "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" || true
+        docker build -t "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}" -f- . <<-EOF
+      FROM ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${base}
+      RUN apt-get update -qq \
+       && apt-get install -qq -y sudo time 2>&1 | grep 'Setting up' \
+       && rm -rf /var/lib/apt/lists/*
+      RUN apt-get update -qq \
+       && apt-get install -qq -y podman 2>&1 | grep 'Setting up podman' \
+       && rm -rf /var/lib/apt/lists/*
+      COPY ./requirements/tests.txt /tmp/
+      RUN export PIP_DISABLE_PIP_VERSION_CHECK=1 \
+       && pip3 install -q -r /tmp/tests.txt --no-cache-dir --upgrade \
+       && rm -f /tmp/tests.txt
+      EOF
+        echo ''
+        echo " [INFO] Push: ${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+        echo ''
+        docker push "${REGISTRY_HOST}/${REGISTRY_OWNER}/${REGISTRY_PROJECT}/${image}"
+      fi
+  rules:
+    - if: $CI_LOCAL
+
+preview:
+  stage: development
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:preview
+  before_script:
+    - pip3 install -q ./dist/*.whl 2>/dev/null
+  script:
+    - pexpect-executor -- termtosvg ./docs/preview.svg -c 'python3 ./docs/preview.py' -g 80x24 -t ./docs/template.svg
+  rules:
+    - if: $CI_LOCAL
+
+# =============================================================================
+# Stage: prepare
+
+codestyle:
+  stage: prepare
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:codestyle
+  script:
+    - yapf -i ./docs/*.py ./gitlabci_local/*.py ./gitlabci_local/*/*.py ./setup.py
+    - unify -i --quote "'" ./docs/*.py ./gitlabci_local/*.py ./gitlabci_local/*/*.py ./setup.py
+    - echo '' && git diff --name-status
+    - git diff --quiet
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "develop"
+      changes:
+        - 'CHANGELOG.md'
+        - 'docs/**/*'
+        - 'gitlabci_local/**/*'
+        - 'requirements/**/*'
+        - 'setup.py'
+    - if: $CI_COMMIT_TAG || $CI_PIPELINE_SOURCE == "trigger" || $CI_PIPELINE_SOURCE == "web" || $CI_COMMIT_REF_NAME != "develop"
+      when: on_success
+  allow_failure: true
+
+lint:
+  stage: prepare
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:codestyle
+  script:
+    - pylint --errors-only ./docs/ ./gitlabci_local/ ./setup.py
+    - pylint --disable=missing-docstring --load-plugins=pylint.extensions.no_self_use ./docs/ ./gitlabci_local/ ./setup.py
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "develop"
+      changes:
+        - 'CHANGELOG.md'
+        - 'docs/**/*'
+        - 'gitlabci_local/**/*'
+        - 'requirements/**/*'
+        - 'setup.py'
+    - if: $CI_COMMIT_TAG || $CI_PIPELINE_SOURCE == "trigger" || $CI_PIPELINE_SOURCE == "web" || $CI_COMMIT_REF_NAME != "develop"
+      when: on_success
+  allow_failure: true
+
+typings:
+  stage: prepare
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:codestyle
+  variables:
+    MYPY_FORCE_COLOR: 1
+    TERM: ansi
+  script:
+    - mypy --follow-imports silent --pretty $(git diff --name-only $(git diff --exit-code >/dev/null && echo 'HEAD^' || echo 'HEAD') ./docs/ ./gitlabci_local/ ./setup.py) 2>/dev/null || true
+    - sleep 1
+    - mypy --follow-imports silent --pretty ./docs/ ./gitlabci_local/ ./setup.py || true
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "develop"
+      changes:
+        - 'CHANGELOG.md'
+        - 'docs/**/*'
+        - 'gitlabci_local/**/*'
+        - 'requirements/**/*'
+        - 'setup.py'
+    - if: $CI_COMMIT_TAG || $CI_PIPELINE_SOURCE == "trigger" || $CI_PIPELINE_SOURCE == "web" || $CI_COMMIT_REF_NAME != "develop"
+      when: on_success
+  allow_failure: true
+
+# =============================================================================
+# Stage: build
+
+build:
+  stage: build
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:build
+  needs: []
+  script:
+    - rm -rf ./build ./dist ./*.egg-info ./.eggs
+    - python3 -m build
+  after_script:
+    - rm -rf ./build ./*.egg-info ./.eggs
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "develop"
+      changes:
+        - 'CHANGELOG.md'
+        - 'gitlabci_local/**/*'
+        - 'requirements/**/*'
+    - if: $CI_COMMIT_TAG || $CI_PIPELINE_SOURCE == "trigger" || $CI_PIPELINE_SOURCE == "web" || $CI_COMMIT_REF_NAME != "develop"
+      when: on_success
+  artifacts:
+    paths:
+      - dist/
+
+install:
+  stage: build
+  image: local:quiet
+  script:
+    - pipx uninstall $(ls -1 ./dist/*.whl | cut -d'/' -f3 | cut -d'-' -f1) || true
+    - pipx install --force ./dist/*.whl
+  rules:
+    - if: $CI_LOCAL
+
+# =============================================================================
+# Stage: test (templates)
+
+.unit-tests-docker:
+  services:
+    - docker:dind
+  needs:
+    - build
+  variables:
+    DOCKER_DRIVER: overlay2
+
+.unit-tests-podman:
+  needs:
+    - build
+  variables:
+    CI_LOCAL_NETWORK: host
+  before_script:
+    - export DOCKER_HOST='tcp://127.0.0.1:9999'
+    - sed -i 's#.*cgroup_manager = ".*"#cgroup_manager = "cgroupfs"#g' /usr/share/containers/containers.conf
+    - sed -i 's#.*events_logger = ".*"#events_logger = "file"#g' /usr/share/containers/containers.conf
+    - sed -i 's#.*log_driver = ".*"#log_driver = "k8s-file"#g' /usr/share/containers/containers.conf
+    - sed -i '/# unqualified-search-registries =/a unqualified-search-registries = ["docker.io"]' /etc/containers/registries.conf
+    - |
+      cat >>/etc/containers/storage.conf <<EOF
+      [storage]
+      driver = "vfs"
+      runroot = "/var/run/containers/storage"
+      graphroot = "/var/run/containers/storage"
+      EOF
+
+.unit-tests-rules:
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "develop"
+      changes:
+        - 'CHANGELOG.md'
+        - 'gitlabci_local/**/*'
+        - 'requirements/**/*'
+    - if: $CI_COMMIT_TAG || $CI_PIPELINE_SOURCE == "trigger" || $CI_PIPELINE_SOURCE == "web" || $CI_COMMIT_REF_NAME != "develop"
+      when: on_success
+
+.unit-tests-template:
+  stage: test
+  timeout: 20m
+  variables:
+    CI_LOCAL_UPDATES_DISABLE: 'true'
+    FORCE_COLOR: 1
+    TEMP: .tmp
+    TERM: ansi
+  before_script:
+    - mkdir -p ./.tmp/
+    - pip3 install ./dist/*.whl
+    - pip3 install --force-reinstall --no-deps --upgrade ./dist/*.whl
+    - pip3 show gitlabci-local
+  script:
+    # Prepare tests
+    - export SUITE=$(echo "${SUITE}" | sed 's/,/\\|/g')
+    - if [ ! -z "${SUITE}" ]; then ls -1d ./tests/* | grep -q "\/\(${SUITE}\)" || (set +x; echo ''; echo -e '\033[1;31m[ERROR] The requested SUITE filter does not match any suite\033[0m'; echo ''; exit 1); fi
+    - |
+      if [ ! -z "${CI_LOCAL_HOST}" ]; then
+        (
+          set +x
+          echo ''
+          echo ' [INFO] Access to "sudo" required during sudo related tests...'
+          echo ''
+          sudo echo -n ''
+          echo ''
+        )
+      fi
+    # Run tests
+    - for path in $(ls -1d ./tests/* | grep "\/\(${SUITE}\)"); do (cd "${path}/" && time sh ./test.sh 2>&1); done
+    # Finish tests
+    - |
+      (
+        set +x
+        echo ''
+        echo ' [INFO] Unit tests finished successfully'
+        echo ''
+      )
+
+.coverage-template:
+  extends:
+    - .unit-tests-template
+    - .unit-tests-rules
+  variables:
+    COVERAGE_COMMON: ${CI_PROJECT_DIR}/coverage-reports/coverage-common.xml
+    COVERAGE_FOLDER: ${CI_PROJECT_DIR}/coverage-reports
+    COVERAGE_RCFILE: ${CI_PROJECT_DIR}/.coveragerc
+    PYTHONPATH: ${CI_PROJECT_DIR}
+  before_script:
+    - mkdir -p "${COVERAGE_FOLDER}/"
+    - chmod 777 "${COVERAGE_FOLDER}"
+    - |
+      if [ -z "${SUITE}" ]; then
+        coverage erase
+      fi
+    - coverage run --append --module --source=gitlabci_local gitlabci_local --version >/dev/null
+    - chmod 666 "${COVERAGE_FILE}"
+    - echo 'coverage run --append --module --source=gitlabci_local gitlabci_local "${@}"' | tee /usr/local/bin/gitlabci-local /usr/local/bin/gcil >/dev/null
+    - chmod a+x /usr/local/bin/gitlabci-local /usr/local/bin/gcil
+  after_script:
+    - coverage xml -o "${COVERAGE_XML}"
+    - coverage report --show-missing --skip-covered
+    - sed -i 's#\(<source>\).*\(</source>\)#\1.\2#g' "${COVERAGE_XML}"
+    - |
+      set +x
+      if [ ! -z "${CI_LOCAL}" ]; then
+        common=$(mktemp -d)
+        cp "${COVERAGE_FOLDER}/.coverage-"* "${common}/"
+        COVERAGE_FILE="${common}/.coverage" coverage combine "${common}/.coverage-"*
+        COVERAGE_FILE="${common}/.coverage" coverage report --ignore-errors --show-missing --skip-covered
+        COVERAGE_FILE="${common}/.coverage" coverage xml -o "${COVERAGE_COMMON}"
+        sed -i 's#\(<source>\).*\(</source>\)#\1.\2#g' "${COVERAGE_COMMON}"
+        rm -rf "${common}"
+      fi
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "develop"
+      changes:
+        - 'CHANGELOG.md'
+        - 'gitlabci_local/**/*'
+        - 'requirements/**/*'
+        - 'tests/**/*'
+    - if: $CI_COMMIT_TAG || $CI_PIPELINE_SOURCE == "trigger" || $CI_PIPELINE_SOURCE == "web" || $CI_COMMIT_REF_NAME != "develop"
+      when: on_success
+  artifacts:
+    paths:
+      - coverage-reports/
+
+# =============================================================================
+# Stage: test (coverage)
+
+coverage:docker:
+  extends:
+    - .coverage-template
+    - .unit-tests-docker
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:test-coverage-docker
+  needs: []
+  variables:
+    COVERAGE_FILE: ${CI_PROJECT_DIR}/coverage-reports/.coverage-docker
+    COVERAGE_XML: ${CI_PROJECT_DIR}/coverage-reports/coverage-docker.xml
+  before_script:
+    - !reference [.coverage-template, before_script]
+
+coverage:podman:
+  extends:
+    - .coverage-template
+    - .unit-tests-podman
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:test-coverage-podman
+  needs: []
+  variables:
+    COVERAGE_FILE: ${CI_PROJECT_DIR}/coverage-reports/.coverage-podman
+    COVERAGE_XML: ${CI_PROJECT_DIR}/coverage-reports/coverage-podman.xml
+  before_script:
+    - !reference [.unit-tests-podman, before_script]
+    - !reference [.coverage-template, before_script]
+
+coverage:windows:
+  extends:
+    - .coverage-template
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:test-coverage-windows
+  needs: []
+  variables:
+    COVERAGE_FILE: ${CI_PROJECT_DIR}/coverage-reports/.coverage-windows
+    COVERAGE_XML: ${CI_PROJECT_DIR}/coverage-reports/coverage-windows.xml
+  before_script:
+    - !reference [.coverage-template, before_script]
+  script:
+    - cd ./tests/windows/ && sh ./test.sh 2>&1
+
+# =============================================================================
+# Stage: test (Docker)
+
+py3.6:docker:
+  extends:
+    - .unit-tests-template
+    - .unit-tests-docker
+    - .unit-tests-rules
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:test-oldest-docker
+  before_script:
+    - !reference [.unit-tests-template, before_script]
+
+py3.11:docker:
+  extends:
+    - .unit-tests-template
+    - .unit-tests-docker
+    - .unit-tests-rules
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:test-latest-docker
+  before_script:
+    - !reference [.unit-tests-template, before_script]
+
+# =============================================================================
+# Stage: test (Podman)
+
+py3.6:podman:
+  extends:
+    - .unit-tests-template
+    - .unit-tests-podman
+    - .unit-tests-rules
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:test-oldest-podman
+  before_script:
+    - !reference [.unit-tests-podman, before_script]
+    - !reference [.unit-tests-template, before_script]
+
+py3.11:podman:
+  extends:
+    - .unit-tests-template
+    - .unit-tests-podman
+    - .unit-tests-rules
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:test-latest-podman
+  before_script:
+    - !reference [.unit-tests-podman, before_script]
+    - !reference [.unit-tests-template, before_script]
+
+# =============================================================================
+# Stage: test (local)
+
+python:dind:
+  extends:
+    - .unit-tests-template
+  image: local:quiet
+  before_script:
+    - !reference [.unit-tests-template, before_script]
+    - docker rm -f gitlabci-local-dind >/dev/null 2>&1
+    - docker run -d -v "${PWD}/.dind:/certs" -v "${PWD}:${PWD}" --name gitlabci-local-dind --privileged docker:dind >/dev/null
+    - sleep 10
+    - export DIND_IP=$(docker exec gitlabci-local-dind hostname -i)
+    - export DOCKER_CERT_PATH="${PWD}/.dind/client/"
+    - export DOCKER_HOST="tcp://${DIND_IP}:2376"
+    - export DOCKER_TLS_VERIFY=0
+  after_script:
+    - docker rm -f gitlabci-local-dind >/dev/null
+  rules:
+    - if: $CI_LOCAL
+
+python:local:
+  extends:
+    - .unit-tests-template
+  image: local:quiet
+  before_script:
+    - mkdir -p ./.tmp/
+    - sudo pip3 install --force-reinstall --no-deps --upgrade ./dist/*.whl
+    - sudo pip3 install -q -r ./requirements/tests.txt --upgrade
+  rules:
+    - if: $CI_LOCAL
+
+# =============================================================================
+# Stage: quality
+
+sonarcloud:
+  stage: quality
+  image:
+    name: registry.gitlab.com/adriandc/gitlabci-local/sonarsource/sonar-scanner-cli:latest
+    entrypoint: ['']
+  needs:
+    - coverage:docker
+    - coverage:podman
+    - coverage:windows
+  variables:
+    GIT_DEPTH: 0
+    SONAR_USER_HOME: ${CI_PROJECT_DIR}/.sonar
+  cache:
+    key: '${CI_JOB_NAME}'
+    paths:
+      - .sonar/cache
+  script:
+    - sonar-scanner -Dsonar.projectVersion=$(git describe --always) -Dsonar.branch.name=${CI_COMMIT_REF_NAME}
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "develop"
+      changes:
+        - 'CHANGELOG.md'
+        - 'gitlabci_local/**/*'
+        - 'requirements/**/*'
+        - 'tests/**/*'
+      when: always
+    - if: $CI_COMMIT_REF_NAME == "master"
+      when: always
+    - when: never
+  allow_failure: true
+
+# =============================================================================
+# Stage: deploy
+
+deploy:release:
+  stage: deploy
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:deploy
+  needs:
+    - job: build
+    - job: coverage:docker
+      artifacts: false
+    - job: coverage:podman
+      artifacts: false
+    - job: coverage:windows
+      artifacts: false
+    - job: py3.6:docker
+      artifacts: false
+    - job: py3.11:docker
+      artifacts: false
+    - job: py3.6:podman
+      artifacts: false
+    - job: py3.11:podman
+      artifacts: false
+  variables:
+    TWINE_PASSWORD: ${TWINE_PASSWORD}
+  before_script:
+    - if [ ! "${CI_COMMIT_REF_PROTECTED}" = 'true' ]; then echo '[ERROR] Please protect this tag...'; exit 1; fi
+  script:
+    - tag=${CI_COMMIT_REF_NAME:-$(git describe --always --abbrev=0)}
+    - description=$(sh ./.chglog/changelog.sh "${tag}" | sed -z 's/"/\\"/g')
+    - description="${description}"$'\n\n''### Download'$'\n'
+    - gitlab-release --description "${description}" --link-prefix '* ' ./dist/*
+    - twine upload -u '__token__' -p "${TWINE_PASSWORD}" ./dist/*
+  rules:
+    - if: $CI_COMMIT_TAG
+
+deploy:trial:
+  stage: deploy
+  image: registry.gitlab.com/adriandc/gitlabci-local/gitlabci-local:deploy
+  needs:
+    - job: build
+    - job: coverage:docker
+      artifacts: false
+    - job: coverage:podman
+      artifacts: false
+    - job: coverage:windows
+      artifacts: false
+    - job: py3.6:docker
+      artifacts: false
+    - job: py3.11:docker
+      artifacts: false
+    - job: py3.6:podman
+      artifacts: false
+    - job: py3.11:podman
+      artifacts: false
+  variables:
+    TWINE_PASSWORD_TEST: ${TWINE_PASSWORD_TEST}
+  script:
+    - twine upload -u '__token__' -p "${TWINE_PASSWORD_TEST}" --repository testpypi ./dist/*
+  rules:
+    - if: $CI_LOCAL
+  when: manual

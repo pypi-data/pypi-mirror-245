@@ -1,0 +1,7 @@
+# .coveragerc to control coverage.py
+
+[paths]
+source =
+    gitlabci_local/
+    */gitlabci_local
+    *\gitlabci_local

@@ -1,0 +1,12 @@
+stages:
+  - engine
+
+services:
+  - docker:19-dind
+
+'Job 1':
+  stage: engine
+  image: registry.gitlab.com/adriandc/gitlabci-local/alpine:3
+  script:
+    - echo 'Job 1'
+    - ip a

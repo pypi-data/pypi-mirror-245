@@ -1,0 +1,1 @@
+pexpect-executor>=2.1.0

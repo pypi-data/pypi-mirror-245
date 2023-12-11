@@ -1,0 +1,8 @@
+stages:
+  - permissions
+
+'Job':
+  stage: permissions
+  image: registry.gitlab.com/adriandc/gitlabci-local/alpine:3.12
+  script:
+    - echo 'Job'

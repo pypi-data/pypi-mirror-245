@@ -1,0 +1,12 @@
+image: ${IMAGE_REFERENCE}
+
+variables:
+  IMAGE_REFERENCE: registry.gitlab.com/adriandc/gitlabci-local/alpine:3
+
+stages:
+  - variables
+
+'Job 1':
+  stage: variables
+  script:
+    - echo 'Job 1'
