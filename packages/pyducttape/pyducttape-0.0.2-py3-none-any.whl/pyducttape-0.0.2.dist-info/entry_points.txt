@@ -1,0 +1,2 @@
+[console_scripts]
+ducttape = ducttape.main:main
