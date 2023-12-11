@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: gradio_image_annotator
+Version: 0.0.1
+Summary: A component that allows you to annotate an image with points and boxes.
+Author-email: YOUR NAME <YOUREMAIL@domain.com>
+License-Expression: MIT
+Keywords: gradio-custom-component,gradio-template-Image
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.8
+Requires-Dist: gradio<5.0,>=4.0
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Description-Content-Type: text/markdown
+
+
+# gradio_image_annotator
+A Custom Gradio component.
+
+## Example usage
+
+```python
+import gradio as gr
+from gradio_image_annotator import image_annotator
+```
