@@ -1,0 +1,8 @@
+numpy
+Pillow
+pymel
+PySide2
+shiboken2
+pythontk
+mayatk
+uitk
