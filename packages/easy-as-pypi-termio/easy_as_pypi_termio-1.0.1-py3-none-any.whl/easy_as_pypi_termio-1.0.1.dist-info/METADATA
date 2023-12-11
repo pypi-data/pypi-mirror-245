@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: easy-as-pypi-termio
+Version: 1.0.1
+Summary: Click CLI conveniences for your next Python CLI based on easy-as-pypi
+License: MIT
+Keywords: python,click,wrapper,module,CLI,TUI
+Author: Landon Bouma
+Author-email: doblabs@tallybark.com
+Maintainer: Tally Bark LLC
+Maintainer-email: doblabs@tallybark.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: readthedocs
+Requires-Dist: ansi-escape-room (>=1.5.0,<2.0.0)
+Requires-Dist: click-hotoffthehamster (>=7.8.0,<8.0.0)
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: lazy_import (>=0.2.2,<0.3.0)
+Requires-Dist: sphinx (>=6.2.1,<7.0.0) ; (python_version >= "3.8" and python_version < "3.9") and (extra == "readthedocs")
+Requires-Dist: sphinx (>=7.2.6,<8.0.0) ; (python_version >= "3.9" and python_version < "4.0") and (extra == "readthedocs")
+Requires-Dist: sphinx-rtd-theme (>=2.0.0rc4,<3.0.0) ; extra == "readthedocs"
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Requires-Dist: texttable (>=1.6.7,<2.0.0)
+Requires-Dist: tomli (>=2.0.1) ; extra == "readthedocs"
+Project-URL: documentation, https://easy-as-pypi-termio.readthedocs.io/en/latest
+Project-URL: download, https://pypi.org/project/easy-as-pypi-termio/#files
+Project-URL: homepage, https://github.com/doblabs/easy-as-pypi-termio#🍉
+Project-URL: history, https://github.com/doblabs/easy-as-pypi-termio/blob/release/HISTORY.rst
+Project-URL: issues, https://github.com/doblabs/easy-as-pypi-termio/issues
+Description-Content-Type: text/x-rst
+
+@@@@@@@@@@@@@@@@@@@
+easy-as-pypi-termio
+@@@@@@@@@@@@@@@@@@@
+
+.. CXREF:
+   https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge
+
+.. image:: https://github.com/doblabs/easy-as-pypi-termio/actions/workflows/checks-unspecial.yml/badge.svg?branch=release
+  :target: https://github.com/doblabs/easy-as-pypi-termio/actions/workflows/checks-unspecial.yml/badge.svg?branch=release
+  :alt: Build Status
+
+.. CXREF: https://app.codecov.io/gh/doblabs/easy-as-pypi-termio/settings/badge
+
+.. image:: https://codecov.io/gh/doblabs/easy-as-pypi-termio/graph/badge.svg?token=tRlO7x8BVn
+  :target: https://app.codecov.io/gh/doblabs/easy-as-pypi-termio
+  :alt: Coverage Status
+
+.. image:: https://readthedocs.org/projects/easy-as-pypi-termio/badge/?version=latest
+  :target: https://easy-as-pypi-termio.readthedocs.io/en/latest/
+  :alt: Documentation Status
+
+.. image:: https://img.shields.io/github/v/release/doblabs/easy-as-pypi-termio.svg?style=flat
+  :target: https://github.com/doblabs/easy-as-pypi-termio/releases
+  :alt: GitHub Release Status
+
+.. image:: https://img.shields.io/pypi/v/easy-as-pypi-termio.svg
+  :target: https://pypi.org/project/easy-as-pypi-termio/
+  :alt: PyPI Release Status
+
+.. image:: https://img.shields.io/pypi/pyversions/easy-as-pypi-termio.svg
+  :target: https://pypi.org/project/easy-as-pypi-termio/
+  :alt: PyPI Supported Python Versions
+
+.. image:: https://img.shields.io/github/license/doblabs/easy-as-pypi-termio.svg?style=flat
+  :target: https://github.com/doblabs/easy-as-pypi-termio/blob/release/LICENSE
+  :alt: License Status
+
+.. |easy-as-pypi-termio| replace:: ``easy-as-pypi-termio``
+.. _easy-as-pypi-termio: https://github.com/doblabs/easy-as-pypi-termio
+
+.. |pipx| replace:: ``pipx``
+.. _pipx: https://pypa.github.io/pipx/
+
+|
+
+Click CLI conveniences for your next Python CLI based on easy-as-pypi.
+
+.. Install with |pipx|_::
+..
+..     pipx install easy-as-pypi-termio
+
+
