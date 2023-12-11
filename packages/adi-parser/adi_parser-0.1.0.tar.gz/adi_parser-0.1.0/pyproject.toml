@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "adi_parser"
+version = "0.1.0"
+authors = [
+  { name="Joshua Maddy", email="joshuadcmaddy@gmail.com" },
+]
+description = "This is a simple utility package, originally to parse .adi files from LoTW, but now from anywhere."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "maidenhead"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/JoshuaMaddy/adi_parser"
+Issues = "https://github.com/JoshuaMaddy/adi_parser/issues"
