@@ -1,0 +1,409 @@
+===============
+===============
+WAVE CRACKER
+===============
+===============
+
+Version: 8.6.0
+Author:  Matteo Pi.
+Date:    Dec. 11, 2023
+
+KNOWN ISSUES (PYTHON)
+=====================
+
+Issues are classified by 'PYTHON-XXXX' or 'MATLAB-XXXX' as there is also a Matlab alpha version of this same project.
+
+PYTHON-0001
+-----------
+.... [MainThread][ERROR] [1] Data loader error: unsupported operand type(s) for -: 'str' and 'str'
+Traceback (most recent call last):
+  File "..../python/util\data_loader.py", line 51, in load
+    time_values, signal_values, num_samples, average_time_difference = load_data_raw(n_attempts, self.datafile_fpath, label_time, label_signal, f_separator, f_comment, rows_to_skip, self.decimal_sep)
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "..../python/util\data_loader.py", line 23, in load_data_raw
+    average_time_difference = np.mean(np.diff(time_vals))
+                                      ^^^^^^^^^^^^^^^^^^
+  File "<__array_function__ internals>", line 180, in diff
+  File ".......\Lib\site-packages\numpy\lib\function_base.py", line 1447, in diff
+    a = op(a[slice1], a[slice2])
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
+
+Errors like these appear during the loading attempts, if one (supposed) separator didn't work.
+If subsequent attempts - with different separators - were fine (and this is usually clear from the logs), then there is nothing to worry about.
+
+PYTHON-0002
+-----------
+Sometimes the following WARNING shows up when rendering spectrograms:
+...\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\axes\_axes.py:7773: RuntimeWarning: invalid value encountered in log10
+  Z = 10. * np.log10(spec)
+..../python/util\plot_util.py:98: RuntimeWarning: invalid value encountered in log10
+  pcm = spec_axes.pcolormesh(np.linspace(extent[0], extent[1], spec.shape[1]), np.linspace(extent[2], extent[3], spec.shape[0]), 10 * np.log10(spec), cmap=spec_color_map)
+Causes: unknown, classified as harmless for the time being
+
+PYTHON-0003
+-----------
+Sometimes the following WARNING shows up when showing the plots:
+...../python/util\plot_util.py:156: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+Classified as harmless for the time being
+
+PYTHON-0004
+-----------
+PSD plot (Power Spectrum Density) seems inaccurate, at times, in onesided mode.
+
+PYTHON-0005
+-----------
+The following warning may show up when processing audio files. It indicates that FFMPEG installation is not found onboard,
+and the results may be not reliable.
+.....\Lib\site-packages\pydub\utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+
+PYTHON-0006 - CLOSED
+--------------------
+The following warning, which may show up while processing audio from an WMV file, is harmless.
+......\Lib\site-packages\moviepy\audio\AudioClip.py:113: FutureWarning: arrays to stack must be passed as a "sequence" type such as list or tuple. Support for non-sequence iterables such as generators is deprecated as of NumPy 1.16 and will raise an error in the future.
+  return stacker(self.iter_chunks(fps=fps, quantize=quantize,
+Solved in 4.2.0, changing, in loader_wmv_moviepy.py
+from:
+  signal_sound_array = audio_contents.to_soundarray()
+  audio_channels_count = signal_sound_array.ndim
+to:
+  audio_array = np.array(list(audio_contents.iter_frames()))
+  audio_channels_count = audio_array.shape[1] if audio_array.ndim > 1 else 1
+  signal_sound_array = audio_array.reshape(-1, audio_channels_count)
+In the code, however, the previous approach is still there as a second attempt.
+Should the first fail, this warning would show up:
+"Minor error while converting stream to sound array (..), attempting strategy #2 .."
+This choice saves the compatibility with old versions of the libraries in use.
+
+PYTHON-0006a - CLOSED
+---------------------
+Warning "Minor error while converting stream to sound array (..), attempting strategy #2 ..".
+Harmless, related to the solution of the PYTHON-0006
+
+PYTHON-0007
+-----------
+This happens when trying to use moviepy-based audio loader on formats WAV,MP3,MP4,M4A.
+To be investigated, as according to many sources this loader should be able to process these formats.
+
+"The error indicates a KeyError on 'video_fps', suggesting that MoviePy is not able to retrieve the frames per second (fps) information from the video file"
+
+Solving this may lead to a lower number of loaders to maintain.
+
+Traceback (most recent call last):
+  File "./python/util\data_loader.py", line 42, in load
+    time_values, signal_values, num_samples, average_time_difference = loader_function(**loader_params)
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./python/util/dataloaders\loader_audio_moviepy.py", line 16, in load_raw_audio_mpy
+    video_clip = VideoFileClip(dfile_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ".....\Lib\site-packages\moviepy\video\io\VideoFileClip.py", line 88, in __init__
+    self.reader = FFMPEG_VideoReader(filename, pix_fmt=pix_fmt,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ".....\Lib\site-packages\moviepy\video\io\ffmpeg_reader.py", line 37, in __init__
+    self.fps = infos['video_fps']
+               ~~~~~^^^^^^^^^^^^^
+KeyError: 'video_fps'
+
+PYTHON-0008
+-----------
+Downsampling does not work with percentage choice > 50.0.
+To be investigated.
+
+PYTHON-0008a
+------------
+Rendering error of the envelope when downsampling is active.
+[ERROR] Envelope rendering error: '[1, 5, 17, 25, 29, 37, 43, 77, 89, 103, 119, 129, 133, 161, 163, 167, 177, 203, 227, 235, 251, 255, 265, 283, 297, 299, 305, 335, 341, 351, 381, 391, 395, 405, 433, 457, 467, 479, 487, 491, 493] not in index'
+To be investigated.
+
+PYTHON-0008b
+------------
+Rendering error of the spectrogram when downsampling is active.
+Other than the log below, the diagram seems split in two.
+Under investigation.
+[WARNING] .../python/util/plot\plot_spectrogram.py:16: UserWarning: Only one segment is calculated since parameter NFFT (=256) >= signal length (=100).
+  spec, _, _, _ = spec_axes.specgram(signal, Fs=sampling_freq, cmap=spec_color_map)
+
+PYTHON-0009 - CLOSED
+--------------------
+Error when using the tool wavelet transform capabilities on Python 3.12.x:
+
+      .....
+      AttributeError: module 'pkgutil' has no attribute 'ImpImporter'. Did you mean: 'zipimporter'?
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× Getting requirements to build wheel did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+
+CONCLUSION 8 Nov. 2023: <python home>\Lib\pkgutil.py  'ImpImporter', 'ImpLoader' are not present in 3.1.2
+This is a hard issue, as it can be fixed only by the provider of the library.
+Simply do NOT use this tool with Python 3.12.x (or, equivalently, use it if you don't need wavelet transform).
+
+Related:
+ - PYTHON-0017 (WMV loader not working on 3.1.2)
+
+PYTHON-0009a
+------------
+[BOOT][WARNING] Found missing optional dependencies ...
+
+On boot, the tool reports that some optional dependencies are missing.
+It is still recommended to install them all.
+Example: in some environments 'pywt' cannot be installed.
+In such case, ref. PYTHON-0009
+
+PYTHON-0010
+-----------
+CSV parsing may fail in some case.
+Eg if numbers are not numbers, etc.
+Ref. discard policies document.
+
+PYTHON-0011
+-----------
+Margins in the images generated with split plots mode are not accurate sometimes.
+Try adjusting YAML configuration file parameters.
+
+PYTHON-0012 - CLOSED
+--------------------
+# (ie hardcoding num_channels = 0 in line 117 below - casually discovered just by testing)
+#	Exception ignored in: <function FFMPEG_VideoReader.__del__ at 0x000002890ACD5800>
+# Traceback (most recent call last):
+#  File "......\Python311\Lib\site-packages\moviepy\video\io\ffmpeg_reader.py", line 199, in __del__
+#    self.close()
+#  File ".......\Python311\Lib\site-packages\moviepy\video\io\ffmpeg_reader.py", line 190, in close
+#    self.proc.terminate()
+#  File ".......\Python311\Lib\subprocess.py", line 1642, in terminate
+#    _winapi.TerminateProcess(self._handle, 1)
+#OSError: [WinError 6] Handle non valido
+# Check if any element from A is in B
+Moviepy-based loader error. Solved with vc.close call.
+Note, with pydub all of this is not needed.
+
+PYTHON-0013 - CLOSED
+--------------------
+warning "Requested channels were many (<N>), but only one is being processed at this time: ...)."
+Normal from 3.1.0 to 5.1.0. At that time, the tool data loading layer would generate more than one channels
+eventually, but the presentation and output generation layer would care only of the first.
+In 5.1.0 all channels started being handled properly.
+
+PYTHON-0014
+-----------
+Misconfigurations lead to errors like these.
+Not a high prio, overall processing result is usually fine.
+
+- if X axis is missing in second configuration file (tables)
+This message is raised because the framework, which calculated the num. of samples starting from another field,
+detects that the X axis is missing.
+...[ERROR] [load_raw_csv_1] Critical error, the channels list is EMPTY
+...[WARNING] [4] *** Num. of samples DIFFER across different columns. Check input data and configuration
+
+- if any section or entry is missing in second configuration file (tables)
+(typically the text after 'KeyError' indicates what is missing)
+  File "..../python/util\config_tables_util.py", line 6, in get_table_field_ids
+    return table_hnd['fields']
+KeyError: 'fields'
+
+  File ".../python/util\config_tables_util.py", line 36, in get_table_hnd
+    tabl_hnd = input_data['table_defs'][table_id]
+KeyError: 'table_2'
+
+  File "..../python/util\config_tables_util.py", line 36, in get_table_hnd
+    tabl_hnd = input_data['table_defs'][table_id]
+KeyError: 'table_defs'
+
+  File ".../python/util\config_tables_util.py", line 40, in get_input_data_config
+    input_data_tconfig = tconfig['input_data']                         ~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'input_data'
+
+  File "....../python/util\config_util.py", line 31, in resolve_tabledef_id
+    table_def = input_data_config[td_key]
+                ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'table_def'
+
+PYTHON-0015
+-----------
+Apparently the tool does not perform all the attempts we expect.
+Check configuration! They need to be consecutive and compact.
+Eg profile_1, profile_2, profile_4 are consecutive but not compact, profile_2 would be the last one in this case.
+
+PYTHON-0016
+-----------
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x90 in position 2: invalid start byte
+  File "<frozen codecs>", line 322, in decode
+
+Happens when the CSV loader tries to process binary files. Takes half a minute though, to be raised...
+
+PYTHON-0017
+-----------
+LOADER WMV fails on 3.12.0, it works on 3.1.1
+Maybe related to PYTHON-0009. Bottom line is: do NOT use 3.12.0
+
+[2023-11-08 13:08:37,658][MainThread][ERROR] [1] Data loader error: arrays to stack must be passed as a "sequence" type such as list or tuple.
+Traceback (most recent call last):
+  File "<tool home>\python/util\data_loader.py", line 190, in load
+    load_fun_out = loader_function(**loader_params)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<tool home>\python/util/dataloaders\loader_wmv_moviepy.py", line 56, in load_raw_wmv_mpy
+    signal_sound_array = audio_contents.to_soundarray()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<decorator-gen-44>", line 2, in to_soundarray
+  File "<python home>\Python312\Lib\site-packages\moviepy\decorators.py", line 54, in requires_duration
+    return f(clip, *a, **k)
+           ^^^^^^^^^^^^^^^^
+  File "<python home>\Python312\Lib\site-packages\moviepy\audio\AudioClip.py", line 113, in to_soundarray
+    return stacker(self.iter_chunks(fps=fps, quantize=quantize,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python home>\Python312\Lib\site-packages\numpy\core\shape_base.py", line 216, in _vhstack_dispatcher
+    return _arrays_for_stack_dispatcher(tup)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python home>\Python312\Lib\site-packages\numpy\core\shape_base.py", line 209, in _arrays_for_stack_dispatcher
+    raise TypeError('arrays to stack must be passed as a "sequence" type '
+TypeError: arrays to stack must be passed as a "sequence" type such as list or tuple.
+
+PYTHON-0018
+-----------
+loader pydub/audio. Warnings in case FFMPEG executable is not in the path, ref. setup document.
+<python home>\Lib\site-packages\pydub\utils.py:170: RuntimeWarning:
+Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+
+[WARN] FFMPEG software was not found, its installation is needed for audio files processing
+[WARN] Instructions can be found in the setup notes
+
+Ref. also PYTHON-0019
+
+PYTHON-0019
+-----------
+loader pydub/audio
+Errors in case FFMPEG executable is not in the path, ref. setup document.
+Sometimes - depending this on the specific environments - things may work also without such executable available.
+You can attempt to install python dependency 'ffmpeg' (if you like avoiding to install native modules),
+but this never really worked, after many tests.
+
+Also related to warnings described in PYTHON-0018
+
+[WinError 2] Impossibile trovare il file specificato
+Traceback (most recent call last):
+  File "....../python/util\data_loader.py", line 190, in load
+    load_fun_out = loader_function(**loader_params)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "....../python/util/dataloaders\loader_mp3_pydub.py", line 9, in load_raw_mp3_pyd
+    return load_raw_audio(root_cfg, loading_cfg, attempt_idx, options_dictionary, dfile_path, audiostream_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "....../python/util/dataloaders\loader_audio_pydub.py", line 40, in load_raw_audio
+    audio_contents = AudioSegment.from_file(dfile_path, format=audiofile_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<user home>\AppData\Local\Programs\Python\Python311\Lib\site-packages\pydub\audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python home>\Lib\site-packages\pydub\utils.py", line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python home>\Lib\subprocess.py", line 1024, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "<python home>\Lib\subprocess.py", line 1509, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Impossibile trovare il file specificato
+
+PYTHON-0020 - CLOSED
+--------------------
+loader CSV
+[2023-11-08 19:19:05,802][MainThread][ERROR] [2] Data loader error: pandas.read_csv() got an unexpected keyword argument 'on_bad_lines'
+Some old version of the pandas library do not support the 'on_bad_lines' parameter in the read_csv call.
+Solved in 4.2.0
+
+PYTHON-0021
+-----------
+Wavelet transforms not available on old Python versions (< 3.8).
+ERROR: Ignored the following versions that require a different python version: 0.0.1b0 Requires-Python >=3.8
+ERROR: Could not find a version that satisfies the requirement PyWavelet (from versions: none)
+ERROR: No matching distribution found for PyWavelet
+(not really an issue, since the setup document clarifies that Python 3.8 or sup. is to be used)
+
+PYTHON-0022 - CLOSED
+-----------
+Loader moviepy (file WMV)
+File ".....python/util/dataloaders\loader_wmv_moviepy.py", line 82, in load_raw_wmv_mpy
+Data loader error: local variable 'audio_channelsets' referenced before assignment
+return num_samples, samples_count_ok, audio_channelsets
+Software bug. Resolved (in 4.2.0)
+
+PYTHON-0023 - CLOSED
+--------------------
+data loader core
+Message:	
+	...python/util/dataloaders\multichannel_util.py:22: SyntaxWarning: invalid escape sequence '\ '
+Software bug. Resolved (in 4.2.0)
+
+PYTHON-0024
+-----------
+Wavelet transforms sometimes not available ALSO on supported Python versions (but still old ones).
+Sometimes the following message shows up:
+error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+      [end of output]
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for bilby.cython
+Failed to build bilby.cython
+ERROR: Could not build wheels for bilby.cython, which is required to install pyproject.toml-based projects
+Status: not under investigation, since on 3.1.x Python version there is no problem. If you use 3.8 you will
+just not have wavelet transform.
+
+PYTHON-0025
+-----------
+Warnings on Python 3.1.6 (nov 9, 2023):
+.....v4.3.0\./python/util/dataloaders\multichannel_util.py:291: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame
+.....\v4.3.0\python\demo\create_waves.py:51: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+ df = pd.concat([df, pd.DataFrame({header[0]: [t1], header[1]: [t2], header[2]: [s1], header[3]: [s2], header[4]: [s3], header[5]: [s4]})], ignore_index=True)
+
+Under investigation
+
+PYTHON-0026
+-----------
+Exception: Table not found: table_2 (check tables configuration file)
+qplot option is absent or wrongly specified in command line.
+In such case, the second configuration file (tables) is used. But, if also this is misconfigured, then this error shows up.
+
+PYTHON-0027
+-----------
+Exception: Table ID not resolved (check configuration)
+qplot option is absent or wrongly specified in command line.
+In such case, the second configuration file (tables) is used. But, if table ID cannot be resolved, then this error shows up.
+
+PYTHON-0028
+-----------
+[WARNING] Configuration file not found (role: tables, path: ./conf/sa_tables.yaml): [Errno 2] No such file or directory: './conf/sa_tables.yaml'
+Warning upon boot, if tables configuration file is absent.
+This is not necessarily a problem. Only CSV processing use that file, and only if 'qplot' option is not used this message may need attention.
+
+PYTHON-0029
+-----------
+Warning \proj3d.py:180: RuntimeWarning: invalid value encountered in divide
+  txs, tys, tzs = vecw[0]/w, vecw[1]/w, vecw[2]/w.
+Shows up at times when rendering 3D spectrograms
+
+PYTHON-0030
+-----------
+This message - or alike - shows up if the logs directory (typically: 'log' under current directory) is not accessible.
+[2023-11-19 21:43:07,645][MainThread][ERROR] Logging subsystem initialization FAILED (error message:
+[Errno 2] No such file or directory: '....\\logs\\signal_processor-0.log', switching to emergency logging system (STDOUT ONLY)
+
+PYTHON-0031
+-----------
+This message - or alike - shows up if the output directory is not accessible.
+[2023-11-19 21:44:20,284][MainThread][ERROR] Plots cannot be saved,
+output directory (.\output_1) does not exist
+[2023-11-19 21:44:20,284][MainThread][ERROR] Fourier Transform output data cannot be saved,
+output directory (.\output_1) does not exist
+
+PYTHON-0032
+-----------
+[WARNING] [cs1][Channel1] Polyfit #2: No interpolation possible (empty window)
+Happens when we try to add interpolation to an interval that is not covered by the sample. It's normal, and harmless.
+

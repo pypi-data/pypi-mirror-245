@@ -1,0 +1,35 @@
+REM ===============
+REM ===============
+REM WAVE CRACKER
+REM ===============
+REM ===============
+
+REM Version: 8.6.0
+REM Author:  Matteo Pi.
+REM Date:    Dec. 11, 2023
+
+REM INVOCATION SCRIPT EXAMPLE (PYTHON)
+
+REM Set these two accordingly to your environment
+SET PYTHON_HOME=C:\Users\user001\AppData\Local\Programs\Python\Python311
+SET FFMPEG_HOME=C:\Programs\ffmpeg\v6.0.essentials
+
+SET PATH=%PYTHON_HOME%\Scripts;%PATH%
+SET PATH=%PYTHON_HOME%;%PATH%
+SET PATH=%FFMPEG_HOME%\bin;%PATH%
+
+REM Input data parameter (data file; can also be a directory)
+SET INPUT_DATA=.\my_data.csv
+REM Output directory (must be existing)
+SET OUT_DIR=.\output_1
+
+REM Header names in the CSV (in this case we assume one X-axis, and two Y-axes)
+SET X_AXIS=Time(s)
+SET Y1_AXIS=Channel1
+SET Y2_AXIS=Channel2
+
+REM The launch command
+REM NOTE: in this example it is assumed that you have copies of the configuration files, under the local './conf' directory.
+REM This is the recommended approach
+python "%PYTHON_HOME%\Lib\site-packages\wavecracker\signalanalyzer.py" --input-path "%INPUT_DATA%" --qplot "%X_AXIS%" "%Y1_AXIS%" "%Y2_AXIS%" --out-directory "%OUT_DIR%" --conf ./conf/signal_analyzer.yaml --tables-conf ./conf/sa_tables.yaml --include-3d-spectrogram --data-out-merged --include-psd --include-histogram --include-wl-transform --remove-dc-offset
+

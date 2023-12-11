@@ -1,0 +1,399 @@
+===============
+===============
+WAVE CRACKER
+===============
+===============
+
+Version: 8.6.0
+Author:  Matteo Pi.
+Date:    Dec. 11, 2023
+
+CHANGE LOG (PYTHON)
+
+Eliminated references to 'bytecr ....' as it was already in use on the web
+
+8.6.0 - Dec. 11, 2023
+---------------------
+Now possible to add the instantaneous frequency plot (--include-inst-freq)
+
+8.5.0 - Nov. 23, 2023
+---------------------
+
+Config file structure has changed (tooltip settings relocated).
+
+Added polynomial interpolation plots. Ref. command line arguments reference, '--poly-int'.
+
+If the output directory is not specified, one is created (in the current directory).
+
+Added a DEMO
+
+README.md improved
+Added a logo
+
+Now the initial diagnostic, if active, show also system's PATH
+
+Fixed an issue where the documents were not present in the PYPI package
+
+Other minor optimizations and fixes
+
+8.4.0 - Nov. 22, 2023
+---------------------
+PYPI-renamed to https://pypi.org/project/wavecracker (formerly it was https://pypi.org/project/<something else>)
+
+8.3.0 - Nov. 21, 2023
+---------------------
+Added optional dependency (psutil 5.9.5, it was already there, it was missing in the README.md and in the .toml)
+Reorganized the optional dependencies in three extras, and added the instructions for PYPI-based download of those in the README.md and in setup documentation
+
+Python version constraint relaxed to: >=3.7 (and added recommendations in the docs)
+
+8.2.0 - Nov. 21, 2023
+---------------------
+Config file structure has changed (additional properties for the 3D spectrogram).
+
+Option '--multitab-ui' is SUPPRESSED.
+Now the newer multitabbed UI is the default. To use the old one, you have a new flag in the command line.
+
+Now the 3D spectrogram allows background color configuration ('bgcolor')
+
+Added a command line argument allowing to place, in the multitab UI, a plot in a DEDICATED tab regardless
+of the current grid layout.
+Eg: with --dedicated-tab wvlet 3dspctg
+you would have these two plots (wavelet transform and 3D spectrogram) each of them in a single tab, all by themselves. Even if the tab grid is configured
+as a holder for 2x2 (4 total) plots.
+
+Created GIT Project as a placeholder for the documents (https://github.com/pmatteo68/wavecracker).
+
+8.1.1 - Nov. 19, 2023
+---------------------
+Amended README.md and other docs from a few inaccuracies
+Dependencies install script now robust in front of multiple Python installs on the system
+Known issues, change log, setup and user manual files split (python, matlab)
+All docs now in english
+
+8.1.0 - Nov. 19, 2023
+---------------------
+Made available on https://pypi.org/project/<something>/8.1.1
+(pip install <something>)
+
+7.2.1 - Nov. 19, 2023
+---------------------
+Now the tool is more independent of its python files root directory, and conf dir is now under 'src'. Preparing for PYPI packaging
+Boot checks modularized
+
+7.2.0 - Nov. 18, 2023
+---------------------
+Config file structure has changed.
+
+New: --include-3d-spectrogram
+
+Minor bugs fixed
+
+Improved docs.
+
+7.1.0 - Nov. 16, 2023
+---------------------
+Config file structure has changed.
+
+UI can be now multitabbed (arg. --multitab-ui)
+
+Scripts improved.
+
+6.1.0 - Nov. 15, 2023
+---------------------
+Config file structure has changed.
+
+Minor bug fixing
+
+5.7.0 - Nov. 15, 2023
+---------------------
+Config file structure has changed.
+
+Risolto un baco che si presentava quando i plot scelti eccedevano lo spazio sul pannello.
+
+5.6.0 - Nov. 14, 2023
+---------------------
+Config file structure has changed.
+
+Now float separators (decimal and thousands) can be DETECTED, ref. config. file.
+
+Minor bugs fixed.
+
+5.5.0 - Nov. 14, 2023
+---------------------
+Config file structure has changed.
+
+CSV finer separators management (now we have thousands separator configurable, too)
+
+Output CSV now can have the float format configured
+
+Minor bugs fixed
+Improved docs.
+
+5.4.0 - Nov. 11, 2023
+---------------------
+--include-qq to add Q-Q plots.
+
+5.3.0 - Nov. 11, 2023
+---------------------
+Bug with "interleaved" audio signals fixed.
+
+Improved docs.
+
+5.2.0 - Nov. 11, 2023
+---------------------
+New argument --data-out-merged allows to merge output data CSV when related to same X axis.
+
+Better error handling.
+
+CSV processing bug resolved.
+
+Docs improved.
+
+5.1.0 - Nov. 11, 2023
+---------------------
+FULL multi-signal implementation. Both with table and from command line with --qplot, now the multiple output columns are all handled.
+
+4.4.0 - Nov. 9, 2023
+---------------------
+New argument --qplot allows rapid multi-column plot definition, WITHOUT use of the secondary config file.
+
+IF such file is used, now --table-def argument permits overriding the table definition ID
+
+Added std deviation in logs.
+
+Added log details and HW diagnostics.
+
+Documents improved.
+
+Minor bugs addressed.
+
+4.3.0 - Nov. 9, 2023
+---------------------
+Minor bugs fixed.
+
+New env variable 'SA_LOG_POSTFIX' allows log file differentiation.
+
+New env variable 'SA_DIAG' allows bootstrap detailed diagnostics.
+
+4.2.0 - Nov. 8, 2023
+---------------------
+Determined that PYTHON-0009 issue requires going back to Python 3.1.
+
+Minor warnings addressed.
+
+Error handling improvements.
+
+Added script for dependencies install.
+
+Improved docs.
+
+4.1.0 - Nov. 7, 2023
+---------------------
+Config file structure has changed.
+
+Introduced table configuration file, relevant for CSV files processing.
+Now more columns in a CSV can be processed, and configuration, more articulated, can be decided there.
+
+The tool goes on also if data are partially available.
+
+Environment variable SA_DEBUG can be set to "on" for deep inspection.
+
+CSV header check improved.
+
+Added a demo.
+
+Boot error handling improved.
+
+General error handling improved.
+
+Tool completely agnostic as to whether x-axis is a time or not.
+
+CSV loading bug fixed.
+
+3.1.0 - Nov. 4, 2023
+---------------------
+Config file structure has changed.
+
+New argument --audio-channels allows audio signals fine selection (mono, stereo , etc.)
+
+Minor bugs resolved in audio signal processing.
+
+Improved docs.
+
+2.6.0 - Nov. 4, 2023
+---------------------
+Config file structure has changed.
+
+Plot windows improved configurability.
+
+Added CSV loading profile #4, improved robustness
+
+Improved general robustness as to partial outputs generated when possible.
+
+Arguments available for output data selection (--plot-out). Also added configurations related to this:
+processing_params -> output -> plot_files --> subplot_files (x_expand, y_expand)
+
+New argument --data-out, for more flexible output generation.
+
+Slight modifications in plot configurability.
+
+Log improved
+
+Docs improved.
+
+New arguments: --exclude-orig --exclude-ft (to exclude plots of original signal and its FT if so desired)
+
+Added modularity
+
+2.5.0 - Nov. 2, 2023
+---------------------
+Added document docs/csv-discard-policies.txt, which illustrates improvements in the CSV discard policies.
+
+More accurate logging as to CSV-related processing.
+
+Improved docs.
+
+
+2.4.0 - Nov. 2, 2023
+---------------------
+Config file structure has changed.
+
+NB LA STRUTTURA DEL FILE DI CONFIG PYTHON E' CAMBIATA
+
+Improved error handling. If libraries are missing for non-core audio-related functions, this is handled more gracefully.
+
+Wavelet transform rendering improved.
+
+Added modularity.
+
+Improved docs.
+
+2.3.0 - Nov. 2, 2023
+---------------------
+Improved error handling. If libraries are missing for non-core functions, this is handled more gracefully.
+
+new argument --downsampling (useful for large datasets)
+Note, this is part of LOADING, not of preprocessing.
+Note, this works only with values <= 50%.
+
+Improved docs.
+
+2.2.0 - Nov. 1, 2023
+---------------------
+Cosmetic changes in logs and in plots.
+
+Bug corrected (CSV with ONE LINE of data was mishandled)
+
+2.1.0 - Nov. 1, 2023
+---------------------
+Config file structure has changed.
+
+Now audio files can be processed: mp3, mp4, m4a, wav, wmv (mono)
+
+FFMPEG installation required for this. Ref. setup document.
+
+Internal changes now will make extensions to other file formats easier (data loaders abstraction - ref. config file).
+Calculations completely isolated in util/ft_calculator.py
+
+Minor bugs fixed
+
+Improved docs.
+
+1.5.0 - Oct. 31, 2023
+---------------------
+Config file structure has changed.
+
+!!!! Program now seamlessly manages directory or files !!!!
+--dataset: suppressed. Now, we use --input-path, which can be one file or one dir.
+If directories, the argument --input-datafile-extensions allows extension filtering,
+Eg with '--input-datafile-extensions csv txt' we're processing CSV and TXT
+
+!!!! Aggiunto filtraggio di frequenza!!!!
+With argument --frequency-filter you can select frequency bands, and observe variations in the original signal.
+
+Plots added (with configurability in YAML file):
+--include-wl-transform (wavelet transform)
+--include-histogram (--plot-hist-val-window --plot-hist-freq-window to select interval in both axes)
+--include-psd (power spectrum density, with window selection in both axes --plot-psd-freq-window, --plot-psd-pow-window)
+--include-phase (fourier transform phase, with window selection in both axes --plot-ftphase-freq-window --plot-ftphase-val-window)
+--include-envelope
+
+Added configurability for output CSV (encoding, separators, index column).
+
+Output files now have timestamp in the name.
+
+More configurability in all plots (linewidth, etc.)
+
+Auto-detection of the encoding for CSV files.
+
+Minor bugs resolved.
+
+Improved docs.
+
+1.4.1 - Oct. 30, 2023
+---------------------
+ENCODING is detected, and then used.
+
+1.4.0 - Oct. 29, 2023
+---------------------
+Config file structure has changed.
+
+New features:
+
+Advanced separators handling:
+    - suppressed arguments: --decimal-sep, --alt-decimal-sep (until 1.3.0, they would permit specifying different separators)
+    - now it is all about the configuration file. There are DEFAULTS and you can configure an arbitrary number of attempts,
+	  each of them with specific separators etc.
+
+Now PREPROCESSING step exists. Happens after loading, but BEFORE the FT is calculated. So far, these are the preprocessing options:
+    - DC Offset removal
+      Ref. new command line argument, available in example script.
+
+As a part of the loading process, SORTING can be requested (ref new argument --sort, see example script).
+(useful in case the x-axis dimension is not sorted). Note, sorting is NOT preprocessing. It's part of the LOADING.
+
+Now you can focus on an interval, in the x-axis, for the original signal.
+Ref. argument --plot-signal-time-window, see details in example script.
+
+Now you can focus on an interval for the values of the FT amplitude, ref. new argument --plot-ft-magn-window, see details in example script.
+
+Header search improved (more flexible, not strict sequence of the headers).
+
+Tool now shows, in logs, the time window under exam. Eg.:
+.... [INFO] Signal sample time window: [-1.00000000000000002082E-02, 9.97855999999999916661E-03]
+
+Tool now shows, in logs, the avg/min/max of the signal. Eg.:
+.... [INFO] Signal sample values AVG (MIN/MAX): 2.63136613329176372034E-01 (-2.21608001738999998986E-02/5.56733608246000044595E-01)
+
+Log formats for decimal numbers are configurable.
+
+Log formats for sampling frequency are configurable.
+
+Log now less verbose.
+
+Bug fixing
+- bug when no rows are present in a cvs, before header
+- bug when FT output generation fails.
+
+Documental changes
+Setup instructions improved.
+Known issues section eniched.
+
+1.3.0 - Oct. 28, 2023
+---------------------
+Decimal separator can be specified different from '.' (argument --decimal-sep)
+FT data are now saved to a CSV.
+Added spectrogram.
+Added "known issues" in user manual
+
+1.2.0 - Oct. 28, 2023
+---------------------
+Image overwriting is now controlled.
+Added logging, config file, more plot personalization options.
+Command line simplified.
+SW is more modular and readable
+
+1.1.0 - Oct. 28, 2023
+---------------------
+First version

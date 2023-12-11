@@ -1,0 +1,87 @@
+===============
+===============
+WAVE CRACKER
+===============
+===============
+
+Version: 8.6.0
+Author:  Matteo Pi.
+Date:    Dec. 11, 2023
+
+CSV DISCARD POLICIES (applies to: Python branch)
+
+Cases possible for dirty/incomplete rows in the CSV are:
+
+1. NO X, Y (typically: time, signal) COLUMNS IN THE HEADER
+----------------------------------------------------------
+In this case the tool exits, dataset entirely discarded, no partial processing possible.
+
+2. MALFORMED NUMERIC VALUES
+---------------------------
+In this case the tool exits, dataset entirely discarded, no partial processing possible.
+
+3. 'LONG' ROWS (more fields than expected)
+------------------------------------------
+Known as 'bad line' in PANDAS terminology (PANDAS is the library in use for loading the CSV).
+
+[new in 2.5.0] The optional argument "--on-bad-line" allows configuring this case.
+Values possible:
+
+Value     messages in log                       behavior
+------    -------------------------             -------------
+error     error message                         Dataset entirely discarded, no partial processing possible
+warn      warning                               Rows discarded, the rest is being processed
+skip      None                                  Rows discarded, the rest is being processed
+
+DEFAULT: warn
+
+!ATTENTION! With Python 3.7 or lower, PANDAS does not have this feature.
+In such case, a warning will show up, and the '--on-bad-line' flag will be neglected.
+
+4. 'SHORT' ROWS (less fields than expected)
+-------------------------------------------
+Known as 'with NaN values' in PANDAS terminology (alike 'null' values in databases).
+
+[new in 2.5.0] The optional argument "--on-nan" allows configuring this case.
+Ci sono esempi anche nel solito script di esempio.
+Values possible:
+
+Value     messages in log                       behavior
+------    ----------------------------          -------------
+error     error message                         Dataset entirely discarded, no partial processing possible
+warn      warning                               Rows discarded, the rest is being processed
+skip      Informative about NaNs found          Rows discarded, the rest is being processed
+keep      None                                  NaNs are ingested. NOT RECOMMENDED
+
+DEFAULT: error
+
+Log messages examples for long rows (bad lines)
+-----------------------------------------------
+They look similar to:
+
+error: pandas.errors.ParserError: Error tokenizing data. C error: Expected 4 fields in line 36, saw 6
+
+warn:  Skipping line 36: expected 4 fields, saw 6
+
+skip:  (no message)
+
+Log messages examples for short rows (NaN lines)
+------------------------------------------------
+They look similar to:
+
+error: Exception: Found rows with NaN values (1), check data !
+
+warn: ...[WARNING] [1] Found rows with NaN values: 1
+
+skip: ...[INFO] [1] Rows with NaN values: 1 (fields checked: Time(s), Channel1)
+
+keep: ...[INFO] [1] Rows with NaN values: 1 (fields checked: Time(s), Channel1)
+
+Other notes
+-----------
+Log will show the setting in place:
+......[INFO] [1] Discard policies in place: {error (malformed: hardcoded), on bad lines: warn, on NaN values: skip}
+
+The case above described as 1, 2, 3, 4 are mutually exclusive.
+Eg: if a CSV has malformed data AND short rows, we will NOT see both errors, we'll just see the one showing up first.
+

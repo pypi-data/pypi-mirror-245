@@ -1,0 +1,136 @@
+Metadata-Version: 2.1
+Name: wavecracker
+Version: 8.6.0
+Summary: Python batch tool for signal time/frequency analysis
+Author-email: "Matteo Pi." <thx.1138@inwind.it>
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: File Formats
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >=3.7
+Requires-Dist: chardet>=4.0.0
+Requires-Dist: matplotlib>=3.7.1
+Requires-Dist: numpy>=1.23.5
+Requires-Dist: pandas>=2.0.1
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: scipy>=1.10.1
+Provides-Extra: audio
+Requires-Dist: moviepy>=1.0.3; extra == 'audio'
+Requires-Dist: pydub>=0.25.1; extra == 'audio'
+Provides-Extra: hwdiagnostics
+Requires-Dist: psutil>=5.9.5; extra == 'hwdiagnostics'
+Provides-Extra: wavelet
+Requires-Dist: pywavelets>=1.4.1; extra == 'wavelet'
+Description-Content-Type: text/markdown
+
+# Wave Cracker
+
+[![PyPI Version](https://img.shields.io/pypi/v/wavecracker.svg)](https://pypi.org/project/wavecracker/)
+[![License](https://img.shields.io/pypi/l/wavecracker.svg)](https://opensource.org/licenses/MIT)
+[![Python Versions](https://img.shields.io/pypi/pyversions/wavecracker.svg)](https://pypi.org/project/wavecracker/)
+[![Ask questions](https://img.shields.io/badge/stackoverflow-Ask%20questions-yellow)](https://stackoverflow.com/questions/tagged/wavecracker)
+![Powered by](https://img.shields.io/badge/powered%20by-Matteo%20Pi.-pink)
+
+![Logo](https://raw.githubusercontent.com/pmatteo68/wavecracker/main/images/wavecracker-logo.jpg)
+
+## Abstract
+
+Python batch tool for signal time/frequency analysis (input data: CSV or audio files).
+
+Detailed documentation: [here](https://github.com/pmatteo68/wavecracker)
+
+## Plot examples
+
+![PlotEx1](https://raw.githubusercontent.com/pmatteo68/wavecracker/main/images/plotexamples/example_1.jpg)
+![PlotEx2](https://raw.githubusercontent.com/pmatteo68/wavecracker/main/images/plotexamples/example_2.jpg)
+![PlotEx3](https://raw.githubusercontent.com/pmatteo68/wavecracker/main/images/plotexamples/example_3.jpg)
+
+
+## Setup
+
+You can install the package using pip:
+
+```bash
+python -m pip install wavecracker
+```
+
+## Python Dependencies
+
+|Module|Version required|Notes|
+|-|------|-|
+|Python|>= 3.7|Preferably > 3.8 and < 3.12, ref. [documentation](https://github.com/pmatteo68/wavecracker) for additional details|
+|numpy|>= 1.23.5||
+|PyYAML|>= 6.0||
+|pandas|>= 2.0.1||
+|chardet|>= 4.0.0||
+|scipy|>= 1.10.1||
+|matplotlib|>= 3.7.1||
+|PyWavelets|>= 1.4.1|Optional (for wavelet transform)|
+|pydub|>= 0.25.1|Optional (for audio file processing)|
+|moviepy|>= 1.0.3|Optional (for audio file processing)|
+|psutil|>= 5.9.5|Optional (for hardware detailed diagnostics upon boot)|
+
+## Installing extras (i.e. optional Python dependencies)
+
+The following commands allow the installation of the extras correspondent to the optional dependencies above mentioned:
+
+```bash
+python -m pip install wavecracker[wavelet]
+python -m pip install wavecracker[audio]
+python -m pip install wavecracker[hwdiagnostics]
+```
+Note that some of these extras may or may not work depending on the Python version. More information in the [documentation](https://github.com/pmatteo68/wavecracker).
+
+## Other Dependencies
+
+As mentioned above, the following directories are needed in the `PATH`:
+- `PYTHON_HOME` and `PYTHON_HOME/Scripts`
+
+Also, but only if you are willing to process audio files, these directories must be present in the `PATH`, too.
+- The directory containing the FFMPEG executable (6.0 or upper; note, needed only for audio files processing)
+
+## Usage
+> We assume, in the following, that `${PACKAGE_HOME}` is where the package is available after the install (typically under `${PYTHON_HOME}/Lib/site-packages/wavecracker` or alike).
+
+Open a command shell, make sure your Python install is in the `PATH`, and enter the following command:
+
+```bash
+python "${PACKAGE_HOME}/signalanalyzer.py" <arguments>
+```
+
+Many other details can be found in the [documentation](https://github.com/pmatteo68/wavecracker) about:
+- Available command line arguments
+- Parameters in the configuration file 
+
+
+### Launching the DEMO
+
+```bash
+python "${PACKAGE_HOME}/demo/launch_demo.py"
+```
+
+### Examples
+
+#### Example 1 (CSV file processing)
+
+```bash
+... .. /signalanalyzer.py --input-path ./inputdata.csv --qplot time_1 signal_1 --include-histogram --out-directory ./output_1
+```
+
+##### Explanation:
+- This would process a csv file named *inputdata.csv* (in the current directory), looking for a header with columns
+named *time_1* and *signal_1*, saving the results into a subdirectory of the current directory named *output_1*.
+- Plots typically generated are Fourier transform and others
+- A CSV is saved (with data about some of the calculated functions).
+- Note: the output directory needs to be existing.
+- A directory named *logs* has to be created in the current directory for the logs to be saved.

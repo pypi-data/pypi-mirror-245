@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wavecracker"
+version = "8.6.0"
+authors = [
+  { name="Matteo Pi.", email="thx.1138@inwind.it" },
+]
+description = "Python batch tool for signal time/frequency analysis"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development",
+    "Topic :: File Formats",
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Natural Language :: English"
+]
+dependencies = [
+    'numpy >= 1.23.5',
+    'PyYAML >= 6.0',
+    'pandas >= 2.0.1',
+    'chardet >= 4.0.0',
+    'scipy >= 1.10.1',
+    'matplotlib >= 3.7.1'
+]
+
+[project.optional-dependencies]
+hwdiagnostics = [
+    'psutil >= 5.9.5'
+]
+wavelet = [
+    'PyWavelets >= 1.4.1'
+]
+audio = [
+    'pydub >= 0.25.1',
+    'moviepy >= 1.0.3'
+]

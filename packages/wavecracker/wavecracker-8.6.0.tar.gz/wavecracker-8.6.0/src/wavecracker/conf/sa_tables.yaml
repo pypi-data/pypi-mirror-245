@@ -1,0 +1,45 @@
+#Wave Cracker CSV tables configuration file, v. 5.2.0, 231111
+
+#se si lavora solo tramite opzione qplot in riga di comando questo file puo' anche esser vuoto,
+#o al limite non esistere.
+#Si consiglia, pero', di mantenerlo comunque.
+#La logica infatti e' che viene cercato, se la opzione --qplot e' malconfigurata.
+#Quindi puo' essere usato per ospitare una configurazione di backup ad esempio
+#
+# --qplot e' preferibile quando non si debbano fare sorting, e quando ci si accontenta delle 'label'
+# cosi' come automaticamente generate. Diversamente, occorrono queste tabelle
+#
+# Le tabelle sono imperative anche quando ci sono PIU' ASSI X nel CSV .. (--qplot supporta solo una x e piu' y ad essa legate)
+
+input_data:
+  table_defs:
+    table_1:
+      fields:
+        time1:
+          name: Time(s)
+          desc: Time
+          filename_token: t
+        signal1:
+          name: Channel1
+          desc: Signal 1
+          filename_token: c1
+          x_ref: time1
+        signal2:
+          name: Channel2
+          desc: Signal 2
+          filename_token: c2
+          x_ref: time1
+    #table_2:
+    #  #x_sort: true          # default di tabella per il sorting dei dati risp. asse x. Se assente, false
+    #  fields:
+    #    time1:
+    #      name: TiXme(s)
+    #      desc: Time
+    #      #filename_token: t  # se assente, ne crea uno il sistema
+    #    signal1:
+    #      name: ChannXel1
+    #      desc: Signal 1
+    #      filename_token: s1
+    #      x_ref: time1
+    #      #x_sort: true        # se presente, prevale sul default di tabella
+
