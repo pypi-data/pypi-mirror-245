@@ -1,0 +1,24 @@
+[project]
+name = "NT_TextFileLoader"
+version = "1.1.7"
+description = 'Python library to extract text from various file formats. the supported file formats are "JPG","JPEG","PNG","PDF","DOCX","DOC" and "TEXT".'
+readme = "README.md"
+authors = [
+  { name = "Vishnu.D", email = "vishnu.d@narmtech.com" }
+]
+requires-python = ">=3.10"
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+]
+dependencies = [
+    "PyPDF2",
+    "python-docx",
+    "docx2txt",
+    "Pillow",
+    "pytesseract",
+    "langchain",
+    "unstructured",
+]
