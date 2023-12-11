@@ -1,0 +1,8 @@
+README.md
+setup.py
+facelook/__init__.py
+facelook.egg-info/PKG-INFO
+facelook.egg-info/SOURCES.txt
+facelook.egg-info/dependency_links.txt
+facelook.egg-info/requires.txt
+facelook.egg-info/top_level.txt
