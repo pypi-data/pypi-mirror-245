@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+ducttape/__init__.py
+ducttape/crypt.py
+ducttape/header.py
+ducttape/lambdafier.py
+ducttape/main.py
+ducttape/stdlib.py
+ducttape/tree.py
+pyducttape.egg-info/PKG-INFO
+pyducttape.egg-info/SOURCES.txt
+pyducttape.egg-info/dependency_links.txt
+pyducttape.egg-info/entry_points.txt
+pyducttape.egg-info/requires.txt
+pyducttape.egg-info/top_level.txt
