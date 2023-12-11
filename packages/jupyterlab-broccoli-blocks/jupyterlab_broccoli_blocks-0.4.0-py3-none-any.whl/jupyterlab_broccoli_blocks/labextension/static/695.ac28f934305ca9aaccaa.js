@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjupyterlab_broccoli_blocks=self.webpackChunkjupyterlab_broccoli_blocks||[]).push([[695],{695:(O,_,s)=>{s.r(_);var C=s(5786);C.Msg.TOOLBOX_JUNKBOX="Junk Box",C.Msg.BLOCK_TEXT_NOCRLF_PRINT="print without CR/LF",C.Msg.BLOCK_COLOR_HSV="hue H",C.Msg.BLOCK_COLOR_H="H",C.Msg.BLOCK_COLOR_S="S",C.Msg.BLOCK_COLOR_V="V"}}]);
+//# sourceMappingURL=695.ac28f934305ca9aaccaa.js.map?v=ac28f934305ca9aaccaa

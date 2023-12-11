@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjupyterlab_broccoli_blocks=self.webpackChunkjupyterlab_broccoli_blocks||[]).push([[534],{534:(O,_,s)=>{s.r(_);var C=s(5786);C.Msg.TOOLBOX_JUNKBOX="ガラクタ箱",C.Msg.BLOCK_TEXT_NOCRLF_PRINT="改行無しで表示",C.Msg.BLOCK_COLOR_HSV="カラー 色相",C.Msg.BLOCK_COLOR_H="色相",C.Msg.BLOCK_COLOR_S="彩度",C.Msg.BLOCK_COLOR_V="明度"}}]);
+//# sourceMappingURL=534.ccdf5556f3bbc5a7b99c.js.map?v=ccdf5556f3bbc5a7b99c

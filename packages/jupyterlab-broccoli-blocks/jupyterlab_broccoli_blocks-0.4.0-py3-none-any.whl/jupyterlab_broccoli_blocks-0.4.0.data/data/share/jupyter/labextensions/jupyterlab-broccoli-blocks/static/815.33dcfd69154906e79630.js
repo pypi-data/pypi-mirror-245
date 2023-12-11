@@ -1,0 +1,2 @@
+(self.webpackChunkjupyterlab_broccoli_blocks=self.webpackChunkjupyterlab_broccoli_blocks||[]).push([[815,556],{4556:(e,r,o)=>{var n={"./En.js":[5970,970],"./Jp.js":[6019,19]};function s(e){if(!o.o(n,e))return Promise.resolve().then((()=>{var r=new Error("Cannot find module '"+e+"'");throw r.code="MODULE_NOT_FOUND",r}));var r=n[e],s=r[0];return o.e(r[1]).then((()=>o(s)))}s.keys=()=>Object.keys(n),s.id=4556,e.exports=s}}]);
+//# sourceMappingURL=815.33dcfd69154906e79630.js.map?v=33dcfd69154906e79630

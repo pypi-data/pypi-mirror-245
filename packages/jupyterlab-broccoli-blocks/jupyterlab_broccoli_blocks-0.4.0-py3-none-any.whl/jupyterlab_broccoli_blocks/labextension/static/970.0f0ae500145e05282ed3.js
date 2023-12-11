@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjupyterlab_broccoli_blocks=self.webpackChunkjupyterlab_broccoli_blocks||[]).push([[970],{5970:(O,s,L)=>{L.r(s);var T=L(2747);T.Msg.TOOLBOX_LOGIC="Logic",T.Msg.TOOLBOX_LOOPS="Loops",T.Msg.TOOLBOX_MATH="Math",T.Msg.TOOLBOX_TEXT="Text",T.Msg.TOOLBOX_LISTS="Lists",T.Msg.TOOLBOX_COLOR="Color",T.Msg.TOOLBOX_VARIABLES="Variables",T.Msg.TOOLBOX_FUNCTIONS="Functions"}}]);
+//# sourceMappingURL=970.0f0ae500145e05282ed3.js.map?v=0f0ae500145e05282ed3
