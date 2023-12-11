@@ -1,0 +1,13 @@
+README.md
+__version__
+pyproject.toml
+duplicates/__init__.py
+duplicates/bufferediofile.py
+duplicates/cli.py
+duplicates/dupes.py
+link_duplicates.egg-info/PKG-INFO
+link_duplicates.egg-info/SOURCES.txt
+link_duplicates.egg-info/dependency_links.txt
+link_duplicates.egg-info/entry_points.txt
+link_duplicates.egg-info/requires.txt
+link_duplicates.egg-info/top_level.txt
