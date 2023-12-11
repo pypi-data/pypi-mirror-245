@@ -1,0 +1,2 @@
+[console_scripts]
+ecs-rollback = ecs_rollback:cli

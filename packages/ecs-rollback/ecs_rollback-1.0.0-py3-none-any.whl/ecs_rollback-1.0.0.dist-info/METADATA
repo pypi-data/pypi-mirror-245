@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: ecs-rollback
+Version: 1.0.0
+Summary: A simple CLI tool for triggering AWS ECS rollbacks
+Home-page: https://github.com/codebreaker343/ecs-rollback
+Author: Venkatesh Deore
+Author-email: deore.venkatesh@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3 ==1.33.11
+Requires-Dist: botocore ==1.33.11
+Requires-Dist: certifi ==2023.11.17
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: click ==8.1.7
+Requires-Dist: docutils ==0.20.1
+Requires-Dist: idna ==3.6
+Requires-Dist: importlib-metadata ==7.0.0
+Requires-Dist: jaraco.classes ==3.3.0
+Requires-Dist: jmespath ==1.0.1
+Requires-Dist: keyring ==24.3.0
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: more-itertools ==10.1.0
+Requires-Dist: nh3 ==0.2.15
+Requires-Dist: pkginfo ==1.9.6
+Requires-Dist: Pygments ==2.17.2
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: readme-renderer ==42.0
+Requires-Dist: requests ==2.31.0
+Requires-Dist: requests-toolbelt ==1.0.0
+Requires-Dist: rfc3986 ==2.0.0
+Requires-Dist: rich ==13.7.0
+Requires-Dist: s3transfer ==0.8.2
+Requires-Dist: setuptools ==69.0.2
+Requires-Dist: six ==1.16.0
+Requires-Dist: twine ==4.0.2
+Requires-Dist: urllib3 ==2.0.0
+Requires-Dist: wheel ==0.42.0
+Requires-Dist: zipp ==3.17.0
+
+# ecs-rollback
+## _Single command rollback for AWS ECS_
+
+AWS CLI does not provide a native rollback command for ECS deployments. Hence, automating a rollback workflow requires multiple interdependent commands. This is not user-friendly, especially during production outages.
+
+ecs-rollback is tool that solves this problem by allowing users to trigger hassle-free single command rollbacks 
+
+## Prerequisites
+
+ecs-rollback changes the task definition of your service to the (n-1)th task definition. Hence, it is important to note that the tool is effective only when the following ECS best practices are being followed in your CI/CD system:
+- Every new deployment should create a new task definition
+- Every Docker image linked to task definitions should be tagged with a *unique tag (for e.g. git commit hash)* rather than the *latest* tag
+
+Although AWS does not force users to follow the above two practices, both of them are highly recommended (https://aws.amazon.com/blogs/compute/automating-rollback-of-failed-amazon-ecs-deployments/).
+
+## Installation
+
+```sh
+pip install ecs-rollback
+```
+
+## Usage
+
+```sh
+ecs-rollback -c sample-cluster-name -s sample-service-name -r us-east-1
+```
