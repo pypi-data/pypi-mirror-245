@@ -1,0 +1,8 @@
+multi_rate_limit/__init__.py,sha256=-ZTXap-Xh0tjlSz_Msr5ciy1ect3stKdORqnKK4ipHA,973
+multi_rate_limit/multi_rate_limit.py,sha256=KfOjK1Lx4E81t4i0ivPefn3HYL10uwnLq0jrGDycKUk,18565
+multi_rate_limit/rate_limit.py,sha256=NXAzz3vHoI3p2yilzGYCcTvaNxxIpDzyT3eGsuF8Gcg,18102
+multi_rate_limit/resource_queue.py,sha256=-dt9Pz2TTFpiKBQQKYO6MfyeMPN7EoXmxL2ubmziJp4,5521
+multi_rate_limit-0.2.0.dist-info/LICENSE,sha256=oSnLMj8Rob4yg-ycL0321rRQFFhnWlt5jKR6q8Atepg,1100
+multi_rate_limit-0.2.0.dist-info/METADATA,sha256=nFVgaB7KgOMpDzl4R10jz-kvBARXChx_I46xGVNIOac,8761
+multi_rate_limit-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+multi_rate_limit-0.2.0.dist-info/RECORD,,
