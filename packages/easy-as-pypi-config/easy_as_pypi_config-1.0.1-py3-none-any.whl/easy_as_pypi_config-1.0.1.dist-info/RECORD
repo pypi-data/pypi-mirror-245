@@ -1,0 +1,11 @@
+easy_as_pypi_config/__init__.py,sha256=8oWUqt6xYoTQVt78QYVqYaSyLaqNSoAEJuzoTDIludY,825
+easy_as_pypi_config/dec_wrap.py,sha256=pfwFaeydsSH1f13prN963v_1Pbdw_NFWLGm1HUBKydw,1301
+easy_as_pypi_config/defaults.py,sha256=hggZdA7o-tJ3PIoBgV0LK7MDS1lPWaDaHs7Y7xiGfXc,452
+easy_as_pypi_config/echo_cfg.py,sha256=fPr3o_I3bsCTgW0862tVcs09QZQD4AgiTlOINOsy5KU,2001
+easy_as_pypi_config/fileboss.py,sha256=7lEGWrFlACPvyEjb-3F3hG4UAaWpFAcOv6TG-Xq3RFo,8133
+easy_as_pypi_config/tests/file_fakes.py,sha256=Tw5AgwWn3G6lQ91USMIn9fwjVTVTQyR091ZjpxR5leg,2732
+easy_as_pypi_config/urable.py,sha256=-ajJs7K0GZjm5PzRCIRVxGKgwFrH_4n90mwGUjKHXhQ,6337
+easy_as_pypi_config-1.0.1.dist-info/LICENSE,sha256=baVmyxNgCisX2lMzbkDvJxX9Sy1Z33_LR1OnTccxrAM,1088
+easy_as_pypi_config-1.0.1.dist-info/METADATA,sha256=_r2_wkQYWy8kc1zlF70PFJHK4zTPM7tMztsIucReArc,4134
+easy_as_pypi_config-1.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+easy_as_pypi_config-1.0.1.dist-info/RECORD,,
