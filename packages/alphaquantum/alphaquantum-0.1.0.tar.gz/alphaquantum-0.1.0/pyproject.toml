@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "alphaquantum"
+version = "0.1.0"
+description = "Open source algorithmic trading paltform"
+authors = ["antobzzll <106315448+antobzzll@users.noreply.github.com>"]
+license = "Apache Software License 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
