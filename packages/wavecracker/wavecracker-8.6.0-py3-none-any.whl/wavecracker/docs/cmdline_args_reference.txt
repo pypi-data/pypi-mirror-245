@@ -1,0 +1,104 @@
+===============
+===============
+WAVE CRACKER
+===============
+===============
+
+Version: 8.6.0
+Author:  Matteo Pi.
+Date:    Dec. 11, 2023
+
+COMMAND LINE ARGUMENTS REFERENCE (PYTHON)
+
+REM --conf <path to configuration file> to override the configuration file path
+
+NEW in 8.6.0 --include-inst-freq (to add the instantaneous frequency plot)
+
+NEW in 8.5.0 --poly-int <int>:float,float [<int>:float,float] [<int>:float,float] ...
+             For all the specified intervals (float,float), a plot will be created with polynomial interpolation of degree <int>.
+			 eg: 4:-0.1,0.1 (means: we want a degree-4 polyin. interpolation for the signal's time interval [-0.1,0.1])
+
+NEW in 8.2.0 --multitab-ui: suppressed (it was introduced in 7.1.0). Now UI is multitabbed by default.
+             And with new --simple-ui (default: False) you can enable the old one, singletabbed
+
+NEW in 8.2.0 --dedicated-tab, allows to place, in the multitab UI, a plot in a DEDICATED tab regardless of the current grid layout.
+Eg: with --dedicated-tab wvlet 3dspctg
+you would have these two plots (wavelet transform and 3D spectrogram) each of them in a single tab, all by themselves.
+Even if the tab grid is configured as a holder for 2x2 (4 total) plots.
+List of possible values is: orig, if, ft, qq, psd, hist, ft-phase, wvlet, 3dspctg, spctg
+
+REM This affects how many images are saved to disk, if one per plot, etc.
+REM new in 2.6.0 --plot-out (If multitab UI is active: none, multi (default - defaulted inside the code, 'save_plot' function)
+REM                          With old singletabbed UI: none, single (default), multi, all
+
+NEW in 7.2.0 --include-3d-spectrogram
+NEW in 5.4.0 --include-qq / includes a QQ Plot
+NEW in 5.2.0 --data-out-merged (aggregates, by x-axis, the generated CSVs)
+
+REM new in 4.4.0
+REM --qplot "Time(s)" Channel1 - bypasses tables configuration file
+REM                              Example: --qplot time1 signal2 (will look, in the CSV, for 'time1' field
+REM                              and 'signal2' field, interpreting them as x and y)   
+
+REM when --qplot is not used, the tables configuration file is used.
+REM in this case, the following option can be used to override, from command line, the pointer to the table
+REM --table-def to override the default table-def pointer
+
+REM --include-spectrogram
+
+REM selecting x-axis, y-axis windows for original signal
+REM --plot-signal-time-window 0.1 0.3
+REM --plot-signal-ampl-window -0.1 0.75
+
+REM selecting x-axis, y-axis windows for Fourier transform
+REM --plot-ft-freq-window -5000 5000
+REM --plot-ft-magn-window 200 300
+
+REM --plot-noshow
+
+REM --out-overwrite
+REM --remove-dc-offset
+
+REM new in 4.1.0 --tables-conf default ./conf/sa_tables.conf (pointer to tables configuration file - for CSV, if --qplot is not used)
+
+REM new in 3.1.0 --audio-channels mono, left, right, stereo, interleaved (many admitted)
+REM                - interleaved means: to merge together left and right
+REM                - stereo means: BOTH left and right
+
+REM new in 2.6.0 --data-out (values: none, ft (default), all - for future usage, so far the FT csv is the only one available)
+
+REM csv discard policies, ref. document about this topic
+REM new in 2.5.0 --on-bad-line error, skip, warn (default)
+REM new in 2.5.0 --on-nan error (default), skip, warn, keep
+
+REM new in 2.6.0 --exclude-orig  to exclude original signal from the plots
+REM new in 2.6.0 --exclude-ft    to exclude Fourier transform from the plots
+
+REM new in 2.3.0 --downsampling 10 #means: retaining only 10% of samples
+REM useful for very large dataset, improves performance (at the price of accuracy..)
+
+REM new in 1.5.0 --include-envelope (adds the envelope to the original signal plot, if present)
+REM new in 1.5.0 --input-datafile-extensions csv txt
+REM new in 1.5.0 --input-path (input directory or file - if directory, processes all that's in there - NOT recursively)
+REM new in 1.5.0 --include-psd (includes PSD, power spectrum density plot)
+
+REM selecting x-axis, y-axis windows for PSD plot
+REM new in 1.5.0 --plot-psd-freq-window
+REM new in 1.5.0 --plot-psd-pow-window
+
+REM new in 1.5.0 --include-phase (includes Fourier transform phase plot)
+REM selecting x-axis, y-axis windows for Fourier transform phase plot
+REM new in 1.5.0 --plot-ftphase-freq-window
+REM new in 1.5.0 --plot-ftphase-val-window
+
+REM new in 1.5.0 --include-histogram (includes histogram)
+REM selecting x-axis, y-axis windows for Histogram plot
+REM new in 1.5.0 --plot-hist-val-window
+REM new in 1.5.0 --plot-hist-freq-window
+
+REM new in 1.5.0 --include-wl-transform (includes wavelet transform plot)
+
+REM new in 1.5.0 frequencies exclusion ranges
+REM --frequency-filter ,-40000 " -30000,-25000" " -20000,-1000" 1000,20000 25000,30000 40000,
+REM NOTE, if a range starts with '-', it has to be QUOTED, with a leading space after opening quote.
+

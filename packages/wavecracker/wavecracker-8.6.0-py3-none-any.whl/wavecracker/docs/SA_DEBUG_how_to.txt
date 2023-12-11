@@ -1,0 +1,101 @@
+===============
+===============
+WAVE CRACKER
+===============
+===============
+
+Version: 8.6.0
+Author:  Matteo Pi.
+Date:    Dec. 11, 2023
+
+'SA_DEBUG' - USAGE NOTES (applies to: Python branch)
+
+OVERVIEW
+========
+Setting environment variable SA_DEBUG, on the shell you are using, to "on", will
+make visible interesting information about how the tool is working. Useful for troubleshooting.
+
+DETAILS
+=======
+Command is:
+
+> set SA_DEBUG=on
+
+No functional impacts.
+
+The following structures will be visible, in the STDOUT, when running the tool:
+
+- AUDIO CHANNELS DICTIONARY (info sul set di segnali audio da processare)
+Common format for all audio loaders. This structure contains information passed to the other layers.
+Specifically, about what signals are to be processed and plotted.
+
+- TABLE DEFINITION (info about signals to be processed)
+Neutral format, to which all info from all loaders is translated to.
+For example, for CSV, it looks from close to what the user specifies in the tables configuration file OR command --qplot option.
+
+- CHANNELS SETS (channels sets)
+Final structure. This one is input to the PROCESSING layer.
+Contains aggregations (by X-axes in scope) and more.
+
+With the above mentioned debug option, we'll see these from close, allowing us to check that everything is as expected.
+
+Summarizing, this is the flow of these structures, during processing:
+
+For audio files:
+raw physical data + (*)   --> AUDIO CHANNELS DICTIONARY ------> TABLE DEFINITION -----> CHANNELS SETS --> PROCESSING
+
+For CSV files:
+raw physical data + (*) ------------------------------------> TABLE DEFINITION -----> CHANNELS SETS --> PROCESSING
+
+(*) on the left we intend ...+configuration, + command line arguments
+
+Real examples follow:
+
+AUDIO CHANNELS DICTIONARY (after creation): [{'audiodata': array([  0,   0,   0, ..., 190,  23,  93], dtype=int16),
+  'filetoken': '0',
+  'yname': '0/1 (mono)'}]
+
+mono: True
+left: False
+right: False
+interleaved: True
+
+TABLE DEFINITION (after creation): {'fields': [{'desc': '0/1 (mono)',
+             'filetoken': '0',
+             'id': '0/1 (mono)',
+             'name': '0/1 (mono)',
+             'x_ref': 'Time',
+             'x_sort': False},
+            {'desc': 'Time',
+             'filetoken': 't',
+             'id': 'Time',
+             'name': 'Time',
+             'x_sort': False}],
+ 'id': 'in-memory-l0depMtDxz',
+ 'x_sort': False}
+
+{mode: in-memory (embedded) [fields: 0/1 (mono), Time; sort option default: False]}
+
+
+CHANNELSETS (after built):
+
+ [
+  channelset #1: {
+    x_axis: {
+      id:             Time
+      filename_token: t
+      field:          Time
+      desc:           Time
+        Signal #1
+          id:             0/1 (mono)
+          filename_token: 0
+          field:          0/1 (mono)
+          x_sorted:       False
+          x_data:         <array (300032)>
+          y_data:         <array (300032)>
+          desc:             0/1 (mono)
+    }
+  ]
+
+
+

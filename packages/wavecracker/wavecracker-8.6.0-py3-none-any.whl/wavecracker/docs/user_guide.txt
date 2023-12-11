@@ -1,0 +1,99 @@
+===============
+===============
+WAVE CRACKER
+===============
+===============
+
+Version: 8.6.0
+Author:  Matteo Pi.
+Date:    Dec. 11, 2023
+
+USER MANUAL (PYTHON)
+
+PYPI page: https://pypi.org/project/wavecracker
+Documents: https://github.com/pmatteo68/wavecracker
+
+Abstract
+--------
+Batch Python tool for signal analysis (time-series, single value).
+
+Input is one of:
+- CSV files (columns counting same number of rows)
+- Audio files [mp3, mp4, m4a, wav, wmv (mono)]
+
+Output is:
+Plots, and generated CSVs created as a result of processing (eg fourier transform).
+
+SETUP
+=====
+Ref. setup document
+
+USAGE NOTES
+===========
+
+You may download the software with PIP INSTALL or with a ZIP. Instructions follow for either case.
+
+
+USAGE NOTES (ZIP-BASED INSTALL)
+===============================
+If you installed the tool from a zip.
+
+Open a shell command in the directory containing "analyze-py.cmd".
+
+The example scripts can be launched. They are supposed to be functional and you can adapt them to your needs.
+
+Note that the parameter defining the input data can be a FILE or a DIRECTORY. In this case, all the files in the directory
+will be processed (NOT recursively).
+Again if a directory is specified, extensions can be filtered (ref. command line parameters guide).
+
+Outputs are created in the selected directory (ref. command line parameters guide).
+
+You can customize many aspects in the configuration file conf/signal_analyzer.yaml
+
+To manage many nodes keeping the logs separated.
+Use the environment variable SA_LOG_POSTFIX (eg 0 for one node, 1 for another ...)
+
+USAGE NOTES (PIP INSTALL-BASED INSTALL)
+=======================================
+Same as in the 'zip-based install' notes, except the following:
+
+- it is up to you to prepare a script to launch. As long as you call the proper python script (ref. README.md, and docs),
+  passing the proper arguments (detailed in the docs), you are fine.
+
+- with this setup, we recommend NEVER touching the configuration file under the Python site-packages.
+  Best approach is to copy them in some directory of yours, and to point the copies (ref. ref. command line parameters guide).
+
+TROUBLESHOOTING
+===============
+
+- Launching the tool after setting SA_DIAG environment variable to 'on' causes detailed diagnostic being visible in the log upon bootstrap.
+
+- Also, SA_DEBUG environment variable can be used to inspect the memory structures during the processing. Ref. the document specifically about this.
+
+- make sure you followed the setup guide to the letter.
+
+- check configurations thoroughly.
+
+- check known issues
+
+- enable logging debug level (in the logging configuration file that you're using)
+
+- some functionality is considered secondary, and depends on OPTIONAL dependencies being installed or not.
+  It is recommended, if you are interested in these, to check whether the optional installation steps have been carried out.
+
+- Regardless of the formal constraint documented about the Python lowest version, it is better to keep on a high one (to be chosen among the supported ones).
+
+TECHNICAL NOTE
+==============
+The tool performs, in sequence, the following:
+
+1. LOADING
+    - raw data loading
+    - sorting (if requested)
+	- downsampling (if requested)
+2. PREPROCESSING
+    - DC offset removal (if requested)
+3. CALCULATIONS
+    - FT (and more, as per what was requested)
+4. OUTPUT GENERATION
+    - plots, CSVs

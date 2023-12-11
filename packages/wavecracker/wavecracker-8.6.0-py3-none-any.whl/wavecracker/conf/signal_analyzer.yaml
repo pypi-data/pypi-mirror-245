@@ -1,0 +1,313 @@
+#Wave Cracker configuration file, v. 8.6.0, 231210
+
+# N loading attempts, using profile_1, profile_2, ..N..., until found.
+# profile_1 MUST exist.
+# logic for profile_<N> is:
+#  - Values are seeked in profile_<N>.
+#  - If not found, defaults apply (the ones directly under input_data).
+
+input_data:
+  # default loader
+  loader: load_raw_csv_1
+  loaders_map:
+      #file extensions-to-loaders mapping. left side (extensions) MUST be lower case
+      csv: load_raw_csv_1
+      txt: load_raw_csv_1
+      wmv: load_raw_wmv_mpy
+      wav: load_raw_wav_pyd
+      mp3: load_raw_mp3_pyd
+      mp4: load_raw_mp4_pyd
+      m4a: load_raw_mp4_pyd
+  # data loader resolution: the Nth loading profile can override the default.
+  #   - if there is none at the profile level or if it does not work, loader is determined by extension
+  #        (ref map above, 'input_data.loaders_map'; 'input_data.loader' is the default loader, which applies
+  #         to file with no extension, or with extension absent from the map)
+  #   - internal default eventually (load_raw_csv_1)
+  #
+  #  Available loaders:
+  #  - load_raw_csv_1     (Text;  format:  CSV bicolumnar at least, with header not necessarily in line #1, and data under header,
+  #    with different combination for separators, and encoding detection/enforcement)
+  #  - load_raw_mp3_pyd   (Audio; formats: MP3; pydub library)
+  #  - load_raw_mp4_pyd   (Audio; formats: MP4/M4A; pydub library)
+  #  - load_raw_wav_pyd   (Audio; formats: WAV; pydub library)
+  #  - load_raw_wmv_mpy   (Audio; formats: WMV; moviepy library)
+  csv:
+      encoding: detected # also 'platform' ok  or ISO-8859-1 #windows-1252 # ISO-8859-1 #UTF-8, UTF-16, UTF-16-LE, detected: to have the program detecting it on the fly
+      # NOTE: if you work with --qplot option in the command line, this pointer is dummy.
+      # Although we suggest to keep it live. Check recommendation in the sa_tables config file.
+      table_def: table_1 #for CSVs, ref. definitions in the sa_tables config file. This default can be overridden by the --table-def option
+      markers:
+          # if true, decimal_separator and thousands_separator in this subsection are neglected
+          # this is CPU and IO intensive activity, for huge CSV files it is recommend to go with FALSE
+          # and to just configure enough good loading profiles
+          detect_float_separators: true
+          separator: ";" # linea attiva solo se detect_header: false
+          decimal_separator: "."
+          #thousands_separator: ","
+          #comment: "#"
+          detect_header: true
+          field_sep_guesses: ;#|,.   # linea attiva solo se detect_header: true
+
+  loading_profiles:
+      # They are executed in a loop, ref. notes above.
+      # ATTENTION: either in above defaults, or in 'per attempt' setting below, field separator and decimal_separator
+      # MUST BE SET
+      # (if separators detection is inactive - if it's active, simply they are neglected)
+      # thousands_separator and comment instead are ok even when not specified
+      profile_1:
+      profile_2:
+          csv:
+              markers:
+                  detect_header: false
+      profile_3:
+          csv:
+              markers:
+                  detect_header: false
+                  detect_float_separators: false
+      profile_4:
+          csv:
+              markers:
+                  detect_header: false
+                  detect_float_separators: false
+                  separator: ";"
+                  decimal_separator: ","
+
+      profile_5:
+          csv:
+              markers:
+                  detect_header: false
+                  detect_float_separators: false
+                  separator: ","
+                  decimal_separator: "."
+      #profile_<N>:
+      #    #loader: load_raw_csv_1
+      #    csv:
+      #        #encoding: UTF-8
+      #        #table_def: table1 # if specified, overrides the default above specified
+      #        markers:
+      #            #detect_float_separators: true # if true, decimal_separator and thousands_separator in this subsection are neglected
+      #            separator: ","
+      #            decimal_separator: "."
+      #            #thousands_separator: "."
+      #            #comment: "#"
+
+processing_params:
+    input_data_analysis:
+        signal_stats:
+            format: .20E
+        sampling_frequency:
+            format: .20E
+        x_window:
+            format: .20E
+        x_slices_stats:
+            format: .20E
+    psd:
+        scaling: density
+        onesided: false # note, with true it does not seem working very well
+    wavelet_transform:
+        scale_low: 1
+        scale_high: 128
+        wvtype: morl #cmor, morl, gaus1, families are: cgau, , mexh, shan, fbsp, db, sym , coif, https://pywavelets.readthedocs.io/en/latest/ref/wavelets.html
+    output:
+        ft_data:
+            xlabel: Frequency
+            ylabel: Magnitude
+            index_field: Sample Count  #omit to avoid the column being created
+            separator: ";"
+            decimal_separator: "."
+            float_format: "%.4f"
+            encoding: UTF-8
+            ext: csv
+            filename_suffix: ft
+            timestamp_suffix: "%Y%m%d%H%M%S%f" #omit to avoid the data filename being timestamped
+        plot_files:
+            ext: jpg
+            filename_suffix: plots
+            timestamp_suffix: "%Y%m%d%H%M%S%f" #omit to avoid the plot filename being timestamped
+            subplot_files:
+                x_expand: 1.8  # new in 2.6.0 - x expand factor for cropping the subplot to file
+                y_expand: 1.5  # new in 2.6.0 - y expand factor for cropping the subplot to file
+    plots:
+        window_title: Wave Cracker
+        bgcolor: white #also HTML colors allowed
+        rainbow: lightgreen,lime,white,cyan,lightblue,green,red,yellow,lightgray,orange,pink # used for random selection of color wherever it makes sense
+        polyint:
+            color: gray
+            linestyle: dashed
+            linesize: 0.5
+            coeff_short_fmt: .2e
+        empty_subplots:
+            wspace: 0
+            hspace: 0
+        tooltip:
+            enabled: true
+            fontsize: 8
+            boxstyle: round
+            verticalalign: top
+            bgcolor: yellow
+            transparency: 0.3
+            xpos_pct: 0.0
+            ypos_pct: 1.0
+        plot_error:
+            base_message: RENDERING ERROR
+            with_err_msg: true
+            max_cols: 40
+            max_len: 255
+            x_pos: 0.5
+            y_pos: 0.5
+            x_text: 0.5
+            y_text: 0.5
+            color: red
+            shrink: 0.05
+            mut_scale: 40
+        ui_1tab:
+            max_rows: 3    # new as of 2.6.0
+            max_columns: 2 # new as of 2.6.0
+            #rainbow: black,magenta,lightgreen,lime,white,cyan,brown,lightblue,blue,green,red,purple,gray,lightgray,orange,yellow,pink # used for random selection of color wherever it makes sense
+            #margins:      suppressed as of 2.6.0
+            #    top: 0.9  suppressed as of 2.6.0
+            cellspan:       # new as of 2.6.0
+                height: 0.8 # new as of 2.6.0
+                width: 0.8  # new as of 2.6.0
+            figsize:
+                width: 12
+                height: 8 #6 two plots: 6, three plots: 8, four plots: 12
+            gridspec:
+                hspace: 0.5
+                wspace: 0.5
+        ui_multitab:
+            max_rows: 2
+            max_columns: 2
+            max_plots_per_tab: 4 # also good 1 rows 1 col and max 1 plots x tab
+            anon_tab_prefix: plots-
+            expand: 1
+            tab_expand: 1
+            fill: both
+            tab_fill: both
+            tab_side: top
+            dpi: 180
+            figsize:
+                width: 10
+                height: 6
+            gridspec:
+                hspace: 0.8
+                #wspace: 0.5
+        original:
+            type_label: orig   # 4.1.0 TBD sopprimere
+            title: Signal      # 4.1.0 TBD sopprimere
+            #xlabel: TiXme    # 4.1.0 soppresso
+            #ylabel: Amplitude   # 4.1.0 soppresso
+            yscale: linear # 'linear' or 'log'
+            grid: true
+            color: blue
+            bgcolor: white
+            linewidth: 1
+            label: original
+            envelope:
+                label: envelope
+                color: red
+                linewidth: 1
+            filtered_signal:
+                linestyle: dashed
+                label: envelope
+                color: gray
+                linewidth: 1
+        qq_plot:
+            bgcolor: white
+            title: Q-Q Plot
+            distr_type: norm #uniform, expon, lognorm, pareto, gamma, norm
+            xlabel: Theoretical Quantiles
+            #ylabel: Signal
+            grid: true
+            yscale: linear
+            comp_linewidth: 1
+            comp_color: green
+            sign_color: red
+            marker: o
+            markerface_color: r
+            markersize: 2
+            sp_shape: 2
+            sp_scale: 1
+        values_histogram:
+            title: Signal Values Frequency
+            xlabel: Amplitude
+            ylabel: Frequency
+            yscale: linear # 'linear' or 'log'
+            grid: true
+            bins: 100 #also auto is fine
+            density: true
+            bgcolor: white
+            edgecolor: black
+            linewidth: 1
+            is_horizontal: false
+        wavelet_transform:
+            aspect: auto
+            cmap: jet
+            interpolation: bilinear
+            origin: lower
+            cbar_label: Magnitude
+            cbar_orientation: vertical
+            title: Continuous Wavelet Transform
+            #xlabel: TXime    # 4.1.0 soppresso
+            ylabel: Scale
+            grid: false
+        spectrogram:
+            title: Spectrogram
+            #xlabel: TiXme    # 4.1.0 soppresso
+            ylabel: Frequency
+            colorbarlabel: Intensity (dB)
+            yscale: linear # 'linear' or 'log'
+            grid: true
+            color_map: gray #viridis, plasma, inferno, magma, cividis, gray, bone, hot, cool, copper
+        spectrogram_3d:
+            title: 3D Spectrogram
+            db_multiplier: 10
+            ylabel: Frequency
+            zlabel: Power(db)/Frequency
+            color_map: viridis #gray, plasma, inferno, magma, cividis, gray, bone, hot, cool, copper
+            edgecolors: k # b: blue, g: green, r red, c cyan, m magenta, y yellow, k black, w white
+            bgcolor: white
+        frequency_plots:
+            ft:
+                title: Fourier Transform (Magnitude)
+                xlabel: Frequency
+                ylabel: Magnitude
+                yscale: linear # 'linear' or 'log'
+                grid: true
+                color: green
+                bgcolor: white
+            psd:
+                title: Power Spectral Density
+                xlabel: Frequency
+                ylabel: Power/Frequency
+                yscale: linear # 'linear' or 'log'
+                grid: true
+                color: red
+                bgcolor: white
+                linewidth: 1
+            inst_freq:
+                bgcolor: white
+                title: Instantaneous Frequency
+                ylabel: Frequency
+                yscale: linear # 'linear' or 'log'
+                grid: true
+                color: green
+                sig_color: gray
+                sig_ylabel: Signal
+                sig_linewidth: 0.5
+                sig_linestyle: dashed
+                linewidth: 0.5
+            ft_phase:
+                title: Fourier Transform (Phase)
+                xlabel: Frequency
+                ylabel: Phase (radians)
+                grid: true
+                yscale: linear # 'linear' or 'log'
+                color: red
+                bgcolor: white
+                linewidth: 1
+            frequency_grain: 1 #Grain for FT x axis. 1 stands for 1Hz. Set 1000 if you want to see KHz etc.
+
+audio:
+    general:
+        xlabel: Time

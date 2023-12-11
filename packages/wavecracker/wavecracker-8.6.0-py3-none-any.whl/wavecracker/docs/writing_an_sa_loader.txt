@@ -1,0 +1,66 @@
+===============
+===============
+WAVE CRACKER
+===============
+===============
+
+Version: 8.6.0
+Author:  Matteo Pi.
+Date:    Dec. 11, 2023
+
+HOW TO WRITE A CUSTOM LOADER (applies to: Python branch)
+
+0.
+A loader is a module responsible for loading data from some source, and to return a specific structure.
+
+1.
+Your loader will be in a python file under ..../util/dataloaders
+Recommendations:
+- name like 'loader_<something>.py' (the 'something' should be somewhat related to the loader's nature)
+- establish the name of the loading function 'load_raw_<something>'
+- IMPORTANT: this function name should NOT collide with existing loading functions exported from other loaders.
+  Check full list in configuration file (*)
+
+2.
+Function's signature is:
+def <name>(root_cfg, loading_cfg, attempt_idx, options_dictionary, dfile_path):
+Parameters being:
+- root node of YAML configuration
+- YAML configuration of the current loading attempt (profile_<x>)
+- attempt number (progressive: 1, 2, ...)
+- options_dictionary is a container (python dictionary) shipping different parameters, depending the case.
+  So far we have:
+  under 'csv':
+    - 'on_bad_lines'
+    - 'on_nans'
+	- 'table_def_override' (table id override)
+	- 'cmdline_tabledef_params' (command line csv table definition - i.e. from --qplot argument)
+  under 'audio':
+    - 'channels'
+
+- datafile path
+
+3.
+Function must return, in a single line:
+
+- The 'channelsets', a structure holding all the data pointers needed for processing (includes raw data for all the x-y axes pairs).
+- num_samples_min (int, min num of samples)
+- num_samples_max (int, max num of samples)
+- samples_count_ok: a boolean that is true if the count of samples is accurate.
+  In case of multisignal, it may be false if different channels have different lenths of the time axes measures.
+  In case of single signal it's basically always true.
+
+SUGGESTION: Start from an existing loader and take inspiration.
+
+4.
+This function muse be made visible to the framework by means of a proper 'import' in:
+.../util/data_loader_resolution.py (again refer to how other loaders are managed)
+
+5.
+The YAML must reflect the function's name for the extensions of interest.
+
+6.
+Test!
+
+
+(*) extension-loader map in configuration YAML file, under input_data --> loaders_map
