@@ -1,0 +1,9 @@
+README.md
+setup.py
+coinhome/__init__.py
+coinhome/module1.py
+coinhome/module2.py
+coinhone.egg-info/PKG-INFO
+coinhone.egg-info/SOURCES.txt
+coinhone.egg-info/dependency_links.txt
+coinhone.egg-info/top_level.txt
