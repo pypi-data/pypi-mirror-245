@@ -1,0 +1,17 @@
+README.md
+setup.py
+chemgraph/__init__.py
+chemgraph/plot_module.py
+chemgraph.egg-info/PKG-INFO
+chemgraph.egg-info/SOURCES.txt
+chemgraph.egg-info/dependency_links.txt
+chemgraph.egg-info/requires.txt
+chemgraph.egg-info/top_level.txt
+test/test.py
+test/tested_area.py
+test/tested_baseline_substraction.py
+test/tested_local_minima.py
+test/tested_plot_increasing_x.py
+test/tested_soften_plot.py
+test/tested_use_chemgraph.py
+test/tested_y_inversion.py
