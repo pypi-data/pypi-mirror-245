@@ -1,0 +1,14 @@
+huey_django_orm/__init__.py,sha256=iDJXWIlPajJwHxckUotIqV-xlO0K3Ir4Zic_SKUO34I,52
+huey_django_orm/admin.py,sha256=PlT4BuYGT_tciejMNeNnZXkpqlC3O172p_fR78Ye1uE,647
+huey_django_orm/apps.py,sha256=k32dAYNnria93qQX7fCDQHYCioYjrRk2dpezlEXep_0,160
+huey_django_orm/models.py,sha256=O63R2N1pWuDr7Z7UO3wezY0y6A4NjMGa_WiF_NTNjn0,1044
+huey_django_orm/storage.py,sha256=aNOtiol1sz74tm7Y4S8e3AEYXMk8dDkttdpLga4xpyA,4679
+huey_django_orm/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+huey_django_orm/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+huey_django_orm/migrations/0001_initial.py,sha256=artYsdowYXJ20AxjqlW8ZL8kVHd79RN6owbUma15C6Q,1776
+huey_django_orm/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+huey_django_orm-23.12.10.0.dist-info/LICENSE,sha256=x1_FR9xTZUqfvEFpbcHiI1n7FDB7XmzWhFAujAjI8QU,1068
+huey_django_orm-23.12.10.0.dist-info/METADATA,sha256=dMkQSohlkJ-xT7nkrH8uoPo3q9DXTb8-F8pr5Jm1epc,3161
+huey_django_orm-23.12.10.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+huey_django_orm-23.12.10.0.dist-info/top_level.txt,sha256=tb5ifZsmiHKOVMD0wctHlCYjH6AGcN8liJS0ORebWcI,16
+huey_django_orm-23.12.10.0.dist-info/RECORD,,
