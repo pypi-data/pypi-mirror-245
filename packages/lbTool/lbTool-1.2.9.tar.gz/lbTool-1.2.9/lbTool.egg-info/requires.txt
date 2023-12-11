@@ -1,0 +1,8 @@
+requests
+gmssl==3.2.2
+pycryptodome==3.18.0
+pypdf2==3.0.1
+pony==0.7.17
+cx-Oracle==8.3.0
+comtypes==1.2.0
+pyyaml==6.0.1
