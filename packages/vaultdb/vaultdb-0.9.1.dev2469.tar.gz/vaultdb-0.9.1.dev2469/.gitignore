@@ -1,0 +1,25 @@
+dist
+duckdb.egg-info
+build
+.eggs
+.pytest_cache
+/duckdb_tarball/
+duckdb.cpp
+duckdb.hpp
+parquet_extension.cpp
+parquet_extension.hpp
+githash.list
+includes.list
+sources.list
+venv/
+duckdb_build
+
+#!vaultdb
+/vaultdb_tarball/
+vaultdb.egg-info
+vaultdb_build
+#!vaultdb -change end
+
+# python parquet files used in tests
+tests/unsigned.parquet
+tests/userdata1.parquet
