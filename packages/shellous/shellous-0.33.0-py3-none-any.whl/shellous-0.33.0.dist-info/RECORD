@@ -1,0 +1,17 @@
+shellous/__init__.py,sha256=mzix3Yo5BKQLFLPaAJGMBwGz20SJCSRI7ZDfUC7_0Ko,1320
+shellous/command.py,sha256=fn0V6HTzXvoTpcBf7NrX8CFI9h-z7JMB4UiPepgUeys,29060
+shellous/harvest.py,sha256=9k4dRLSBr6e9k7upr9DX7HTCFMl4_AD7nK8tIMiZutg,7094
+shellous/log.py,sha256=OL799ym51DYOdp_zlDzMjAIaDHlC3UE2RjgqNHJCyM0,7339
+shellous/pipeline.py,sha256=pF1rb_5PhK0B2Feal41Y29sm1wWBUmyY0akPDlsbU3A,8196
+shellous/prompt.py,sha256=yflOSCHTOsJqCN6tgTXox6_itfBIDbQgyGV5-o5sdp4,20763
+shellous/pty_util.py,sha256=Ugq-aevDLBgyWfDvn5BV7sNbEIkk66rCz7R429YsDas,8884
+shellous/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shellous/redirect.py,sha256=6B6bMunyBnGQxXG3-TJeOcNVxBPpKiIt4thjPazWCbA,8011
+shellous/result.py,sha256=G-aikyakbtxfVc4Sg6UqNUUNs4qvXGLigGMgx8qOjAI,4085
+shellous/runner.py,sha256=-RCEQc230ghAEcL_YA8gDbZG--JOojz0yojhwIUhDlk,43623
+shellous/util.py,sha256=QU9s5zl02niKGYsaSwEF3woC24L8MUAtwfcUGgAxecs,6442
+shellous/watcher.py,sha256=TBmsxs74efO0hbGQGLSBpxiIaxvo03yoNcTwtKaXD6E,14825
+shellous-0.33.0.dist-info/LICENSE,sha256=Rj9DCVwTMSWu51MV5OHwjgrfHbcxXzsX1RLGc4iXYtU,11352
+shellous-0.33.0.dist-info/METADATA,sha256=NHIevXZ3YaupE8_ePZmmNFwYr3c2fHDNdUK1mSLekPw,23647
+shellous-0.33.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+shellous-0.33.0.dist-info/RECORD,,
