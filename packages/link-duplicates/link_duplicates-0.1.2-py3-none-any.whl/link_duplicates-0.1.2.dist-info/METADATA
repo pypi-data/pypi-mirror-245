@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: link-duplicates
+Version: 0.1.2
+Summary: Identify duplicate files and optionally create hardlinks to save storage
+Author: Mike Foster
+License: EUPL 1.2
+Project-URL: Source, https://github.com/MusicalNinjaRandInt/duplicates
+Keywords: duplicate files hardlink windows linux mac backup
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Topic :: System :: Archiving
+Classifier: Topic :: Utilities
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: click
+
+# Duplicates
+
+Identify duplicate files and replace them with hardlinks on any OS.
+
+Intended to be used to reduce the storage space taken up by mutliple copies of similar backups. (E.g. regular google takeouts)
+
+## Usage
+
+Can be run from a command line in Linux, MacOS or Windows and will recursively scan a directory, identify and optionally hardlink any duplicate files found.
+
+WARNING: Hardlinking files means if you change any one "copy" all "copies" will change.
+
+### Command line
+
+`dupes PATH` will display number of duplicate files found under PATH
+
+`dupes --list PATH` will list the full sets of duplicate files found
+
+`dupes --short PATH` will only list sets of duplicates where there are different file names
+
+and finally ...
+
+`dupes --link PATH` will replace duplicate files with hard links
+
+### Python
+
+You can also use the class `DuplicateFiles` to indentify and optionally link duplicates.
+
+Additionally `BufferedIOFile` provides a binary file which knows its `Path` and offers a `readchunk()` method similar to the text file `readline()`.
