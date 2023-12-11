@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyportable-crypto
+Version: 1.2.0
+Summary: Crypto plugin for pyportable-installer project.
+Home-page: https://github.com/likianta/pyportable-crypto
+License: MIT
+Author: Likianta
+Author-email: likianta@foxmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: argsense (>=0.5.4,<0.6.0)
+Requires-Dist: lk-logger (>=5.6.4,<6.0.0)
+Requires-Dist: lk-utils (>=2.7.2,<3.0.0)
