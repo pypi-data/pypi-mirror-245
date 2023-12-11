@@ -1,0 +1,2 @@
+[nbdev]
+buy_and_hold_vs_arima = buy_and_hold_vs_arima._modidx:d
