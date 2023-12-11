@@ -1,0 +1,12 @@
+pytest
+numpy
+pandas
+bokeh
+polars
+pyarrow
+flet
+plotly
+nbformat
+matplotlib
+json2html
+
