@@ -1,0 +1,11 @@
+pypi_templates/__init__.py,sha256=juFbyq1k2lwMApZCuhkvCzsvrwZ9DKfl_2dZRhdAYlw,99
+pypi_templates/__main__.py,sha256=jqsMIo3TrEswz9SOe77_J2pJciEzzbwhMh13CXfjmks,34
+pypi_templates/__version__.py,sha256=grBJI8epFO185cVc-Jv-1azA_x4fBGQ-oPlZ9xO8lU0,299
+pypi_templates/main.py,sha256=QhzE9gtrHSIvarv8sGT0-SrcLmCRm3R7pyGROjkapnQ,257
+pypi_templates/package_data.dat,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypi_templates-0.1.5.dist-info/LICENSE,sha256=09vT6KJCr70v70HtwoLwHS6qc3pWptKBgZkKDaJUqyg,1085
+pypi_templates-0.1.5.dist-info/METADATA,sha256=8yrBZ123Tc_rvvPLgxw95MY2_v6tyaJryALjzH4Fmsw,3524
+pypi_templates-0.1.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pypi_templates-0.1.5.dist-info/entry_points.txt,sha256=umqOTt5qmI2cU4xZXLyrPmdHSRGImrcl1Az8l7O-atY,55
+pypi_templates-0.1.5.dist-info/top_level.txt,sha256=eohE-h8tHWOZ7KMx1a89XtHbSOCj21mz9r9pxshTie0,15
+pypi_templates-0.1.5.dist-info/RECORD,,
