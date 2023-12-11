@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+prstat/__init__.py
+prstat/prstat.py
+prstat.egg-info/PKG-INFO
+prstat.egg-info/SOURCES.txt
+prstat.egg-info/dependency_links.txt
+prstat.egg-info/requires.txt
+prstat.egg-info/top_level.txt
