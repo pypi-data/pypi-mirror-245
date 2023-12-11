@@ -1,0 +1,9 @@
+pytropical/__init__.py,sha256=zHpkim8cPKwuUH45zNWfIw3U4CyLqO7IE9sDf8YXVyk,199
+pytropical/_version.py,sha256=j7895T8JfsWQAOvxm8SAdESs5iFmIuAqKpyfjSAfKZ4,23
+pytropical/tropical_algebra.py,sha256=u7AkkdMrMweR8UgPmsggJI651ekG9tL3Dq0RtlGgWO4,8091
+pytropical/utils.py,sha256=ndu9WewFVRu6k9rq7zRd4Nrqap5QFyCMInwM_tNACAs,559
+pytropical-0.0.2.dist-info/LICENSE.txt,sha256=VCY1rxv_jvcgVDGwLnEjVxWZ9WeTkR-xywFUJlSotDo,1081
+pytropical-0.0.2.dist-info/METADATA,sha256=1-3RO-rl-KyLiO9-TY9zGk0BAExtJFIQBxER5xxklfU,1072
+pytropical-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pytropical-0.0.2.dist-info/top_level.txt,sha256=xpmQAp-1-TAENd-RLDpMmih9zmv2mjGuCOBW2cMTn3M,11
+pytropical-0.0.2.dist-info/RECORD,,
