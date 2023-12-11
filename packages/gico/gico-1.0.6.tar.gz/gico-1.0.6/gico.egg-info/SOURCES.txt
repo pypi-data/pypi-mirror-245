@@ -1,0 +1,9 @@
+README.md
+setup.py
+gico/gico.py
+gico.egg-info/PKG-INFO
+gico.egg-info/SOURCES.txt
+gico.egg-info/dependency_links.txt
+gico.egg-info/entry_points.txt
+gico.egg-info/requires.txt
+gico.egg-info/top_level.txt
