@@ -1,0 +1,10 @@
+pyallel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyallel/errors.py,sha256=Y-ETaHnG69e0QE0qz7AiFRndQKixkTlPt2-TnLPy63o,368
+pyallel/main.py,sha256=4X3IX0DHNFkJpCJKtZDfJWUk96i75a4M3MzcNN-suFc,5881
+pyallel/parser.py,sha256=J2-AW2DA94wgvIorUgTbCnGaOVGiWPXgxrNEfsaGhtc,1628
+pyallel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyallel-0.3.3.dist-info/LICENSE,sha256=OC5x5NCgrwLKf3OOacir7vDYIUr4u6W3sxQjYtNBG0g,1069
+pyallel-0.3.3.dist-info/METADATA,sha256=UaJJymZJDJdsjgk5eI2kygS19XrJxMDRF_Ih18HstxM,2484
+pyallel-0.3.3.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+pyallel-0.3.3.dist-info/entry_points.txt,sha256=0vqMYmzYIZe-sRW5wu5lJdSfZsB0y3KC7HeTTwDpnEc,52
+pyallel-0.3.3.dist-info/RECORD,,
