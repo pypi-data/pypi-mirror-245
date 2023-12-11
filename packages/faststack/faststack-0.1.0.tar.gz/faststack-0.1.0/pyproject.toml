@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "faststack"
+version = "0.1.0"
+description = "FastAPI-based framework"
+authors = ["Ross Masters <ross@rossmasters.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "~0.104"
+sqlmodel = "~0.0.14"
+kink = "~0.7.0"
+typer = "~0.9.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "~1"
+ruff = "*"
+pytest = "~7.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+faststack = "faststack.cli:app"
