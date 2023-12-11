@@ -1,0 +1,420 @@
+import datetime
+import gzip
+import logging
+import threading
+import time
+from pathlib import Path
+from typing import Final
+
+import boto3
+import requests
+from google.cloud import storage
+
+from .api import Api
+from .dassana_env import *
+from .dassana_exception import *
+
+logger: Final = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO)
+
+job_list = set()
+
+
+def datetime_handler(val):
+    if isinstance(val, datetime.datetime):
+        return val.isoformat()
+    return str(val)
+
+
+def compress_file(file_name):
+    with open(file_name, 'rb') as file_in:
+        with gzip.open(f"{file_name}.gz", 'wb') as file_out:
+            file_out.writelines(file_in)
+    logger.info("Compressed file completed")
+
+
+def get_headers():
+    headers = {}
+    if is_internal_auth():
+        access_token = get_access_token()
+        headers = {
+            "x-dassana-tenant-id": get_tenant_id(),
+            "Authorization": f"Bearer {access_token}",
+        }
+    else:
+        app_token = get_dassana_token()
+        headers = {
+            "Authorization": f"Dassana {app_token}"
+        }
+    return headers
+
+
+def get_exc_str(exc):
+    return str(exc).replace("\"", "").replace("'", "").replace("\n", " ").replace("\t", " ")
+
+
+def patch_ingestion(job_id, metadata=None):
+    if metadata is None:
+        metadata = {}
+    json_body = {"metadata": metadata}
+    res = Api('PATCH', get_ingestion_srv_url() + "/job/" + job_id, headers=get_headers(), json=json_body,
+              is_internal=True).call_api()
+    return res.json()
+
+
+def every(delay, task):
+    next_time = time.time() + delay
+    while True:
+        time.sleep(max(0, next_time - time.time()))
+        task()
+        next_time += (time.time() - next_time) // delay * delay + delay
+
+
+def iterate_and_update_job_status():
+    global job_list
+    for job_id in job_list:
+        try:
+            patch_ingestion(job_id)
+            logger.info(f"Updated job status for job id: {job_id}")
+        except Exception as exp:
+            logger.warning(f"Failed to update job ({job_id}) heartbeat due to {exp}")
+
+
+threading.Thread(target=lambda: every(1800, iterate_and_update_job_status), daemon=True).start()
+
+
+def get_ingestion_config(ingestion_config_id, app_id):
+    app_url = get_app_url()
+    url = f"https://{app_url}/app/{app_id}/ingestionConfig/{ingestion_config_id}"
+    headers = get_headers()
+    response = Api("GET", url, headers=headers, verify=False if app_url.endswith("svc.cluster.local:443") else True,
+                   is_internal=True).call_api()
+    return response.json()
+
+
+def get_access_token():
+    auth_url = get_auth_url()
+    url = f"{auth_url}/oauth/token"
+    data = {
+        "grant_type": "client_credentials",
+        "client_id": get_client_id(),
+        "client_secret": get_client_secret(),
+    }
+    response = Api("POST", url, data=data, verify=False if auth_url.endswith("svc.cluster.local:443") else True,
+                   is_internal=True).call_api()
+    return response.json()["access_token"]
+
+
+class DassanaWriter:
+    def __init__(self, source, record_type, config_id, metadata=None, priority=None, is_snapshot=False,
+                 file_size_limit=249):
+        if metadata is None:
+            metadata = {}
+        logger.info("Initialized common utility")
+
+        self.file_size_limit = file_size_limit
+        self.source = source
+        self.record_type = record_type
+        self.config_id = config_id
+        self.metadata = metadata
+        self.priority = priority
+        self.is_snapshot = is_snapshot
+        self.bytes_written = 0
+        self.fail_counter = 0
+        self.pass_counter = 0
+        self.debug_log = set()
+        self.storage_service = None
+        self.client = None
+        self.aws_iam_role_arn = None
+        self.aws_iam_external_id = None
+        self.aws_sts_client = None
+        self.aws_session_token_expiration = None
+        self.bucket_name = None
+        self.blob = None
+        self.full_file_path = None
+        self.ingestion_service_url = get_ingestion_srv_url()
+        self.is_internal_auth = is_internal_auth()
+        self.file_path = self.get_file_path()
+        self.job_id = None
+        self.ingestion_metadata = None
+        self.custom_file_dict = dict()
+        self.initialize_client()
+        self.file = open(self.file_path, 'a')
+
+    def get_file_path(self):
+        epoch_ts = int(time.time())
+        if not self.is_internal_auth:
+            return f"/tmp/{epoch_ts}.ndjson"
+        return f"{epoch_ts}.ndjson"
+
+    def initialize_client(self):
+        global job_list
+        response = self.get_ingestion_details()
+        if "jobId" not in response or "stageDetails" not in response or "cloud" not in response["stageDetails"]:
+            raise InternalError("Invalid job created with missing details")
+
+        self.storage_service = response['stageDetails']['cloud']
+        self.job_id = response["jobId"]
+        logger.info(f"Ingestion job created with job id: {self.job_id}")
+        if "metadata" in response:
+            self.ingestion_metadata = response["metadata"]
+        else:
+            self.ingestion_metadata = {}
+        if "creationTs" in response:
+            self.ingestion_metadata["creationTs"] = response["creationTs"]
+        else:
+            self.ingestion_metadata["creationTs"] = int(time.time()*1000)
+        job_list.add(self.job_id)
+
+        if "bucket" in response['stageDetails']:
+            self.bucket_name = response['stageDetails']['bucket']
+            self.full_file_path = response['stageDetails']['filePath']
+
+        if self.storage_service == 'gcp':
+            if "bucket" in response["stageDetails"]:
+                credentials = response['stageDetails']['serviceAccountCredentialsJson']
+                with open('service_account.json', 'w') as f:
+                    json.dump(json.loads(credentials), f, indent=4)
+                    f.close()
+
+                os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'service_account.json'
+                self.client = storage.Client()
+        elif self.storage_service == 'aws':
+            stage_details = response['stageDetails']
+            if "awsIamRoleArn" in stage_details and stage_details["awsIamRoleArn"] is not None:
+                self.aws_sts_client = boto3.client('sts', aws_access_key_id=stage_details['accessKey'],
+                                                   aws_secret_access_key=stage_details['secretKey'])
+                self.aws_iam_role_arn = stage_details['awsIamRoleArn']
+                self.aws_iam_external_id = stage_details['awsIamExternalId']
+            else:
+                self.client = boto3.client('s3', aws_access_key_id=stage_details['accessKey'],
+                                           aws_secret_access_key=stage_details['secretKey'])
+
+    def write_json(self, json_object):
+        self.file.flush()
+        json.dump(json_object, self.file)
+        self.file.write('\n')
+        self.bytes_written = self.file.tell()
+        if self.bytes_written >= int(self.file_size_limit) * 1000 * 1000:
+            self.file.close()
+            compress_file(self.file_path)
+            self.upload_to_cloud(self.file_path)
+            self.file_path = self.get_file_path()
+            self.file = open(self.file_path, 'a')
+            logger.info(f"Ingested data: {self.bytes_written} bytes")
+            self.bytes_written = 0
+
+    def write_custom_json(self, json_object, file_name):
+        if file_name in self.custom_file_dict:
+            custom_file = self.custom_file_dict[file_name]
+        else:
+            custom_file = open(file_name, 'a')
+            self.custom_file_dict[file_name] = custom_file
+        custom_file.flush()
+        json.dump(json_object, custom_file)
+        custom_file.write('\n')
+
+    def upload_to_cloud(self, file_name):
+
+        if not self.is_internal_auth:
+            self.upload_to_signed_url()
+        elif self.storage_service == 'gcp':
+            self.upload_to_gcp(file_name)
+        elif self.storage_service == 'aws':
+            self.upload_to_aws(file_name)
+        else:
+            raise StageWriteFailure("Unsupported stage")
+        Path.unlink(file_name)
+        Path.unlink(file_name + ".gz")
+
+    def upload_to_gcp(self, file_name):
+        if self.client is None:
+            raise ValueError("GCP client not initialized.")
+
+        self.blob = self.client.bucket(self.bucket_name).blob(str(self.full_file_path) + "/" + str(file_name) + ".gz")
+        self.blob.upload_from_filename(file_name + ".gz")
+
+    def upload_to_aws(self, file_name):
+        if self.client is None and self.aws_sts_client is None:
+            raise ValueError("AWS client not initialized")
+
+        if self.aws_iam_role_arn and (not self.aws_session_token_expiration or (
+                self.aws_session_token_expiration.timestamp() < (
+                datetime.datetime.now() + datetime.timedelta(minutes=2)).timestamp())):
+            assume_role_response = self.aws_sts_client.assume_role(
+                RoleArn=self.aws_iam_role_arn,
+                RoleSessionName="DassanaIngestion",
+                ExternalId=self.aws_iam_external_id)
+            temp_credentials = assume_role_response['Credentials']
+            self.aws_session_token_expiration = temp_credentials['Expiration']
+            self.client = boto3.client(
+                's3',
+                aws_access_key_id=temp_credentials['AccessKeyId'],
+                aws_secret_access_key=temp_credentials['SecretAccessKey'],
+                aws_session_token=temp_credentials['SessionToken'])
+
+        self.client.put_object(Body=open(f"{file_name}.gz", 'rb'), Bucket=self.bucket_name,
+                               Key=f"{str(self.full_file_path)}/{str(file_name)}.gz")
+        # self.client.upload_file(file_name + ".gz" , self.bucket_name, str(self.full_file_path) + "/" + str(file_name)+".gz")
+
+    def upload_to_signed_url(self):
+        signed_url = self.get_signing_url()
+        if not signed_url:
+            raise ValueError("The signed URL has not been received")
+
+        headers = {
+            'Content-Encoding': 'gzip',
+            'Content-Type': 'application/octet-stream'
+        }
+        with open(str(self.file_path) + ".gz", "rb") as read:
+            data = read.read()
+            requests.put(url=signed_url, data=data, headers=headers)
+
+    def cancel_job(self, error_code, failure_reason, fail_type="failed", is_internal=True, is_auto_recoverable=False):
+        global job_list
+        job_list.discard(self.job_id)
+        if os.path.exists("service_account.json"):
+            os.remove("service_account.json")
+        metadata = {}
+        fail_type_status_metadata = "canceled" if str(fail_type) == "cancel" else str(fail_type)
+        self.debug_log.add(get_exc_str(str(failure_reason)))
+        job_result = {"failure_reason": failure_reason, 
+                      "status": fail_type_status_metadata,
+                      "debug_log": list(self.debug_log), 
+                      "pass": self.pass_counter, "fail": self.fail_counter,
+                      "error_code": error_code,
+                      "is_internal": is_internal,
+                      "is_auto_recoverable": is_auto_recoverable}
+        metadata["job_result"] = job_result
+        self.cancel_ingestion_job(metadata, fail_type)
+
+    def cancel_job(self, exception_from_src):
+        global job_list
+        job_list.discard(self.job_id)
+        if os.path.exists("service_account.json"):
+            os.remove("service_account.json")
+        str_exc = get_exc_str(str(exception_from_src))
+        self.debug_log.add(str_exc)
+        if isinstance(exception_from_src, ApiError):
+            metadata = {"job_result": {"failure_reason": exception_from_src.message, 
+                                       "status": "failed",
+                                       "debug_log": list(self.debug_log), "pass": self.pass_counter,
+                                       "fail": self.fail_counter,
+                                       "error_code": exception_from_src.error_type,
+                                       "api_error": exception_from_src.to_json(),
+                                       "is_internal": exception_from_src.is_internal,
+                                       "is_auto_recoverable": exception_from_src.is_auto_recoverable}}
+            self.cancel_ingestion_job(metadata, "failed")
+        elif isinstance(exception_from_src, InternalError):
+            metadata = {"job_result": {"failure_reason": exception_from_src.message, 
+                                       "status": "canceled",
+                                       "debug_log": list(self.debug_log), "pass": self.pass_counter,
+                                       "fail": self.fail_counter,
+                                       "error_code": exception_from_src.error_type,
+                                       "is_internal": exception_from_src.is_internal,
+                                       "is_auto_recoverable": exception_from_src.is_auto_recoverable}}
+            self.cancel_ingestion_job(metadata, "cancel")
+        elif isinstance(exception_from_src, ExternalError):
+            metadata = {"job_result": {"failure_reason": exception_from_src.message,
+                                       "status": "failed",
+                                       "debug_log": list(self.debug_log), "pass": self.pass_counter,
+                                       "fail": self.fail_counter,
+                                       "error_code": exception_from_src.error_type,
+                                       "is_internal": exception_from_src.is_internal,
+                                       "is_auto_recoverable": exception_from_src.is_auto_recoverable}}
+            self.cancel_ingestion_job(metadata, "failed")
+        elif isinstance(exception_from_src, StageWriteFailure):
+            metadata = {"job_result": {"failure_reason": exception_from_src.message,
+                                       "status": "failed",
+                                       "debug_log": list(self.debug_log), "pass": self.pass_counter,
+                                       "fail": self.fail_counter,
+                                       "error_code": exception_from_src.error_type,
+                                       "is_internal": exception_from_src.is_internal,
+                                       "is_auto_recoverable": exception_from_src.is_auto_recoverable}}
+            self.cancel_ingestion_job(metadata, "failed")
+        elif isinstance(exception_from_src, DassanaException):
+            metadata = {"job_result": {"failure_reason": exception_from_src.message,
+                                       "status": "failed",
+                                       "debug_log": list(self.debug_log), "pass": self.pass_counter,
+                                       "fail": self.fail_counter,
+                                       "error_code": exception_from_src.error_type,
+                                       "is_internal": exception_from_src.is_internal,
+                                       "is_auto_recoverable": exception_from_src.is_auto_recoverable}}
+            self.cancel_ingestion_job(metadata, "failed")
+        elif isinstance(exception_from_src, Exception):
+            metadata = {"job_result": {"failure_reason": "Something went wrong",
+                                       "status": "canceled",
+                                       "debug_log": list(self.debug_log), 
+                                       "pass": self.pass_counter,
+                                       "fail": self.fail_counter,
+                                       "error_code": "internal_error",
+                                       "is_internal": True,
+                                       "is_auto_recoverable": False}}
+            self.cancel_ingestion_job(metadata, "cancel")
+
+    def close(self, metadata=None):
+        if metadata is None:
+            metadata = {}
+        global job_list
+        job_list.discard(self.job_id)
+        self.file.close()
+        job_result = {"status": "ready_for_loading",
+                      "source": {"pass": int(self.pass_counter), "fail": int(self.fail_counter),
+                                 "debug_log": list(self.debug_log)}}
+        metadata["job_result"] = job_result
+        if self.bytes_written > 0:
+            self.compress_file(self.file_path)
+            self.upload_to_cloud(self.file_path)
+            logger.info(f"Ingested remaining data: {self.bytes_written} bytes")
+            self.bytes_written = 0
+        for custom_file in self.custom_file_dict:
+            self.custom_file_dict[custom_file].close()
+            self.compress_file(custom_file)
+            self.upload_to_cloud(custom_file)
+        if os.path.exists("service_account.json"):
+            os.remove("service_account.json")
+        self.update_ingestion_to_done(metadata)
+
+    def update_ingestion_to_done(self, metadata):
+        json_body = {
+            "metadata": metadata
+        }
+        res = Api("POST", self.ingestion_service_url + "/job/" + self.job_id + "/" + "done", headers=get_headers(),
+                  json=json_body, is_internal=True).call_api()
+        logger.debug(f"Response Status: {res.status_code}")
+        logger.debug(f"Request Body: {res.request.body}")
+        logger.debug(f"Response Body: {res.text}")
+        return res.json()
+
+    def get_ingestion_details(self):
+        json_body = {
+            "source": str(self.source),
+            "recordType": str(self.record_type),
+            "configId": str(self.config_id),
+            "is_snapshot": self.is_snapshot,
+            "priority": self.priority,
+            "metadata": self.metadata
+        }
+        if json_body["priority"] is None:
+            del json_body["priority"]
+
+        res = Api("POST", self.ingestion_service_url + "/job/", headers=get_headers(), json=json_body,
+                  is_internal=True).call_api()
+        return res.json()
+
+    def cancel_ingestion_job(self, metadata, fail_type):
+        json_body = {
+            "metadata": metadata
+        }
+        res = Api("POST", self.ingestion_service_url + "/job/" + self.job_id + "/" + fail_type, headers=get_headers(),
+                  json=json_body, is_internal=True).call_api()
+        logger.debug(f"Response Status: {res.status_code}")
+        logger.debug(f"Request Body: {res.request.body}")
+        logger.debug(f"Response Body: {res.text}")
+        return res.json()
+
+    def get_signing_url(self):
+        res = Api("GET", self.ingestion_service_url + "/job/" + self.job_id + "/" + "signing-url",
+                  headers=get_headers(), is_internal=True).call_api()
+        signed_url = res.json()["url"]
+        return signed_url
