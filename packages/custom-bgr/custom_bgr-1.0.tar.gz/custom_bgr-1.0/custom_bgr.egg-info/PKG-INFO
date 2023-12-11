@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: custom-bgr
+Version: 1.0
+Summary: Customized background removal app
+Home-page: https://github.com/Rishabh20539011/Custom_BGR_APP
+Author: Rishabh Dwivedi
+Author-email: dwivedi.rishabh95@gmail.com
+Keywords: unet background removal,pretrained background removal,background removal,remove background,deep learning app,machine learning app
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10.4
+Description-Content-Type: text/markdown
+
+# Custom_BGR_APP
+This is a repository to create a mlops pipeline for your custom background removal app, which can run on different models and techniques on a single web app. 
