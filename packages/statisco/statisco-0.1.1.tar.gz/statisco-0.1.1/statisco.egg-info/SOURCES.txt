@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+statisco.egg-info/PKG-INFO
+statisco.egg-info/SOURCES.txt
+statisco.egg-info/dependency_links.txt
+statisco.egg-info/not-zip-safe
+statisco.egg-info/requires.txt
+statisco.egg-info/top_level.txt
+statisco/c_src/finance.c
+statisco/c_src/statistics.c
+statisco/c_src/indicators/ATRs.c
+statisco/c_src/indicators/MAs.c
