@@ -1,0 +1,10 @@
+boto3
+pydantic
+python-dotenv
+psycopg
+twine
+wheel
+xlsxwriter
+
+[binary]
+psycopg-binary
