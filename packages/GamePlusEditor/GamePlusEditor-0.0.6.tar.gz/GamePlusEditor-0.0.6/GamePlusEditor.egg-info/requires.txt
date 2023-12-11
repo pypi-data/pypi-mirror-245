@@ -1,0 +1,7 @@
+panda3d
+panda3d-gltf
+pillow
+pyperclip
+screeninfo
+psutil
+ursina

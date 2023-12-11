@@ -1,0 +1,9 @@
+include GamePlusEditor/Images/*
+include GamePlusEditor/ursina/*
+include GamePlusEditor/CoreFiles/*
+include GamePlusEditor/FileSystem/*
+include GamePlusEditor/GizmoStuff/*
+include GamePlusEditor/Models/*
+include GamePlusEditor/Netwroking/*
+include GamePlusEditor/Shaders/*
+
