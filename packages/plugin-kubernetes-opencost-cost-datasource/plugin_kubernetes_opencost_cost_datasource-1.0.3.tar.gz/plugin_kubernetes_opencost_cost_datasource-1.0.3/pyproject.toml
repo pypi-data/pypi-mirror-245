@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "plugin-kubernetes-opencost-cost-datasource"
+version = "1.0.3"
+dependencies = [
+    "spaceone-api",
+    "spaceone-core",
+    "spaceone-cost-analysis",
+]
+requires-python = ">=3.11"
+authors = [
+    { name = "MEGAZONE SpaceONE Team", email = "admin@spaceone.dev" },
+]
+description = "Data source plugin for Kubernetes OpenCost"
+license = {file = "LICENSE.txt"}
+
+[project.urls]
+Homepage = "https://www.spaceone.dev/"
+
+[tool.hatch.version]
+path = "src/plugin/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/plugin",
+]
