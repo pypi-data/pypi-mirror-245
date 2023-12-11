@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: LngDetectoR
+Version: 0.1
+Summary: A tool to detect programming languages in a directory.
+Home-page: https://github.com/chigwell/langdetector
+Author: Evgenii Evstafev
+Author-email: chigwel@gmail.com
+Keywords: language detection programming report
+Requires-Dist: prettytable
+Requires-Dist: python-magic
+
