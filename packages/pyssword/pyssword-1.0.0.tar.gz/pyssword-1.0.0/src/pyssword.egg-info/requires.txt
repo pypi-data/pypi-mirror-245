@@ -1,0 +1,6 @@
+click
+
+[dev]
+build
+pytest>=6.0
+twine

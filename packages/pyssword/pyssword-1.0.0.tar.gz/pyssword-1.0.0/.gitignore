@@ -1,0 +1,9 @@
+*.egg-info
+/.eggs
+/.hypothesis
+/.pytest_cache
+/build
+/dist
+/tmp
+
+__pycache__

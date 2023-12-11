@@ -1,0 +1,76 @@
+[build-system]
+requires = [
+    "setuptools>=64",
+    "setuptools-scm[toml]>=8",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyssword"
+dynamic = ["version"]
+authors = [{name = "Vitor Assis", email = "vitor.assis.dev@gmail.com"}]
+maintainers = [{name = "Vitor Assis", email = "vitor.assis.dev@gmail.com"}]
+description = "A Python password generator."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = [
+    "cli",
+    "criptography",
+    "password",
+    "pyssword",
+    "python3",
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "Topic :: Security :: Cryptography",
+    "Environment :: Console",
+    "Environment :: X11 Applications",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Natural Language :: English",
+]
+dependencies = [
+    "click",
+]
+
+[project.urls]
+Homepage = "https://pypi.org/project/pyssword"
+Repository = "https://gitlab.com/vassis/pyssword"
+Documentation = "https://gitlab.com/vassis/pyssword/-/blob/master/README.md"
+
+[project.optional-dependencies]
+dev = [
+  "build",
+  "pytest>=6.0",
+  "twine",
+]
+
+[project.scripts]
+pyssword = "pyssword.pyssword:run"
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "no-local-version"
+
+[tool.setuptools.packages.find]
+namespaces = false
+where = ["src"]
+include = ["pyssword*"]
+exclude = ["tests*"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = [
+    "--import-mode=importlib",
+    # "-rapP",
+]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]
+pythonpath = ["src"]
+testpaths = ["tests"]
