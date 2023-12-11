@@ -1,0 +1,15 @@
+# simulation parameter setting
+lismode = lipinski # option: 2d, 3d, lipinski, maccs_fp, morgan_fp, daylight_fp, tt_fp, avalon_fp, pubchem_fp
+columns_to_remove = ligand_id, smiles, vina_score
+activity = vina_score
+act_plot = Score # X and y label di plot 
+act_log = False # True or False
+transformX = False # True or False
+transformY = False # True or False
+all_features = True # True or False
+scalerX = StandardScaler # MinMaxScaler, StandardScaler, Normalizer, PowerTransformer, RobustScaler, PolynomialFeatures
+scalerY = RobustScaler # MinMaxScaler, StandardScaler, Normalizer, PowerTransformer, RobustScaler, PolynomialFeatures
+ephocs = 8
+batch_size = 16
+dense_units = 32, 32
+optimizer = sgd

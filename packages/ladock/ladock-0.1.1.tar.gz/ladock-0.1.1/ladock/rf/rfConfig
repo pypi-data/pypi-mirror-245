@@ -1,0 +1,3 @@
+# simulation parameter setting
+columns_to_remove = molecule_chembl_id, canonical_smiles, standard_value, search_term
+labels = search_term
