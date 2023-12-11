@@ -1,0 +1,3 @@
+[console_scripts]
+detect-lang=izihawa_langdetect:run
+
