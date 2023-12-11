@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: hrbrthemes-HRBRMSTR
+Version: 0.1.0
+Summary: Opinionated Themes For plotine
+Home-page: https://gitlab.com/hrbrmstr/hrbrthemes-p9
+Author: boB Rudis
+Author-email: boB Rudis <bob@rud.is>
+Project-URL: Homepage, https://gitlab.com/hrbrmstr/hrbrthemes-p9
+Project-URL: Issues, https://gitlab.com/hrbrmstr/hrbrthemes-p9/issues
+Keywords: plotnine, ggplot2, themes
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: plotnine
+
+
+Ref:
+<https://dailyfinds.hrbrmstr.dev/p/drop-385-2023-12-08-weekend-project>
+
+``` bash
+$ python3 -m pip install git+https://gitlab.com/hrbrmstr/hrbrthemes-p9
+```
+
+``` python
+from hrbrthemes import *
+
+from plotnine import *
+from plotnine.data import mtcars
+
+(ggplot(mtcars, aes("wt", "mpg", color="factor(gear)")) 
+  + geom_point() 
+  + labs(title = "hrbrmstr's Fav Example Plot", x = "Weight (tons)", y = "Miles-per-gallon")
+  + theme_ipsum())
+```
+
+![](README_files/figure-commonmark/cell-2-output-1.png)

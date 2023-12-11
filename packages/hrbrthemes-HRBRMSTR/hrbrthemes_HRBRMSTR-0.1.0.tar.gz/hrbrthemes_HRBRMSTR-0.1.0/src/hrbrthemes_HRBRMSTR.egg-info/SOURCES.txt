@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/hrbrthemes/__init__.py
+src/hrbrthemes/theme_ipsum.py
+src/hrbrthemes_HRBRMSTR.egg-info/PKG-INFO
+src/hrbrthemes_HRBRMSTR.egg-info/SOURCES.txt
+src/hrbrthemes_HRBRMSTR.egg-info/dependency_links.txt
+src/hrbrthemes_HRBRMSTR.egg-info/requires.txt
+src/hrbrthemes_HRBRMSTR.egg-info/top_level.txt
