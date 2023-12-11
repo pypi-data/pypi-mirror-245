@@ -1,0 +1,2 @@
+[console_scripts]
+playlist-stitcher = cli:cli
