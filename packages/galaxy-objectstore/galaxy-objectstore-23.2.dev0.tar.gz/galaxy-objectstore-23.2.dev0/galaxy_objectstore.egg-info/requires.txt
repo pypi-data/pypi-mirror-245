@@ -1,0 +1,3 @@
+galaxy-util
+pydantic<2
+PyYAML
