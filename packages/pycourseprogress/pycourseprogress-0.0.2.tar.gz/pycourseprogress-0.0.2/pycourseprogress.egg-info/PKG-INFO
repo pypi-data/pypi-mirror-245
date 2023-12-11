@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: pycourseprogress
+Version: 0.0.2
+Summary: An integration for Course Progress sites.
+Home-page: http://github.com/pantherale0/pycourseprogress
+Author: pantherale0
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyjwt==2.*
+Provides-Extra: dev
+Requires-Dist: bandit==1.7.*; extra == "dev"
+Requires-Dist: black==23.*; extra == "dev"
+Requires-Dist: build==0.10.*; extra == "dev"
+Requires-Dist: flake8==6.*; extra == "dev"
+Requires-Dist: isort==5.*; extra == "dev"
+Requires-Dist: mypy==1.5.*; extra == "dev"
+Requires-Dist: pytest==7.*; extra == "dev"
+Requires-Dist: pytest-cov==4.*; extra == "dev"
+Requires-Dist: twine==4.*; extra == "dev"
+Requires-Dist: pyjwt==2.*; extra == "dev"
+
+<div align="center">
+
+# Course Progress API
+
+A one-liner description of your project goes here.
+
+[![Build Status](https://github.com/pantherale0/pycourseprogress/workflows/build/badge.svg)](https://github.com/pantherale0/pycourseprogress/actions)
+[![Coverage Status](https://coveralls.io/repos/github/pantherale0/pycourseprogress/badge.svg?branch=main)](https://coveralls.io/github/pantherale0/pycourseprogress?branch=main)
+[![PyPi](https://img.shields.io/pypi/v/pycourseprogress)](https://pypi.org/project/pycourseprogress)
+[![Licence](https://img.shields.io/github/license/pantherale0/pycourseprogress)](LICENSE)
+
+</div>
+
+This project is intended to grab data from course progress domains (*.courseprogress.co.uk).
+
+Tested with a swim school course on southnorfolk.courseprogress.co.uk.
+
+## Install
+
+```bash
+# Install tool
+pip3 install pycourseprogress
+
+# Install locally
+just install
+```
+
+## Development
+
+```bash
+# Get a comprehensive list of development tools
+just --list
+```
