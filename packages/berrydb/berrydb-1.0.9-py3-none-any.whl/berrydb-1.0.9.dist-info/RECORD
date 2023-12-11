@@ -1,0 +1,17 @@
+berrydb/BerryDB.py,sha256=0Z0-OcSCQebuRkv9JdQ0ySpftoS2ATxRlO-JUXjdiZE,15618
+berrydb/__init__.py,sha256=xmMi_OvQbKdQIvrOmHIDzqZyek-_M7vmdb7zNJblyaA,39
+constants/__init__.py,sha256=snaw815xgzY4pbWqobRA--Y4S3FUBA3Gd-MwjiIq40E,23
+constants/constants.py,sha256=ca6BLfH1BgKSiV-o1p7gXdgskadxik4ZheDl2bRFMbA,1657
+database/__init__.py,sha256=TPjwD0eLY5Re9Ipvu-T-oPXNtKZCoj3p75r3KflbmCc,31
+database/database.py,sha256=wSC2WnzTNxRweFpLS5d8hDjXr7sjBMqj-OJI-WAbvpk,12358
+embeddings/__init__.py,sha256=jrUWYu_5eWkZWFSuW0B_KA_1xFcIS7_9ZMulSRVB06A,24
+embeddings/embeddings.py,sha256=e_B8EnjQUNbDMo1su5rdb1XC_pgzwY1bH0mqubBZjNI,8510
+loaders/__init__.py,sha256=VF8a-mFMs1Tz8VZpdN9P9dL68EJjU5den3M3fsuPO0U,50
+loaders/berrydb_json_csv_loader.py,sha256=6umJzKfHTPgDm-ElFMW3ywxxnUjxH8ylIkbqLjCaxWs,5584
+loaders/berrydb_json_loader.py,sha256=wwqylCQ21HEzM1lh0z5SvBw_poRiwicNKx26Kdlwmrk,4915
+utils/__init__.py,sha256=2VTD32PuV8sQo4EAryCs2xYJgsTXpm13xFKqdeXQMq8,19
+utils/utils.py,sha256=twxTVfQVAvAf5GWbhzOjSe0FgbCCAlMxhuCP-4etw2w,799
+berrydb-1.0.9.dist-info/METADATA,sha256=3MvzsoZlEFMcgFQXl_ta0ve67z3E3tWzmEW7IVk2pSY,637
+berrydb-1.0.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+berrydb-1.0.9.dist-info/top_level.txt,sha256=f4gbAcdmWmdmiLJKVD9oqiIwcaOi92NJEvcSHQ48UGA,60
+berrydb-1.0.9.dist-info/RECORD,,
