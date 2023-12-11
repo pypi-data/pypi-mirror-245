@@ -1,0 +1,3 @@
+[pytest11]
+dir-equal = pytest_dir_equal.plugin
+

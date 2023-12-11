@@ -1,0 +1,10 @@
+pytest_dir_equal-0.2.1.dist-info/METADATA,sha256=HC9zXs5nuXo375WPpeqZSxNszr157pCmki3lGQLUOws,2135
+pytest_dir_equal-0.2.1.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+pytest_dir_equal-0.2.1.dist-info/entry_points.txt,sha256=17Wq_snfydStwhcZsltKEeNh424o5qZYPeylg_hfac0,48
+pytest_dir_equal-0.2.1.dist-info/licenses/LICENSE,sha256=mGvg56Jg42sibUwNMD7f55op8yqaWFG9-ELS6HqAocA,1078
+pytest_dir_equal/.gitignore,sha256=T_6cEPGYAfQ6-gdGwpLCLe1SpRnTl4vwi4qfVM1QsYI,8
+pytest_dir_equal/VERSION,sha256=cQFcl5zLD8igvnygroMEarBFzcLI-qCfsvD35ED5tKY,6
+pytest_dir_equal/__init__.py,sha256=PLXZX1iyxROEyJK-r9Zvc0gRgyq42MXKcXUjRwye_8s,782
+pytest_dir_equal/plugin.py,sha256=T-EfFyCXpSYexGf-zd8VmWcB0z-gsbtjJJzr1oSBU0A,6828
+pytest_dir_equal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_dir_equal-0.2.1.dist-info/RECORD,,
