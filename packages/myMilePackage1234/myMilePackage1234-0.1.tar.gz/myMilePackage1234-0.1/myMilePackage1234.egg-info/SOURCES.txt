@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+myMilePackage/__init__.py
+myMilePackage/mileConverter.py
+myMilePackage1234.egg-info/PKG-INFO
+myMilePackage1234.egg-info/SOURCES.txt
+myMilePackage1234.egg-info/dependency_links.txt
+myMilePackage1234.egg-info/top_level.txt
