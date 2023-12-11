@@ -1,0 +1,15 @@
+evalparrot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evalparrot/evaluate_parrot_kilt.py,sha256=nD0n74_PSOkWlmL34EZMO9gHQ3-t-hCqRYFE4C_rUdI,10144
+evalparrot/metric/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evalparrot/metric/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evalparrot/metric/utils/io.py,sha256=ggeQvSaez-gn_7mVqLI84lx3mQcw-XJ5Ta_cDQp_rZ4,2243
+evalparrot/metric/utils/multi_run.py,sha256=KHh-rkciURRW6xWaGPz2hrcphLe8HEAysnIK5u0VdZ0,3508
+evalparrot/metric/utils/dataset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evalparrot/metric/utils/dataset/kilt_data.py,sha256=2j293RpljwPeD0YCVRiFS94CFcYWc1FhrTODen8Gj2E,14079
+evalparrot/metric/utils/parrot_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evalparrot/metric/utils/parrot_utils/http_utils.py,sha256=ZDvU_NOfkqILyA7SnDt2o74wtFVWDcZuPXoFbMalD7E,3856
+evalparrot-0.0.1.dist-info/LICENSE,sha256=Uk3S80nTZ4mJeshioqi0oEs6GaWP-ty3htin9cChUHE,1064
+evalparrot-0.0.1.dist-info/METADATA,sha256=F3C0J12oRhhtIR43vODY5ScNJAWIhxskGGlANP1UYuA,273
+evalparrot-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+evalparrot-0.0.1.dist-info/top_level.txt,sha256=5LpuMk57pN3736VlnIwEtqF_PU6gFfr2SsqF44Si6gg,11
+evalparrot-0.0.1.dist-info/RECORD,,
