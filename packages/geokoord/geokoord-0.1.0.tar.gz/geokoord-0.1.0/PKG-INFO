@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: geokoord
+Version: 0.1.0
+Summary: A python package for interacting with the koordinates API.
+Project-URL: Homepage, https://github.com/quinnhornblow/geokoord
+Project-URL: Issues, https://github.com/quinnhornblow/geokoord/issues
+Author-email: quinnhornblow <quinn.hornblow@protonmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: requests>=2.31.0
+Requires-Dist: tqdm>=4.66.1
+Description-Content-Type: text/markdown
+
+# geokoord
+
+Describe your project here.
+
+links:
+
+- https://koordinates.com/explore/publishers/?type=sites
