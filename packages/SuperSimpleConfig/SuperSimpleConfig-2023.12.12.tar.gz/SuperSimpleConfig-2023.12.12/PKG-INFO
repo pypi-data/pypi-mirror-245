@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: SuperSimpleConfig
+Version: 2023.12.12
+Summary: Reads user configuration files that written in an extremely simple way
+Home-page: https://github.com/shengj1ang/SuperSimpleConfig
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SuperSimpleConfig
+
+https://github.com/shengj1ang/SuperSimpleConfig
+
+`SuperSimpleConfig`  is a lightweight Python library designed to read user configuration files written in an extremely simple manner. Its goal is to offer an easy and intuitive way to handle configuration files, making the reading and application of configurations straightforward and hassle-free.
+
+[中文文档](https://github.com/shengj1ang/SuperSimpleConfig/blob/main/README-ZH.md)
+
+## Features
+
+- No block structure; each configuration item is on its own line.
+- All spaces are ignored.
+- Automatic detection of data types (integer, float, string, boolean).
+- By default, quotes are not needed for strings. If you want to force a numerical value to be treated as a string, you can manually add quotes like "123456".
+- Super simple syntax.
+- Read-only functionality; does not support writing.
+
+
+## Installation
+
+You can install `SuperSimpleConfig` via `pip`:
+
+```bash
+pip install SuperSimpleConfig
+```
+
+## Quick Start
+
+Here's a simple example of how to use SuperSimpleConfig:
+
+First, create a configuration file. There are no specific requirements for the file name and extension. Here, we use `config.txt` as an example, with the following content:
+
+```makefile
+
+// You can write comments at the beginning
+domain=example.com // Comments can go here as well
+// Comments are also allowed here
+max_requests=5 // Automatically identified as int
+pi=3.1415 // Automatically identified as float
+
+// Empty lines are also okay
+
+```
+Here's another example of a configuration file:
+```makefile
+// Configuration File
+// pip install pyserial
+// pip install telepot
+ // Configuration File
+ // https://api.telegram.org/botxxxx
+
+phonenum="008613588888888" // Phone number, optional but useful for distinction in multiple instances.
+max_error_count=10 // Maximum error count limit
+timezone=0 // Time zone, integer type
+serialPort=COM3 // Serial port, in Windows you can use ../test/serial_init.cmd to get it
+baudRate=115200 // Baud rate
+schedule_reconnect_max=20.0 // Force reconnect to serial port if not refreshed in X seconds
+
+db_path=database/example.db // Database path
+sms_send_allow=True // Allow sending SMS?
+sms_auto_send=False // Enable auto-reply for 11-digit incoming calls
+
+sms_limit=1 // Maximum number of auto-reply SMS
+sms_auto_send_content=Hello, the phone number you dialed has been changed to xxxxx, please contact for any matters. // Content of auto-reply
+current_phonenum_log=True // Display the local phone number in local messages?
+
+enable_telegram=True // Enable Telegram
+bot=1234567890:AAAA00xxxxxxxxxx // Bot parameters
+tg_api_base_link=https:\/\/api.telegram.org
+tg_chat_id="-00000000" // Telegram group ID
+current_phonenum_tg=True // Display the local phone number in Telegram messages?
+
+flask_host=0.0.0.0
+flask_port=8908
+flask_production_mode=False
+
+
+```
+Then, you can use the following code to read and use these configurations:
+
+```python
+
+from SuperSimpleConfig import UserConfig
+
+configs = UserConfig.read("config.txt")
+
+#UserConfig("FilePath").read()  #return a dictionary
+#UserConfig("FilePath").show() #print the config
+
+print(configs)
+Value1=configs['flask_host']
+Value2=congis["flask_port"]
+
+```
+
+## Configuration File Format
+
+our configuration file should follow these simple rules:
+
+- Each configuration item is defined on a single line as key=value. Empty lines are allowed.
+- Comments can be added at the end of a line, starting with //.
+- Quotes are not necessary for strings unless you want to force an integer or float to be treated as a string.
+- Escape character: Use \/\/ to include // in your text. e.g. https:\/\/www.python.org
+
+
+## License
+SuperSimpleConfig is released under the MIT License. For more details, please see the LICENSE file.
+
+
+
+
