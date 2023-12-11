@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "iosock"
+version = "0.0.9"
+authors = [
+  { name="Chor", email="chorong8883@gmail.com" },
+]
+description = "Simple I/O Socket"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux"
+]
+keywords = ["socket", "iosock", "epoll", "kqueue"]
+
+[project.urls]
+"Homepage" = "https://github.com/chorong8883/iosock"
