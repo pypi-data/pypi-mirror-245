@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+git_assistente/__init__.py
+git_assistente.egg-info/PKG-INFO
+git_assistente.egg-info/SOURCES.txt
+git_assistente.egg-info/dependency_links.txt
+git_assistente.egg-info/requires.txt
+git_assistente.egg-info/top_level.txt
