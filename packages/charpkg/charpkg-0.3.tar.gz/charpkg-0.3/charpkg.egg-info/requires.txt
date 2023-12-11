@@ -1,0 +1,9 @@
+CharActor==0.9.8
+CharObj
+CharTask
+CharCore
+gridengine_framework
+entyty
+dicepy
+screeninfo
+colorama
