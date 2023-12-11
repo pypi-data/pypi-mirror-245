@@ -1,0 +1,2 @@
+[console_scripts]
+monico = monico:main
