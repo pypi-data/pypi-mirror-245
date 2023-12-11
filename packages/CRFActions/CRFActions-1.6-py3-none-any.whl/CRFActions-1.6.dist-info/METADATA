@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: CRFActions
+Version: 1.6
+Summary: Package for processing CRF
+Author: Stacey
+Author-email: yq13408614660@163.com
+Requires-Python: >=3.6
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: pdfplumber
+Requires-Dist: tkinter
+
