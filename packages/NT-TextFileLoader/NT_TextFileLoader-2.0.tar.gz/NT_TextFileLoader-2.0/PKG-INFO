@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: NT_TextFileLoader
+Version: 2.0
+Summary: Python library to extract text from various file formats. The supported formats are: JPEG, PNG, PDF, DOCX, DOC, and TEXT.
+Author: Vishnu.D
+Author-email: vishnu.d@narmtech.com
+License: MIT
+Keywords: text extractor,text loader,load text file,read text from pdf,load text from DOC,load text from DOCX,read text from images,pip install nt-textfileloader,pip install textfileloader
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# NT-TextLoader
+
+[![N|Solid](https://narmtech.com/img/companylogo.png)](https://nodesource.com/products/nsolid)
+
+
+### Description
+
+  *A Python module for extracting text content from various file types including PDFs, DOCX, DOC, text files, and images using Optical Character Recognition (OCR).*
+
+
+### Installation Instructions
+
+Before using this package, ensure you have installed the following system-level dependencies:
+
+### 1.On Linux
+- Tesseract OCR and MS Office:
+
+  ```bash
+  !apt install tesseract-ocr
+  !apt install libtesseract-dev
+  !apt-get --no-install-recommends install libreoffice -y
+  !apt-get install -y libreoffice-java-common
+
+### 2.On Windows
+
+Simple steps for tesseract installation in windows.
+
+  - 1.Download tesseract exe from https://github.com/UB-Mannheim/tesseract/wiki.
+
+  - 2.Install this exe in C:\Program Files (x86)\Tesseract-OCR
+
+  - 3.Open virtual machine command prompt in windows or anaconda prompt.
+
+  - 4.Run pip install pytesseract
+
+To test if tesseract is installed type in python prompt:
+```python 
+  import pytesseract
+  print(pytesseract)
+ ```
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install NT-TextFileLoader
+
+# Also you might need to install the below python packages
+pip install PyPDF2
+pip install python-docx
+pip install docx2txt
+pip install Pillow
+pip install pytesseract
+pip install langchain
+pip install unstructured
+```
+
+## Usage
+
+```python
+from NT_TextFileLoader.text_loader import TextFileLoader
+
+# Load text from a file
+file_path = 'path/to/your/file'
+extracted_text = TextFileLoader.load_text(file_path)
+print(extracted_text)
+```
+
+## Supported File Types
+
+- **PDF**: Extracts text from PDF files.
+- **DOCX**: Extracts text from DOCX files.
+- **DOC**: Extracts text from legacy DOC files.
+- **Text files**: Loads text content from TXT files.
+- **Images (JPG, PNG, JPEG, WEBP)**: Uses OCR to extract text from images.
+
+## Requirements
+
+- PyPDF2
+- python-docx
+- Pillow
+- pytesseract (For image-based text extraction)
+- langchain 
+
+## Contributions
+
+Contributions, issues, and feature requests are welcome!
+
+## License
+
+This project is licensed under the MIT License.

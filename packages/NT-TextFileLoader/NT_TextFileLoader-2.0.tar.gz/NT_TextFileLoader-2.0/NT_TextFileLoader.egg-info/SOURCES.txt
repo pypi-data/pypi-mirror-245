@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+NT_TextFileLoader/__init__.py
+NT_TextFileLoader/text_loader.py
+NT_TextFileLoader.egg-info/PKG-INFO
+NT_TextFileLoader.egg-info/SOURCES.txt
+NT_TextFileLoader.egg-info/dependency_links.txt
+NT_TextFileLoader.egg-info/requires.txt
+NT_TextFileLoader.egg-info/top_level.txt
