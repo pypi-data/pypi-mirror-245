@@ -1,0 +1,10 @@
+myCalculatorPackage/__init__.py,sha256=PTB7dnx1oFjps5-TdPWi3CFapq_kRfNKXkCbgb5ptEs,116
+myCalculatorPackage/division/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myCalculatorPackage/division/divide.py,sha256=tXm6pn_CXaT3koTKj31Grb9Hjyiy9wXUXiCm88kV3Sc,45
+myCalculatorPackage/multiplication/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myCalculatorPackage/multiplication/multiply.py,sha256=Ign2fHoJ-bOVteHAVvhSMwHBqZDTc621lXFRDB4dNkk,44
+myCalculatorPackage-0.0.2.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+myCalculatorPackage-0.0.2.dist-info/METADATA,sha256=eSNjHFqBBt6ygn-YrmzEo736HWg3MYzhDoaQ16MNg7o,605
+myCalculatorPackage-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+myCalculatorPackage-0.0.2.dist-info/top_level.txt,sha256=uhAzuOFLUyfEUsBd7d3DxyFJ_Thb5mid7q5meAVi3Mw,20
+myCalculatorPackage-0.0.2.dist-info/RECORD,,
