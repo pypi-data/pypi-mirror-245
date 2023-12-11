@@ -1,0 +1,8 @@
+rdframe/reference/cql_sparql_reference.py,sha256=UCAAotpFMxmGn4r5aB3pYj_Ny0QnkIDSlQdXAC96-WY,730
+rdframe/sparql_grammar/grammar.py,sha256=mSM26UBGQT_pqwezugfCAllppUgb_VyxkzVjbgnxxkE,37970
+rdframe/sparql_grammar/readme.md,sha256=yUTrEOeVVDqwTv_oSXfkzYMy-va28sU87wS-e1O7TC4,444
+rdframe/x_to_sparql/cql2sparql.py,sha256=d45h--y0fc-GBMs_0gDYTbtSHDtNcEuxpV-vt3pQqfI,12951
+rdframe/x_to_sparql/shacl2sparql.py,sha256=tcinm1PicbPiqaF6PgCbCYHjsQPyPUZoMzqicT2tVOY,26603
+rdframe-0.1.0.dist-info/METADATA,sha256=yKwIXt8d309AVWaoqmR4BmToMSVsyE9annV7hgKpFxc,15307
+rdframe-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+rdframe-0.1.0.dist-info/RECORD,,
