@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=67.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyliblorawan"
+version = "0.4.0"
+description = "LoRaWAN network servers and devices codec library"
+readme = "README.md"
+authors = [{ name = "Oliv'"}]
+license = { file = "LICENSE.md" }
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Home Automation",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+keywords = ["LoRaWAN", "codec", "network server", "lora"]
+dependencies = [
+    "aiohttp >= 3.8.5"
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = [
+    "aioresponses>=0.7.0",
+    "pytest>=7.3.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0"
+]
+
+
+[project.urls]
+"Homepage" = "https://gitlab.com/oliv4945/pyliblorawan"
+"Bug Tracker" = "https://gitlab.com/oliv4945/pyliblorawan/-/issues"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "src",
+]
+
+
+[tool.setuptools.package-data]
+"pyliblorawan" = ["py.typed"]
