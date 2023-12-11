@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+derivative_mode/__init__.py
+derivative_mode/derivative.py
+derivative_mode.egg-info/PKG-INFO
+derivative_mode.egg-info/SOURCES.txt
+derivative_mode.egg-info/dependency_links.txt
+derivative_mode.egg-info/requires.txt
+derivative_mode.egg-info/top_level.txt
