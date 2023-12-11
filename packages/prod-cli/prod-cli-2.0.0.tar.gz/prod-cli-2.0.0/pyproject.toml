@@ -1,0 +1,22 @@
+[project]
+name = "prod-cli"
+version = "2.0.0"
+authors = [
+  { name="Arnaud M", email="arnaud.pypi@mailops.fr" },
+]
+description = "A prod-cli package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+prod-cli = "prod_cli:main"
+ovh-cuicui = "prod_cli:main"
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
