@@ -1,0 +1,304 @@
+# Supported formats from https://developers.google.com/cast/docs/media
+images:
+  - APNG
+  - BMP
+  - GIF
+  - JPEG
+  - PNG
+  - WEBP
+
+containers:
+  - Matroska
+  - MP4
+  - WebM
+  - MP3
+  - MP2T
+  - OGG
+  - WAV
+
+audio:
+  - MP3
+  - AAC
+  - HE-AAC
+  - LC-AAC
+  - Opus
+  - Vorbis
+  - WebM
+  - FLAC
+  - WAV
+  - WMA
+
+subtitles:
+  - WebVTT
+  - TTML
+  - EIA-608
+  - EIA-708
+
+# Formats can have different names, here are their equivalencies
+aliases:
+  avc:
+    - h264
+    - mp4
+  hevc:
+    - h265
+  matroska:
+    - mkv
+    - mka
+    - mks
+    - mk3d
+  div3:
+    - divx
+  mp4:
+    - mpeg4
+
+extensions:
+  avi: avi
+  matroska: mkv
+  mp4: mp4
+  webm: webm
+
+
+codec_container_compat:
+  #
+
+
+# map of codecs to ffmpeg encoders
+encoders:
+  video:
+    avc:
+#      - h264_vaapi
+#      - h264_amf
+#      - h264_nvenc
+#      - h264_qsv
+      - libx264
+    hevc:
+#      - hevc_vaapi
+#      - hevc_amf
+#      - hevc_nvenc
+#      - hevc_qsv
+      - libx265
+    vp8:
+#      - h264_vaapi
+#      - h264_amf
+#      - h264_nvenc
+#      - h264_qsv
+      - libvpx
+    vp9:
+#      - vp9
+#      - vp9_v4l2m2m
+      - libvpx-vp9
+#      - vp9_cuvid
+#      - vp9_qsv
+
+  audio:
+    mp3:
+      - libmp3lame
+    aac:
+      - aac
+    vorbis:
+      - vorbis
+      - libvorbis
+    opus:
+      - opus
+      - libopus
+    flac:
+      - flac
+
+  subtitles:
+    webvtt:
+      - webvtt
+
+# map of codecs to ffmpeg decoders
+decoders:
+  video:
+    avc:
+      - h264
+      - h264_v4l2m2m
+      - h264_qsv
+      - h264_cuvid
+    hevc:
+      - hevc
+      - hevc_qsv
+      - hevc_v4l2m2m
+      - hevc_cuvid
+    vp8:
+      - vp8
+      - vp8_v4l2m2m
+      - libvpx
+      - vp8_cuvid
+      - vp8_qsv
+    vp9:
+      - vp9
+      - vp9_v4l2m2m
+      - libvpx-vp9
+      - vp9_cuvid
+      - vp9_qsv
+
+  audio:
+    mp3:
+      - mp3float
+      - mp3
+      - mp3adufloat
+      - mp3adu
+      - mp3on4float
+      - mp3on4
+    aac:
+      - aac
+      - aac_fixed
+      - aac_latm
+    vorbis:
+      - vorbis
+      - libvorbis
+    opus:
+      - opus
+      - libopus
+    flac:
+      - flac
+
+
+# Profile record shape
+_profile: &profile
+  resolution: 1080
+  fps: 30
+  level: '100.0'
+
+# Device record shape
+_device: &device
+#  model: 1st Gen
+  profiles:
+    - avc:
+        <<: *profile
+        level: '4.1'
+
+    - avc:
+        <<: *profile
+        fps: 60
+        level: '4.1'
+        resolution: 720
+
+    - vp8:
+        <<: *profile
+
+    - vp8:
+        <<: *profile
+        fps: 60
+        resolution: 720
+
+
+# Device names and supported profiles from https://developers.google.com/cast/docs/media
+devices:
+  Chromecast 1st Gen:
+    <<: *device
+
+  Chromecast 2nd Gen:
+    <<: *device
+
+  Chromecast 3rd Gen:
+    <<: *device
+    profiles:
+      - avc:
+          <<: *profile
+          fps: 60
+          level: '4.2'
+
+      - vp8:
+          <<: *profile
+
+      - vp8:
+          <<: *profile
+          fps: 60
+          resolution: 720
+
+  Chromecast Ultra:
+    <<: *device
+    profiles:
+      - avc:
+          <<: *profile
+          fps: 60
+          level: '4.2'
+
+      - hevc:
+          <<: *profile
+          fps: 60
+          level: '5.1'
+          resolution: 3840
+
+      - vp8:
+          <<: *profile
+          fps: 30
+          resolution: 3840
+
+      - vp9:
+          <<: *profile
+          fps: 60
+          level: '5.1'
+          resolution: 3840
+
+      - hdr:
+          <<: *profile
+          fps: 60
+          resolution: 3840
+
+  Chromecast with Google TV:
+    <<: *device
+    profiles:
+      - avc:
+          <<: *profile
+          fps: 60
+          level: '5.1'
+
+      - avc:
+          <<: *profile
+          fps: 30
+          level: '5.1'
+          resolution: 3840
+
+      - hevc:
+          <<: *profile
+          fps: 60
+          level: '5.1'
+          resolution: 3840
+
+      - vp9:
+          <<: *profile
+          fps: 60
+          resolution: 3840
+
+  Google Nest Hub:
+    <<: *device
+    profiles:
+      - avc:
+          <<: *profile
+          fps: 60
+          level: '4.1'
+          resolution: 720
+
+      - vp9:
+          <<: *profile
+          fps: 60
+          level: '4.0'
+          resolution: 720
+
+  Nest Hub Max:
+    <<: *device
+    profiles:
+      - avc:
+          <<: *profile
+          fps: 60
+          level: '4.1'
+          resolution: 720
+
+      - vp9:
+          <<: *profile
+          fps: 60
+          level: '4.0'
+          resolution: 720
+
+  Test Device:
+    <<: *device
+    profiles:
+      - vp9:
+          <<: *profile
+          fps: 60
+          level: '4.0'
+          resolution: 720
