@@ -1,0 +1,16 @@
+transformers
+bitsandbytes==0.39.0
+peft
+wandb
+accelerate
+datasets
+evaluate
+torchtext==0.2.3
+scikit-learn
+numpy
+rouge-score
+setuptools
+wheel
+twine
+build
+keyrings.alt

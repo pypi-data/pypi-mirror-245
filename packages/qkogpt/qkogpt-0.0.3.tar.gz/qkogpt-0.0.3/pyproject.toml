@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools == 68.2.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qkogpt"
+version = "0.0.3"
+authors = [
+  { name="EuiYul Song", email="thddmlduf@gmail.com" },
+]
+description = "Quantized KoGPT"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/euiyulsong/qkogpt"
+Issues = "https://github.com/euiyulsong/qkogpt/issues"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = [ "src/qkogpt" ]
