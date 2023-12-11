@@ -1,0 +1,14 @@
+ezregex/EZRegex.py,sha256=Yl8xZS1Yk4u4undiMlrukCxvdiBpxgpnYylnPwSlaHE,23525
+ezregex/__init__.py,sha256=Ht9DtVtk0tz2T2m5bu819NLBK0E0JbsIvUBxMBOdSAw,337
+ezregex/invert.py,sha256=pKpos5L7zyWzlEqZCy2FpxiSO8bJDcu49ctp-HZCCdM,21172
+ezregex/invert_old.py,sha256=ctH6IcL9Rnso4qo9PAcjJ4FlOF0yeUh6LCbIajvxsK8,10345
+ezregex/perl/__init__.py,sha256=V3kENi9J5NUAYwPBBWytHcKZNXZSBmbW9-RMdZbmPNo,565
+ezregex/perl/elements.py,sha256=dNSGih45_OsvzHn9ssam5XEhlvPQZQmoHsEn21G69Nc,757
+ezregex/perl/psuedonymns.py,sha256=wrk_apbxcW0TfJCL0FyiA2oTOZ-cfB15bhcmRfK6Dh8,63
+ezregex/python/__init__.py,sha256=hOKQE2FXDa6Hs3AqY8aJkHCNHGjbLP7vV5-q0DfYX64,6738
+ezregex/python/elements.py,sha256=o-y7bRfIG7zpBDfCmKrRJCeLpTz6R9tVsT0uiar0TFk,18045
+ezregex/python/psuedonymns.py,sha256=Og7auqTk1Mr2ynIoxgUhC2E1qHLUWfJtt0sPyPgWeSE,2345
+ezregex-1.6.0.dist-info/METADATA,sha256=Iff7f3_hcwoHMQvqFWhXnqMvKABRgQg8ClrJDTg8Cxo,17446
+ezregex-1.6.0.dist-info/WHEEL,sha256=Gw8jIuTWkPakxikG-6o91zOxTjpZNZ00Qw8KZLqAprY,87
+ezregex-1.6.0.dist-info/licenses/LICENSE,sha256=UlPV2yn7HK0HiGEUsk5ttIljuNMskA6IHRkKxGkbmj8,1093
+ezregex-1.6.0.dist-info/RECORD,,
