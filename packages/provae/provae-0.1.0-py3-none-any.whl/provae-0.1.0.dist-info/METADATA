@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: provae
+Version: 0.1.0
+Summary: Progressive-Growing VAE
+License: MIT
+Author: Thomas Kientz
+Author-email: thomas@kientz.net
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# ProVAE
+Progressive-Growing Varational-AutoEncoder
+
