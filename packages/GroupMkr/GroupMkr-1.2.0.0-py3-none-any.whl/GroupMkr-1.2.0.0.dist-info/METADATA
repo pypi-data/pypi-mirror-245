@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: GroupMkr
+Version: 1.2.0.0
+Summary: GroupMkr is a module that simplifies creation of user groups and permissions in the terminal
+Home-page: https://github.com/mezardini/GroupMkr.git
+Download-URL: https://github.com/mezardini/GroupMkr/archive/refs/tags/1.0.0.1.tar.gz
+Author: Olaoluwa Ajisola
+Author-email: ajisolaolaoluwa@gmail.com
+License: MIT
+Keywords: Group,User Model,Django
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: django
+
+# GROUP MKR
+## Create User groups in the python shell 
+
+
+
+
+
+## Procedure
+
+- Install the module
+- Create a .py file in the apps folder that contains the views and models file
+- Import the add_group function from the module in the file 'from GroupMkr import add_group'
+- Add this line to the file 'add_group (group_name={Group Name}, permission= {Permission})', edit the strings to your choice
+- To create the groups from the shell, run the 'python manage.py shell' command and run the 'exec(open('app_name/file.py').read())'. Edit the app_name and file 
+
+## Check the github repo for the code if interested
+https://github.com/mezardini/GroupMkr.git
