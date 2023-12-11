@@ -1,0 +1,3 @@
+[console_scripts]
+heartbeat_status=heartbeat_status.main:main
+
