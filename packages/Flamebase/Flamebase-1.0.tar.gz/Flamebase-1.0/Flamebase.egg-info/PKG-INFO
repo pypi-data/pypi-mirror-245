@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: Flamebase
+Version: 1.0
+Summary: Simple library to create a clone of Firebase Realtime database with almost the same api. Database uses json file format to keep data.
+Author: Michael Chess
+Author-email: codm.cheater@gmail.com
