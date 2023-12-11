@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: prstat
+Version: 1.0.1
+Summary: tools for pnu probabilities and statistics class
+Home-page: https://github.com/karinysis/prstat
+Author: youngjae lee
+Author-email: leeyoungjae@pusan.ac.kr
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PRSTAT
+
+## 설명
+
+부산대학교 확률과 통계 수업을 위한 도구
+
+## 설치 방법
+pip install prstat
