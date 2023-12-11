@@ -1,0 +1,3 @@
+[console_scripts]
+mesh=mesh.__main__:main
+
