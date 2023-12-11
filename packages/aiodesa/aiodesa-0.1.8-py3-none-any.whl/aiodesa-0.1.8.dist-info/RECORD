@@ -1,0 +1,15 @@
+aiodesa/Database.py,sha256=RfjJdhy8hv3HCfArfwnNL7ihi6rtImagpLR3-2MLCwY,7272
+aiodesa/__init__.py,sha256=MH_lPigYBAp4Ov3dBLgZ1zUpH7jEotEkHtZpmRGPLA4,25
+aiodesa/database.sqlite3,sha256=KjDgw2O1SdTvBLQrSYBI-QPtVXXxtnvusVHirrOPfek,12288
+aiodesa/run.py,sha256=RU1BBoPmOBAy4YKPinjBEtnoSIw4KU9H_qFe3qhiYW8,699
+aiodesa/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiodesa/utils/records/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiodesa/utils/records/records.py,sha256=ADIIHSdZzrTVkm0YXAzbPjIG-Qgo2cs4rKEeSMv6Ado,213
+aiodesa/utils/tables/__init__.py,sha256=ZKU17EYs-nRhcPBQG_OidIzip_A9_yyT1juJokvQIQc,21
+aiodesa/utils/tables/table.py,sha256=Odg0vyhsyjSPWMc11KuyZYX0_egWt7tAYTzL5vOyuEw,5052
+aiodesa/utils/types/__init__.py,sha256=DMGXIqPsmut9H5GT0ZeSzQIzYzzPwI-2gLXydpbwiV8,21
+aiodesa/utils/types/types.py,sha256=RantB610035DH5fM2eoXf_8dzxWhuilhkSJ4ZiRc8yI,1478
+aiodesa-0.1.8.dist-info/LICENSE,sha256=q6sSbzIlvPY1TtbF6qsNlpibyVpVLiVSDXh0Bwqv-dg,1061
+aiodesa-0.1.8.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aiodesa-0.1.8.dist-info/METADATA,sha256=RK-4Q_baHnzXqXTNK9iPQrLBFvOSB32BLdcPtJ7sN68,2320
+aiodesa-0.1.8.dist-info/RECORD,,
