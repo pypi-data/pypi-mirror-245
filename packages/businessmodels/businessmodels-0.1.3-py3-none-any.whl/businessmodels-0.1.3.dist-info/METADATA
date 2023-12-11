@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: businessmodels
+Version: 0.1.3
+Summary: It is a Data Science package containing many modules to help in analysis.
+Home-page: https://github.com/Business-Brio/businessmodels/tree/main/businessmodels
+Author: Business Brio
+Author-email: gautam@businessbrio.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: business-models-initial
+
+businessmodels
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+This python package has several modules to work for data analysis. 
+
+## Installation
+
+Following code is to install package.
+
+```bash
+pip install businessmodels
+```
+
+## DOCUMENTATION
+businessmodels is a helpful package in data science. It contains several modules to get desired analysis output. Most of the modules are dedicated to business analysis purposes.
+
+## MAIN FEATURES
+- performance rank model (model name: performance_rank)
+    - Get affiliates' ranked table on basis of their performance and their interpreted result. This module's documentation is here: 
+- customer segmentation model (model name: customersegmentation)
+- to compute Price Elasticity of Products (model name: price_elasticity)
+- recommendate a product to a customer (model name: recommendation_engine)
+- get sla moel (model name: get_sla)
+## CONTRIBUTING
+[Shuvadeep Maity](https://www.linkedin.com/in/shuvadeep-maity/)
+
+## LICENSE
+It is licensed under OSI approved MIT open license.
