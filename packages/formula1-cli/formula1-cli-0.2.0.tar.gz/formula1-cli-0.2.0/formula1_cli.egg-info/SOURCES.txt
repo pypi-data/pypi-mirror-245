@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+formula1/__init__.py
+formula1/f1.py
+formula1_cli.egg-info/PKG-INFO
+formula1_cli.egg-info/SOURCES.txt
+formula1_cli.egg-info/dependency_links.txt
+formula1_cli.egg-info/entry_points.txt
+formula1_cli.egg-info/requires.txt
+formula1_cli.egg-info/top_level.txt
+tests/test_qualifying.py
+tests/test_results.py
+tests/test_schedule.py
+tests/test_standings.py
