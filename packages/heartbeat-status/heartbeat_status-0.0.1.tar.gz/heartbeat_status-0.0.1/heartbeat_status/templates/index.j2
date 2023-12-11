@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>heartbeat-status</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Check Fitbit heartbeat status online">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="/static/favicon.ico">
+    <link rel="apple-touch-icon" href="/static/favicon.png">
+    <meta property="og:site_name" content="heartbeat-status">
+    <meta property="og:url" content="https://heartbeat-status.egpl.dev">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="heartbeat-status">
+    <meta property="og:description" content="Check Fitbit heartbeat status online">
+    <meta property="og:image" content="https://heartbeat-status.egpl.dev/static/favicon.png">
+    <meta property="og:image:width" content="160">
+    <meta property="og:image:height" content="160">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@egpl0">
+    <meta name="twitter:description" content="Check Fitbit heartbeat status online">
+    <meta name="twitter:image:src" content="https://heartbeat-status.egpl.dev/static/favicon.png">
+    <link href="/static/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>heartbeat-status</h1>
+    </header>
+    <main>
+        <img id="spinner" src="/static/spinner.gif" />    
+        <iframe
+          id="graph"
+          onload="document.getElementById('spinner').remove();"
+          loading="lazy"
+          title="Heartbeat Graph"
+          src="/graph/heartbeat"
+          width="100%"
+          height="800"
+          frameborder="0"
+          scrolling="no"
+          allow="fullscreen; autoplay"
+          allowTransparency="true">
+        </iframe>
+    </main>
+    <footer>
+        <hr>
+        <span>
+            <a href="https://github.com/eggplants/heartbeat-status" target="_blank">eggplants/heartbeat-status</a>
+            / v{{ version }}
+        </span>
+        <span>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fheartbeat-status.egpl.dev">
+                <img alt="w3 valid html 4.01"
+                    src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/master/html5-validator-badge.svg">
+            </a>
+        </span>
+    </footer>
+</body>
+
+</html>
