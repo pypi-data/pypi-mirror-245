@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "ZxFade"
+version = "1.2"
+description = "A Python package to make your programs easy to use and nice to look at"
+license = "GNU GPL V3"
+authors = ["BlueRed <bluered.pyx@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/BlueRed-Dev/lynX"
+keywords = ["tui", "python", "style", "colors", "pystyle"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Desktop Environment",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: Terminals",
+    "Topic :: Utilities",
+    "Typing :: Typed"
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+keyboard = "^0.13.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
