@@ -1,0 +1,48 @@
+name: build-linux
+
+on:
+    # push:
+    #     branches:
+    #         - main
+    release:
+        types: 
+            - published
+    
+jobs:
+    build:
+
+        runs-on: ubuntu-latest
+        strategy:
+            fail-fast: false
+            matrix:
+                python-version: ['3.9', '3.10', '3.11', '3.12', 'pypy3.8', 'pypy3.9', 'pypy-3.10']
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+
+            - name: Set up Python ${{ matrix.python-version }}
+              uses: actions/setup-python@v4
+              with:
+                  python-version: ${{ matrix.python-version }}
+
+            - name: Install package and dependencies
+              run: |
+                  python -m pip install --upgrade pip
+                  python -m pip install . -vvv
+
+            # Despite the package is built on both cpython and pypy, here we
+            # only test it on cpython, not on pypy, since tests require numpy and scipy
+            # (although, this package itself does not have numpy and scipy dependency,
+            # but the test scripts do depend on numpy and scipy).
+            # Often in pypy these packages do not have wheels, then have to be
+            # built from source. As such, it takes forever to build these in pypy!
+            # Thus, it is just simpler to not test this package with pypy.
+            - name: Test
+              if: (!contains(matrix.python-version, 'pypy'))
+              run: |
+                  python -m pip install --upgrade pytest
+                  python -m pip install --upgrade pytest-cov
+                  python -m pip install --prefer-binary -r tests/requirements.txt
+                  mv special_functions special_functions_do_not_import
+                  pytest
