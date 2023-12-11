@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: aoc-tool
+Version: 0.0.5
+Summary: Minimal helper functions for Advent of Code
+Author-email: Wes Barnett <wes@barnettphd.com>
+License: MIT
+License-File: LICENSE
+
