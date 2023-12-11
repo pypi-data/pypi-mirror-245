@@ -1,0 +1,6 @@
+scipy
+numpy
+pandas
+datetime
+matplotlib
+scikit-learn
