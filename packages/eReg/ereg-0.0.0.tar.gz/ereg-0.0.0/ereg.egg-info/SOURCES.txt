@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+ereg/__init__.py
+ereg/hello_world.py
+ereg.egg-info/PKG-INFO
+ereg.egg-info/SOURCES.txt
+ereg.egg-info/dependency_links.txt
+ereg.egg-info/top_level.txt
+ereg/utils/__init__.py
