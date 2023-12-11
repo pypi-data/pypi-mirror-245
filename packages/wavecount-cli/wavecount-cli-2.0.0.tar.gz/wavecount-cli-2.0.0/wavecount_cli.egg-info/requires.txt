@@ -1,0 +1,6 @@
+requests
+click
+halo
+pyfiglet
+inquirer
+pydash
