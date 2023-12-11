@@ -1,0 +1,6 @@
+testAUC/__init__.py,sha256=-Hulm8bjUuhc8-poVmbWdYtqlxCl3qf6eKP0vKeqR0Q,173
+testAUC/evaluate_auc.py,sha256=6Ulaz8PptWNi4R5cYzT_BZQU_UA8pRBSnaIcvNvLGVI,6558
+testAUC/utils.py,sha256=ba67gpDO1fi6JG_APZTJ2xTbADRuJQJZ666Mk5iZd7s,3292
+testauc-0.0.4.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+testauc-0.0.4.dist-info/METADATA,sha256=EKqCp8nWALC2tn_yBpiu2NN2ZlB-69GvpDDS6AmrbGk,3920
+testauc-0.0.4.dist-info/RECORD,,
