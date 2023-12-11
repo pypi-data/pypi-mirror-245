@@ -1,0 +1,8 @@
+# example09.ttl
+@prefix ex: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Negative test case: floors greater than 5
+ex:item303 ex:floors "6"^^xsd:integer .
+ex:item304 ex:floors "5"^^xsd:integer .
+ex:item305 ex:floors "4"^^xsd:integer .

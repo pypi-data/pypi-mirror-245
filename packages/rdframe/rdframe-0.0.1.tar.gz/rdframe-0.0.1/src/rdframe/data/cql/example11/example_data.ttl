@@ -1,0 +1,5 @@
+# example11.ttl
+@prefix ex: <http://example.com/> .
+
+
+ex:item5 ex:owner "Sarah Jones" .

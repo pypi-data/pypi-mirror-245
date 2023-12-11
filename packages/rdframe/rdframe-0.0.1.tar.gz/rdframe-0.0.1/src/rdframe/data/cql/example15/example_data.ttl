@@ -1,0 +1,11 @@
+# example15.ttl
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.com/> .
+
+# Positive test case: floors more than 5 with swimming pool (true)
+ex:item15 ex:floor "7"^^xsd:integer ;
+          ex:swimming_pool "true"^^xsd:boolean .
+
+# Negative test case: floors less than 5 with no swimming pool (false)
+ex:item16 ex:floor "3"^^xsd:integer ;
+          ex:swimming_pool "false"^^xsd:boolean .

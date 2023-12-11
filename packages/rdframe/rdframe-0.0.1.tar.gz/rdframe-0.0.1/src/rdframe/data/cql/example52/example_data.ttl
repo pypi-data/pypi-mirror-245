@@ -1,0 +1,7 @@
+# example52.ttl
+@prefix ex: <http://example.com/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+# Test case: geometry containing a specific point
+ex:item404 geosparql:hasGeometry _:geom2 .
+_:geom2 geosparql:asWKT "<POINT WKT REPRESENTATION>"^^geosparql:wktLiteral .

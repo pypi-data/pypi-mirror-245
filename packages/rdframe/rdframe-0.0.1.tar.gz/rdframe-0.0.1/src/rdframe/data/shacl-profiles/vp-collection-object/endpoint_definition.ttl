@@ -1,0 +1,10 @@
+@prefix endpoint: <https://prez.dev/endpoint/vocprez/> .
+@prefix ont: <https://prez.dev/ont/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix shext: <http://example.com/shacl-extension#> .
+
+endpoint:collection a ont:ObjectEndpoint ;
+    sh:targetNode "$object" ;
+    ont:endpointTemplate "/v/collections/$object" .

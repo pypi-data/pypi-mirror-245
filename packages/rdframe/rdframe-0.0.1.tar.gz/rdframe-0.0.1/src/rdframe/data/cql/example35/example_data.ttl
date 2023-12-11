@@ -1,0 +1,8 @@
+# example35.ttl
+@prefix ex: <http://example.com/> .
+
+# Positive test case: name starts with "foo"
+ex:item3 ex:name "foobar" .
+
+# Negative test case: name does not start with "foo"
+ex:item4 ex:name "barfoo" .

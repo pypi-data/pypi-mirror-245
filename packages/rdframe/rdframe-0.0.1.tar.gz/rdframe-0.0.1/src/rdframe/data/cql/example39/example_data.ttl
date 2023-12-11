@@ -1,0 +1,8 @@
+# example39.ttl
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.com/> .
+
+# Positive test cases: values 1.0, 2.0, 3.0
+ex:item910 ex:value "1.0"^^xsd:double .
+ex:item911 ex:value "2.0"^^xsd:double .
+ex:item912 ex:value "3.0"^^xsd:double .

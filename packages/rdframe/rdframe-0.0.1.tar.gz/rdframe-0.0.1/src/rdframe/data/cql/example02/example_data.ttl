@@ -1,0 +1,4 @@
+# example02.ttl
+@prefix ex: <http://example.com/> .
+
+ex:item6 <eo:instrument> "OLI_TIRS" .

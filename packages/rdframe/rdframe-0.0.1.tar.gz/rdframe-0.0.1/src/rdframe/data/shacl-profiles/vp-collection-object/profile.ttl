@@ -1,0 +1,13 @@
+PREFIX ex: <http://example.org/ns#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX shext: <http://example.com/shacl-extension#>
+
+ex:OpenNodeShape
+    a sh:NodeShape ;
+    sh:property
+        [
+            sh:path shext:allPredicateValues ;
+        ] ;
+    shext:bnode-depth 2 ;
+.

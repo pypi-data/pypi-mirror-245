@@ -1,0 +1,12 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX endpoint: <https://prez.dev/endpoint/spaceprez/>
+PREFIX ont: <https://prez.dev/ont/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+
+endpoint:dataset a ont:ObjectEndpoint ;
+    sh:targetNode "$object" ;
+    ont:parentEndpoint endpoint:dataset-listing ;
+    ont:endpointTemplate "/s/datasets/$object" ;
+.
+

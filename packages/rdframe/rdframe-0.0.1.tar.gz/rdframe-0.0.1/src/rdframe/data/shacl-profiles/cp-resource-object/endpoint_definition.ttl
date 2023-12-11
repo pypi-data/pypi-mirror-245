@@ -1,0 +1,12 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX endpoint: <https://prez.dev/endpoint/catprez/>
+PREFIX ont: <https://prez.dev/ont/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+
+endpoint:resource a ont:ObjectEndpoint ;
+    sh:targetNode "$object" ;
+    ont:parentEndpoint endpoint:resources-listing ;
+    ont:endpointTemplate "/c/catalogs/$parent_1/resources/$object" ;
+.
+

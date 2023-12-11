@@ -1,0 +1,19 @@
+PREFIX ex: <http://example.org/ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX shext: <http://example.com/shacl-extension#>
+
+ex:OpenNodeShape
+    a sh:NodeShape ;
+    sh:property
+        [
+            sh:path skos:hasTopConcept ;
+            sh:maxCount 0 ;
+        ] ;
+    rdfs:comment """For large vocabularies consider specifying properties to include rather than specifically excluding
+     skos:hasTopConcept, as the exclusion requires a group graph pattern match which is then filtered. Assuming the
+     vocabulary properties are somewhat static the distinct set of properties can be determined offline and added to a
+     profile_graph""" ;
+    shext:bnode-depth 2 ;
+.

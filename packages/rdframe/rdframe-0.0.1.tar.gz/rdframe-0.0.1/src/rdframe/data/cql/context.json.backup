@@ -1,0 +1,41 @@
+{
+    "@version": 1.1,
+    "@base": "http://example.com/",
+    "@vocab": "http://example.com/vocab/",
+    "args": {
+        "@container": "@set",
+        "@id": "cql:args"
+    },
+    "cql": "http://www.opengis.net/doc/IS/cql2/1.0/",
+    "landsat": "http://example.com/landsat/",
+    "op": "cql:operator",
+    "property": {
+        "@type": "@id",
+        "@id": "cql:property"
+    },
+    "casei": "cql:casei",
+    "ro": "http://example.com/ro/",
+    "name": "cql:name",
+    "domain": "cql:domain",
+    "created": {
+        "@id": "cql:created",
+        "@type": "DateTime"
+    },
+    "duns": "cql:duns",
+    "addresses": {
+        "@container": "@set",
+        "@id": "cql:addresses"
+    },
+    "ticker": "cql:ticker",
+    "legalForm": "cql:legalForm",
+    "industry": "cql:industry",
+    "relationships": {
+        "@container": "@set",
+        "@id": "cql:relationships"
+    },
+    "DateTime": "http://www.w3.org/2001/XMLSchema#dateTime",
+    "email": "cql:email",
+    "phone": "cql:phone",
+    "contact": "cql:contact",
+    "role": "cql:role"
+}

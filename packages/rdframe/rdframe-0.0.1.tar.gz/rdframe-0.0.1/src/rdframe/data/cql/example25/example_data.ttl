@@ -1,0 +1,12 @@
+# example25.ttl
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix ex: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Positive test case: floors more than 5 and within the specified geometry
+ex:item22 ex:floors "6"^^xsd:integer ;
+           geosparql:hasGeometry "POLYGON((30 10, 40 40, 20 40, 10 20, 30 10))"^^geosparql:wktLiteral .
+
+# Negative test case: floors less than 5 and outside the specified geometry
+ex:item23 ex:floors "4"^^xsd:integer ;
+           geosparql:hasGeometry "POLYGON((60 10, 70 40, 50 40, 40 20, 60 10))"^^geosparql:wktLiteral .

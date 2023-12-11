@@ -1,0 +1,14 @@
+@prefix ex:    <http://example.org/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix shext: <http://example.com/shacl-extension#> .
+
+ex:IdentityProfile
+    a            sh:NodeShape ;
+    rdfs:comment "A concept profile_graph which returns inbound and outbound narrower/broader concepts."@en ;
+    sh:property  [ sh:path ( sh:union ( shext:allPredicateValues [ sh:inversePath skos:broader ] [ sh:inversePath skos:narrower ] ) ) ] ;
+        shext:bnode-depth 2 ;
+.
+

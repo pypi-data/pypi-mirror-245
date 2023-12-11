@@ -1,0 +1,77 @@
+html, body {
+    height: 100%; /* Ensure the full height is available */
+    margin: 0; /* Reset default margins */
+    overflow: hidden; /* Prevent scrolling on the body directly */
+}
+
+#container {
+    display: flex; /* Use flexbox to layout children */
+    height: 100%; /* Full height */
+}
+
+/* Sidebar styles */
+#sidebar {
+    width: 200px; /* Width of the sidebar */
+    flex-shrink: 0; /* Prevent the sidebar from shrinking */
+    height: 100%; /* Full height */
+    background-color: #f4f4f4; /* Example background color for the sidebar */
+    overflow-y: auto; /* Scrollbar if sidebar content overflows */
+}
+
+/* Content styles */
+#content {
+    flex-grow: 1; /* Take up the remaining space */
+    overflow-y: auto; /* Add scroll to the content if needed */
+    background-color: #fff; /* Background color for the content area */
+}
+
+.row {
+    height: 47vh; /* 50% of the viewport height */
+    display: flex;
+}
+
+.col {
+    flex: 1; /* Distribute space evenly between columns */
+    display: flex; /* Make the column a flex container */
+    flex-direction: column; /* Stack children vertically */
+}
+
+/* Tab styles */
+.tab {
+    list-style-type: none;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #e0e0e0; /* Active tab background color */
+}
+
+/* Tab content panes */
+.tab-content-pane {
+    display: none; /* Hide all by default */
+    height: calc(100% - 48px); /* Adjust height based on the tab header height */
+}
+
+.tab-content-pane.active {
+    display: block; /* Show the active pane */
+}
+
+/* CodeMirror editor styles */
+.CodeMirror {
+    height: 100%; /* Set height to fill the container */
+    border: 1px solid #e0e0e0;
+    font-size: 12px;
+}
+
+h3 {
+    margin-bottom: 10px; /* Added a margin to separate the headings from the content below */
+}
+
+.quadrant {
+    width: 50%; /* Each quadrant takes up half the width */
+    height: 50vh; /* Each quadrant takes up half the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow: hidden; /* Hide overflow and let CodeMirror handle scrolling */
+    display: inline-block; /* Allow quadrants to sit side-by-side */
+}

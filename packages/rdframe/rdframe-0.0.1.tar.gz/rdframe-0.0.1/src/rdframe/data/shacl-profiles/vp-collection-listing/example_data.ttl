@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ex:Collection-A a skos:Collection ;
+    rdfs:label "Collection A" .
+
+ex:Collection-B a skos:Collection ;
+    rdfs:label "Collection B" .
+
+ex:Collection-C a skos:Collection ;
+    rdfs:label "Collection C" .
+
+ex:Collection-D a skos:Collection ;
+    rdfs:label "Collection D" .
+
+ex:Collection-E a skos:Collection ;
+    rdfs:label "Collection E" .
+
+ex:Resource-A a skos:Concept ;
+              skos:inScheme ex:Collection-A ;
+    rdfs:label "Resource A" .
+
+ex:Resource-B a skos:Concept ;
+                skos:inScheme ex:Collection-B ;
+    rdfs:label "Resource B" .
+
+ex:Resource-C a skos:Concept ;
+                skos:inScheme ex:Collection-C ;
+    rdfs:label "Resource C" .
+
+ex:Resource-D a skos:Concept ;
+                skos:inScheme ex:Collection-D ;
+    rdfs:label "Resource D" .
+
+ex:Resource-E a skos:Concept ;
+                skos:inScheme ex:Collection-E ;
+    rdfs:label "Resource E" .

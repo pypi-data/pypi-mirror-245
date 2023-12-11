@@ -1,0 +1,32 @@
+@prefix ex: <http://example.org/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ex:Concept-A-1.1 a skos:Concept ;
+    skos:broader ex:Concept-A ;
+    skos:prefLabel "Concept A 1.1" .
+
+ex:Concept-B-2.1 a skos:Concept ;
+    skos:broader ex:Concept-B ;
+    skos:prefLabel "Concept B 2.1" .
+
+ex:Concept-A-1.2 a skos:Concept ;
+    skos:prefLabel "Concept A 1.2" .
+
+ex:Concept-B-2.2 a skos:Concept ;
+    skos:prefLabel "Concept B 2.2" .
+
+ex:Concept-Scheme-A a skos:ConceptScheme ;
+    skos:hasTopConcept ex:Concept-A,
+        ex:Concept-B ;
+    skos:prefLabel "Vocabulary A" .
+
+ex:Concept-A a skos:Concept ;
+    skos:inScheme ex:Concept-Scheme-A ;
+    skos:narrower ex:Concept-A-1.2 ;
+    skos:prefLabel "Concept A" .
+
+ex:Concept-B a skos:Concept ;
+    skos:inScheme ex:Concept-Scheme-A ;
+    skos:narrower ex:Concept-B-2.2 ;
+    skos:prefLabel "Concept B" .
+

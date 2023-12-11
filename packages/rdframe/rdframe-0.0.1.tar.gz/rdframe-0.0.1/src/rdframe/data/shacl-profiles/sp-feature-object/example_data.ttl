@@ -1,0 +1,20 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.com/properties/> .
+@prefix feature: <http://example.com/datasets/feature-collection/feature/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+
+<http://example.com/features/feature-1>
+    a geo:Feature ;
+    rdfs:label "Feature Record One"@en ;
+    ex:author "Jane Doe" ;
+    ex:entryDate "2023-01-01T00:00:00Z"^^xsd:dateTime ;
+    dcterms:title "Example Feature One"@en ;
+        geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((152.9075 -27.42,153.16 -27.42,153.16 -27.2234024,152.9075 -27.2234024,152.9075 -27.42))"^^geo:wktLiteral
+    ] ;
+    rdfs:member feature:1 , feature:2 , feature:3 , feature:4 , feature:5 , feature:6 , feature:7 , feature:8
+.

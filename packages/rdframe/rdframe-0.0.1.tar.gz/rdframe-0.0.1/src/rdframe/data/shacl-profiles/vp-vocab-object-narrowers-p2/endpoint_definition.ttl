@@ -1,0 +1,35 @@
+PREFIX endpoint: <https://prez.dev/endpoint/vocprez/>
+PREFIX ont: <https://prez.dev/ont/>
+PREFIX prez: <https://prez.dev/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix shext: <http://example.com/shacl-extension#> .
+
+endpoint:cs-children
+    a ont:ListingEndpoint ;
+    rdfs:comment """The concepts one level narrower than 'level 1' concepts - this is the exact same endpoint definition
+    and profile_graph as 'vp-vocab-listing-lower-level-1', with only the offset changed.""" ;
+    sh:rule
+        [
+            sh:object "?hasChildren" ;
+            sh:predicate prez:hasChildren ;
+            sh:subject sh:this ;
+        ] ;
+    sh:target
+        [
+            sh:select """SELECT DISTINCT ?focus_node ?hasChildren
+             WHERE {
+             $parent_1 skos:narrower|^skos:broader ?focus_node .
+             BIND(EXISTS{?focus_node skos:narrower|^skos:broader ?grandChildren} AS ?hasChildren)
+                }
+             """ ;
+        ] ;
+    sh:targetClass skos:Concept ;
+    ont:endpointTemplate "/v/vocabs/$object/narrowers" ;
+    shext:limit 20 ;
+    shext:offset 0 ;
+    shext:orderBy [ sh:path skos:prefLabel ] ;
+.
+

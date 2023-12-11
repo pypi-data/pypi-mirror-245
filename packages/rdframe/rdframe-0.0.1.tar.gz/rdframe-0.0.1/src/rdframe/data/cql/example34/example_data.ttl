@@ -1,0 +1,5 @@
+# example34.ttl
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.com/> .
+
+ex:item9 ex:value "10"^^xsd:integer .

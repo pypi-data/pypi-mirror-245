@@ -1,0 +1,7 @@
+# example24.ttl
+@prefix ex: <http://example.com/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+# Test case: geometry intersects with a given polygon
+ex:item708 geosparql:hasGeometry _:geom3 .
+_:geom3 geosparql:asWKT "<POLYGON WKT REPRESENTATION>"^^geosparql:wktLiteral .

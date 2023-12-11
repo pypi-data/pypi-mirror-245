@@ -1,0 +1,11 @@
+PREFIX endpoint: <https://prez.dev/endpoint/spaceprez/>
+PREFIX ont: <https://prez.dev/ont/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+
+endpoint:feature a ont:ObjectEndpoint ;
+    sh:targetNode "$object" ;
+    ont:parentEndpoint endpoint:feature-listing ;
+    ont:endpointTemplate "/s/datasets/$parent_2/collections/$parent_1/items/$object" ;
+.
+

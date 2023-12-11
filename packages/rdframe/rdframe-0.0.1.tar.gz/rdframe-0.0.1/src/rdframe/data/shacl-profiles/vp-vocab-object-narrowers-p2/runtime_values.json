@@ -1,0 +1,5 @@
+{
+    "parent_1": "http://example.org/ns#Resource-A",
+    "limit": 3,
+    "offset": 2
+}

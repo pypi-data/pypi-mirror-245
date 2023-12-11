@@ -1,0 +1,13 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix ex: <http://example.org/ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shext: <http://example.com/shacl-extension#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+ex:CPResourceListing a sh:NodeShape ;
+    sh:property [
+                    sh:minCount 0 ;
+                    sh:path ( sh:union ( dcterms:issued dcterms:creator dcterms:publisher ) ) ] ;
+    .
+

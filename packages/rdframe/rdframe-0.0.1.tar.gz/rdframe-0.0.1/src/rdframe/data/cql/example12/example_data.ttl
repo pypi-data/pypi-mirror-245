@@ -1,0 +1,8 @@
+# example12.ttl
+@prefix ex: <http://example.com/> .
+
+# Positive test case: owner name starts with "Mike"
+ex:item5 ex:owner "Mike Tyson" .
+
+# Negative test case: owner name does not start with "Mike"
+ex:item6 ex:owner "Tyson Mike" .
