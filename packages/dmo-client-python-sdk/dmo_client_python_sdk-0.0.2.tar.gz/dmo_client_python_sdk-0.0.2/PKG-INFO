@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dmo_client_python_sdk
+Version: 0.0.2
+Summary: Encapsulateing Interface
+Home-page: https://gitlab.sanywind.net/bigdata/dmo-client-python-sdk
+Author: liuxb
+Author-email: llxiangbin@163.com
+License: MIT Licence
+Keywords: pip,dmo_client_python_sdk,liuxb,sdk
+Platform: any
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: retry
+
+ Encapsulating Interface
