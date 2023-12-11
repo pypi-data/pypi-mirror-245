@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+simplehand/__init__.py
+simplehand/hand_structure.py
+simplehand/simplehand.py
+simplehand.egg-info/PKG-INFO
+simplehand.egg-info/SOURCES.txt
+simplehand.egg-info/dependency_links.txt
+simplehand.egg-info/requires.txt
+simplehand.egg-info/top_level.txt
