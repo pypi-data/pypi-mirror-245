@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: NT_TextFileLoader
+Version: 1.1.8
+Summary: Python library to extract text from various file formats. the supported file formats are "JPG","JPEG","PNG","PDF","DOCX","DOC" and "TEXT".
+Author: Vishnu.D
+Author-email: vishnu.d@narmtech.com
+License: MIT
+Keywords: text extractor,text loader,load text file,read text from pdf,load text from DOC,load text from DOCX,read text from images,pip install nt-textfileloader
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.txt
