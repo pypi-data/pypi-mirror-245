@@ -1,0 +1,16 @@
+pypipo/__init__.py,sha256=lVL4VPz3c4kWCgjPtL4uuQLNmgwK92q1ffAsv5El02k,25
+pypipo/__main__.py,sha256=4G_ECzrsyFTCnaxb0UMnp6jgmPu5J1BR6SLT-v1QSu8,188
+pypipo/__version__.py,sha256=n8SjIooZjuaB98ejtHPn45SO8AqTlUdCU51kBHY_9l0,745
+pypipo/cli.py,sha256=RVy7c1tTnMsNnzRHNMZS_cAaN8-jI3HIkMe25X3rqDw,2031
+pypipo/convert.py,sha256=Qzqic3aQNXZAGhwxYnTA5hPOjSzeuj12xq_lnat-zJI,810
+pypipo/libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypipo/libs/imageProcessing.py,sha256=tbh_GTyifMm-fKPB8ZGXyEueEHTGl5ebTix31g2kC4I,5246
+pypipo/libs/process.py,sha256=YltvMbUza36aj5v93akTl5bcx439gPkgYxo474LgyGo,22096
+pypipo/libs/temp.py,sha256=3rec7GKsxAbzDdRhN4wRYV4K9-fztsizirWlHizaTaI,2535
+pypipo/libs/utils.py,sha256=ck6COeH3Kfr_3adT08ahb2Sk6rGIltio3pYo92urwq8,3405
+pypipo-0.0.9.dist-info/LICENSE,sha256=BxRrnHPRZPbdRdA2F0sq8Uq1T8CpOu2RL0dEd3Pj2fg,1086
+pypipo-0.0.9.dist-info/METADATA,sha256=03y6K8K9zKN-jQaWZVPjvAS1Cg2RZL1Vfki9cMwYGuw,3169
+pypipo-0.0.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pypipo-0.0.9.dist-info/entry_points.txt,sha256=mI6SSg_pw5Rj7F7xmk4Bl6UoO95Y5YUlTLyPnn1AspQ,44
+pypipo-0.0.9.dist-info/top_level.txt,sha256=KeJcWbJyADRZ0joXdYY5PL8KTMYPJ8AG3ZJ_NF0hHgY,7
+pypipo-0.0.9.dist-info/RECORD,,
