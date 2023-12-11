@@ -1,0 +1,13 @@
+jax>=0.3.18
+jax_dataclasses>=1.4.4
+numpy
+tyro
+
+[testing]
+mypy
+jax!=0.3.19
+flax
+hypothesis[numpy]
+pytest
+pytest-xdist[psutil]
+pytest-cov
