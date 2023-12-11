@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: eReg
+Version: 0.0.1
+Summary: efficient, pythonic cross-platform image registrations
+Home-page: https://github.com/BrainLesion/eReg
+Author: Sarthak Pati
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: rich (>=13.6.0,<14.0.0)
+Project-URL: Documentation, https://eReg.readthedocs.io/
+Project-URL: Repository, https://github.com/BrainLesion/eReg
+Description-Content-Type: text/markdown
+
+# eReg
+TODO
+
