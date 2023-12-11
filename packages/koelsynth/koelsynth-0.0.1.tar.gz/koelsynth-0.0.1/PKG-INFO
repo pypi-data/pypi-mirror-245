@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: koelsynth
+Version: 0.0.1
+Summary: A simple music synthesis library in C++ wrapped using pybind11
+Home-page: https://github.com/charstorm/koelsynth
+Author: Vinay Krishnan
+Author-email: nk.vinay@zohomail.in
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: numpy>=1.26.1
