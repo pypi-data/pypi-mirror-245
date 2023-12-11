@@ -1,0 +1,14 @@
+setup.py
+tpltable/__init__.py
+tpltable/box4.py
+tpltable/filefinder.py
+tpltable/pipe.py
+tpltable/tabel_io.py
+tpltable/table_flow.py
+tpltable/tpl_format.py
+tpltable/utils.py
+tpltable.egg-info/PKG-INFO
+tpltable.egg-info/SOURCES.txt
+tpltable.egg-info/dependency_links.txt
+tpltable.egg-info/requires.txt
+tpltable.egg-info/top_level.txt
