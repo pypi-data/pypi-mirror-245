@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: model-evaluator
+Version: 0.0.2
+Summary: Library for beautiful training loop for PyTorch
+Author-email: Artyom Galyan <galyanartyom@gmail.com>
+Requires-Python: >=3.11.0
+Requires-Dist: evaluate
+Requires-Dist: transformers
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: datasets
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: ipython
+Requires-Dist: pandas
+
