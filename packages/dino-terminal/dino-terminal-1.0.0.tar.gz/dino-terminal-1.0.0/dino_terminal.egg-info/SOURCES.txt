@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+dino_terminal.egg-info/PKG-INFO
+dino_terminal.egg-info/SOURCES.txt
+dino_terminal.egg-info/dependency_links.txt
+dino_terminal.egg-info/entry_points.txt
+dino_terminal.egg-info/requires.txt
+dino_terminal.egg-info/top_level.txt
+dinoterm/__init__.py
+dinoterm/game.py
+dinoterm/main.py
+dinoterm/play.py
