@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: traderpy
+Version: 1.0.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: yfinance
+Requires-Dist: pandas
+Requires-Dist: pygame
+Requires-Dist: plotly
+Requires-Dist: tqdm
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: tabulate
+
+# Trader-Core
+
+Trader-Core is a Python library focused on conducting fundamental analysis of stock market data. It offers a range of functionalities and tools to perform in-depth analysis, extract insights, and aid decision-making in trading and investment strategies.
+
+## Features
+
+- **Fundamental Analysis:** Perform comprehensive fundamental analysis on stock market data.
+- **Data Processing:** Efficiently process and clean financial data for analysis purposes.
+- **Key Metrics Calculation:** Calculate essential financial metrics.
+- **Valuation Models:** Implement various valuation models for stock evaluation.
+- **Financial Ratios:** Compute and interpret crucial financial ratios to facilitate investment analysis.
+- **Data Visualization:** Visualize data and analysis results using graphical representations.
+
+## Installation
+
+Install Trader-Core via pip:
+
+```bash
+pip install trader-core
