@@ -1,0 +1,16 @@
+setup.py
+code4mk/drf_friend/__init__.py
+code4mk/drf_friend/core.py
+code4mk/drf_friend/drf_core.py
+code4mk/drf_friend/drf_dto.py
+code4mk/drf_friend/mail.py
+code4mk/drf_friend/managers.py
+code4mk/drf_friend/models.py
+code4mk/drf_friend/paginate.py
+code4mk/drf_friend/path.py
+code4mk/drf_friend/router.py
+code4mk/drf_friend/status.py
+code4mk/drf_friend.egg-info/PKG-INFO
+code4mk/drf_friend.egg-info/SOURCES.txt
+code4mk/drf_friend.egg-info/dependency_links.txt
+code4mk/drf_friend.egg-info/top_level.txt
