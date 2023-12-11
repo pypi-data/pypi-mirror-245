@@ -1,0 +1,5 @@
+multiprocessing
+numpy
+onnxruntime
+queue
+transformers
