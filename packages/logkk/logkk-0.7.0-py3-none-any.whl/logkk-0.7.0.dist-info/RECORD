@@ -1,0 +1,10 @@
+logkk/__init__.py,sha256=8QvQucSIcGlOxxKoh_y65SFmjIjCxMHm1x5rX1VCGnQ,67
+logkk/errors.py,sha256=WgFPbLda_Soe0UlhDqdoN1AwCiOhGedgFqLGgie_R_w,200
+logkk/handlers.py,sha256=RS5JqwrgZpuFgnGDS8rOS8zSi4Z7dmJA-U0NZUNinLM,858
+logkk/level.py,sha256=nh3CqAtwH_SfJ4ITmC8niHLujhj8jvCQQy2fPzu1AXQ,125
+logkk/logger.py,sha256=EwuPh3_sAQSFbBQ2Ax01IuvnRqDMKQj6itfQfWF-hF4,2652
+logkk/manager.py,sha256=IHK1bAzauIsv7Mf0FNw_RSPjtooq9dpq75KYoTkqXfI,1681
+logkk-0.7.0.dist-info/METADATA,sha256=0o3WKR_Tel2zq_NXSuQRIvp79umRdqUd3ZZEWZMU4dM,3160
+logkk-0.7.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+logkk-0.7.0.dist-info/top_level.txt,sha256=wRSZx87Pw6L8_GsCX98t0NTCfKwJOdX8a5V22c8M1Bo,6
+logkk-0.7.0.dist-info/RECORD,,
