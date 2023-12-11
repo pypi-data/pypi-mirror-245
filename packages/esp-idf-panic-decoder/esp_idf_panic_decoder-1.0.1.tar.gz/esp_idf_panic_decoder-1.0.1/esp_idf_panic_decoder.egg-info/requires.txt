@@ -1,0 +1,4 @@
+pyelftools
+
+[dev]
+pre-commit
