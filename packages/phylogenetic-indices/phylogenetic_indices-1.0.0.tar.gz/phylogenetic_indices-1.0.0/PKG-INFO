@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: phylogenetic-indices
+Version: 1.0.0
+Summary: Índices Filogenéticos é uma biblioteca Python que fornece funções para calcular vários índices de diversidade taxonômica (TD) a partir de histogramas de abundância de espécies.
+License: MIT
+Author: Domingos Dias
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/Dowingows/phylogenetic_indices/issues
+Project-URL: Documentation, https://phylogenetic-indices.readthedocs.io/pt/latest/
+Project-URL: Source Code, https://github.com/Dowingows/phylogenetic_indices
+Description-Content-Type: text/markdown
+
+# Índices Filogenéticos
+
+[![Documentation Status](https://readthedocs.org/projects/phylogenetic-indices/badge/?version=latest)](https://phylogenetic-indices.readthedocs.io/pt/latest/?badge=latest) ![CI](https://github.com/Dowingows/phylogenetic_indices/actions/workflows/ci.yaml/badge.svg)
+
+## Visão Geral
+
+Índices Filogenéticos uma biblioteca Python que fornece funções para calcular vários índices de diversidade taxonômica (TD) a partir de histogramas de abundância de espécies. Estes índices são úteis para quantificar a diversidade e a composição de comunidades ecológicas
+
+## Funcionalidades:
+
+- Cálculo de riqueza de espécies.
+- Cálculo do índice de distinção taxonômica (∆∗).
+- Cálculo do índice de diversidade taxonômica (∆).
+- Cálculo da entropia quadrática extensiva (F).
+- Cálculo da entropia quadrática intensiva (J).
+
+## Instalação
+
+```bash
+pip install phylogenetic-indices
+``` 
+
+Documentação
+HTML documentação: https://readthedocs.org/projects/phylogenetic-indices
+
