@@ -1,0 +1,5 @@
+include pygpm/config/default.ini
+include pygpm/**/*.py
+include COPYRIGHT.txt
+include LICENSE.txt
+include README.md
