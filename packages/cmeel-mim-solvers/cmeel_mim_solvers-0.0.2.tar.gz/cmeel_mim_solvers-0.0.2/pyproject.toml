@@ -1,0 +1,14 @@
+[build-system]
+build-backend = "cmeel"
+requires = ["cmeel[build]", "crocoddyl[build]", "proxsuite[build]", "cmeel-boost ~= 1.83.0"]
+
+[project]
+dependencies = ["crocoddyl", "proxsuite", "cmeel-boost ~= 1.83.0"]
+description = "A fast and flexible implementation of Rigid Body Dynamics algorithms and their analytical derivatives"
+license = "BSD-3-Clause"
+name = "cmeel-mim-solvers"
+version = "0.0.2"
+
+[project.urls]
+homepage = "https://github.com/cmake-wheel/mim_solvers"
+upstream = "https://github.com/machines-in-motion/mim_solvers"
