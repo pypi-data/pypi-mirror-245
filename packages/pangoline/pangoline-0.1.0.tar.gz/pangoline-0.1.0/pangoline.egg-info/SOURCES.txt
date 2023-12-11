@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pangoline.egg-info/PKG-INFO
+pangoline.egg-info/SOURCES.txt
+pangoline.egg-info/dependency_links.txt
+pangoline.egg-info/top_level.txt
