@@ -1,0 +1,12 @@
+dsgp4/__init__.py,sha256=BZbFqMcXEMg6d-ZW3p60948Zt-l9YPt7Lr2-4CU1WCA,285
+dsgp4/initl.py,sha256=DbCx0C7noDFAPF_fCeXKccRtCbONkCqRcBW8oFq3-WM,1664
+dsgp4/newton_method.py,sha256=mQRhltBKHXAkISMMSqXfDYMpJq_KubEuVnfp5poaCRQ,10321
+dsgp4/sgp4.py,sha256=ty9_FWy-BoRQkMvQ1Hjhpg5Sha2jIhj5sKugK3TCHec,6512
+dsgp4/sgp4_batched.py,sha256=SfaHO_RHZwNvt8rouu4TYrizMCJQxFffRGw9KLlbW3s,11733
+dsgp4/sgp4init.py,sha256=p2evmmgTF8iI9d11JvH2mUAZhZOtOMbqGwtToferU0I,10735
+dsgp4/tle.py,sha256=k_QfsF9tUUHss2-LCJjn6og2UmpCObmQ9z61fblKHsc,17094
+dsgp4/util.py,sha256=gewW1s3ZNriNmM0oTFvLTYD27qCzgZfBtboej3tQUQ8,14817
+dsgp4-0.0.3.dist-info/METADATA,sha256=zBj72apPVX_q1o5zgYL6WwR0JkghW2dTzCjrkqLb9Y4,514
+dsgp4-0.0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+dsgp4-0.0.3.dist-info/top_level.txt,sha256=KnyI6xdMlAUdDqvNQfCRBZhsXOVeojoy6VvHS-ylqHE,6
+dsgp4-0.0.3.dist-info/RECORD,,
