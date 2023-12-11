@@ -1,0 +1,9 @@
+README.md
+setup.py
+smpConsole/__init__.py
+smpConsole/console.py
+smpconsole.egg-info/PKG-INFO
+smpconsole.egg-info/SOURCES.txt
+smpconsole.egg-info/dependency_links.txt
+smpconsole.egg-info/requires.txt
+smpconsole.egg-info/top_level.txt
