@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: smsto
+Version: 0.0.2
+Summary: Manage SMS.to api via Python 3 easily
+Home-page: https://github.com/BeyondUnderstanding/smsto_sdk
+Author: Evgeniy Finskiy
+Author-email: Evgeniy Finskiy <finskiy.ru@ya.ru>
+Project-URL: Homepage, https://github.com/BeyondUnderstanding/smsto_sdk
+Project-URL: Bug Tracker, https://github.com/BeyondUnderstanding/smsto_sdk/issues
+Keywords: python3,smsto,sms,api
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Topic :: Communications
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Requires-Dist: requests

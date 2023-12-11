@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=50.3.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smsto"
+version = "0.0.2"
+authors = [
+  { name="Evgeniy Finskiy", email="finskiy.ru@ya.ru" },
+]
+description = "Manage SMS.to api via Python 3 easily"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Unix",
+    "Topic :: Communications",
+    "Typing :: Typed"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/BeyondUnderstanding/smsto_sdk"
+"Bug Tracker" = "https://github.com/BeyondUnderstanding/smsto_sdk/issues"
