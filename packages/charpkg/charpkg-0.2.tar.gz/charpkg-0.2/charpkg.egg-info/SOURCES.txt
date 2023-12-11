@@ -1,0 +1,12 @@
+README.md
+setup.py
+Char/__init__.py
+Char/example/__init__.py
+Char/example/example.py
+Char/party/__init__.py
+Char/party/_party.py
+charpkg.egg-info/PKG-INFO
+charpkg.egg-info/SOURCES.txt
+charpkg.egg-info/dependency_links.txt
+charpkg.egg-info/requires.txt
+charpkg.egg-info/top_level.txt
