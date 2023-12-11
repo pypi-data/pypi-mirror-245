@@ -1,0 +1,5 @@
+setup.py
+poliwag.egg-info/PKG-INFO
+poliwag.egg-info/SOURCES.txt
+poliwag.egg-info/dependency_links.txt
+poliwag.egg-info/top_level.txt
