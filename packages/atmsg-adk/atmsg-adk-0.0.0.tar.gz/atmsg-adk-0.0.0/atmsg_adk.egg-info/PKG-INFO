@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: atmsg-adk
+Version: 0.0.0
+Summary: A Command-Line Development Manager For AtMessager
+Author: Cure-X
+Author-email: admin@cure-x.net
+License-File: LICENSE
+
+# ADK(AtMessager Development Kit)
+
+## usage:
+`apk init` init in current dir
+`apk publish`
+`apk help`
