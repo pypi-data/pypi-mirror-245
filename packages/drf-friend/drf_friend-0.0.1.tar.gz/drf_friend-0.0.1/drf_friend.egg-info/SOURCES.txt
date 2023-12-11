@@ -1,0 +1,5 @@
+setup.py
+drf_friend.egg-info/PKG-INFO
+drf_friend.egg-info/SOURCES.txt
+drf_friend.egg-info/dependency_links.txt
+drf_friend.egg-info/top_level.txt
