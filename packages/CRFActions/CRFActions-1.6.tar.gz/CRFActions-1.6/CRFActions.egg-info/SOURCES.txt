@@ -1,0 +1,10 @@
+setup.py
+CRFActions.egg-info/PKG-INFO
+CRFActions.egg-info/SOURCES.txt
+CRFActions.egg-info/dependency_links.txt
+CRFActions.egg-info/requires.txt
+CRFActions.egg-info/top_level.txt
+CheckListCreator/CRFChecklistCreator.py
+CheckListCreator/__init__.py
+CheckListProce/CheckListProce.py
+CheckListProce/__init__.py
