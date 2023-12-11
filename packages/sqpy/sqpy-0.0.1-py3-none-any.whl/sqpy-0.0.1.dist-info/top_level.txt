@@ -1,0 +1,2 @@
+sqpy
+tests
