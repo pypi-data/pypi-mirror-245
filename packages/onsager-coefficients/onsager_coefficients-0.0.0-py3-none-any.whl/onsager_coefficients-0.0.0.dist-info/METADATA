@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: onsager-coefficients
+Version: 0.0.0
+Home-page: https://github.com/jwjeffr/onsager_coefficients
+Author: Jacob Jeffries
+Author-email: jwjeffr@clemson.edu
+Description-Content-Type: text/x-rst
+
+Onsager coefficients from molecular dynamics run
+################################################
+
+TODO formulas and description of calculation (splicing etc)
