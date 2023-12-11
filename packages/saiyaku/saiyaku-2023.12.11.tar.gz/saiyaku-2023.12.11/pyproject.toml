@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "saiyaku"
+version = "2023.12.11"
+description = "Auto-Retry Decorator for Python"
+license = "Apache-2.0"
+authors = [
+            "Arter Tendean <arter.tendean.07@gmail.com>",
+            "AnimeMoeUs <arter@animemoe.us>",
+]
+readme = "README.md"
+repository = "https://github.com/animemoeus/saiyaku"
+documentation = "https://github.com/animemoeus/saiyaku#saiyaku-auto-retry-decorator-for-python"
+keywords = ["saiyaku", "retry", "decorator", "auto-retry", "animemoeus"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
