@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyonfireapi"
+version = "0.0.4"
+authors = [
+  { name="Cownex", email="justin@cavening.de" },
+]
+description = "Unofficial API client for the FireAPI from 24fire GmbH."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Cownex/py-fireapi"
+Issues = "https://github.com/Cownex/py-fireapi"
