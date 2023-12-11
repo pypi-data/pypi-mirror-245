@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rugpi
+Version: 0.0.0
+Summary: This package has been reserved for Rugpi.
+Author: Silitics GmbH
+Author-email: info@silitics.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+This crate name has been reserved for [Rugpi](http://rugpi.io).
+
+While not released on crates.io, Rugpi consists of crates with these names. To prevent malicious actors from taking them, we reserve them. Later, we may also use them to publish some Rugpi-related libraries.
