@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/whatis.py
+src/whatis.egg-info/PKG-INFO
+src/whatis.egg-info/SOURCES.txt
+src/whatis.egg-info/dependency_links.txt
+src/whatis.egg-info/top_level.txt
+tests/test_examples.py
