@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: supermeter-autowrapt
+Version: 1.1.5
+Summary: Boostrap mechanism for monkey patches for supermeter.
+Home-page: https://github.com/supertenant/supermeter-autowrapt
+Author: SuperTenant Ltd.
+Author-email: info@supertenant.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
