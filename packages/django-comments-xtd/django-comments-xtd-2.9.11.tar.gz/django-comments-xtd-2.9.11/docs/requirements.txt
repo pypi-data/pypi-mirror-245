@@ -1,0 +1,2 @@
+sphinx>=6,<8
+sphinx-nefertiti>=0.2.1
