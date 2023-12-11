@@ -1,0 +1,15 @@
+sty
+colorama
+pygments
+numpy
+pandas
+scikit-learn
+spacy
+torch
+transformers>=4.26.2
+sentence-transformers
+matplotlib
+seaborn
+tensorboard
+tqdm
+icecream
