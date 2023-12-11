@@ -1,0 +1,123 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "uapi"
+description = "A Python HTTP superframework"
+authors = [{name = "Tin Tvrtkovic", email = "tinchester@gmail.com"}]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Typing :: Typed",
+]
+dependencies = [
+    "cattrs >= 23.2.2",
+    "incant >= 23.2.0",
+    "itsdangerous",
+    "attrs >= 23.1.0",
+    "orjson >= 3.9.10",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {file = "LICENSE"}
+dynamic = ["version"]
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "black",
+    "ruff",
+    "mypy>=1.4.1",
+]
+test = [
+    "coverage",
+    "pytest-asyncio",
+    "httpx",
+    "hypercorn",
+    "aioredis==1.3.1",
+    "uvicorn",
+    "uapi[frameworks]",
+    "python-multipart>=0.0.6",
+]
+frameworks = [
+    "aiohttp==3.9.0b0",
+    "flask",
+    "quart",
+    "starlette",
+    "django",
+]
+docs = [
+    "sphinx",
+    "furo",
+    "myst_parser",
+    "sphinx_inline_tabs",
+    "sphinx-autobuild>=2021.3.14",
+    "uapi[frameworks]",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[tool.black]
+skip_magic_trailing_comma = true
+
+[tool.mypy]
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = "django.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "aioredis.*"
+ignore_missing_imports = true
+
+[tool.coverage.run]
+parallel = true
+source_pkgs = ["uapi"]
+
+[tool.ruff]
+src = ["src", "tests"]
+select = [
+    "E",   # pycodestyle
+    "W",   # pycodestyle
+    "F",   # Pyflakes
+    "UP",  # pyupgrade
+    "N",   # pep8-naming
+    "YTT", # flake8-2020
+    "S",   # flake8-bandit
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "T10", # flake8-debugger
+    "ISC", # flake8-implicit-str-concat
+    "RET", # flake8-return
+    "SIM", # flake8-simplify
+    "DTZ", # flake8-datetimez
+    "T20", # flake8-print
+    "PGH", # pygrep-hooks
+    "PLC", # Pylint
+    "PIE", # flake8-pie
+    "RUF", # ruff
+    "I",   # isort
+]
+ignore = [
+    "E501",   # line length is handled by black
+    "E731",   # assigning lambdas
+    "S101",   # assert
+    "PGH003", # leave my type: ignores alone
+    "B006",   # trust me
+    "B008",   # can't get it to work with extend-immutable-calls
+    "N818",   # Exceptions
+    "RUF013", # False implicit optionals
+]
+
+[tool.hatch.version]
+source = "vcs"
+raw-options = { local_scheme = "no-local-version" }
