@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: evalparrot
+Version: 0.0.5
+Summary: parrot evaluation
+Home-page: https://github.com/zc277584121/evalparrot.git
+Author: zc277584121
+Author-email: 277584121@qq.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: ragas (==0.0.17)
+Requires-Dist: datasets
+Requires-Dist: requests
+Requires-Dist: langchain
+Requires-Dist: tqdm
+Requires-Dist: numpy
+
+UNKNOWN
+
