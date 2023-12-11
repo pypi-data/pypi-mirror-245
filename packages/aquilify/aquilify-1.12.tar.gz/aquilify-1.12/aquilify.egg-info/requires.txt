@@ -1,0 +1,9 @@
+anyio
+inquirer
+
+[full]
+aiofiles
+itsdangerous
+jinja2
+markupsafe
+python-multipart
