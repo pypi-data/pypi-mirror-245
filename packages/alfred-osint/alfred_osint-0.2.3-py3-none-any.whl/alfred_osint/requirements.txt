@@ -1,0 +1,10 @@
+colorama 
+requests
+rich 
+alive-progress
+torrequest
+tqdm
+bs4
+wget
+selenium
+cryptography
