@@ -1,0 +1,8 @@
+setup.py
+mymx/__init__.py
+mymx.egg-info/PKG-INFO
+mymx.egg-info/SOURCES.txt
+mymx.egg-info/dependency_links.txt
+mymx.egg-info/not-zip-safe
+mymx.egg-info/top_level.txt
+tests/__init__.py
