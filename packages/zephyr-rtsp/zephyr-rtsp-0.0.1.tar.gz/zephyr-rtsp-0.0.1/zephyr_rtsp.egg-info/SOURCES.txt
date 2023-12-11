@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+zephyr/__init__.py
+zephyr_rtsp.egg-info/PKG-INFO
+zephyr_rtsp.egg-info/SOURCES.txt
+zephyr_rtsp.egg-info/dependency_links.txt
+zephyr_rtsp.egg-info/requires.txt
+zephyr_rtsp.egg-info/top_level.txt
