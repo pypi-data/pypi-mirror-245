@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: banf
+Version: 0.0.7
+Summary: Python package for BANF Co., Ltd.
+Author: BANF Co., Ltd.
+Author-email: gwjeon@banf.co.kr
+Keywords: tire sensor,mqtt,aws,BANF Co., Ltd.
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
