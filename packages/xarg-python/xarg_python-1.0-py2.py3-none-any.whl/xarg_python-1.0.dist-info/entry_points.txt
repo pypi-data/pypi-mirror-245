@@ -1,0 +1,2 @@
+[console_scripts]
+xargcomplete = xarg.complete:main
