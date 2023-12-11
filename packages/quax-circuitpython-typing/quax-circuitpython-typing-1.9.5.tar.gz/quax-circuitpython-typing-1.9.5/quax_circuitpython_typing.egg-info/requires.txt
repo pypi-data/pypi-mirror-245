@@ -1,0 +1,6 @@
+quax-Blinka
+adafruit-circuitpython-busdevice
+adafruit-circuitpython-requests
+typing_extensions~=4.0
+
+[optional]
