@@ -1,0 +1,11 @@
+insanely_fast_whisper-0.0.12.dist-info/METADATA,sha256=i--nb8oEgTGFOMRq9MuQA_aikoptVxZQUZwklPIQDlc,8223
+insanely_fast_whisper-0.0.12.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+insanely_fast_whisper-0.0.12.dist-info/entry_points.txt,sha256=dmYlf7-i6er35Ix5u0Sy4AjrmVUo3SLuY5VkgRaHUro,74
+insanely_fast_whisper-0.0.12.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+insanely_fast_whisper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+insanely_fast_whisper/cli.py,sha256=Lw7nPuzViv5K__4T3MqBQSfkJJql61_Gpt4j_giahck,4508
+insanely_fast_whisper/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+insanely_fast_whisper/utils/diarization_pipeline.py,sha256=bQr1_BNUgmmxZGhdMR-P-ANZgcFC95OspkLdPvk6d3E,1068
+insanely_fast_whisper/utils/diarize.py,sha256=Fu1J3DRY7xNljis_AIPvwzPw3rS176XBeFoLwVKc9zE,5669
+insanely_fast_whisper/utils/result.py,sha256=f2gjRsbAL-8deDKuRnBTRl8hhy49KLLp5xRlvHEUU0w,312
+insanely_fast_whisper-0.0.12.dist-info/RECORD,,
