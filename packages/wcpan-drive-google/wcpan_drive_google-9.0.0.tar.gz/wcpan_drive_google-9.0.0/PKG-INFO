@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: wcpan-drive-google
+Version: 9.0.0
+Summary: Google Drive driver for wcpan.drive
+License: MIT
+Author: Wei-Cheng Pan
+Author-email: legnaleurc@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Dist: aiohttp (>=3.6.0,<4.0.0)
+Requires-Dist: wcpan-drive-core (>=4.0.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# wcpan.drive.google
+
+`FileService` extension for wcpan.drive which provides Google Drive support.
+
+Please use `wcpan.drive.google.create_service` to create the file.
+
+## Requirement
+
+Need a `client_secret.json` file which can be downloaded from
+Google Developer Console.
+
+## Example
+
+```python
+from functools import partial
+
+from wcpan.drive.core import create_drive
+from wcpan.drive.google import create_service
+
+
+async def main():
+    # Your API credential.
+    client_secret = "/path/to/client_secret.json"
+    # Stores access token and refresh token.
+    oauth_token = "/path/to/oauth_token.json"
+
+    create_file_service = partial(
+        create_service,
+        client_secret=client_secret,
+        oauth_token=oauth_token,
+    )
+
+    async with create_drive(
+        file=create_file_service,
+        snapshot=...,
+    ) as drive:
+        ...
+```
+
