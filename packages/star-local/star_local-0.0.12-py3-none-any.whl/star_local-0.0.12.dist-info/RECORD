@@ -1,0 +1,9 @@
+star_local/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+star_local/entity_constants.py,sha256=piuKwimvyQf4tzFp3DkyPJuc9v6eEd77KuXxu4rTJvU,2000
+star_local/exception_star.py,sha256=dP9eJaeSn4EM4FzQyScmWYPW9lxQi-F_9TCqYiTHJo8,99
+star_local/star_local.py,sha256=EMsCYkpB1TA_pXD6OsyyoS2NVMRzxqq3qICvv7AZq0I,6606
+star_local/star_transaction.py,sha256=QJpWgsEuDBXXRy6PtALNFhicLp_7GJFJ-dQWxg9xdGU,1089
+star_local-0.0.12.dist-info/METADATA,sha256=zGe-z1sYV3J7PmGJnIwh6OxL-CKLq0WymP4nN6jrmMM,689
+star_local-0.0.12.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+star_local-0.0.12.dist-info/top_level.txt,sha256=6BxMnzcXdHANf7dzKGGFcH8I-7nOcm_r75qB1ad66sY,11
+star_local-0.0.12.dist-info/RECORD,,
