@@ -1,0 +1,14 @@
+DownloadKit/__init__.py,sha256=QBcjYDqNu7E6svkHU8zM2g0SN1BwjP-_KQK1InHMwkM,89
+DownloadKit/_funcs.py,sha256=KJZEc-ABjAvyqxZR8yC33RClp0dQ4JoZQ5zjRVzdem0,10575
+DownloadKit/_funcs.pyi,sha256=qQGsCi4vcoYhR3VGq2h-4-9fj26zr4-J1YKK5x2qsmw,1336
+DownloadKit/downloadKit.py,sha256=czSdgJ01HeoAsHia4o2zjX5T7qoTxPKT1XLdnvMQNlU,21231
+DownloadKit/downloadKit.pyi,sha256=Fjto7ZW0QiyeQgs4kUze-ytZPKMc5Hhht-tecoVKaqs,5726
+DownloadKit/mission.py,sha256=4muB5KxCkpWDOFXmCR89-eiJ5kOQO92B59yrIPNxPuI,12071
+DownloadKit/mission.pyi,sha256=x6D4tJX26k1bb-ojzkuzh3jlhCzDvcOSELBBL2ZWziM,3670
+DownloadKit/setter.py,sha256=RgISZUP-WuFoySp614oUyGh0lS_gpwfKZHIYp4hDWxw,6638
+DownloadKit/setter.pyi,sha256=Z_euqpuiKYwKCoQFzeLZBeXhk0Nlju2vxeiS4VkdUlA,1914
+DownloadKit-2.0.0b1.dist-info/LICENSE,sha256=bmg-G9BEqev4nY30-LS5Biyv5lgPXNOr2mpwB0b6j0g,1534
+DownloadKit-2.0.0b1.dist-info/METADATA,sha256=vteLlCIL_V5i9XNdlYzG1ZtULNBoBKdBrZlVxMg9qwM,1708
+DownloadKit-2.0.0b1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+DownloadKit-2.0.0b1.dist-info/top_level.txt,sha256=1LVsq3r4s2zmkWvLLoRL13cdfurmAmaC3lrMSFXXsWQ,12
+DownloadKit-2.0.0b1.dist-info/RECORD,,
