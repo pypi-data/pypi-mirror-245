@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: link-duplicates
+Version: 0.1.1
+Summary: Identify duplicate files and optionally create hardlinks to save storage
+Author: Mike Foster
+License: EUPL 1.2
+Project-URL: Source, https://github.com/MusicalNinjaRandInt/duplicates
+Keywords: duplicate files hardlink windows linux mac backup
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Topic :: System :: Archiving
+Classifier: Topic :: Utilities
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: click
+
+# Duplicates
+
+Identify duplicate files and replace them with hardlinks on any OS.
