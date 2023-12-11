@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fyers_api_helper
+Version: 0.5.3
+Summary: Fyers API Helper Package
+Author: Aditya Kale
+Author-email: dev.adityakale@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flask (>=3.0.0,<4.0.0)
+Requires-Dist: fyers-apiv3 (>=3.0.6,<4.0.0)
+Requires-Dist: waitress (>=2.1.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Fyers API Helper
+
+Documentation will be coming soon.
+
