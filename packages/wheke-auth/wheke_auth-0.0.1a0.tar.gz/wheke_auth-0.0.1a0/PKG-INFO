@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: wheke-auth
+Version: 0.0.1a0
+Summary: A Pod that adds auth to Wheke
+Project-URL: Documentation, https://github.com/humrochagf/wheke-auth#readme
+Project-URL: Issues, https://github.com/humrochagf/wheke-auth/issues
+Project-URL: Source, https://github.com/humrochagf/wheke-auth
+Author-email: Humberto Rocha <humrochagf@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: aiotinydb
+Requires-Dist: bcrypt==4.0.1
+Requires-Dist: email-validator
+Requires-Dist: passlib[bcrypt]
+Requires-Dist: python-jose[cryptography]
+Requires-Dist: python-multipart
+Requires-Dist: wheke>=0.0.1a9
+Description-Content-Type: text/markdown
+
+# wheke-auth
+
+[![PyPI - Version](https://img.shields.io/pypi/v/wheke-auth.svg)](https://pypi.org/project/wheke-auth)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/wheke-auth.svg)](https://pypi.org/project/wheke-auth)
+
+---
+
+A Pod that adds auth to Wheke
+
+## Installation
+
+```console
+pip install wheke-auth
+```
