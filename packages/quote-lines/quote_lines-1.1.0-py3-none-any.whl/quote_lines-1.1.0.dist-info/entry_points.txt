@@ -1,0 +1,2 @@
+[console_scripts]
+quote = quote_lines:cli
