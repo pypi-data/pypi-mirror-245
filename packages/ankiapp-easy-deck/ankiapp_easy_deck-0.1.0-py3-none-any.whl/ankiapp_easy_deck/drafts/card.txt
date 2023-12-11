@@ -1,0 +1,11 @@
+        <card>
+            <field name="{first_language}">{first_language_text}</field>
+            <field name="{first_language}_TTS">
+                <tts>{first_language_text}</tts>
+            </field>
+            <field name="{second_language}">{second_language_text}</field>
+            <field name="{second_language}_TTS">
+                <tts>{second_language_text}</tts>
+            </field>
+        </card>
+

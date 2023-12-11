@@ -1,0 +1,19 @@
+<deck name="{deck_name}">
+    <fields>
+        <text name="{first_language}" sides="10" lang="{first_language}"></text>
+        <tts name="{first_language}_TTS" sides="10" lang="{first_language}">
+            <sources>
+                <ref name="{first_language}" />
+            </sources>
+        </tts>
+        <text name="{second_language}" sides="01" lang="{second_language}"></text>
+        <tts name="{second_language}_TTS" sides="01" lang="{second_language}">
+            <sources>
+                <ref name="{second_language}" />
+            </sources>
+        </tts>
+    </fields>
+    <cards>
+{cards}
+    </cards>
+</deck>
