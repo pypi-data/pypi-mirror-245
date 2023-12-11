@@ -1,0 +1,6 @@
+README.md
+setup.py
+global_category_postprocessor.egg-info/PKG-INFO
+global_category_postprocessor.egg-info/SOURCES.txt
+global_category_postprocessor.egg-info/dependency_links.txt
+global_category_postprocessor.egg-info/top_level.txt
