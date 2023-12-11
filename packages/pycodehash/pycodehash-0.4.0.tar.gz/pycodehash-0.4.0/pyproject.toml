@@ -1,0 +1,108 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pycodehash"
+dynamic = ["version"]
+description = ""
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+authors = [
+  { name = "Max Baak", email = "maxbaak@gmail.com" },
+  { name = "Simon Brugman", email = "sfbbrugman@gmail.com" },
+  { name = "Ralph Urlus", email = "rurlus.dev@gmail.com" },
+]
+
+dependencies = [
+    'astunparse; python_version <= "3.9"',
+    'typing_extensions; python_version <= "3.11"',
+    'asttokens',
+    'rope',
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pycodehash[sql,s3]",
+    "moto[s3]"
+]
+sql = [
+    "sqlfluff"
+]
+s3 = [
+    "boto3"
+]
+docs = [
+    "mkdocs",
+    "mkdocs-macros-plugin"
+]
+
+[project.urls]
+Source = "https://github.com/pycodehash/pycodehash"
+Documentation = "https://github.com/pycodehash/pycodehash#readme"
+Issues = "https://github.com/pycodehash/pycodehash/issues"
+
+[tool.hatch.version]
+path = "src/pycodehash/version.py"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pycodehash"]
+
+[tool.ruff]
+target-version = "py38"
+line-length = 120
+extend-select = [
+    "E", # pyflakes `E`
+    "W", # pyflakes `W`
+    "I", # isort
+    "TID", # flake8-tidy-imports
+    "UP", # pyupgrade
+    "D212", # pydocstyle
+    "D411", # pydocstyle
+    "ANN001", # flake8-annotations
+    "C4",  # flake8-comprehensions
+    "EM", # flake8-errmsg
+    "FA", # flake8-future-annotations
+    "INP", # flake8-no-pep420
+    "PIE", # flake8-pie
+    "RET", # flake8-return
+    "SIM", # flake8-simplify
+    "TCH", # flake8-type-checking
+    "PTH", # flake8-use-pathlib
+    "TD002", # flake8-todos
+    "PL", # pylint
+    "PERF", # perflint
+    "FURB", # refurb
+]
+
+[tool.ruff.lint.per-file-ignores]
+"{tests,docs}/*" = ["ANN001", "INP", "PLR2004"]
+"src/pycodehash/python_function/{typehint_stripper,function_stripper}.py" = [
+    "PLR6301"  # ununsed self in combination with NodeVisitor
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.coverage.report]
+exclude_also = [
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "@(abc\\.)?abstractmethod",
+    "if TYPE_CHECKING:",
+]
+
+[tool.ruff.isort]
+split-on-trailing-comma = false
+
+[tool.ruff.format]
+skip-magic-trailing-comma = true
