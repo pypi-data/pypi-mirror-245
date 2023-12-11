@@ -1,0 +1,8 @@
+include AUTHORS
+include README.md
+include LICENSE
+include VERSION
+include .mailmap
+include assets/*
+include */py.typed
+include modules/*
