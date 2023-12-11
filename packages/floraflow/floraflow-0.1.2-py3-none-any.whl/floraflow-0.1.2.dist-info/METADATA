@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: floraflow
+Version: 0.1.2
+Summary: FloraFlow - a plant recognition data science project
+Home-page: https://github.com/gillesdeperetti/AU23_Plantes
+Author: Gilles de PERETTI
+Author-email: gillesdeperetti@gmail.com
+Requires-Dist: numpy (<1.24,>=1.22)
+Requires-Dist: pandas (==1.4.2)
+Requires-Dist: opencv-python (==4.8.0.76)
+Requires-Dist: pickle-mixin (==1.0.2)
+Requires-Dist: matplotlib (==3.5.1)
+Requires-Dist: seaborn (==0.12.2)
+Requires-Dist: plotly (==5.18.0)
+Requires-Dist: scikit-learn (==1.0.2)
+Requires-Dist: scikit-image (==0.22.0)
+Requires-Dist: tensorflow (==2.12.0)
+Requires-Dist: keras (==2.12.0)
+
