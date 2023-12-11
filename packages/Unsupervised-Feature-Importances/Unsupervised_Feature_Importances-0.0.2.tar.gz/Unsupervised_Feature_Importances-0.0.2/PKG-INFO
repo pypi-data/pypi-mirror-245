@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: Unsupervised_Feature_Importances
+Version: 0.0.2
+Summary: Unupservised Feature Importances
+Home-page: https://github.com/rupak-roy
+Author: rupak_bob_roy
+Author-email: rupak2013bob1@gmail.com
+Project-URL: Bug Tracker, https://github.com/rupak-roy
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+
+# Dependencies 
+### Make sure you have install the sklearn ~ Kmeans,scikit-learn
+
+
+### Install the package
+```
+pip install package_name
+```
+
+
+### Import the package 
+```
+from feature_importances import feat_imp
+```
+
+### Call the package function
+```
+feat_impo,accuracy_report= feat_imp.compute(dataframe)
+```
+
