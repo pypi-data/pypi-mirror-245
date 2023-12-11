@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "greycdata"
+version = "0.1.0"
+description = ""
+authors = ["Gauzere Benoit <benoit.gauzere@insa-rouen.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch-geometric = "^2.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "greycdata"
+version = "0.0.8"
+authors = [
+  { name="Benoit Gaüzère", email="benoit.gauzere@insa-rouen.fr" },
+]
+description = "A package to load data from GREYC"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+#include_package_data = True
+[project.urls]
+"Homepage" = "https://github.com/bgauzere/greycdata"
+# "Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+
+[tool.hatch.build.targets.wheel]
+only-include = ["greycdata", "greycdata/data"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src" = ""
+"data" = "greycdata/data"
+
+# [tool.setuptools.packages.find]
+# include = ['greycdata']
+# exclude = ['mygnn','data']

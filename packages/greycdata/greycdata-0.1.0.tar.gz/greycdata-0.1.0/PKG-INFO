@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: greycdata
+Version: 0.1.0
+Summary: 
+Author: Gauzere Benoit
+Author-email: benoit.gauzere@insa-rouen.fr
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: torch-geometric (>=2.4.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Installation of required packages
+
+1. Install pytorch geometric >= 2.0
+see https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
+
+3. `pipenv install`
+
+# Contents
+## greycdata : 
+    |- datasets.py : Implementation of three GREYC chemistry small datasets as pytorch
+    geometric datasets : Alkane, Acyclic and MAO. See https://brunl01.users.greyc.fr/CHEMISTRY/ for details
+     - loaders.py : load the same datasets as list of networkx graphs
+     
+# Examples
+
+Two notebooks, one for classification, one for regression, are provided for testing
+purposes
+
+# Authors
+- Benoit Gaüzère <benoit.gauzere@insa-rouen.fr>
+- Linlin Jia <https://github.com/jajupmochi>
+
