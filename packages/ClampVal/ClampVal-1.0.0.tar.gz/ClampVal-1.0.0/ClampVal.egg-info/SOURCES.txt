@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+ClampVal.egg-info/PKG-INFO
+ClampVal.egg-info/SOURCES.txt
+ClampVal.egg-info/dependency_links.txt
+ClampVal.egg-info/top_level.txt
