@@ -1,0 +1,95 @@
+{
+  "name": "jupyterlab-broccoli-extension",
+  "version": "0.4.5",
+  "description": "Blockly extension for JupyterLab.",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/FumiHax/jupyterlab-broccoli",
+  "bugs": {
+    "url": "https://github.com/FumiHax/jupyterlab-broccoli/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Fumi.Iseki",
+    "email": "iseki@rsch.tuis.ac.jp"
+  },
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "style": "style/index.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FumiHax/jupyterlab-broccoli.git"
+  },
+  "scripts": {
+    "build": "jlpm build:lib && jlpm build:labextension:dev",
+    "build:prod": "jlpm clean && jlpm build:lib && jlpm build:labextension",
+    "build:labextension": "jupyter labextension build .",
+    "build:labextension:dev": "jupyter labextension build --development True .",
+    "build:lib": "tsc",
+    "clean": "jlpm clean:lib",
+    "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
+    "clean:labextension": "rimraf ../../jupyterlab_brocolli/labextension",
+    "clean:all": "jlpm clean:lib && jlpm clean:labextension",
+    "install:extension": "jlpm build",
+    "watch": "run-p watch:src watch:labextension",
+    "watch:src": "tsc -w",
+    "watch:labextension": "jupyter labextension watch ."
+  },
+  "dependencies": {
+    "@jupyter-widgets/base": "^6.0",
+    "@jupyterlab/application": "^4.0.9",
+    "@jupyterlab/apputils": "^4.1.9",
+    "@jupyterlab/codeeditor": "^4.0.9",
+    "@jupyterlab/filebrowser": "^4.0.9",
+    "@jupyterlab/launcher": "^4.0.9",
+    "@jupyterlab/mainmenu": "^4.0.9",
+    "@jupyterlab/rendermime": "^4.0.9",
+    "@jupyterlab/settingregistry": "^4.0.9",
+    "@jupyterlab/translation": "^4.0.9",
+    "@jupyterlab/ui-components": "^4.0.9",
+    "@rjsf/utils": "^5.15.0",
+    "@types/react": "^18.2.41",
+    "jupyterlab-broccoli": "~0.4.5"
+  },
+  "devDependencies": {
+    "@jupyterlab/builder": "^4.0.9",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^4.4.0",
+    "source-map-loader": "^4.0.1",
+    "typescript": "~4.9.5"
+  },
+  "sideEffects": [
+    "style/*.css",
+    "style/index.js"
+  ],
+  "styleModule": "style/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "jupyterlab": {
+    "extension": true,
+    "outputDir": "../../jupyterlab_broccoli/labextension",
+    "sharedPackages": {
+      "jupyterlab-broccoli": {
+        "bundled": true,
+        "singleton": true
+      },
+      "blockly": {
+        "bundled": true,
+        "singleton": true
+      },
+      "@jupyter-widgets/base": {
+        "bundled": false,
+        "singleton": true
+      }
+    },
+    "webpackConfig": "./webpack.config.js"
+  }
+}
