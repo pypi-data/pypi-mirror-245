@@ -1,0 +1,2 @@
+[console_scripts]
+civitdl = civitdl.command_line:main
