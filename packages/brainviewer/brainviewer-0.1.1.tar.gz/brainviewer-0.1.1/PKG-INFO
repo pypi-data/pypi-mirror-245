@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: brainviewer
+Version: 0.1.1
+Summary: A brain viewer in Python.
+License: BSD 3-Clause
+Author: zhengliu
+Author-email: zheng.liu.cn@outlook.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyQt5 (>=5.15.10,<6.0.0)
+Requires-Dist: mne (>=1.6.0,<2.0.0)
+Requires-Dist: nibabel (>=5.1.0,<6.0.0)
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Requires-Dist: pyvista (>=0.43.0,<0.44.0)
+Requires-Dist: pyvistaqt (>=0.11.0,<0.12.0)
+Description-Content-Type: text/markdown
+
+# 🧠 BrainViewer
+
+![BrainViewer](BrainViewer/fig/main_window.png)  
+
+> *A Python-based 3D Viewer for Visualizing ROIs using FreeSurfer Reconstruction*
+
+## 👁️‍🗨️ Overview
+
+A Python-based 3D Viewer for viszalizing ROIs using the result of FreeSurfer reconstruction. The main functions of this software are brain surface visualization, ROIs visualization and relative settings.
+
+## 🔆Highlights
+
+- Brain surface files (.pial .white)
+- Brain segmentation files (.nii .nii.gz .mgz)
+- ROIs selection and visualization (marching cubes)
+- Settings of colors and views
+
+## 🖥️ Installation
+
+```bash
+git clone https://github.com/BarryLiu97/BrainViewer.git
+conda create -n viewer python=3.8
+conda activate viewer 
+cd BrainViewer
+pip install -r requirements.txt
+```
+
+## 🗝️ Usage
+
+```bash
+cd BrainViewer
+python main.py
+```
+
