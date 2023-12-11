@@ -1,0 +1,10 @@
+splatbot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+splatbot/cli.py,sha256=JrvdVr-Fw31bJ70mokhZijbwtKuRZm-LPccTIYW0jqY,771
+splatbot/controller.py,sha256=Di3YI62TQGRC_tYuTFuMygjQ-YWz4XUZ-6mBYHhR3yA,1283
+splatbot/macro.py,sha256=AeLAJCleZ1CWr4ojrx8JVfynv_-6WleLgx6c16KJv5I,1557
+splatbot/start.py,sha256=SQuy7tnvIoEMaVDPmqx4Lk_h3_p7Okx7KG0PoMnOqqg,910
+splatbot-0.1.0.dist-info/entry_points.txt,sha256=OJyEc7SQGv-foL_EBWxSCEtui3Oa3R8cV0cf0X7xmgM,46
+splatbot-0.1.0.dist-info/LICENSE,sha256=NjBjyQq8WDzl-dxG0DSveeDnhQGeXLKLK5LRo9NqBG8,1064
+splatbot-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+splatbot-0.1.0.dist-info/METADATA,sha256=CzJYM0byj2RyMLTOdx-N-lShpSkmbqW6sXB-0VX4UQY,3069
+splatbot-0.1.0.dist-info/RECORD,,
