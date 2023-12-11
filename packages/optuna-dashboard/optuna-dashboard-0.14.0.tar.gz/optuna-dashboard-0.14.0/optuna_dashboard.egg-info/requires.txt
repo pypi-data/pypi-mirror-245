@@ -1,0 +1,27 @@
+bottle
+optuna>=2.4.0
+packaging
+scikit-learn
+
+[docs]
+boto3
+botorch
+streamlit
+sphinx
+sphinx_rtd_theme
+
+[optional]
+streamlit
+boto3
+
+[optional:python_version >= "3.8"]
+botorch>=0.8.1
+
+[preferential]
+botorch>=0.8.1
+
+[test]
+coverage
+plotly
+pytest
+moto[s3]
