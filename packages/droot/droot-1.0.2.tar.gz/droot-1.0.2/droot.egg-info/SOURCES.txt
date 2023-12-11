@@ -1,0 +1,7 @@
+README.md
+droot.py
+setup.py
+droot.egg-info/PKG-INFO
+droot.egg-info/SOURCES.txt
+droot.egg-info/dependency_links.txt
+droot.egg-info/top_level.txt

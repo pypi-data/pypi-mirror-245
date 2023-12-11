@@ -1,0 +1,169 @@
+# droot: Python File Management Package
+
+`droot` is a Python package that provides a convenient way to manage files and directories. It allows you to perform various operations such as creating, deleting, copying, moving, and iterating over files and directories.
+
+## Installation
+
+You can install `droot` using pip:
+
+```
+pip install droot
+```
+
+## Usage
+
+### Importing the Package
+
+To use `droot`, you need to import the necessary classes:
+
+```python
+from droot import DRoot, DFile
+```
+
+### Creating a Directory Root
+
+You can create a directory root using the `DRoot` class. Pass the absolute path of the directory to the constructor:
+
+```python
+root = DRoot('/path/to/root')
+```
+
+### Creating a File
+
+To create a file, you can use the `DFile` class. Pass the absolute path of the file and the file name to the constructor:
+
+```python
+file = DFile('/path/to/root', 'example.txt')
+```
+
+### Checking Existence
+
+You can check if a directory or file exists using the `bool()` function:
+
+```python
+if bool(root):
+    print('Root directory exists')
+
+if bool(file):
+    print('File exists')
+```
+
+### File Operations
+
+#### Reading a File
+
+To read the contents of a file, you can use the left shift operator (`<<`):
+
+```python
+content = file << ''
+print(content)
+```
+
+#### Writing to a File
+
+To write content to a file, you can use the left shift operator (`<<`):
+
+```python
+file << 'Hello, world!'
+```
+
+#### Appending to a File
+
+To append content to a file, you can use the in-place left shift operator (`<<=`):
+
+```python
+file <<= ' Appended content'
+```
+
+#### Moving a File
+
+To move a file to a different location, you can use the `mv()` method:
+
+```python
+new_file = file.mv('/path/to/new_location/example.txt')
+```
+
+#### Copying a File
+
+To copy a file to a different location, you can use the `cp()` method:
+
+```python
+new_file = file.cp('/path/to/new_location/example.txt')
+```
+
+#### Deleting a File
+
+To delete a file, you can use the `unlink()` method:
+
+```python
+file.unlink()
+```
+
+### Directory Operations
+
+#### Creating a Directory
+
+To create a directory, you can use the `makedirs()` method:
+
+```python
+root.makedirs()
+```
+
+#### Creating a Directory and Clearing its Contents
+
+To create a directory and clear its contents if it already exists, you can use the `makeAndClear()` method:
+
+```python
+root.makeAndClear()
+```
+
+#### Listing Files and Directories
+
+To iterate over files and directories within a directory, you can use a `for` loop:
+
+```python
+for item in root:
+    print(item)
+```
+
+The `item` variable will be either a `DFile` object or a `DRoot` object, depending on whether it represents a file or a directory.
+
+#### Accessing a Subdirectory
+
+To access a subdirectory within a directory, you can use the indexing operator (`[]`):
+
+```python
+subdir = root['subdirectory']
+```
+
+#### Getting the Parent Directory
+
+To get the parent directory of a directory or file, you can use the `parent` property:
+
+```python
+parent_dir = root.parent
+```
+
+#### Getting the Relative Path
+
+To get the relative path between two files or directories, you can use the subtraction operator (`-`):
+
+```python
+relative_path = file - root
+```
+
+#### Printing the Directory Tree
+
+To print the directory tree structure, you can use the `tree()` method:
+
+```python
+tree = root.tree()
+for item in tree:
+    print(item)
+```
+
+The `tree()` method returns a list of strings representing the directory tree structure.
+
+## Conclusion
+
+The `droot` package provides a simple and intuitive way to manage files and directories in Python. It offers a range of operations for creating, deleting, copying, moving, and iterating over files and directories. For more details, refer to the package documentation.
