@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: google_text_to_speech
+Version: 0.1.15
+Summary: A text-to-speech conversion tool using Google Translate API
+Home-page: https://gitlab.com/labsoft-ai/google-translate-tts
+Author: Momcilo Krunic
+Author-email: momcilo.krunic@labsoft.ai
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![img](images/google_translate.png)
+
+# Google Translate TTS
+
+The `google_text_to_speech` package is a Python-based solution designed to provide versatile and user-friendly text-to-speech (TTS) capabilities. Leveraging the Google Translate TTS API, it enables users to convert written text into spoken words in various languages, catering to a wide range of applications.
+
+## Update PyPI
+
+https://pypi.org/project/google-text-to-speech
+
+1. Delete `dist` folder if exist in project directory
+2. Increment version number in `setup.py`
+3. Build the package: `python setup.py sdist bdist_wheel`
+4. Install Twine: `pip install twine`
+5. Upload Package to TestPyPI: `twine upload --repository testpypi dist/*`- Check TestPyPI to see if your package is listed correctly.
+6. Upload Package to PyPI: `twine upload dist/*`
+
+NOTE: *These steps [should be automated](https://gitlab.com/labsoft-ai/google-translate-tts/-/issues/3) through [Gitlab actions](.gitlab-ci.yml).*
+
+## Directory tree structure
+
+```
+.
+├── docs
+│   ├── architecture.md
+│   └── user_stories.md
+├── images
+│   ├── dir_tree.png
+│   └── google_translate.png
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── setup.py
+├── src
+│   └── google_text_to_speech
+│       ├── google_translate_tts.py
+│       ├── __init__.py
+│       └── _version.py
+└── tests
+    └── test_google_translate_tts.py
+
+5 directories, 12 files
+```
+
+## Key Features
+
+* **Multiple Language Support:** Utilizes Google's TTS service to offer speech synthesis in numerous languages.
+* **Handling of Large Texts:** Splits long texts into sentences to avoid limitations related to URL length and TTS service constraints.
+* **Real-Time Audio Playback:** Converts text to speech in real-time, with the capability to play the audio immediately.
+* **Concurrency and Resource Management:** Implements threading to manage audio playback and file operations simultaneously, ensuring smooth performance and optimal resource usage.
+
+## Technologies
+
+* **Python:** The module is written in Python, making it versatile and easy to integrate into various applications.
+* **External Libraries:** Uses `requests` for API calls and `playsound` for audio playback, along with standard libraries like `re` for text processing.
+* **Google Translate TTS API:** Leverages this API for reliable and high-quality text-to-speech conversion.
+
+## Potential Use Cases
+
+* **Language Learning Tools:** Assists in pronunciation and language learning by providing auditory examples.
+* **Accessibility Tools:** Helps in creating applications that can read out content to users with visual impairments.
+* **Content Consumption:** Enables users to listen to articles, books, or any text content, enhancing the experience of consuming written material.
+
+
