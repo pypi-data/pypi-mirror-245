@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: geokoord
+Version: 0.0.1
+Summary: Add your description here
+Author-email: quinnhornblow <quinn.hornblow@protonmail.com>
+Requires-Python: >=3.8
+Requires-Dist: requests>=2.31.0
+Requires-Dist: tqdm>=4.66.1
+Description-Content-Type: text/markdown
+
+# geokoord
+
+Describe your project here.
+
+links:
+
+- https://koordinates.com/explore/publishers/?type=sites
+- https://apidocs.koordinates.com/#tag/Exports/operation/postExport
+
+Feature list:
+
+- [ ] Exports
+- [ ] WFS
