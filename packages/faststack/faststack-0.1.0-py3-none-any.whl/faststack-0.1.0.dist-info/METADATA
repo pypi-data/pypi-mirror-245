@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: faststack
+Version: 0.1.0
+Summary: FastAPI-based framework
+License: MIT
+Author: Ross Masters
+Author-email: ross@rossmasters.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (>=0.104,<0.105)
+Requires-Dist: kink (>=0.7.0,<0.8.0)
+Requires-Dist: sqlmodel (>=0.0.14,<0.1.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# Faststack
+
+Faststack is a batteries-included framework for rapidly building web apps on FastAPI.
+
+## Batteries included
+
+Faststack provides an opinionated, but out of the box configuration for:
+
+- HTTP framework: [FastAPI](https://github.com/tiangolo/fastapi)
+- Web server: [Hypercorn](https://github.com/pgjones/hypercorn)
+- Dependency injection: [Kink](https://github.com/kodemore/kink)
+- ORM: [SQLModel](https://github.com/tiangolo/sqlmodel)
+- Migrations: [Alembic](https://github.com/sqlalchemy/alembic)
+- CLI: [Typer](https://github.com/tiangolo/typer)
+- User management: ...
+- Admin: [FastAPI Admin](https://github.com/fastapi-admin/fastapi-admin)
+
+## Typing & Async first-class by default
+
+## Flexibility for small and large apps alike
+
+Faststack is designed to support single-file web scripts as well as onion-architecture
+monoliths. The structure of your app is largely up to you, but Faststack provides a
+sensible default structure that can be used as a starting point for most apps.
+

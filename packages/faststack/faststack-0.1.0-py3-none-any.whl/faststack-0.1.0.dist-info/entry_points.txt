@@ -1,0 +1,3 @@
+[console_scripts]
+faststack=faststack.cli:app
+

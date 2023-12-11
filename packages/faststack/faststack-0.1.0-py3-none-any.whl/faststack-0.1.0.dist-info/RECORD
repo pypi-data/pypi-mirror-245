@@ -1,0 +1,15 @@
+faststack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faststack/apps/__init__.py,sha256=8wsNcH8QTLi7R-fDsmB-7m_Y5yIJduAnZs63_-Fx_Rk,489
+faststack/apps/finders.py,sha256=snmQusC77dBPaU6Fx8Z3TkUMlHp3OSHdqD8-9DLTZaU,3549
+faststack/auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faststack/auth/models.py,sha256=QLydiSf3ObAX89jyqnoOU-6HJG9cowKPn5W749QyLVM,284
+faststack/cli/__init__.py,sha256=uGeXTTDZPnJ8Sabz8S6w3b_xL7Bz4t6apbO2RrL3m-c,239
+faststack/cli/development.py,sha256=0lg6CwkSZOiVA0SEOf2KayHYpaQ31xESf62zPGxmX14,299
+faststack/cli/models.py,sha256=-6Vmz67srWGsLjXrjJAb5C5dCsHLmRlh-WjXAvxvwFQ,411
+faststack/cli/util.py,sha256=u17aLksXYDHXow1Qt-LYFiAoykZo_fyOrmBBTp_AS6Q,1732
+faststack/models.py,sha256=utnuE_oUaT6ql3KeJofexM56rebXw0Lhm2c9ql35da8,156
+faststack/settings.py,sha256=bjoZXbRfpexinDwAuSGR-VzrvByg78tzhmXflzgft-w,82
+faststack-0.1.0.dist-info/METADATA,sha256=93yuZy9ecJorgzIgagkU3hypHL2EBIKb8RtT9dc9BOA,1530
+faststack-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+faststack-0.1.0.dist-info/entry_points.txt,sha256=jHyB-vehpzIFUftBLtk068oYAt9EK09OG96_O7EINus,47
+faststack-0.1.0.dist-info/RECORD,,
