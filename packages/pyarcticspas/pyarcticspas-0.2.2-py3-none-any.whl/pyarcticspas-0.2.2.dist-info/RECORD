@@ -1,0 +1,12 @@
+pyarcticspas/__init__.py,sha256=Tcl5QwW7NVid_j9mEE6A0k_QrWrJMZh-ujCnJdrNa14,984
+pyarcticspas/const.py,sha256=wTL7B-lpcRt6jbbsZC3wu0PIolbn09gb6bHepABZ544,69
+pyarcticspas/py.typed,sha256=8ZJUsxZiuOy1oJeVhsTWQhTG_6pTVHVXk5hJL79ebTk,25
+pyarcticspas/spa.py,sha256=Vp5kqr99c70_GxvqA3jHnPEVIbW-FVokhSYI4oXHhCc,9049
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_async.py,sha256=pH3mxmCHeIdrOUspej-_DJNpe-q0qncyvLYCoZwuaI8,793
+tests/test_sync.py,sha256=1zWIVzFaaCMwTSfudR1cWxBeXQ9R1xUuxPv3-K8_z2Y,995
+pyarcticspas-0.2.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyarcticspas-0.2.2.dist-info/METADATA,sha256=YtmvibRvm5vB0nMrcJLwmiBwFQvnG92yYn6BUKVLQrI,887
+pyarcticspas-0.2.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyarcticspas-0.2.2.dist-info/top_level.txt,sha256=p1wh1Zd3SUf1PQWWLweEV3qCD9nz0yFkKiNWw81BSvc,19
+pyarcticspas-0.2.2.dist-info/RECORD,,
