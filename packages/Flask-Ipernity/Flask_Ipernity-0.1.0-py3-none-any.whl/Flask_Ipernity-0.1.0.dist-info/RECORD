@@ -1,0 +1,11 @@
+flask_ipernity/__init__.py,sha256=7HOG7hSG_AbbXLuO3Oiuqf3v91cBEAju02kXQSmAmiA,146
+flask_ipernity/_version.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+flask_ipernity/cache.py,sha256=-hlXXaxcK4-XE1gbDhOhtydFVP4yyGDjarKcndF5Lr8,2067
+flask_ipernity/callback.py,sha256=B15lY00FhFzLWgjG9ybJU1mKlemSkzo7Ys6WBPxUDOM,599
+flask_ipernity/ext.py,sha256=YRwTGWj_7MJlnkPZ8wF_ivm0aV0doNGAPTLFOxeZCD0,5577
+flask_ipernity/login.py,sha256=SFY-wpXVA8Ap3G_40154cg35Xmncoo9U5CNM96R-KIw,2652
+Flask_Ipernity-0.1.0.dist-info/LICENSE,sha256=uWEkhwEL7FGzmdrTUohMx70p8piuRZt16A-ZG5PaYdI,1062
+Flask_Ipernity-0.1.0.dist-info/METADATA,sha256=HsNX17E162DZGsAYeJr82CjzrqpumQnu36w56wcg51w,1803
+Flask_Ipernity-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+Flask_Ipernity-0.1.0.dist-info/top_level.txt,sha256=jGVhzk-2-mTbH3xuzoTgKbO42ogvtVIJ9FLbp9z-GVk,15
+Flask_Ipernity-0.1.0.dist-info/RECORD,,
