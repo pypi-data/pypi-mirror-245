@@ -1,0 +1,7 @@
+geokoord/__init__.py,sha256=0eVFfVd2aZXTZHFXcLZnFk8MftII4cMhRBBYt3Hm3LI,13
+geokoord/enums.py,sha256=vwa3Z7_MdLGGbaQR9aeC1vCf2RAuzeHYR-Mjg6zYoSo,634
+geokoord/koordinates/__init__.py,sha256=ZmWh7UmOLXJMJQvElEybDCNIlJiHRvpQFnx5pCPOTHM,2506
+geokoord/koordinates/exports.py,sha256=ksPZmwQpGyVrOfT_9y4vw2NK8hrKFjC2AUMTKDgEmE0,5763
+geokoord-0.0.1.dist-info/METADATA,sha256=OQhJwBHIOJc9kenlArP-Uaz3nVLPxww2q9LDlkyuYc4,485
+geokoord-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+geokoord-0.0.1.dist-info/RECORD,,
