@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: annotated-doc
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/tiangolo/annotated-doc#readme
+Project-URL: Issues, https://github.com/tiangolo/annotated-doc/issues
+Project-URL: Source, https://github.com/tiangolo/annotated-doc
+Author-email: Sebastián Ramírez <tiangolo@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# annotated-doc
+
+[![PyPI - Version](https://img.shields.io/pypi/v/annotated-doc.svg)](https://pypi.org/project/annotated-doc)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/annotated-doc.svg)](https://pypi.org/project/annotated-doc)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install annotated-doc
+```
+
+## License
+
+`annotated-doc` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
