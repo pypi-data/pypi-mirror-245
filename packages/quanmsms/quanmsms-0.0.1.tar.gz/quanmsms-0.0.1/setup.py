@@ -1,0 +1,5 @@
+from setuptools import setup
+setup(
+    name = "quanmsms",
+    version = "0.0.1"
+)
