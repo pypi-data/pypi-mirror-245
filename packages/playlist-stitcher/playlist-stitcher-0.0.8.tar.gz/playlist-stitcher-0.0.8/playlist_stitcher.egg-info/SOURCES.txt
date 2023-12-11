@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+cli.py
+setup.py
+playlist_stitcher.egg-info/PKG-INFO
+playlist_stitcher.egg-info/SOURCES.txt
+playlist_stitcher.egg-info/dependency_links.txt
+playlist_stitcher.egg-info/entry_points.txt
+playlist_stitcher.egg-info/requires.txt
+playlist_stitcher.egg-info/top_level.txt
