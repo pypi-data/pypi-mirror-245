@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+FirstLib/__init__.py
+FirstLib/layers.py
+FirstLib/loggingin.py
+FirstLib/speedfilein.py
+FirstLib/tensorclass.py
+firstlib.egg-info/PKG-INFO
+firstlib.egg-info/SOURCES.txt
+firstlib.egg-info/dependency_links.txt
+firstlib.egg-info/requires.txt
+firstlib.egg-info/top_level.txt
