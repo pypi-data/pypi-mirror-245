@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: WrapperXSelector
+Version: 0.1.28
+Summary: The WrapperXSelector is a Python-based tool that streamlines web scraping and data extraction tasks through the creation and utilization of wrappers.
+Author-email: Kallol Naha <kallolnaha@gmail.com>
+Project-URL: Homepage, https://pypi.org/project/WrapperXSelector/
+Project-URL: Issues, https://pypi.org/project/WrapperXSelector/#issues
+Keywords: Scraping,Xpath,Wrapper
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+Requires-Dist: beautifulsoup4
+
+# Laravel Menu
+
+> This is a rework of [Lavary Menu](https://github.com/lavary/laravel-menu)
+
+
+## Documentation
+
+* [Installation](#installation)
+* [Getting Started](#getting-started)
+
+
+
+## Installation
+
+```bash
+composer require konekt/menu
+```
