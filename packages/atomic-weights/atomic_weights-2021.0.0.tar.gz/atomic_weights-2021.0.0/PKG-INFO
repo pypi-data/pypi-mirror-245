@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: atomic-weights
+Version: 2021.0.0
+Summary: Standard atomic weights of the elements
+Home-page: https://github.com/n-takumasa/py-atomic-weights
+License: CC0-1.0
+Author: Takumasa Nakamura
+Author-email: n.takumasa@gmail.com
+Requires-Python: >=3.8
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Project-URL: Repository, https://github.com/n-takumasa/py-atomic-weights
+Description-Content-Type: text/markdown
+
+# py-atomic-weights: Python Module for Standard atomic weights of the elements
+
+## Features
+* [IUPAC Atomic Weights](https://iupac.qmul.ac.uk/AtWt/) in `float` and `decimal.Decimal` formats
+
+## Usage
+
+```
+pip install atomic-weights
+```
+
+```py
+>>> import atomic_weights as atw
+>>> print(atw.Fe)
+55.845
+>>> print(atw.decimal.Fe)
+55.845
+>>> type(atw.Fe)
+<class 'float'>
+>>> type(atw.decimal.Fe)
+<class 'decimal.Decimal'>
+```
+
