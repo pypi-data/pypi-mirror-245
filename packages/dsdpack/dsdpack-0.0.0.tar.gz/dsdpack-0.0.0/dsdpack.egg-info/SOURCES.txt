@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+./dsdpack/__init__.py
+./dsdpack/cgeom.py
+./dsdpack/datarep.py
+./dsdpack/generator.py
+./dsdpack/htmlcss.py
+./dsdpack/model.py
+./dsdpack/guitk/__init__.py
+./dsdpack/guitk/generator.py
+./dsdpack/guitk/guiComponents.py
+dsdpack.egg-info/PKG-INFO
+dsdpack.egg-info/SOURCES.txt
+dsdpack.egg-info/dependency_links.txt
+dsdpack.egg-info/requires.txt
+dsdpack.egg-info/top_level.txt
