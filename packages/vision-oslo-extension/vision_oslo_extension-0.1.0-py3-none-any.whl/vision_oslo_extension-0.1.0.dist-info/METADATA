@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: vision-oslo-extension
+Version: 0.1.0
+Summary: This is the package to support additional features on VISION-OSLO, software owned by Network Rail
+Author-email: Jieming Ye <Jieming.Ye@networkrail.co.uk>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Project Name
+
+This is VISION-OSLO extension package in order to support the simulation data post processing.
+
+Please refer to the document manual for instructions.
+
+## Copyright
+
+Copyright @ Engineering Services, Network Rail
+
+This package is developed by Jieming Ye. Senior Design Engineering, Engineering Services, Network Rail.
+The source code is open to public.
+
+## Installation
+The repository of this package is saved on GitHub:
+https://github.com/NR-JYe/Vision-Oslo-Extension
+
+## Usage
+
+## Feature
+
+## Contributing
+
+## License
