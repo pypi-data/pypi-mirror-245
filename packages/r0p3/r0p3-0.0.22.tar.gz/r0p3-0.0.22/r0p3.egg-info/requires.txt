@@ -1,0 +1,11 @@
+selenium
+pytz
+kubernetes
+requests
+beautifulsoup4
+lxml
+dataclasses
+python-dateutil
+pytz
+tzlocal
+pytzda
