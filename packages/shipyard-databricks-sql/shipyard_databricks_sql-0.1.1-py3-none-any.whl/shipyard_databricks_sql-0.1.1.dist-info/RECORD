@@ -1,0 +1,9 @@
+shipyard_databricks_sql/__init__.py,sha256=lPRccjvRldH8FiwRAT4rUl55hWfmPOn-YtjCh1BIIa8,44
+shipyard_databricks_sql/cli/authtest.py,sha256=nMLZbg2ZrHr2ouvc9XOieXXKjQZX7o7zD10mxi4I0pA,630
+shipyard_databricks_sql/cli/execute.py,sha256=txLFjjrxGJuowm2nn58z3A2aoJPyuOQTdp79yDmvN4U,1498
+shipyard_databricks_sql/cli/fetch.py,sha256=-Z73LOqhb2mReNDgEZwu0-l25E1W500iqjXzd_Xictw,2545
+shipyard_databricks_sql/cli/upload.py,sha256=iPc5eKRuYoi-wqecAsH79rw4tf1io_WFBNK9flBB_pI,4957
+shipyard_databricks_sql/databricks.py,sha256=fqCI3xYBICBr3gP2bBeL57W1IFKCSz9omH2-nc1P9i4,12615
+shipyard_databricks_sql-0.1.1.dist-info/METADATA,sha256=ucHY3I7wrb0C1aWYuq5fIczLAplgrtp9SiEe2kZ9NIo,594
+shipyard_databricks_sql-0.1.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+shipyard_databricks_sql-0.1.1.dist-info/RECORD,,
