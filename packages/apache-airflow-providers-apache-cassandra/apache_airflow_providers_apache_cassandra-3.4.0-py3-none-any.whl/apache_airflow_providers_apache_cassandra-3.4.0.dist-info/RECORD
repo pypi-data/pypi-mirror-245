@@ -1,0 +1,12 @@
+airflow/providers/apache/cassandra/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/apache/cassandra/__init__.py,sha256=pErjlORUzdbiV6OCWg3uHDq2kkJHZ88my_TMg8aqYJQ,1591
+airflow/providers/apache/cassandra/get_provider_info.py,sha256=Lm-NRR1aycTfwmyt8SBSjl4F-XDuGKijZhY39PVH3tw,2913
+airflow/providers/apache/cassandra/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/apache/cassandra/hooks/cassandra.py,sha256=sQRICyUQUfzCC7r88Ke75CaP67D1hqnjM1pR7DS1E3s,7868
+airflow/providers/apache/cassandra/sensors/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/apache/cassandra/sensors/record.py,sha256=7j1rH6DTXAqsMgfcyqW67orQKj2eGge9wRlSgXSqtSw,2739
+airflow/providers/apache/cassandra/sensors/table.py,sha256=tV1hOqW-epchibVEB7tVZ6Tu64tF3aEccoEcq0zGlrU,2447
+apache_airflow_providers_apache_cassandra-3.4.0.dist-info/entry_points.txt,sha256=ebCuKfjrZhJHzmpZ7QsbkbjR_mJlv0s6qRSe2cy5R9A,112
+apache_airflow_providers_apache_cassandra-3.4.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_apache_cassandra-3.4.0.dist-info/METADATA,sha256=de_aoT1E1V2StJNVyxIvSEOjMb6nxy2nDk-SOT6PdGY,4826
+apache_airflow_providers_apache_cassandra-3.4.0.dist-info/RECORD,,
