@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: cast-ai-se-cli
+Version: 0.0.1
+Summary: Provides a CLI to run all sorts of sequences like demo prep.
+Author: Dan Amzulescu
+Author-email: dan@cast.ai
+Keywords: cast command-line cli
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: requests==2.31.0
+Requires-Dist: boto3==1.33.10
+Requires-Dist: yaspin==3.0.1
+Requires-Dist: docopt-ng==0.9.0
+Requires-Dist: cast-ai-se-tools==0.0.27
+Requires-Dist: regex==2023.10.3
+
+# Project Name
+
+[![Build Status](...)](...)
+[![License](...)](...)
+
+## Introduction
+
+This project aims to...
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+To install, run...
+
+## Usage
+
+To use the project, follow these steps...
+
+## Contributing
+
+Contributions are welcome! To contribute, follow these steps...
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+Thanks to [Author Name] for...
+
+## Changelog
+
+- v1.0.0 (Date): Initial release
+- v1.1.0 (Date): Added feature X
+
+## FAQ
+
+- How do I do X?
+- What should I do if Y happens?
+
+## Support
+
+For support, please open an issue or contact...
+
+## Roadmap
+
+- Version 2.0.0: Implement feature Z
+- ...
