@@ -1,0 +1,7 @@
+setup.py
+PINN_torch.egg-info/PKG-INFO
+PINN_torch.egg-info/SOURCES.txt
+PINN_torch.egg-info/dependency_links.txt
+PINN_torch.egg-info/not-zip-safe
+PINN_torch.egg-info/requires.txt
+PINN_torch.egg-info/top_level.txt
