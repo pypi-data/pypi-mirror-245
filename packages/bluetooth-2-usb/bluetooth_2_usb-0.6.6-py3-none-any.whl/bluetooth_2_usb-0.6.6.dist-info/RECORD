@@ -1,0 +1,10 @@
+bluetooth_2_usb/__init__.py,sha256=JnAih2pneFJ-eFgNJm-3WYO2Hog5LAgzZzGNHncwKeQ,535
+bluetooth_2_usb/args.py,sha256=MKA0o7cXwvc0iSF_E9jLSITMXLovFDeFwHPN31njWEk,2626
+bluetooth_2_usb/evdev.py,sha256=Yh-8NfL1faWwEL42e0ZtvXCRaSZvG2L4XsTbzVCUdOw,49022
+bluetooth_2_usb/logging.py,sha256=WNEyXIAYHXjd-7fQfSd7CGqYqo1tlfuCzr3Gmy9gzTk,609
+bluetooth_2_usb/relay.py,sha256=dBnE6K9yrF9U74b2twUTiaRzQWowY-epytienF8raGU,8024
+bluetooth_2_usb-0.6.6.dist-info/LICENSE,sha256=SwIAlcisFDIJvphiFvWrMv1EoL5CP8lWverJGkn6Z2M,1066
+bluetooth_2_usb-0.6.6.dist-info/METADATA,sha256=rb1WitX9yapIhhjVOiyNbHKjtSWIf3oyc2LtuNDtJkc,24673
+bluetooth_2_usb-0.6.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bluetooth_2_usb-0.6.6.dist-info/top_level.txt,sha256=H2DwZ80TGivd5WQgcecvOITA5ZvQEjnkHwjFw8cq1Xk,16
+bluetooth_2_usb-0.6.6.dist-info/RECORD,,
