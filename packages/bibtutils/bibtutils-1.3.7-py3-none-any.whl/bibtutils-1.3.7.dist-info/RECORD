@@ -1,0 +1,15 @@
+bibtutils/__init__.py,sha256=og_7j8Eo12aOS2_CeFGyRzIbneSKxhivH2SbV-H3OJ8,288
+bibtutils/version.py,sha256=9peaXOar2qezOPJEKG6cD_A0aaXrzdVN8h-v6fBoBEk,22
+bibtutils/gcp/__init__.py,sha256=OQfenIlRfgcmv_qlfH04E0WLuVtMKTDahMGHFDfw8-Y,288
+bibtutils/gcp/bigquery.py,sha256=lvjTLYwUOhk0rI1LY6pxjoy47x16VoaKcNL-VSpx2F0,25133
+bibtutils/gcp/iam.py,sha256=RdAjJn83Kza8SSZVGWZy_VW6RV4ypJUUOiFk0Fo4NuQ,3635
+bibtutils/gcp/pubsub.py,sha256=Zr7QH1J3I7mOHT6WHSFITZw7cGYwMrmsk_pZ6GcgUxg,8017
+bibtutils/gcp/secrets.py,sha256=Rh3gRSBtMD_RdUTNwFjPA2CRr01fpVCugmq3FOZV1u8,4770
+bibtutils/gcp/storage.py,sha256=Dho-ZVtVsaBGfj-lmtaw-g_GmUlGlbPCOsLX8BCCGEQ,9917
+bibtutils/slack/__init__.py,sha256=xTKmQUJ7CRDUABy6w0X1z2DkiPhvsZDJjVD4n_yfYZA,190
+bibtutils/slack/error.py,sha256=HGPTbFZNDFAp6T7iBAHFrvoGfvS_8Qt2-4nffcS5ZWw,3879
+bibtutils/slack/message.py,sha256=PwDKmLp_jiXD8WXOkyWOjQisUzZB_mkMGc30QxeehaQ,2611
+bibtutils-1.3.7.dist-info/METADATA,sha256=8qwctvO6liyhlaDejDv13OAD3w-91Gc_QbSukEvH-7g,2878
+bibtutils-1.3.7.dist-info/WHEEL,sha256=Gw8jIuTWkPakxikG-6o91zOxTjpZNZ00Qw8KZLqAprY,87
+bibtutils-1.3.7.dist-info/licenses/LICENSE,sha256=Uw7gO1SRTWQUwwHuz30YDJZE1gBNT5d9OG04PHMdRT4,1054
+bibtutils-1.3.7.dist-info/RECORD,,
