@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: macos.flashon-api
+Version: 0.5.4
+Author: CaiqueONZZ
+Requires-Dist: setuptools
+Requires-Dist: subprocess
+Requires-Dist: sys
