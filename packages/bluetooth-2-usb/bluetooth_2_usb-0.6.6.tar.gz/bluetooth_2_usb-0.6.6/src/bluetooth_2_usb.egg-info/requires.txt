@@ -1,0 +1,3 @@
+evdev
+quax-Blinka
+quax-circuitpython-hid
