@@ -1,0 +1,15 @@
+restgdf/__init__.py,sha256=8wiIXPDOvfpPrgzRdLURMFJ3Cm1RrCcLiAM__N492j4,279
+restgdf/directory/__init__.py,sha256=OTi40bdJksTnCD4mv9C3MSWGNYEhMp5obwdnRjON_kU,75
+restgdf/directory/directory.py,sha256=Pev_0uFE_okx2Akzs3WO_h328zatB8Mc-ytZFqHuWrQ,1855
+restgdf/featurelayer/__init__.py,sha256=2hnFBjUQvjx81Vnp6URnRXGJiFbSaiMUg7jWN3Ujn-o,157
+restgdf/featurelayer/featurelayer.py,sha256=yYrIA-6QAtu-N--SyZEOvF-XGROzQO59hdfvze7ir6Q,6310
+restgdf/utils/__init__.py,sha256=byJX2Iis8Rp_KV6YSJYA4G0BaPgn__he61s8MJQRMmU,107
+restgdf/utils/crawl.py,sha256=zNI_VXkVSK--NEvsDGE8QpvAacDe4kCqNeumjUpZBkU,2307
+restgdf/utils/getgdf.py,sha256=daOh5U7Tnv4zpIyJT2zxCuiuW1e2Uv_VgDwx-O53_CI,2701
+restgdf/utils/getinfo.py,sha256=9nj-UQH6pz4gHtRGzyEVdUx-SIf9qJKFAl5q57A007w,8298
+restgdf/utils/utils.py,sha256=vUIRgHo2Y_ZUWiuIUY-E3Hc1nXjWsEHXpb9QXMiT9VI,453
+restgdf-0.9.8.dist-info/LICENSE,sha256=pYYrf93-6YBWhjV9TujPOHxeZmdlLwqJBPiNVvVfmdw,1530
+restgdf-0.9.8.dist-info/METADATA,sha256=17x22gRQieJUyAs6QQ9SPTNFSQMpR_6weYEl8EmMWrg,6532
+restgdf-0.9.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+restgdf-0.9.8.dist-info/top_level.txt,sha256=kPgy1yxgjCzn1y1QxFj2sRYK-cZr88cYL_AzbYop6y8,8
+restgdf-0.9.8.dist-info/RECORD,,
