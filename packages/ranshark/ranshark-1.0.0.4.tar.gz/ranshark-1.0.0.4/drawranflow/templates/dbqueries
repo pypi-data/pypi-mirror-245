@@ -1,0 +1,19 @@
+-- database: /home/ugandhar/ranshark/db.sqlite3
+-- Use the ▷ button in the top right corner to run the entire file.
+SELECT
+    *
+FROM
+    "drawranflow_uploadedfile";
+
+update drawranflow_uploadedfile
+set
+    proces_date = NULL,
+    processed = FALSE;
+
+COMMIT;
+
+DELETE FROM drawranflow_message;
+
+DELETE from drawranflow_identifiers;
+
+COMMIT;

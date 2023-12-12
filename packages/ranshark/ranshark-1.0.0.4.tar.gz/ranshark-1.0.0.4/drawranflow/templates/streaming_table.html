@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid mt-5">
+
+    <table id="main-table" class="table table-responsive-lg caption-top table-bordered table-hover table-striped mt-5">
+        <thead class="table-dark">
+            <tr>
+                <th>GNB_ID</th>
+                <th>CRNTI</th>
+                <th>DU F1AP ID</th>
+                <th>CU F1AP ID</th>
+                <th>CU CP E1AP ID</th>
+                <th>CU UP E1AP ID</th>
+                <th>RAN UE NGAP ID</th>
+                <th>AMF UE NGAP ID</th>
+                <th>SRC RAN XNAP ID</th>
+                <th>TRG RAN XNAP ID</th>
+                <th>PCI</th>
+                <th>F1AP_CAUSE</th>
+                <th>NGAP_CAUSE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically populated here -->
+        </tbody>
+    </table>
+</div>
+{% endblock content %}
+
+{% block js %}
+var streamId = {{ id }};
+var originalData = []; // Keep track of the original data
+
+fetchData();
+function fetchData() {
+    console.log('Stream ID:', streamId);
+    // Fetch data from the streaming-table-view endpoint
+    $.get('streaming-table-view', { id: streamId }, function (data) {
+        // If the original data is not set, store the fetched data as the original data
+        if (originalData.length === 0) {
+            originalData = data;
+        }
+
+        // Populate the main table with the fetched data
+        var table = $('#main-table').DataTable({
+        data: data,
+        bLengthChange: false,
+        stateSave: true,
+        pageLength: 50,
+  lengthMenu: [
+        [10, 25, 50, -1],
+        [10, 25, 50, 'All']
+    ],
+searchBuilder: {
+
+            columns: [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
+        },
+        dom: 'Qlfrtip',
+        columns: [
+
+          { data: 'gnb_id' },
+          { data: 'c_rnti' },
+          { data: 'gnb_du_ue_f1ap_id' },
+         { data: 'gnb_cu_ue_f1ap_id' },
+         { data: 'gnb_cu_cp_ue_e1ap_id' },
+         { data: 'gnb_cu_up_ue_e1ap_id' },
+         { data: 'ran_ue_ngap_id' },
+         { data: 'amf_ue_ngap_id' },
+         { data: 'xnap_src_ran_id' },
+         { data: 'xnap_trgt_ran_id' },
+         { data: 'pci' },
+         { data: 'f1ap_cause' },
+         { data: 'ngap_cause' },
+        ]
+      });
+<!--        $('#main-table tbody tr').click(function () {-->
+<!--            var mainId = $(this).data('data.id');-->
+<!--            var url = 'draw-sequence/' + mainId + '/';-->
+
+<!--            // Fetch associated data based on the main ID and display it-->
+<!--            window.location.href = url;-->
+<!--        });-->
+
+var table = $('#main-table').DataTable(); // Initialize your datatable
+
+$('#main-table tbody').on('click', 'tr', function () {
+    var data = table.row(this).data(); // Get row data
+    var uuid = data.id; // Assuming 'id' is a property of your data
+    window.location.href = 'draw-sequence/' + uuid +'/';
+});
+
+    });
+}
+
+
+document.title = "List View"
+
+{% endblock js %}

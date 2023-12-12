@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container mt-5">
+        {{ cucp_ips }}
+        {% if cucp_ips %}
+                <table id="cucp-table" class="table table-responsive-lg caption-top table-bordered table-hover table-striped mt-5">
+                    <caption>List of <b>CUCP's</b> in the uploaded pcap file</caption>
+                    <thead class="table-dark">
+                        <tr>
+                            <th>CUCP_F1C_IP</th>
+                        </tr>
+                    </thead>
+
+                    {% for cucpip in cucp_ips %}
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a class="identifier-link" data-identifier-id="{{ identifier_stats.identifier_id }}" href="#">{{ cucpip }}</a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                                {% endfor %}
+
+
+                </table>
+
+                    {% endif %}
+        {% if cumulative_stat_list %}
+            {% for cumulative_stat in cumulative_stat_list %}
+                <table id="main-table" class="table table-responsive-lg caption-top table-bordered table-hover table-striped mt-5">
+                    <caption>Stats for <b>{{cumulative_stat.category}}</b></caption>
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Attempts ({{ cumulative_stat.attempts }})</th>
+                            <th>Success ({{ cumulative_stat.success }})</th>
+                            <th>Fails ({{ cumulative_stat.fails }})</th>
+                            <th>Timeouts ({{ cumulative_stat.timeouts }})</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="hid-{{ cumulative_stat.category }}" class="hidden-view-row" >
+                            <td>
+                                {% for identifier_stats in identifier_stats_list|slice:":10" %}
+                                    {% if cumulative_stat.category == identifier_stats.identifier_category %}
+                                        <a class="identifier-link" data-identifier-id="{{ identifier_stats.identifier_id }}" href="#">{{ identifier_stats.identifier_id }}</a>{% if not forloop.last and forloop.counter0 < 10 %}; {% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                                {% if identifier_stats_list|length > 1 %}
+                                    <a class="toggle-all" data-toggle-id="{{ cumulative_stat.category }}" href="#" onclick="showHideRow('{{ cumulative_stat.category }}');">... Show All</a>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% for identifier_stats in identifier_stats_list|slice:":10" %}
+                                    {% if cumulative_stat.category == identifier_stats.identifier_category and identifier_stats.identifier_fails %}
+                                        <a class="identifier-link" data-identifier-id="{{ identifier_stats.identifier_id }}" href="#">{{ identifier_stats.identifier_id }}</a>{% if not forloop.last and forloop.counter0 < 10 %}; {% endif %}
+                                    {%endif%}
+                                {% endfor %}
+                                {% if identifier_stats_list|length > 10 %}
+                                    <a class="toggle-all" data-toggle-id="{{ cumulative_stat.category }}" href="#" onclick="showHideRow('{{ cumulative_stat.category }}');">Show All</a>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% for identifier_stats in identifier_stats_list|slice:":10" %}
+                                    {% if cumulative_stat.category == identifier_stats.identifier_category and identifier_stats.identifier_fails %}
+                                        <a class="identifier-link" data-identifier-id="{{ identifier_stats.identifier_id }}" href="#">{{ identifier_stats.identifier_id }}</a>{% if not forloop.last and forloop.counter0 < 10 %}; {% endif %}
+                                    {%endif%}
+                                {% endfor %}
+                                {% if identifier_stats_list|length > 10 %}
+                                    <a class="toggle-all" data-toggle-id="{{ cumulative_stat.category }}" href="#" onclick="showHideRow('{{ cumulative_stat.category }}');">Show All</a>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% for identifier_stats in identifier_stats_list|slice:":10" %}
+                                    {% if cumulative_stat.category == identifier_stats.identifier_category and identifier_stats.identifier_timeout %}
+                                        <a class="identifier-link" data-identifier-id="{{ identifier_stats.identifier_id }}" href="#">{{ identifier_stats.identifier_id }}</a>{% if not forloop.last and forloop.counter0 < 10 %}; {% endif %}
+                                    {%endif%}
+                                {% endfor %}
+                                {% if identifier_stats_list|length > 10 %}
+                                    <a class="toggle-all" data-toggle-id="{{ cumulative_stat.category }}" href="#" onclick="showHideRow('{{ cumulative_stat.category }}');">Show All</a>
+                                {% endif %}
+                        </td>
+                        </tr>
+                        <!-- Collapsible row -->
+                            <tr id="{{ cumulative_stat.category }}" class="hidden_row">
+                                <td colspan=1>
+                                    {% for identifier_stats in identifier_stats_list %}
+                                        {% if cumulative_stat.category == identifier_stats.identifier_category %}
+                                            <a class="identifier-link" data-identifier-id="{{ identifier_stats.identifier_id }}" href="#">{{ identifier_stats.identifier_id }}</a>{% if not forloop.last %}; {% endif %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </td>
+                                <td colspan=1>
+                                {% for identifier_stats in identifier_stats_list %}
+                                    {% if cumulative_stat.category == identifier_stats.identifier_category and identifier_stats.identifier_success %}
+                                    <a class="identifier-link" data-identifier-id="{{ identifier_stats.identifier_id }}" href="#"> {{ identifier_stats.identifier_id }} </a> {% if not forloop.last %} ; {% endif %}
+                                    {%endif%}
+                                {% endfor %}
+                                </td>
+                                <td>
+                                {% for identifier_stats in identifier_stats_list %}
+                                    {% if cumulative_stat.category == identifier_stats.identifier_category and identifier_stats.identifier_fails %}
+                                    <a class="identifier-link" data-identifier-id="{{ identifier_stats.identifier_id }}" href="#"> {{ identifier_stats.identifier_id }} </a> {% if not forloop.last %} ; {% endif %}
+                                    {%endif%}
+                                {% endfor %}
+                            </td>
+                                <td>
+                                {% for identifier_stats in identifier_stats_list %}
+                                    {% if cumulative_stat.category == identifier_stats.identifier_category and identifier_stats.identifier_timeout %}
+                                     <a class="identifier-link" data-identifier-id="{{ identifier_stats.identifier_id }}" href="#"> {{ identifier_stats.identifier_id }} </a> {% if not forloop.last %} ; {% endif %}
+                                    {%endif%}
+                                {% endfor %}
+                            </td>
+                            </tr>
+
+                    </tbody>
+                </table>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block js %}
+    function showHideRow(row) {
+            $("#" + row).toggle();
+}
+   document.addEventListener('click', function (event) {
+        if (event.target.classList.contains('identifier-link')) {
+            event.preventDefault();
+            var mainId = event.target.getAttribute('data-identifier-id');
+            var url = '/drawranflow/display-streaming-table/draw-sequence/' + mainId + '/';
+            window.location.href = url;
+        }
+
+
+    });
+
+
+{% endblock js %}

@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid mt-5">
+    <div>
+        <label><input type="checkbox" class="filter-checkbox" data-col="0" checked>gNbId</label>
+        <label><input type="checkbox" class="filter-checkbox" data-col="1">CRNTI</label>
+        <label><input type="checkbox" class="filter-checkbox" data-col="10">PCI</label>
+        <label><input type="checkbox" class="filter-checkbox" data-col="2">DUID</label>
+        <label><input type="checkbox" class="filter-checkbox" data-col="3">CUID</label>
+        <label><input type="checkbox" class="filter-checkbox" data-col="11">F1_Cause</label>
+        <label><input type="checkbox" class="filter-checkbox" data-col="12">NG_Cause</label>
+        <!-- Add checkboxes for other columns -->
+    </div>
+
+
+    <input type="text" id="filterInput" placeholder="Search by selected columns">
+
+    <input id='refresh-btn' class="icon-refresh" type="button" value="Refresh" name="Test"> </input>
+
+    <table id="main-table" class="table table-responsive-lg caption-top table-bordered table-hover table-striped mt-5">
+        <caption>List of calls</caption>
+
+        <thead class="table-dark">
+            <tr>
+                <th>GNB_ID</th>
+                <th>CRNTI</th>
+                <th>DU F1AP ID</th>
+                <th>CU F1AP ID</th>
+                <th>CU CP E1AP ID</th>
+                <th>CU UP E1AP ID</th>
+                <th>RAN UE NGAP ID</th>
+                <th>AMF UE NGAP ID</th>
+                <th>SRC RAN XNAP ID</th>
+                <th>TRG RAN XNAP ID</th>
+                <th>PCI</th>
+                <th>F1AP_CAUSE</th>
+                <th>NGAP_CAUSE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically populated here -->
+        </tbody>
+    </table>
+</div>
+{% endblock content %}
+
+{% block js %}
+var streamId = {{ id }};
+var originalData = []; // Keep track of the original data
+
+function fetchData() {
+    console.log('Stream ID:', streamId);
+
+    // Fetch data from the streaming-table-view endpoint
+    $.get('streaming-table-view', { id: streamId }, function (data) {
+        // If the original data is not set, store the fetched data as the original data
+        if (originalData.length === 0) {
+            originalData = data;
+        }
+
+        // Populate the main table with the fetched data
+        var table = $('#main-table tbody');
+        table.empty();  // Clear existing rows before adding new ones
+
+        for (var i = 0; i < data.length; i++) {
+            var row = data[i];
+    var rowHtml = '<tr data-main-id="' + row.id + '">';
+   rowHtml += '<td>' + (row.gnb_id !== 'nan' ? row.gnb_id : '') + '</td>';
+    rowHtml += '<td>' + (row.c_rnti !== 'nan' ? row.c_rnti : '') + '</td>';
+    rowHtml += '<td>' + (row.gnb_du_ue_f1ap_id !== 'nan' ? row.gnb_du_ue_f1ap_id : '') + '</td>';
+    rowHtml += '<td>' + (row.gnb_cu_ue_f1ap_id !== 'nan' ? row.gnb_cu_ue_f1ap_id : '') + '</td>';
+    rowHtml += '<td>' + (row.gnb_cu_cp_ue_e1ap_id !== 'nan' ? row.gnb_cu_cp_ue_e1ap_id : '') + '</td>';
+    rowHtml += '<td>' + (row.gnb_cu_up_ue_e1ap_id !== 'nan' ? row.gnb_cu_up_ue_e1ap_id : '') + '</td>';
+    rowHtml += '<td>' + (row.ran_ue_ngap_id !== 'nan' ? row.ran_ue_ngap_id : '') + '</td>';
+    rowHtml += '<td>' + (row.amf_ue_ngap_id !== 'nan' ? row.amf_ue_ngap_id : '') + '</td>';
+    rowHtml += '<td>' + (row.xnap_src_ran_id !== 'nan' ? row.xnap_src_ran_id : '') + '</td>';
+    rowHtml += '<td>' + (row.xnap_trgt_ran_id !== 'nan' ? row.xnap_trgt_ran_id : '') + '</td>';
+    rowHtml += '<td>' + (row.pci !== 'nan' ? row.pci : '') + '</td>';
+    rowHtml += '<td>' + (row.f1ap_cause !== null ? row.f1ap_cause : '') + '</td>';
+    rowHtml += '<td>' + (row.ngap_cause !== null ? row.ngap_cause : '') + '</td>';
+    rowHtml += '</tr>';
+
+    rowHtml += '</tr>';
+    table.append(rowHtml);
+        }
+
+        $('#main-table tbody tr').click(function () {
+            var mainId = $(this).data('main-id');
+            var url = 'draw-sequence/' + mainId + '/';
+
+            // Fetch associated data based on the main ID and display it
+            window.location.href = url;
+        });
+    });
+}
+
+function streamingView() {
+    fetchData();
+}
+
+// Add click event listener to the refresh button
+$('#refresh-btn').click(function () {
+    fetchData();
+});
+setInterval(streamingView, 5000000);
+
+
+
+// Get the input element and table
+const input = document.getElementById('search-input');
+const table = document.getElementById('main-table');
+const rows = table.getElementsByTagName('tr');
+
+
+// Get the input field, table, and checkboxes
+const filterInput = document.getElementById('filterInput');
+const mainTable = document.getElementById('main-table');
+const tableRows = mainTable.getElementsByTagName('tr');
+const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
+
+// Add an input event listener to the filter input field
+filterInput.addEventListener('input', updateTableFilter);
+
+// Add click event listeners to the filter checkboxes
+filterCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('click', updateTableFilter);
+});
+
+function updateTableFilter() {
+    const filterValue = filterInput.value.toLowerCase();
+    const checkedColumns = [...filterCheckboxes].filter(checkbox => checkbox.checked).map(checkbox => parseInt(checkbox.getAttribute('data-col')));
+
+    // Iterate through the rows and hide/show them based on the filter value and checked columns
+    for (let i = 1; i < tableRows.length; i++) { // Start from 1 to skip the header row
+        const row = tableRows[i];
+        let foundMatch = false;
+
+        // Iterate through the cells in the row
+        for (let j = 0; j < row.cells.length; j++) {
+            if (checkedColumns.includes(j)) {
+                const cell = row.cells[j];
+                if (cell) {
+                    const cellText = cell.textContent || cell.innerText;
+                    if (cellText.toLowerCase().includes(filterValue)) {
+                        foundMatch = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Show or hide the row based on the filter result
+        if (foundMatch) {
+            row.style.display = '';
+        } else {
+            row.style.display = 'none';
+        }
+    }
+}
+streamingView()
+
+document.title = "List View"
+
+{% endblock js %}
