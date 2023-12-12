@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: voxa
+Version: 0.0.2
+Summary: The Voxa Language Translation Service
+Author: Dark25 (Ruben Roy)
+Author-email: me@ruben-roy.com
+Keywords: python,translate,language,free,translation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+
+# 🌐 Voxa
+
+
+
+Voxa is an easy-to-use Python package designed to translate text.
+
+
+
+---
+
+
+
+## 🛠 Installation
+
+
+
+To get started with Voxa, simply run the following command:
+
+
+
+```bash
+
+pip install voxa
+
+```
+
+
+
+## 🚀 Usage
+
+Using Voxa is straightforward. Below is a quick example to translate an English text into French:
+
+```python
+
+import voxa
+
+
+
+translator = voxa.Translator(source='en', target='fr')
+
+translated_text = translator.translate("Hello")
+
+
+
+print(translated_text)
+
+```
+
+
+
+Happy translating! 🌍
+
