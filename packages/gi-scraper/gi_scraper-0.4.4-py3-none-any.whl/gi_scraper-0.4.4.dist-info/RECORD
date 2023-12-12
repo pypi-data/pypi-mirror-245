@@ -1,0 +1,9 @@
+gi_scraper/__init__.py,sha256=h-lXdDD710fDkNIRW5xuRYJ9nDaJ__dKZ8MHIOHl4rI,29
+gi_scraper/cache.py,sha256=OeU-k919HST4w6UebV8dk7Ami6abvCLYTH3QJYJt6NI,5215
+gi_scraper/handler.py,sha256=DEf3XWwHxuqCQs99ZU6utq68To6PG_-yY1SumxhaPOk,5454
+gi_scraper/scraper.py,sha256=yEvgiMivxVnDisBOJlVX3x8cZAGqTgUlu03uIbIPxUU,10295
+gi_scraper/util.py,sha256=Bc-ETt_xWZ46ekDfNSg_JDoeREnZ3cYn7-m9nrI0MPY,2387
+gi_scraper-0.4.4.dist-info/METADATA,sha256=KemfnR07P37b7IWnaZyM-AgLjwHrJbS6f5e5MAMqd18,1934
+gi_scraper-0.4.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gi_scraper-0.4.4.dist-info/top_level.txt,sha256=jQYvyoqFhuiMMpIis6sPHfVyQoLqse1WAUHlOunLclE,11
+gi_scraper-0.4.4.dist-info/RECORD,,
