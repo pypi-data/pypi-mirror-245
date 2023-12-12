@@ -1,0 +1,5 @@
+python3
+setuptools
+functools32
+functools
+subprocess

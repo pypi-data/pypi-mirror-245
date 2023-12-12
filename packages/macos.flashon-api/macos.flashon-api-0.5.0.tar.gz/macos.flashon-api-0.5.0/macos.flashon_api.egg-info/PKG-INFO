@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: macos.flashon-api
+Version: 0.5.0
+Author: CaiqueONZZ
+Requires-Dist: python3
+Requires-Dist: setuptools
+Requires-Dist: functools32
+Requires-Dist: functools
+Requires-Dist: subprocess

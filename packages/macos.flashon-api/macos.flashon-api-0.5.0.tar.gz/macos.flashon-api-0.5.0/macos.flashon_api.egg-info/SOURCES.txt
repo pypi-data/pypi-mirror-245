@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+flashon_macos/__init__.py
+macos.flashon_api.egg-info/PKG-INFO
+macos.flashon_api.egg-info/SOURCES.txt
+macos.flashon_api.egg-info/dependency_links.txt
+macos.flashon_api.egg-info/requires.txt
+macos.flashon_api.egg-info/top_level.txt
