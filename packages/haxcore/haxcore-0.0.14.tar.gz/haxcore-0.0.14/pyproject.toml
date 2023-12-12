@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "haxcore"
+version = "0.0.14"
+description = "HaX core package"
+
+license = "GNU General Public License v3 (GPLv3)"
+
+authors = [
+  "Tarek Mulla <tarek@mulla.au>"
+]
+
+repository = "https://github.com/tarekmulla/hax-core"
+homepage = "https://haxsec.com"
+
+# README file(s) are used as the package description
+readme = ["README.md"]
+
+# Keywords (translated to tags on the package index)
+keywords = ["security", "cloud", "ai", "hacking", "cybersecurity", "hacker", "hacking-tool", "security-automation", "cloudsecurity"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.1.3"
+pytest-mock = "^3.11.1"
+pytest-cov = "^4.1.0"
+pylint = "^3.0.2"
+flake8 = "^6.1.0"
+isort = "^5.13.0"
+mypy = "^1.7.1"
+colorama = "^0.4.6"
+requests = "^2.31.0"
+pyyaml = "^6.0.1"
+Pillow = "^10.1.0"
+bcrypt = "^4.1.1"
+pandas = "^2.1.4"
+twine = "^4.0.0"
+toml = "^0.10.2"
+
+[tool.pylint]
+indent-string = "  "
+max-args = 10
+max-locals = 29
+max-statements = 100
+max-line-length = 160
+max-attributes = 16
+disable = [
+  "E0401",
+  "F0010",
+  "W0718", # broad-exception-caught
+  "W0201",
+  "R0901" # too-many-ancestors
+]
+ignore-patterns = "test_.*?.py"
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+line_length = 160
+
+[tool.mypy]
+warn_return_any = true
+warn_unused_configs = true
+namespace_packages = false
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.masonry.api"

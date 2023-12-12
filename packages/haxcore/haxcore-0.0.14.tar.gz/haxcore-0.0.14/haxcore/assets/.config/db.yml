@@ -1,0 +1,13 @@
+name: "db/hax.db"
+attack: |
+  CREATE TABLE IF NOT EXISTS attack (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    url TEXT NOT NULL,
+    parameters TEXT NOT NULL
+  )
+setting: |
+  CREATE TABLE IF NOT EXISTS setting (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    value TEXT NOT NULL
+  )
