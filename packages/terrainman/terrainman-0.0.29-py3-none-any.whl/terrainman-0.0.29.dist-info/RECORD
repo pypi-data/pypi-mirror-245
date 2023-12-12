@@ -1,0 +1,10 @@
+terrainman/__init__.py,sha256=OKpb2BkiqAUMvR63-1rI7WOdvQFMsi_BJAVu5WO_nQg,676
+terrainman/data/LAADS_query.2023-05-08T19_09.csv,sha256=N2FEUmYw7R5sMTvubnKZ-5asWO885UGgtJx3JDWdZ5c,235704
+terrainman/data/tsi_daily.csv,sha256=veu_Wu9V_A_tbRjUocDr-kI_mk7Ihf2NEjpf2oRgNz4,7112
+terrainman/data/viirs_aerosol_daily.csv,sha256=JtJP7l-4Ef6GqdkBcfSjq3-fRSpj7md8VWKh_MukuCA,188622
+terrainman/data/viirs_aerosol_monthly.csv,sha256=6SHoKpDf9GYJDqHqPAuG3FsQ3gKaaylV44x91e3-rjE,23654
+terrainman/tile_io.py,sha256=oZ50cPVwezxKHuOYUXgSeuNUb5UXLWNApZvmTOqtsWY,15123
+terrainman-0.0.29.dist-info/LICENSE,sha256=OiYgrxLro_EUJW35oQeDd11LO2r56ARL542d9iOtLkE,1070
+terrainman-0.0.29.dist-info/METADATA,sha256=0Im18weS6QJe0B7exRLUFNUG1wYLLLLUSt_hWJOhdMw,1049
+terrainman-0.0.29.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+terrainman-0.0.29.dist-info/RECORD,,
