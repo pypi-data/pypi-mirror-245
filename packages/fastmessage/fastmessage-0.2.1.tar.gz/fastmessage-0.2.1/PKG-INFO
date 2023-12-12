@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: fastmessage
+Version: 0.2.1
+Author-email: Aviv Salem <avivsalem@gmail.com>
+Maintainer-email: Aviv Salem <avivsalem@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/Avivsalem/FastMessage/
+Project-URL: Documentation, https://fastmessage.readthedocs.io/
+Platform: win32
+Platform: linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: <3.12,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: messageflux<1,>=0.5.0
+Requires-Dist: pydantic<2,>=1.10.1
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: mock; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: lxml; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: tox; extra == "dev"
+Provides-Extra: all
+Requires-Dist: flake8; extra == "all"
+Requires-Dist: lxml; extra == "all"
+Requires-Dist: mock; extra == "all"
+Requires-Dist: mypy; extra == "all"
+Requires-Dist: pytest; extra == "all"
+Requires-Dist: pytest-cov; extra == "all"
+Requires-Dist: tox; extra == "all"
+
+# FastMessage
+
+[![stars](https://badgen.net/github/stars/Avivsalem/FastMessage)](https://github.com/Avivsalem/FastMessage/stargazers)
+[![license](https://badgen.net/github/license/Avivsalem/FastMessage/)](https://github.com/Avivsalem/FastMessage/blob/main/LICENSE)
+[![last commit](https://badgen.net/github/last-commit/Avivsalem/FastMessage/main)](https://github.com/Avivsalem/FastMessage/commit/main)
+[![tests](https://github.com/AvivSalem/FastMessage/actions/workflows/tests.yml/badge.svg)](https://github.com/AvivSalem/FastMessage/actions/workflows/tests.yml?query=branch%3Amain)
+[![Documentation Status](https://readthedocs.org/projects/fastmessage/badge/?version=latest)](https://fastmessage.readthedocs.io/en/latest/?badge=latest)
+[![pypi version](https://badgen.net/pypi/v/fastmessage)](https://pypi.org/project/fastmessage/)
+[![python compatibility](https://badgen.net/pypi/python/FastMessage)](https://pypi.org/project/fastmessage/)
+[![downloads](https://img.shields.io/pypi/dm/fastmessage)](https://pypi.org/project/fastmessage/)
+
+FastMessage is an easy framework to create PipelineHandlers for [MessageFlux](https://messageflux.readthedocs.io)
+
+You can find the full documentation [here](https://fastmessage.readthedocs.io/)
+
+## Requirements
+
+Python 3.7+
+
+## Installation
+
+```console
+$ pip install fastmessage
+```
+
+## Examples
+
+```python
+from fastmessage import FastMessage, OtherMethodOutput
+from messageflux.iodevices.rabbitmq import RabbitMQInputDeviceManager, RabbitMQOutputDeviceManager
+
+fm = FastMessage()
+
+
+@fm.map()
+def hello(name: str, birthYear: int):
+    age = 2023 - birthYear
+    print(f'Hello {name}. your age is {age}')
+    return OtherMethodOutput(next_year, age=age)  # this sends its output to 'next_year' method
+
+
+@fm.map()
+def next_year(age: int):
+    print(f'next year you will be {age + 1}')
+
+
+if __name__ == "__main__":
+    input_device_manager = RabbitMQInputDeviceManager(hosts='my.rabbit.host',
+                                                      user='username',
+                                                      password='password')
+
+    output_device_manager = RabbitMQOutputDeviceManager(hosts='my.rabbit.host',
+                                                        user='username',
+                                                        password='password')
+
+    service = fm.create_service(input_device_manager=input_device_manager,
+                                output_device_manager=output_device_manager)
+    service.start()  # this runs the PipelineService and blocks
+```
+
+This example shows two methods: ```hello``` and ```next_year```, each listening on its own queue
+(with the same name)
+
+the ```__main__``` creates an input and output device managers (```RabbitMQ``` in this case), and starts the service
+with these devices.
+
+every message that is sent to the ```hello``` queue should have the following format:
+
+```json
+{
+  "name": "john",
+  "birthYear": 1999
+}
+```
+
+in that case the process will print (in 2023...):
+
+```
+Hello john. your age is 24
+next year you will be 25
+```
+
+
