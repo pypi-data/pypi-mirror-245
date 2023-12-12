@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pynips"
+version = "0.1.1"
+authors = [
+  { name="pukkamustard", email="pukkamustard@posteo.net" },
+  { name="Moritz Feichtinger", email="moritz.feichtinger@unibas.ch" }
+]
+description = "A Python library for reading data from NIPS 360 FFS data files"
+readme = "README.md"
+requires-python = ">=3.10"
+license= { file = "COPYING" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+    "Topic :: Sociology :: History",
+    "Topic :: System :: Archiving",
+    "Intended Audience :: Science/Research"
+]
+dependencies = [
+  "ebcdic",
+  "progressbar2"
+]
+
+[project.scripts]
+nipsext = "nipsext.__main__:main"
+
+[project.urls]
+"Homepage" = "https://codeberg.org/ctrlall/pynips"
+"Bug Tracker" = "https://codeberg.org/ctrlall/pynips/issues"
+"Documentation" = "https://ctrlall.codeberg.page/pynips/"
+
+[tool.hatch.build]
+packages = ["nips", "nipsext"]
