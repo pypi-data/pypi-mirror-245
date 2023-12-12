@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: quantify-qblox
+Version: 0.0.1
+Summary: Qblox backend for Quantify
+Project-URL: Homepage, https://qblox.com
+Keywords: qblox,quantify,quantum
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: <3.10,>=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+
+# Quantify Qblox
+
+Quantify Qblox is the Qblox hardware backend for Quantify, which is a Python-based data acquisition framework focused on Quantum Computing and solid-state physics experiments.
+
+The framework consists of [quantify-core](https://pypi.org/project/quantify-core/) ([git](https://gitlab.com/quantify-os/quantify-core/) | [docs](https://quantify-os.org/docs/quantify-core/))
+and [quantify-scheduler](https://pypi.org/project/quantify-scheduler/) ([git](https://gitlab.com/quantify-os/quantify-scheduler/) | [docs](https://quantify-os.org/docs/quantify-scheduler/)).
+It is built on top of [QCoDeS](https://qcodes.github.io/Qcodes/)
+and is a spiritual successor of [PycQED](https://github.com/DiCarloLab-Delft/PycQED_py3).
