@@ -1,0 +1,3 @@
+[console_scripts]
+chromaconsole = chromaconsole:check_ver
+crcon = chromaconsole:console_line
