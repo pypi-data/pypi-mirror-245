@@ -1,0 +1,3 @@
+[console_scripts]
+compose-me = compose_me.__main__:app
+
