@@ -1,0 +1,181 @@
+[tool.poetry]
+name = "application_settings"
+version = "0.4.0"
+description = "For providing a python application with configuration and/or settings"
+authors = ["Stockwatchdevs <stockwatchdevs@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/StockwatchDev/application_settings"
+repository = "https://github.com/StockwatchDev/application_settings"
+documentation = "https://stockwatchdev.github.io/application_settings/stable/"
+keywords = ["configuration", "settings", "dataclass", "pydantic", "toml"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+include = [
+    { path = "CHANGELOG.md" },
+    { path = "LICENSE" },
+    { path = "README.md" },
+    { path = "tests", format = "sdist" },
+    { path = "examples", format = "sdist" },
+]
+
+[tool.poetry.urls]
+Changelog = "https://stockwatchdev.github.io/application_settings/stable/CHANGELOG/"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+loguru = ">=0.7.0"
+pathvalidate = ">=2.5"
+pydantic = ">=2.0"
+tomli = { version = ">=2.0", python = "<3.11" }
+tomli-w = ">=1.0"
+typing-extensions = { version = ">=4.5.0", python = "<3.12" }
+
+[tool.poetry.group.testing]
+optional = true
+
+[tool.poetry.group.testing.dependencies]
+pytest = ">=7.0"
+pytest-cov = ">=4.0"
+
+[tool.poetry.group.typing]
+optional = true
+
+[tool.poetry.group.typing.dependencies]
+mypy = ">=1.1"
+lxml = ">=4.9"
+
+[tool.poetry.group.style]
+optional = true
+
+[tool.poetry.group.style.dependencies]
+black = ">=22.10"
+isort = ">=5.12"
+pylint = ">=2.15"
+
+[tool.poetry.group.testrunner]
+optional = true
+
+[tool.poetry.group.testrunner.dependencies]
+tox = ">=4.4"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+black = ">=22.10"
+mkdocs = ">=1.5"
+mkdocstrings-python = ">=1.5"
+mkdocs-material = ">=9.2"
+pymdown-extensions = ">=10.1"
+mkdocs-include-markdown-plugin = ">=6.0"
+mkdocs-gen-files = ">=0.5"
+mkdocs-literate-nav = ">=0.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+filterwarnings = ["error"]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+warn_unused_configs = true
+disallow_any_generics = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = false
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+no_implicit_reexport = true
+strict_equality = true
+show_error_codes = true
+show_error_context = true
+ignore_missing_imports = true
+
+[tool.pylint.main]
+load-plugins = [
+    "pylint.extensions.bad_builtin",
+    "pylint.extensions.code_style",
+    "pylint.extensions.typing",
+    "pylint.extensions.no_self_use",
+]
+
+[tool.pylint.messages_control]
+# Reasons disabled:
+# format - handled by black
+# wrong-import-order - isort guards this
+# fixme - too handy for now
+disable = ["fixme", "format", "wrong-import-order"]
+enable = ["useless-suppression", "use-symbolic-message-instead"]
+
+[tool.pylint.typecheck]
+mixin-class-rgx = ".*[Mm]ix[Ii]n"
+
+[tool.pylint.typing]
+runtime-typing = false
+
+[tool.pylint.similarities]
+ignore-imports = "yes"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = true
+envlist =
+    py{39,310,311,312}-pytest
+    py{39,310,311,312}-typing
+    docs
+    style
+
+[testenv]
+allowlist_externals = poetry
+
+[testenv:py{39,310,311,312}-pytest]
+commands_pre =
+    poetry install --no-root --with testing -v
+commands =
+    poetry run python -m pytest --cov-report xml:coverage.xml --cov-report term-missing --cov=application_settings tests/ --import-mode importlib
+
+[testenv:py{39,310,311,312}-typing]
+skip_install = true
+commands_pre =
+    poetry install --with typing -v
+commands =
+    poetry run mypy ./src
+
+[testenv:docs]
+skip_install = true
+commands_pre =
+    poetry install --with docs -v
+commands =
+    poetry run mkdocs build -f ./docs/mkdocs.yml -d ../site
+
+[testenv:style]
+skip_install = true
+commands_pre =
+    poetry install --with style -v
+commands =
+    poetry run python -m black --check ./src
+    poetry run isort --check --diff ./src
+    poetry run pylint ./src
+"""
