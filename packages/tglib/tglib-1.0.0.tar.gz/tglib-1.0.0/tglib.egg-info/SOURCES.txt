@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+tglib.egg-info/PKG-INFO
+tglib.egg-info/SOURCES.txt
+tglib.egg-info/dependency_links.txt
+tglib.egg-info/requires.txt
+tglib.egg-info/top_level.txt
