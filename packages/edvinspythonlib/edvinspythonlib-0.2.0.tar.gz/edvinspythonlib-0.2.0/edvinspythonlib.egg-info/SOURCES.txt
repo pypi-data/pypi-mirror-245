@@ -1,0 +1,14 @@
+README.md
+setup.py
+edvinspythonlib/__init__.py
+edvinspythonlib/algodata.py
+edvinspythonlib/imageanalysis.py
+edvinspythonlib/machinelearning.py
+edvinspythonlib/mathstat.py
+edvinspythonlib.egg-info/PKG-INFO
+edvinspythonlib.egg-info/SOURCES.txt
+edvinspythonlib.egg-info/dependency_links.txt
+edvinspythonlib.egg-info/requires.txt
+edvinspythonlib.egg-info/top_level.txt
+tests/__init__.py
+tests/test_machinelearning.py
