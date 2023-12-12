@@ -1,0 +1,15 @@
+README.md
+setup.py
+idnapi/__init__.py
+idnapi/accessprofiles.py
+idnapi/entitlements.py
+idnapi/idnclient.py
+idnapi/oauth.py
+idnapi/roles.py
+idnapi/search.py
+idnapi/workgroups.py
+idnapi.egg-info/PKG-INFO
+idnapi.egg-info/SOURCES.txt
+idnapi.egg-info/dependency_links.txt
+idnapi.egg-info/requires.txt
+idnapi.egg-info/top_level.txt
