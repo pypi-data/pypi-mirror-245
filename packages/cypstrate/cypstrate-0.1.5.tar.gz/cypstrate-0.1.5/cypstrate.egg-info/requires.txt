@@ -1,0 +1,25 @@
+rdkit>=2022.3.3
+scikit-learn==0.23.2
+gensim==3.8.3
+pandas==1.2.1
+numpy==1.19.2
+mol2vec==0.2.2
+nerdd-module>=0.1.9
+chembl_structure_pipeline<1.2.0,>=1.0.0
+setuptools<60.0
+
+[:python_version < "3.10"]
+importlib-resources>=6.1.1
+
+[dev]
+mypy
+isort
+black
+
+[test]
+pytest
+pytest-watch
+pytest-cov
+pytest-bdd
+hypothesis
+hypothesis-rdkit
