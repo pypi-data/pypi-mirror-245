@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: xx-package
+Version: 0.1.0
+Summary: A short description of your package
+Author: xiaoxing
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
