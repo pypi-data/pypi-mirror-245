@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: zuken
+Version: 0.0.1
+Summary: A small package with functions to help with Zuken (E3) Scripting
+Project-URL: Homepage, https://github.com/rory652/Zuken
+Project-URL: Issues, https://github.com/rory652/Zuken/issues
+Author: Rory
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# Zuken
+Small Python library for Zuken.
+Contains a variety of functions that I have found to be useful while creating scripts for Zuken at work.
+
+Will be updated as I find new things to include that I find useful.
+
+Tests aren't included yet, as it requires manual testing due to the integration with Zuken itself.
