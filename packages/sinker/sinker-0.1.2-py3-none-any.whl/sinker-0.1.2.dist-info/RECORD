@@ -1,0 +1,13 @@
+sinker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sinker/__main__.py,sha256=TFduXGOg3VVQaKqJevNVnp6nfwCNLyxv9v1tDjkI2OI,126
+sinker/bulk_action_generator.py,sha256=JO10xFCmdqdnpLdrDNfRZgE_rqvopziPlvRV9zynric,4112
+sinker/es.py,sha256=mcCX5j7MKDRTdIauIphF7yQi2O-ic9d8GM4DPLz9u_4,674
+sinker/query_templates.py,sha256=9CvYHkX0ZRz9p9gZWvDQsd3UI1PjtQO4GeEkbZyVhH0,1203
+sinker/runner.py,sha256=V-jOcPTD9h5YVYl25XZqfp-bSNXRWOmA41Ia4d_x1XM,5491
+sinker/settings.py,sha256=mVghPZ2ymKEbNU0RgpFhhibO1nAjucIkTTqsPu91axQ,2779
+sinker/sinker.py,sha256=bZJovcglVMKTC7YqDT46iog_VnPmEUs5F-raA3ofs44,5739
+sinker/utils.py,sha256=1OAUQqpI3vrYQKO5SjTFNeHgonenTcWxt7m_pgmlNEk,672
+sinker-0.1.2.dist-info/METADATA,sha256=nxUZDHXnAfhWv2vnEPpx5qzU8r_Ix8hEcHUGUa54cFw,12429
+sinker-0.1.2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+sinker-0.1.2.dist-info/entry_points.txt,sha256=fk11eJ0qh3_PrH7LZoxsagesaS5hJ0_WONKMCG3dM7g,47
+sinker-0.1.2.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+sinker=sinker.__main__:main
+
