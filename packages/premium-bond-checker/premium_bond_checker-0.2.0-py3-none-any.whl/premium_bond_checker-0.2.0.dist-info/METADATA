@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: premium-bond-checker
+Version: 0.2.0
+Summary: Simple premium bond checker library
+License: MIT
+Author: Malachi Soord
+Author-email: inverse.chi@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Premium Bond Checker
+
+Simple premium bond checker library that is built against [Nsandi](https://www.nsandi.com/).
+
+## Usage
+
+```python
+from premium_bond_checker.client import Client
+
+client = Client()
+result = client.check('your bond number')
+print(f'Winning: {result.has_won()}')
+```
+
+## Licence
+
+MIT
+
