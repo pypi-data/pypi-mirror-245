@@ -1,0 +1,36 @@
+[
+    {
+        "name": "深圳市恒博优科技有限公司",
+        "key": "hby",
+        "sort": 1,
+        "owner": "",
+        "phone": "",
+        "email": "",
+        "status": true,
+        "parent": null,
+        "children": [
+            {
+                "name": "运营部",
+                "key": "",
+                "sort": 2,
+                "owner": "",
+                "phone": "",
+                "email": "",
+                "status": true,
+                "parent": 1,
+                "children": []
+            },
+            {
+                "name": "技术部",
+                "key": "technology",
+                "sort": 1,
+                "owner": "",
+                "phone": "",
+                "email": "",
+                "status": true,
+                "parent": 3,
+                "children": []
+            }
+        ]
+    }
+]
