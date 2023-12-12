@@ -1,0 +1,8 @@
+cryptography
+httpx
+nest_asyncio
+ngrok
+numpy
+requests
+toml
+torch
