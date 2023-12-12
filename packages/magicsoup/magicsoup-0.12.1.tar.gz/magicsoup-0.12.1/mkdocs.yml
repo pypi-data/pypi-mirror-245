@@ -1,0 +1,31 @@
+site_name: MagicSoup
+theme: readthedocs
+repo_url: https://github.com/mRcSchwering/magic-soup/
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+markdown_extensions:
+  - mdx_math:
+      enable_dollar_delimiter: True
+
+nav:
+  - "index.md"
+  - "mechanics.md"
+  - "tutorials.md"
+  - "reference.md"
+  - "other_simulations.md"
+  - "figures.md"
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [python]
+          options:
+            heading_level: 3
+            show_root_toc_entry: false
+            show_source: false
+            show_object_full_path: true
+            members_order: source
