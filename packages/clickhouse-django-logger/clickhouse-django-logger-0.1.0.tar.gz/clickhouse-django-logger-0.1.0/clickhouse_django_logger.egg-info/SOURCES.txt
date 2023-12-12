@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+clickhouse_django_logger.egg-info/PKG-INFO
+clickhouse_django_logger.egg-info/SOURCES.txt
+clickhouse_django_logger.egg-info/dependency_links.txt
+clickhouse_django_logger.egg-info/requires.txt
+clickhouse_django_logger.egg-info/top_level.txt
