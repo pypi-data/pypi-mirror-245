@@ -1,0 +1,1 @@
+json2spark_mapper
