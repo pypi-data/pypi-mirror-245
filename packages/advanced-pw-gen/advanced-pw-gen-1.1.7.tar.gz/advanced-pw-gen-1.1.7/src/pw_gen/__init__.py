@@ -1,0 +1,1 @@
+from .pw_gen import Password
