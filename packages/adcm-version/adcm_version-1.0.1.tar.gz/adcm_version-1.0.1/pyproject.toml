@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "adcm-version"
+version = "1.0.1"
+description = ""
+authors = ["Alexandr Alferov <aas@arenadata.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+version-utils = "^0.3.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+ruff = "^0.1.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+select = [
+    "E", "F", "I", "N", "UP", "YTT", "ANN",
+    "S", "BLE", "FBT", "B", "A", "COM", "C4",
+    "DTZ", "ICN", "PIE", "Q", "RET",
+    "SIM", "ARG", "PTH", "PLE", "TRY"
+]
+ignore = ["SIM117", "ANN101", "ANN102", "ANN401"]
