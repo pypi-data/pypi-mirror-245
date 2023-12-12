@@ -1,0 +1,11 @@
+cohere_haystack/__about__.py,sha256=pt6FeKm0na_YxZOO8De83ZB73QUQehci3pKFTszhmZk,132
+cohere_haystack/__init__.py,sha256=6GZ8Y3Lw0rLOsOAqi6Tu5mZC977UzQvgDxKpOWr8IQw,110
+cohere_haystack/generator.py,sha256=aqB4Vgs17yWuYSQ1Qa4j5O_-DFJhToJRgonI44eZmQk,8393
+cohere_haystack/embedders/__init__.py,sha256=6GZ8Y3Lw0rLOsOAqi6Tu5mZC977UzQvgDxKpOWr8IQw,110
+cohere_haystack/embedders/document_embedder.py,sha256=AMB15UdKQwL9Eys2bEE7NmBv3iRz5Mdl4tcSWwJuGxU,8159
+cohere_haystack/embedders/text_embedder.py,sha256=dRc54tH_xUfiAK2VWBDfTlaQ7Od-Iq--kSf3vfb4O7w,5652
+cohere_haystack/embedders/utils.py,sha256=3sG58J-GXc6jtzAMa2PVFR_KaUtQXCbOpbDvmtDNV00,2064
+cohere_haystack-0.2.0.dist-info/METADATA,sha256=QuNcFAxbsb-oHPtKGrho8MKDJc8IrcoGTVQKUF1uqRE,2330
+cohere_haystack-0.2.0.dist-info/WHEEL,sha256=Gw8jIuTWkPakxikG-6o91zOxTjpZNZ00Qw8KZLqAprY,87
+cohere_haystack-0.2.0.dist-info/licenses/LICENSE.txt,sha256=OrAtTu4aPmrTjKDSTzkSPgo_ji6NOMWO2N9JOTFyAzM,11350
+cohere_haystack-0.2.0.dist-info/RECORD,,
