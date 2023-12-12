@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: learngene
+Version: 0.0.2
+Summary: some methods for learngene
+Author-email: zyk <2386360020@qq.com>
+License: Apache 2.0
+Project-URL: text, https://github.com/zykrous
+Keywords: machine learning
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: tqdm
+
