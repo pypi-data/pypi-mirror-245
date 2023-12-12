@@ -1,0 +1,39 @@
+apiVersion: resources.yatai.ai/v1alpha1
+kind: BentoRequest
+metadata:
+    name: iris-clf--0.3.1
+    namespace: yatai
+spec:
+    bentoTag: iris_clf:0.3.1
+---
+apiVersion: serving.yatai.ai/v2alpha1
+kind: BentoDeployment
+metadata:
+    name: bentoml-test-03
+    namespace: yatai
+spec:
+    bento: iris-clf--0.3.1
+    ingress:
+        enabled: true
+    resources:
+        limits:
+            cpu: "500m"
+            memory: "1Gi"
+        requests:
+            cpu: "250m"
+            memory: "1Gi"
+    autoscaling:
+        maxReplicas: 1
+        minReplicas: 1
+    runners:
+        - name: iris_clf
+          resources:
+              limits:
+                  cpu: "1000m"
+                  memory: "4Gi"
+              requests:
+                  cpu: "500m"
+                  memory: "1Gi"
+          autoscaling:
+              maxReplicas: 1
+              minReplicas: 1

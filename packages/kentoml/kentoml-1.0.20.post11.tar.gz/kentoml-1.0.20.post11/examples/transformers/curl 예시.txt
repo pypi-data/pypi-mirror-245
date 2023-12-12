@@ -1,0 +1,9 @@
+curl -s -o /dev/null -w  "%{time_starttransfer}\n" -X POST \
+    -H "content-type: application/json" \
+    --data '{"keywords":["안녕하세요","그래"]}' \
+    http://127.0.0.1:3000/get_embedding
+
+curl -X POST \
+    -H "content-type: application/json" \
+    --data '{"keywords":["안녕하세요","그래"]}' \
+    http://127.0.0.1:3000/get_embedding

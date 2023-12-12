@@ -1,0 +1,10 @@
+#runners:
+#  batching:
+#    enabled: true
+#    max_batch_size: 10
+#    max_latency_ms: 500
+runners:
+  batching:
+    enabled: true
+    max_batch_size: 10
+    max_latency_ms: 5000

@@ -1,0 +1,39 @@
+apiVersion: resources.yatai.ai/v1alpha1
+kind: BentoRequest
+metadata:
+    name: sentence-bert--0.2.3
+    namespace: yatai
+spec:
+    bentoTag: sentence_bert:0.2.3
+---
+apiVersion: serving.yatai.ai/v2alpha1
+kind: BentoDeployment
+metadata:
+    name: sentence-bert
+    namespace: yatai
+spec:
+    bento: sentence-bert--0.2.3
+    ingress:
+        enabled: true
+    resources:
+        limits:
+            cpu: "1000m"
+            memory: "1Gi"
+        requests:
+            cpu: "1000m"
+            memory: "1Gi"
+    autoscaling:
+        maxReplicas: 10
+        minReplicas: 5
+    runners:
+        - name: modelrunnable
+          resources:
+              limits:
+                  cpu: "10000m"
+                  memory: "10Gi"
+              requests:
+                  cpu: "10000m"
+                  memory: "10Gi"
+          autoscaling:
+              maxReplicas: 20
+              minReplicas: 20

@@ -1,0 +1,5 @@
+anyio==3.5.0
+kentoml
+torch
+transformers==4.30.0
+torchvision

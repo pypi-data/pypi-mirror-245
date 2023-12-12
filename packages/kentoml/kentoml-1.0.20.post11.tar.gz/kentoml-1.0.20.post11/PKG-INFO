@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: kentoml
+Version: 1.0.20.post11
+License: Apache-2.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: anyio==3.5.0
+Requires-Dist: Jinja2>=3.0.1
+Requires-Dist: PyYAML>=5.0
+Requires-Dist: aiohttp
+Requires-Dist: attrs==23.1.0
+Requires-Dist: cattrs==23.1.2
+Requires-Dist: circus!=0.17.2,>=0.17.0
+Requires-Dist: click>=7.0
+Requires-Dist: click-option-group
+Requires-Dist: cloudpickle
+Requires-Dist: deepmerge
+Requires-Dist: fs
+Requires-Dist: numpy
+Requires-Dist: opentelemetry-api==1.14.0
+Requires-Dist: opentelemetry-sdk==1.14.0
+Requires-Dist: opentelemetry-instrumentation==0.35b0
+Requires-Dist: opentelemetry-instrumentation-aiohttp-client==0.35b0
+Requires-Dist: opentelemetry-instrumentation-asgi==0.35b0
+Requires-Dist: opentelemetry-semantic-conventions==0.35b0
+Requires-Dist: opentelemetry-util-http==0.35b0
+Requires-Dist: packaging>=22.0
+Requires-Dist: pathspec
+Requires-Dist: pip-tools>=6.6.2
+Requires-Dist: pip-requirements-parser>=31.2.0
+Requires-Dist: prometheus-client>=0.10.0
+Requires-Dist: psutil
+Requires-Dist: pynvml<12
+Requires-Dist: python-dateutil
+Requires-Dist: python-multipart
+Requires-Dist: python-json-logger
+Requires-Dist: requests
+Requires-Dist: rich>=11.2.0
+Requires-Dist: schema
+Requires-Dist: simple-di>=0.1.4
+Requires-Dist: starlette<0.26
+Requires-Dist: uvicorn
+Requires-Dist: watchfiles>=0.15.0
+Requires-Dist: backports.cached-property; python_version < "3.8"
+Requires-Dist: backports.shutil_copytree; python_version < "3.8"
+Requires-Dist: importlib-metadata; python_version < "3.8"
+Requires-Dist: singledispatchmethod; python_version < "3.8"
+Requires-Dist: pickle5; python_version < "3.8"
+Provides-Extra: all
+Requires-Dist: bentoml[aws]; extra == "all"
+Requires-Dist: bentoml[io]; extra == "all"
+Requires-Dist: bentoml[grpc]; extra == "all"
+Requires-Dist: bentoml[grpc-reflection]; extra == "all"
+Requires-Dist: bentoml[grpc-channelz]; extra == "all"
+Requires-Dist: bentoml[tracing]; extra == "all"
+Requires-Dist: bentoml[triton]; extra == "all"
+Requires-Dist: bentoml[monitor-otlp]; extra == "all"
+Provides-Extra: aws
+Requires-Dist: fs-s3fs; extra == "aws"
+Provides-Extra: io
+Requires-Dist: bentoml[io-json]; extra == "io"
+Requires-Dist: bentoml[io-image]; extra == "io"
+Requires-Dist: bentoml[io-pandas]; extra == "io"
+Requires-Dist: bentoml[io-file]; extra == "io"
+Provides-Extra: io-file
+Requires-Dist: filetype; extra == "io-file"
+Provides-Extra: io-json
+Requires-Dist: pydantic<2; extra == "io-json"
+Provides-Extra: io-image
+Requires-Dist: bentoml[io-file]; extra == "io-image"
+Requires-Dist: Pillow; extra == "io-image"
+Provides-Extra: io-pandas
+Requires-Dist: pandas; extra == "io-pandas"
+Requires-Dist: pyarrow; extra == "io-pandas"
+Provides-Extra: triton
+Requires-Dist: tritonclient[all]>=2.29.0; extra == "triton"
+Provides-Extra: grpc
+Requires-Dist: protobuf; extra == "grpc"
+Requires-Dist: grpcio; extra == "grpc"
+Requires-Dist: grpcio-health-checking; extra == "grpc"
+Requires-Dist: opentelemetry-instrumentation-grpc==0.35b0; extra == "grpc"
+Provides-Extra: grpc-reflection
+Requires-Dist: bentoml[grpc]; extra == "grpc-reflection"
+Requires-Dist: grpcio-reflection; extra == "grpc-reflection"
+Provides-Extra: grpc-channelz
+Requires-Dist: bentoml[grpc]; extra == "grpc-channelz"
+Requires-Dist: grpcio-channelz; extra == "grpc-channelz"
+Provides-Extra: tracing
+Requires-Dist: bentoml[tracing-jaeger]; extra == "tracing"
+Requires-Dist: bentoml[tracing-otlp]; extra == "tracing"
+Requires-Dist: bentoml[tracing-zipkin]; extra == "tracing"
+Provides-Extra: tracing-jaeger
+Requires-Dist: opentelemetry-exporter-jaeger==1.14.0; extra == "tracing-jaeger"
+Provides-Extra: tracing-zipkin
+Requires-Dist: opentelemetry-exporter-zipkin==1.14.0; extra == "tracing-zipkin"
+Provides-Extra: tracing-otlp
+Requires-Dist: opentelemetry-exporter-otlp==1.14.0; extra == "tracing-otlp"
+Provides-Extra: monitor-otlp
+Requires-Dist: opentelemetry-exporter-otlp-proto-http==1.14.0; extra == "monitor-otlp"
