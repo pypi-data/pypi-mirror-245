@@ -1,0 +1,13 @@
+testing/bam_cover.py,sha256=oTjRBkK5lRd0RkqrccRC3_af4hWWHX3xmjWXwhD6pBo,869
+testing/detect_bam.py,sha256=0U7HHFVxc131Bp-vJORrbqMCpKgnNv1n4rhSARvgI7I,234
+testing/fix.py,sha256=pVkPMBrHqgBdO56-EKl7mRjOCF9Qq2CGx1XcRHj7oUE,201
+testing/iupac.py,sha256=J09Kc65gNcYLtBhUZJfpZNThd-GhYyrW5i7gZC9tioU,1149
+testing/modbam/parser.py,sha256=NGxBEUlJ_uAmbZC5UZnOEfKBPunGL4CXnvV3n0YtQSU,5730
+testing/modbam/parser_old.py,sha256=pYiUTzKcbsh7pt0MvosdVTaCxKpSdTr6Lqsfw_RwwvQ,2352
+testing/testregion/tmp.py,sha256=5-tdFhY4Rg0W8iyFs2xNGSs56RYqTQTG6_eYGWu2ps4,112
+methylartist-1.2.8.dist-info/LICENSE,sha256=IqU0X1_lSvRj7ttmI2Dh2mBcnx98uRo_rEhv8Btt9Ag,1066
+methylartist-1.2.8.dist-info/METADATA,sha256=vQGL5BSyovtuTwNub6u-8b-j1FieMKRduHVzD-b_euw,21302
+methylartist-1.2.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+methylartist-1.2.8.dist-info/entry_points.txt,sha256=jFtWZPY_h-pkz6rjQgfaZcEQJubEiHt8hiJITmudxZg,46
+methylartist-1.2.8.dist-info/top_level.txt,sha256=EqYfThc_s6EcBdZHH3Ryj3YjG0pfzZZnzvOvh6OuTcI,8
+methylartist-1.2.8.dist-info/RECORD,,
