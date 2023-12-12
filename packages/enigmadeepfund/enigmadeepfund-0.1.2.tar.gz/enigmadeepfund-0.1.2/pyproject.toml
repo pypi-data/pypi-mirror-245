@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "enigmadeepfund"
+version = "0.1.2"
+description = ""
+authors = ["Ammar Nasr <ammarnasraza@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.0"
+scriv = {extras = ["toml"], version = "^1.5.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

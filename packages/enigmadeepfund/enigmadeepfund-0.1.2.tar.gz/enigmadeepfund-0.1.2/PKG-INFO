@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: enigmadeepfund
+Version: 0.1.2
+Summary: 
+Author: Ammar Nasr
+Author-email: ammarnasraza@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+This is the README file for the project.
+
+## Project Description
+This project is a simple example of how to use the enigmadeepfund library to train a neural network to predict the price of a stock.
