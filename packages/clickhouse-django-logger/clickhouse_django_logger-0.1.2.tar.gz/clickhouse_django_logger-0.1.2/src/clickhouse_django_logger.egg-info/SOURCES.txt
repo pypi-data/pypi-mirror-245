@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/clickhouse_django_logger/ __init__.py
+src/clickhouse_django_logger/apps.py
+src/clickhouse_django_logger/config.py
+src/clickhouse_django_logger/handlers.py
+src/clickhouse_django_logger/tasks.py
+src/clickhouse_django_logger/utils.py
+src/clickhouse_django_logger.egg-info/PKG-INFO
+src/clickhouse_django_logger.egg-info/SOURCES.txt
+src/clickhouse_django_logger.egg-info/dependency_links.txt
+src/clickhouse_django_logger.egg-info/top_level.txt
