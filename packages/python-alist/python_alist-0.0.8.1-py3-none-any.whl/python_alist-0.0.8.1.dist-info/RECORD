@@ -1,0 +1,12 @@
+LICENSE,sha256=QaELXFGQ7fQ_rBrmvXlE5Y0Qpp_khYfbkPSur8oeJjw,1100
+alist/__init__.py,sha256=pjOyAJVUM8Y52WsDM8GiveQCbpmPtRygkyEGjUmP98s,98874
+alist/util/__init__.py,sha256=obTKnFAUlgc7HrvGfv7fGG_wTrVJaM9cjvJ6_nOQ4Ac,154
+alist/util/file.py,sha256=0ydvbDI4MkmGwWoXtXRizZOEbupHlBvaYvAb2I3gqs0,11074
+alist/util/iter.py,sha256=eWpJSEJCBzEYUzaFBjdli22bQfUtQCx1e4Pynxdag04,2289
+alist/util/property.py,sha256=7-J9-kZHNCNlrubd2q6gpkEylra3W-vjk6Nl4UQjiN0,1727
+alist/util/response.py,sha256=AtEokDrt-gGzllYBXH7rj_Dx5DHgsbMTCQ3litsWplI,2593
+alist/util/urlopen.py,sha256=EmtQ4Uvj19oXiz8NMf-VoctQCmektJflstXygVHmJGk,2114
+python_alist-0.0.8.1.dist-info/LICENSE,sha256=QaELXFGQ7fQ_rBrmvXlE5Y0Qpp_khYfbkPSur8oeJjw,1100
+python_alist-0.0.8.1.dist-info/METADATA,sha256=FG6fLyb-hYwBKRMZWNVFDPPnPH9P7bFKq7_old5R31Y,8814
+python_alist-0.0.8.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+python_alist-0.0.8.1.dist-info/RECORD,,
