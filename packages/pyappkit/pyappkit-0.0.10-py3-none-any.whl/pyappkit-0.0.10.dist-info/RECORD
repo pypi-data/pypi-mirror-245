@@ -1,0 +1,9 @@
+pyappkit/__init__.py,sha256=JKpJKufxROhzOUvkx9Kc6rXGzuptr8YCIm0QNWTdBNI,100
+pyappkit/daemon/__init__.py,sha256=Q1prRP2opl_NHFxcoDZfD6CMUCrwvaJSlbNAuN3Jylk,98
+pyappkit/daemon/main.py,sha256=fHxVLgDOjdJ9yzKTR92-Pzye6wZo11MH64TvHx0fZIA,27704
+pyappkit-0.0.10.dist-info/LICENSE,sha256=DoKRWI6NvpcmtZugRTl4pnIOAzYfezduT6Tn7DnwK1s,1068
+pyappkit-0.0.10.dist-info/METADATA,sha256=e_VJpdTJyn8SKHY-6Mej6D1dvyOIqxqDXTDSYW44ZUU,597
+pyappkit-0.0.10.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+pyappkit-0.0.10.dist-info/entry_points.txt,sha256=p0b0nhRjbkrMIMv-AaNzvJsN910VJX90vpZRcGgd2v8,55
+pyappkit-0.0.10.dist-info/top_level.txt,sha256=HLhy2QgSVs4DfoLzg2i8MAf3bLRWxOt5AfXPb6BQBqo,9
+pyappkit-0.0.10.dist-info/RECORD,,
