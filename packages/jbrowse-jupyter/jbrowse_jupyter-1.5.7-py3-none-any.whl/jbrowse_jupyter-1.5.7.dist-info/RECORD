@@ -1,0 +1,10 @@
+jbrowse_jupyter/__init__.py,sha256=BtSiGksaSv5yPIXRtflB_52JESNySG8pq8WEd8t13KI,216
+jbrowse_jupyter/dev_server.py,sha256=zmu_tLCof-nA6CYL_AAlqLDNIvdKdtOOV19USgve980,5656
+jbrowse_jupyter/jbrowse_config.py,sha256=KcRyWXVryyKhSF598OOnrtEnIv2o1Pyxt7LzU1r-jRE,31347
+jbrowse_jupyter/tracks.py,sha256=0AywVDueV37e5RUy-nbTMlo-2AvRod-Pv6IuGKCp2ps,16202
+jbrowse_jupyter/util.py,sha256=Rj3YAm3T-0YjLFwL9srvYcsJ8ap14ot5CShU6J7TjnE,10100
+jbrowse_jupyter-1.5.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jbrowse_jupyter-1.5.7.dist-info/METADATA,sha256=PHjASJoVYkpSmcNTVRzZb2SV5DbyPOPXHFrY9wdJY-4,26951
+jbrowse_jupyter-1.5.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jbrowse_jupyter-1.5.7.dist-info/top_level.txt,sha256=pn5DXKiHgPmzeveMLU_usSNrYQyb3wbDYWOjQi3tcHs,16
+jbrowse_jupyter-1.5.7.dist-info/RECORD,,
