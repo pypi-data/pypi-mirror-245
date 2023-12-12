@@ -1,0 +1,5 @@
+django>=3.0
+
+[test]
+tox>=4.11
+bump-my-version>=0.12
