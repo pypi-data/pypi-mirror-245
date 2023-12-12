@@ -1,0 +1,15 @@
+setup.py
+colemen_mint_setup/ColemenMintSetup.py
+colemen_mint_setup/__init__.py
+colemen_mint_setup/aliasSettings.py
+colemen_mint_setup/appSettings.py
+colemen_mint_setup/hotkeySettings.py
+colemen_mint_setup/themeSettings.py
+colemen_mint_setup/utils.py
+colemen_mint_setup.egg-info/PKG-INFO
+colemen_mint_setup.egg-info/SOURCES.txt
+colemen_mint_setup.egg-info/dependency_links.txt
+colemen_mint_setup.egg-info/top_level.txt
+colemen_mint_setup/settings/__init__.py
+colemen_mint_setup/settings/control.py
+colemen_mint_setup/settings/types.py
