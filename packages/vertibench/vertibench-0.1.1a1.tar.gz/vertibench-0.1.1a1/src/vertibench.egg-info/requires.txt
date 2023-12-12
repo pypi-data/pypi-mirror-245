@@ -1,0 +1,10 @@
+matplotlib>=3.7
+numpy==1.24
+pymoo==0.6.1.1
+scikit-learn==1.2
+scipy>=1.10
+shap==0.43
+torch>=2.0
+
+[test]
+xgboost>=2.0

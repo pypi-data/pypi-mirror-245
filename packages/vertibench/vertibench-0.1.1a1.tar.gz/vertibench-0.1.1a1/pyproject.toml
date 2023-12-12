@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vertibench"
+authors = [
+    { name = "Zhaomin Wu", email = "hustwuzhaomin@outlook.com" },
+    { name = "Junyi Hou" },
+    { name = "Bingsheng He" }
+]
+version = "0.1.1a1"
+description = "A tool for benchmarking vertical federated learning algorithms, containing synthetic data split and data evaluation."
+readme = "README.md"
+license = { file = "LICENSE" }  # If you have a LICENSE file
+keywords = ["vertical federated learning", "benchmark", "synthetic data", "feature split", "data valuation", "federated learning"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    # etc.
+]
+urls = { "Homepage" = "https://github.com/Xtra-Computing/VertiBench" }
+
+# Additional URLs can be added under [project.urls] if necessary
+
+# Define any extra dependencies under [project.optional-dependencies]
+
+# Define your console scripts under [project.scripts] if any in the future
+
+dependencies = [
+    "matplotlib>=3.7",
+    "numpy==1.24",
+    "pymoo==0.6.1.1",
+    "scikit-learn==1.2",
+    "scipy>=1.10",
+    "shap==0.43",
+    "torch>=2.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "xgboost>=2.0",
+]

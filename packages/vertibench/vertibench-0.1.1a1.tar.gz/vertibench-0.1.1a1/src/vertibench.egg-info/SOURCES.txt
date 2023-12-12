@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/vertibench/Evaluator.py
+src/vertibench/Splitter.py
+src/vertibench/__init__.py
+src/vertibench.egg-info/PKG-INFO
+src/vertibench.egg-info/SOURCES.txt
+src/vertibench.egg-info/dependency_links.txt
+src/vertibench.egg-info/requires.txt
+src/vertibench.egg-info/top_level.txt
+test/test_evaluate_alpha.py
+test/test_evaluator.py
+test/test_splitter.py
