@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: messages-local
+Version: 0.0.21
+Home-page: https://github.com/circles-zone/messages-local-python-package
+Author: Circles
+Author-email: info@circles.life
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: message-local>=0.0.14
+Requires-Dist: sms-message-aws-sns-local>=0.0.8
+Requires-Dist: queue-worker-local>=0.0.12
+Requires-Dist: variable-local>=0.0.45
+Requires-Dist: label-message-local>=0.0.2
+
+messages-local
