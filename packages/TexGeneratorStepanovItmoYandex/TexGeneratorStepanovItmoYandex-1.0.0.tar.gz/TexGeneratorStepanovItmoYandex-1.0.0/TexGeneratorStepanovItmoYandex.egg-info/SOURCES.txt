@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+TexGeneratorStepanovItmoYandex/__init__.py
+TexGeneratorStepanovItmoYandex/latex_generator.py
+TexGeneratorStepanovItmoYandex.egg-info/PKG-INFO
+TexGeneratorStepanovItmoYandex.egg-info/SOURCES.txt
+TexGeneratorStepanovItmoYandex.egg-info/dependency_links.txt
+TexGeneratorStepanovItmoYandex.egg-info/top_level.txt
