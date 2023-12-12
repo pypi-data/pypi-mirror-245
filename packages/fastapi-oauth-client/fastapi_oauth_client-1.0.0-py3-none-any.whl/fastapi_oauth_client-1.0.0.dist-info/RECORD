@@ -1,0 +1,16 @@
+fastapi_oauth_client/__init__.py,sha256=aOxNUFlYd8oQrrjH1adaSqAhkhgskB5HVRXPuWCkBb0,501
+fastapi_oauth_client/endpoints.py,sha256=zoT2H3d-eFtnveYSU1pfKd7t2khCWaIUqUK-AvXQLVM,3561
+fastapi_oauth_client/settings.py,sha256=RX1wprIiC8tfgz94CTqsXyTSVIt69EsPyLasA19B1MI,1338
+fastapi_oauth_client/verify_token.py,sha256=Gb87uebup4uAMx0r9NVWRmwEutG7XLwUh_2tx2aR-C8,4051
+fastapi_oauth_client/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_oauth_client/resources/success_template.py,sha256=rwWDPBNudgR8BB7TQJ2v7AcCVz2F5w9eF5P38hngjAk,4309
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=rkZ9_gwbomEbHjBRrUXpJZyqoSY0KailL4IpRvcOGvI,154
+tests/test_endpoints.py,sha256=d-7DyPs-gCnbiCeui9ZsOKrJLfoFcOCqaI_d2fYBehE,5737
+tests/test_settings.py,sha256=8Q-K4eKRWfNVPuh9GVdRpYV363wwP9__kbY7VjI-RoA,1520
+tests/test_token_verification.py,sha256=4CqMQHymLfFH1jmTKPqVujUWpKBnvZPSqNcOPI2v28w,4322
+fastapi_oauth_client-1.0.0.dist-info/LICENSE,sha256=mO5k3f-RyYXkBpnIPoc0Q7qv7z78_ty00NYvFL0kkEk,1082
+fastapi_oauth_client-1.0.0.dist-info/METADATA,sha256=j_kUaYiPJ3ALhMUzdlJweLKfZCq9EAd00x8bnsc0rKM,5470
+fastapi_oauth_client-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fastapi_oauth_client-1.0.0.dist-info/top_level.txt,sha256=OPh3TmrSKGBcN5LfmS9fhj0SRwtB0bRZp9uszPG_rCI,27
+fastapi_oauth_client-1.0.0.dist-info/RECORD,,
