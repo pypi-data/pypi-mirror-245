@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+subfind3r.py
+Subfind3r.egg-info/PKG-INFO
+Subfind3r.egg-info/SOURCES.txt
+Subfind3r.egg-info/dependency_links.txt
+Subfind3r.egg-info/entry_points.txt
+Subfind3r.egg-info/requires.txt
+Subfind3r.egg-info/top_level.txt
+subbrute/__init__.py
+subbrute/names.txt
+subbrute/resolvers.txt
+subbrute/subbrute.py
