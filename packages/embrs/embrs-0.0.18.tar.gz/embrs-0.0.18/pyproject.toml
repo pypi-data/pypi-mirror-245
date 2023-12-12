@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embrs"
+version = "0.0.18"
+authors = [
+  { name="Rui de Gouvea Pinto", email="rjdp3@gatech.edu" },
+]
+description = "A fire simulation tool optimized for autonomous firefighting systems development"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.0",
+    "shapely>=2.0",
+		"matplotlib>=3.0",
+		"PyQt5>=5.0",
+		"tqdm>=4.0",
+		"pandas>=2.0",
+		"rasterio>=1.0",
+		"requests>=2.0",
+		"pyproj>=3.0",
+		"utm>=0.6",
+		"scipy>=1.0"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/AREAL-GT/embrs"
+Issues = "https://github.com/AREAL-GT/embrs/issues"
+
+[project.scripts]
+run_embrs_sim = "embrs.main:main"
+run_embrs_viz = "embrs.visualization_tool:main"
+create_embrs_map = "embrs.map_generator:main"
+create_embrs_wind = "embrs.wind_forecast_generator:main"
+
