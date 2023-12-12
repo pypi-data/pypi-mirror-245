@@ -1,0 +1,10 @@
+plate_layout/__about__.py,sha256=Y5M0PBAiZwBrRuVdUAvjxHMo0zBCo77LspT51xwyKFI,142
+plate_layout/__init__.py,sha256=lrUvoGOrPOKOgyo003ROYE3UBPdnoRwptpxJ87x5IJU,251
+plate_layout/cli.py,sha256=zHPQWGfqWaRTtxeVi3pPLsn1ERU18pCvFk4LVzGsGu8,4577
+plate_layout/pl_logger.py,sha256=GuY6_WSyK50jHjeR3HN4iHERVEPJiBcYXZ8MTgEYA9M,162
+plate_layout/plate_layout.py,sha256=cjw3yHQdzd8vmwTT2XJhRKNAeECEo5hN0L8R7RVkk3w,42537
+plate_layout-1.6.0.dist-info/METADATA,sha256=qfjW3R5cqnWLPqIk89hfCxtpFJ4lpJ-UFRCqrVRinr4,2209
+plate_layout-1.6.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+plate_layout-1.6.0.dist-info/entry_points.txt,sha256=ivnULBMaP05hW6GqJuZTVw9OaqL7i03h4n8JsWm0P9c,55
+plate_layout-1.6.0.dist-info/licenses/LICENSE.txt,sha256=vPS56cvtF-dXzWRKo_50ZbtvW9OvVimv9iJAH3NTv8M,1112
+plate_layout-1.6.0.dist-info/RECORD,,
