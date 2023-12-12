@@ -1,0 +1,81 @@
+[project]
+name = "ashx"
+version = "0.0.1"
+authors = [{ name = "Benjamin Vial", email = "benjamin.vial84@gmail.com" }]
+maintainers = [{ name = "Benjamin Vial", email = "benjamin.vial84@gmail.com" }]
+description = "Geometry and mesh tools"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = { file = "LICENSE.txt" }
+keywords = ["fem", "fenicsx"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.8"
+dependencies = ["matplotlib", "numpy",  "meshio", "mpi4py", "gmsh"]
+
+[project.urls] 
+"Homepage" = "https://benvial.gitlab.io/ashx"
+"Bug Reports" = "https://gitlab.com/benvial/ashx/issues"
+"Source" = "https://gitlab.com/benvial/ashx"
+
+[tool.setuptools.packages.find]
+include = ["ashx"]
+
+[project.optional-dependencies] # Optional
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-datadir",
+    "pytest-sugar",
+    "pytest-xdist[psutil]",
+    "coverage",
+]
+dev = [
+    "wheel",
+    "build",
+    "flake8",
+    "black",
+    "twine",
+    "isort",
+    "radon",
+    "pydocstyle",
+    "pylint",
+    "pylint-json2html",
+    "python-gitlab",
+    "pip-tools",
+]
+doc = [
+    "sphinx",
+    "furo",
+    "sphinx_gallery",
+    "sphinx-copybutton",
+    "memory_profiler",
+    "numpydoc",
+    "sphinxcontrib-svg2pdfconverter",
+    "sphinxcontrib-bibtex",
+    "matplotlib",
+    "beautifulsoup4",
+    "sphinx-autoapi",
+    "myst-parser",
+    "sphinx-design",
+    "sphinx-inline-tabs",
+    "sphinx-tabs",
+    "sphinx-autobuild",
+]
+full = ["ashx[test]", "ashx[doc]", "ashx[dev]"]
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
