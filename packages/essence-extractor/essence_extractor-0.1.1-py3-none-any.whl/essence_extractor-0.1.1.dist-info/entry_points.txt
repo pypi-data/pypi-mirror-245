@@ -1,0 +1,3 @@
+[console_scripts]
+essence-extractor=essence_extractor.main:args_call
+
