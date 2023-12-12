@@ -1,0 +1,141 @@
+#
+<p align="center">
+    <img src="./assets/img/logo.png" width="70%">
+</p>
+<p align="center">
+    <em>Download, process, correct, and enhance images sourced from various satellite providers. </em>
+</p>
+<p align="center">
+    <a href="https://pypi.org/project/librecubo/"><img
+       src="https://img.shields.io/pypi/v/librecubo.svg"
+       alt="PyPI"
+    /></a>
+    <a href="https://img.shields.io/github/actions/workflow/status/jfloresf/librecubo/main.yml?branch=main"><img
+       src="https://img.shields.io/github/actions/workflow/status/jfloresf/librecubo/main.yml?query=branch%3Amain"
+        alt="Build status"
+    /></a>
+    <a href="https://codecov.io/gh/jfloresf/librecubo"><img
+       src="https://codecov.io/gh/jfloresf/librecubo/branch/main/graph/badge.svg"
+       alt="codecov"
+    /></a>
+    <a href="https://img.shields.io/github/commit-activity/m/jfloresf/librecubo"><img
+       src="https://img.shields.io/github/commit-activity/m/jfloresf/librecubo"
+       alt="Commit activity"
+    /></a>
+    <a href="https://img.shields.io/github/license/jfloresf/librecubo"><img
+       src="https://img.shields.io/github/license/v/librecubo.svg"
+       alt="License"
+    /></a>
+</p>
+
+---
+
+- **Github repository**: <https://github.com/orgs/librecubo/repositories/>
+- **Documentation** <https://librecubo.readthedocs.io/>
+- **PyPI**: <https://pypi.org/project/librecubo/>
+- **Conda-forge**: <https://anaconda.org/conda-forge/librecubo>
+- **Tutorials**: <https://librecubo.readthedocs.io/en/latest/tutorials.html>
+
+---
+
+## **Overview**
+
+<p align="justify">
+The "librecubo" package in Python represents a powerful ensemble of modules
+tailored for satellite image processing and enhancement. This comprehensive
+toolkit is designed to handle diverse satellite imagery, enabling tasks ranging
+from data acquisition to intricate processing techniques like cloud masking,
+BRDF correction, temporal referencing, and resolution enhancement. With its
+multifaceted capabilities, "librecubo" streamlines the retrieval, manipulation,
+and refinement of satellite data, facilitating efficient and comprehensive image
+analysis for various applications.
+</p>
+
+## **How to use**
+
+The example below shows how to use <code>librecubo</code> module to download Sentinel-2
+images.
+
+```python
+from librecubo import librecubo_download
+
+librecubo_download.download_sentinel2(
+    lat=-12.046374,
+    lon=-77.042793,
+    project="test1",
+    path="path/to/save/data",
+    start_date="2000-02-16",
+    end_date="2022-12-31",
+    edge_size=1000
+)
+# 0%|▍                                     | 1/281 [00:17<\1:19:41, 17.08s/it]
+```
+
+## **Installation**
+
+Install the latest version from PyPI:
+
+```
+pip install librecubo
+```
+
+Upgrade opensr-test by running:
+
+```
+pip install -U librecubo
+```
+
+Install the latest dev version from GitHub by running:
+
+```
+pip install git+https://github.com/librecubo
+```
+
+## **Examples**
+
+## **Visualizations**
+
+## **Workflow**
+
+<p align="justify">
+The workflow below shows the main steps to process satellite images using
+<code>librecubo</code> package.
+</p>
+<ol style="text-align: justify;">
+    <li><strong>librecubo-download:</strong> Facilitates simultaneous download
+         of multiple images from Landsat (1-9), Sentinel-2, and MODIS using multiprocessing
+         for efficient data retrieval.</li>
+    <li><strong>librecubo-clouds:</strong> Handles cloud masking in MODIS, Landsat,
+        and Sentinel-2 images via the CloudSEN12v2 database. Generates a Zarr object with
+        temporal-based chunk organization.</li>
+    <li><strong>librecubo-reference:</strong> Establishes temporal series references by extending
+        MODIS data. Performs BRDF correction for Landsat images (5-9) and Sentinel-2 using Roy et
+         al.'s 2020 method (librecubo-brdf).</li>
+    <li><strong>librecubo-brdf:</strong> Focuses on BRDF correction specifically for Sentinel-2
+        images.</li>
+    <li><strong>librecubo-mss2tm:</strong> Corrects Landsat MSS images.</li>
+    <li><strong>librecubo-smoother:</strong> Manages gap-filling and data smoothing post-reference
+        generation. Improves overall coherence and quality by filling missing data spaces and applying
+        smoothing techniques.</li>
+</ol>
+<p><strong>Auxiliary Modules:</strong></p>
+<ol style="text-align: justify;">
+    <li><strong>librecubo-semantic:</strong> Enables generation of image semantics, likely involving
+        addition of contextual information or metadata.</li>
+    <li><strong>librecubo-super:</strong> Focuses on super-resolution, enhancing image quality by
+        upscaling images from 10 meters to 5 meters resolution.</li>
+</ol>
+
+## **Citation**
+
+<p align="justify">
+If you use <code>librecubo</code> in your research, please cite our paper. Coming soon!
+</p>
+
+## **Acknowledgements**
+
+</p align="justify">
+We received funding from the National Council of Science, Technology, and
+Technological Innovation (CONCYTEC, Peru) under the “Proyectos de Investigación
+Básica – 2023-01” program (PE501083135-2023-PROCIENCIA).
+</p>
