@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lrutil
+Version: 0.0.2
+Summary: A small example package
+Project-URL: Homepage, https://github.com/lemon-reddy/lrutil
+Project-URL: Issues, https://github.com/lemon-reddy/lrutil/issues
+Author-email: Lemon Reddy <lemonreddy87@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# lrutil package
+
+Package containing common utilities used(by me). Example package to try out newer functionalities in python ecosystem.
