@@ -1,0 +1,205 @@
+{
+  "src/lib/components/AutocompleteInput.react.js": {
+    "description": "",
+    "displayName": "AutocompleteInput",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The value displayed in the input.",
+        "defaultValue": {
+          "value": "\"\"",
+          "computed": false
+        }
+      },
+      "placeholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Placeholder string"
+      },
+      "quoteWhitespaces": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the options containing whitespaces should be quoted",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "The input's inline styles"
+      },
+      "n_submit": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of times the `Enter` key was pressed while the input had focus.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "component": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component to use, either 'textarea' or 'input'",
+        "defaultValue": {
+          "value": "\"input\"",
+          "computed": false
+        }
+      },
+      "trigger": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "string"
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "Character or string, which triggers showing autocompletion option list."
+      },
+      "options": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "array"
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "List of available options for autocomplete"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Class name for the component"
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Disables widget, i.e. during form submission"
+      },
+      "maxOptions": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Defines how many options can be listed simultaneously. Show all matched options if maxOptions equals 0."
+      },
+      "matchAny": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, will match options in the middle of the word as well"
+      },
+      "offsetX": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Popup horizontal offset"
+      },
+      "offsetY": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Popup vertical offset"
+      },
+      "regex": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "This regular expression checks if text after trigger can be autocompleted or not."
+      },
+      "spaceRemovers": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Remove spacer if user inputs one of these characters."
+      },
+      "spacer": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Character which is inserted along with the selected option."
+      },
+      "minChars": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Only show autocompletion option list after this many characters have been typed after the trigger character."
+      },
+      "passThroughEnter": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, then an enter / return keypress is passed on (after being used to autocomplete)."
+      },
+      "passThroughTab": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, then an Tab keypress is passed on (after being used to autocomplete) to the next form input."
+      },
+      "autoFocus": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "autofocus"
+      }
+    }
+  }
+}

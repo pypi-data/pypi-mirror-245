@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dash_autocomplete_input/AutocompleteInput.py
+dash_autocomplete_input/__init__.py
+dash_autocomplete_input/_imports_.py
+dash_autocomplete_input/dash_autocomplete_input.min.js
+dash_autocomplete_input/dash_autocomplete_input.min.js.map
+dash_autocomplete_input/metadata.json
+dash_autocomplete_input/package-info.json
+dash_autocomplete_input.egg-info/PKG-INFO
+dash_autocomplete_input.egg-info/SOURCES.txt
+dash_autocomplete_input.egg-info/dependency_links.txt
+dash_autocomplete_input.egg-info/top_level.txt
