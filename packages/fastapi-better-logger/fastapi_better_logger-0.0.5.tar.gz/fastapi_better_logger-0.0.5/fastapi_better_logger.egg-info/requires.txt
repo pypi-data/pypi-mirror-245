@@ -1,0 +1,9 @@
+boto3>=1.33.12
+click>=8.0
+watchtower>=3.0.0
+
+[:python_version < "3.8"]
+typing-extensions
+
+[standard]
+orjson>=1.3.1
