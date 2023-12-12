@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/hustcc/static/js/main.d48f99d9.chunk.js",
+    "main.js.map": "/hustcc/static/js/main.d48f99d9.chunk.js.map",
+    "runtime-main.js": "/hustcc/static/js/runtime-main.3ed92043.js",
+    "runtime-main.js.map": "/hustcc/static/js/runtime-main.3ed92043.js.map",
+    "static/js/2.8401795b.chunk.js": "/hustcc/static/js/2.8401795b.chunk.js",
+    "static/js/2.8401795b.chunk.js.map": "/hustcc/static/js/2.8401795b.chunk.js.map",
+    "index.html": "/hustcc/index.html",
+    "static/js/2.8401795b.chunk.js.LICENSE.txt": "/hustcc/static/js/2.8401795b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ed92043.js",
+    "static/js/2.8401795b.chunk.js",
+    "static/js/main.d48f99d9.chunk.js"
+  ]
+}
