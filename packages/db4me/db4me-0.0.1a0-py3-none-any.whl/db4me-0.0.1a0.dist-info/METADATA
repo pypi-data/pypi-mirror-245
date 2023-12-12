@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: db4me
+Version: 0.0.1a0
+Summary: Basic sqlalchemy helpers
+Author-email: Nicu Tofan <nicu.tofan@gmail.com>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Database
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: SQLAlchemy >=2.0.23
+Requires-Dist: pydantic >=2.5.2
+Provides-Extra: a-postgres
+Requires-Dist: asyncpg >=0.29.0 ; extra == 'a-postgres'
+Provides-Extra: a-sqlite
+Requires-Dist: aiosqlite >=0.18.0 ; extra == 'a-sqlite'
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Provides-Extra: tests
+Requires-Dist: black ; extra == 'tests'
+Requires-Dist: flake8 ; extra == 'tests'
+Requires-Dist: isort ; extra == 'tests'
+Requires-Dist: mypy ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-mock ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: twine ; extra == 'tests'
+Requires-Dist: wheel ; extra == 'tests'
+
+# db4me
+
+Basic sqlalchemy helpers
+
+## Installation
+
+```bash
+python -m pip install db4me
+```
+
+## Usage
+
+TBD
+
+## Development
+
+Start by creating a virtual environment and installing the dependencies.
+If you have a `make` command available, you can run `make init` after
+the virtual environment is created and activated. Otherwise, you can run
+the following commands:
+
+```bash
+python -m venv venv
+source venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -e .[dev]
+```
