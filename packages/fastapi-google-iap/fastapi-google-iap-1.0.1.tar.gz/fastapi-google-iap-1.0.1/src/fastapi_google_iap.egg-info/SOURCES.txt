@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/fastapi_google_iap/__init__.py
+src/fastapi_google_iap/google_iap_middleware.py
+src/fastapi_google_iap.egg-info/PKG-INFO
+src/fastapi_google_iap.egg-info/SOURCES.txt
+src/fastapi_google_iap.egg-info/dependency_links.txt
+src/fastapi_google_iap.egg-info/requires.txt
+src/fastapi_google_iap.egg-info/top_level.txt
+tests/test_google_iap_middleware.py
