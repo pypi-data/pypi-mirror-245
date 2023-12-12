@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+dcpim/__init__.py
+dcpim/dcpim.py
+dcpim/test.py
+dcpim.egg-info/PKG-INFO
+dcpim.egg-info/SOURCES.txt
+dcpim.egg-info/dependency_links.txt
+dcpim.egg-info/requires.txt
+dcpim.egg-info/top_level.txt
