@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyudcp/EnigmaCLI.py
+pyudcp/InterfaceCLI.py
+pyudcp/__init__.py
+pyudcp/enigmapy.py
+pyudcp/taxonomycodegen.py
+pyudcp.egg-info/PKG-INFO
+pyudcp.egg-info/SOURCES.txt
+pyudcp.egg-info/dependency_links.txt
+pyudcp.egg-info/requires.txt
+pyudcp.egg-info/top_level.txt
+tests/test_enigmapy.py
