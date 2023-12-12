@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+geolia/__about__.py
+geolia/__init__.py
+geolia/geometry.py
+geolia/interp.py
+geolia/mesh.py
+geolia.egg-info/PKG-INFO
+geolia.egg-info/SOURCES.txt
+geolia.egg-info/dependency_links.txt
+geolia.egg-info/requires.txt
+geolia.egg-info/top_level.txt
+test/test_dev.py
+test/test_interp.py
+test/test_mesh.py
