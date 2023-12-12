@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "astrafocus"
+authors = [
+    {name = "David Degen", email = "ddegen@ethz.ch"},
+]
+description = "My package description"
+readme = "README.md"
+requires-python = ">=3.11.3"
+keywords = ["telescope", "autofocus"]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "astropy==5.2.2",
+    "opencv-python",
+    "numpy==1.24.3",
+    "pandas==2.0.1",
+    "photutils>=1.8.0",
+    "scipy==1.9.3",
+    "sqlite3worker==1.1.7",
+    "statsmodels",
+]
+version = '0.0.3'
+
+[tool.setuptools.packages.find]
+where = ["scr"]
+
+[project.optional-dependencies]
+visualization = ["ipython", "matplotlib", "notebook"]
+dash = ["dash", "dash_bootstrap_components", "plotly"]
+extended = ["pyswarms", "scikit-learn"]
+alpaca = ["alpyca"]
