@@ -1,0 +1,16 @@
+ipython
+packg
+numpy
+matplotlib
+jupyter
+notebook
+ipdb
+nltk
+pandas
+pyinstrument
+nvidia-ml-py3
+psutil
+beautifulsoup4
+lxml
+chardet
+spacy
