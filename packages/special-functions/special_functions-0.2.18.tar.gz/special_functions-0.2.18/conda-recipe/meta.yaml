@@ -1,0 +1,55 @@
+{% set name = "special_functions" %}
+{% set pyproject = load_file_data('pyproject.toml') %}
+{% set project = pyproject.get('project', {}) %}
+
+package:
+    name: "{{ name|lower }}"
+    version: {{ project.get('version') }}
+
+source:
+    path: ..
+
+# build:
+#     number: 0
+#     script:  
+#         - {{ PYTHON }} -m pip install . -vvv
+#         # - {{ PYTHON }} setup.py install
+
+requirements:
+    build:
+        - python                          # [build_platform != target_platform]
+        - meson-python                    # [build_platform != target_platform]
+        - cython                          # [build_platform != target_platform]
+        - {{ compiler('c') }}
+        - {{ compiler('fortran') }}       # [unix]
+
+    host:
+        - libcxx                          # [osx]
+        - python {{ python }}
+        - cython
+        - pip
+    run:
+        - python {{ python }}
+
+test:
+    imports:
+        - special_functions
+    requires:
+        - pytest
+        - pytest-cov
+        - scipy
+
+about:
+    home: {{ project.get('urls', {}).get('homepage') }}
+    license: MIT
+    license_family: MIT
+    license_file: LICENSE.txt
+    summary: {{ project.get('description') }}
+    description: {{ project.get('description') }}
+    doc_url: https://ameli.github.io/special_functions/index.html
+    doc_source_url: https://github.com/ameli/special_functions/blob/main/README.rst
+    dev_url: https://github.com/ameli/special_functions
+
+extra:
+    recipe-maintainers:
+        - ameli

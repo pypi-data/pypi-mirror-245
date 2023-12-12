@@ -1,0 +1,53 @@
+name: docs
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+
+            - name: Set up Python
+              uses: actions/setup-python@v4
+              with:
+                  python-version: '3.11' # do not upgrade to python 3.12, as 3.12 uses meson.build and cannot compile --inplace (needed for doc)
+                                         # however, 3.11 can be used with setup.py (instead of meson.build), with the advantage of using
+                                         # --inplace option, such as python setup.py build_ext --inplace.
+                                         # Why 3.12 cannot use setup.py? Because setup.py uses ditutils, which is deprecated since 3.12.
+
+            # Compile package with in-source build
+            - name: Install
+              run: |
+                  sudo apt-get update
+                  sudo apt-get install gfortran -y
+                  sudo apt-get install gcc -y
+                  python3 -m pip install --upgrade pip
+                  python3 -m pip install --upgrade setuptools
+                  python3 -m pip install --upgrade numpy
+                  export CYTHON_BUILD_IN_SOURCE=1
+                  python3 setup.py install
+
+            # Build sphinx in /docs/build
+            - name: Build Sphinx
+              run: |
+                sudo apt-get install pandoc
+                python3 -m pip install -r docs/requirements.txt
+                sphinx-apidoc -f -o docs/source/_modules/ ./special_functions
+                make html --directory=docs
+                touch docs/build/html/.nojekyll
+                echo 'Visit [Documentation](https://ameli.github.io/special_functions/index.html).' > docs/build/html/README.md
+
+            # Deploy to github pages
+            - name: Deploy
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                folder: docs/build/html
+                branch: gh-pages
