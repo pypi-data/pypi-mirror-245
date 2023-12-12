@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: lazycodet
+Version: 0.0.14
+Author: Nguyen Tan Tai
+Author-email: nguyentantaitcag2000@gmail.com
+Requires-Dist: unidecode
+
