@@ -1,0 +1,23 @@
+{
+    "cSpell.words": [
+      "arithmatex",
+      "cairocffi",
+      "fontawesome",
+      "highlightjs",
+      "inlinehilite",
+      "linenums",
+      "materialx",
+      "mkdocs",
+      "mkdocstrings",
+      "noopener",
+      "pipwin",
+      "poolclass",
+      "pymdownx",
+      "superfences"
+    ],
+    "python.testing.pytestArgs": [
+      "log2me"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
