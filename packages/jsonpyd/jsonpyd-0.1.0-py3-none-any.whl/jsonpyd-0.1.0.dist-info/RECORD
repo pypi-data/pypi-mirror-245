@@ -1,0 +1,9 @@
+jsonpyd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonpyd/cli.py,sha256=y3HoZrV42b1p84xQQoWvPf52kTO74Ut2OvxLd2ApGQM,1314
+jsonpyd/jsonpyd.py,sha256=Zc3gC9x6jDeCMKp4wImxOq72KjYanEyiemjbzHWkVBQ,4717
+jsonpyd/util.py,sha256=qlHJSnVLIyqV36_NxNkv723rKkxWA-Qx1H8nDII8kP4,2092
+jsonpyd-0.1.0.dist-info/LICENSE,sha256=B26g73Ss77cG90m9nszDMEeFtLMA6KoQ1bGUtYAjUGU,1060
+jsonpyd-0.1.0.dist-info/METADATA,sha256=RNSIBzk3Uk2p9zKzaEEXVRUgcRCfRLxf-W3SLYOfs1M,1342
+jsonpyd-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+jsonpyd-0.1.0.dist-info/entry_points.txt,sha256=OcFOxKSp--VXBz_EiGiJRAn3lNGiszNeNyRI8YO3vpM,49
+jsonpyd-0.1.0.dist-info/RECORD,,

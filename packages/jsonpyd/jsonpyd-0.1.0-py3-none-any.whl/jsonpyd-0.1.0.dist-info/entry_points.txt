@@ -1,0 +1,3 @@
+[console_scripts]
+jsonpyd=jsonpyd.cli:start_cli
+
