@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: safetext
+Version: 0.0.4
+Summary: Rule-based profanity checking tool for English and Turkish.
+Home-page: https://github.com/deepsafe/safetext
+Author: 
+License: MIT
+Keywords: text,profanity,filtering,turkish,english
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lingua-language-detector ==1.3.1
+Requires-Dist: pysrt
+Provides-Extra: dev
+Requires-Dist: black ==21.7b0 ; extra == 'dev'
+Requires-Dist: flake8 ==3.9.2 ; extra == 'dev'
+Requires-Dist: isort ==5.9.2 ; extra == 'dev'
+Requires-Dist: click ==8.0.4 ; extra == 'dev'
+Requires-Dist: importlib-metadata <4.3,>=1.1.0 ; (python_version < "3.8") and extra == 'dev'
+Provides-Extra: tests
+Requires-Dist: black ==21.7b0 ; extra == 'tests'
+Requires-Dist: flake8 ==3.9.2 ; extra == 'tests'
+Requires-Dist: isort ==5.9.2 ; extra == 'tests'
+Requires-Dist: click ==8.0.4 ; extra == 'tests'
+Requires-Dist: importlib-metadata <4.3,>=1.1.0 ; (python_version < "3.8") and extra == 'tests'
+
+<div align="center">
+  <p>
+    <a align="center" href="" target="_blank">
+      <img
+        width="1280"
+        src="https://github.com/safevideo/safetext/assets/44926076/9af66dde-3a93-4c5b-b802-cb31dffcb2e5"
+      >
+    </a>
+  </p>
+</div>
+
+# safetext
+
+Rule-based profanity checking tool for English and Turkish.
+
+### installation
+
+```bash
+pip install safetext
+```
+
+### usage
+
+```python
+from safetext import SafeText
+
+st = SafeText(language='en')
+
+results = st.check_profanity(text='Some text with <profanity-word>.')
+results
+>> {'word': '<profanity-word>', 'index': 4, 'start': 15, 'end': 31}
+
+text = st.censor_profanity(text='Some text with <profanity-word>.')
+text
+>> "Some text with ***."
+```
+
+### automated language detection
+
+- automatically set language from text:
+
+```python
+from safetext import SafeText
+
+eng_text = "This story is about to take a dark turn."
+
+st = SafeText(language=None)
+st.set_language_from_text(eng_text)
+
+st.language
+>> 'en'
+```
+
+- automatically set language from .srt (subtitle) file:
+
+```python
+from safetext import SafeText
+
+turkish_srt_file_path = "turkish.srt"
+
+st = SafeText(language=None)
+st.set_language_from_srt(turkish_srt_file_path)
+
+st.language
+>> 'tr'
+```

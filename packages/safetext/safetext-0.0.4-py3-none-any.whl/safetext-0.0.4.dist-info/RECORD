@@ -1,0 +1,13 @@
+safetext/__init__.py,sha256=7OgysqmOmWM-KOsReVqRDfiuHy91okR1EULk3hEY8Mo,5691
+safetext/utils.py,sha256=aYpq_Vao9VoWRL3jex_dvLimn-Zs0HFDuy6rZqqXXLs,2390
+safetext/languages/de/words.txt,sha256=6-RNd3KJc5Dif3vsQS_c3w78KU5NsVf4SHxM2NT6vVU,534
+safetext/languages/en/words.txt,sha256=RnWQu8Y9rWHdxmilk19eDm6dpLTHBSvrPoYKnn7YGJo,4086
+safetext/languages/es/words.txt,sha256=BzM0JhzC58CDOfrv0vGfliPoJAoKwY_iomw2i4l0ls4,617
+safetext/languages/pt/words.txt,sha256=Be9SSwu3-D-HJX9uxNq_cOFri7aTD3afuT3q9gj_GW0,629
+safetext/languages/tr/words.txt,sha256=WFQjJ43-k5eGvOzsio9SeDtpAov9xwKLAEKMXALIKlo,4466
+safetext-0.0.4.dist-info/LICENSE,sha256=RUGzBm1aY_zSYCRShwd9ih2yv-Ppn9CcKUdSWRmVbZU,1065
+safetext-0.0.4.dist-info/METADATA,sha256=T_jQrfSdw4l56Wi75r8yCP_g7XTBm2TicwXq1fxT5pY,2727
+safetext-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+safetext-0.0.4.dist-info/entry_points.txt,sha256=GoRSVpOdubLCToZWdpnk_0UoR0xaOFBtRdtdZnrWl5w,70
+safetext-0.0.4.dist-info/top_level.txt,sha256=rvg68xJF6LVD1nJjx4isCEdAmd56kUubJWcbGeEXJa0,9
+safetext-0.0.4.dist-info/RECORD,,
