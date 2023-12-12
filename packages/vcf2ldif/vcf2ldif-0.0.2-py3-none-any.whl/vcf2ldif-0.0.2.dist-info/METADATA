@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: vcf2ldif
+Version: 0.0.2
+Summary: This tool is designed to convert *.vcf (vCard) contact files to *.ldif file, for further creation of shared phone books on LDAP server.
+Author-email: Katulos <katulos@protonmail.com>
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click==8.1.7
+Requires-Dist: phonenumbers==8.13.26
+Requires-Dist: vobject==0.9.6.1
+Requires-Dist: bump-my-version==0.11.0 ; extra == "dev"
+Requires-Dist: pip-tools==6.14.0 ; extra == "dev"
+Requires-Dist: bandit[toml]==1.7.5 ; extra == "test"
+Requires-Dist: black==23.3.0 ; extra == "test"
+Requires-Dist: check-manifest==0.49 ; extra == "test"
+Requires-Dist: flake8-bugbear==23.3.12 ; extra == "test"
+Requires-Dist: flake8-docstrings ; extra == "test"
+Requires-Dist: flake8-formatter_junit_xml ; extra == "test"
+Requires-Dist: flake8 ; extra == "test"
+Requires-Dist: flake8-pyproject ; extra == "test"
+Requires-Dist: pre-commit==2.21.0 ; extra == "test"
+Requires-Dist: pylint==2.17.7 ; extra == "test"
+Requires-Dist: pylint_junit ; extra == "test"
+Requires-Dist: pytest-cov==4.0.0 ; extra == "test"
+Requires-Dist: pytest-mock<3.10.1 ; extra == "test"
+Requires-Dist: pytest-runner ; extra == "test"
+Requires-Dist: pytest==7.3.1 ; extra == "test"
+Requires-Dist: pytest-github-actions-annotate-failures ; extra == "test"
+Requires-Dist: pytest_click==1.1.0 ; extra == "test"
+Requires-Dist: shellcheck-py==0.9.0.2 ; extra == "test"
+Project-URL: Documentation, https://github.com/katulos/vcf2ldif/tree/master#readme
+Project-URL: Home, https://github.com/katulos/vcf2ldif
+Project-URL: Source, https://github.com/katulos/vcf2ldif
+Project-URL: Tracker, https://github.com/katulos/vcf2ldif/issues
+Provides-Extra: dev
+Provides-Extra: test
+
+# vCard to ldif converter
+
+
+This tool is designed to convert `*.vcf` (vCard) contact files to `*.ldif` file, for further creation of shared phone books on `LDAP` server.
+
+## Installation
+`pip install vcf2ldif`
+
+## Usage
+```
+vcf2ldif \
+    --input-file path/to/input_file.vcf \
+    --root-dn ou=adressbook,dc=example,dc=com \
+    --output-file path/to/output_file.ldif
+```
+You can import the resulting ldif file into your LDAP server (e.g. OpenLDAP) with the following command:
+```
+ ldapmodify -c -D "cn=admin,dc=example,dc=com" -W -f path/to/output_file.ldif
+```
+When converting, you can also format phone numbers according to the following standards:
+
+* e164 (e.g.: `+18868886421`) by adding the option `--format-number e164`
+* international (e.g.: `+1 886-888-6421`) by adding the option `--format-number international`
+* national (e.g.: (e.g.: `(886) 888-6421`) by adding the option `--format-number rnational`
+
+You can learn more by invoking the command with the `--help` option
+```
+vcf2ldif --help
+```
+
+
+
