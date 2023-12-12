@@ -1,0 +1,5 @@
+[console_scripts]
+oofda = pytest_oof.__main__:main
+
+[pytest11]
+pytest_oof = pytest_oof.plugin
