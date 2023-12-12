@@ -1,0 +1,6 @@
+V.0.1
+V.0.2 - ini set link with work flolder and pypi  ©KANG - 2023-12-11  
+V.0.3 - test  ©KANG - 2023-12-11  
+V.0.4 - i need -m to add commit  ©KANG - 2023-12-11  
+V.0.5 - test -ok -welldone  ©KANG - 2023-12-11  
+V.0.6 - finish link-symbolic links  ©KANG - 2023-12-11  
