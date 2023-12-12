@@ -1,0 +1,11 @@
+tglib/__init__.py,sha256=AFsyIYejNKIcmfH74QWgFKlotGNrzWrpYtnJ6gzZMqk,90460
+tglib/api.py,sha256=gAZ8m6ezPYuhWfbe_OqpYXf3iauFHEtKD-FT3yS9lmk,24385
+tglib/http_manager.py,sha256=ByWvgRWNk3HBQck4egvh96CST40k7p0_4h9oavRIxok,465
+tglib/logger.py,sha256=kvjtFLvfGNKKdeRjfWS5TXGu8IkGWpPY28U644Nu7kw,700
+tglib/objects.py,sha256=BNssiAsvLFYgYLFS5h4kjtVH21ItMYVZJVDf6b_1t2c,137077
+tglib/update_manager.py,sha256=90lEQVLEQH2wgVxElJN8_xADBXqPab9DcUbNhdscFBQ,6537
+tglib-1.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tglib-1.0.2.dist-info/METADATA,sha256=YQLedmgMBzsBXHx0hEm3cw9T7Cr0RBdkU2_5Putn9zc,111
+tglib-1.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tglib-1.0.2.dist-info/top_level.txt,sha256=z09c-w7fXhZsZXrEIetnkwVe-yZNWyCyPf93QyFg9SE,6
+tglib-1.0.2.dist-info/RECORD,,
