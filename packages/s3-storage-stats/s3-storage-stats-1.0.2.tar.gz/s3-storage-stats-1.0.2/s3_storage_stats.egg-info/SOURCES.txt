@@ -1,0 +1,12 @@
+s3-storage-stats
+setup.py
+s3_storage_stats/__init__.py
+s3_storage_stats/args.py
+s3_storage_stats/base.py
+s3_storage_stats/logger.py
+s3_storage_stats/s3-storage-stats
+s3_storage_stats.egg-info/PKG-INFO
+s3_storage_stats.egg-info/SOURCES.txt
+s3_storage_stats.egg-info/dependency_links.txt
+s3_storage_stats.egg-info/requires.txt
+s3_storage_stats.egg-info/top_level.txt
