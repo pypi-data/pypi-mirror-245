@@ -1,0 +1,11 @@
+zvolv_sdk/__init__.py,sha256=Qv3YJXLtP6Zek5QXNc4LuAq0qGck_eKDCjp7zfmEsd0,54
+zvolv_sdk/client.py,sha256=PRx2TJe6DUS41-fKhq5uac2hMCcOORuH0a4KAzCY55U,2937
+zvolv_sdk/server_configuration.py,sha256=OtWM-m_8iJp9JTCQZJ56aXogG1QBhLv02wDJ26V0Cl8,1233
+zvolv_sdk/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zvolv_sdk/test/test_client.py,sha256=owX5wutyQONlJQ3fiwv0EMS_M9G00RRcj6Upl24xEAo,1742
+zvolv_sdk/test/test_client_one.py,sha256=hfBH2UWHjtu__I_g5XxXfqUaVN-ja7p0OmfCRZjT2NY,1444
+zvolvAuth-0.0.15.dist-info/LICENSE,sha256=FxtjQV26vvObELD-YVeIXcWG2VxErEz2iVlTnDpybFg,1074
+zvolvAuth-0.0.15.dist-info/METADATA,sha256=-YniGqTGu1ozkELECtSsc6WgdOpphHN29b8lKkQzqjM,5256
+zvolvAuth-0.0.15.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+zvolvAuth-0.0.15.dist-info/top_level.txt,sha256=5z6sXioEOsq3WjgueG-unxmegc9RVHXHIVl9i1zKwHw,10
+zvolvAuth-0.0.15.dist-info/RECORD,,
