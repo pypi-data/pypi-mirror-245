@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+django_powcaptcha/__init__.py
+django_powcaptcha/apps.py
+django_powcaptcha/client.py
+django_powcaptcha/fields.py
+django_powcaptcha/widgets.py
+django_powcaptcha.egg-info/PKG-INFO
+django_powcaptcha.egg-info/SOURCES.txt
+django_powcaptcha.egg-info/dependency_links.txt
+django_powcaptcha.egg-info/not-zip-safe
+django_powcaptcha.egg-info/requires.txt
+django_powcaptcha.egg-info/top_level.txt

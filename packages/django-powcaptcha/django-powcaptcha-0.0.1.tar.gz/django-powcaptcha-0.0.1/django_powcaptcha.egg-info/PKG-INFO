@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: django-powcaptcha
+Version: 0.0.1
+Summary: Django PowCaptcha form field/widget app.
+Home-page: https://github.com/aeyoll/django-powcaptcha
+Author: Jean-Philippe Bidegain
+Author-email: jp@bidega.in
+License: BSD
+Project-URL: Changelog, https://github.com/aeyoll/django-powcaptcha/blob/main/CHANGELOG.md
+Project-URL: Issue Tracker, https://github.com/aeyoll/django-powcaptcha/issues
+Keywords: django,powcaptcha
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+Requires-Dist: django
+
+# Django PowCaptcha
+
+Django PowCaptcha form field/widget integration app.
+
+## Installation
+
+1. Install with `pip install django-powcaptcha`.
+
+2. Add `'django_powcaptcha'` to your `INSTALLED_APPS` setting.
+
+```python
+INSTALLED_APPS = [
+    ...,
+    'django_powcaptcha',
+    ...
+]
+```
+
+3. Add settings.
+
+For example:
+
+```python
+POWCAPTCHA_API_URL = 'https://captcha.yourdomain.com'
+POWCAPTCHA_API_KEY = 'MyPOWCAPTCHAPrivateKey456'
+```
+
+## Usage
+
+### Fields
+
+The quickest way to add PowCaptcha to a form is to use the included
+`PowCaptchaField` field class. For example:
+
+```python
+from django import forms
+from django_powcaptcha.fields import PowCaptchaField
+
+class FormWithCaptcha(forms.Form):
+    captcha = PowCaptchaField()
+```
