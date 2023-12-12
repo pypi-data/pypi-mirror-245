@@ -1,0 +1,2 @@
+[console_scripts]
+easyeda2ato = easyeda2ato.__main__:main
