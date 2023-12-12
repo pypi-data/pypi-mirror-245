@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: py-tree-sitter-epics
+Version: 0.1.3
+Summary: Facilitate tree-sitter-epics parsing in python
+Author: Alexis Gaget
+Author-email: alexis.gaget@cea.fr
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
