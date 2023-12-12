@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+capturing_process/__init__.py
+capturing_process/capturing_process.py
+capturing_process/stream_thread.py
+capturing_process.egg-info/PKG-INFO
+capturing_process.egg-info/SOURCES.txt
+capturing_process.egg-info/dependency_links.txt
+capturing_process.egg-info/requires.txt
+capturing_process.egg-info/top_level.txt
