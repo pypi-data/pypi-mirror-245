@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: owlsimilarity
+Version: 0.0.1
+Summary: Library with implementations of the main similarity and relatedness measures for ontologies.
+Home-page: UNKNOWN
+Author: Edgar Henrique de Oliveira Lira
+Author-email: edgar.jj.29@gmail.com
+License: GNU GENERAL PUBLIC LICENSE
+Keywords: Relatedness Measure,Similarity Measure,Ontology Measure,Ontology
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# owlsimilarity
+
+Library with implementations of the main similarity and relatedness measures for ontologies.
+
+# Documentation:
+
+github.com/EdgarLiraa/Similarity_Measures
+
