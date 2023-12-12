@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ros_introspect
+Version: 0.1.1
+Summary: Pure Python library for working with the files in ROS packages
+Project-URL: Homepage, https://github.com/MetroRobots/ros_introspect
+Project-URL: Bug Tracker, https://github.com/MetroRobots/ros_introspect/issues
+Author-email: "David V. Lu!!" <davidvlu@gmail.com>
+Maintainer-email: "David V. Lu!!" <davidvlu@gmail.com>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Requires-Dist: betsy-ros
+Requires-Dist: pyyaml
+Requires-Dist: ruamel-yaml
+Requires-Dist: stylish-cmake-parser
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Description-Content-Type: text/markdown
+
+# ros_introspect
+Pure Python library for working with the files in ROS packages
