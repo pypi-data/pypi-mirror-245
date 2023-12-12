@@ -1,0 +1,8 @@
+README.md
+setup.py
+cloudfunctions/__init__.py
+cloudfunctions/print_test.py
+forgecloud.egg-info/PKG-INFO
+forgecloud.egg-info/SOURCES.txt
+forgecloud.egg-info/dependency_links.txt
+forgecloud.egg-info/top_level.txt
