@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: idnapi
+Version: 0.0.3
+Summary: IdentityNow REST API Client
+Author: Mark Spain
+Author-email: Mark.Spain@ey.com
+Keywords: python,sailpoint,identitynow,idn
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Requires-Python: >=3
+Requires-Dist: requests
+Requires-Dist: python-dateutil
+
+Implementation of the IdentityNow REST API in Python
