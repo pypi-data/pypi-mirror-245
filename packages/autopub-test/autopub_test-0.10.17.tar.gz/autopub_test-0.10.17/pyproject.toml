@@ -1,0 +1,26 @@
+[project]
+name = "autopub-test"
+version = "0.10.17"
+description = ""
+authors = [
+    { name = "Patrick Arminio", email = "patrick.arminio@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.12"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "autopub==1.0.0-alpha.18",
+    "PyGithub>=2.1.1",
+    "httpx>=0.25.2",
+]
