@@ -1,0 +1,11 @@
+sinaraml_cli_host/__init__.py,sha256=EKF5PpDsSiSiNphWPv7_Q7-JML1Qpsy_w-wDfCtsPxg,33
+sinaraml_cli_host/_version.py,sha256=LgL2-mSddndrXJqkoCQZIIWUEBmCJzKA0ZGXT2iUdYQ,426
+sinaraml_cli_host/common_utils.py,sha256=cF8TksAik4XNLXcR4HmDdEXb-xWPRg-SYYi2cWzeZTA,3036
+sinaraml_cli_host/docker_utils.py,sha256=YP9NAp_4fg-0xFwAsd4RhIb42WwHXI1TL6_q7LVLRxs,8384
+sinaraml_cli_host/sinara_model.py,sha256=oui2k8sJ9hMv4XZTaL0wULOx1leQS0mcIj3ni2PfANs,9100
+sinaraml_cli_host/sinara_server.py,sha256=ZWA5FrBgURwxvH4jP2Aaup8pmmF3SeBfedbGIRr1RC4,18312
+sinaraml_cli_host/sinaraml_cli_host.py,sha256=ujwW4W6rg3nCeHM6RYmUhIxCPnMO0YRYXcifzc-A1tA,465
+sinaraml_cli_host-2023.11.20.3.dist-info/METADATA,sha256=dBWADcumTY9vaJ0P-n45AxeDaeYMAQ4SAPW-_u7xEcg,14951
+sinaraml_cli_host-2023.11.20.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+sinaraml_cli_host-2023.11.20.3.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sinaraml_cli_host-2023.11.20.3.dist-info/RECORD,,
