@@ -1,0 +1,2 @@
+[console_scripts]
+fprime-native-packager = fprime_native_images.__main__:main
