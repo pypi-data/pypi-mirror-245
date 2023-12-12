@@ -1,0 +1,10 @@
+LICENSE
+README.txt
+setup.py
+djsce/__init__.py
+djsce/dsa.py
+djsce/python.py
+djsce.egg-info/PKG-INFO
+djsce.egg-info/SOURCES.txt
+djsce.egg-info/dependency_links.txt
+djsce.egg-info/top_level.txt
