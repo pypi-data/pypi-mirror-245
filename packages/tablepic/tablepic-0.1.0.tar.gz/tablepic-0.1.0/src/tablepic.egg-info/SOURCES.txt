@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+readme_pypi.md
+src/demo.py
+src/tablepic/__init__.py
+src/tablepic/main.py
+src/tablepic.egg-info/PKG-INFO
+src/tablepic.egg-info/SOURCES.txt
+src/tablepic.egg-info/dependency_links.txt
+src/tablepic.egg-info/top_level.txt
