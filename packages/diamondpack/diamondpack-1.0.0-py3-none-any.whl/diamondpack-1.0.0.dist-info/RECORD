@@ -1,0 +1,13 @@
+diamondpack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diamondpack/__main__.py,sha256=xB5bDjQVQ6N4LL8ZAdX_WKG53XX0jGuFuIhrCsig6h4,779
+diamondpack/pack.py,sha256=LcBfiE12EFAJzJLQ_u5J5lpr9RQjtGF9yhdJESTr1eg,2042
+diamondpack/utils.py,sha256=nPH_c7veB3_Q6sFlRysjV-cW5FFLd7XxKaKc15nlFVE,65
+diamondpack/app-templates/app.bat,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diamondpack/app-templates/app.cpp,sha256=bdeu3B7G6oTBjD9t1c1_BDbap4n6RvdNHacn-5191m8,18
+diamondpack/app-templates/app.sh,sha256=ZynHNjHt0_6kpVbVPrHKswtq-AOxkVTjhoddZ_J-G-0,94
+diamondpack-1.0.0.dist-info/LICENSE,sha256=fDrCLKI_lLbO88WTSx4QGbbOEZrWhcw0TBLOQxkydX4,1070
+diamondpack-1.0.0.dist-info/METADATA,sha256=b6td7TD2oP8DZvtyAsFrRHY9xBGLZPlzxgVzOwUTyL0,2147
+diamondpack-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+diamondpack-1.0.0.dist-info/entry_points.txt,sha256=bnSA3gSI6wGwfQ-WwQqJQNrEWi5SH2hFntd83y68su4,58
+diamondpack-1.0.0.dist-info/top_level.txt,sha256=tvf-NLABUNNOMZSgAn8aDkHS50afOI8siizXmgWrXEE,12
+diamondpack-1.0.0.dist-info/RECORD,,
