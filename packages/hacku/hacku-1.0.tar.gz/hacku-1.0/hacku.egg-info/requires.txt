@@ -1,0 +1,8 @@
+beautifulsoup4
+loguru
+request[socks]
+id-validator
+random-user-agent
+jieba
+pycryptodome
+rsa
