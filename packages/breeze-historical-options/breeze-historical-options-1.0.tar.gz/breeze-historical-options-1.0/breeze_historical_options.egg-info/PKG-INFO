@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: breeze-historical-options
+Version: 1.0
+Summary: A Python package for easily downloading historical options data
+Home-page: https://github.com/madmay247/breeze-historical-options
+Author: Mayank Rai
+Author-email: mrai748@gmail.com
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE.txt
+
+A Python package for easily downloading second-level historical options data
