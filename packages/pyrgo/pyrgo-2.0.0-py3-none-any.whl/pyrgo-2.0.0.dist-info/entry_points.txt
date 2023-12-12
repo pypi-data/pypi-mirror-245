@@ -1,0 +1,2 @@
+[console_scripts]
+pyrgo = pyrgo.cli._main:cli
