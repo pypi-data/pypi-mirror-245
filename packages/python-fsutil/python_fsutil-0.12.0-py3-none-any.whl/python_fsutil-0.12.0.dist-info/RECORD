@@ -1,0 +1,8 @@
+fsutil/__init__.py,sha256=YIHGlEZd6monzxGLsw07X5ZYWqfg_otx-FQPLdeE4YA,38516
+fsutil/metadata.py,sha256=0ftqc9BXPYtOpU-J9EhK0S7c34Rc96Tsx7eQSpabXtk,266
+fsutil/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_fsutil-0.12.0.dist-info/LICENSE.txt,sha256=IcPfOD_lonKcLMnPRhiWdQUPW_LYW-5TTDljwi3UXQg,1078
+python_fsutil-0.12.0.dist-info/METADATA,sha256=QBGWF_HGwjgkCyllklBAkGwVwO3lf-Lxkqs1j3yLneo,24314
+python_fsutil-0.12.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+python_fsutil-0.12.0.dist-info/top_level.txt,sha256=KGTSjNLPWmxnZt8BFMZQrpnhkO7DsKrYWoXK-Sf3wBQ,7
+python_fsutil-0.12.0.dist-info/RECORD,,
