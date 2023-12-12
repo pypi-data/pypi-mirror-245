@@ -1,0 +1,17 @@
+{
+  "var":        "TT_VARIABLE_DEFINE",
+  "function":   "TT_FUNCTION_DEFINE",
+
+  "null":       "TT_NULL",
+  "true":       "TT_BOOLEAN",
+  "false":      "TT_BOOLEAN",
+  "in":         "TT_IN",
+
+  "if":         "TT_CONDITIONAL",
+  "else":       "TT_CONDITIONAL",
+
+  "while":      "TT_WHILE",
+  "for":        "TT_FOR",
+
+  "return":     "TT_RETURN"
+}
