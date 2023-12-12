@@ -1,0 +1,2 @@
+[console_scripts]
+subfind3r = subfind3r:interactive
