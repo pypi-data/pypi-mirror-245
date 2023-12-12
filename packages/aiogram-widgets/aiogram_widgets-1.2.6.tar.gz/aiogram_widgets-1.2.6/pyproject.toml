@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "aiogram-widgets"
+version = "1.2.6"
+readme = "README.md"
+description = "Create most popular widgets for aiogram 3 in few code lines "
+keywords = ["aiogram", "telegram api", "pagination", "calendar", "checkbox", "multiselect", "templates"]
+authors = ["ggindinson"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+packages = [{include = "aiogram_widgets"}]
+
+
+[project.urls]
+"Homepage" = "https://github.com/ggindinson/aiogram-widgets"
+"PyPI" = "https://pypi.python.org/pypi/aiogram_widgets/"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiogram = ">=3.0.0b1"
+pydantic = ">=1.10.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
