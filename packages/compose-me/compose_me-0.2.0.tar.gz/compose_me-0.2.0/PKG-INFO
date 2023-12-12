@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: compose-me
+Version: 0.2.0
+Summary: Helm's little sister for Docker Compose.
+Author-Email: Niklas Rosenstein <rosensteinniklas@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: jinja2>=3.1.2
+Requires-Dist: typer>=0.9.0
+Requires-Dist: mypy>=1.7.1
+Requires-Dist: black>=23.11.0
+Requires-Dist: flake8>=6.1.0
+Description-Content-Type: text/markdown
+
+<h1 align="center">compose-me</h1>
+
+  [Helm]: https://helm.sh/
+  [Jinja]: https://jinja.palletsprojects.com/
+
+Compose-me is a tool inspired by [Helm][] to create templates for docker-compose projects. It is particularly useful
+for relatively complex applications that requires some customization. Compose-me allows you to create a template
+project that can be configured using a small subset of well-defined values.
+
+📖 View the [documentation](https://niklasrosenstein.github.io/compose-me).
+
+## Installation
+
+Install compose-me from PyPI:
+
+    $ pipx install compose-me
+
+Compose-me requires Python 3.10 or newer.
