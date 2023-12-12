@@ -1,0 +1,8 @@
+click
+pandas
+pytest
+pyarrow
+tqdm
+
+[:platform_system == "Windows"]
+pyreadline3
