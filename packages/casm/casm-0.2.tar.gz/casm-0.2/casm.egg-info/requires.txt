@@ -1,0 +1,2 @@
+podman_compose>=1.0.6
+xarg-python>=1.0
