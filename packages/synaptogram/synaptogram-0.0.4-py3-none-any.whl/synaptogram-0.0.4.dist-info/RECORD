@@ -1,0 +1,16 @@
+synaptogram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synaptogram/gui.enaml,sha256=QLkdlVB53Udr_mV5pHPDDpFdJLdzoTrs39awaNNitZQ,6763
+synaptogram/main.py,sha256=zKQjKSaYwstqZoDrZGoBpey3Qiei_JTedLDATH2cAXM,1556
+synaptogram/model.py,sha256=CodGOLBwAmV203jx67zow8Cjg51JhxjDzHXH-AYrJUk,5274
+synaptogram/presenter.py,sha256=icv8PdOYqSgkHmgfJ0LCCbI1uMzar3UH_u-pp7RmZIw,6765
+synaptogram/reader.py,sha256=24O-qr97_zzbe1cNPakehHzZqKRGPqqXxW27iKo8ZMQ,4708
+synaptogram/version.py,sha256=yBVOKdXLEcTVc7YV7ZPqRXhRDRt-pKrfXxcgHkgPY5g,411
+synaptogram/icons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synaptogram/icons/main-icon.ico,sha256=uJF5oKRfqe2tmcbjzoGnpDLgijB55xE1Ofh5psf_QPU,8430
+synaptogram/icons/main-icon.png,sha256=w5WvP-AXq3OZRbRUzOJrKlBH8QtSBfLbHUzOliEBS8w,1555
+synaptogram/icons/make_icons.py,sha256=P9MPHosS7-Lx8nRt60xpWY4pfPNHwWw8NfZk-RQtxDc,1029
+synaptogram-0.0.4.dist-info/METADATA,sha256=UX-3S_CAXrBricIs4YB6JhWrrLO8mcYMzPbsxQRtpJw,8836
+synaptogram-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+synaptogram-0.0.4.dist-info/entry_points.txt,sha256=IAqeZgoXajEnOkkYr5uQ7HmfEG8a3blqzv9EmICgjUA,54
+synaptogram-0.0.4.dist-info/top_level.txt,sha256=kfX9eDpRXDDzwSgRsAhoux64CbldNOK1bOY_KfbFvM4,12
+synaptogram-0.0.4.dist-info/RECORD,,
