@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+scStateDynamics/__init__.py
+scStateDynamics/scStateDynamics.py
+scStateDynamics.egg-info/PKG-INFO
+scStateDynamics.egg-info/SOURCES.txt
+scStateDynamics.egg-info/dependency_links.txt
+scStateDynamics.egg-info/requires.txt
+scStateDynamics.egg-info/top_level.txt
+tutorial/scStateDynamics_tutorial.ipynb
