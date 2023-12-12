@@ -1,0 +1,17 @@
+README.md
+setup.py
+drf_friend/__init__.py
+drf_friend/core.py
+drf_friend/drf_core.py
+drf_friend/drf_dto.py
+drf_friend/mail.py
+drf_friend/managers.py
+drf_friend/models.py
+drf_friend/paginate.py
+drf_friend/path.py
+drf_friend/router.py
+drf_friend/status.py
+drf_friend.egg-info/PKG-INFO
+drf_friend.egg-info/SOURCES.txt
+drf_friend.egg-info/dependency_links.txt
+drf_friend.egg-info/top_level.txt
