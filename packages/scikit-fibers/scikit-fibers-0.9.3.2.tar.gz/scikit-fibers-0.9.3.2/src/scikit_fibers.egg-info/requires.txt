@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit-learn
+lifelines
+skrebate==0.7
+matplotlib
+seaborn
+pytest
+tqdm
