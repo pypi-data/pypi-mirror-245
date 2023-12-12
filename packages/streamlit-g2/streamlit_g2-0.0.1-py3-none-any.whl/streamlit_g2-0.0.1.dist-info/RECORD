@@ -1,0 +1,15 @@
+streamlit_g2/__init__.py,sha256=ZL3iJUbk0IQKZppR-9mj-hBBPLq4WN8UBwYbvkGJG4Q,1307
+streamlit_g2/frontend/build/asset-manifest.json,sha256=IxQXYvvISUeeiOFg9oetQdkbtkjdpyE7z-C2ztNJ-4g,739
+streamlit_g2/frontend/build/index.html,sha256=tQC8oYplr1hgshKJkC8LUPqTS8y3EhJOyYR8kKYKfb8,2047
+streamlit_g2/frontend/build/static/js/2.8401795b.chunk.js,sha256=Jdr9BMaHfZE8_Uf7aFlIHDZz8YYE3IKsshhzAHu2EV0,1426178
+streamlit_g2/frontend/build/static/js/2.8401795b.chunk.js.LICENSE.txt,sha256=NvSQDQMBC63zN2oxYI-SkpXDpXPgkYZxC-LL6i_PKcQ,2150
+streamlit_g2/frontend/build/static/js/2.8401795b.chunk.js.map,sha256=05Rr0Pb2_ORNk1Jsj2NZ0NfRXAkqH9ZFQgsri9gsPpo,5006556
+streamlit_g2/frontend/build/static/js/main.7fdc4be8.chunk.js,sha256=eH7YKztEMf_3-4gfnyyKOVkSB3F56vNMWLwoN0jqIgE,470
+streamlit_g2/frontend/build/static/js/main.7fdc4be8.chunk.js.map,sha256=4N6VVuF7EiCxExqTEyWgk4EvMbYaiZo9zZ7ANsPykzY,1196
+streamlit_g2/frontend/build/static/js/runtime-main.3ed92043.js,sha256=f0fQjoCTF5vmgoey2Kqio4QKmxPdJ1Ymsdje261VP2w,1578
+streamlit_g2/frontend/build/static/js/runtime-main.3ed92043.js.map,sha256=_s-S74Eu86E0wKdujsw0ZWbzAng-lnSXPdRYIUdm55k,8357
+streamlit_g2-0.0.1.dist-info/LICENSE,sha256=C36RoIAzj4XziKap2uaoE-l22vD1TxzTbdhVgOZ2IUc,1073
+streamlit_g2-0.0.1.dist-info/METADATA,sha256=YSPqfvgObl2Rg6fVF8STcmG5VjXYAcxTrDIoEdhMVK0,346
+streamlit_g2-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+streamlit_g2-0.0.1.dist-info/top_level.txt,sha256=g0INkCQPPcU7jrH3-DoyYp679cxqjnryfEf63H1QaUI,13
+streamlit_g2-0.0.1.dist-info/RECORD,,
