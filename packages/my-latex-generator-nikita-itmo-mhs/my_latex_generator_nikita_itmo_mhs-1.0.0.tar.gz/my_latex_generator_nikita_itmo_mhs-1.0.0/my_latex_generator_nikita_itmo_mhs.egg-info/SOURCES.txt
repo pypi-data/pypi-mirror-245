@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+my_latex_generator_nikita_itmo_mhs.egg-info/PKG-INFO
+my_latex_generator_nikita_itmo_mhs.egg-info/SOURCES.txt
+my_latex_generator_nikita_itmo_mhs.egg-info/dependency_links.txt
+my_latex_generator_nikita_itmo_mhs.egg-info/top_level.txt
+tsk_second/__init__.py
+tsk_second/latex_generator.py
