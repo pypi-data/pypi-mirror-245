@@ -1,0 +1,15 @@
+drf_friend/__init__.py,sha256=sKCJ9v5ry13ScKW4os90newJktFFbm5a36cTaOZwjAg,112
+drf_friend/core.py,sha256=yqvn-kaq4aOo7ExjOEPDpS-EPjGccC5f2CQRVcmbT-8,1884
+drf_friend/drf_core.py,sha256=OtHUhz6S_dXPXWzvVvGsVp1mbC1MH_zlOMcefut9Bms,466
+drf_friend/drf_dto.py,sha256=MvUulu5e0uPeqeH_4CYw1Zg4KXdeVCdNBWNf1cXUx1s,793
+drf_friend/mail.py,sha256=UxphvB53tFV0M1rCZom4traIV3iClf58E3B6Zo92k0E,776
+drf_friend/managers.py,sha256=mRhZzSiy_PRyu8x8BSBIHmQX4NHwaf0AHChzdrL4W_Y,328
+drf_friend/models.py,sha256=XInc1L3BjH1QVbPCRde3RR-s5-ofZjpm_pOKNP84jAQ,1036
+drf_friend/paginate.py,sha256=k-hPZ7eRVFRqrHJ_PUaru01p9Gp1nNYyZcejI2RJMbA,1416
+drf_friend/path.py,sha256=IcHeyjNGLAZ_VvWujiX70G6ks96oTAXpZBun08YgWuI,255
+drf_friend/router.py,sha256=K_4XqNIs6jsSdwz9X-PackhOJrU6LfaxbnEPkTzCTa8,4104
+drf_friend/status.py,sha256=s1xQgu27Zx_sEOnvIGM-F7cHt-S1hiU57WQhNMGH8hg,2410
+drf_friend-0.0.14.dist-info/METADATA,sha256=4twwMGL-cNV-htItq7uoU4FPS6EB_fjMHBS9xHXq9Xk,1662
+drf_friend-0.0.14.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+drf_friend-0.0.14.dist-info/top_level.txt,sha256=bZuocPp7GJ7kcU-fiqC9F62FL8wiZsH1Sw7mRrekU8M,11
+drf_friend-0.0.14.dist-info/RECORD,,
