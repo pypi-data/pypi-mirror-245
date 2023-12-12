@@ -1,0 +1,7 @@
+.gitignore
+.DS_Store
+__pycache__
+venv
+dist
+secrets.toml
+streamlit-mongo.sublime*
