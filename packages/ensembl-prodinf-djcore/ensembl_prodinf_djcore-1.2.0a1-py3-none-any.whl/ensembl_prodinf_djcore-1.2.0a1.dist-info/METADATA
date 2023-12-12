@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ensembl-prodinf-djcore
+Version: 1.2.0a1
+Summary: Ensembl Production infrastructure core package
+Home-page: https://github.com/Ensembl/ensembl-prodinf-djcore
+Author: mchakiachvili
+Author-email: ensembl-production@ebi.ac.uk
+Maintainer: Ensembl Production Team
+Maintainer-email: ensembl-production@ebi.ac.uk
+License: APACHE 2.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Requires-Python: >=3.7
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: Django ~=3.2.2
+Requires-Dist: django-mysql ~=3.11.1
+Requires-Dist: django-mirage-field ==1.1.8
+
