@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: GmGM
+Version: 0.0.2
+Summary: An implementation of the Gaussian multi-Graphical Model
+Project-URL: Homepage, https://github.com/BaileyAndrew/GmGM-python
+Project-URL: Bug Tracker, https://github.com/BaileyAndrew/GmGM-python/issues
+Author-email: Bailey Andrew <sceba@leeds.ac.uk>
+License: MIT License
+        
+        Copyright (c) 2023 BaileyAndrew
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: dask>=2022.03
+Requires-Dist: numba>=0.57
+Requires-Dist: numpy>=1.23
+Requires-Dist: scipy>=1.9
+Description-Content-Type: text/markdown
+
+# GmGM-python
+A python package for the GmGM algorithm.  [Read the pre-print here.](https://arxiv.org/abs/2211.02920)
+
+This is a very early version so the API is subject to change.
+
+## Installation
+
+```{bash}
+# Pip
+python -m pip install GmGM
+```
+
+Conda install coming soon.
+
+## About
+
+This package learns a graphical representation of every "axis" of your data.  For example, if you had a paired scRNA+scATAC multi-omics dataset, then your axes would be "genes" (columns of scRNA matrix), "axes" (columns of scATAC matrix), and "cells" (rows of both matrices).
+
+This package works on any dataset that can be expressed as multiple tensors of arbitrary length (so multi-omics, videos, etc...).  The only restriction is that no tensor can have the same axis twice (no "genes x genes" matrix); the same axis can appear multiple times, as long as it only appears once per matrix.
+
+## Usage
+
+The first step is to express your dataset as a "Dataset" object.
+
+## Roadmap
+
+- [ ] Add direct support for AnnData and MuData objects (so that converson to "Dataset" is not needed)
+- [ ] Stabilize API
+- [ ] Add comprehensive docs
