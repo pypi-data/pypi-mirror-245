@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: advanced-pw-gen
+Version: 1.0
+Provides-Extra: dev
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
