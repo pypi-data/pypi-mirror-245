@@ -1,0 +1,6 @@
+__pycache__
+.venv
+dist
+rocher/vs
+.ruff_cache
+.pytest_cache
