@@ -1,0 +1,10 @@
+tglib/__init__.py,sha256=ZSCwyEpPpgB9HcGO3Xtzu1UdOHbuxLp0j4FWZE0dwK0,90697
+tglib/api.py,sha256=291aM6Buf1blTrvXnjiyPTPwo8lIPrxGLgwYTlWo1LY,24631
+tglib/logger.py,sha256=kvjtFLvfGNKKdeRjfWS5TXGu8IkGWpPY28U644Nu7kw,700
+tglib/objects.py,sha256=BNssiAsvLFYgYLFS5h4kjtVH21ItMYVZJVDf6b_1t2c,137077
+tglib/update_manager.py,sha256=90lEQVLEQH2wgVxElJN8_xADBXqPab9DcUbNhdscFBQ,6537
+tglib-1.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tglib-1.0.3.dist-info/METADATA,sha256=70vKf5XUUhvTXO6H3mXZ9lKPI2KytSb4dqM8Zq6XNq0,40922
+tglib-1.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tglib-1.0.3.dist-info/top_level.txt,sha256=z09c-w7fXhZsZXrEIetnkwVe-yZNWyCyPf93QyFg9SE,6
+tglib-1.0.3.dist-info/RECORD,,
