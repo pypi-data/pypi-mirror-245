@@ -1,0 +1,10 @@
+scipy
+
+[all]
+pygraphviz
+biopython
+
+[dev]
+setuptools-scm
+pre-commit
+pytest

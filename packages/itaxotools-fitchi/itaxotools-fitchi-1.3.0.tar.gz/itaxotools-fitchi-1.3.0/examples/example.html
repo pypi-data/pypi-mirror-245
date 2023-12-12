@@ -1,0 +1,710 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Fitchi results</title>
+    <meta http-equiv="Content-Type" content="text/html; charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+      a:link { text-decoration:none; color:#000000; }
+      a:visited { text-decoration:none; color:#000000; }
+      a:hover { text-decoration:none; color:#ffffff; background-color:#000000; }
+      a:active { text-decoration:none; color:#ffffff; background-color:#000000; }
+      a:focus { text-decoration:none; color:#ffffff; background-color:#000000; }
+      #relativeSVG { position:relative; width:840px; height:236px; z-index:2 }
+      #absoluteAst { position:absolute; top:20px; left:20px; width:20px; height:20px; z-index:1; background-color:#e05030 }
+      td { font-family:helvetica; font-size:12px }
+      tr.spaceUnder > td { padding-bottom: 1em; }
+      tr.doubleSpaceUnder > td { padding-bottom: 2em; }
+      tr.largeSpaceUnder > td { padding-bottom: 8em; }
+      tr.smallSpaceUnder > td { padding-bottom: 0.2em; }
+      tr.spaceOver > td { padding-top: 1em; }
+      tr.spaceOverAndLargeSpaceUnder > td { padding-top: 1em; padding-bottom: 8em; }
+    </style>
+
+    <script type="text/javascript">
+      <!--
+        function legend_toggle () {
+          if(document.getElementById("legend").style.display == "none") {
+            document.getElementById("legend").style.display = "inline";
+          } else {
+            document.getElementById("legend").style.display = "none";
+          }
+          if(document.getElementById("show").style.display == "none") {
+            document.getElementById("show").style.display = "inline";
+          } else {
+            document.getElementById("show").style.display = "none";
+          }
+          if(document.getElementById("hide").style.display == "none") {
+            document.getElementById("hide").style.display = "inline";
+          } else {
+            document.getElementById("hide").style.display = "none";
+          }
+        }
+      //-->
+    </script>
+
+    <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+  </head>
+
+  <body>
+    <div align="center">
+      <table width="840" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="font-family:helvetica; font-size:54px; font-weight:bold">
+            <svg width="50" height="50">
+              <defs>
+                <radialGradient id="radgrad" cx=".9" cy=".1" r="1">
+                  <stop  offset="0" style="stop-color:grey"/>
+                  <stop  offset="1" style="stop-color:black"/>
+                </radialGradient>
+                <mask id="m_0"><circle fill="url(#radgrad)" cx="30.964" cy="31.513" r="11.0695"/></mask>
+                <mask id="m_1"><circle fill="url(#radgrad)" cx="39.693" cy="7.257" r="6.257"/></mask>
+                <mask id="m_2"><circle fill="url(#radgrad)" cx="43.419" cy="45.559" r="3.44"/></mask>
+                <mask id="m_3"><circle fill="url(#radgrad)" cx="7.91" cy="39.167" r="4.769"/></mask>
+              </defs>
+              <path fill="#94A2A1" stroke="#94A2A1" stroke-width="0.5" d="M32.802,20.593c5.745,0.957,9.882,6.31,9.147,12.25c-0.778,6.312-6.659,10.731-13.029,9.548c-6.298-1.18-10.148-7.31-8.733-13.371C21.521,23.296,27.118,19.643,32.802,20.593z"/>
+              <line fill="none" stroke="#94A2A1" stroke-width="0.5" x1="39.693" y1="7.257" x2="30.965" y2="30.919"/>
+              <line fill="none" stroke="#94A2A1" stroke-width="0.5" x1="30.965" y1="30.919" x2="7.91" y2="39.04"/>
+              <line fill="none" stroke="#94A2A1" stroke-width="0.5" x1="30.965" y1="30.919" x2="43.419" y2="45.559"/>
+              <path fill="#2BA199" d="M35.684,21.532c4.153,1.969,6.83,6.438,6.229,11.311c-0.242,1.953-1.007,3.819-2.22,5.4l-8.729-7.324L35.684,21.532z"/>
+              <path fill="#859B3B" d="M30.965,30.919l1.834-10.292c1.02,0.17,1.986,0.479,2.885,0.905L30.965,30.919z"/>
+              <path fill="#2E8BCB" d="M30.965,30.919l8.729,7.324c-1.652,2.136-4.045,3.601-6.723,4.11L30.965,30.919z"/>
+              <path fill="#DC342E" d="M20.376,28.451c0.462-1.582,1.273-3.029,2.349-4.244l8.24,6.711L20.376,28.451z"/>
+              <path fill="#D43883" d="M30.965,30.919l-6.627,9.429c-2.32-1.742-3.945-4.395-4.32-7.505c-0.184-1.522-0.045-3.01,0.359-4.392L30.965,30.919z"/>
+              <path fill="#6F71B5" d="M28.059,42.163c-1.356-0.367-2.618-0.989-3.721-1.815l6.627-9.429l2.008,11.437C31.268,42.668,29.6,42.58,28.059,42.163z"/>
+              <path fill="#CB4E27" d="M30.965,30.919l-8.24-6.711c1.634-1.845,3.878-3.152,6.443-3.581c0.66-0.114,1.326-0.164,1.993-0.153L30.965,30.919z"/>
+              <path fill="#B48B2E" d="M31.161,20.474c0.548,0.008,1.096,0.061,1.638,0.153l-1.834,10.292L31.161,20.474z"/>
+              <circle fill="#94A2A1" stroke="#94A2A1" stroke-width="0.5" cx="39.693" cy="7.257" r="6.257"/>
+              <circle fill="#CB4E27" cx="39.693" cy="7.257" r="6.257"/>
+              <path fill="#6F71B5" d="M39.693,7.257l2.311,5.816c-0.715,0.283-1.494,0.44-2.311,0.44c-0.836,0-1.635-0.165-2.362-0.461L39.693,7.257z"/>
+              <path fill="#2BA199" d="M39.693,7.257l5.438,3.093c-0.698,1.228-1.803,2.196-3.129,2.723L39.693,7.257z"/>
+              <path fill="#859B3B" d="M39.693,7.257V1c3.455,0,6.257,2.801,6.257,6.257c0,1.124-0.298,2.18-0.817,3.093L39.693,7.257z"/>
+              <circle fill="#94A2A1" stroke="#94A2A1" stroke-width="0.5" cx="43.419" cy="45.559" r="3.44"/>
+              <circle fill="#6F71B5" cx="43.419" cy="45.559" r="3.44"/>
+              <circle fill="#94A2A1" stroke="#94A2A1" stroke-width="0.5" cx="7.91" cy="39.167" r="4.769"/>
+              <circle fill="#2BA199" cx="7.91" cy="39.167" r="4.769"/>
+              <path fill="#DC342E" d="M7.91,39.04l-1.548,4.64c-1.873-0.643-3.221-2.42-3.221-4.513c0-2.634,2.135-4.769,4.769-4.769V39.04z"/>
+              <circle fill="#94A2A1" stroke="#94A2A1" stroke-width="0.5" cx="16.361" cy="36.069" r="0.255"/>
+              <circle fill="#94A2A1" stroke="#94A2A1" stroke-width="0.5" cx="36.061" cy="17.115" r="0.255"/>
+              <circle fill="white" cx="30.964" cy="31.513" r="11.0695" mask="url(#m_0)"/>
+              <circle fill="white" cx="39.693" cy="7.257" r="6.257" mask="url(#m_1)"/>
+              <circle fill="white" cx="43.419" cy="45.559" r="3.44" mask="url(#m_2)"/>
+              <circle fill="white" cx="7.91" cy="39.167" r="4.769" mask="url(#m_3)"/>
+            </svg>
+            <a name="Fitchi" href="http://www.evoinformatics.eu" style="color:#000000; text-decoration:none; background-color:#ffffff">Fitchi</a><br><br>
+          </td>
+        </tr>
+        <tr class="smallSpaceUnder">
+          <td style="font-size:30px; font-weight:bold">Summary</td>
+        </tr>
+        <tr class="largeSpaceUnder">
+          <td>
+            <table width="840" border="0" cellpadding="0" cellspacing="1">
+              <tr>
+                <td width="160" style="font-weight:bold">File Name</td>
+                <td>example.nex</td>
+              </tr>
+              <tr>
+                <td width="160" style="font-weight:bold"># Sites</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td width="160" style="font-weight:bold"># Sequence records</td>
+                <td>30 (15 x pop1, 15 x pop2)</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="smallSpaceUnder">
+          <td style="font-size:30px; font-weight:bold"><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2011.05066.x/abstract">Haplotype genealogy graph</a></td>
+        </tr>
+        <tr class="spaceUnder">
+          <td>
+            <table width="840" border="0" cellpadding="0" cellspacing="1">
+              <tr>
+                <td width="160" style="font-weight:bold">Node size</td>
+                <td># sequence records</td>
+              </tr>
+              <tr>
+                <td width="160" style="font-weight:bold">Edge length</td>
+                <td># substitutions (transitions or transversions)</td>
+              </tr>
+              <tr>
+                <td width="160" style="font-weight:bold">Minimum node size</td>
+                <td>1 sequence record</td>
+              </tr>
+              <tr>
+                <td width="160" style="font-weight:bold">Minimum edge length</td>
+                <td>1 substitution</td>
+              </tr>
+              <tr>
+                <td width="160" style="font-weight:bold"># Nodes</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td width="160" style="font-weight:bold"># Edges</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td width="160" style="font-weight:bold">Total Fitch distance</td>
+                <td>13 substitutions</td>
+              </tr>
+              <tr>
+                <td width="160" style="font-weight:bold">Random number seed</td>
+                <td>27032</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="border: 1px solid black">
+            <!-- The haplotype genealogy graph: info start -->
+            <!-- Populations:
+            pop1: #dc322f
+            pop2: #2aa198
+            -->
+            <!-- The haplotype genealogy graph: info end -->
+            <!-- The haplotype genealogy graph: SVG string start -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="840" height="680" viewBox="0 0 840 680" xmlns:xlink="htttp://www.w3.org/1999/xlink">
+
+              <defs>
+                <style type="text/css">
+                  <![CDATA[
+                    text {font-weight:normal; fill:#002b36;}
+                    line {fill:none; stroke:#93a1a1; stroke-width:1.0px;}
+                    circle {stroke:#93a1a1; stroke-width:1.0px;}
+                  ]]>
+                </style>
+
+                <radialGradient id="radgrad"
+                  cx=".9" cy=".1" r="1">
+                  <stop  offset="0" style="stop-color:grey"/>
+                  <stop  offset="1" style="stop-color:black"/>
+                </radialGradient>
+
+                <!--Masks-->
+                <mask id="m_0"><circle fill="url(#radgrad)" cx="69.82614737566698" cy="358.83954138833377" r="59.826147375667"/></mask>
+                <mask id="m_1"><circle fill="url(#radgrad)" cx="164.96105232175609" cy="609.3056400065499" r="59.826147375667"/></mask>
+                <mask id="m_2"><circle fill="url(#radgrad)" cx="787.6965254984001" cy="358.8395413883338" r="42.3034745015999"/></mask>
+                <mask id="m_3"><circle fill="url(#radgrad)" cx="652.0776524879929" cy="559.1285953391978" r="84.6069490031998"/></mask>
+                <mask id="m_4"><circle fill="url(#radgrad)" cx="769.7361306486068" cy="475.7284764657552" r="42.3034745015999"/></mask>
+                <mask id="m_5"><circle fill="url(#radgrad)" cx="271.0207920257158" cy="425.720149366961" r="119.652294751334"/></mask>
+                <mask id="m_6"><circle fill="url(#radgrad)" cx="678.7594218074892" cy="401.925279691362" r="42.3034745015999"/></mask>
+                <mask id="m_7"><circle fill="url(#radgrad)" cx="415.03808794966733" cy="143.2454478136902" r="73.27176717346552"/></mask>
+                <mask id="m_8"><circle fill="url(#radgrad)" cx="564.7255644383812" cy="70.69435999345012" r="59.826147375667"/></mask>
+                <mask id="m_9"><circle fill="url(#radgrad)" cx="677.9989059581139" cy="176.8397397484848" r="42.3034745015999"/></mask>
+                <mask id="m_10"><circle fill="url(#radgrad)" cx="551.7179972938148" cy="289.8104706840783" r="94.59344467000642"/></mask>
+              </defs>
+
+              <!--Edges-->
+              <line x1="271.0207920257158" y1="425.720149366961" x2="69.82614737566698" y2="358.83954138833377"/>
+              <line x1="271.0207920257158" y1="425.720149366961" x2="164.96105232175609" y2="609.3056400065499"/>
+              <line x1="678.7594218074892" y1="401.925279691362" x2="787.6965254984001" y2="358.8395413883338"/>
+              <line x1="678.7594218074892" y1="401.925279691362" x2="652.0776524879929" y2="559.1285953391978"/>
+              <line x1="678.7594218074892" y1="401.925279691362" x2="769.7361306486068" y2="475.7284764657552"/>
+              <line x1="551.7179972938148" y1="289.8104706840783" x2="271.0207920257158" y2="425.720149366961"/>
+              <line x1="551.7179972938148" y1="289.8104706840783" x2="678.7594218074892" y2="401.925279691362"/>
+              <line x1="551.7179972938148" y1="289.8104706840783" x2="415.03808794966733" y2="143.2454478136902"/>
+              <line x1="551.7179972938148" y1="289.8104706840783" x2="564.7255644383812" y2="70.69435999345012"/>
+              <line x1="551.7179972938148" y1="289.8104706840783" x2="677.9989059581139" y2="176.8397397484848"/>
+
+              <!--Dots-->
+              <circle fill="#93a1a1" cx="408.00218712545063" cy="359.3956650324753" r="1.5"/>
+              <circle fill="#93a1a1" cx="437.29077070625175" cy="345.2145406435043" r="1.5"/>
+              <circle fill="#93a1a1" cx="559.2519269271409" cy="162.89931649788963" r="1.5"/>
+
+              <!--Nodes-->
+              <!--Haplotype ID: 1-->
+              <circle fill="#eee8d5" cx="69.82614737566698" cy="358.83954138833377" r="59.826147375667"/>
+              <circle fill="#2aa198" cx="69.82614737566698" cy="358.83954138833377" r="59.826147375667"/>
+
+              <!--Haplotype ID: 2-->
+              <circle fill="#eee8d5" cx="164.96105232175609" cy="609.3056400065499" r="59.826147375667"/>
+              <circle fill="#dc322f" cx="164.96105232175609" cy="609.3056400065499" r="59.826147375667"/>
+
+              <!--Haplotype ID: 3-->
+              <circle fill="#eee8d5" cx="787.6965254984001" cy="358.8395413883338" r="42.3034745015999"/>
+              <circle fill="#dc322f" cx="787.6965254984001" cy="358.8395413883338" r="42.3034745015999"/>
+
+              <!--Haplotype ID: 4-->
+              <circle fill="#eee8d5" cx="652.0776524879929" cy="559.1285953391978" r="84.6069490031998"/>
+              <circle fill="#dc322f" cx="652.0776524879929" cy="559.1285953391978" r="84.6069490031998"/>
+
+              <!--Haplotype ID: 5-->
+              <circle fill="#eee8d5" cx="769.7361306486068" cy="475.7284764657552" r="42.3034745015999"/>
+              <circle fill="#dc322f" cx="769.7361306486068" cy="475.7284764657552" r="42.3034745015999"/>
+
+              <!--Haplotype ID: 6-->
+              <circle fill="#eee8d5" cx="271.0207920257158" cy="425.720149366961" r="119.652294751334"/>
+              <path fill="#dc322f" d="M 271.0207920257158,425.720149366961 L 271.0207920257158,306.56785461562697 A 119.152294751334 119.152294751334 0 0 1 390.17308677704983, 425.720149366961 z"/>
+              <path fill="#2aa198" d="M 271.0207920257158,425.720149366961 L 390.17308677704983,425.720149366961 A 119.152294751334 119.152294751334 0 1 1 271.02079202571576, 306.56785461562697 z"/>
+
+              <!--Haplotype ID: 7-->
+              <circle fill="#eee8d5" cx="678.7594218074892" cy="401.925279691362" r="42.3034745015999"/>
+              <circle fill="#dc322f" cx="678.7594218074892" cy="401.925279691362" r="42.3034745015999"/>
+
+              <!--Haplotype ID: 8-->
+              <circle fill="#eee8d5" cx="415.03808794966733" cy="143.2454478136902" r="73.27176717346552"/>
+              <circle fill="#2aa198" cx="415.03808794966733" cy="143.2454478136902" r="73.27176717346552"/>
+
+              <!--Haplotype ID: 9-->
+              <circle fill="#eee8d5" cx="564.7255644383812" cy="70.69435999345012" r="59.826147375667"/>
+              <circle fill="#dc322f" cx="564.7255644383812" cy="70.69435999345012" r="59.826147375667"/>
+
+              <!--Haplotype ID: 10-->
+              <circle fill="#eee8d5" cx="677.9989059581139" cy="176.8397397484848" r="42.3034745015999"/>
+              <circle fill="#2aa198" cx="677.9989059581139" cy="176.8397397484848" r="42.3034745015999"/>
+
+              <!--Haplotype ID: 11-->
+              <circle fill="#eee8d5" cx="551.7179972938148" cy="289.8104706840783" r="94.59344467000642"/>
+              <path fill="#dc322f" d="M 551.7179972938148,289.8104706840783 L 551.7179972938148,195.7170260140719 A 94.09344467000642 94.09344467000642 0 0 1 607.0247364082425, 365.9336664813923 z"/>
+              <path fill="#2aa198" d="M 551.7179972938148,289.8104706840783 L 607.0247364082425,365.9336664813923 A 94.09344467000642 94.09344467000642 0 1 1 551.7179972938148, 195.7170260140719 z"/>
+
+              <!--Gradients-->
+              <circle fill="white" cx="69.82614737566698" cy="358.83954138833377" r="59.826147375667" mask="url(#m_0)"/>
+              <circle fill="white" cx="164.96105232175609" cy="609.3056400065499" r="59.826147375667" mask="url(#m_1)"/>
+              <circle fill="white" cx="787.6965254984001" cy="358.8395413883338" r="42.3034745015999" mask="url(#m_2)"/>
+              <circle fill="white" cx="652.0776524879929" cy="559.1285953391978" r="84.6069490031998" mask="url(#m_3)"/>
+              <circle fill="white" cx="769.7361306486068" cy="475.7284764657552" r="42.3034745015999" mask="url(#m_4)"/>
+              <circle fill="white" cx="271.0207920257158" cy="425.720149366961" r="119.652294751334" mask="url(#m_5)"/>
+              <circle fill="white" cx="678.7594218074892" cy="401.925279691362" r="42.3034745015999" mask="url(#m_6)"/>
+              <circle fill="white" cx="415.03808794966733" cy="143.2454478136902" r="73.27176717346552" mask="url(#m_7)"/>
+              <circle fill="white" cx="564.7255644383812" cy="70.69435999345012" r="59.826147375667" mask="url(#m_8)"/>
+              <circle fill="white" cx="677.9989059581139" cy="176.8397397484848" r="42.3034745015999" mask="url(#m_9)"/>
+              <circle fill="white" cx="551.7179972938148" cy="289.8104706840783" r="94.59344467000642" mask="url(#m_10)"/>
+
+              <!--Node labels-->
+              <text x="67.82614737566698" y="362.33954138833377" font-family="'Helvetica'" font-size="10px">1</text>
+              <text x="162.96105232175609" y="612.8056400065499" font-family="'Helvetica'" font-size="10px">2</text>
+              <text x="785.6965254984001" y="362.3395413883338" font-family="'Helvetica'" font-size="10px">3</text>
+              <text x="650.0776524879929" y="562.6285953391978" font-family="'Helvetica'" font-size="10px">4</text>
+              <text x="767.7361306486068" y="479.2284764657552" font-family="'Helvetica'" font-size="10px">5</text>
+              <text x="269.0207920257158" y="429.220149366961" font-family="'Helvetica'" font-size="10px">6</text>
+              <text x="676.7594218074892" y="405.425279691362" font-family="'Helvetica'" font-size="10px">7</text>
+              <text x="413.03808794966733" y="146.7454478136902" font-family="'Helvetica'" font-size="10px">8</text>
+              <text x="562.7255644383812" y="74.19435999345012" font-family="'Helvetica'" font-size="10px">9</text>
+              <text x="671.9989059581139" y="180.3397397484848" font-family="'Helvetica'" font-size="10px">10</text>
+              <text x="546.5179972938148" y="293.3104706840783" font-family="'Helvetica'" font-size="10px">11</text>
+
+            </svg>
+            <!-- The haplotype genealogy graph: SVG string end -->
+
+          </td>
+        </tr>
+        <tr class="spaceOver">
+          <td style="font-weight:bold">
+            <span id="show" style="display:inline">
+              <button type="button" class="btn btn-default btn-xs" onclick="legend_toggle()">Show legend</button>
+            </span>
+            <span id="hide" style="display:none">
+              <button type="button" class="btn btn-default btn-xs" onclick="legend_toggle()">Hide legend</button>
+            </span>
+          </td>
+        </tr>
+        <tr class="spaceOverAndLargeSpaceUnder">
+          <td align="center">
+            <span id="legend" style="display:none;">
+              <div style="border-width:1px; border-style:solid; border-color:#000000;">
+                <table width="800" cellpadding="0" cellspacing="1">
+                  <tr class="spaceOver">
+                    <td width="160" style="font-weight:bold; font-family:Courier">Population</td>
+                    <td width="100" style="font-weight:bold; font-family:Courier" colspan="2">Color</td>
+                    <td width="300" style="font-weight:bold; font-family:Courier"># Nodes with population presence</td>
+                    <td width="240" style="font-weight:bold; font-family:Courier">% Presence in non-empty nodes</td>
+                  </tr>
+                  <tr>
+                    <td width="160" style="font-family:Courier">pop1</td>
+                    <td width="40" bgcolor="#dc322f"></td>
+                    <td width="60"></td>
+                    <td style="font-family:Courier">8</td>
+                    <td style="font-family:Courier">72.73</td>
+                  </tr>
+                  <tr>
+                    <td width="160" style="font-family:Courier">pop2</td>
+                    <td width="40" bgcolor="#2aa198"></td>
+                    <td width="60"></td>
+                    <td style="font-family:Courier">5</td>
+                    <td style="font-family:Courier">45.45</td>
+                  </tr>
+                  <tr class="doubleSpaceUnder">
+                    <td colspan="5"></td>
+                  </tr>
+                </table>
+                <table width="800" cellpadding="0" cellspacing="1">
+                  <!-- Legend: string start -->
+                  <tr class="spaceOver">
+                    <td width="160" style="font-weight:bold; font-family:Courier">Node 1</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" style="font-family:Courier">Sequence: </td>
+                    <td style="font-family:Courier">
+                      <div style="width: 640px; overflow: auto;">
+                      AATAGCTTCATGG
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-family:Courier">Size: </td>
+                    <td style="font-family:Courier">2 sequence records (2 x pop2)</td>
+                  </tr>
+                  <tr class="spaceUnder">
+                    <td valign="top" style="font-family:Courier">Sequence records: </td>
+                    <td style="font-family:Courier">
+                    pop2_6,<br>
+                    pop2_8
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="160" style="font-weight:bold; font-family:Courier">Node 2</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" style="font-family:Courier">Sequence: </td>
+                    <td style="font-family:Courier">
+                      <div style="width: 640px; overflow: auto;">
+                      AATACATTCATGG
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-family:Courier">Size: </td>
+                    <td style="font-family:Courier">2 sequence records (2 x pop1)</td>
+                  </tr>
+                  <tr class="spaceUnder">
+                    <td valign="top" style="font-family:Courier">Sequence records: </td>
+                    <td style="font-family:Courier">
+                    pop1_14,<br>
+                    pop1_3
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="160" style="font-weight:bold; font-family:Courier">Node 3</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" style="font-family:Courier">Sequence: </td>
+                    <td style="font-family:Courier">
+                      <div style="width: 640px; overflow: auto;">
+                      GCAACCTTAATTG
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-family:Courier">Size: </td>
+                    <td style="font-family:Courier">1 sequence record (1 x pop1)</td>
+                  </tr>
+                  <tr class="spaceUnder">
+                    <td valign="top" style="font-family:Courier">Sequence record: </td>
+                    <td style="font-family:Courier">
+                    pop1_4
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="160" style="font-weight:bold; font-family:Courier">Node 4</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" style="font-family:Courier">Sequence: </td>
+                    <td style="font-family:Courier">
+                      <div style="width: 640px; overflow: auto;">
+                      GCAACCTGAATGG
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-family:Courier">Size: </td>
+                    <td style="font-family:Courier">4 sequence records (4 x pop1)</td>
+                  </tr>
+                  <tr class="spaceUnder">
+                    <td valign="top" style="font-family:Courier">Sequence records: </td>
+                    <td style="font-family:Courier">
+                    pop1_11,<br>
+                    pop1_12,<br>
+                    pop1_6,<br>
+                    pop1_7
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="160" style="font-weight:bold; font-family:Courier">Node 5</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" style="font-family:Courier">Sequence: </td>
+                    <td style="font-family:Courier">
+                      <div style="width: 640px; overflow: auto;">
+                      GCAACCTTACTGG
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-family:Courier">Size: </td>
+                    <td style="font-family:Courier">1 sequence record (1 x pop1)</td>
+                  </tr>
+                  <tr class="spaceUnder">
+                    <td valign="top" style="font-family:Courier">Sequence record: </td>
+                    <td style="font-family:Courier">
+                    pop1_13
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="160" style="font-weight:bold; font-family:Courier">Node 6</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" style="font-family:Courier">Sequence: </td>
+                    <td style="font-family:Courier">
+                      <div style="width: 640px; overflow: auto;">
+                      AATACCTTCATGG
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-family:Courier">Size: </td>
+                    <td style="font-family:Courier">8 sequence records (2 x pop1, 6 x pop2)</td>
+                  </tr>
+                  <tr class="spaceUnder">
+                    <td valign="top" style="font-family:Courier">Sequence records: </td>
+                    <td style="font-family:Courier">
+                    pop1_15,<br>
+                    pop1_8,<br>
+                    pop2_1,<br>
+                    pop2_10,<br>
+                    pop2_13,<br>
+                    pop2_14,<br>
+                    pop2_3,<br>
+                    pop2_7
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="160" style="font-weight:bold; font-family:Courier">Node 7</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" style="font-family:Courier">Sequence: </td>
+                    <td style="font-family:Courier">
+                      <div style="width: 640px; overflow: auto;">
+                      GCAACCTTAATGG
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-family:Courier">Size: </td>
+                    <td style="font-family:Courier">1 sequence record (1 x pop1)</td>
+                  </tr>
+                  <tr class="spaceUnder">
+                    <td valign="top" style="font-family:Courier">Sequence record: </td>
+                    <td style="font-family:Courier">
+                    pop1_9
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="160" style="font-weight:bold; font-family:Courier">Node 8</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" style="font-family:Courier">Sequence: </td>
+                    <td style="font-family:Courier">
+                      <div style="width: 640px; overflow: auto;">
+                      ACACCCTTAATGG
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-family:Courier">Size: </td>
+                    <td style="font-family:Courier">3 sequence records (3 x pop2)</td>
+                  </tr>
+                  <tr class="spaceUnder">
+                    <td valign="top" style="font-family:Courier">Sequence records: </td>
+                    <td style="font-family:Courier">
+                    pop2_12,<br>
+                    pop2_4,<br>
+                    pop2_9
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="160" style="font-weight:bold; font-family:Courier">Node 9</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" style="font-family:Courier">Sequence: </td>
+                    <td style="font-family:Courier">
+                      <div style="width: 640px; overflow: auto;">
+                      ACAACCGTAAAGG
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-family:Courier">Size: </td>
+                    <td style="font-family:Courier">2 sequence records (2 x pop1)</td>
+                  </tr>
+                  <tr class="spaceUnder">
+                    <td valign="top" style="font-family:Courier">Sequence records: </td>
+                    <td style="font-family:Courier">
+                    pop1_2,<br>
+                    pop1_5
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="160" style="font-weight:bold; font-family:Courier">Node 10</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" style="font-family:Courier">Sequence: </td>
+                    <td style="font-family:Courier">
+                      <div style="width: 640px; overflow: auto;">
+                      ACAACCTTAATGC
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-family:Courier">Size: </td>
+                    <td style="font-family:Courier">1 sequence record (1 x pop2)</td>
+                  </tr>
+                  <tr class="spaceUnder">
+                    <td valign="top" style="font-family:Courier">Sequence record: </td>
+                    <td style="font-family:Courier">
+                    pop2_15
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="160" style="font-weight:bold; font-family:Courier">Node 11</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" style="font-family:Courier">Sequence: </td>
+                    <td style="font-family:Courier">
+                      <div style="width: 640px; overflow: auto;">
+                      ACAACCTTAATGG
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-family:Courier">Size: </td>
+                    <td style="font-family:Courier">5 sequence records (2 x pop1, 3 x pop2)</td>
+                  </tr>
+                  <tr class="spaceUnder">
+                    <td valign="top" style="font-family:Courier">Sequence records: </td>
+                    <td style="font-family:Courier">
+                    pop1_1,<br>
+                    pop1_10,<br>
+                    pop2_11,<br>
+                    pop2_2,<br>
+                    pop2_5
+                    </td>
+                  </tr>
+                  <!-- Legend: string end -->
+                </table>
+              </div>
+            </span>
+          </td>
+        <tr>
+        <tr class="smallSpaceUnder">
+          <td style="font-size:30px; font-weight:bold">Nucleotide diversity</td>
+        </tr>
+        <tr class="largeSpaceUnder">
+          <td style="font-family:helvetica; font-size:12px">
+            <table width="840" border="0" cellpadding="0" cellspacing="1">
+              <tr>
+                <td width="168" style="font-weight:bold">Population</td>
+                <td width="168" style="font-weight:bold">Variable sites</td>
+                <td width="168" style="font-weight:bold">Invariable sites</td>
+                <td width="168" style="font-weight:bold">Proportion variable</td>
+                <td width="168" style="font-weight:bold"><a href="http://onlinelibrary.wiley.com/doi/10.1111/mec.12842/abstract" data-toggle="tooltip" data-html="true" title="probability that two randomly<br/>chosen sequences have<br/>different alleles at a SNP<br/>(see Ruegg et al. 2014)">&pi;&nbsp;&nbsp;</a></td>
+              </tr>
+              <tr>
+                <td width="168" style="font-weight:bold">All</td>
+                <!-- Total variable: string start -->
+                <td width="168">13</td>
+                <!-- Total variable: string end -->
+                <td width="168">0</td>
+                <!-- Proportion variable: string start -->
+                <td width="168">1.0000</td>
+                <!-- Proportion variable: string end -->
+                <!-- Pi: string start -->
+                <td width="168">0.2308</td>
+                <!-- Pi: string end -->
+              </tr>
+              <tr>
+                <td width="168" style="font-weight:bold">pop1</td>
+                <td width="168">10</td>
+                <td width="168">3</td>
+                <td width="168">0.7692</td>
+                <td width="168">0.2476</td>
+              </tr>
+              <tr>
+                <td width="168" style="font-weight:bold">pop2</td>
+                <td width="168">6</td>
+                <td width="168">7</td>
+                <td width="168">0.4615</td>
+                <td width="168">0.1788</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="smallSpaceUnder">
+          <td style="font-size:30px; font-weight:bold">Between-population differentiation</td>
+        </tr>
+        <tr class="largeSpaceUnder">
+          <td style="font-family:helvetica; font-size:12px">
+            <table width="840" border="0" cellpadding="0" cellspacing="1">
+              <tr>
+                <td width="168" style="font-weight:bold">Population 1</td>
+                <td width="168" style="font-weight:bold">Population 2</td>
+                <td width="168" style="font-weight:bold"><a href="http://www.jstor.org/stable/2408641" data-toggle="tooltip" data-html="true" title="fixation index estimator<br/>(Weir and Cockerham 1984)">F<sub>ST</sub>&nbsp;&nbsp;</a></td>
+                <td width="168" style="font-weight:bold"><a href="http://onlinelibrary.wiley.com/doi/10.1111/mec.12842/abstract" data-toggle="tooltip" data-html="true" title="between-species average number of pairwise differences<br/>(see Ruegg et al. 2014)">d<sub>XY</sub>&nbsp;&nbsp;</a></td>
+                <td width="168" style="font-weight:bold"><a href="http://onlinelibrary.wiley.com/doi/10.1111/mec.12842/abstract" data-toggle="tooltip" data-html="true" title="density of fixed differences<br/>per base pair<br/>(see Ruegg et al. 2014)">d<sub>f</sub>&nbsp;&nbsp;</a></td>
+              </tr>
+              <tr>
+                <td width="168" style="font-weight:bold">pop1</td>
+                <td width="168" style="font-weight:bold">pop2</td>
+                <!-- First f_st: string start -->
+                <td width="168">0.2044</td>
+                <!-- First f_st: string end -->
+                <!-- First d_xy: string start -->
+                <td width="168">0.2472</td>
+                <!-- First d_xy: string end -->
+                <!-- First d_f: string start -->
+                <td width="168">0.0000</td>
+                <!-- First d_f: string end -->
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="smallSpaceUnder">
+          <td style="font-size:30px; font-weight:bold">Genealogical sorting index</td>
+        </tr>
+        <tr class="largeSpaceUnder">
+          <td style="font-family:helvetica; font-size:12px">
+            <table width="840" border="0" cellpadding="0" cellspacing="1">
+              <tr>
+                <td width="168" style="font-weight:bold">Population</td>
+                <td width="672" style="font-weight:bold"><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.2008.00442.x/abstract" data-toggle="tooltip" data-html="true" title="genealogical sorting index<br/>(Cummings et al. 2008)">gsi&nbsp;&nbsp;</a></td>
+              </tr>
+              <tr>
+                <td width="168" style="font-weight:bold">pop1</td>
+                <!-- First gsi: string start -->
+                <td width="672">0.2970</td>
+                <!-- First gsi: string end -->
+              </tr>
+              <tr>
+                <td width="168" style="font-weight:bold">pop2</td>
+                <!-- Second gsi: string start -->
+                <td width="672">0.5704</td>
+                <!-- Second gsi: string end -->
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
