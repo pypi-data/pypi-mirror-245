@@ -1,0 +1,10 @@
+geolia/__about__.py,sha256=c2fKNhhB2TMeXAS2OMclFntPXfBno9fiui0eGT0YNCU,527
+geolia/__init__.py,sha256=9n6nn3B3NGPlCvNkxE0mFonZ3WQ5jBdNmFF2UN-5a7c,343
+geolia/geometry.py,sha256=uMu9MPHgoFBMC1msFHNuAXugQCDeCsLRFQKpF6ejnYM,21352
+geolia/interp.py,sha256=dbsf6SM2g1W8By3-8OK45-Bby34PU1sZjA_TS8uwKUs,927
+geolia/mesh.py,sha256=84a1x_NzpFCilrkhwNSo6ePA9cxH_zpZDzUkDVuFNS0,2314
+geolia-0.0.1.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+geolia-0.0.1.dist-info/METADATA,sha256=v709O11fGsOcHCDkPpRWfIg6fIbli-jR8G7wNVSwccY,46122
+geolia-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+geolia-0.0.1.dist-info/top_level.txt,sha256=B8XD8neQYn2FrCpDYYoI5gXza-ydK1PdKYb8WO_yFnE,7
+geolia-0.0.1.dist-info/RECORD,,
