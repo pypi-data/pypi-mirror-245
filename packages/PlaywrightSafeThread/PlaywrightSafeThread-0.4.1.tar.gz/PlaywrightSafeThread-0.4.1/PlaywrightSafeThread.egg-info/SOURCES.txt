@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+./PlaywrightSafeThread/__init__.py
+./PlaywrightSafeThread/browser/__init__.py
+./PlaywrightSafeThread/browser/plawright_shim.py
+./PlaywrightSafeThread/browser/threadsafe_browser.py
+PlaywrightSafeThread.egg-info/PKG-INFO
+PlaywrightSafeThread.egg-info/SOURCES.txt
+PlaywrightSafeThread.egg-info/dependency_links.txt
+PlaywrightSafeThread.egg-info/requires.txt
+PlaywrightSafeThread.egg-info/top_level.txt
