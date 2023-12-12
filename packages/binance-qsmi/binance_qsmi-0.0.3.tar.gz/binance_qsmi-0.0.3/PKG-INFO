@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: binance-qsmi
+Version: 0.0.3
+Summary: Binance QSMI
+License: MIT
+Author: AMiWR
+Author-email: amiwrpremium@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: prettytable (>=3.9.0,<4.0.0)
+Requires-Dist: pydantic (>=2.5.2,<3.0.0)
+Requires-Dist: python-binance (>=1.0.19,<2.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+
