@@ -1,0 +1,7 @@
+
+[dev]
+setuptools-scm
+pre-commit
+ruff
+pytest
+pyyaml
