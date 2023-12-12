@@ -1,0 +1,18 @@
+{
+    "title": "otoole: OSeMOSYS Tools for Energy Work",
+    "license": "MIT",
+    "upload_type": "software",
+    "creators": [
+        {
+            "name": "Trevor Barnes",
+            "affiliation": "Simon Fraser University",
+            "orcid": "0000-0003-2458-2968"
+        },
+        {
+            "name": "Will Usher",
+            "affiliation": "KTH Royal Institute of Technology",
+            "orcid": "0000-0001-9367-1791"
+        }
+    ],
+    "access_right": "open"
+}
