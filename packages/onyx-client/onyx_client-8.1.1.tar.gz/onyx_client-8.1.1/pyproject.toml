@@ -1,0 +1,71 @@
+[build-system]
+requires = [
+    "poetry-core"
+]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "onyx-client"
+version = "8.1.1"
+description = "HTTP Client for Hella's ONYX.CENTER API."
+license = "MIT"
+authors = [
+    "Daniel Muehlbachler-Pietrzykowski <daniel.muehlbachler@niftyside.io>"
+]
+readme = "README.md"
+repository = "https://github.com/muhlba91/onyx-client"
+keywords = [
+    "hella-info",
+    "onyx",
+    "onyx-center"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Home Automation"
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiohttp = "^3.8.5"
+asyncio = "^3.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.1"
+pytest-cov = { extras = ["toml"], version = "^4.0.0" }
+coverage = { extras = ["toml"], version = "^7.0.0" }
+pre-commit = "^3.1.1"
+pytest-asyncio = "^0.23.0"
+aioresponses = "^0.7.4"
+ruff = "^0.1.6"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--strict-markers --cov=onyx_client"
+testpaths = [
+    "tests",
+]
+norecursedirs = [
+    ".git",
+]
+
+[tool.coverage.run]
+relative_files = true
+source = [
+    "onyx_client",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplemented()",
+    "if __name__ == .__main__.:",
+    "main()",
+    "parser\\..",
+    "argparse\\..",
+]
+fail_under = 95
+show_missing = true
