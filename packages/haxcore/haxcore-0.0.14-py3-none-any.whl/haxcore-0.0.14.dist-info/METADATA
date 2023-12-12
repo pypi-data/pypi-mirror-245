@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: haxcore
+Version: 0.0.14
+Summary: HaX core package
+Home-page: https://haxsec.com
+License: GNU General Public License v3 (GPLv3)
+Keywords: security,cloud,ai,hacking,cybersecurity,hacker,hacking-tool,security-automation,cloudsecurity
+Author: Tarek Mulla
+Author-email: tarek@mulla.au
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Pillow (>=10.1.0,<11.0.0)
+Requires-Dist: bcrypt (>=4.1.1,<5.0.0)
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: flake8 (>=6.1.0,<7.0.0)
+Requires-Dist: isort (>=5.13.0,<6.0.0)
+Requires-Dist: mypy (>=1.7.1,<2.0.0)
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Requires-Dist: pylint (>=3.0.2,<4.0.0)
+Requires-Dist: pytest (>=7.1.3,<8.0.0)
+Requires-Dist: pytest-cov (>=4.1.0,<5.0.0)
+Requires-Dist: pytest-mock (>=3.11.1,<4.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: twine (>=4.0.0,<5.0.0)
+Project-URL: Repository, https://github.com/tarekmulla/hax-core
+Description-Content-Type: text/markdown
+
+[![PyPI version](https://badge.fury.io/py/haxcore.svg)](https://badge.fury.io/py/haxcore) [![Python Linting](https://github.com/tarekmulla/hax-core/actions/workflows/linting.yml/badge.svg)](https://github.com/tarekmulla/hax-core/actions/workflows/linting.yml) [![PyTest](https://github.com/tarekmulla/hax-core/actions/workflows/test.yml/badge.svg)](https://github.com/tarekmulla/hax-core/actions/workflows/test.yml) [![Release](https://github.com/tarekmulla/hax-core/actions/workflows/release.yml/badge.svg)](https://github.com/tarekmulla/hax-core/actions/workflows/release.yml)
+
+# HaX Core package
+
+This repository contains the core PyPi package for HaX Cybersecurity tool.
+
+## About the project
+
+HaX is an AI-powered Cybersecurity tool designed to detect website vulnerabilities. Its cloud connection enhances capabilities for advanced analytics and modeling.
+This tool is expertly designed for ethical hacking, using intelligent cyber attack simulations to identify successful outcomes. It uploads results to the cloud for advanced data analytics, refining models for future attacks.
+
+<p align="center">
+  <img src="https://haxsec.com/images/logo.png" alt="design" width="40%"/>
+</p>
+
+### Deployment prerequisites
+
+Before running the application, make sure to meet the following requirements:
+_**Note**: Those steps are working for both macOS, and Linux_
+
+- Download and install python latest version, [check here](https://www.python.org/downloads/).
+- Install pip, [check here](https://pip.pypa.io/en/stable/installation/).
+- Install poetry, [check here](https://python-poetry.org/docs/).
+- Install all dependencies by running  `poetry install`, the command will create a virtual environment, to understand how poetry works please refer to this [documentation](https://python-poetry.org/docs/configuration).
+- You can run pytest using command `poetry run pytest`
+- To run the package you can use command `poetry run main.py`
+
+## Who do I talk to?
+
+You can contact us directly using one of the following:
+* 🖥️ Website: [haxsec.com](https://www.haxsec.com/)
+* ✉️ Support Email [support@haxsec.com](mailto:support@haxsec.com)
+
