@@ -1,0 +1,1 @@
+LAGO_VERSION = '0.53.0'
