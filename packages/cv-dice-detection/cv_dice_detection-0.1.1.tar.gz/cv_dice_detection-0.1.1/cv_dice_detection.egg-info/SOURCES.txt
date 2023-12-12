@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+cv_dice_detection.egg-info/PKG-INFO
+cv_dice_detection.egg-info/SOURCES.txt
+cv_dice_detection.egg-info/dependency_links.txt
+cv_dice_detection.egg-info/top_level.txt
