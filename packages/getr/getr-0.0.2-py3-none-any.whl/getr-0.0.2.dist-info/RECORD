@@ -1,0 +1,13 @@
+getr/__init__.py,sha256=FAZAwnb7kRrraXs2GA3Sp6oeD17qp5kZzGbt-5KiYno,447
+getr/_modidx.py,sha256=OnXuVU3sDCpoBQWuQLN6UAu_17rRcO475_NtzcYBujs,2274
+getr/attr.py,sha256=WpkFpf2vVU10AKt3GOmUv3REcFHrfONkGSOATBPhXnU,2335
+getr/atyp.py,sha256=YFRg_iuhCqnW1agftAs_14ZhLGh7bFnDRxor_n5ox2M,756
+getr/cons.py,sha256=Xr8u0dYZ8xZDHGP-H80DxMUKrCUr0oELfYybCyDriEc,1066
+getr/core.py,sha256=e7keegacfW3kIcwA544eNvbQSJcu4jyLqUEEi16AX8M,7325
+getr/grds.py,sha256=8eAvQPqyOxnRRlmnrXDHlufsk--nX0NdahnjzHCx-cg,932
+getr-0.0.2.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+getr-0.0.2.dist-info/METADATA,sha256=jRQaakE78RACT-9_qpPGJ1lnaTopMGav-XCUWpVSAqI,2118
+getr-0.0.2.dist-info/WHEEL,sha256=5sUXSg9e4bi7lTLOHcm6QEYwO5TIF1TNbTSVFVjcJcc,92
+getr-0.0.2.dist-info/entry_points.txt,sha256=r2gm1hlkGlkjEO9DawBZBn5aB650FQYzd-9qLmsrxJg,30
+getr-0.0.2.dist-info/top_level.txt,sha256=1yDc71rwqwsIY5NK4LOjaE7arfUlMgP_CrpnYzxasIs,5
+getr-0.0.2.dist-info/RECORD,,
