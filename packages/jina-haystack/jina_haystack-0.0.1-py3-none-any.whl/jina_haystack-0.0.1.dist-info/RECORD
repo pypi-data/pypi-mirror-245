@@ -1,0 +1,8 @@
+jina_haystack/__about__.py,sha256=-XI4OPFIPWzMEmpNdsNAf56xFoFjBWspsu4CD8uToTk,132
+jina_haystack/__init__.py,sha256=G78DTPe9e27bAi-NzAlDrB0xARclefLGjJr5oSHQBtI,289
+jina_haystack/document_embedder.py,sha256=00x0PLXUe7xHrdlQHuKc021nd6Tyss9pdWAaSjikDeU,7137
+jina_haystack/text_embedder.py,sha256=mVTh54HFymYphW5IcmZZc1XTJCFTT6SzneSASeDfmwA,3678
+jina_haystack-0.0.1.dist-info/METADATA,sha256=oVKQlM0MvxmCmCovBRn4jzMLq7AaTMA0KrLZxZMY3aU,1927
+jina_haystack-0.0.1.dist-info/WHEEL,sha256=Gw8jIuTWkPakxikG-6o91zOxTjpZNZ00Qw8KZLqAprY,87
+jina_haystack-0.0.1.dist-info/licenses/LICENSE.txt,sha256=OrAtTu4aPmrTjKDSTzkSPgo_ji6NOMWO2N9JOTFyAzM,11350
+jina_haystack-0.0.1.dist-info/RECORD,,
