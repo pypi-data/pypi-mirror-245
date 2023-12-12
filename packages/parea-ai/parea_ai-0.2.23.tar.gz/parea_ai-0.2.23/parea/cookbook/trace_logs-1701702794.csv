@@ -1,0 +1,1 @@
+configuration,inputs,output,target,latency,input_tokens,output_tokens,total_tokens,cost,trace_id,start_timestamp,organization_id,error,status,deployment_id,cache_hit,output_for_eval_metrics,evaluation_metric_names,scores,feedback_score,trace_name,children,end_timestamp,end_user_identifier,metadata,tags
