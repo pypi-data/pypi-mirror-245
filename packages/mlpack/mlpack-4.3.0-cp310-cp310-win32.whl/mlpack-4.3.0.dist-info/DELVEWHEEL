@@ -1,0 +1,2 @@
+Version: 1.5.1
+Arguments: ['C:\\Users\\VssAdministrator\\AppData\\Local\\Temp\\cibw-run-1r860vi2\\cp310-win32\\build\\venv\\Scripts\\delvewheel', 'repair', '--add-path', 'D:\\a\\1\\s/OpenBLAS-0.3.21/bin/', '-w', 'C:\\Users\\VssAdministrator\\AppData\\Local\\Temp\\cibw-run-1r860vi2\\cp310-win32\\repaired_wheel', 'C:\\Users\\VssAdministrator\\AppData\\Local\\Temp\\cibw-run-1r860vi2\\cp310-win32\\built_wheel\\mlpack-4.3.0-cp310-cp310-win32.whl']
