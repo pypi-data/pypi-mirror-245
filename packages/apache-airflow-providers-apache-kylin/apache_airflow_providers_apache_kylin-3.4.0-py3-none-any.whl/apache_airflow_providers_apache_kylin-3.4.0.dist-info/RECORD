@@ -1,0 +1,11 @@
+airflow/providers/apache/kylin/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/apache/kylin/__init__.py,sha256=bN-eAKlWuX8YLajFzuLCNd_V_AkAk2WJt6vhUBPsRCQ,1587
+airflow/providers/apache/kylin/get_provider_info.py,sha256=HIqMtzRQfH_nfmCDyqjI2VVo6R0WdVTFHfHGdY5SSGw,2386
+airflow/providers/apache/kylin/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/apache/kylin/hooks/kylin.py,sha256=XoGEp6obGAcrr1mbAGTwo62zNaOrNcnOUJGYAsRk2zU,2670
+airflow/providers/apache/kylin/operators/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/apache/kylin/operators/kylin_cube.py,sha256=3Fo_cvJklkud9UnNIwNdluxGq6ElNtuV0BukpxiMgQk,7308
+apache_airflow_providers_apache_kylin-3.4.0.dist-info/entry_points.txt,sha256=mp5oTt0oE8Qu58IHKj6soapHtQaIJJ17P5GanEb0CN8,108
+apache_airflow_providers_apache_kylin-3.4.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_apache_kylin-3.4.0.dist-info/METADATA,sha256=Pblo_Nry-P-Wkc2UvMmqlos2vPZIqpU6i0B-AimCu-s,4746
+apache_airflow_providers_apache_kylin-3.4.0.dist-info/RECORD,,
