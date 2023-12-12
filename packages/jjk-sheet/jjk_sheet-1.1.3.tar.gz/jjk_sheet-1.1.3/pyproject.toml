@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "jjk_sheet"
+version = "1.1.3"
+description = "Uma biblioteca para a obtenção de dados de uma ficha do rpg Feiticeiros e Maldições."
+readme = "README.md"
+authors = [
+    { name = "H0ruh3", email = "jorgemenezesaf@gmail.com" }
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Games/Entertainment",
+    "Topic :: Games/Entertainment :: Role-Playing",
+]
+keywords = ["jjk_sheet", "rpg", "jujutsu", "kaisen", "ficha"]
+requires-python = ">=3.10.7"
+dependencies = ["gspread", "google-api-python-client", "google-auth-httplib2", "google-auth-oauthlib"]
