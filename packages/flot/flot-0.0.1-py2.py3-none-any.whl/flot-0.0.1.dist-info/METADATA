@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: flot
+Version: 0.0.1
+Summary: A fork of flit
+Author-email: "nexB Inc. and others" <info@nexb.com>
+Classifier: License :: OSI Approved :: Apache Software License
+Project-URL: Home, http://aboutcode.org
