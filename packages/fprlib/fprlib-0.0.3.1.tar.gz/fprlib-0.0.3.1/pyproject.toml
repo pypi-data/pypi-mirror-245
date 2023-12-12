@@ -1,0 +1,17 @@
+[build-system]
+requires = [
+	"setuptools>=42",
+	"wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fprlib"
+version = "0.0.3.1"
+authors = [
+  { name="DrKvass"},
+]
+description = "Knjižnica za lažje opravljanje FPR na FMFju"
+readme = "README.md"
+
+requires-python = ">=3.8"
