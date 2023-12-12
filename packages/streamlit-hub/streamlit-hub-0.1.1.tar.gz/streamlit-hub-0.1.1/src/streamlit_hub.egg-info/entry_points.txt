@@ -1,0 +1,2 @@
+[console_scripts]
+streamlit-hub = streamlit_hub.client.main:main
