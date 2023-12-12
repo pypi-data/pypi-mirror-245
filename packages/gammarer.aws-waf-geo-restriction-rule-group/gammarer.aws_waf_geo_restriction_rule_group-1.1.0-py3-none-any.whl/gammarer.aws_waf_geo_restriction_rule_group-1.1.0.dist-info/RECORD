@@ -1,0 +1,9 @@
+gammarer/aws_waf_geo_restriction_rule_group/__init__.py,sha256=v5WrKaAkb9ZhoLvHaMPtE0rhx2BKruRosFMIUC3oiak,11913
+gammarer/aws_waf_geo_restriction_rule_group/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+gammarer/aws_waf_geo_restriction_rule_group/_jsii/__init__.py,sha256=mfR2wOOsJh98ETvmUXnyRuSs9FUWJPBrF0iF1W4uggA,458
+gammarer/aws_waf_geo_restriction_rule_group/_jsii/aws-waf-geo-restriction-rule-group@1.1.0.jsii.tgz,sha256=hWRExcJ3ZxJW37scGxpEXwvE2RLxH5sBRGRK0f4fAO8,28372
+gammarer.aws_waf_geo_restriction_rule_group-1.1.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+gammarer.aws_waf_geo_restriction_rule_group-1.1.0.dist-info/METADATA,sha256=_BLzyLEGhYtnkoLD93I0m0rMSzu4gYSGGF43l20N7us,3960
+gammarer.aws_waf_geo_restriction_rule_group-1.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gammarer.aws_waf_geo_restriction_rule_group-1.1.0.dist-info/top_level.txt,sha256=KJjeCHKZfj1dN2Ip1piM9BKO8rN6r4xXHtkpTHMDzVk,9
+gammarer.aws_waf_geo_restriction_rule_group-1.1.0.dist-info/RECORD,,
