@@ -1,0 +1,2 @@
+[console_scripts]
+turnvoice = turnvoice.core.turnvoice:main
