@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pinn-module
+Version: 0.0.1
+Summary: PYPI tutorial package for PINN frameworks
+Author: johnjaejunlee95
+Author-email: johnjaejunlee@gmail.com
+Keywords: johnjaejunlee,PINN,Neural Netowrks,pypi
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: torch >=1.6.0
+Requires-Dist: deepxde
+

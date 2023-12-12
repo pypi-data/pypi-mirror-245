@@ -1,0 +1,9 @@
+pinn_module/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pinn_module/boundary_conditions.py,sha256=d-HrhOnFTWqW96TQ9zEXQ5JdhtXHqO0KvjGDf60d1R0,4684
+pinn_module/derivatives.py,sha256=vqel3e8xUcTNk3fMH3POHZ6Wtz_gFH3cTxzMfultQTY,2588
+pinn_module/model.py,sha256=_cR1VNUz7BTRUNJMNjMxaCNTsc6TpXDNjKTgsJuB1UU,558
+pinn_module/training_settings.py,sha256=kxG_Hlz15gONRNUQ21L4EB1g3z9M0sIAL6NuWDFIQjs,2643
+pinn_module-0.0.1.dist-info/METADATA,sha256=4WiOBaHx1EhkULmRfRO_d2WmlziwJIfeV1XfIPMqbXE,563
+pinn_module-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pinn_module-0.0.1.dist-info/top_level.txt,sha256=XgX_MBVHjAsPnetGUNrTZgMn7fNsVXwZkep5WA0-Emo,12
+pinn_module-0.0.1.dist-info/RECORD,,
