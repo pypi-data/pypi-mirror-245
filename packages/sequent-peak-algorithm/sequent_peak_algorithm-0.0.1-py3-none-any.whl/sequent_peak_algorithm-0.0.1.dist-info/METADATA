@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sequent-peak-algorithm
+Version: 0.0.1
+Summary: Sequent Peak Algorithm for the design and simulation of water reservoirs
+Author-email: Lena Marie Müller <lenamariemue@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sequent-peak-algorithm
+
+Implementation of the Sequent Peak Algorithm for the design and simulation of water reservoirs.
+
+# Installation
+```
+pip install sequent-peak-algorithm
+```
