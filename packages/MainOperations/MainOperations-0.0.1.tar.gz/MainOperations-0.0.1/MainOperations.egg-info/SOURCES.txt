@@ -1,0 +1,11 @@
+Changelog.txt
+License.txt
+MANIFEST.in
+Readme.txt
+Test.py
+__init__.py
+setup.py
+MainOperations.egg-info/PKG-INFO
+MainOperations.egg-info/SOURCES.txt
+MainOperations.egg-info/dependency_links.txt
+MainOperations.egg-info/top_level.txt

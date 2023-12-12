@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: MainOperations
+Version: 0.0.1
+Summary: A test Package for A/S/M/D 2 number
+Home-page: 
+Author: Asghar Haghi
+Author-email: asghar.haghi@gmail.com
+License: MIT
+Keywords: Calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Intended Audience :: Developers
+License-File: License.txt
+
+This is test package with 4 main operation tester on 2 number
+
+Change Log
+===============
+
+0.0.1 (11/11/2023)
+------------------------
+- First Release
