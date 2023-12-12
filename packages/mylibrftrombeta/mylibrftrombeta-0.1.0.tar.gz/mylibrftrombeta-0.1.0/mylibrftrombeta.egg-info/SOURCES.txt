@@ -1,0 +1,8 @@
+README.md
+setup.py
+mylib/__init__.py
+mylib/redis.py
+mylibrftrombeta.egg-info/PKG-INFO
+mylibrftrombeta.egg-info/SOURCES.txt
+mylibrftrombeta.egg-info/dependency_links.txt
+mylibrftrombeta.egg-info/top_level.txt
