@@ -1,0 +1,11 @@
+# Run pre-commit & build package
+build package:
+  stage: build python
+  before_script:
+    - pip install hatch pre-commit
+  script:
+    - hatch build
+    - SKIP=gitlabci-lint pre-commit run --all-files
+  artifacts:
+    paths:
+      - dist
