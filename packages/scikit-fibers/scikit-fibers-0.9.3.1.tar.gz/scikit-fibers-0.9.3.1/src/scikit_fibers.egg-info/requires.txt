@@ -1,0 +1,9 @@
+numpy
+pandas
+sklearn
+lifelines
+skrebate==0.7
+matplotlib
+seaborn
+pytest
+tqdm
