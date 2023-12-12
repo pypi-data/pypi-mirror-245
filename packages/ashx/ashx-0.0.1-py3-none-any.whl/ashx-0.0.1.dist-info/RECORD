@@ -1,0 +1,11 @@
+ashx/__about__.py,sha256=Dj-OilLwpQp12k4qF3lAkrsNkfayjaTUKnOL0Fud-MA,519
+ashx/__init__.py,sha256=jpTEFfy54KNJ_-VA9hQYtYTdgFcxsOtWciMLoexPdCA,352
+ashx/geometry.py,sha256=1cLmX7ih3-h1GDQ8C4GIU3lVayXTqM9e_cnhvSmqISQ,3964
+ashx/measure.py,sha256=qEF1Nx6Bksl3n10pe445fAqypAmoEylK2bY1OvnUHQY,2835
+ashx/mesh.py,sha256=19YtJk9SiQhNdmtyWh13VBbF-OAKY3QO52VcdCEBt8g,2467
+ashx/utils.py,sha256=bBKpv0yra_wQhtPoLIu0u-qIWKkbTqYY6BBbXq5WUeQ,1507
+ashx-0.0.1.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+ashx-0.0.1.dist-info/METADATA,sha256=hbr16Q8pQ_vjE1b6ufCCHeY_rtlAU3k3aUN9wA3tfT8,45941
+ashx-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ashx-0.0.1.dist-info/top_level.txt,sha256=A6E9cHyX9K1jrtfmv5sK2dy9YORkCrMdUn9n8z8tHT4,5
+ashx-0.0.1.dist-info/RECORD,,
