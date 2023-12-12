@@ -1,0 +1,4 @@
+[fractal.plugins]
+auth=fractal.matrix.controllers.auth
+register=fractal.matrix.controllers.registration
+

@@ -1,0 +1,12 @@
+fractal/matrix/__init__.py,sha256=OAhpy4XMBLNLAz_iF39cKAW0iAJ-rAcdcIKkwFmGEQM,212
+fractal/matrix/async_client.py,sha256=QmcYL8eT4bJ5P-5JhkGssnHqy8K4myRbWq-MCUd-brQ,11426
+fractal/matrix/controllers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fractal/matrix/controllers/auth.py,sha256=flDZ_oxuRe9pAFhvMW38s56SwLEEgopqlXChJaz-iUQ,3251
+fractal/matrix/controllers/registration.py,sha256=wOOfOeA6LxtfB80cmx7ho09rFZ6iQwlBbK2UlmsStwo,4303
+fractal/matrix/exceptions.py,sha256=ejzxQ3lfc3tZay5vin1YBNfdGni0HB2ZyxytVKyxfrI,664
+fractal/matrix/utils.py,sha256=srCwQ4igzUce_U6OzhoRRpYRkGMqdHpdpYt8ibI9XUY,1006
+fractal_matrix_client-0.0.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+fractal_matrix_client-0.0.1.dist-info/METADATA,sha256=1OlYeYtgwKX3O5xJ_IzhfunRaRLq-58BVFSv11iSeRE,1243
+fractal_matrix_client-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+fractal_matrix_client-0.0.1.dist-info/entry_points.txt,sha256=ytq2YbyhCAnL2aw9Nn7pozhPe_4uT5mxHoHO_Jz_VDU,105
+fractal_matrix_client-0.0.1.dist-info/RECORD,,
