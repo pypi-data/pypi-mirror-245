@@ -1,0 +1,3 @@
+fs==2.4.16
+IMAPClient
+importlib_metadata
