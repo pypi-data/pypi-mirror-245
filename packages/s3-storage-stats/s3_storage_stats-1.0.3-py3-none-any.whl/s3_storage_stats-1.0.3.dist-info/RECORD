@@ -1,0 +1,15 @@
+s3_storage_stats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s3_storage_stats/args.py,sha256=to3yIHWI8C3ZV7HetAtM4og9tRi_FU8nWxmVX_SLbd8,4458
+s3_storage_stats/base.py,sha256=lo2LtouvNJDQPBPwiUP7rya9xTC1WWJs2YLG1pbYxvg,10295
+s3_storage_stats/logger.py,sha256=1iNriIntGT00FqTR9EC3ens_xoQ6qIHeRHDl6OQywiA,2793
+s3_storage_stats/storage_stats.py,sha256=zDLY52-NoQtPGa-dIz4L5eZkpnvFzr3VYZWYUcZ8SUI,3050
+s3_storage_stats-1.0.3.data/scripts/s3-storage-stats,sha256=WEA3gChMwOkXWNNTxp4XfI9wcBbhwC16LveW065AStA,3098
+storage_stats/__init__.py,sha256=0FkXia4vv3yQs17pjsguvJpJPh3tEZ-CN8VxwGxTkfI,110
+storage_stats/args.py,sha256=to3yIHWI8C3ZV7HetAtM4og9tRi_FU8nWxmVX_SLbd8,4458
+storage_stats/base.py,sha256=lo2LtouvNJDQPBPwiUP7rya9xTC1WWJs2YLG1pbYxvg,10295
+storage_stats/logger.py,sha256=1iNriIntGT00FqTR9EC3ens_xoQ6qIHeRHDl6OQywiA,2793
+storage_stats/storage_stats.py,sha256=zDLY52-NoQtPGa-dIz4L5eZkpnvFzr3VYZWYUcZ8SUI,3050
+s3_storage_stats-1.0.3.dist-info/METADATA,sha256=A6fSCxji8_C2z0KtZNGmGD9gg_5-BLGC1tEmd2RJk-A,228
+s3_storage_stats-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+s3_storage_stats-1.0.3.dist-info/top_level.txt,sha256=tBkmHCYAECvjOrrhKqYn0c5j7uxLELdAZ0MkTUlcP9w,17
+s3_storage_stats-1.0.3.dist-info/RECORD,,

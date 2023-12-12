@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: s3-storage-stats
+Version: 1.0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Alyssa Blair
+Author-email: alyssablair@uvic.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: boto3 (>=1.2.8)
+
+UNKNOWN
+
+
