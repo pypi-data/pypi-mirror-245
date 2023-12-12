@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: eam_b2c_helper
+Version: 0.0.7
+Summary: A package to interact with ms graph /users functionality
+Author-email: Dave Gunn <daveg@8amsolutions.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# This package is used as a layer above MS graph api to interact with users in the Azure AD B2C.
+
