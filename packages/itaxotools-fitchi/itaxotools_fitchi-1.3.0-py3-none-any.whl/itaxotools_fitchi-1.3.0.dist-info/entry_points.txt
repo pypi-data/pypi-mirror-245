@@ -1,0 +1,2 @@
+[console_scripts]
+fitchi = itaxotools.fitchi.__main__:run
