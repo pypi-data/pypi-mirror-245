@@ -1,0 +1,9 @@
+pinn_pytorch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pinn_pytorch/boundary_conditions.py,sha256=FVPk7vwmq3lnsRFUzwYvtRmLRRbq7wZbggDKhS2yHhc,4789
+pinn_pytorch/derivatives.py,sha256=vqel3e8xUcTNk3fMH3POHZ6Wtz_gFH3cTxzMfultQTY,2588
+pinn_pytorch/model.py,sha256=_cR1VNUz7BTRUNJMNjMxaCNTsc6TpXDNjKTgsJuB1UU,558
+pinn_pytorch/training_settings.py,sha256=KseYV46IelXAlk2kYQBseKJVOUMvhWVnKQqxTChyz7Q,2880
+pinn_pytorch-0.0.4.dist-info/METADATA,sha256=6X_21cDiL4fYHKCqO9xkq8qn3MKN1DQheZ-Y4mgm2jA,536
+pinn_pytorch-0.0.4.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+pinn_pytorch-0.0.4.dist-info/top_level.txt,sha256=XIHxDgqT2_WWMB4CqwP2FUNxug44XvUIU1EeJLXSEb0,13
+pinn_pytorch-0.0.4.dist-info/RECORD,,
