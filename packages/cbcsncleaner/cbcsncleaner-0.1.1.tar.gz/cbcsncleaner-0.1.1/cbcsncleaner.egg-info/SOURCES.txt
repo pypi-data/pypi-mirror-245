@@ -1,0 +1,9 @@
+setup.py
+cbcsncleaner.egg-info/PKG-INFO
+cbcsncleaner.egg-info/SOURCES.txt
+cbcsncleaner.egg-info/dependency_links.txt
+cbcsncleaner.egg-info/entry_points.txt
+cbcsncleaner.egg-info/requires.txt
+cbcsncleaner.egg-info/top_level.txt
+sql_model_cleaner/__init__.py
+sql_model_cleaner/main.py
