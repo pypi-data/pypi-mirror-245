@@ -1,0 +1,15 @@
+README.md
+setup.py
+MLXpress/__init__.py
+MLXpress/diabetes.py
+MLXpress/iris.py
+MLXpress/math.py
+MLXpress/networkviz.py
+MLXpress/preprocessing.py
+MLXpress/stats.py
+MLXpress/wine.py
+MLXpress.egg-info/PKG-INFO
+MLXpress.egg-info/SOURCES.txt
+MLXpress.egg-info/dependency_links.txt
+MLXpress.egg-info/requires.txt
+MLXpress.egg-info/top_level.txt
