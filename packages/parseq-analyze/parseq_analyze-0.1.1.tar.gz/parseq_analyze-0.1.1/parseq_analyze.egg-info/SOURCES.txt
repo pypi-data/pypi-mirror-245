@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+parseq_analyze/__init__.py
+parseq_analyze/align.py
+parseq_analyze/consensus.py
+parseq_analyze/demultiplex.py
+parseq_analyze/initialize.py
+parseq_analyze/raw_file_processing.py
+parseq_analyze/run_parseq.py
+parseq_analyze/utils.py
+parseq_analyze/visualizations.py
+parseq_analyze.egg-info/PKG-INFO
+parseq_analyze.egg-info/SOURCES.txt
+parseq_analyze.egg-info/dependency_links.txt
+parseq_analyze.egg-info/requires.txt
+parseq_analyze.egg-info/top_level.txt
