@@ -1,0 +1,12 @@
+# Required for local (and Jenkins) unit testing/linting
+black
+mypy
+pipdeptree
+pip-tools
+pydocstyle
+pylint-gitlab
+pytest
+pytest-cov
+setuptools_scm
+toml
+update-toml
