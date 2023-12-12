@@ -1,0 +1,14 @@
+tqdm==4.65.1
+yt-dlp==2023.7.6
+
+[whisper]
+faster-whisper==0.10.0
+openai-whisper==20231117
+stable-ts==2.13.4
+
+[wit]
+auditok==0.2.0
+numpy==1.23.5
+pydub==0.25.1
+requests==2.31.0
+scipy==1.11.1
