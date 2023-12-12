@@ -1,0 +1,7 @@
+LICENSE.md
+README.md
+pyproject.toml
+ht16k33_python.egg-info/PKG-INFO
+ht16k33_python.egg-info/SOURCES.txt
+ht16k33_python.egg-info/dependency_links.txt
+ht16k33_python.egg-info/top_level.txt
