@@ -1,0 +1,15 @@
+README.md
+setup.py
+bin/daskcheck
+daskcheck/__init__.py
+daskcheck/config.py
+daskcheck/daskcheck.py
+daskcheck/singlemod.py
+daskcheck/singlexec.py
+daskcheck/unitname.py
+daskcheck/version.py
+daskcheck.egg-info/PKG-INFO
+daskcheck.egg-info/SOURCES.txt
+daskcheck.egg-info/dependency_links.txt
+daskcheck.egg-info/requires.txt
+daskcheck.egg-info/top_level.txt
