@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+crepr/__init__.py
+crepr/about.py
+crepr/crepr.py
+crepr/py.typed
+crepr.egg-info/PKG-INFO
+crepr.egg-info/SOURCES.txt
+crepr.egg-info/dependency_links.txt
+crepr.egg-info/entry_points.txt
+crepr.egg-info/requires.txt
+crepr.egg-info/top_level.txt
