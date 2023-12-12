@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: parcelfile
+Version: 0.0.3a0
+Summary: parcel is a created for manipulating file's funtions within python
+Home-page: https://github.com/malachi196/parcel
+Author: @malachi196
+Author-email: malachiaaronwilson@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# This is parcel
+
+Welcome to the official Parcel python package.
+Parcel was made to "Properly Package Python Programs".
+
+Unfortonately, the name "parcel" was already used, so the technical name is "parcelfile"
+
+PARCEL stands for:
+Python
+Aranger with
+Renduring
+Complex
+Element
+Leafs
+
+## functions:
+
+def wrap(
+type: None,
+spacing:true,
+**kwargs
+) -> str
+
+wrap takes arguments and concatinates them
+
+
+def box(
+file: str
+startline: int
+endline: int
+) -> any
+
+box takes file contents and seperates them from the main file, while creating a new file
+
+### DISCLAIMER:
+Parcel is still under construction, so some functions may not work yet.
+
+
+Creation rights go to @malachi196. You can find me on gihub, discord,replit, and youtube.
