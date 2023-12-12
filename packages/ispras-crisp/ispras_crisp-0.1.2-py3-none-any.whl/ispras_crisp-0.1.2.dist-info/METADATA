@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ispras-crisp
+Version: 0.1.2
+Summary: Coding Rules at ISP
+Author-Email: Konstantin Arkhipenko <arkhipenko@ispras.ru>
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: ruff~=0.1.0
+Requires-Dist: pycodestyle~=2.11.1
+Requires-Dist: black~=23.9.1
+Requires-Dist: colorama>=0.4.6
+Requires-Dist: GitPython>=3.1.38
+Requires-Dist: deepmerge>=1.1.0
+Requires-Dist: wcmatch>=8.5
+Requires-Dist: tomlkit>=0.12.1
+Description-Content-Type: text/markdown
+
+# crisp
+
+Coding Rules at ISP
+
+Read the docs (in Russian) [here](docs/source/index.rst).
+
+## Why this exists
+
+* I'm tired of typing `ruff check <something>` **and** `black <something>` **and**
+checking I'm in the right directory.
+* I need a simple way to enforce a uniform coding style in many projects. Just install
+this package and enjoy a carefully crafted set of coding rules being applied
+automatically.
+* I hate accidentially fixing somebody else's linting errors in my own commits so this
+tool sees only files **you** have modified. Faster than checking the entire codebase
+once again as well.
