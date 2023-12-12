@@ -1,0 +1,69 @@
+from openpyxl import load_workbook, Workbook
+from app.requests.test import {{name}}Request
+from openpyxl.styles import Border, Side, Color
+from openpyxl.styles import NamedStyle
+
+
+number_style = NamedStyle(name='number_style')
+number_style.number_format = '#,##0.00'
+
+class {{name}}Plot:
+    def render(self, data, output_path):
+        """
+        Renders the data into an Excel file using a template workbook or a new workbook if no template is provided.
+
+        Args:
+            data (list): A list of dictionaries containing the data to be rendered.
+            output_path (str): The path where the rendered Excel file will be saved.
+
+        Returns:
+            Workbook: The rendered workbook object.
+        """
+        template_workbook = load_workbook(self.template_path) if self.template_path else Workbook()
+        worksheet = template_workbook.active
+        worksheet.title = self.sheet_name
+
+        for index, item in enumerate(data, start=2):
+            try:
+                input_request = {{name}}Request(**item)
+
+                row_number = str(index)
+                worksheet['A' + row_number] = input_request.first_column
+                worksheet['B' + row_number] = input_request.second_column
+                worksheet['C' + row_number] = input_request.third_column
+                # Implement more columns here...
+
+
+                worksheet['B' + row_number].style = number_style
+                # Implement more styles here...
+
+
+            except ValidationError as e:
+                print(f"Validation Error: {e}")
+
+        worksheet = self.set_black_border(worksheet)
+
+        return template_workbook.save(output_path)
+
+    def set_black_border(self, worksheet):
+        """
+        Sets a black border around all cells in the worksheet.
+
+        Args:
+            worksheet (Worksheet): The worksheet object.
+
+        Returns:
+            Worksheet: The worksheet object with the black border applied.
+        """
+        black_border = Border(
+            left=Side(style='thin', color=Color(rgb='000000')),
+            right=Side(style='thin', color=Color(rgb='000000')),
+            top=Side(style='thin', color=Color(rgb='000000')),
+            bottom=Side(style='thin', color=Color(rgb='000000'))
+        )
+
+        for row in worksheet.iter_rows(min_row=2, max_row=worksheet.max_row, min_col=1, max_col=worksheet.max_column):
+            for cell in row:
+                cell.border = black_border
+
+        return worksheet
