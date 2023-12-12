@@ -1,0 +1,42 @@
+# Qleverfile for PubChem, use with https://github.com/ad-freiburg/qlever-control
+#
+# qlever get-data  # downloads .gz files of total size 81 GB (as of 31.07.2022)
+# qlever index     # takes ~20 hours and ~40 GB RAM on an AMD Ryzen 9 5900X
+# qlever start     # starts the server (takes around 2 minutes)
+#
+# TODO: The instance on https://qlever.cs.uni-freiburg.de/pubchem also contains
+# the following ontologies, which are very useful for resolving names but which
+# are not yet part of what is downloaded with GET_DATA_CMD.
+# 
+# bao bfo biopax-level3 chebi cheminf cito dublin_core_terms fabio go iao ncit
+# obi pr ro sio skos so uo
+
+
+[DEFAULT]
+NAME              = pubchem
+
+[data]
+GET_DATA_URL      = https://ftp.ncbi.nlm.nih.gov/pubchem/RDF
+GET_DATA_CMD      = wget --recursive --exclude-directories=nbr2d,nbr3d --no-host-directories --no-clobber --cut-dirs=2 --directory-prefix=ttl ${GET_DATA_URL} && find ttl \( -name "*.ttl.gz" -o -name "*.ttl" \) | parallel 'zcat -f {} | docker run --rm -i stain/jena riot --syntax=TTL --output=NT /dev/stdin 2> pubchem.ttl2nt.stderr | gzip > nt/$$(basename -s .ttl.gz -s ttl {}).nt.gz'
+INDEX_DESCRIPTION = PubChem RDF from ${GET_DATA_URL}, version 29.10.2023 (all folders except nbr2d and nbr3d)
+
+[index]
+FILE_NAMES        = nt/*.nt.gz nt/*/*.nt.gz nt/*/*/*.nt.gz
+CAT_FILES         = zcat ${FILE_NAMES}
+WITH_TEXT_INDEX   = false
+STXXL_MEMORY      = 10G
+SETTINGS_JSON     = '{ "languages-internal": [""], "prefixes-external": [ "<http://rdf.ncbi.nlm.nih.gov/pubchem/"  ], "ascii-prefixes-only": true, "num-triples-per-batch": 1000000 }'
+
+
+[server]
+PORT                   = 7023
+ACCESS_TOKEN           = ${NAME}_310129823
+MEMORY_FOR_QUERIES     = 50G
+
+[docker]
+USE_DOCKER              = false
+QLEVER_DOCKER_IMAGE     = adfreiburg/qlever
+
+[ui]
+PORT   = 7000
+CONFIG = pubchem
