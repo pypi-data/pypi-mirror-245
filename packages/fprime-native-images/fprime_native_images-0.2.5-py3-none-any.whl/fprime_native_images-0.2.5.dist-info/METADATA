@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fprime-native-images
+Version: 0.2.5
+Summary: Package designed to help build native image packages
+Author-email: Michael Starch <Michael.D.Starch@jpl.nasa.gov>
+License: Apache 2.0 License
+Keywords: fpp,fprime,embedded,nasa
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Jinja2 >=2.11.3
+Requires-Dist: build
+Requires-Dist: setuptools-scm[toml] >=6.2
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+
