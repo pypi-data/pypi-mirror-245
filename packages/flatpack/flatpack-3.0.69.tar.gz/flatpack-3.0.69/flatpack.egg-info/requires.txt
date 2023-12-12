@@ -1,0 +1,10 @@
+cryptography==41.0.7
+gradio==4.8.0
+httpx==0.25.2
+lida==0.0.10
+llmx==0.0.18a0
+numpy==1.26.2
+requests==2.31.0
+tensorflow-probability==0.23.0
+toml==0.10.2
+torch==2.1.1
