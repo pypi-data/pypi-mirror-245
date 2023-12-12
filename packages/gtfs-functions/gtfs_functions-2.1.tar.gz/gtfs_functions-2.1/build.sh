@@ -1,0 +1,3 @@
+python3 -m build
+python3 -m twine upload --repository pypi dist/* 
+# username =__token__ password=pypi-AgEIcHlwaS5vcmcCJGMxMTY0MTg3LTUyMmQtNDk0Ni1iOGRhLTc1NjE5YTE3ZWM4NwACFlsxLFsiZ3Rmcy1mdW5jdGlvbnMiXV0AAixbMixbIjA0NzI3NmYyLWZmZTItNDRjMi04ZWE2LTAyMDE4MGNiM2JlZCJdXQAABiC1lVEdrpTkz0_G8mYbk3JurMZ07hP7Z-Ma32OsVhd5dw
