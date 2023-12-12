@@ -1,0 +1,7 @@
+fastapi_mock/__init__.py,sha256=sYk9ZrYVPoqgT1jRxE_mKGt7CqUTGEbimdQtH1JjAEU,154
+fastapi_mock/example_provider.py,sha256=05Cv3j2DBZyU-P_Qavse8C8TjhOiuk2ax01kpG7tGXg,5435
+fastapi_mock/mock.py,sha256=TDxOY3jy5E3zwsW6SStLQkbET_tIWdZpyd_TUeJi8MU,4166
+fastapi_mock-0.3.1.dist-info/LICENSE,sha256=COaCwFNyLuUNHVZVK1Sdl_a-LqerlRxHBjusDCDHxd8,1071
+fastapi_mock-0.3.1.dist-info/METADATA,sha256=th7aHg7Iak76MXrMWN2fa_i-_pIEMIv_aCDoJSPrDs4,7581
+fastapi_mock-0.3.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+fastapi_mock-0.3.1.dist-info/RECORD,,
