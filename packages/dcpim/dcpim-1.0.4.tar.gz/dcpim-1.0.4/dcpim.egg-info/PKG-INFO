@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dcpim
+Version: 1.0.4
+Summary: This is a general purpose Python 3.x library used by DCPIM.
+Home-page: https://github.com/dcpim/utils
+Download-URL: https://github.com/dcpim/utils/archive/master.zip
+Author: Patrick Lambert
+Author-email: patrick@dendory.ca
+License: MIT
+Keywords: dcpim,dynamodb,aws,util
+Requires-Dist: boto3
