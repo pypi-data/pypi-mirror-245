@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: saying
+Version: 0.0.2
+Summary: AI-enabled quotes search
+Home-page: https://github.com/thorwhalen/saying
+Author: Thor Whalen
+License: mit
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# saying
+AI-enabled quotes search
+
+
+To install:	```pip install saying```
