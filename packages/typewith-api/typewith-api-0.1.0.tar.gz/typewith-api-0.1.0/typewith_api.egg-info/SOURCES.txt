@@ -1,0 +1,8 @@
+README.md
+setup.py
+api-typewith/__init__.py
+api-typewith/main.py
+typewith_api.egg-info/PKG-INFO
+typewith_api.egg-info/SOURCES.txt
+typewith_api.egg-info/dependency_links.txt
+typewith_api.egg-info/top_level.txt
