@@ -1,0 +1,14 @@
+ai_management/__init__.py,sha256=41GB5pnIlymsIZ_Ycfb4SXGYtrnka16k-DJOIQ1AOuY,31
+ai_management/config.yaml,sha256=86qn-Ciahhkc1WVQzta3wOl_C3ceWwncweN3uetWWd0,1280
+ai_management/constants.py,sha256=7dOTjhEw4IW4N8jQehbbgwbCie23wIccgxguYg4rm-A,1430
+ai_management/main.py,sha256=DDx1ncm0xQMZJRdwXSqdDec65bIlPSr_MhPjYGAAakc,12387
+ai_management/model_evaluation.py,sha256=B6qmxJr7LhXKLspFdCAOzC_evBbAsyzvC8WUli2coR8,13134
+examples/usage_examples.ipynb,sha256=CJmW_uIR_XCV6d5LMWvm4r09binKGkfIpaDiS2QZDoA,53243
+src/ai_management/__init__.py,sha256=zDr350exO14Ii8Pj3TXwPuRxIDrEjrg43CpjYABDqh4,19
+src/ai_management/constants.py,sha256=7dOTjhEw4IW4N8jQehbbgwbCie23wIccgxguYg4rm-A,1430
+src/ai_management/main.py,sha256=8pknqKKh0ByAAOXbwdsz1mjebAn59ZRcbwMUHXu-Jsw,11708
+ai_management-1.0.25.dist-info/LICENSE.txt,sha256=J1WR0NPRR5J0ylJTUdNGNz9EqN1kbE6vBqy8WlTlHpU,1075
+ai_management-1.0.25.dist-info/METADATA,sha256=EtQX5bLyxVHa-4Ci7TftfXKQV_oGROOmSYnxRap9mDk,3554
+ai_management-1.0.25.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ai_management-1.0.25.dist-info/top_level.txt,sha256=iCNNpA7CGIvflVyVB4onPB3tXc5FwgTCngvbFVCpbj8,14
+ai_management-1.0.25.dist-info/RECORD,,
