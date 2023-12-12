@@ -1,0 +1,11 @@
+mesh2vec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mesh2vec/helpers.py,sha256=2s5oQvCIT6JGLcF2a18Mu2x_ONGbAsLv3ieHwBN4H2g,7170
+mesh2vec/mesh2vec_base.py,sha256=6iF6MD_nrQtvULiWWrwah1RnCsXpWKIohxU-1jahifs,20114
+mesh2vec/mesh2vec_cae.py,sha256=TTzkrC3xwDPCGNOC4RbLjShpgvAh1z_hXE0ZuiGcwQQ,34320
+mesh2vec/mesh2vec_exceptions.py,sha256=7mGpE5usvqo2DK3LvWCfNJGlCuv_DS7ecoI7AWow-LE,4612
+mesh2vec/mesh_features.py,sha256=nDa4OsdLOOREBHNY8Z4220mBRaXQYn3fiVYxKPDxQv0,12133
+mesh2vec/templates/ansa.py,sha256=Yi1sgOCErh-XHDFjd5wOjjowI3_jA6G0c5PlqMZ8bY4,2054
+mesh2vec-1.1.1.dist-info/LICENSE,sha256=YcW9m2kYltTRwN90BIOXxlHkcF7lKWJT1IpscjsMqr4,1065
+mesh2vec-1.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+mesh2vec-1.1.1.dist-info/METADATA,sha256=GSS4PvI_kW3OH3pZXTMTYr5SQK6Ji0Y1-02YDcjtaxk,3857
+mesh2vec-1.1.1.dist-info/RECORD,,
