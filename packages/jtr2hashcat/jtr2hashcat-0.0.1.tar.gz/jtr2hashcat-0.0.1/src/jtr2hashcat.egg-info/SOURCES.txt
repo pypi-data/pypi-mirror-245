@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/jtr2hashcat/__init__.py
+src/jtr2hashcat/__main__.py
+src/jtr2hashcat.egg-info/PKG-INFO
+src/jtr2hashcat.egg-info/SOURCES.txt
+src/jtr2hashcat.egg-info/dependency_links.txt
+src/jtr2hashcat.egg-info/requires.txt
+src/jtr2hashcat.egg-info/top_level.txt

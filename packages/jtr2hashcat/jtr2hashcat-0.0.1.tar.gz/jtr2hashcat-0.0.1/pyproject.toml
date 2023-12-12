@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jtr2hashcat"
+version = "0.0.1"
+description = "Tool for finding hashcat hash-modes for hashes extracted by JohnTheRipper."
+readme = "README.md"
+authors = [{ name = "Andrej Roštek", email = "rostek@mail.muni.cz" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["hashcat", "jtr", "johntheripper"]
+requires-python = ">=3.10"
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = ["black", "isort", "pytest"]
