@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+clarifai_pyspark.egg-info/PKG-INFO
+clarifai_pyspark.egg-info/SOURCES.txt
+clarifai_pyspark.egg-info/dependency_links.txt
+clarifai_pyspark.egg-info/requires.txt
+clarifai_pyspark.egg-info/top_level.txt
+clarifaipyspark/__init__.py
+clarifaipyspark/client.py
+clarifaipyspark/dataset.py
