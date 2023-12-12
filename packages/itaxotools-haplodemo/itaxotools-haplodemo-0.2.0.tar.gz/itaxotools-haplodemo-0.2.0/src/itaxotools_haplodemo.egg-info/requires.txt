@@ -1,0 +1,14 @@
+itaxotools-common
+pyside6
+networkx
+numpy
+
+[dev]
+setuptools-scm
+delocate
+pre-commit
+ruff
+pytest
+pytest-qt
+pytest-xvfb
+pyinstaller
