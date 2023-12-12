@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: gaitmap-challenges
+Version: 0.1.0
+Summary: A set of benchmark challenges for IMU based human gait analysis
+License: MIT
+Author: Arne Küderle
+Author-email: arne.kuederle@fau.de
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: visualization
+Requires-Dist: bokeh (>=3.0.3,<4.0.0) ; extra == "visualization"
+Requires-Dist: gaitmap-datasets (>=0.14.0)
+Requires-Dist: gaitmap[stats] (>=2.2.0)
+Requires-Dist: gitpython (>=3.1.31,<4.0.0)
+Requires-Dist: jupyter-bokeh (>=3.0.5,<4.0.0)
+Requires-Dist: optuna (>=3.0.0)
+Requires-Dist: pandas (>=1.4.3)
+Requires-Dist: py-cpuinfo (>=9.0.0,<10.0.0)
+Requires-Dist: scikit-learn (>=1.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: tpcp (>=0.20.1)
+Description-Content-Type: text/markdown
+
+# gaitmap_challenges
+
+A set of benchmark challenges for IMU based human gait analysis
+
+
+
