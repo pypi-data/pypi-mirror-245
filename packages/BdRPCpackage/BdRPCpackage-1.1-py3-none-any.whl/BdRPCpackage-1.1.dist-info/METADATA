@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: BdRPCpackage
+Version: 1.1
+Summary: Phylogenetic new sample placement software.
+Home-page: https://github.com/Bin-Ma/bd-rpc
+Author: mabin
+Author-email: 595470377@qq.com
+License-File: LICENSE
+
+./README.md
