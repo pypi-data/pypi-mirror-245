@@ -1,0 +1,12 @@
+aiogram_widgets/__meta__.py,sha256=El1sbpINO-cJ2mX6y_07W6DCl7IpRhkDNz3fpZpHII0,23
+aiogram_widgets/classes.py,sha256=pySwgOXpCuy6y8RCR-XeUUKXTQcmSC8j7yx6O5tkzfA,291
+aiogram_widgets/enums.py,sha256=KXtxJdJdZ1-AmLl7Vxp682m7HxKyh-tNW2-Eo13rYCE,328
+aiogram_widgets/pagination/__init__.py,sha256=qfsr92toCboDNd6FUuvigASNzVsn_tS-oGFsC29aDPI,74
+aiogram_widgets/pagination/_base.py,sha256=ir8mNCrGXjTVcv8bVi3-CCHvma-mwqteTTVS6j_4MBE,5408
+aiogram_widgets/pagination/keyboard.py,sha256=xh4mHY49pRzH7UGsifLTRjvsk3JqeSjjCcrmq0mqeGU,3226
+aiogram_widgets/pagination/text.py,sha256=ubu21-Y0Hk0YbO8rm5WErRHin6y7D_RBJGPt9Xk3maw,3364
+aiogram_widgets/types.py,sha256=7d9mmJaO16rPbe8oN0MVfO53JK5bT97SUj5LqFFDvPk,1011
+aiogram_widgets-1.2.6.dist-info/LICENSE,sha256=IfogmQvln21r3ZGpOwP-Pn7lb9IY6AqI5zhbo3aF69Q,1088
+aiogram_widgets-1.2.6.dist-info/METADATA,sha256=LGtUs_G5o-SRH7QN5zNFKxTZLkKoRhRD6nRgr6rib7k,5436
+aiogram_widgets-1.2.6.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+aiogram_widgets-1.2.6.dist-info/RECORD,,
