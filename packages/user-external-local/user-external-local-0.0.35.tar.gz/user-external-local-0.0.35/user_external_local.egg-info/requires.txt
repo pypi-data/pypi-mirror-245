@@ -1,0 +1,2 @@
+logger-local>=0.0.60
+database-without-orm-local>=0.0.83
