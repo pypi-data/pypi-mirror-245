@@ -1,0 +1,11 @@
+pytest_oof/__init__.py,sha256=dZJjCeVJ6g2i5oFgRV2kVNAMXJI-Ijm7EZnRyZH6QDY,144
+pytest_oof/__main__.py,sha256=53aKQHaM5df_t8rvMfGjtWMQ_xvFxAkAru7G09bBxOA,4619
+pytest_oof/hooks.py,sha256=LfVhsXX7V8kaBJdbfGhAvkNi2l-_TlhkBYNmNKouYfg,515
+pytest_oof/plugin.py,sha256=H47mxmfGmkbWs75iDAjxmdYjq83ofaml4N_ln4dccq8,17802
+pytest_oof/utils.py,sha256=y7L55BVHncE3oDfRgTsm0tA7B6HEueEH-q_bhIb9xJo,7890
+pytest_oof-1.1.0.dist-info/LICENSE,sha256=8wbX9FJwrjz7lZvWYsLDU_F0YD0jXdnSfgRGTYU0J30,1068
+pytest_oof-1.1.0.dist-info/METADATA,sha256=NS50eGRkoDonU05PvWRUlNlNsk567rJOaNW06I2hx_I,24818
+pytest_oof-1.1.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+pytest_oof-1.1.0.dist-info/entry_points.txt,sha256=ZiTW_bnaOvdXgemFqnziC54GwCFn8XAlZLeOnpMHDv4,94
+pytest_oof-1.1.0.dist-info/top_level.txt,sha256=p3LqRO1gt0kcPf2eQiheCaG-D5UefV0KY8iV6bocww0,11
+pytest_oof-1.1.0.dist-info/RECORD,,
