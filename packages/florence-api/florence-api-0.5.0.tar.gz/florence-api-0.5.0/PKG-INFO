@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: florence-api
+Version: 0.5.0
+Summary: A python client to access the Florence API
+Home-page: https://github.com/OwlsAtWork/florence
+Author: admin@owl.works
+Author-email: admin@owl.works
+Project-URL: Bug Tracker, https://github.com/OwlsAtWork/florence/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# Florence API
+A python client to access the Florence API.
+Florence is a natural language to SQL engine. It is a SaaS product that can be used to build natural language interfaces to SQL databases.
