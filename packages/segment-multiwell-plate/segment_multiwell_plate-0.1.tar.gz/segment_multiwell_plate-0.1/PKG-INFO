@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: segment_multiwell_plate
+Version: 0.1
+Summary: segment_multiwell_plate: Automatically divide multi-well plate into separate images of each well
+Home-page: https://github.com/
+Author: Murray Cutforth
+Author-email: murray.cutforth@gmail.com
+License: Apache 2.0
+Keywords: multiwell plate segmentation segment screen image analysis bioinformatics
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+
+# Segment Multiwell Plates
+
+This is an image analysis python package, for automatically segmenting an image of a multiwell plate into an array of
+sub-images. This is useful as part of a pipeline in high-throughput screening experiments.
+
+## Installation
+
+To use functions from this package, install into your environment using pip:
+
+`pip install segment-multiwell-plate`
+
+For a developer install, this repo can be installed with pipenv:
+
+`pipenv install --dev`
+
+
