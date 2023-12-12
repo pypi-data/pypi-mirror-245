@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: prometheus-givenergy
+Version: 1.0.2
+Summary: prometheus exporter for GivEnergy inverter metrics.
+Author-email: Barry Scott <barry@barrys-emacs.org>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/barry-scott/prometheus_givenergy
+Project-URL: Bug Tracker, https://github.com/barry-scott/prometheus_givenergy/issues
+Keywords: development
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymodbus
+Requires-Dist: crccheck
+
+# prometheus-givenergy
+prometheus exporter for GivEnergy inverter metrics
+
+prometheus-givenergy is inspired by givenergy-modbus module.
+givenergy-modbus does not work with current version of pymodbus.
+
+```
+Usage: prometheus_givenergy <host> [--port=<port>] [--prom-file=<prom-file> [--version]
+    <host> ip-address or hostname
+    <port> default 8899
+    <prom-file> default /var/lib/prometheus/node-exporter/givenergy.prom
+```
