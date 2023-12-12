@@ -1,0 +1,31 @@
+# Qleverfile for Olympics, use with https://github.com/ad-freiburg/qlever-control
+#
+# qlever get-data  # downloads .zip file of size 13 MB, uncompressed to 323 MB 
+# qlever index     # takes ~10 seconds and ~1 GB RAM (on an AMD Ryzen 9 5900X)
+# qlever start     # starts the server (instant)
+
+[data]
+NAME              = gnd
+BASE_URL          = https://github.com/wallscope/olympics-rdf
+GET_DATA_CMD      = curl -O https://data.dnb.de/opendata/authorities-gnd_lds.nt.gz
+INDEX_DESCRIPTION = GND authority data from https://data.dnb.de/opendata/authorities-gnd_lds.nt.gz
+# TEXT_DESCRIPTION  = All literals, search with FILTER CONTAINS(?var, "...")
+
+[index]
+FILE_NAMES    = authorities-gnd_lds.nt.gz
+CAT_FILES     = zcat ${FILE_NAMES}
+SETTINGS_JSON = { "ascii-prefixes-only": true, "num-triples-per-batch": 1000000 }
+
+[server]
+PORT                  = 7035
+ACCESS_TOKEN          = ${data:NAME}_7643543846
+MEMORY_FOR_QUERIES_GB = 5
+CACHE_MAX_SIZE_GB     = 2
+
+[docker]
+USE_DOCKER = false
+IMAGE      = adfreiburg/qlever
+
+[ui]
+PORT   = 7000
+CONFIG = olympics
