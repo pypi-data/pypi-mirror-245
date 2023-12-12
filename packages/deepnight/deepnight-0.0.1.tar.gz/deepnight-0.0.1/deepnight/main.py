@@ -1,0 +1,2 @@
+def deepnight():
+    print("DEEPNIGHT")
