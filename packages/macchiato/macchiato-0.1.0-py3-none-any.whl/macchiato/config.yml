@@ -1,0 +1,25 @@
+# Li chemical shift contribution due to Si neighbor type
+chemical_shift:
+  atom_type: Li
+  cluster_type: Si
+  rcut_atom: 3.4
+  rcut_cluster: 3.0
+  contributions:
+    bonded: 18.0
+    isolated: 6.0
+
+# Si Mössbauer peaks splitting
+mossbauer:
+  atom_type: Si
+  rcut: 3.4
+  contributions:
+    slope: 2.4
+    intercept: 0.15
+
+# X-ray PDF 
+pdf:
+  scattering_factors: [0.82, 0.16, 0.03]
+  atom_types: ["name Si", "name Li"]
+  nbins: 100
+  range: [0.0, 6.0]
+  rmax: 5.5
