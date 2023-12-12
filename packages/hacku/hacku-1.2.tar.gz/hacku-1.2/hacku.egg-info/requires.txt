@@ -1,0 +1,11 @@
+beautifulsoup4
+loguru
+requests[socks]
+id-validator
+random-user-agent
+jieba
+pycryptodome
+rsa
+PyExecJS
+ujson
+shodan
