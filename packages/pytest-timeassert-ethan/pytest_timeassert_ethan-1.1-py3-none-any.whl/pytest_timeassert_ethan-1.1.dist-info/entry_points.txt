@@ -1,0 +1,3 @@
+[pytest11]
+timeassert = pytest_timeassert_ethan.plugin
+
