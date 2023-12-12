@@ -1,0 +1,11 @@
+<canvas pySize="300x270" pyStyle="dark" pyBackground="(0,0,0)">
+    <!-- <list>
+        <list-item pyFor="setting in settings">
+            <label pyStyle="bgc=(0,0,0); tb='midleft'; to=(10, 0)" pyWidth="70"> {{ setting[0] }} </label>
+            <entry pyStyle="bw=1; bc=(40,40,40); si='int+'; max=3" pyWidth="30"> {{ setting[1] }} </entry>
+        </list-item>
+    </list> -->
+    <label> Enter your name: </label>
+    <entry pyId="name"> {{ name }} </entry>
+    <button pyAction="confirm_name" pyStyle="bgc=(40,120,40)">confirm name</button>
+</canvas>

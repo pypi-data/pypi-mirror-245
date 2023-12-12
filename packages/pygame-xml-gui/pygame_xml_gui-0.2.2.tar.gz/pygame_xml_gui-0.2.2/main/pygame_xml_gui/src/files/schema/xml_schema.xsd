@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="canvas" type="canvasType" />
+
+    <xsd:complexType name="canvasType">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="label" type="labelType" />
+            <xsd:element name="button" type="buttonType" />
+            <xsd:element name="entry" type="entryType" />
+            <xsd:element name="list" type="listType" />
+        </xsd:choice>
+
+        <xsd:attribute name="pySize" use="required">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:pattern value="[1-9][0-9]{0,3}x[1-9][0-9]{0,3}" />
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="pySource" type="xsd:string" use="optional" />
+        <xsd:attribute name="pyStyle" type="xsd:string" use="required" />
+        <!-- for now pyBackground is required, but it the future it will be optional and
+        if left blank the background will be transparent -->
+        <xsd:attribute name="pyBackground" type="rgbColor" use="required" />
+    </xsd:complexType>
+
+    <xsd:simpleType name="rgbColor">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d),\s*(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d),\s*(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\)" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="pyWidth" type="xsd:positiveInteger" use="optional" />
+                <xsd:attribute name="pyStyle" type="xsd:string" use="optional" />
+                <xsd:attribute name="pyIf" type="xsd:string" use="optional" />
+                <xsd:attribute name="pyNl" type="xsd:boolean" use="optional" default="1" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="buttonType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="pyWidth" type="xsd:positiveInteger" use="optional" />
+                <xsd:attribute name="pyStyle" type="xsd:string" use="optional" />
+                <xsd:attribute name="pyAction" type="xsd:string" use="optional" />
+                <xsd:attribute name="pyArgs" type="xsd:string" use="optional" />
+                <xsd:attribute name="pyIf" type="xsd:string" use="optional" />
+                <xsd:attribute name="pyNl" type="xsd:boolean" use="optional" default="1" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="entryType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="pyWidth" type="xsd:positiveInteger" use="optional" />
+                <xsd:attribute name="pyStyle" type="xsd:string" use="optional" />
+                <xsd:attribute name="pyAction" type="xsd:string" use="optional" />
+                <xsd:attribute name="pyArgs" type="xsd:string" use="optional" />
+                <xsd:attribute name="pyIf" type="xsd:string" use="optional" />
+                <xsd:attribute name="pyNl" type="xsd:boolean" use="optional" default="1" />
+                <xsd:attribute name="pyId" type="xsd:string" use="optional" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="listType">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="list-item" type="listItemType" />
+            <xsd:element name="label" type="labelType" />
+            <xsd:element name="button" type="buttonType" />
+            <xsd:element name="entry" type="entryType" />
+            <!-- <xsd:element name="list" type="listType" /> keep? -->
+        </xsd:choice>
+        <xsd:attribute name="pyMaxHeight" type="xsd:positiveInteger" />
+        <xsd:attribute name="pyIf" type="xsd:string" use="optional" />
+        <xsd:attribute name="pyWidth" type="xsd:positiveInteger" use="optional" />
+    </xsd:complexType>
+
+    <xsd:complexType name="listItemType">
+        <xsd:choice minOccurs="1" maxOccurs="unbounded">
+            <xsd:element name="label" type="labelType" />
+            <xsd:element name="button" type="buttonType" />
+            <xsd:element name="entry" type="entryType" />
+            <!-- <xsd:element name="list" type="listType" /> -->
+            <!-- nested lists are not allowed (for now at least) -->
+        </xsd:choice>
+        <xsd:attribute name="pyFor" type="xsd:string" use="optional" />
+        <xsd:attribute name="pyIf" type="xsd:string" use="optional" />
+    </xsd:complexType>
+
+</xsd:schema>

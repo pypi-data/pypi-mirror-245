@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pygame-xml-gui
+Version: 0.2.2
+Summary: 
+Home-page: https://github.com/marcelm9/pygame_xml_gui.git
+License: MIT
+Author: marcelm9
+Author-email: marcel.menzel09@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pygame (>=2.5.2,<3.0.0)
+Requires-Dist: pygamextras (==1.1.1)
+Requires-Dist: rich (>=13.5.3,<14.0.0)
+Requires-Dist: xmlschema (>=2.5.0,<3.0.0)
+Project-URL: Repository, https://github.com/marcelm9/pygame_xml_gui.git
+Description-Content-Type: text/markdown
+
+# pygame_xml_gui
+pygame_xml_gui is a library designed to make the creation of UIs easier by using XML. Refer to the `tests` directory for examples.

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pygame-xml-gui"
+version = "0.2.2"
+description = ""
+authors = ["marcelm9 <marcel.menzel09@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "pygame_xml_gui", from = "main" }]
+repository = "https://github.com/marcelm9/pygame_xml_gui.git"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pygame = "^2.5.2"
+rich = "^13.5.3"
+xmlschema = "^2.5.0"
+pygamextras = "1.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

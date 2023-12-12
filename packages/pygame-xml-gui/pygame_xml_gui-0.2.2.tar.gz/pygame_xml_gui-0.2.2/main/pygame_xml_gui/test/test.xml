@@ -1,0 +1,16 @@
+<canvas pySize="500x500" pyStyle="dark" pyBackground="(90,90,90)">
+    <label pyWidth="35" pyNl="0">Total points: {{ len(points) }}</label>
+    <button pyWidth="15" pyStyle="hl=(60,200,60)" pyAction="add_random" pyNl="0">Add</button>
+    <label pyWidth="50" pyStyle="tc=(255,0,0)" pyIf="len(points) == 0">no points yet!</label>
+    <label pyWidth="50" pyStyle="tc=(0,255,0)" pyIf="len(points) > 0 and len(points) % 2 == 0">number of points is even!</label>
+    <label pyWidth="50" pyStyle="tc=(255,0,0)" pyIf="len(points) > 0 and len(points) % 2 == 1">number of points is not even!</label>
+    <list pyMaxHeight="400">
+        <list-item pyFor="point in points">
+            <label pyWidth="30" pyStyle="bgc=(70,70,70);"> {{ point.name }}</label>
+            <label pyWidth="30" pyStyle="bgc=(70,70,70); tc=(255,0,0)" pyIf="'.' in str(point.pos[0]) or '.' in str(point.pos[1])"> {{ point.pos }}</label>
+            <label pyWidth="30" pyStyle="bgc=(70,70,70);" pyIf="not ('.' in str(point.pos[0]) and '.' in str(point.pos[1]))"> {{ point.pos }}</label>
+            <button pyWidth="20" pyStyle="hl=(100,100,255)" pyAction="round" pyArgs="point"> Round </button>
+            <button pyWidth="20" pyStyle="hl=(230,60,60)" pyAction="delete" pyArgs="point"> Delete </button>
+        </list-item>
+    </list>
+</canvas>

@@ -1,0 +1,18 @@
+<canvas pySize="300x270" pyStyle="dark" pyBackground="(0,0,0)">
+    <label > Shift </label>
+    <label pyWidth="22" pyNl="0"> Type </label>
+    <label pyWidth="78"> {{ type_ }} </label>
+    <label pyWidth="22" pyNl="0"> Car </label>
+    <label pyWidth="78"> {{ car }} </label>
+    <list pyWidth="100">
+        <list-item pyFor="crew_item in crew">
+            <label pyWidth="22" pyIf="crew_item[0] == 0"> Crew </label>
+            <label pyWidth="22" pyIf="crew_item[0] != 0" pyStyle="bgc=(0,0,0)"></label>
+            <label pyWidth="78"> {{ crew_item[1] }}</label>
+        </list-item>
+    </list>
+    <label pyWidth="22" pyNl="0"> Start </label>
+    <label pyWidth="78"> {{ start }} </label>
+    <label pyWidth="22" pyNl="0"> End </label>
+    <label pyWidth="78"> {{ end }} </label>
+</canvas>
