@@ -1,0 +1,2 @@
+[console_scripts]
+ARMflames = ARMflames.Comments:comments
