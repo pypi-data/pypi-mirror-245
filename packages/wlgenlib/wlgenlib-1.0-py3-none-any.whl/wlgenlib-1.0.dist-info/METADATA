@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wlgenlib
+Version: 1.0
+Summary: Simulating arrival of tasks/data into a system
+Home-page: https://github.com/columbia/workload-generator
+Download-URL: https://github.com/columbia/workload-generator/archive/refs/tags/v1.0.tar.gz
+License: MIT
+License-File: LICENSE.txt
+Requires-Dist: simpy
+Requires-Dist: loguru
+Requires-Dist: omegaconf
+Requires-Dist: numpy
+Requires-Dist: setuptools
+
