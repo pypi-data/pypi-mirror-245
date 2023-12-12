@@ -1,0 +1,17 @@
+talkingheads/__init__.py,sha256=eBPKxaCVP74On-Rb1Y_2b5Jf-bYO4ajlOzk54rU6m0M,305
+talkingheads/base_browser.py,sha256=5IQtFPYo-Gsr0U8DldL0XT8DYqpaEaPFvaHTTtrTtBk,14625
+talkingheads/object_map.py,sha256=HIjzTHjNd_GIEML_Pmt2wocDOoEwMKywcLx7tjxz6TU,2659
+talkingheads/utils.py,sha256=e85Qo9GiQEPVhfFOcw3NZZLpRmgtnrH23oC7L08Q46Y,1556
+talkingheads/model_library/__init__.py,sha256=tWcg4IuVu8OckAm8nu_nUJx_19e2yyn2xd8Wa5Nl7Kc,151
+talkingheads/model_library/bard.py,sha256=F3FwEihHM3A2a9Oorouxl7AXQEbjz3I7hXlqVrdN-Vo,5456
+talkingheads/model_library/chatgpt.py,sha256=nOj7LHg6Ho0WqyWwq4wWLV0NpHEt7N_T2818E91WduQ,10415
+talkingheads/model_library/huggingchat.py,sha256=TwtfDC6qPqJn2PG6SAtpy1GOVDIDYrqZx7HyWpYoGHs,5513
+talkingheads/model_library/pi.py,sha256=N7l6y30PYAJrU0L7Yb6p2F4GP95c53W36H4XxCmZCk0,5655
+talkingheads/multiagent/base_multiagent.py,sha256=uuVf4-wWY8fzppE_kQ7ovzyXuxSrKF9wkGX2MfM2IFg,2464
+talkingheads/multiagent/broadcast.py,sha256=aUyw4CY1JtC3nyDiHId9GhtYQ0n-mqle39S6OV01Wnk,2466
+talkingheads/multiagent/conversation.py,sha256=TCYBqwvKqwPR9JXu507eCvzhWwIpX6iLCDBMTIIj_3A,1079
+talkingheads-0.3.0.dist-info/LICENSE,sha256=3LTff5l3SKmZawkTZ9HPcQRYbSnwBx7ouerlPUIk11g,1066
+talkingheads-0.3.0.dist-info/METADATA,sha256=n7zTszzVHNQNcYgpZZ39qWTtVUnPLXD1aI6cObKJZKk,4319
+talkingheads-0.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+talkingheads-0.3.0.dist-info/top_level.txt,sha256=j1KJ8sqYTCQ_xWA5F9ArqzVOmvTaRXQyd9IIpLCe8LE,13
+talkingheads-0.3.0.dist-info/RECORD,,
