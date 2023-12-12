@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: python-spartan
+Version: 0.2.3
+Summary: Spartan, often referred to as "The swiss army knife for serverless development," is a tool that simplifies the creation of serverless applications on popular cloud providers by generating Python code for classes and more. It streamlines your development process, saving you time and ensuring code consistency in your serverless projects.
+Author: nerdmonkey
+Author-email: sydel.palinlin@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: alembic (>=1.12.0,<2.0.0)
+Requires-Dist: faker (>=20.1.0,<21.0.0)
+Requires-Dist: isort (>=5.12.0,<6.0.0)
+Requires-Dist: poetry (>=1.7.0,<2.0.0)
+Requires-Dist: pymysql (>=1.1.0,<2.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# Spartan
+
+Spartan, often referred to as "The swiss army knife for serverless development," is a tool that simplifies the creation of serverless applications on popular cloud providers by generating Python code for classes and more. It streamlines your development process, saving you time and ensuring code consistency in your serverless projects.
+

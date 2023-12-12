@@ -1,0 +1,173 @@
+from typing import List
+
+from fastapi import HTTPException
+from sqlalchemy.exc import DatabaseError
+from sqlalchemy.orm import Session
+
+from app.models.{{class_name_lower_case_singular}} import {{class_name_title_case_singular}}
+from app.requests.{{class_name_lower_case_singular}} import {{class_name_title_case_singular}}CreateRequest, {{class_name_title_case_singular}}UpdateRequest
+from app.responses.{{class_name_lower_case_singular}} import {{class_name_title_case_singular}}CreateResponse, {{class_name_title_case_singular}}Response, {{class_name_title_case_singular}}UpdateResponse
+
+import logging
+
+class {{class_name_title_case_singular}}Service:
+    """
+    Service class for managing {{class_name_lower_case_singular}}-related operations.
+    """
+
+    def __init__(self, db: Session):
+        """
+        Initialize the {{class_name_title_case_singular}}Service class.
+
+        Args:
+            db (Session): The database session.
+        """
+        self.db = db
+
+    def get_by_id(self, id: int) -> {{class_name_title_case_singular}}:
+        """
+        Retrieve a {{class_name_lower_case_singular}} by their ID.
+
+        Args:
+            id (int): The ID of the {{class_name_lower_case_singular}}.
+
+        Returns:
+            {{class_name_title_case_singular}}: The {{class_name_lower_case_singular}} object.
+
+        Raises:
+            HTTPException: If the {{class_name_lower_case_singular}} is not found.
+        """
+        {{class_name_lower_case_singular}} = self.db.query({{class_name_title_case_singular}}).filter({{class_name_title_case_singular}}.id == id).first()
+        if not {{class_name_lower_case_singular}}:
+            raise HTTPException(status_code=404, detail="{{class_name_title_case_singular}} not found")
+        return {{class_name_lower_case_singular}}
+
+    def all(self, page: int, items_per_page: int) -> List[{{class_name_title_case_singular}}Response]:
+        """
+        Retrieve all {{class_name_lower_case_plural}} with pagination.
+
+        Args:
+            page (int): The page number.
+            items_per_page (int): The number of items per page.
+
+        Returns:
+            Tuple[List[{{class_name_title_case_singular}}Response], int]: A tuple containing the list of {{class_name_lower_case_singular}} responses and the total number of {{class_name_lower_case_plural}}.
+
+        Raises:
+            HTTPException: If there is an internal server error.
+        """
+        try:
+            offset = (page - 1) * items_per_page
+            logging.info(f"offset: {offset}")
+            {{class_name_lower_case_plural}} = self.db.query({{class_name_title_case_singular}}).offset(offset).limit(items_per_page).all()
+            responses = [
+                {{class_name_title_case_singular}}Response(**{{class_name_lower_case_singular}}.__dict__) for {{class_name_lower_case_singular}} in {{class_name_lower_case_plural}}
+            ]
+
+            return responses, self.total()
+        except DatabaseError as e:
+            raise HTTPException(status_code=500, detail="Internal server error")
+        except Exception as e:
+            raise HTTPException(status_code=500, detail="Internal server error")
+
+    def total(self) -> int:
+        """
+        Get the total number of {{class_name_lower_case_plural}}.
+
+        Returns:
+            int: The total number of {{class_name_lower_case_plural}}.
+        """
+        return self.db.query({{class_name_title_case_singular}}).count()
+
+    def find(self, id: int) -> {{class_name_title_case_singular}}Response:
+        """
+        Find a {{class_name_lower_case_singular}} by their ID and return the {{class_name_lower_case_singular}} response.
+
+        Args:
+            id (int): The ID of the {{class_name_lower_case_singular}}.
+
+        Returns:
+            {{class_name_title_case_singular}}Response: The {{class_name_lower_case_singular}} response.
+
+        Raises:
+            HTTPException: If the {{class_name_lower_case_singular}} is not found.
+        """
+        item = self.get_by_id(id)
+        return {{class_name_title_case_singular}}Response(**item.__dict__)
+
+    def save(self, {{class_name_lower_case_singular}}: {{class_name_title_case_singular}}CreateRequest) -> {{class_name_title_case_singular}}CreateResponse:
+        """
+        Save a new {{class_name_lower_case_singular}} to the database.
+
+        Args:
+            {{class_name_lower_case_singular}} ({{class_name_title_case_singular}}CreateRequest): The {{class_name_lower_case_singular}} create request object.
+
+        Returns:
+            {{class_name_title_case_singular}}CreateResponse: The response data of the created {{class_name_lower_case_singular}}.
+
+        Raises:
+            HTTPException: If a {{class_name_lower_case_singular}} with the same email already exists.
+        """
+        existing = self.db.query({{class_name_title_case_singular}}).filter({{class_name_title_case_singular}}.email == {{class_name_lower_case_singular}}.email).first()
+
+        if existing:
+            raise HTTPException(
+                status_code=422, detail="{{class_name_title_case_singular}} with this email already exists"
+            )
+
+        item = {{class_name_title_case_singular}}(**{{class_name_lower_case_singular}})
+        self.db.add(item)
+        self.db.commit()
+        self.db.refresh(item)
+        response_data = {
+            "id": item.id,
+            "username": item.username,
+            "email": item.email,
+        }
+        return response_data
+
+    def update(self, id: int, {{class_name_lower_case_singular}}: {{class_name_title_case_singular}}UpdateRequest) -> {{class_name_title_case_singular}}UpdateResponse:
+        """
+        Update a {{class_name_lower_case_singular}} in the database.
+
+        Args:
+            id (int): The ID of the {{class_name_lower_case_singular}}.
+            {{class_name_lower_case_singular}} ({{class_name_title_case_singular}}UpdateRequest): The {{class_name_lower_case_singular}} update request object.
+
+        Returns:
+            {{class_name_title_case_singular}}UpdateResponse: The response data of the updated {{class_name_lower_case_singular}}.
+        """
+        item = self.get_by_id(id)
+        data = {{class_name_lower_case_singular}}.dict(exclude_unset=True)
+        if "password" in data:
+            data["password"] = "hashed_" + data["password"]
+        for key, value in data.items():
+            setattr(item, key, value)
+        self.db.commit()
+        self.db.refresh(item)
+        response_data = {
+            "id": item.id,
+            "username": item.username,
+            "email": item.email,
+        }
+        return response_data
+
+    def delete(self, id: int):
+        """
+        Delete a {{class_name_lower_case_singular}} from the database.
+
+        Args:
+            id (int): The ID of the {{class_name_lower_case_singular}}.
+
+        Returns:
+            dict: The response data of the deleted {{class_name_lower_case_singular}}.
+        """
+        item = self.get_by_id(id)
+        self.db.delete(item)
+        self.db.commit()
+        response_data = {
+            "id": item.id,
+            "username": item.username,
+            "email": item.email,
+        }
+        return response_data

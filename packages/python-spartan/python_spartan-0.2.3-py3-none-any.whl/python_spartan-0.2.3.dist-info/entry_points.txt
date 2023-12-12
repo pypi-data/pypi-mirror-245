@@ -1,0 +1,3 @@
+[console_scripts]
+spartan=python_spartan.main:app
+

@@ -1,0 +1,178 @@
+from typing import List, Optional
+
+from fastapi import APIRouter, Depends, HTTPException, Query
+from sqlalchemy.orm import Session
+
+from app.requests.{{class_name_lower_case_singular}} import {{class_name_title_case_singular}}CreateRequest, {{class_name_title_case_singular}}UpdateRequest
+from app.responses.{{class_name_lower_case_singular}} import {{class_name_title_case_singular}}CreateResponse, {{class_name_title_case_singular}}Response, {{class_name_title_case_singular}}UpdateResponse, Paginated{{class_name_title_case_singular}}Response, Single{{class_name_title_case_singular}}Response
+from app.services.{{class_name_lower_case_singular}} import {{class_name_title_case_singular}}Service
+from config.database import get_session
+
+import logging
+from app.models.{{class_name_lower_case_singular}} import {{class_name_title_case_singular}}
+
+{{class_name_lower_case_singular}}_service = {{class_name_title_case_singular}}Service(db=None)
+
+route = APIRouter(
+    prefix="/api", tags=["{{class_name_title_case_singular}}s"], responses={404: {"description": "Not found"}}
+)
+
+@route.get("/{{class_name_lower_case_plural}}", status_code=200, response_model=Paginated{{class_name_title_case_singular}}Response)
+async def get_{{class_name_lower_case_singular}}s(
+    page: Optional[int] = Query(1, description="Page number", gt=0),
+    items_per_page: Optional[int] = Query(10, description="Items per page", gt=0),
+    db: Session = Depends(get_session),
+):
+    """
+    Get a list of {{class_name_lower_case_plural}} with pagination.
+
+    Args:
+        page (int): The page number.
+        items_per_page (int): Number of items per page.
+        db (Session): SQLAlchemy database session.
+
+    Returns:
+        List[{{class_name_title_case_singular}}Response]: List of {{class_name_lower_case_singular}} objects.
+    """
+    try:
+        {{class_name_lower_case_singular}}_service.db = db
+        items, total = {{class_name_lower_case_singular}}_service.all(page, items_per_page)
+
+        if not items:
+            raise ValueError("No {{class_name_lower_case_plural}} found")
+
+        return {
+            "data": items,
+            "meta": {
+                "current_page": page,
+                "items_per_page": items_per_page,
+                "total": total,
+            },
+            "status_code": 200
+        }
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=f"{e}")
+    except Exception as e:
+        logging.error(e)
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+
+@route.get("/{{class_name_lower_case_plural}}/{id}", status_code=200, response_model=Single{{class_name_title_case_singular}}Response)
+async def get_{{class_name_lower_case_singular}}(id: int, db: Session = Depends(get_session)):
+    """
+    Get a {{class_name_lower_case_singular}} by their unique identifier.
+
+    Args:
+        id (int): The unique identifier of the {{class_name_lower_case_singular}}.
+        db (Session): SQLAlchemy database session.
+
+    Returns:
+        {{class_name_title_case_singular}}Response: {{class_name_title_case_singular}} object.
+    """
+    try:
+        {{class_name_lower_case_singular}}_service.db = db
+        {{class_name_lower_case_singular}} = {{class_name_lower_case_singular}}_service.find(id)
+        if not {{class_name_lower_case_singular}}:
+            raise HTTPException(status_code=404, detail="{{class_name_title_case_singular}} not found")
+        return {
+            "data": {{class_name_lower_case_singular}},
+            "status_code": 200
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+
+@route.post("/{{class_name_lower_case_plural}}", status_code=201, response_model=Single{{class_name_title_case_singular}}Response)
+async def create_{{class_name_lower_case_singular}}({{class_name_lower_case_singular}}: {{class_name_title_case_singular}}CreateRequest, db: Session = Depends(get_session)):
+    """
+    Create a new {{class_name_lower_case_singular}}.
+
+    Args:
+        {{class_name_lower_case_singular}} ({{class_name_title_case_singular}}CreateRequest): {{class_name_title_case_singular}} creation request.
+        db (Session): SQLAlchemy database session.
+
+    Returns:
+        {{class_name_title_case_singular}}CreateResponse: Created {{class_name_lower_case_singular}} object.
+
+    Raises:
+        HTTPException: If there is an internal server error.
+
+    """
+    try:
+        {{class_name_lower_case_singular}}_service.db = db
+        created_{{class_name_lower_case_singular}} = {{class_name_lower_case_singular}}_service.save({{class_name_lower_case_singular}})
+        return {
+            "data": created_{{class_name_lower_case_singular}},
+            "status_code": 201
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+
+@route.put("/{{class_name_lower_case_plural}}/{id}", status_code=200, response_model=Single{{class_name_title_case_singular}}Response)
+async def update_{{class_name_lower_case_singular}}(
+    id: int, {{class_name_lower_case_singular}}: {{class_name_title_case_singular}}UpdateRequest, db: Session = Depends(get_session)
+):
+    """
+    Update an existing {{class_name_lower_case_singular}}'s information.
+
+    Args:
+        id (int): The unique identifier of the {{class_name_lower_case_singular}} to update.
+        {{class_name_lower_case_singular}} ({{class_name_title_case_singular}}UpdateRequest): {{class_name_title_case_singular}} update request.
+        db (Session): SQLAlchemy database session.
+
+    Returns:
+        {{class_name_title_case_singular}}UpdateResponse: Updated {{class_name_lower_case_singular}} object.
+
+    Raises:
+        HTTPException: If the {{class_name_lower_case_singular}} is not found (status_code=404),
+                       if there is a value error (status_code=400),
+                       or if there is an internal server error (status_code=500).
+    """
+    try:
+        {{class_name_lower_case_singular}}_service.db = db
+        updated_{{class_name_lower_case_singular}} = {{class_name_lower_case_singular}}_service.update(id, {{class_name_lower_case_singular}})
+        if not updated_{{class_name_lower_case_singular}}:
+            raise HTTPException(status_code=404, detail="{{class_name_title_case_singular}} not found")
+        return {
+            "data": updated_{{class_name_lower_case_singular}},
+            "status_code": 200
+        }
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+
+@route.delete("/{{class_name_lower_case_plural}}/{id}", status_code=200, response_model=Single{{class_name_title_case_singular}}Response)
+
+async def delete_{{class_name_lower_case_singular}}(id: int, db: Session = Depends(get_session)):
+    """
+    Delete a {{class_name_lower_case_singular}} by their unique identifier.
+
+    Args:
+        id (int): The unique identifier of the {{class_name_lower_case_singular}} to delete.
+        db (Session): SQLAlchemy database session.
+
+    Returns:
+        dict: A dictionary containing the deleted {{class_name_lower_case_singular}} data and the status code.
+
+    Raises:
+        HTTPException: If the {{class_name_lower_case_singular}} is not found or if there is an internal server error.
+    """
+    try:
+        {{class_name_lower_case_singular}}_service.db = db
+
+        {{class_name_lower_case_singular}} = {{class_name_lower_case_singular}}_service.delete(id)
+
+        if not {{class_name_lower_case_singular}}:
+            raise HTTPException(status_code=500, detail="Failed to delete {{class_name_lower_case_singular}}")
+
+        return {
+            "data": {{class_name_lower_case_singular}},
+            "status_code": 200
+        }
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal server error {e}")
