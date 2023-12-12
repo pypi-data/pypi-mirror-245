@@ -1,0 +1,10 @@
+prometheus_givenergy/__init__.py,sha256=meXl4ES5vPgqwbSbzhV6GdDDQ3khTbn6KpFevCKcaZA,127
+prometheus_givenergy/__main__.py,sha256=E2fHamoXnniFs8tM8pTJiLzVXQNijCUnmSlVsSkIEYc,1824
+prometheus_givenergy/prometheus.py,sha256=0CtfsjMt_44nUTVNEB07JrjPM8iFPmrlJ-BLscUIe3U,7868
+prometheus_givenergy/register.py,sha256=28U84ZcF2RdysLKJ-3qxlDmSobvpRGqxH09iwrVddPk,38664
+prometheus_givenergy-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+prometheus_givenergy-1.0.0.dist-info/METADATA,sha256=321tLhwC0l5AHbaeuEv2aF1OmulLLT3wgU4yf2vgknI,1107
+prometheus_givenergy-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+prometheus_givenergy-1.0.0.dist-info/entry_points.txt,sha256=sux3HhnwjagRAEa3CCVYA4Tup951HURIDp1wWna_PIk,76
+prometheus_givenergy-1.0.0.dist-info/top_level.txt,sha256=dojkIk7kNvMdIFexEueL7KTFrsjpWAx7JTkKxGmERL8,21
+prometheus_givenergy-1.0.0.dist-info/RECORD,,
