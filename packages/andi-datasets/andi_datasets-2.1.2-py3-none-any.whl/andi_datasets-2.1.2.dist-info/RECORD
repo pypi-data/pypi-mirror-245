@@ -1,0 +1,17 @@
+andi_datasets/__init__.py,sha256=UiuBcRXPtXxPUBDdp0ZDvWl0U9Db1kMNfT3oAfhxqLg,22
+andi_datasets/_modidx.py,sha256=BlHJq9jh-ySsVT1bsOqiUH3FNDXmo4llOA4Hmj5pHjg,40201
+andi_datasets/analysis.py,sha256=xFD-QyrSDZIDh6nkDW9plpiWQGj49k-aSZKJueXhDlk,7743
+andi_datasets/datasets_challenge.py,sha256=znz39vKuMEqbMcxi84pn-Ti8FOqDgDdST-k30iSv8LY,39528
+andi_datasets/datasets_phenom.py,sha256=7Y3e1QscMEdUMte4Titm57VyxBlXsMAgCGuMy0hiBCw,14211
+andi_datasets/datasets_theory.py,sha256=gjgWUORVjX9PD-wAl1fixBlwvcJJo0LEeRDm3ta4mac,28030
+andi_datasets/models_phenom.py,sha256=VXVmpaiK-XmDbg6PhVN1eMDo9kxvNIgLoKtV-r7cIss,58489
+andi_datasets/models_theory.py,sha256=cRDiDEytr4WN8xO7_XOpnkkOh5w_12KRFsSVQPtJNuU,17025
+andi_datasets/utils_challenge.py,sha256=mieXS_0vzBEcnRkH3fGzmya1FZ8zLbWZ4lYk8URSjss,69340
+andi_datasets/utils_trajectories.py,sha256=yGAQcbMGGwFjZwbZx4Vx_WyUXq_IgBvjAfgJr7Yipts,19650
+andi_datasets/utils_videos.py,sha256=I8NUU4Bn-LI6dZmGXOIukZ1p71USw-8S0n9jhdtszDw,15459
+andi_datasets-2.1.2.dist-info/LICENSE,sha256=-ggOdKZO7jzbdyYjTjgCjYOprIR4_G6rFF9OqUFxB90,1073
+andi_datasets-2.1.2.dist-info/METADATA,sha256=mCBpRcnLtP3Ep6oInQXd6innJ3Kwf1vn4_Bp9b9iNnM,6817
+andi_datasets-2.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+andi_datasets-2.1.2.dist-info/entry_points.txt,sha256=hOVlKxSCZ4XPQ-0tLFC6rUxpus5AtWhoB2A2QZF2ZcM,48
+andi_datasets-2.1.2.dist-info/top_level.txt,sha256=2ypds7o_6ZOjg49bakK5LG1UtBRkVzPYgtBrX8jr6B8,14
+andi_datasets-2.1.2.dist-info/RECORD,,
