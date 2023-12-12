@@ -1,0 +1,11 @@
+rindex/c_rindex.pyx,sha256=DTAHBq0A4SjVoSm9fHIAfehuCX1PY1RpdBiuuFdlKgc,657
+rindex/__init__.py,sha256=XjGvRup72hTSGeqSvDoE1siN-DT4zYLB2_GvjkKlj9A,770
+rindex/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rindex/rindex.py,sha256=REXCLywwWXKMedpmbsxI2r7p9JA4YGFUd4u0Vz3cSWI,519
+rindex/c_rindex.cpython-312-x86_64-linux-musl.so,sha256=vbKNZS0adMV3l4op4u-z2gXeIKIRucUE8pJ95ZTSLi0,260576
+rindex/pypy_rindex.py,sha256=aAOWk4-6DV7acqj1K5mivdHfdfOAfUZhM17Mu76RXaE,507
+rindex-1.1.0.dist-info/RECORD,,
+rindex-1.1.0.dist-info/WHEEL,sha256=_HcQ2b7A7kmoL07OrmlfslTmjrPbYdrUU_3YEedvR-E,113
+rindex-1.1.0.dist-info/LICENSE,sha256=NX0lGqKF1TajB72d3L5VWFQ9H_EX00w1xV_kiErBgdU,1058
+rindex-1.1.0.dist-info/METADATA,sha256=JEBsATtkEAOxD6SVKEZ2GWHaI9NH3X4H9LNwOz_RP0o,2499
+rindex-1.1.0.dist-info/top_level.txt,sha256=kZfINPM6WPsVMvQ25XuAuYl5yRkckxez0kkfp7TWlzc,7
