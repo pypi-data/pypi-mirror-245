@@ -1,0 +1,6 @@
+selenium
+pytz
+kubernetes
+requests
+beautifulsoup4
+dataclasses
