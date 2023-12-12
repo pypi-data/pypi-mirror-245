@@ -1,0 +1,48 @@
+#!python
+
+import configparser
+
+from pathlib import Path
+import pydynamicdomains as pydns
+
+EXAMPLE_CONF = """
+[CREDENTIALS]
+username = #Provider-username-here
+password = #Provider-password-here
+
+[HOST]
+hostname = #FQDN-of-Dynamic-Host
+
+[DNS-PROVIDER]
+CHECKIP_URL = "https://domains.google.com/checkip"
+USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"
+UPDATE_URL_BASE = #Provider-dynamic-update-post-url
+"""
+
+
+def main() -> None:
+    conf_file = Path(f"{Path.home()}/.local/pydynamicdomains/dynamic-dns.ini")
+    if not conf_file.exists():
+        Path.mkdir(conf_file.parent, parents=True)
+        with open(conf_file, "w+") as example_file:
+            example_file.write(EXAMPLE_CONF)
+        print(f"Error: No Dynamic DNS configuration file found. Created template at: {conf_file}")
+
+    conf = configparser.ConfigParser()
+    conf.read("./dynamic-dns.ini")
+
+    dynamic_record = pydns.DynamicRecord(hostname=conf['HOST']['hostname'],
+                                         password=conf['CREDENTIALS']['password'],
+                                         update_url_base=conf['DNS-PROVIDER']["UPDATE_URL_BASE"],
+                                         user_agent=conf['DNS-PROVIDER']["USER_AGENT"],
+                                         username=conf['CREDENTIALS']['username']
+                                         )
+
+    if not dynamic_record.current_ip:
+        dynamic_record.current_ip = conf['DNS-PROVIDER']["CHECKIP_URL"]
+
+    print(f"Response is: {dynamic_record.update_dynamic_record()}")
+
+
+if __name__ == "__main__":
+    main()
