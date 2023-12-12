@@ -1,0 +1,9 @@
+setup.py
+unegui_models/__init__.py
+unegui_models/db_settings.py
+unegui_models/models.py
+unegui_models.egg-info/PKG-INFO
+unegui_models.egg-info/SOURCES.txt
+unegui_models.egg-info/dependency_links.txt
+unegui_models.egg-info/requires.txt
+unegui_models.egg-info/top_level.txt
