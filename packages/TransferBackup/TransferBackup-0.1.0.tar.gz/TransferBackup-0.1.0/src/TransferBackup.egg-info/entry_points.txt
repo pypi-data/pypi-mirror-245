@@ -1,0 +1,2 @@
+[console_scripts]
+TransferBackup = TransferBackup.__main__:transfer_backup

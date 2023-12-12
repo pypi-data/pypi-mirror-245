@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements_dev.txt
+setup.cfg
+setup.py
+tox.ini
+src/TransferBackup/__init__.py
+src/TransferBackup/__main__.py
+src/TransferBackup/transfer_backup.py
+src/TransferBackup.egg-info/PKG-INFO
+src/TransferBackup.egg-info/SOURCES.txt
+src/TransferBackup.egg-info/dependency_links.txt
+src/TransferBackup.egg-info/entry_points.txt
+src/TransferBackup.egg-info/requires.txt
+src/TransferBackup.egg-info/top_level.txt
