@@ -1,0 +1,264 @@
+激活虚拟环境
+virtualenv venv
+cd venv
+source bin/activate
+
+安装requirement.txt
+pip install -r requirements.txt
+
+pip3.9 install -r requirements.txt
+
+生成requirement.txt
+pip freeze > requirements.txt
+
+
+新建App
+python3 manage.py startapp app
+
+生成数据字段描述
+python manage.py migratecomment sobase
+
+启动异步任务
+celery -A application.celery worker -B --loglevel=info
+
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py init
+python manage.py multimigrate --all
+python manage.py init_area
+python manage.py createsuperuser
+python manage.py collectstatic
+
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+
+ENV=test python3.9 manage.py makemigrations
+ENV=test python3.9 manage.py migrate
+ENV=test python3.9 manage.py multimigrate --all
+ENV=test python3.9 manage.py init
+ENV=test python3.9 manage.py init_area
+
+ENV=test python3 tests.py
+
+ENV=test python3.9 manage.py runserver 0.0.0.0:7000
+
+ENV=test nohup python3.9 manage.py runserver 0.0.0.0:7000
+
+docker cp songinx:/etc/nginx/conf.d/nginx.conf /core_app/tsa/conf/
+
+docker cp /core_app/tsa/conf/nginx.conf songinx:/etc/nginx/conf.d/nginx.conf
+
+
+第一步 安装 python
+https://www.jianshu.com/p/4ac2fc4967b2
+
+下载地址
+
+指令集根据牌型号 下拉选择
+
+# 备份配置文件
+
+# 执行还是netmiko
+
+DHCP
+
+任务管理
+租户 k8s/数据库隔离?
+定时任务备份配置文件
+
+
+docker save mysql > mysql.tar
+docker save nginx > nginx.tar
+docker save redis > redis.tar
+
+docker load < mysql.tar
+docker load < nginx.tar
+docker load < redis.tar
+
+# 列出所有的容器 ID
+docker ps -aq
+
+# 停止所有的容器
+docker stop $(docker ps -aq)
+
+# 删除所有的容器
+docker rm $(docker ps -aq)
+
+# 删除所有的镜像
+docker rmi $(docker images -q)
+
+
+# 切换到docker-compose.yaml 根目录  后台运行
+
+# 进入docker-compose.yml所在文件夹，输入以下命令构建镜像
+sudo docker-compose build
+
+docker-compose -f docker-compose-dev.yaml up -d
+
+docker-compose -f docker-compose-test.yaml up -d soweb
+
+
+docker-compose -f docker-compose-pro.yaml up -d
+
+
+docker-compose -f docker-compose-pro-yj.yaml up -d
+
+
+租户管理
+OID 同步在网MAC地址
+全局配置表
+
+
+第一步
+.1.3.6.1.6.3.1.1.5.4
+
+找
+.1.3.6.1.6.3.1.1.5.3  down
+or
+.1.3.6.1.6.3.1.1.5.4  up
+
+.1.3.6.1.2.1.2.2.1.1  value 7
+
+oid -[] 7 接口
+
+第一步需要设置acl 只能手动
+
+自动跑批设置snmp trap infrom
+配置文件备份----------------------------------------
+配置文件解析----------------------------------------
+配置文件解析设备名称
+自助接入梳理
+
+
+
+NMS只会响应Inform报文，不会响应Trap报文，所以Trap通知是不可靠的，Inform是可靠的。但是NMS应答报文会带来额外的开销，给网络和NMS增加额外负担。现网中一般是两个通知结合使用，一些告警会频繁发送，建议使用Trap通知。如果告警紧急，不希望有告警丢失，则可以使用Inform通知。
+
+Inform通知只在SNMPv2c和SNMPv3版本支持。
+
+clery
+
+1.网络设备有效性验证
+2.网络设备新增列 有效性验证,有效性验证提示信息, OneToOne设备信息表 通过oid 获取 平台 版本 型号,
+3.备份配置文件-  任务表 Task -新增内置任务 备份配置文件  晚上12- (查询所有租户-动态修改数据库链接-获取网络设备表- 全行所有网络设备-类型形成一个大json-执行-结果写入数据表)
+4.周四发布 clery
+
+
+docker run --name redis -p 6379:6379 --restart=always -d redis:5.0
+
+docker cp redis:/etc/redis/redis.conf /core_app/tsa/compose/redis/
+
+
+docker run --name redis -p 6379:6379 -v /core_app/tsa/compose/redis/redis.conf:/etc/redis/redis.conf --restart=always -d redis
+
+-v /core_app/tsa/compose/redis/redis.conf:/etc/redis/redis.conf
+
+
+设备详情-接口
+备份配置文件
+trap 日志显示
+JUNIPER_JUNOS
+设备详情
+机构编码 cabinet_mange__machine_mange__org__code
+机构名称 cabinet_mange__machine_mange__org__name
+简称    cabinet_mange__machine_mange__org__short_name
+行政区划 cabinet_mange__machine_mange__org__admin_divistion
+营业状态 cabinet_mange__machine_mange__org__trade_status
+地址    cabinet_mange__machine_mange__org__address
+
+人员信息
+emp_info_result
+
+机房编码 cabinet_mange__machine_mange__code
+机房名称 cabinet_mange__machine_mange__name
+类型    cabinet_mange__machine_mange__mach_type
+
+机柜编码 cabinet_mange__code
+机柜U数  cabinet_mange__total
+U位状态  device_state
+
+所属分行 去掉
+
+
+# 基线检查代码
+
+
+锐捷设置mac认证
+configure,interface {{interface}},dot1x port-control auto,dot1x mac-auth-bypass,shutdown,no shutdown
+
+h3c设置mac认证
+sys,interface {{interface}},dot1x,mac-authentication,shutdown,undo shutdown
+
+华为设置mac认证
+sys,interface {{interface}},dot1x enable,dot1x mac-bypass,shutdown,undo shutdown
+
+锐捷查询mac ruijie ruijie show dot1x summary
+
+h3c查询mac1 h3c h3c display mac- authentication,\n 工
+h3c查询mac2 h3c h3c5 display dot1) sessions
+华为查询mac1 huawei huawei display aaa  nline-fail-record interface {{interface}},y
+华为查询mac2 huawei huawei display acces s-user detail
+
+
+明日对接事项
+Trap 已完成
+联动snmp 获取mac 已完成
+登录交换机查询 mac 明天完成
+trap 准入日志前端页面显示 周六完成
+准入程序/解析模版 周六
+周日 发布行内测试
+
+sudo docker-compose build
+
+docker-compose -f docker-compose-dev.yaml up -d
+
+docker-compose -f docker-compose-test.yaml up -d
+
+docker-compose -f docker-compose-test.yaml up -d soweb
+
+
+docker-compose -f docker-compose-pro.yaml up -d
+
+
+docker-compose -f docker-compose-pro-yj.yaml up -d
+
+
+docker save mysql > mysql.tar
+docker save redis > redis.tar
+docker save questionnaire_nginx > questionnaire_nginx.tar
+docker save questionnaire_questionnaire > questionnaire_questionnaire.tar
+docker save portainer/portainer > portainer.tar
+
+
+docker load < mysql.tar
+docker load < redis.tar
+docker load < tsa_nginx.tar
+docker load < tsa_tsa.tar
+docker load < portainer.tar
+
+docker rm
+
+清理docker 构建缓存
+docker system df
+docker volume prune
+
+
+第一步新建文件夹
+第二步修改数据/Redis 配置
+第三步启动compose文件
+
+
+pip download uwsgi -d "/Users/congxingwang/pythoncode/core_app/questionnaire/"
+
+
+
+pip download -d ./path uwsgi -i https://pypi.mirrors.ustc.edu.cn/simple/
+
+pip install --no-index --find-links=./path uwsgi
+
+pip install --no-index --find-links=./ so_base
+
+wangcongxing
+wang@199394

@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+
+  sobase:
+    build: /Users/congxingwang/pythoncode/core_app/so/python/sobase/ # 使用myproject目录下的Dockerfile
+    container_name: sobase
+    #privileged: true #设置容器的权限为root
+    network_mode: host
+    volumes:
+      - /opt/teamnas/media/:/hbyapp/sobase/media # 以数据卷挂载容器内用户上传媒体文件
+      - /opt/teamnas/logs/:/tmp # 挂载uwsgi日志
+    environment:
+      - DEBUG=False
+      - TZ=Asia/Shanghai
+      - privileged=true
+    restart: always
+    tty: true
+    stdin_open: true
+
+  nginx:
+    build: ./compose/nginx
+    container_name: songinx
+    volumes:
+      - /opt/teamnas/media/:/usr/share/nginx/html/media/ # 挂载用户上传媒体文件
+    network_mode: host
+    depends_on:
+      - sobase
+    restart: always

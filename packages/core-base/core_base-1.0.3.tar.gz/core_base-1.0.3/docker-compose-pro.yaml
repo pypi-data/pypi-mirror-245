@@ -1,0 +1,46 @@
+version: "3"
+
+volumes: # 自定义数据卷，位于宿主机/var/lib/docker/volumes内
+  so_db_vol: # 定义数据卷同步容器内mysql数据
+  so_redis_vol: # 定义数据卷同步redis容器内数据
+  so_media_vol: # 定义数据卷同步sobase media文件夹数据
+  so_uwsgi_log_vol: # 定义数据卷同步sobase uwsgi log文件夹数据
+
+services:
+
+  questionnaire:
+    image: questionnaire_questionnaire
+    container_name: questionnaire
+    #privileged: true #设置容器的权限为root
+    network_mode: host
+    volumes:
+      - /opt/teamnas/media/:/netopspro/tsa/media # 以数据卷挂载容器内用户上传媒体文件
+      - /opt/teamnas/logs/:/tmp # 挂载uwsgi日志
+    environment:
+      - DEBUG=False
+      - TZ=Asia/Shanghai
+      - privileged=true
+      - ENV=pro
+    restart: always
+    tty: true
+    stdin_open: true
+
+  redis:
+    image: redis
+    container_name: redis
+    command: redis-server /etc/redis/redis.conf # 容器启动后启动redis服务器
+    network_mode: host
+    volumes:
+      - tsa_redis_vol:/data # 通过挂载给redis数据备份
+      - /opt/teamnas/compose/redis/redis.conf:/etc/redis/redis.conf # 挂载redis配置文件
+    restart: always # always表容器运行发生错误时一直重启
+
+  nginx:
+    image: questionnaire_nginx
+    container_name: newnginx
+    volumes:
+      - /opt/teamnas/media/:/usr/share/nginx/html/media/ # 挂载用户上传媒体文件
+    network_mode: host
+    depends_on:
+      - questionnaire
+    restart: always
