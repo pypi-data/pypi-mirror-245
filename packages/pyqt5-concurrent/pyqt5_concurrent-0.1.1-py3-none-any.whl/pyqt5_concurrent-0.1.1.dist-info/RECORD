@@ -1,0 +1,7 @@
+pyqt5_concurrent-0.1.1.dist-info/METADATA,sha256=gdFbsxf8qCp5y6IuA0iuQWeJb7-o7RJCrO5gBLZXcMo,5955
+pyqt5_concurrent-0.1.1.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+pyqt5_concurrent/Future.py,sha256=Y4nQOaJdU3ixO6Rx9HwZMMaej18uxuSaljyhZEtT6pQ,7829
+pyqt5_concurrent/Task.py,sha256=YbRZHW51vJeCoiTUHkcndOXMpG4XJILy2Jv87rV_uNk,1810
+pyqt5_concurrent/TaskExecutor.py,sha256=XZK5qZOXfecblT3Xv9C_-gADRkQONrZipNI1wdNxrB8,5235
+pyqt5_concurrent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqt5_concurrent-0.1.1.dist-info/RECORD,,
