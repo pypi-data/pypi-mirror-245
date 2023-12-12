@@ -1,0 +1,3 @@
+[console_scripts]
+binance-qsmi=binance_qsmi.commands:app
+
