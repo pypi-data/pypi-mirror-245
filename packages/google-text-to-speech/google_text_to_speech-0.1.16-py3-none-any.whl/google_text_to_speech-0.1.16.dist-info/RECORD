@@ -1,0 +1,8 @@
+google_text_to_speech/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+google_text_to_speech/_version.py,sha256=kN4u1MUFxiEvcCV5eRV3R4INzIrAYJV1PkYw0rQ10vs,24
+google_text_to_speech/google_translate_tts.py,sha256=L2wwpPzzXizmbcKBjNcNIiYta5MLdI2jtuKXnwhKQtg,3080
+google_text_to_speech-0.1.16.dist-info/LICENSE,sha256=l_2wknWfT0Tul-tgNZckgJ3a_7S76pFx6NOu-JHuwy8,1072
+google_text_to_speech-0.1.16.dist-info/METADATA,sha256=LSHnPHtxHtfI75sPrLw49lbFOL4PCj8aY_iMrWqQjSo,3461
+google_text_to_speech-0.1.16.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+google_text_to_speech-0.1.16.dist-info/top_level.txt,sha256=X3FDfJQfORh6pRfU60Vd4gG4D9vmekrGmXD6Ds-HCdA,22
+google_text_to_speech-0.1.16.dist-info/RECORD,,
