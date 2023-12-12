@@ -1,0 +1,14 @@
+nerdd_kafka/__init__.py,sha256=vOpd6N-QYfg9Rop8ACACLow_DuyF82MpaSrQhtJCesY,28
+nerdd_kafka/__main__.py,sha256=J5dJSxQRoOuHisADvprNYQDbg6n2n787f9PR24t-8Rg,2141
+nerdd_kafka/kafka_server.py,sha256=oa7i1Jpj9UFkjJkg4rVWIuFbB8VGPPpevlZXq0sjY98,7798
+nerdd_kafka/serialization/__init__.py,sha256=enemAI8Hf-VC7gb19Q6wlrqBJBP-j3T9xsl0tkSmH6M,182
+nerdd_kafka/serialization/json_encoder.py,sha256=fwz-7p2fc2GsSZZcsLWfJ52BmojEw2bhkYViHrtDOng,221
+nerdd_kafka/serialization/mol_serializer.py,sha256=l_cAnkxxVAhhPpwAEzZJVnpEakkkgLLfM5yWqC93zjA,1088
+nerdd_kafka/serialization/registry.py,sha256=8SyQKCooyg3gVXa_pPKesqKH4SgTvNB3vSi-v1kEoM0,264
+nerdd_kafka/serialization/serializer.py,sha256=H33eB0IK0NeUnXv1ttmZwFAAezAG9RMHtGdK_judC44,332
+nerdd_kafka-0.1.0.dist-info/LICENSE,sha256=DfTNa9K9cmrLbp7aad8-yzB7Q51p4pZn_awchT-Xt3I,1085
+nerdd_kafka-0.1.0.dist-info/METADATA,sha256=oQIhoOJtBQpHQQ2QVfK1eDwqwxyYeVuoMyV-pL8OaxA,2014
+nerdd_kafka-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+nerdd_kafka-0.1.0.dist-info/entry_points.txt,sha256=O45hvVgqvoxNb4CM4LBUqmPhxFfwvF4DKjFwRHo3FJE,63
+nerdd_kafka-0.1.0.dist-info/top_level.txt,sha256=RkIFhvWu8HHoWPEYYI7jp_z15jpjX2K-FvxRvXap_5E,12
+nerdd_kafka-0.1.0.dist-info/RECORD,,
