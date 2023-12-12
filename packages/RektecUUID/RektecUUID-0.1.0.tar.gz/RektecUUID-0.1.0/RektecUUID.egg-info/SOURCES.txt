@@ -1,0 +1,8 @@
+README.md
+setup.py
+RektecUUID/UUIDGenerator.py
+RektecUUID/__init__.py
+RektecUUID.egg-info/PKG-INFO
+RektecUUID.egg-info/SOURCES.txt
+RektecUUID.egg-info/dependency_links.txt
+RektecUUID.egg-info/top_level.txt
