@@ -1,0 +1,7 @@
+vcf2ldif/__init__.py,sha256=_X3WVOnnatYS8nVAtzHgDgIBNMoUBj-fkpwwbN9QPKk,80
+vcf2ldif/__main__.py,sha256=DcQFR7sWptux2rFsUxLWl_5W02w1Mw1U-Sq0G6KThZs,167
+vcf2ldif/vcf2ldif.py,sha256=Nu2cj1QJHhHXozb-ZtxMrfYJNt_0q9UvFWnK48iolyU,4315
+vcf2ldif-0.0.6.dist-info/entry_points.txt,sha256=caoviqFZ1D5RfHEOSrd2Qn6RqvHzK3wLPvRONwttcl8,51
+vcf2ldif-0.0.6.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+vcf2ldif-0.0.6.dist-info/METADATA,sha256=KVM3c2wGpVckosRGy1EUvVe6eg3a8R7MwdoZ6cKUBFY,3208
+vcf2ldif-0.0.6.dist-info/RECORD,,
