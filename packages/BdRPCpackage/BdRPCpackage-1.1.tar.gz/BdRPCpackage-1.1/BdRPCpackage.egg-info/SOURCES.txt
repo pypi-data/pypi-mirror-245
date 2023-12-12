@@ -1,0 +1,8 @@
+BdRPCpackage.py
+LICENSE
+README.md
+setup.py
+BdRPCpackage.egg-info/PKG-INFO
+BdRPCpackage.egg-info/SOURCES.txt
+BdRPCpackage.egg-info/dependency_links.txt
+BdRPCpackage.egg-info/top_level.txt
