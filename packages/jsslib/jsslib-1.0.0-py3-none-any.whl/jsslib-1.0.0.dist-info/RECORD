@@ -1,0 +1,12 @@
+jsslib/__init__.py,sha256=WyMhlS4PvLgGqUBtdc2hG_04SBog772vIXloatyYZd4,23
+jsslib/__version__.py,sha256=z13bIwAKW_X6OwPYMjV87w7PHsCvE1Yga6wUkRxoBBk,66
+jsslib/jsslib.dll,sha256=io1p0msc6igObpgnTNTZ-0eAGuWX8oMms-WAWEWuMBI,936960
+jsslib/jsslib.py,sha256=bvpKLHu9zGCrfaVKrPAJrMyCKL6ZVKTf4r0MUfdJ3L4,3052
+jsslib/libjsslib.dylib,sha256=oQeXXPlpKIDHv7eFq-Q6P-O06p-qPWk3G_jKHsp7I_I,6308920
+jsslib/libjsslib.so,sha256=QxRw_F7A8KSDp3Esd0RftQuqCoVI5C9D4RyJNzyCRCw,22320768
+jsslib/test.py,sha256=WmQ3iX0OyM6Z4MZXJaqaQSG0mO76UvkkWNNHEvJx9c0,206
+jsslib-1.0.0.dist-info/LICENSE,sha256=Fuv_r-gDkjPvy-i9-Mq1nQ33cAQvQ7wbNLw1OLc9xWQ,1074
+jsslib-1.0.0.dist-info/METADATA,sha256=24G7pQk8rp3vc9uBCn1kxphyOy2H1mT3QRK5N0ryKiM,1131
+jsslib-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jsslib-1.0.0.dist-info/top_level.txt,sha256=wWvHmCYZvXv9JI4OfIRVSYwneKF8hje-Df7B8W7nFXA,7
+jsslib-1.0.0.dist-info/RECORD,,
