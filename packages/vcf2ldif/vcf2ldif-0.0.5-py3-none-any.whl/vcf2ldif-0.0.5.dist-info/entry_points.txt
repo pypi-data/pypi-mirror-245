@@ -1,0 +1,3 @@
+[console_scripts]
+vcf2ldif=vcf2ldif.vcf2ldif:main
+
