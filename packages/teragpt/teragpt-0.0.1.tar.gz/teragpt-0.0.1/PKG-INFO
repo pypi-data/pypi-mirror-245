@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: teragpt
+Version: 0.0.1
+Summary: Paper - Pytorch
+Home-page: https://github.com/kyegomez/TeraGPT
+License: MIT
+Keywords: artificial intelligence,deep learning,optimizers,Prompt Engineering
+Author: Kye Gomez
+Author-email: kye@apac.ai
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: einops
+Requires-Dist: local-attention
+Requires-Dist: torch
+Requires-Dist: zetascale
+Project-URL: Documentation, https://github.com/kyegomez/TeraGPT
+Project-URL: Repository, https://github.com/kyegomez/TeraGPT
+Description-Content-Type: text/markdown
+
+[![Multi-Modality](agorabanner.png)](https://discord.gg/qUtxnK2NMf)
+
+# TeraGPT
+Train a production grade GPT in less than 400 lines of code. Better than Karpathy's verison and GIGAGPT
+
+
+
+## Install
+`pip3 install  `
+
+
+
+## Usage
+```python
+import torch
+from teragpt.main import TeraGPT
+
+model = TeraGPT(
+    dim=4096,
+    depth=6,
+    heads=8,
+    num_tokens=20000,
+)
+
+x = torch.randint(0, 20000, (1, 4096))
+
+out = model(x)
+print(out.shape)
+
+```
+
+
+# License
+MIT
+
+
+
+
