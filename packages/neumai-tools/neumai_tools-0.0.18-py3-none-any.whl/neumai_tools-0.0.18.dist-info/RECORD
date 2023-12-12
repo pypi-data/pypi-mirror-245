@@ -1,0 +1,17 @@
+neumai_tools/DatasetEvaluation/Dataset.py,sha256=KNji5JoIiQV7pHIbMz3qwGQc175NUgInYVv9AF50rqA,2616
+neumai_tools/DatasetEvaluation/DatasetUtils.py,sha256=h15vHMMymODzt4CotPtmM3r_oL2so6ReLnteEkDFJ3c,798
+neumai_tools/DatasetEvaluation/Evaluation.py,sha256=J2D0SuQxnDItivdgzSuhE6oFnLAYbbTOg_S5Ew8Rwsw,4968
+neumai_tools/DatasetEvaluation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neumai_tools/InteropHelpers/DocumentTransformer.py,sha256=_qxEIfPue06sIbhnCXQysC9Xy8VFCHI1dQphH9xGCzU,611
+neumai_tools/InteropHelpers/__init__.py,sha256=5cHY2loAtM2Tqv6kuiEAHw0sFagWlsdGpf9XAHZC-U8,111
+neumai_tools/PipelineCollection/PipelineCollection.py,sha256=cLnw2MEDbzk9rOJsst0enHHIHt8l0NuBAA9SU94AICQ,2223
+neumai_tools/PipelineCollection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neumai_tools/SemanticHelpers/__init__.py,sha256=ZEooBd9NZnD_i5Oq56VM-RJwY3wjDivozWTJXnSvg7c,227
+neumai_tools/SemanticHelpers/file_prep.py,sha256=k_jeXbMvY71uX2YocLyci3FBl8eIPn2EtfsvdKUsKVw,1843
+neumai_tools/SemanticHelpers/semantic_chunking.py,sha256=I-odyvCJYC8HVO7LVl8-Bgnm7vq5ZZOHenrSbJXh61Q,3747
+neumai_tools/SemanticHelpers/semantic_metadata.py,sha256=hg-i_sZvFI_PoA0PVyblFxTb6pAVfRwEwpsX541F-08,2030
+neumai_tools/SemanticHelpers/semantic_retrieval.py,sha256=aRBLZ8S6kTTjbvzGhUBXOY19sFiWUAQEAJ3ax4Wf-Zk,1307
+neumai_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neumai_tools-0.0.18.dist-info/METADATA,sha256=r3pcTb-u_ySpHFK7tJBOXGAEOjciZ8-edSmHT0LEWi8,2058
+neumai_tools-0.0.18.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+neumai_tools-0.0.18.dist-info/RECORD,,
