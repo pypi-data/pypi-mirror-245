@@ -1,0 +1,17 @@
+[project]
+name = "j2express"
+version = "0.4.0"
+description = "CLI for Jinja2 written from the ground up"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.1",
+    "Jinja2>=3.1.2"
+]
+
+[project.scripts]
+j2x = "j2express:main"
+
+[build-system]
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"
