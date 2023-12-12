@@ -1,0 +1,7 @@
+##[pylyzer] failed /usr/home/meka/repos/freenit/services/backend/tests/client.py 1681252085
+.json = pyimport "json"
+
+.socket = pyimport "socket"
+
+.___v155 = pyimport "fastapi/testclient"
+.TestClient: Failure
