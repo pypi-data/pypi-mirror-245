@@ -1,0 +1,13 @@
+UzMorphAnalyser/UzMorphAnalyser.py,sha256=ZvyW6YRwpNsc24DAagpQfyI5V0RQR00oSgQUw1OAOqg,44449
+UzMorphAnalyser/__init__.py,sha256=VgDe2BWMrArLEGxrsUw1KDcu-GYobieOBwhYsE1-ufw,46
+UzMorphAnalyser/affixes.csv,sha256=wr3_Ko7Av6m_kFRE87g9HNwWKU5mwH-BXvZEzfCRRfY,88495
+UzMorphAnalyser/exception_stems.csv,sha256=bbYWtvuN2V0eYfZwWKP9cLteE9V-sIw4KGGABHe1Aw8,3795
+UzMorphAnalyser/lemma_map.csv,sha256=PievcD3ryuEfu2rc6d1mcMP8iwtsxyfuQuOAXiLRaCM,490
+UzMorphAnalyser/non_affixed_stems.csv,sha256=xp3EnJdw5OygSvLhn8_L_68dgOy5-zHhuS9RmInth4c,1416
+UzMorphAnalyser/number_stems.csv,sha256=Bw5BoKMvMWdKYUeCJm0ttbWapa9QvQZ9h363Yj3eQtI,196
+UzMorphAnalyser/small_stems.csv,sha256=vnnObNYTP8VcCdVP2pMu5rBk_HvyGKD1w_WMW358rd0,77
+UzMorphAnalyser-0.0.15.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+UzMorphAnalyser-0.0.15.dist-info/METADATA,sha256=BlN9u7ozXjRh_q-q8LD1QTMNmPXCRd90m0rNkJjO_OY,4876
+UzMorphAnalyser-0.0.15.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+UzMorphAnalyser-0.0.15.dist-info/top_level.txt,sha256=4UcpLCa4gRAUd23PQHclTCzICtvI9sZCOFn_dss4rY4,16
+UzMorphAnalyser-0.0.15.dist-info/RECORD,,
