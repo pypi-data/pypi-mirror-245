@@ -1,0 +1,3 @@
+[pennylane.plugins]
+kq.emulator = pennylane_kq:KoreaQuantumEmulator
+kq.local_emulator = pennylane_kq:KoreaQuantumLocalEmulator

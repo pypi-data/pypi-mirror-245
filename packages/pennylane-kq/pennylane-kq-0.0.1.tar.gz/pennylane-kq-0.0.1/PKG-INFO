@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pennylane-kq
+Version: 0.0.1
+Summary: A Pennylane plugin for KQ Cloud System
+Home-page: https://www.github.com/inojeon/pennylane-kq
+Author: Inho Jeon
+Author-email: inojeon@kisti.re.kr
+License: BSD-2
+Provides: pennylane_kq
+License-File: LICENSE
