@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: aspose-ocr-python-java
+Version: 0.0
+Summary: Aspose.OCR for Python via .Java is a powerful, while easy-to-use optical character recognition (OCR) engine for your Python applications and notebooks.
+Home-page: https://products.aspose.com/ocr/
+Author: Aspose
+Author-email: aleksander.golshtain@aspose.com
+Project-URL: GitHub, https://github.com/aspose-ocr/Aspose.OCR-for-Java
+Keywords: aspose,ocr,java
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: Other/Proprietary License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: JPype1 (==1.4.1)
+
+# Aspose.OCR for Python via .NET library
+
+Aspose.OCR for Python is a robust optical character recognition API. 
+Developers can easily add OCR functionalities in their applications. 
+API is extensible, easy to use, compact and provides a simple set of classes 
+for controlling character recognition.
+
+## Aspose OCR API
+**Note: all methods in Aspose.OCR namespace**
+
+Method | Description
+------------- | -------------
+*AsposeOCR()* | Constructor. Create api instance.
+*recognize(images)* | Recognizing image with automatic detection of text 
+*recognize(images, settings)* | Recognizing image with automatic detection of text 
+*recognize_lines(images)* | Recognizing line
+*recognize_lines(images, settings)* | Recognizing line
+*detect_rectangles(images)* | 
+*detect_rectangles(images, areas_type, detect_areas)* | 
+*image_has_text(full_path, text, settings, ignore_case)* | 
+*compare_image_texts(full_path1, full_path2, settings, ignore_case)* | 
+*image_text_diff(full_path1, full_path2, settings, ignore_case)* | 
+*calculate_skew(images)* | Calculates the skew angle in deg
+*ImageProcessing.save(images, folder_path)* | Save preprocessed images to file system
+*ImageProcessing.render(images)* | Save preprocessed images to Stream
+*License()* | Constructor
+*set_license(license_name)* | licenseName - path to xml license file.
+*set_license(stream)* | 
+*Logging.logging_level* | 
+*OcrInput(type, filters)* | Object with images and preprocessing filters. Support for GIF, PNG, JPEG, BMP, TIFF, PDF, DJVU, Stream, byte array, base64, URI and WBMP.
+*OcrInput(type)* | Object with images. Support for GIF, PNG, JPEG, BMP, TIFF, PDF, DJVU, Stream, byte array, base64, URI and WBMP.
+*RecognitionResult* | result from recognize.
+*RecognitionSettings* | settings for recognize.
+*RectangleOutput* | result from detect_rectangles
+*SkewOutput* | result from calculate_skew.
+
+
+### Changes in the release 23.4.0
+- start from scratch
+
+
+
+# HOW TO BUILD THE LIBRARY
+- build the Aspose.OCR for .NET NUGET package with env variable (config) - PYTHON=true and new version (not existed in NUGET
+- put the package to local repository C:\Program Files (x86)\Microsoft SDKs\NuGetPackages
+- run the generate.bat script
+- run the build.bat script
+- Python release will be in the ..\CodePorting.Wrapper.Cs2Python\Aspose.OCR\out\ocr\python\upload.win folder
