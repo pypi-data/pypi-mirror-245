@@ -1,0 +1,12 @@
+[tools.flash]
+name="Flashon"
+version="@1.0"
+author="CaiqueONz"
+
+[flashon-sys]
+packages=['tools','flashon']
+
+
+[flashon.dependencies]
+name="<@main.flash>"
+requires=["setuptools","functools","sdist","wheel"]

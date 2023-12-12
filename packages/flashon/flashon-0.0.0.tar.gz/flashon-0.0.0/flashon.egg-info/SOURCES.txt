@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+flashon/__init__.py
+flashon.egg-info/PKG-INFO
+flashon.egg-info/SOURCES.txt
+flashon.egg-info/dependency_links.txt
+flashon.egg-info/top_level.txt
