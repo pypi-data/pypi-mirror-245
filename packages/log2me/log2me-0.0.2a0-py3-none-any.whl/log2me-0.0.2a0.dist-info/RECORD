@@ -1,0 +1,15 @@
+docs/api.md,sha256=cc_wf6Jnh25c1KN4aorVtXs9ij9_3RT2SHdKD2X71kg,134
+docs/index.md,sha256=ey3aBuq6E-PrHh06tRlnAneXLoQaKxacn-d9N9FMDxc,14
+docs/requirements.txt,sha256=Qdk_Gys69t5fkLJpDwrY-xj7thznnsQczgHbMUVvMOE,134
+log2me/__init__.py,sha256=E63ZRw2HZNY9So9gizg9gNUFliizDZD6nj4C0OGtcbA,99
+log2me/__version__.py,sha256=XWke7GBnKtPpnua0JATEa0yuEbxEdNXgrgAf_3H0IB4,413
+log2me/print_loggers.py,sha256=UyH81d0-N1k8nNcKOf-I5XEg1HEYAgBPD79uP2cU6Ak,441
+log2me/print_loggers_tests.py,sha256=tewCmyefw73SfC-kbjnAF5eYlYMjBLs7gx5dR5bfvE0,248
+log2me/settings.py,sha256=voIySAnErk2oOCTKcgTfuKPixnMlv-kL4_X2Pw9r55Q,2603
+log2me/setup_log.py,sha256=SucserFV8tNInHxXxBkcoMIVFUQUEI-oJUCmeI3sQuM,4098
+log2me/setup_log_tests.py,sha256=cteT-MvOQvBp6FGxymwEgYn0DMJx9a6RNj-0COq_KRM,1484
+log2me-0.0.2a0.dist-info/LICENSE,sha256=ZGkFfsX2lEoSsbJk6CSCHiy_oYTLlTVUC_KCNwyzU64,1078
+log2me-0.0.2a0.dist-info/METADATA,sha256=Ktgy4bL7BvzE49svZVbcVO-rizn5dpLOMWgvRzy1ZpI,2495
+log2me-0.0.2a0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+log2me-0.0.2a0.dist-info/top_level.txt,sha256=mEQUPKVsBSUvV17qZlrqTGdR8dAPLbO-Dku3tbmI1ZQ,12
+log2me-0.0.2a0.dist-info/RECORD,,
