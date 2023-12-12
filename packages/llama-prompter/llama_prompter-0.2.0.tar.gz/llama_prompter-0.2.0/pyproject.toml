@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "llama-prompter"
+version = "0.2.0"
+description = "Prompt templating and structured LLM output for llama_cpp."
+authors = ["Reginald Lips <reginald.l@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://gitlab.com/reginaldl/llama-prompter"
+repository = "https://gitlab.com/reginaldl/llama-prompter"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^2.4.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+parsimonious = "^0.10.0"
+black = "^23.10.1"
+flake8 = "^6.1.0"
+llama-cpp-python = "^0.2.13"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+test = "poetry run pytest -xsv"
+mypy = "poetry run mypy --strict llama_prompter tests"
+black = "poetry run black ."
+flake8 = "poetry run flake8 llama_prompter tests"
+lint = ["black", "flake8"]
+check = ["test", "mypy", "lint"]
+
+[tool.black]
+line-length = 160
