@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+acdh_id_reconciler/__init__.py
+acdh_id_reconciler/utils.py
+acdh_id_reconciler.egg-info/PKG-INFO
+acdh_id_reconciler.egg-info/SOURCES.txt
+acdh_id_reconciler.egg-info/dependency_links.txt
+acdh_id_reconciler.egg-info/not-zip-safe
+acdh_id_reconciler.egg-info/requires.txt
+acdh_id_reconciler.egg-info/top_level.txt
+tests/test_reconciler.py
