@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+saying/__init__.py
+saying/base.py
+saying/resources.py
+saying/util.py
+saying.egg-info/PKG-INFO
+saying.egg-info/SOURCES.txt
+saying.egg-info/dependency_links.txt
+saying.egg-info/not-zip-safe
+saying.egg-info/top_level.txt
