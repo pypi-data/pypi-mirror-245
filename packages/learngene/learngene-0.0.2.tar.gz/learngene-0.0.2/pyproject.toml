@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["learngene"]
+exclude = ["test.py"]
+
+[project]
+name = "learngene"
+version = "0.0.2"
+urls = { text = "https://github.com/zykrous" }
+authors = [
+    { name = 'zyk', email = '2386360020@qq.com' }
+]
+description = "some methods for learngene"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "Apache 2.0" }
+keywords = [
+    'machine learning'
+]
+classifiers = [
+    'Intended Audience :: Developers',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3'
+]
+dependencies = [
+    'numpy',
+    'torch',
+    'tqdm'
+]
