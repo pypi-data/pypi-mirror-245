@@ -1,0 +1,2 @@
+[console_scripts]
+probs-runner = probs_runner.cli:cli
