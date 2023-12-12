@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: cv-dice-detection
+Version: 0.1.0
+Summary: An API developed to identify and sum the values of the total dices.
+Author: Arthur Chieppe, Luiza Valezim, Vinicius Eller
+License: MIT
