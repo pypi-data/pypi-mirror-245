@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: launchcontainers
+Version: 0.0.2
+Summary: Launch Containers Package
+Home-page: https://github.com/yongninglei/launchcontainers
+License: MIT
+Keywords: Age Modelling,Brain Age
+Author: BCBL
+Maintainer: Tiger Yongning Lei
+Requires-Python: ==3.10.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: PyYAML (==6.0.1)
+Requires-Dist: bids
+Requires-Dist: coverage-conditional-plugin (>=0.7.0,<0.8.0)
+Requires-Dist: dask (==2022.7.0)
+Requires-Dist: dask_jobqueue (==0.8.1)
+Requires-Dist: nibabel (==5.1.0)
+Requires-Dist: numpy (==1.23.5)
+Requires-Dist: pandas (==1.5.3)
+Requires-Dist: pybids (==0.16.1)
+Requires-Dist: scipy (==1.11.4)
+Project-URL: Repository, https://github.com/yongninglei/launchcontainers
+Description-Content-Type: text/markdown
+
+![logo launchcontainers](https://user-images.githubusercontent.com/48440236/262432254-c7b53943-7c90-489c-933c-5f5a32510db4.png)
+# launchcontainers
+Scripts for:
+1. Converting and sorting files from DICOM to NIfTI
+2. Creating symbolic links to those niftis so that we don't copy files
+3. Launching containers in BCBL or DIPC
+
+The documentation is in the wiki:
+* [Installation](https://github.com/garikoitz/launchcontainers/wiki/Installation)
+* [Pipeline documentation](https://github.com/garikoitz/launchcontainers/wiki/Pipeline-steps)
+* [Reporting and citation](reporting-citation) In this wiki page we include examples of how to report and cite RTP and all the included tools, it will change depending on the selected tools.
+* [TO-DO list](https://github.com/garikoitz/launchcontainers/wiki/TO-DO)
+
