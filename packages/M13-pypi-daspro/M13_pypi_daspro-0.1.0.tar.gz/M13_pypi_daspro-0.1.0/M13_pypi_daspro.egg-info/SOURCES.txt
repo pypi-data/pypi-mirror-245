@@ -1,0 +1,8 @@
+setup.py
+M13_pypi_daspro/__init__.py
+M13_pypi_daspro/guess_number.py
+M13_pypi_daspro/weight_conversion.py
+M13_pypi_daspro.egg-info/PKG-INFO
+M13_pypi_daspro.egg-info/SOURCES.txt
+M13_pypi_daspro.egg-info/dependency_links.txt
+M13_pypi_daspro.egg-info/top_level.txt
