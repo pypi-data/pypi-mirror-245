@@ -1,0 +1,11 @@
+airflow/providers/apache/sqoop/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/apache/sqoop/__init__.py,sha256=-kwnzwGwKFXQ03f8MooQ2RgA8yQZgR6iqrSDHAayG40,1587
+airflow/providers/apache/sqoop/get_provider_info.py,sha256=iT1Wi7umEKixeI3D1oC6_gO82X795fWlwNO43uSV6XE,2748
+airflow/providers/apache/sqoop/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/apache/sqoop/hooks/sqoop.py,sha256=hLS9QMEwKJie6agUzVIdGc0u1NhDpzzRkAnMPdieaPw,15198
+airflow/providers/apache/sqoop/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/apache/sqoop/operators/sqoop.py,sha256=SBNArZsAZWAW1CWd0XAXYp5IN_EfXoQsUqySIX3FSgM,11027
+apache_airflow_providers_apache_sqoop-4.2.0.dist-info/entry_points.txt,sha256=Psw-wrYKKZy5aHWSSvEi0u9gBXyjTs8ZYgIY-49i8M0,108
+apache_airflow_providers_apache_sqoop-4.2.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_apache_sqoop-4.2.0.dist-info/METADATA,sha256=nNuOUkVjtBB6D7irMNQdZXbBbwMDFYTLCeTC0zi6bFk,4688
+apache_airflow_providers_apache_sqoop-4.2.0.dist-info/RECORD,,
