@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "python-custom-logger"
+version = "v1.0.2"
+description = "This package provides a python logger which is simple to use and logs structured logs per default for the gcp."
+authors = ["JUNGELEN <jeffrey_ungelenk@icloud.com>"]
+keywords = ["gcp", "logger", "structured", "logs"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/Depaccu/python-custom-logger"
+repository = "https://github.com/Depaccu/python-custom-logger"
+include = ["LICENSE"]
+packages = [{include = "custom_logger"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+google-cloud-logging = "^3.5.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
