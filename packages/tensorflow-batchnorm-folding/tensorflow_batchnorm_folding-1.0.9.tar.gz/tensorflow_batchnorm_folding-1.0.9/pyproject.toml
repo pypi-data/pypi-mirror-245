@@ -1,0 +1,24 @@
+[project]
+name = "tensorflow_batchnorm_folding"
+version = "1.0.9"
+description = "Folds BN layers in tf keras models."
+authors = [
+    {name = "Edouard Yvinec", email="ey@datakalab.com"},
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "tensorflow >= 2.13.0",
+  "scikit-network>=0.31.0"
+]
+
+[project.urls]
+documentation = "https://www.ijcai.org/proceedings/2022/0223.pdf"
+repository = "https://gitlab.com/ey_datakalab/batch-normalization-folding"
+
