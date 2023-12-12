@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rdot
+Version: 0.0.2
+Summary: Rate distortion optimization tools
+Home-page: https://github.com/nathimel/rdot
+Author: Nathaniel Imel
+Author-email: nimel@uci.edu
+Project-URL: Bug Tracker, https://github.com/nathimel/rdot/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: tqdm
+
+# rdot: Rate distortion optimization tools
+
+[![test](https://github.com/nathimel/rdot/actions/workflows/test.yml/badge.svg)](https://github.com/nathimel/rdot/actions/workflows/test.yml)
