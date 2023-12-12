@@ -1,0 +1,17 @@
+unidep/__init__.py,sha256=0j9CT2hDvrAA-N2KqrGrexfNUJMkh-zy1NYcRxQ2MnE,758
+unidep/_cli.py,sha256=rDCAFd2aFNBRAfxj-14BgAN5DWI-PcjM4uVCtisG5xA,32654
+unidep/_conda_env.py,sha256=KfIX2bMJ1dOoItOz1jxaf1HtMERgRing1Y6FgoOJotI,9420
+unidep/_conda_lock.py,sha256=BSH3kpN6UcV7tTRfB4FhW6rrRr5n0ajOn-F7Q39VdUM,19517
+unidep/_conflicts.py,sha256=fJ3a-avG88XKU7PeOxTrzTR-rvDfOx0j6LOM2C17Qhw,10743
+unidep/_pytest_plugin.py,sha256=5EQSeoVBSB5nD9M6lVmqaXeN3LXwVX4Kh8fcjfcUr0k,2997
+unidep/_setuptools_integration.py,sha256=zurCIzcqqrKXxry7QP1VHwPPkZdTmahoVYcmKIGuuaY,4342
+unidep/_version.py,sha256=ITH8IVCEQOekRajZpPo6sKNlMBNDRQRnzipIN0dqXoc,23
+unidep/_yaml_parsing.py,sha256=7PZlXOno9ydDuGJX6JrcRapnIEy3GgSeDxk-3akZQOY,9159
+unidep/platform_definitions.py,sha256=4lPrBRTxjAk4Q1ZiLbTc8RF9Y-KXkRa5UqRyZyU1aw4,3179
+unidep/utils.py,sha256=35HmzhwIusokBRzxQNE6vNT2Ip_lfOaQZ7vMS61ZFfY,6917
+unidep-0.36.0.dist-info/LICENSE,sha256=ENaPQ4DWnzK1hStVsY6fpLate5jYQ3BnlS-wKPYkSQI,1511
+unidep-0.36.0.dist-info/METADATA,sha256=O0wt_hZUkjxDI2P6PvAJsf86PIzWaV-rK8RPJxEm9Qc,37665
+unidep-0.36.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+unidep-0.36.0.dist-info/entry_points.txt,sha256=5DoFBJtiGzaQMnKvYvre0t183IXdXbCnv08UwAV1Upk,195
+unidep-0.36.0.dist-info/top_level.txt,sha256=ZjE2oeOUpjdT-FyXaF9ZzqwgahM-zfXoVUj6TJZ2-8o,7
+unidep-0.36.0.dist-info/RECORD,,
