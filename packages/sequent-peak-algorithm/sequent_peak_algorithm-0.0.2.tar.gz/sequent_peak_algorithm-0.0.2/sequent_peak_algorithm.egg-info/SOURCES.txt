@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+sequent_peak_algorithm/__init__.py
+sequent_peak_algorithm/sequent_peak_algorithm.py
+sequent_peak_algorithm.egg-info/PKG-INFO
+sequent_peak_algorithm.egg-info/SOURCES.txt
+sequent_peak_algorithm.egg-info/dependency_links.txt
+sequent_peak_algorithm.egg-info/top_level.txt
+tests/test_sequent_peak_algorithm.py
