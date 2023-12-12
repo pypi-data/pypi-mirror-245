@@ -1,0 +1,14 @@
+itaxotools-taxi-gui
+itaxotools-convphase
+itaxotools-common
+itaxotools-taxi2
+pyside6
+
+[dev]
+setuptools-scm
+pre-commit
+ruff
+pytest
+pytest-qt
+pytest-xvfb
+pyinstaller
