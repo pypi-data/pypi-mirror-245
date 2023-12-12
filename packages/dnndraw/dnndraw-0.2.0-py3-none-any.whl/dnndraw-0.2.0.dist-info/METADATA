@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dnndraw
+Version: 0.2.0
+Summary: An editor that visualizes neural networks
+Home-page: https://github.com/0400H/DnnDraw
+Author: 0400h
+Author-email: git@0400h.cn
+License: MIT Licence
+Keywords: pip,dnndraw,dnn,visualize
+Platform: any
+License-File: LICENSE
+Requires-Dist: graphviz
+Requires-Dist: pillow
+
+An editor that visualizes neural networks
