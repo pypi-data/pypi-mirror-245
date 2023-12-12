@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Flashon
+Version: 1.0.1
+Summary: Build project
+Author: CaiqueONZZ
+Requires-Dist: setuptools
+Requires-Dist: sdist
+Requires-Dist: wheel
+Requires-Dist: build
+Requires-Dist: functools
+Requires-Dist: platform
+Requires-Dist: sys
+Requires-Dist: subprocess
+Requires-Dist: os
+Requires-Dist: macos.flashon-api
