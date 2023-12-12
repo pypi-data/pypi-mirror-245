@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: modelzipper
+Version: 0.2.1
+Summary: Quick Command Line Tools for Model Deployment
+Home-page: https://github.com/ZetangForward/ZipCode.git
+Author: Zecheng-Tang
+Author-email: zctang2000@gmail.com
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: termcolor
+Requires-Dist: matplotlib
+Requires-Dist: pyyaml
+Requires-Dist: fire
+Requires-Dist: transformers >=4.34.0
+Requires-Dist: gpustat
+Requires-Dist: pytz
+
