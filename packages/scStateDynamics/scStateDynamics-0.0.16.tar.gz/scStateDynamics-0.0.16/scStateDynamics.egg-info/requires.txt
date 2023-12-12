@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+scikit-learn
+torch
+seaborn
+matplotlib
+scanpy
+leidenalg
+pyro-ppl
+POT
