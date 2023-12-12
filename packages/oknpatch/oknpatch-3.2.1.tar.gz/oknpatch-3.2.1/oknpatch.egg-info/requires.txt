@@ -1,0 +1,7 @@
+setuptools
+commentjson
+numpy
+scipy
+ehdg_tools
+opencv-python
+matplotlib
