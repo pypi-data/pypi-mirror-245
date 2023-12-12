@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tf-plot-metrics
+Version: 1.0.1
+Summary: Opinionated performance plotting for TensorFlow models.
+Home-page: https://github.com/raj-pulapakura/tf_plot_metrics
+Author: Raj Pulapakura
+Author-email: <raj.pulapakura@gmail.com>
+Keywords: python,first package,tensorflow
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: matplotlib
+
+tf_plot_metrics provides a function to easily plot graphs for evaluating TensorFlow model performance.
+
+See https://github.com/raj-pulapakura/tf_plot_metrics for documentation.
