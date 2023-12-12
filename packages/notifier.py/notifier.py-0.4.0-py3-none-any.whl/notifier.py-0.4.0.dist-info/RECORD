@@ -1,0 +1,16 @@
+notifier/__init__.py,sha256=Swb-xB8ir0Ubeqqpv6ks0mOHvMW13nFjKqbosp6DF6I,98
+notifier/cli.py,sha256=DWWlxKJvlAN1Mq2i6tIAz1BupzKc6b2-5dc3sR0AgsM,2810
+notifier/exceptions.py,sha256=k_zDwYetk84d4zbj7qy_ckbqB5R-0pvfutcgmgnNTz8,2297
+notifier/notify.py,sha256=mX-FtnUZ1MMhf3ktPYovg_mLw2MUkB4tFKRqxWblsBY,14485
+notifier/os_notifiers/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+notifier/os_notifiers/_base.py,sha256=6_h-755njCHfwg1xq7ySbB59FGlIut-EX-2hB96ndq4,329
+notifier/os_notifiers/linux.py,sha256=9M520eEIGwoaL-kZVak4oXgNRcXw6mrTklKilsQqnus,5463
+notifier/os_notifiers/macos.py,sha256=_jpqmRLTi34oMBvLZfuC1OEAaQ7MF8st6UPvf2nbPVc,4897
+notifier/os_notifiers/windows.py,sha256=BhvblC8JL--VOVnmt7vEGX_RkGsoZGOkCWK_Xjlw3tg,4785
+notifier/os_notifiers/windows_legacy.py,sha256=Zlv0gYYxBY6SfrXcodeIZSJJanOUjFyiKIwzX-y2Us0,644
+notifier.py-0.4.0.dist-info/LICENSE,sha256=jwOVsDhDeeH3qK6brUeNU802owJji0PA358ZxD8gafs,1071
+notifier.py-0.4.0.dist-info/METADATA,sha256=9qT3-MyejIKTX_WNU3VYhEyBZG9DQClCqy39DAItRPs,4084
+notifier.py-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+notifier.py-0.4.0.dist-info/entry_points.txt,sha256=OKCMssiozdieuzZ9dgMmxnAhkRvBpMJKMijhcvSwRHE,48
+notifier.py-0.4.0.dist-info/top_level.txt,sha256=rEjihPRFfOZHRCUHynthusyL1KJLXMy1Y2aKM-D-VYs,9
+notifier.py-0.4.0.dist-info/RECORD,,
