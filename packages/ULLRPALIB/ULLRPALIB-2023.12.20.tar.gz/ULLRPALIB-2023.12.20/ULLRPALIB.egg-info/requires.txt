@@ -1,0 +1,6 @@
+openpyxl
+pandas
+xlrd
+pywin32
+telegram
+asyncio
