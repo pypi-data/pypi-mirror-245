@@ -1,0 +1,11 @@
+resnet_simple/__init__.py,sha256=iuoeKfusDvHbyBTFNVLGvqmEJuFTtKC2xkaYEaZfOjM,174
+resnet_simple/resnet/blocks.py,sha256=TlMR3DNlA3Hp8NHtG3gDRKvvsjNc5ioznoUeKxfJlCg,3130
+resnet_simple/resnet/layers.py,sha256=qq3RaPS8DaX7wh3ydvMPACQXIpJ7BGloG9JZ40nyFLs,2162
+resnet_simple/resnet/models.py,sha256=FiREF1UiORAUNkFlBl8o6AfTFBjbSEvcU0FCTm-9aHg,5498
+resnet_simple/resnet/resnet.py,sha256=cUqneDU2rS6Tvh_03TnknSfQnvcTHaaxDUMURKCdqfI,3609
+resnet_simple/resnet/utils.py,sha256=Iw6OtzOiQIVI3aEDGJwWqgA0LAPdL1YI19NRq_DmhFw,533
+resnet_simple-1.0.1.dist-info/LICENSE,sha256=Hew_Wk2SvqWCkNYLTLPXSU2p112vVgRvK-s7HReCpDI,1087
+resnet_simple-1.0.1.dist-info/METADATA,sha256=ctKgAYZX8WMnurLtJxy1qwGMg7h4T7PMiAjpnIhzmtw,5308
+resnet_simple-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+resnet_simple-1.0.1.dist-info/top_level.txt,sha256=BjhiJGtSpI-5-U0-4ZkwS2eyXFjVhL2dKNHOoJ__Gng,14
+resnet_simple-1.0.1.dist-info/RECORD,,
