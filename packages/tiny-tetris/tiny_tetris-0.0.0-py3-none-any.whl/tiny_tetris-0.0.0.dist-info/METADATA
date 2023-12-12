@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tiny-tetris
+Version: 0.0.0
+Summary: Tiny tetris in the console
+Home-page: https://github.com/ellsphillips/tiny-tetris
+License: MIT
+Keywords: tetris,tiny,game,console,cli,python
+Author: Elliott Phillips
+Author-email: elliott.phillips.dev@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: rich (>=13.6.0,<14.0.0)
+Project-URL: Documentation, https://tiny-tetris.readthedocs.io
+Project-URL: Repository, https://github.com/ellsphillips/tiny-tetris
+Description-Content-Type: text/markdown
+
+# tiny-tetris
+
+Tiny tetris in the console.
+
