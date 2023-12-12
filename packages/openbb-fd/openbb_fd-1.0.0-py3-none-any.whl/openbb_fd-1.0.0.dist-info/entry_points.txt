@@ -1,0 +1,3 @@
+[openbb_provider_extension]
+fd=openbb_fd:fd_provider
+
