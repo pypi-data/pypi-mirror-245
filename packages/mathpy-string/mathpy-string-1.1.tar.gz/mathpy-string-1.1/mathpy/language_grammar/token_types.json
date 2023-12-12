@@ -1,0 +1,29 @@
+{
+  "TT_IGNORE":            [" ", "\n", "\t"],
+  "TT_NEWLINE":           [";"],
+
+  "TT_EQUALS_SIGN":       ["="],
+  "TT_BINARY_OPERATOR":   ["+", "-", "*", "/"],
+  "TT_BOOLEAN_OPERATOR":  ["==", "<", "<=", ">", ">=", "&&", "||"],
+
+  "TT_DOT":               ["."],
+  "TT_COMMA":             [","],
+
+  "TT_LEFT_PARENTHESIS":  ["("],
+  "TT_RIGHT_PARENTHESIS": [")"],
+
+  "TT_LEFT_BRACE":        ["{"],
+  "TT_RIGHT_BRACE":       ["}"],
+
+  "TT_LEFT_BRACKET":      ["["],
+  "TT_RIGHT_BRACKET":     ["]"],
+
+  "TT_QUOTE":             ["\"", "'"],
+
+  "TT_COMMENT":           ["#"],
+
+  "TT_NAME":              "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",
+  "_TT_NAME_EXTENSION":   "-0123456789",
+
+  "TT_DIGIT":             "0123456789"
+}
