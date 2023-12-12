@@ -1,0 +1,9 @@
+setuptools
+commentjson
+numpy
+scipy
+ehdg_tools
+opencv-python
+matplotlib
+ehdg_tools
+ehdg_pupil_detector
