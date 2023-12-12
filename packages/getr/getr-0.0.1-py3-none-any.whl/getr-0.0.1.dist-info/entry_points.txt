@@ -1,0 +1,2 @@
+[nbdev]
+getr = getr._modidx:d
