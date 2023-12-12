@@ -1,0 +1,9 @@
+duplicates/__init__.py,sha256=AJrFyZSp2UJ0KbwlL4NRTVr-FOqWAoEudLsPEEurOtk,50
+duplicates/bufferediofile.py,sha256=BKg5eDYyvHDk4kubxb57uokYRLYEPTpDYP1gyF3QWOk,2199
+duplicates/cli.py,sha256=iuWP2rgPhDij30mZ0ag-ITxkrGju2104sWfoNWgtw70,822
+duplicates/dupes.py,sha256=eC8q0FhU-s8KCn-XIYfV1K9InF-D1erpMl_QlUDAHJA,5369
+link_duplicates-0.1.4.dist-info/METADATA,sha256=p-8ybFRM9Ndgi60w3lAcE-tb0IXo6BMMgj22H3zkatM,2150
+link_duplicates-0.1.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+link_duplicates-0.1.4.dist-info/entry_points.txt,sha256=fri_EnLf9OEgR1KaB1UF-At0I1RIyKIClypohhJg7Hc,47
+link_duplicates-0.1.4.dist-info/top_level.txt,sha256=r3NnKB9JkV92ZoQNx3CSm8TLuKuQNYYm0bYtLBw0Ceo,11
+link_duplicates-0.1.4.dist-info/RECORD,,
