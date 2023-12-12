@@ -1,0 +1,3 @@
+[console_scripts]
+cmds = wcoin:pay
+mycommand = wtech:main

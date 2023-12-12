@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+WTech.egg-info/PKG-INFO
+WTech.egg-info/SOURCES.txt
+WTech.egg-info/dependency_links.txt
+WTech.egg-info/entry_points.txt
+WTech.egg-info/requires.txt
+WTech.egg-info/top_level.txt
