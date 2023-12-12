@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+src/msms_compression/__init__.py
+src/msms_compression/compressors.py
+src/msms_compression/utils.py
+src/msms_compression.egg-info/PKG-INFO
+src/msms_compression.egg-info/SOURCES.txt
+src/msms_compression.egg-info/dependency_links.txt
+src/msms_compression.egg-info/requires.txt
+src/msms_compression.egg-info/top_level.txt
+tests/test_compressors.py
