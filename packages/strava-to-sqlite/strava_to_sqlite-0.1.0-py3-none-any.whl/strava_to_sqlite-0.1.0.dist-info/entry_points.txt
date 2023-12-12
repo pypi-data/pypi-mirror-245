@@ -1,0 +1,3 @@
+[console_scripts]
+strava-to-sqlite=strava_to_sqlite.cli:cli
+

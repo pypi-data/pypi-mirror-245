@@ -1,0 +1,8 @@
+strava_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+strava_to_sqlite/cli.py,sha256=wyrHXb9UZK7dvyLXatKpgK7_dJUSt00VgYjP4XBrM9M,2712
+strava_to_sqlite/utils.py,sha256=MfM2da63Yy0x50qJQMNsirEDIz4C_FItNtCFDpL0reI,9385
+strava_to_sqlite-0.1.0.dist-info/LICENSE,sha256=BW6rTIPKQkR1F0RUbviY3pnSK6bjx50k4aeUTAdKzeg,1074
+strava_to_sqlite-0.1.0.dist-info/METADATA,sha256=5bqOPxbrud_a3RJKO3K3AbeGhOHWILTOPyDTuevDo70,2960
+strava_to_sqlite-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+strava_to_sqlite-0.1.0.dist-info/entry_points.txt,sha256=SY6lQXumNT81-3HswZQWtFyVDGiEioPAhYfhs6pG9wc,61
+strava_to_sqlite-0.1.0.dist-info/RECORD,,
