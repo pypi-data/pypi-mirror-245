@@ -1,0 +1,7 @@
+[project]
+name = "gannet"
+description = "Static site generator supporting Markdown and reStructuredText"
+version = "0.0.0.2"
+
+[project.scripts]
+gannet = "gannet.__main__:main"
