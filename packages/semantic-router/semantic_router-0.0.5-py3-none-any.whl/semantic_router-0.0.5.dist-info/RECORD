@@ -1,0 +1,13 @@
+semantic_router/__init__.py,sha256=uPcWJBLXKDzc_i80N64bXOqJ5hGs5NjdbTMpgvE4lfk,106
+semantic_router/encoders/__init__.py,sha256=vSuvZMkK1QrMA5ZPKO3kPlGdGqpcJgyHPI3KXcuFQDY,204
+semantic_router/encoders/base.py,sha256=MzokUv6uba4YhqSeHgW5Vz8cWoR4U1kI6XRuQLXvdNQ,267
+semantic_router/encoders/bm25.py,sha256=GDwQfNfn5dlOxIb2mK8kYTnxHpFjddgsaUz9I4OJYUo,1464
+semantic_router/encoders/cohere.py,sha256=FTvXAvixoKfJRoBf8wwXi-IM14qp4THRGP5b9ZTml6A,790
+semantic_router/encoders/openai.py,sha256=Ejt5YHg2Aqu3OkdcHcZDIDwNtkHzNBKcJgSCTMP814o,1205
+semantic_router/layer.py,sha256=7EgSN5CyiLk5nFHE4e3mc7pNLlHR8hnfrFfKs2DAZwg,8980
+semantic_router/linear.py,sha256=ybrx6Tomt9a_lEyHveFdEfB5k-V47Zqe9IV9OWFUlps,792
+semantic_router/schema.py,sha256=pzetomElv-6TOATszO8P3LOPFjapjwUHvqNbWiGcafA,1249
+semantic_router-0.0.5.dist-info/LICENSE,sha256=LyeUDE3srDaf_CAx-y7wxPOYivzDAz0hhW8ZPyQqpQM,1066
+semantic_router-0.0.5.dist-info/METADATA,sha256=L0_GMbJzhZEe0b4UES4Z9c88oCHO4ldWVWSOkXlB2cc,3769
+semantic_router-0.0.5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+semantic_router-0.0.5.dist-info/RECORD,,
