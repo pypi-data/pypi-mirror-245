@@ -1,0 +1,9 @@
+jaraco/email/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jaraco/email/messages.py,sha256=PLXwvpjspjAiX4Q1SBIr-LhqksKrz8Gn24MOE6u1tE4,6053
+jaraco/email/notification.py,sha256=ZXzmdyhZOafdRwGAbUK3V8LY6GaufCdp6VL_bPTUJXA,4028
+jaraco/email/smtp.py,sha256=ykJ0FvjcPObUEDNGNNnLHunR74yKdFQcA0OT5NgsI8k,722
+jaraco.email-3.1.1.dist-info/LICENSE,sha256=htoPAa6uRjSKPD1GUZXcHOzN55956HdppkuNoEsqR0E,1023
+jaraco.email-3.1.1.dist-info/METADATA,sha256=RXl_gl8VyJw8jlvjWayXgWu8p4ozhNUb8qokfJwL4Ug,2371
+jaraco.email-3.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jaraco.email-3.1.1.dist-info/top_level.txt,sha256=0JnN3LfXH4LIRfXL-QFOGCJzQWZO3ELx4R1d_louoQM,7
+jaraco.email-3.1.1.dist-info/RECORD,,
