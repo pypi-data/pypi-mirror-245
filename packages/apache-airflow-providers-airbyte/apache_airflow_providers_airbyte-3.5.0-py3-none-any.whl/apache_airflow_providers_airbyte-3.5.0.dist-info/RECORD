@@ -1,0 +1,13 @@
+airflow/providers/airbyte/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/airbyte/__init__.py,sha256=FjzMvncY5M9J3Z-KHxUP-zEClgteW2eUKFG6BAeQGpI,1582
+airflow/providers/airbyte/get_provider_info.py,sha256=h-eXSvlqSi1WXB8Ua3CNcm2xmoWul0ojQ2fkbv6juDs,2769
+airflow/providers/airbyte/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/airbyte/hooks/airbyte.py,sha256=l2gEPLNEoihfonSoNxkWJjNiFPd9-FWqGfvGiBdmLgY,5039
+airflow/providers/airbyte/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/airbyte/operators/airbyte.py,sha256=ziJi2ozVS6wNbK-ub8uEb1F1fW7R82_UL4Gs6pKVgcY,3840
+airflow/providers/airbyte/sensors/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/airbyte/sensors/airbyte.py,sha256=Tzv-O9t0xcVgq-7Y9PqzqYupK0vPr0FLUf1wr8i6WtQ,3229
+apache_airflow_providers_airbyte-3.5.0.dist-info/entry_points.txt,sha256=J_IU5tciZ7LoLCI4H86d2TsB4eLEevj9daAWlZ76NkQ,103
+apache_airflow_providers_airbyte-3.5.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_airbyte-3.5.0.dist-info/METADATA,sha256=g4O4-kiQxzVzRVFCPeSHqDbIlbR-KftOLVH9IDUNBCI,5804
+apache_airflow_providers_airbyte-3.5.0.dist-info/RECORD,,
