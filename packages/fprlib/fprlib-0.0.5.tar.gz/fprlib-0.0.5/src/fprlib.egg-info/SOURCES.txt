@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/fprlib.egg-info/PKG-INFO
+src/fprlib.egg-info/SOURCES.txt
+src/fprlib.egg-info/dependency_links.txt
+src/fprlib.egg-info/top_level.txt
