@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: unegui-models
+Version: 0.1.0
+Summary: A package for shared SQLAlchemy models
+Requires-Python: >=3.6
+Requires-Dist: sqlalchemy
+Requires-Dist: python-dotenv
+
