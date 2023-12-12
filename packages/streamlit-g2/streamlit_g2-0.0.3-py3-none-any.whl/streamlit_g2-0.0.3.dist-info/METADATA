@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: streamlit-g2
+Version: 0.0.3
+Summary: Render G2 charts in Streamlit
+Home-page: https://github.com/hustcc/streamlit-g2
+Author: hustcc
+Author-email: i@hust.cc
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+Requires-Dist: streamlit (>=0.63)
+
+Render G2 charts in Streamlit
+
+
