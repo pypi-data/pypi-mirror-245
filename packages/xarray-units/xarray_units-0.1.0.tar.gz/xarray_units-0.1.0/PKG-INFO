@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: xarray-units
+Version: 0.1.0
+Summary: xarray extension for handling units
+Home-page: https://github.com/astropenguin/xarray-units/
+License: MIT
+Keywords: xarray,xarray-accessor,xarray-extension,units
+Author: Akio Taniguchi
+Author-email: taniguchi@a.phys.nagoya-u.ac.jp
+Requires-Python: >=3.9,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: astropy (>=5.2,<7.0)
+Requires-Dist: xarray (>=2022.3,<2024.0)
+Project-URL: Documentation, https://astropenguin.github.io/xarray-units/
+Description-Content-Type: text/markdown
+
+# xarray-units
+xarray extension for handling units
+
