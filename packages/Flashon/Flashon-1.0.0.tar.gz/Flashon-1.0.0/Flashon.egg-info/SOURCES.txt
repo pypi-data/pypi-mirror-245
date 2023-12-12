@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+Flashon.egg-info/PKG-INFO
+Flashon.egg-info/SOURCES.txt
+Flashon.egg-info/dependency_links.txt
+Flashon.egg-info/requires.txt
+Flashon.egg-info/top_level.txt
+flashon/__init__.py
