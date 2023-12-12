@@ -1,0 +1,9 @@
+<canvas pySize="500x500" pySource="files/test/data/dp_data.py" pyStyle="dark">
+    <label> New shift added </label>
+    <list pyMaxHeight="400">
+        <list-item pyFor="line in data">
+            <label pyWidth="30" pyStyle="f='consolas'; size=18; tb='midleft'; to=(10, 0)"> {{ line[0] }} </label>
+            <label pyWidth="70" pyStyle="f='consolas'; size=18; tb='midleft'; to=(10, 0)"> {{ line[1] }} </label>
+        </list-item>
+    </list>
+</canvas>
