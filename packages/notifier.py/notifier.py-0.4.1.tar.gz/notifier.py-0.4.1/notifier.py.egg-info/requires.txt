@@ -1,0 +1,4 @@
+loguru
+
+[:platform_system == "Linux"]
+jeepney

@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "notifier.py"
+version = "0.4.1"
+description = "A simple Python library that simplifies the sending of desktop notifications!"
+authors = ["Juliandev02"]
+repository = "https://github.com/Strawberry-Foundations/notifier"
+readme = "README.md"
+license = "MIT"
+documentation = "https://github.com/Strawberry-Foundations/notifierpy"
+include = ["notifier/py-logo.png", "notifier/example_notification_sound.wav", "notifier/os_notifiers/binaries/*"]
+packages = [
+    { include = "notifier" },
+]
+[tool.poetry.dependencies]
+python = ">=3.6,<4.0"
+loguru = ">=0.5.3,<=0.6.0"
+jeepney = [
+    { version = '*', platform = 'linux' },
+]
+
+[tool.poetry.dev-dependencies]
+pytest = "6.2.5"
+black = "^20.8b1"
+typed-ast = "1.5.2"
+pylint = "*"
+
+[tool.poetry.scripts]
+notifier = "notifier.cli:entry"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
