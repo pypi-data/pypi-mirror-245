@@ -1,0 +1,16 @@
+hypergen_translation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hypergen_translation/admin.py,sha256=Fb4LWhICB9ZEpbj7dQ9Y-Pic9EGWcCHyOt1A5qpssyY,2582
+hypergen_translation/api.py,sha256=Eql30FYe3lPBDuBPkgl--PsqBQb6zvsHE07_TiMk4X8,4745
+hypergen_translation/filters.py,sha256=DnA1PO7g2j85flCzsNmW7t-OLilMGz5shDAbofTywY4,1029
+hypergen_translation/models.py,sha256=4A3iqPrmkpNBqsNBrDveX7rjaBrynVbwIbXMCShIunQ,2373
+hypergen_translation/plugins.py,sha256=HZs5jagvcOBNB9_RKUVapSWF5ht1Sb0cnNZ48927pKI,982
+hypergen_translation/management/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hypergen_translation/management/commands/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hypergen_translation/management/commands/hypergen_translation_collect.py,sha256=8-VnCkFuQThec4q-oara1YUlGfKKz7RjVOOpKSvIoOk,825
+hypergen_translation/migrations/0001_initial.py,sha256=OpboO8gtU-3lgfgg5Rru2ghqqPzFCZudLFjp5PtfKPY,3495
+hypergen_translation/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hypergen_translation_plugin-0.1.1.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+hypergen_translation_plugin-0.1.1.dist-info/METADATA,sha256=BZo71hEoiYlfcdT0VnmuV1QjxmJmxNoGeocKDcg8Ci0,1708
+hypergen_translation_plugin-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+hypergen_translation_plugin-0.1.1.dist-info/top_level.txt,sha256=JYWIopixAXT7gZbAa2IOlLZMzni957fxw-mS0vlkGyE,21
+hypergen_translation_plugin-0.1.1.dist-info/RECORD,,
