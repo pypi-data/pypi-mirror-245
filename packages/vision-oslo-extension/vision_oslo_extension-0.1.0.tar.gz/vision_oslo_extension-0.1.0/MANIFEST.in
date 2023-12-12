@@ -1,0 +1,2 @@
+# include all exe files such as osop.exe
+recursive-include src/vision_oslo_extension *.exe
