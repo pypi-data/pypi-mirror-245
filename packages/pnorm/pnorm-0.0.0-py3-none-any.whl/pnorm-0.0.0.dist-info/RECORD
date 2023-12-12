@@ -1,0 +1,9 @@
+pnorm/__init__.py,sha256=HIlB7dgpJsdnYfRthL4J8sK8VvNqlqcMfCR_PIVGpok,212
+pnorm/__main__.py,sha256=chxPRG31Z6feuI_q3XsKhAFlL4iS0Bwb-475y_RDW44,1055
+pnorm/linter.py,sha256=XAW7nUg1Gn8-YYoywpF5IXV6Mh7blN5-x_50mYNyMd8,5479
+pnorm/main.py,sha256=FNSnh8IC8kzAIZug8BMqE11Gqbpvpk30YHhK1EbhD5Q,8726
+pnorm/migrations.py,sha256=Wif-MZ7MhjteH-BpETZAEsP8DcMLdewots1rLQRwTJ4,6737
+pnorm-0.0.0.dist-info/METADATA,sha256=qsdkkPk6RkevFddAh7Dbg4q46JVGm2Tt9440VHdPNv0,514
+pnorm-0.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pnorm-0.0.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+pnorm-0.0.0.dist-info/RECORD,,
