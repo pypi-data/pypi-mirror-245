@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+PyFIFA.egg-info/PKG-INFO
+PyFIFA.egg-info/SOURCES.txt
+PyFIFA.egg-info/dependency_links.txt
+PyFIFA.egg-info/requires.txt
+PyFIFA.egg-info/top_level.txt
+pyFIFA.egg-info/PKG-INFO
+pyFIFA.egg-info/SOURCES.txt
+pyFIFA.egg-info/dependency_links.txt
+pyFIFA.egg-info/entry_points.txt
+pyFIFA.egg-info/requires.txt
+pyFIFA.egg-info/top_level.txt
