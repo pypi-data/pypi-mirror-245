@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: influx-si-data-manager
+Version: 0.1.3
+Summary: Data manager for handling influx_si inputs on Workflow4Metabolomics (usegalaxy.org)
+Author: legregam
+Author-email: legregam@insa-toulouse.fr
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.0.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Influx Data Manager
+
+[![PyPI version](https://badge.fury.io/py/influx-si-data-manager.svg)](https://badge.fury.io/py/influx-si-data-manager)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/influx-si-data-manager.svg)](https://pypi.python.org/pypi/influx-si-data-manager/)
+
+
+## What is the Influx Data Manager?
+** IDM (Influx Data Manager) is a python command-line interface tool for ensuring interoperability of tools in fluxomics workflows on the [Workflow4Metabolomics](usegalaxy.workflow4metabolomics.org) galaxy instance.**
+
+It accepts multiple inputs and prepares zip archives to pass to the [influx_si software](influx_si.readthedocs.io).
+
