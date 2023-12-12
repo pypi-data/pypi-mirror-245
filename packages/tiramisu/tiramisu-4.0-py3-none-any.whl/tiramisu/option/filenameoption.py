@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+# Copyright (C) 2017-2023 Team tiramisu (see AUTHORS for all contributors)
+#
+# This program is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as published by the
+# Free Software Foundation, either version 3 of the License, or (at your
+# option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+# details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# The original `Config` design model is unproudly borrowed from
+# the rough pypy's guys: http://codespeak.net/svn/pypy/dist/pypy/config/
+# the whole pypy projet is under MIT licence
+# ____________________________________________________________
+"""FilenameOption
+"""
+from ..i18n import _
+from .stroption import StrOption
+
+
+class FilenameOption(StrOption):
+    """represents a choice of a file name
+    """
+    __slots__ = tuple()
+    _type = _('file name')
+
+    def validate(self,
+                 value: str,
+                 ) -> None:
+        super().validate(value)
+        if not value.startswith('/'):
+            raise ValueError(_('must starts with "/"'))
