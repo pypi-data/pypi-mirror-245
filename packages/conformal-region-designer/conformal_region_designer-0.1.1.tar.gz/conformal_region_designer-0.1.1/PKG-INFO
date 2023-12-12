@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: conformal_region_designer
+Version: 0.1.1
+Summary: Creates intelligently shaped conformal prediction regions that respect multimodality and convexity.
+Home-page: https://github.com/nandantumu/conformal_region_designer
+Author: Nandan Tumu
+Author-email: nandant@seas.upenn.edu
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: demos
+Requires-Dist: cma (>=3.3.0,<4.0.0)
+Requires-Dist: gurobipy (>=10.0.3,<11.0.0) ; extra == "demos"
+Requires-Dist: jax[cpu] (>=0.4.20,<0.5.0) ; extra == "demos"
+Requires-Dist: matplotlib (>=3.8.1,<4.0.0)
+Requires-Dist: numpy (>=1.26.1,<2.0.0)
+Requires-Dist: scikit-learn (>=1.3.2,<2.0.0)
+Requires-Dist: seaborn (>=0.13.0,<0.14.0)
+Requires-Dist: statsmodels (>=0.14.0,<0.15.0)
+Project-URL: Issues, https://github.com/nandantumu/conformal_region_designer/issues
+Description-Content-Type: text/markdown
+
+# Conformal Region Designer
+
+Welcome to the Conformal Region Designer package! This package provides a set of tools and utilities for designing and visualizing conformal regions.
+
+![Example Image](example.png)
+
+## Installation
+
+To install the Conformal Region Designer package, you can use pip:
+
+```bash
+pip install conformal-region-designer
+```
+
+## Usage
+
+The following code creates a conformal region creator with a target of 90% coverage, 
+using a kernel density estimator to estimate the density of the data, 
+a mean shift algorithm to estimate the center of the data, and an ellipse to define the region.
+```python
+import conformal_region_designer as crd
+pcr = crd.ConformalRegion('kde', 'meanshift', 'ellipse', 0.90)
+pcr.fit(Z_cal_one)
+pcr.conformalize(Z_cal_one)
+```
+
+The regions can be visualized using the following code:
+```python
+fig, ax = plt.subplots()
+pcr.plot(ax=ax)
+```
+ 

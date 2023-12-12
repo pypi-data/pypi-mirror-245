@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "conformal_region_designer"
+version = "0.1.1"
+description = "Creates intelligently shaped conformal prediction regions that respect multimodality and convexity."
+authors = ["Nandan Tumu <nandant@seas.upenn.edu>", "Matthew Cleaveland <mcleav@seas.upenn.edu>"]
+readme = "README.md"
+requires = {python = ">=3.8"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+homepage = "https://github.com/nandantumu/conformal_region_designer"
+
+[tool.poetry.urls]
+"Issues" = "https://github.com/nandantumu/conformal_region_designer/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+numpy = "^1.26.1"
+scikit-learn = "^1.3.2"
+matplotlib = "^3.8.1"
+seaborn = "^0.13.0"
+cma = "^3.3.0"
+statsmodels = "^0.14.0"
+
+jax = {extras = ["cpu"], version = "^0.4.20", optional = true}
+gurobipy = {version = "^10.0.3", optional = true}
+
+[tool.poetry.extras]
+demos = ["jax", "gurobipy"]
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+ipywidgets = "^8.1.1"
+isort = "^5.12.0"
+black = {extras = ["jupyter"], version = "^23.10.1"}
+ipykernel = "^6.27.0"
+jupyterlab = "^4.0.9"
+
+
+[tool.poetry.group.demos.dependencies]
+jax = {extras = ["cpu"], version = "^0.4.20"}
+gurobipy = "^10.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
