@@ -1,0 +1,15 @@
+imas2xarray/__init__.py,sha256=k7Jo_Xo_89kt-XnrVbd2OSqPf6G8dUvTyRvcjRleJA4,849
+imas2xarray/_io.py,sha256=JBRI8f5Ec9HEKzmtDu0YcW0ztTQ2fKtfY4bklgOwAkk,8358
+imas2xarray/_lookup.py,sha256=EnDa_tLbzK7ADCKdW1adQcps9AZb2_26vSzFhM-6dtM,6280
+imas2xarray/_models.py,sha256=Ti4MWXvw2tY53tCyB-9sQoXOrJNc8iOv1eMAHktIr9A,2497
+imas2xarray/_rebase.py,sha256=QsBqXyjYufEjSwsXShM2_0ytbcEIxWUgOSJwkgW1-nY,6327
+imas2xarray/_utils.py,sha256=S2LM1ITrcg3YU6Y990hzHVypMceJ9XPf1uCSmllBnmw,797
+imas2xarray/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imas2xarray/data/variables_core-profiles.yaml,sha256=KTC7XNNMi_OW_uTjA-5OzWjrMIwP5eJdMTIj0sOMHng,2748
+imas2xarray/data/variables_core-sources.yaml,sha256=LdGAFA3zQrBhnDKpwx_LAxOt_tPGiduAE2ZJczcte3I,1309
+imas2xarray/data/variables_equilibrium.yaml,sha256=HW9gJ1lZt90SF6azOuHCdt02bIC_QyRKPu1QUWvNMQE,3157
+imas2xarray-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+imas2xarray-0.3.0.dist-info/METADATA,sha256=PIwSPXY5FgV3wUhh_uJXADHLO34YL71o5vQiDKiGFEk,4853
+imas2xarray-0.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+imas2xarray-0.3.0.dist-info/top_level.txt,sha256=qR6y9NQK9fZ6FODPo6o10mA08pFvDVKRVo3SjR847R8,12
+imas2xarray-0.3.0.dist-info/RECORD,,
