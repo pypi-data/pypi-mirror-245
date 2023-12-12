@@ -1,0 +1,17 @@
+GmGM/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GmGM/dataset.py,sha256=THpYwI_Jw4arCqd2S_ALESnDIXlMttMipdulPvK7XZY,9594
+GmGM/generate_data.py,sha256=jDyLPuqGXpf1JaboSPwqf01gpZ5VD_eSmN02RA9A6B0,23957
+GmGM/numbafied.py,sha256=nVPsEyyH_v7hKt1n2eR4BuMWVte4Q7fJGQLDhNOk-iY,7208
+GmGM/typing.py,sha256=RbwH9_tI-uUy69WuocHQFI87OBB1fzOyRQo0OCGbAWo,366
+GmGM/validation.py,sha256=HXxOP276LyJFfPUpR2FfdACRqrt8TvJkv2X5f2tFti8,8904
+GmGM/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GmGM/core/core.py,sha256=u0rlcopkoBZ-idhsPhclZE68cUM2ZOd4kNJ8tOianeY,11448
+GmGM/core/preprocessing.py,sha256=feEXCTpgbEnzKOCmhPmaSM_2GaOr6QLceeu132jr4WE,2859
+GmGM/core/presparse_methods.py,sha256=jGfLfLT2TgRreN8zzOZeesV8sCJXKL0Y6UdwRTwaHq8,24401
+GmGM/core/subdivision.py,sha256=D2oNSJjOUr8VRxM_nrESl-SkljJk2ThW4xyijO0iM70,6490
+GmGM/extras/prior.py,sha256=eSPA4J1Hg2eM_itA7Foa4TmjgzxywYWs060wd_jAzpU,1213
+GmGM/extras/regularizers.py,sha256=0_VTOQ9CGAHFwhfWypzgXf-CpgdpGd4CymHwTWzxTLs,6328
+gmgm-0.0.4.dist-info/METADATA,sha256=L0HcPCq_0LZfvdL8dj4IRHygO_30ZV2v_wF2umCdk4M,3321
+gmgm-0.0.4.dist-info/WHEEL,sha256=Gw8jIuTWkPakxikG-6o91zOxTjpZNZ00Qw8KZLqAprY,87
+gmgm-0.0.4.dist-info/licenses/LICENSE,sha256=gCIl1ZsQaKSReG-LLIma5Gb0mNHTJS4Jr8d2rzP_g8c,1069
+gmgm-0.0.4.dist-info/RECORD,,
