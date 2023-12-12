@@ -1,0 +1,17 @@
+numpy
+scipy
+matplotlib>=1.5
+rectangle-packer
+grandalf
+
+[docs]
+sphinx
+sphinx-rtd-theme
+numpydoc
+sphinx-gallery
+Pillow
+networkx
+
+[tests]
+pytest
+pytest-mpl
