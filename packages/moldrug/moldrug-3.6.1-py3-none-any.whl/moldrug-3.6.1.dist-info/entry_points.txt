@@ -1,0 +1,3 @@
+[console_scripts]
+constrainconf_moldrug = moldrug.cli:__constraintconf_cmd
+moldrug = moldrug.cli:__moldrug_cmd
