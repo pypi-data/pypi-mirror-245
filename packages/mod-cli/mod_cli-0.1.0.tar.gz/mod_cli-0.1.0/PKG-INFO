@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: mod-cli
+Version: 0.1.0
+Summary: 
+Author: Henry.Huang
+Author-email: hhglory@outlook.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: tomlkit (>=0.12.3,<0.13.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# Development
+
+## Publishing
+
+- https://typer.tiangolo.com/tutorial/package/#create-a-wheel-package
+
+```ruby
+
+poetry build
+
+```
+
+- install wheel
+
+```ruby
+
+pip install --user /home/rock/code/rick-portal-gun/dist/rick_portal_gun-0.1.0-py3-none-any.whl
+
+```
+
+# References
+
+- https://taskfile.dev
+- typer: https://typer.tiangolo.com
