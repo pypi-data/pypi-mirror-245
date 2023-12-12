@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: PyDynamicDomains
+Version: 0.0.1
+Summary: PyDynamicDomains - A Dynamic Domain Name System Record Updater for Google Domains
+Home-page: https://github.com/drpresq/pydynamicdomains
+Author: Impostor
+Author-email: drpresq@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.31.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.3.0; extra == "dev"
+
+# PyDynamicDomains - A Dynamic Domain Name System Record Updater for Google Domains
+
+## Description
+
+This package is designed for use with Google Domains dynamic DNS records.  
+The intent is for this package to be installed on a server whose public IP address is dynamically allocated.
+Once installed, it may be run via Cron/Crontab to check for public IP changes and update associated DDNS records appropriately.
+
+## Limitations
+
+Only supports *Nix systems associated with Google Domains (https://domains.google.com).
+
+## Setup
+
+Edit the `dynamic-dns.ini` file located at `/home/%username%/.local/share/pydynamicdomains/`.
+The package will create an example file for you at this %PATH% on first run.
+

@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+scripts/pydynamicdomains
+src/__init__.py
+src/PyDynamicDomains.egg-info/PKG-INFO
+src/PyDynamicDomains.egg-info/SOURCES.txt
+src/PyDynamicDomains.egg-info/dependency_links.txt
+src/PyDynamicDomains.egg-info/requires.txt
+src/PyDynamicDomains.egg-info/top_level.txt
+src/pydynamicdomains/__init__.py
+src/pydynamicdomains/pydynamicdomains.py
