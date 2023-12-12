@@ -1,0 +1,2 @@
+[console_scripts]
+cbcsncleaner = sql_model_cleaner.main:cli_function

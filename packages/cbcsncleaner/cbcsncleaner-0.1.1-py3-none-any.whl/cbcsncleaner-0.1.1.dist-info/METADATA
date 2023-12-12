@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cbcsncleaner
+Version: 0.1.1
+Summary: A system for cleaning and organizing the output of generated SQL queries from Snowflake.
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.10
+Requires-Dist: python-dotenv
+Requires-Dist: wordninja
+
