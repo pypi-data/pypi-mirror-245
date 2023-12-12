@@ -1,0 +1,51 @@
+/* ! Main Screen */
+#_default {
+    layout: horizontal;
+    align-horizontal: center;
+    align-vertical: middle;
+}
+
+.screen-box {
+    border: solid cornflowerblue;
+    width: 1fr;
+    height: 100%;
+}
+
+.test-box-border {
+    border: solid cadetblue;
+}
+
+/* ! Play Screen */
+.player-visual-panel {
+    border: solid cadetblue;
+    height: 1fr;
+}
+
+.player-contol-panel {
+    border: solid cadetblue;
+    height: 7;
+}
+
+.box-buttons-sound-control {
+    height: 3;
+}
+
+.button-sound-control {
+    width: 1fr;
+}
+
+.music-selected-label {
+    width: 1fr;
+    height: 1;
+    align: center middle;
+    text-align: center;
+}
+
+/* Playlist */
+.music-list-screen-add-box {
+    height: 3;
+}
+
+.music-list-screen-add-input {
+    width: 1fr;
+}
