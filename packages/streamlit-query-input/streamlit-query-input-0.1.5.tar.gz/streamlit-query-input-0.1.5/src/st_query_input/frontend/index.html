@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>streamlit-multiline-input</title>
+    <script src="./streamlit-component-lib.js"></script>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div style="display: flex; border: 1px solid black;border-radius: 10px;margin-left:10px;width:fit-content;">
+        <div style="margin:5px;height:fit-content">
+          <textarea cols="120" name="text_input" id="input_box" oninput="autoGrow(this)" style="border: none; resize: none; outline:none;font-size: 14px"></textarea>
+          <button id="btn_submit" style="margin-left: 10px;padding-right: 0;border: none;font-size: 30px;background-color: transparent;">▶️</button>
+          <button id="btn_reset" style="margin-left: 0;border: none;padding-left: 0px;font-size: 30px;background-color: transparent;">🔄</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

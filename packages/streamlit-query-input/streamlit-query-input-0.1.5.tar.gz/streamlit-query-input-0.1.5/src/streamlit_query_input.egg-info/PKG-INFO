@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: streamlit-query-input
+Version: 0.1.5
+Summary: multiline text input with resut and submit buttons
+Author: Justin Zhang
+Author-email: justin@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit>=1.2
+Requires-Dist: jinja2
+
+# streamlit-query-input
+
+multiline text input with resut and submit buttons
+
+## Installation instructions 
+
+```sh
+pip install streamlit-query-input
+```
+
+## Usage instructions
+
+```python
+import streamlit as st
+
+from st_query_input import st_query_input
+
+value = st_query_input()
+
+st.write(value)
