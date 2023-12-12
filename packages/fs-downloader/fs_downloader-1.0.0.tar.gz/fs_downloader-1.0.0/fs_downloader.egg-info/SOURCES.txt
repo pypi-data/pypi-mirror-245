@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+fs_downloader/__init__.py
+fs_downloader/version.py
+fs_downloader.egg-info/PKG-INFO
+fs_downloader.egg-info/SOURCES.txt
+fs_downloader.egg-info/dependency_links.txt
+fs_downloader.egg-info/requires.txt
+fs_downloader.egg-info/top_level.txt
+fs_downloader.egg-info/zip-safe
