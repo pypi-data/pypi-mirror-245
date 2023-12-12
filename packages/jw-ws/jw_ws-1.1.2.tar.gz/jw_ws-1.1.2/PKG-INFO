@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: jw_ws
+Version: 1.1.2
+Summary: A small based on websocket
+Home-page: https://github.com/CodingJzy
+Author: jw
+Author-email: jw19961019@gmail.com
+License: BSD License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+

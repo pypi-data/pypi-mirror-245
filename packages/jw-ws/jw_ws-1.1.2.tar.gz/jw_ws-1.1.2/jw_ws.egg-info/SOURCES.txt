@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+jw_ws/__init__.py
+jw_ws/msg.py
+jw_ws/server.py
+jw_ws.egg-info/PKG-INFO
+jw_ws.egg-info/SOURCES.txt
+jw_ws.egg-info/dependency_links.txt
+jw_ws.egg-info/top_level.txt
