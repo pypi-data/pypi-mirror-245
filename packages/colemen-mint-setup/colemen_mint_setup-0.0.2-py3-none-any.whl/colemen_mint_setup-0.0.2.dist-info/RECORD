@@ -1,0 +1,14 @@
+colemen_mint_setup/ColemenMintSetup.py,sha256=zV0nigCWM7BXHn5hAdBYELRb4R2P88OiDp1O5KRGsWE,988
+colemen_mint_setup/__init__.py,sha256=j72DfyXytZXCXUbtJ2XiF5MvPGl8ZVDFPQiHZpyBS_s,34
+colemen_mint_setup/aliasSettings.py,sha256=3dIMtP2V5jAw1Gh1h1FLoX6SNmieOtKoPt7nVzcRkdg,1239
+colemen_mint_setup/appSettings.py,sha256=uPTJwbQtL_VnCI5bVMYibQ2aQglfxBU5dl2QFM7wYcQ,1751
+colemen_mint_setup/hotkeySettings.py,sha256=ZrsF6Ex7l0gNWq3Roqm_fqXtr7PEXfBSxWCsp5kNq6I,1519
+colemen_mint_setup/themeSettings.py,sha256=aQBNlC3CZy5iZnnUiMKCJq2QXJrm5rPM-wPSjokActc,3694
+colemen_mint_setup/utils.py,sha256=vyIsgyaMj81Hk96zAPPO0V26mBKbbO0aA1MEBdisNbM,2383
+colemen_mint_setup/settings/__init__.py,sha256=LP3iQSGuf75rnS4k_adv3jezrVHkByEb-oq5B9wVXJc,114
+colemen_mint_setup/settings/control.py,sha256=bWlieHtN6ydOqmw74QRKTHAfzyQd-BcmmgiRR1tJv_k,62
+colemen_mint_setup/settings/types.py,sha256=7LHkiG6e4zpv93I5IzOkqK-1UslZgB-gZCjIR3Kiltc,479
+colemen_mint_setup-0.0.2.dist-info/METADATA,sha256=jfmAjbkJ6LW2QpFXrm46XTVRj4Rhr63oOMWJICDlgVY,476
+colemen_mint_setup-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+colemen_mint_setup-0.0.2.dist-info/top_level.txt,sha256=7qDc1KXzpsa8yXWwwcHAQYp2QeXLzW36whgk6hFhSmA,24
+colemen_mint_setup-0.0.2.dist-info/RECORD,,
