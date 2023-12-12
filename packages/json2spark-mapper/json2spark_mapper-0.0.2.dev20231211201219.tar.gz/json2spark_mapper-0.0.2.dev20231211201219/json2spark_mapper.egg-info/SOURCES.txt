@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+json2spark_mapper/__init__.py
+json2spark_mapper/schema_mapper.py
+json2spark_mapper.egg-info/PKG-INFO
+json2spark_mapper.egg-info/SOURCES.txt
+json2spark_mapper.egg-info/dependency_links.txt
+json2spark_mapper.egg-info/requires.txt
+json2spark_mapper.egg-info/top_level.txt
