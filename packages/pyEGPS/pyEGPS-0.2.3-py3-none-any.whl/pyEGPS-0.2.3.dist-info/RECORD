@@ -1,0 +1,16 @@
+pyegps/__init__.py,sha256=4DSJ1pn3tgP0lrdaiA6XV7nkkpwZyfdoNVja8G9V_3g,1382
+pyegps/__main__.py,sha256=rDZM9M2Bsa1cNtmLkf-JNauSMiP6_-vHE-PhiSWO9h8,99
+pyegps/_version.py,sha256=AaQEeqeDwmZAHoPuwg2C0ulADePbIYLSFanZzt0cytQ,411
+pyegps/cli.py,sha256=E3cQqXL7G9zsTMpNjHxKUb9lB92HB-f3AZpiZxeR8-o,5128
+pyegps/device.py,sha256=eJzREkAMKZmNjFKiZY-4cctShOxSwV3lEbK6GOBNULk,1979
+pyegps/exceptions.py,sha256=_dK3GSgbf2p0W4l1KP8QxIhVeTplPoH_zwIcImhc_vg,510
+pyegps/powerstrip.py,sha256=9yKUUDKFFW3Hnlnt_K0zrYj3odTF4WafSDVgSufBgpg,1689
+pyegps/fakes/__init__.py,sha256=R-Zha_cF4JAkstJvTIw31JwdjLPGt_wRb87y3FB8CIc,155
+pyegps/fakes/powerstrip.py,sha256=wDzuohkakXytkNWpdY3Yw3B_DbbZ1p4EYJgpj10oSrQ,1874
+pyegps/usb/__init__.py,sha256=OYe1I6CAPbosMvd1UFqDlOTJpl3fTJeZLbK2Q2LVv8E,38
+pyegps/usb/eg_powerstrip.py,sha256=7Di1T2W2WX1UwI93WolnSlsRRstoLpTLPqsEkOMSEVc,7006
+pyEGPS-0.2.3.dist-info/LICENSE.md,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyEGPS-0.2.3.dist-info/METADATA,sha256=IRAFjV58nqcVMaf-ETy4vw-O5mIwarrQnYfDE8ugDh8,1300
+pyEGPS-0.2.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyEGPS-0.2.3.dist-info/top_level.txt,sha256=m9M7sMxpD3jkzI5KPfhJ3zPjQaRAwGwwFNrHZM3NZys,7
+pyEGPS-0.2.3.dist-info/RECORD,,
