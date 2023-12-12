@@ -1,0 +1,2 @@
+[console_scripts]
+gtimelog2tick = gtimelog2tick:main
