@@ -1,0 +1,8 @@
+fastapi
+requests
+pandas
+uvicorn
+pyjwt[crypto]
+itsdangerous
+httpx
+authlib
