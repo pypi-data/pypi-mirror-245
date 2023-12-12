@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "digikala-bi-test"
+version = "0.2.0"
+description = ""
+authors = ["meysam <meysamaghili533@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
