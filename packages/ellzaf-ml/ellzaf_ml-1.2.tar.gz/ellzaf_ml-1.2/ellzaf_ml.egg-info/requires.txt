@@ -1,0 +1,6 @@
+einops>=0.7.0
+torch>=1.10
+torchvision
+mediapipe
+opencv-python
+timm>=0.9.0
