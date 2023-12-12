@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+myLatexGeneratorNikitaStepanovItmoMhs.egg-info/PKG-INFO
+myLatexGeneratorNikitaStepanovItmoMhs.egg-info/SOURCES.txt
+myLatexGeneratorNikitaStepanovItmoMhs.egg-info/dependency_links.txt
+myLatexGeneratorNikitaStepanovItmoMhs.egg-info/top_level.txt
+tsk_second/__init__.py
+tsk_second/latex_generator.py
