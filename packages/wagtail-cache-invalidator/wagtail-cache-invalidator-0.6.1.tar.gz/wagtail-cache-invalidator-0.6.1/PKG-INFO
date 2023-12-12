@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: wagtail-cache-invalidator
+Version: 0.6.1
+Author: R.Moorman <rob@vicktor.nl>
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Operating System :: Unix
+Classifier: Framework :: Wagtail :: 3
+Classifier: Framework :: Wagtail :: 4
+Classifier: Framework :: Wagtail :: 5
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: test
