@@ -1,0 +1,11 @@
+black
+mypy
+pipdeptree
+pip-tools
+pydocstyle
+pylint-gitlab
+pytest
+pytest-cov
+setuptools_scm
+toml
+update-toml
