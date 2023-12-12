@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: click-hotoffthehamster
+Version: 7.8.1
+Summary: Composable command line interface toolkit
+License: BSD-3-Clause
+Author: Armin Ronacher
+Author-email: armin.ronacher@active-4.com
+Maintainer: Pallets
+Maintainer-email: contact@palletsprojects.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: readthedocs
+Requires-Dist: colorama (>=0.4.6,<0.5.0) ; sys_platform == "win32"
+Requires-Dist: sphinx (>=6.2.1,<7.0.0) ; (python_version >= "3.8" and python_version < "3.9") and (extra == "readthedocs")
+Requires-Dist: sphinx (>=7.2.6,<8.0.0) ; (python_version >= "3.9" and python_version < "4.0") and (extra == "readthedocs")
+Requires-Dist: sphinx-rtd-theme (>=2.0.0rc4,<3.0.0) ; extra == "readthedocs"
+Requires-Dist: tomli (>=2.0.1) ; extra == "readthedocs"
+Project-URL: Changes, https://click.palletsprojects.com/changes/
+Project-URL: Chat, https://discord.gg/pallets
+Project-URL: Donate, https://palletsprojects.com/donate
+Project-URL: Documentation, https://click.palletsprojects.com/
+Project-URL: Issue Tracker, https://github.com/pallets/click/issues/
+Project-URL: Source Code, https://github.com/pallets/click/
+Project-URL: repository, https://github.com/doblabs/click-hotoffthehamster#🪝
+Description-Content-Type: text/x-rst
+
+\$ click\_
+==========
+
+Click is a Python package for creating beautiful command line interfaces
+in a composable way with as little code as necessary. It's the "Command
+Line Interface Creation Kit". It's highly configurable but comes with
+sensible defaults out of the box.
+
+It aims to make the process of writing command line tools quick and fun
+while also preventing any frustration caused by the inability to
+implement an intended CLI API.
+
+Click in three points:
+
+-   Arbitrary nesting of commands
+-   Automatic help page generation
+-   Supports lazy loading of subcommands at runtime
+
+
+Installing
+----------
+
+Install and update using `pip`_:
+
+.. code-block:: text
+
+    $ pip install -U click
+
+.. _pip: https://pip.pypa.io/en/stable/getting-started/
+
+
+A Simple Example
+----------------
+
+.. code-block:: python
+
+    import click
+
+    @click.command()
+    @click.option("--count", default=1, help="Number of greetings.")
+    @click.option("--name", prompt="Your name", help="The person to greet.")
+    def hello(count, name):
+        """Simple program that greets NAME for a total of COUNT times."""
+        for _ in range(count):
+            click.echo(f"Hello, {name}!")
+
+    if __name__ == '__main__':
+        hello()
+
+.. code-block:: text
+
+    $ python hello.py --count=3
+    Your name: Click
+    Hello, Click!
+    Hello, Click!
+    Hello, Click!
+
+
+Donate
+------
+
+The Pallets organization develops and supports Click and other popular
+packages. In order to grow the community of contributors and users, and
+allow the maintainers to devote more time to the projects, `please
+donate today`_.
+
+.. _please donate today: https://palletsprojects.com/donate
+
+
+Links
+-----
+
+-   Documentation: https://click.palletsprojects.com/
+-   Changes: https://click.palletsprojects.com/changes/
+-   PyPI Releases: https://pypi.org/project/click/
+-   Source Code: https://github.com/pallets/click
+-   Issue Tracker: https://github.com/pallets/click/issues
+-   Chat: https://discord.gg/pallets
+
