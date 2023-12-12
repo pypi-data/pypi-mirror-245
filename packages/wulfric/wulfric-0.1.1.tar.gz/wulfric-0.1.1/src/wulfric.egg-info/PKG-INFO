@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: wulfric
+Version: 0.1.1
+Summary: Crystal, Lattice, Atoms, K-path.
+Author-email: Andrey Rybakov <rybakov.ad@icloud.com>
+License: GPL-3.0 license
+Project-URL: Homepage, https://wulfric.org
+Project-URL: Documentation, https://wulfric.org
+Project-URL: Repository, https://github.com/adrybakov/wulfric.git
+Project-URL: Issues, https://github.com/adrybakov/wulfric/issues
+Project-URL: Changelog, https://wulfric.org/en/main/release-notes/index.html
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: termcolor
+Provides-Extra: visual
+Requires-Dist: plotly; extra == "visual"
+Requires-Dist: matplotlib; extra == "visual"
+
+*******
+WULFRIC
+*******
+Crystal, Lattice, Atoms, K-path.
+
+.. image:: https://badge.fury.io/py/wulfric.svg
+  :target: https://badge.fury.io/py/wulfric/
+
+.. image:: https://readthedocs.org/projects/wulfric/badge/?version=latest
+    :target: https://wulfric.org/en/latest/?badge=latest
+    :alt: Documentation Status
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+  :target: https://github.com/psf/black/
+
+.. image:: https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=505050
+  :target: https://pycqa.github.io/isort/
+
+.. image:: https://img.shields.io/badge/License-GPLv3-blue.svg
+  :target: https://www.gnu.org/licenses/gpl-3.0
+
+
+For the detailed description check
+`documentation. <https://wulfric.org>`_
+
+Installation
+============
+
+Requirement for WULFRIC installation are:
+
+* Python (>=3.8)
+* NumPy
+* SciPy
+* termcolor
+* matplotlib (optional)
+* plotly (optional)
+
+Optional dependencies are required if you want to use visual capabilities.
+
+WULFRIC can be installed with ``pip`` or from source.
+
+pip
+---
+
+To install WULFRIC, run (you may need to use ``pip3``):
+
+.. code-block:: console
+
+  pip install wulfric
+
+To install with optional visualisation capabilities, run (you may need to use ``pip3``):
+
+.. code-block:: console
+
+  pip install wulfric[visual]
+
+Installing from source
+----------------------
+
+* Clone the project to your local computer:
+
+.. code-block:: console
+
+  git clone git@github.com:adrybakov/wulfric.git
+
+* Change the directory:
+
+.. code-block:: console
+
+  cd wulfric
+
+* Instal the dependencies (you may need to use ``pip3``):
+
+.. code-block:: console
+
+  pip install -r requirements.txt
+
+* To install WULFRIC, run (you may need to use ``pip3``):
+
+.. code-block:: console
+
+  pip install wulfric
