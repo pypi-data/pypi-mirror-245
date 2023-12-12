@@ -1,0 +1,8 @@
+event-remote/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+event-remote/event_constants.py,sha256=nBwpXEhGgC1GhwT6AVWKf2KTA8P2K790aPxAgb5zv9Q,1528
+event-remote/remote_event.py,sha256=y_52spxZPSXz1LR0DMyCp8FCCYWsJnK6u643k4OTW-Q,10974
+event-remote/util.py,sha256=eMLFH6RYrEWL3uSwBhjYXgaYKusUWZFb7_7dMsgZK_c,669
+event_remote-0.0.5.dist-info/METADATA,sha256=i1arCqVPUG1GbC5NtQ20G_zkQX7g-FQ6AkfqluHr9wA,654
+event_remote-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+event_remote-0.0.5.dist-info/top_level.txt,sha256=G4s8-G1bbDfqu6hZ71bJPr6gfZ2Yx98EqSWvVDcFU88,13
+event_remote-0.0.5.dist-info/RECORD,,
