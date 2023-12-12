@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: GmGM
+Version: 0.0.7
+Summary: An implementation of the Gaussian multi-Graphical Model
+Project-URL: Homepage, https://github.com/BaileyAndrew/GmGM-python
+Project-URL: Bug Tracker, https://github.com/BaileyAndrew/GmGM-python/issues
+Author-email: Bailey Andrew <sceba@leeds.ac.uk>
+License: MIT License
+        
+        Copyright (c) 2023 BaileyAndrew
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Requires-Dist: dask>=2022.03
+Requires-Dist: numba>=0.57
+Requires-Dist: numpy>=1.23
+Requires-Dist: scipy>=1.11
+Description-Content-Type: text/markdown
+
+# GmGM-python
+A python package for the GmGM algorithm.  [Read the pre-print here.](https://arxiv.org/abs/2211.02920)
+
+This is a very early version so the API is subject to change.
+
+## Installation
+
+```bash
+# Pip
+python -m pip install GmGM
+```
+
+Conda install coming soon.
+
+## About
+
+This package learns a graphical representation of every "axis" of your data.  For example, if you had a paired scRNA+scATAC multi-omics dataset, then your axes would be "genes" (columns of scRNA matrix), "axes" (columns of scATAC matrix), and "cells" (rows of both matrices).
+
+This package works on any dataset that can be expressed as multiple tensors of arbitrary length (so multi-omics, videos, etc...).  The only restriction is that no tensor can have the same axis twice (no "genes x genes" matrix); the same axis can appear multiple times, as long as it only appears once per matrix.
+
+## Usage
+
+The first step is to express your dataset as a `Dataset` object.  Suppose you had a cells x genes scRNA matrix and cells x peaks scATAC matrix, then you could create a `Dataset` object like:
+
+```python
+from GmGM.dataset import Dataset
+dataset: Dataset = Dataset(
+    dataset={
+        "scRNA": scRNA,
+        "scATAC": scATAC
+    },
+    structure={
+        "scRNA": ("cell", "gene"),
+        "scATAC": ("cell", "peak")
+    }
+)
+```
+
+The basic form of the algorithm is as follows:
+1) Create gram matrices (either by `center`ing and `grammifying` or using the nonparanormal skeptic)
+2) Analytically `calculate_eigenvectors`
+3) Iteratively `calculate_eigenvalues`
+4) Recompose your precision matrices, and threshold them to be sparse (can be done in one go as `recompose_sparse_precisions` to prevent unnecessary memory use
+
+```python
+from GmGM.core.preprocessing import center, grammify
+from GmGM.core.core import calculate_eigenvectors, calculate_eigenvalues
+from GmGM.core.presparse_methods import recompose_sparse_precisions
+
+center(dataset)
+grammify(dataset)
+calculate_eigenvectors(dataset, seed=RANDOM_STATE)
+calculate_eigenvalues(dataset)
+recompose_sparse_precisions(
+    dataset,
+    to_keep=N_NEIGHBORS,
+    threshold_method='rowwise-col-weighted',
+    batch_size=1000
+)
+```
+
+This has quadratic memory due to the computation of the Gram matrices.  When you only have a single matrix as input, you can skip this step using `direct_svd`, leading to linear memory use by directly producing the right eigenvectors from the raw data!
+
+```python
+from GmGM.dataset import Dataset
+from GmGM.core.preprocessing import center
+from GmGM.core.core import direct_svd, calculate_eigenvalues
+from GmGM.core.presparse_methods import recompose_sparse_precisions
+
+center(dataset)
+direct_svd(dataset, k=N_COMPONENTS, seed=RANDOM_STATE)
+calculate_eigenvalues(dataset)
+recompose_sparse_precisions(
+    dataset,
+    to_keep=N_NEIGHBORS,
+    threshold_method='rowwise-col-weighted',
+    batch_size=1000
+)
+```
+
+All these functions are updating `dataset` in-place; the computed precision matrices are available through the `precision_matrices` attribute of `dataset`.  This is a dictionary which you index by axis name, i.e. `dataset.precision_matrices['cell']`.
+
+## Roadmap
+
+- [ ] Add direct support for AnnData and MuData objects (so that converson to `Dataset` is not needed)
+- [ ] Stabilize API
+- [ ] Add comprehensive docs
+- [ ] Have `generate_data` directly generate `Dataset` objects
+- [ ] Add conda distribution
+- [x] Add example notebook
