@@ -1,0 +1,16 @@
+
+[:python_version < "3.8"]
+importlib-metadata
+typing_extensions
+
+[docs]
+mkdocs
+mkdocs-material
+mkdocs-material-extensions
+mkdocstrings
+mkdocstrings-python
+pymdown-extensions
+
+[test]
+pytest
+pytest-cov
