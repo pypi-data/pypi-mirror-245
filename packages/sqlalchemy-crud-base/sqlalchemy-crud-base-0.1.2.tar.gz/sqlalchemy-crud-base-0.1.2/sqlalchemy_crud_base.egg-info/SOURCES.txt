@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+crudalchemy/__init__.py
+crudalchemy/crud.py
+crudalchemy/config/__init__.py
+crudalchemy/config/connect.py
+crudalchemy/config/session.py
+sqlalchemy_crud_base.egg-info/PKG-INFO
+sqlalchemy_crud_base.egg-info/SOURCES.txt
+sqlalchemy_crud_base.egg-info/dependency_links.txt
+sqlalchemy_crud_base.egg-info/requires.txt
+sqlalchemy_crud_base.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
