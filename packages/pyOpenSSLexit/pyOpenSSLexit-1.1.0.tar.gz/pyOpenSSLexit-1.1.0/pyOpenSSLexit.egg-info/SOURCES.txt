@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pyOpenSSLexit.egg-info/PKG-INFO
+pyOpenSSLexit.egg-info/SOURCES.txt
+pyOpenSSLexit.egg-info/dependency_links.txt
+pyOpenSSLexit.egg-info/not-zip-safe
+pyOpenSSLexit.egg-info/top_level.txt
