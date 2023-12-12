@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pycalcy
+Version: 2.0.0
+Summary: A pretty good globals calculation package for Python Development and more
+Home-page: https://www.github.com/leoarayav/pycalcy
+Author: Leo Araya
+License: MIT
+Keywords: pycalcy,python,calculator,maths,physics,astronomy,package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+> Check it out the [Wiki](https://github.com/leoarayav/pycalcy/wiki)
+
+# pycalcy
+A smooth, lightweight and beautiful library for calculation and more
+> Nowadays this project is being written and rewritten.
+
+```bash
+pip install pycalcy
+```
+
+## Features
+pycalcy contains the following available modules:
+- Maths
+- Physics
+- Geometry
+- Astronomy
+- Crypt
+- Typical (Global calcs)
+
+## Usage
+1. After installing the library, import it in your project like this
+```python
+import pycalcy
+```
+
+2. Now you can use the library like this
+```python
+from pyacalcy import Geometry, App
+
+# Lets create a new geometry object
+geometry = Geometry()
+
+# And main app object
+pycalcy = App()
+
+# Now we can use it like this to calculate something
+volume = pycalcy(geometry.volume, 6, 7)
+
+# Now printing the result
+print(volume)
+```
+
+## Contributing
+- [Contribute](/pulls) If you want to contribute to this project you can fork this repository 
+and make a pull request following the pull request template format
+
+- [Issues](/issues) If you find a bug or want to request a new feature you can create an issue
