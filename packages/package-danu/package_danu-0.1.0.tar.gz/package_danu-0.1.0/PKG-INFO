@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: package_danu
+Version: 0.1.0
+Summary: Learn to create python package
+Author: Danu Alamsyah Putra
+Author-email: danualamsyah070@gmail.com
+Keywords: python,guess,number,weight,conversion,guess number,weight conversion
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A package that allows to play guess number game and converting weight unit
