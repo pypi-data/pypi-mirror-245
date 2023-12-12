@@ -1,0 +1,11 @@
+fastenum/__init__.py,sha256=I3xj980IA4lbsfWq2EhYbBBPHqo_wDJik3U3v5NjeKs,48
+fastenum/fastenum.py,sha256=ZVXJnV5Wy010yR-roQdIWBm9aLB5Ujn2AFUs8nlacEA,3726
+fastenum/fastenum.pyi,sha256=WheeQaIEBcLXvk6Oe9CNJjj00Rgst5wNQAJLBM9yEiA,822
+fastenum/mypy_plugin.py,sha256=M1J3ukn3PQ99XgawCimICsp5y4zC_HHINmkonzxsKd8,25724
+fastenum/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastenum/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastenum/tests/test_benchmark.py,sha256=2o4U46dE1cbaSXQ8xW2OVYzvYvbwc2pf7Oth9TnoF5o,1254
+fastenum-1.1.0.dist-info/LICENSE,sha256=4VrSXBX4gibJcpOLEpTGA1hs0qV61GCd3Tj2B5nifd8,589
+fastenum-1.1.0.dist-info/METADATA,sha256=0XpECaOxoRVGQ7PtwxAqCjvWn9iuuqqY7PuzNlpJ7rM,2970
+fastenum-1.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+fastenum-1.1.0.dist-info/RECORD,,
