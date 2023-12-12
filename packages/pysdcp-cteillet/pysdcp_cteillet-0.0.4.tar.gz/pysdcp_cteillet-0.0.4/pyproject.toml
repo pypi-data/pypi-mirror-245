@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pysdcp_cteillet"
+version = "0.0.4"
+authors = [
+    { name = "CTeillet", email = "CTeillet@users.noreply.github.com" },
+    { name = 'Guy Shapira', email = 'Galala7@users.noreply.github.com' },
+]
+description = "SDCP library to control Sony Projectors"
+readme = "README.md"
+requires-python = ">=3"
+classifiers = [
+    'Development Status :: 4 - Beta',
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    'Topic :: Software Development :: Build Tools',
+]
+
+[project.urls]
+Homepage = "https://github.com/CTeillet/pySDCP"
+Issues = "https://github.com/CTeillet/pySDCP/issues"
