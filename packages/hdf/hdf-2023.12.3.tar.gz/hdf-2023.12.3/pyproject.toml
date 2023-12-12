@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "hdf"
+version = "2023.12.3"
+description = ""
+authors = ["Horia Filimonescu <horia.filimonescu+github@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "hdf", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
