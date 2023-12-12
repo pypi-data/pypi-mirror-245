@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: nonebot-adapter-kaiheila
+Version: 0.3.0
+Summary: kaiheila adapter for nonebot2
+Home-page: https://github.com/Tian-que/nonebot-adapter-kaiheila
+License: MIT
+Keywords: bot,khl,kaiheila,khlbot
+Author: Tian-que
+Author-email: 1605206150@qq.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: nonebot2 (>=2.0.0,<3.0.0)
+Requires-Dist: typing-extensions (>=4.8.0,<5.0.0)
+Project-URL: Repository, https://github.com/Tian-que/nonebot-adapter-kaiheila
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <a"><img src="docs/logo2.png" width="500" alt="logo"></a>
+</p>
+
+<div align="center">
+
+# NoneBot-Adapter-Kaiheila
+
+_✨ 开黑啦协议适配 ✨_
+
+</div>
+
+## 个人工作繁忙时间不多， 欢迎有想法的各位共同维护仓库
+
+## Manual
+
+[使用指南](./MANUAL.md)
+
