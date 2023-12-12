@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hacku
+Version: 1.0
+Summary: hack u
+Author: 0day
+Author-email: just@hacku.orz
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: loguru
+Requires-Dist: request[socks]
+Requires-Dist: id-validator
+Requires-Dist: random-user-agent
+Requires-Dist: jieba
+Requires-Dist: pycryptodome
+Requires-Dist: rsa
+
+No Hackers, Just Hack.
