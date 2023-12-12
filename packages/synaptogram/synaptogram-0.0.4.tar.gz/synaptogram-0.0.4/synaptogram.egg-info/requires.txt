@@ -1,0 +1,10 @@
+ndimage-enaml>=0.0.3
+atom
+enaml[qt6-pyside]
+matplotlib
+numpy
+pandas
+h5py
+
+[dev]
+docutils
