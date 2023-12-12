@@ -1,0 +1,104 @@
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+[build-system]
+requires = ["setuptools", "wheel", "build", "setuptools_scm[toml]"]
+build-backend = "setuptools.build_meta"
+
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
+[project]
+name = "zeppos-logging"
+authors = [
+    {name = "Papa Bear Codes Python", email = "PapaBearCodesPython@gmail.com"},
+]
+description = "Zeppos Pypi project template"
+readme = "README.md"
+keywords = ["pypi", "logging", "zeppos"]
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["version", "optional-dependencies"]
+
+# Indicates to use setuptools_scm plus git tags applied by UPF semantic release to get package version
+# Eliminates the need to manually update a version in the __init.py__ file.
+[tool.setuptools_scm]
+
+[tool.setuptools.dynamic.optional-dependencies]
+# Always use pinned dependencies for development/CI.
+development = {file = "requirements/development.txt"}
+
+# [project.urls]
+# homepage = ""
+# documentation = ""
+# repository = ""
+# changelog = ""
+
+[tool.black]
+line-length = 120
+exclude = '''
+    .venv/
+    | build/
+'''
+
+# https://pylint.readthedocs.io/en/latest/user_guide/configuration/all-options.html
+[tool.pylint.main]
+enable = ["c-extension-no-member"]
+evaluation = "10.0 - ((float(5 * error + warning + refactor + convention) / statement) * 10)"
+# https://pylint.pycqa.org/en/v2.13.9/messages/messages_list.html
+disable = [
+     "W0511", # (fixme)
+     "R0801", # (duplicate-code)
+]
+ignore-patterns = [".venv/*,build/*"]
+recursive = true
+
+[tool.pylint.design]
+max-args = 6
+
+[tool.pylint.format]
+max-line-length=120
+
+[tool.pylint.typecheck]
+ignored-classes = ["optparse.Values", "thread._local", "_thread._local", "PublisherClient", "SubscriberClient"]
+
+# https://mypy.readthedocs.io/en/stable/config_file.html
+[tool.mypy]
+ignore_missing_imports = true
+disallow_untyped_defs = true
+cache_dir = ".cache/.mypy_cache"
+exclude = [
+    '.venv/',
+    'build/',
+    'src/.egg-info',
+]
+
+[tool.pydocstyle]
+match = ".*.py"
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+addopts = "-rA -q --import-mode=importlib --cov --cov-branch --cov-report=html"
+cache_dir = ".cache/.pytest_cache"
+testpaths = [
+    "tests/"
+]
+
+[tool.coverage.report]
+skip_covered = true
+fail_under = 0
+exclude_lines = [
+    # TYPE_CHECKING block is never executed during pytest run
+    "if TYPE_CHECKING:"
+]
+
+# https://coverage.readthedocs.io/en/6.5.0/config.html#report
+[tool.coverage.html]
+directory = "cov_html"
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "build/*",
+    "tests/*",
+    ".venv/*"
+]
