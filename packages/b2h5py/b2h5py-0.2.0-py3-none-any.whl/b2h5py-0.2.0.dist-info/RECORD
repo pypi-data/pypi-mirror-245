@@ -1,0 +1,11 @@
+b2h5py/__init__.py,sha256=kT8uOnNU1diGfHWn2_jToYlzefcZntocC7RgF1WJXQ8,1011
+b2h5py/blosc2.py,sha256=f7csOKjfEaI75oih9pgPzU_9qwzwv0dbPIFj3QQz1hE,10235
+b2h5py/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b2h5py/tests/test_dataset_patching.py,sha256=KCaC8ZD5kI-HxWMd24ePKnmOrjCzvhkBNIA8DL8rYww,5288
+b2h5py/tests/test_patched_h5py.py,sha256=Z7DljDsE8nrNtbxvw5ZW2nUfScfDQ6nbQvg_Krr8Ac8,754
+b2h5py/tests/test_slicing_blosc2.py,sha256=djRo-8OaRoMgGPimk9AWG9zmkaG-6YmiiBohKM_VxCo,9410
+b2h5py-0.2.0.dist-info/LICENSE,sha256=d6x4N0_jAPy2a9yH4DVxMGY3Aql0sHvJPuiE_mC2lEw,1508
+b2h5py-0.2.0.dist-info/METADATA,sha256=fDuAmsxlKR_Nf_qhpyMlyp7UjpAWI2WSYumz5p5sFRY,5642
+b2h5py-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+b2h5py-0.2.0.dist-info/top_level.txt,sha256=LtIXYPISxyVqJlOJevhvwkCevP-QuuQZpsgZtr9o1Ds,7
+b2h5py-0.2.0.dist-info/RECORD,,
