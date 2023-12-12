@@ -1,0 +1,13 @@
+pyavl_wrapper-1.3.1.dist-info/RECORD,,
+pyavl_wrapper-1.3.1.dist-info/WHEEL,sha256=OPfZKGPBb1EFITKfcXTrfWLOpOFIQY7V5ma6oeqJeeg,94
+pyavl_wrapper-1.3.1.dist-info/LICENSE.txt,sha256=K9zbGRZNhgGAvVT3iinjCtfy_NgmA95zjfTLE9pE_dE,39893
+pyavl_wrapper-1.3.1.dist-info/METADATA,sha256=5eULVuCRQwt12NX6w4mxi9dyz3xk26YFTMcU7yMe0qE,50215
+pyavl/libavl.cpython-311-darwin.so,sha256=akf7HzTTE45PkWWjmkk_Ejvp29YpoHzFtcvNWA9RI_s,1551680
+pyavl/pyAVL.py,sha256=SDozcWhAOkDDA2gvBNIEHloGTvmEBvagzlMYDw1QxTM,63093
+pyavl/__init__.py,sha256=z6OfAIuYDHrsuryW98bDLoekBQVvzPMipH-FQentTO0,411
+pyavl/om_wrapper.py,sha256=BCVGcPm7_OGrzfL734kOIAFdqKLXxWIV6uKZZBlZjgM,15142
+pyavl/MExt.py,sha256=bk7bVgSBtlU4U4eK5Y3lAXgNc0qYQa6QckttKfhb1Rs,4028
+pyavl/.dylibs/libgfortran.5.dylib,sha256=Cpm03023lvdOOLcMX6CRhkRXgGQnFDqqsK9I23omX38,6786304
+pyavl/.dylibs/libquadmath.0.dylib,sha256=5n_naxNOkK02bfxKn3aDHvOJL7ajoTJ5VMe8v9bvcz8,352704
+pyavl/.dylibs/libgcc_s.1.1.dylib,sha256=gPt-rktOLqZsUaOm1u31UCF9KaqVo8LMSVo6XMrHctg,126416
+pyavl/.dylibs/libopenblas.0.dylib,sha256=6Dx925PMaGHLxyoz2xGlmfATXvOzkL8JXldwzWHQwbM,66689840
