@@ -1,0 +1,74 @@
+[build-system]
+requires = ["scikit-build-core>=0.3.3", "pybind11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "sortedl1"
+version = "0.2.1"
+description = "Sorted L-On Penalized Estimation"
+readme = "README.md"
+maintainers = [{ name = "Johan Larsson", email = "johanlarsson@outlook.com" }]
+authors = [
+  { name = "Johan Larsson", email = "johanlarsson@outlook.com" },
+  { name = "Mathurin Massias" },
+  { name = "Quentin Klopfenstein" },
+  { name = "Jonas Wallin" },
+  { name = "Malgorzata Bogdan" },
+  { name = "Ewout van den Berg" },
+  { name = "Chiarai Sabatti" },
+  { name = "Emmanuel Candes" },
+  { name = "Evan Patterson" },
+  { name = "Weijie Su" },
+]
+license = { file = "LICENSE" }
+keywords = ["statistics", "machine-learning"]
+requires-python = ">=3.7"
+dependencies = ["numpy>=1.12", "scikit-learn>=1.0", "scipy>=0.18.0"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: C++",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+homepage = "https://github.com/jolars/sortedl1"
+documentation = "https://jolars.github.io/sortedl1/"
+changelog = "https://github.com/jolars/sortedl1/blob/main/CHANGELOG.md"
+tracker = "https://github.com/jolars/sortedl1/issues"
+
+[project.optional-dependencies]
+docs = ["sphinx", "furo", "sphinx-copybutton"]
+
+[tool.scikit-build]
+build-dir = "build/{wheel_tag}"
+cmake.minimum-version = "3.15"
+minimum-version = "0.5"
+wheel.expand-macos-universal-tags = true
+wheel.license-files = ["LICENSE"]
+sdist.exclude = [".github"]
+
+[tool.scikit-build.cmake.define]
+CMAKE_CXX_STANDARD = "17"
+CMAKE_CXX_STANDARD_REQUIRED = "ON"
+
+[tool.ruff.lint]
+extend-select = [
+  "I",  # sorting
+  "UP", # pyupgrade
+  "D",  # pydocstyle
+  "B",  # flake8 bugbear
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
