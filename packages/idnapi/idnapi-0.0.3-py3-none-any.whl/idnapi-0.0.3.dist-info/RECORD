@@ -1,0 +1,14 @@
+idnapi/__init__.py,sha256=GPBKH_EuxpMCQ_ZYEiaYZZTA6PhE8uPtYCjdQwHrSNI,1719
+idnapi/accessprofiles.py,sha256=k7EY6Xt_fXuyUWrUmu7Rmgnyy7F9yPcuBPVHxOpf8U8,4677
+idnapi/accounts.py,sha256=oUHQgwkSIGTBmXmIQTj0X-GmjK7PfppiIG8JpLPOgN0,20488
+idnapi/cc.py,sha256=-VYGdGTnLeEsnExVeFBlZ0tsHvGoEB00QS7RA2bby5E,2389
+idnapi/entitlements.py,sha256=OexK4pTgSr4qLT8HZ2WlluYFPMPSxzGWIS0-B-deThA,4527
+idnapi/idnclient.py,sha256=gV4W18vImee9sYcPPRbVt8xvgkgzuIxdNESaxpMKmV0,12214
+idnapi/oauth.py,sha256=1xNNX3z-6fkyrLy7w6wPjBdGeQtl6j2sUZOJ9xWWJZM,2145
+idnapi/roles.py,sha256=9im9B0CnPZpWek9Y0BogaAj-8U44T5EvElsywtLt6LI,4110
+idnapi/search.py,sha256=UxuEhp7lN_8z09T6HAIpCNiCSebqAsJx6KWRlJ2GEH4,4563
+idnapi/workgroups.py,sha256=YnZwoIFodn5ovWqjCuoVnF7kewpc4v9AI9LG_GF0Xkg,7635
+idnapi-0.0.3.dist-info/METADATA,sha256=nTYflvx49kIbXgg26nvpJRGT5e3Oh0jYvqvvm0bqQqY,586
+idnapi-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+idnapi-0.0.3.dist-info/top_level.txt,sha256=toyTpwAA-lMgTPkT_sNbmamwmKsrnRaX6bx4t5gFRY4,7
+idnapi-0.0.3.dist-info/RECORD,,
