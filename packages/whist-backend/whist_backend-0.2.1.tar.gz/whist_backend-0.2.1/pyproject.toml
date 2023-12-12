@@ -1,0 +1,45 @@
+[project]
+name = "whist_backend"
+requires-python = ">=3.9.0"
+description = "Play rounds of whist (with bots or real players)."
+version = "0.2.1"
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=42.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+whist_backend = ["py.typed"]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+    "--cov=whist_backend",
+]
+testpaths = [
+    "tests",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
+
+[tool.mypy]
+mypy_path = "src"
+strict = true
+check_untyped_defs = true
+show_error_codes = true
+strict_equality = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_ignores = true
+
+[tools.isort]
+profile = "black"

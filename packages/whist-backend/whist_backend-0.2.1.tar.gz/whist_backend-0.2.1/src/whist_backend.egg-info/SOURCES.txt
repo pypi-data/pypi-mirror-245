@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/whist_backend/__init__.py
+src/whist_backend/bet.py
+src/whist_backend/cards.py
+src/whist_backend/event_listener_protocol.py
+src/whist_backend/player_strategy_protocol.py
+src/whist_backend/py.typed
+src/whist_backend/round_simulator.py
+src/whist_backend.egg-info/PKG-INFO
+src/whist_backend.egg-info/SOURCES.txt
+src/whist_backend.egg-info/dependency_links.txt
+src/whist_backend.egg-info/top_level.txt
+tests/test_cards.py
+tests/test_round_simulator.py
