@@ -1,0 +1,2 @@
+[console_scripts]
+prometheus-givenergy = prometheus_givenergy.__main__:main
