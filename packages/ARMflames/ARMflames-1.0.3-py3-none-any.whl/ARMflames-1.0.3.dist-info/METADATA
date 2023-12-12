@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ARMflames
+Version: 1.0.3
+Summary: This is fun Games Package for FLAMES Game
+Home-page: https://pypi.org/user/AbdurRahim2003/
+Author: Abdurrahim
+Author-email: abdurrahim251103@gmail.com
+License: MIT
+Project-URL: Source Code, https://github.com/Abdurrahimgithub/Python_Package.git
+Project-URL: Documentation, https://github.com/Abdurrahimgithub/Python_Package.git
+Keywords: FLAMES Game,Games,String,GUI
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: License.txt
+Requires-Dist: Rahimcalc
+
+FLAMES game of the programs
