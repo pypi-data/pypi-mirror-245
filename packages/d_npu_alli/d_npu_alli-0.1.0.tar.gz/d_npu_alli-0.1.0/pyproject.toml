@@ -1,0 +1,41 @@
+[project]
+name = "d_npu_alli"
+version = "0.1.0"
+
+[tool.poetry]
+name = "d_npu_alli"
+version = "0.1.0"
+description = "SDK for Dudaji AI Chip Cluster"
+authors = ["Dudaji <contact@dudaji.com>"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+fire = "^0.5.0"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+black = { extras = ["jupyter"], version = "^23.9.1" }
+pylint = "^2.17.4"
+isort = "^5.12.0"
+python-dotenv = "^1.0.0"
+tensorflow = "^2.15.0"
+torch = "^2.1.1"
+flwr = "^1.5.0"
+pycocotools = "^2.0.7"
+torchmetrics = "^1.2.1"
+pillow = "^10.1.0"
+tqdm = "^4.66.1"
+torchvision = "^0.16.1"
+
+[tool.black]
+line-length = 80
+
+[tool.isort]
+profile = "black"
+line_length = 80

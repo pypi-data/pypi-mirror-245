@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: d_npu_alli
+Version: 0.1.0
+Summary: SDK for Dudaji AI Chip Cluster
+Author: Dudaji
+Author-email: contact@dudaji.com
+Requires-Python: >=3.9,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fire (>=0.5.0,<0.6.0)
