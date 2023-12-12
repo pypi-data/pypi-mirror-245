@@ -1,0 +1,5 @@
+pygame
+termcolor
+pyautogui
+keyboard
+opencv-python
