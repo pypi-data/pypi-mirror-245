@@ -1,0 +1,8 @@
+setuptools
+sdist
+wheel
+build
+sys
+subprocess
+os
+macos.flashon-api
