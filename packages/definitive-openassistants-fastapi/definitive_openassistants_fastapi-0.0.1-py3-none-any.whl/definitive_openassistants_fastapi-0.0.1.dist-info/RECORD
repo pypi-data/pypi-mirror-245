@@ -1,0 +1,6 @@
+openassistants_fastapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openassistants_fastapi/routes.py,sha256=7aOtTyRnuyFkCjrRVTwZImV6Y4GB9DHos7Ej0vjz6BY,2889
+openassistants_fastapi/utils/sse.py,sha256=k_bFG3JqzNt_ovssC5EGh3Voorf_vdqJZgiae3r0Q_A,1393
+definitive_openassistants_fastapi-0.0.1.dist-info/METADATA,sha256=-Rl8hZ9QbAzzp8WIhQsTjNmsRdoJu4Tfdy3KzfShpcA,544
+definitive_openassistants_fastapi-0.0.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+definitive_openassistants_fastapi-0.0.1.dist-info/RECORD,,
