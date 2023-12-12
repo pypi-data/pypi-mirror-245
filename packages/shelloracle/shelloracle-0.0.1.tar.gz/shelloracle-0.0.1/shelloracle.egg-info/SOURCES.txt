@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+shelloracle/__init__.py
+shelloracle/__main__.py
+shelloracle/config.py
+shelloracle/shelloracle.py
+shelloracle.egg-info/PKG-INFO
+shelloracle.egg-info/SOURCES.txt
+shelloracle.egg-info/dependency_links.txt
+shelloracle.egg-info/entry_points.txt
+shelloracle.egg-info/requires.txt
+shelloracle.egg-info/top_level.txt
+shelloracle/provider/__init__.py
+shelloracle/provider/ollama.py
