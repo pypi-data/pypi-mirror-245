@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: hipkgabc
+Version: 0.0.1
+Summary: FusionX
+Author: FusionX (a)
+Author-email: <bar.bendavid@weiamann.ac.il>
+Keywords: python,video,stream,video stream,camera stream,sockets
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+    This is a detailed description of your package.
+
+    :Author: Your Name
+    :Email: your.email@example.com
+
+    **Features:**
+
+    - Feature 1
+    - Feature 2
+
+    **Usage:**
+
+    ```python
+    import your_package
+    your_package.do_something()
+    ```
+    
