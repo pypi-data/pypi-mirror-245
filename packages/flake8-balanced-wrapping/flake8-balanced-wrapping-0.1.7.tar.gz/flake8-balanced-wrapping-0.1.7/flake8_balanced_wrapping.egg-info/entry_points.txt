@@ -1,0 +1,3 @@
+[flake8.extension]
+BWR001 = flake8_balanced_wrapping:flake8_balanced_wrapping
+
