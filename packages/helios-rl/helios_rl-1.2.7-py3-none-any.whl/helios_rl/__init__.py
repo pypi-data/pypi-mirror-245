@@ -1,0 +1,7 @@
+from .experiments.standard import Experiment as STANDARD_RL
+from .hierarchies.supervised_instruction_following import SupervisedExperiment as SUPERVISED_RL_HIERARCHY
+from .hierarchies.unsupervised_instruction_following import UnsupervisedSearch as UNSUPERVISED_RL_HIERARCHY
+from .hierarchies.helios_instruction_search import HeliosSearch as HELIOS_SEARCH
+from .hierarchies.helios_instruction_following import HeliosOptimize as HELIOS_OPTIMIZE
+
+from .evaluation.combined_variance_visual import combined_variance_analysis_graph as COMBINED_VARIANCE_ANALYSIS_GRAPH
