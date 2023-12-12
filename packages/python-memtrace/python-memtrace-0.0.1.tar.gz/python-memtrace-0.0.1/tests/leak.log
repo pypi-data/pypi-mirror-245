@@ -1,0 +1,71 @@
+ArchiveRead __cinit__ 000001F3FC834A40, 000001F3FCC874E0
+pystream_open_callback
+pystream_read_callback
+pystream_seek_callback offset: 0 whence: 2
+pystream_seek_callback offset: 156147719 whence: 0
+pystream_seek_callback offset: 0 whence: 2
+pystream_seek_callback offset: 156131335 whence: 0
+pystream_read_callback
+pystream_seek_callback offset: 0 whence: 2
+pystream_seek_callback offset: 0 whence: 0
+ArchiveEntry __cinit__ 000001F3FC81A9E0, 000001F3FCC87C30
+pystream_read_callback
+ArchiveEntry __cinit__ 000001F3FC821710, 000001F3FCC87DE0
+pystream_skip_callback request: 13384027
+pystream_read_callback
+ArchiveEntry __cinit__ 000001F3FCE81000, 000001F3FCC87E70
+pystream_skip_callback request: 14410081
+pystream_read_callback
+ArchiveEntry __cinit__ 000001F3FCE80AF0, 000001F3FCC87ED0
+pystream_skip_callback request: 13313825
+pystream_read_callback
+ArchiveEntry __cinit__ 000001F3FCE82E60, 000001F3FA6A5560
+pystream_skip_callback request: 13852945
+pystream_read_callback
+ArchiveEntry __cinit__ 000001F3FCE81510, 000001F3FCD79EF0
+pystream_skip_callback request: 13195665
+pystream_read_callback
+ArchiveEntry __cinit__ 000001F3FCE83880, 000001F3FCD2C4E0
+pystream_skip_callback request: 15017505
+pystream_read_callback
+ArchiveEntry __cinit__ 000001F3FCE800D0, 000001F3FCD2C4B0
+pystream_skip_callback request: 24605361
+pystream_read_callback
+ArchiveEntry __cinit__ 000001F3FCE81F30, 000001F3FCD2C480
+pystream_skip_callback request: 11801409
+pystream_read_callback
+ArchiveEntry __cinit__ 000001F3FCE83370, 000001F3FCD2C450
+pystream_skip_callback request: 13130113
+pystream_read_callback
+ArchiveEntry __cinit__ 000001F3FCE81A20, 000001F3FCD2C420
+pystream_skip_callback request: 13435681
+pystream_read_callback
+pystream_read_callback
+ArchiveEntry __dealloc__ 000001F3FCE81A20, 000001F3FCD2C420
+ArchiveRead __cinit__ 000001F3FC821BF0, 000001F3FCD2C3F0
+ArchiveRead __dealloc__ 000001F3FC834A40, 000001F3FCC874E0
+pystream_close_callback
+close fine
+ArchiveRead __dealloc__ done
+pystream_open_callback
+pystream_read_callback
+pystream_seek_callback offset: 0 whence: 2
+pystream_seek_callback offset: 156147719 whence: 0
+pystream_seek_callback offset: 0 whence: 2
+pystream_seek_callback offset: 156131335 whence: 0
+pystream_read_callback
+pystream_seek_callback offset: 0 whence: 2
+pystream_seek_callback offset: 0 whence: 0
+[<pyarchive.backends.cython._archive.ArchiveEntry object at 0x000001F3FCC87C30>, <pyarchive.backends.cython._archive.ArchiveEntry object at 0x000001F3FCC87DE0>, <pyarchive.backends.cython._archive.ArchiveEntry object at 0x000001F3FCC87E70>, <pyarchive.backends.cython._archive.ArchiveEntry object at 0x000001F3FCC87ED0>, <pyarchive.backends.cython._archive.ArchiveEntry object at 0x000001F3FA6A5560>, <pyarchive.backends.cython._archive.ArchiveEntry object at 0x000001F3FCD79EF0>, <pyarchive.backends.cython._archive.ArchiveEntry object at 0x000001F3FCD2C4E0>, <pyarchive.backends.cython._archive.ArchiveEntry object at 0x000001F3FCD2C4B0>, <pyarchive.backends.cython._archive.ArchiveEntry object at 0x000001F3FCD2C480>, <pyarchive.backends.cython._archive.ArchiveEntry object at 0x000001F3FCD2C450>]
+pystream_close_callback
+close fine
+ArchiveEntry __dealloc__ 000001F3FCE83370, 000001F3FCD2C450
+ArchiveEntry __dealloc__ 000001F3FCE81F30, 000001F3FCD2C480
+ArchiveEntry __dealloc__ 000001F3FCE800D0, 000001F3FCD2C4B0
+ArchiveEntry __dealloc__ 000001F3FCE83880, 000001F3FCD2C4E0
+ArchiveEntry __dealloc__ 000001F3FCE81510, 000001F3FCD79EF0
+ArchiveEntry __dealloc__ 000001F3FCE82E60, 000001F3FA6A5560
+ArchiveEntry __dealloc__ 000001F3FCE80AF0, 000001F3FCC87ED0
+ArchiveEntry __dealloc__ 000001F3FCE81000, 000001F3FCC87E70
+ArchiveEntry __dealloc__ 000001F3FC821710, 000001F3FCC87DE0
+ArchiveRead __dealloc__ done

@@ -1,0 +1,14 @@
+.gitignore
+README.markdown
+setup.py
+memtrace/__init__.py
+memtrace/__main__.py
+memtrace/core.py
+python_memtrace.egg-info/PKG-INFO
+python_memtrace.egg-info/SOURCES.txt
+python_memtrace.egg-info/dependency_links.txt
+python_memtrace.egg-info/top_level.txt
+tests/leak.log
+tests/nullfree.log
+tests/ok.log
+tests/test_parse.py
