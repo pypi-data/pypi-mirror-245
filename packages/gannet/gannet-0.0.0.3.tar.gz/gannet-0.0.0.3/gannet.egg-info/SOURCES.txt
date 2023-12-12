@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+gannet/__init__.py
+gannet/__main__.py
+gannet.egg-info/PKG-INFO
+gannet.egg-info/SOURCES.txt
+gannet.egg-info/dependency_links.txt
+gannet.egg-info/top_level.txt
