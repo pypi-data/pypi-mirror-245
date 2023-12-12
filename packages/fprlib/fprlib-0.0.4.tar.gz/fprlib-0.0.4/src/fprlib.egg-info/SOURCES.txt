@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/cfit/__init__.py
+src/cfit/cfit.py
+src/fprlib.egg-info/PKG-INFO
+src/fprlib.egg-info/SOURCES.txt
+src/fprlib.egg-info/dependency_links.txt
+src/fprlib.egg-info/top_level.txt
+src/mprint/__init__.py
+src/mprint/mprint.py

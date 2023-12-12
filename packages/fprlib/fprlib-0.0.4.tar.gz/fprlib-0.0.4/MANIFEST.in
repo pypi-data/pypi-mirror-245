@@ -1,0 +1,4 @@
+graft fprlib
+include fprlib.toml
+include setup.py
+global-exclude *.py[cod]
