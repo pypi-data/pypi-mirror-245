@@ -1,0 +1,11 @@
+mod_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mod_cli/commands/__init__.py,sha256=ujNgNKegfET-z8zNbnArXllRsBI9SUhaVPxp1wbHxLo,50
+mod_cli/commands/add.py,sha256=XImLLlbk4EHRArreNPl3j110qExfXu4jFH2XkyjY5Gs,126
+mod_cli/commands/doctor.py,sha256=2400OTE7JQHJF3nVd5BsO3ay7C-77Gvkb3Uer9JSjqM,4661
+mod_cli/commands/init.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mod_cli/commands/new.py,sha256=VSSRQlYBpyFc7r139ebbOFjCdgv8b7HitSfJhEYYszA,131
+mod_cli/main.py,sha256=ZruJQHZ-J0Wbv-Z-ekgOuZPSjokooZzQgReNpWiFX50,673
+mod_cli-0.1.0.dist-info/METADATA,sha256=KfXwFARmMfz7q2jdxIpb-wUytol5cXkn9XuPBzqyEtc,828
+mod_cli-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+mod_cli-0.1.0.dist-info/entry_points.txt,sha256=zZ61YuEhnC7a-s_wa-gouFTXUpq0ZPFvbPi8YE3iGbw,88
+mod_cli-0.1.0.dist-info/RECORD,,

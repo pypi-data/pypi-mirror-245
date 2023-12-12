@@ -1,0 +1,5 @@
+[console_scripts]
+mod=mod_cli.main:app
+mod-cli=mod_cli.main:app
+modep=mod_cli.main:app
+
