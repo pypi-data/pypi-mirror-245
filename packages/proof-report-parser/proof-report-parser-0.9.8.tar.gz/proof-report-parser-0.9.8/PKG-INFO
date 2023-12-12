@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: proof-report-parser
+Version: 0.9.8
+Summary: 解析”全国防雷减灾综合管理服务平台“的docx格式检测报告
+Home-page: https://pypi.org/project/proof-report-parser/
+Author: happy2wh
+Author-email: no@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#### 解析”全国防雷减灾综合管理服务平台“的docx格式检测报告
+
