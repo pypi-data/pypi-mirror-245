@@ -1,0 +1,7 @@
+cryptography
+gradio
+httpx
+numpy
+requests
+toml
+torch
