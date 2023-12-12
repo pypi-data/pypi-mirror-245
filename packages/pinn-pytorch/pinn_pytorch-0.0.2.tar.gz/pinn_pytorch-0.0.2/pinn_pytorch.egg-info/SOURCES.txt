@@ -1,0 +1,12 @@
+setup.py
+pinn_pytorch/__init__.py
+pinn_pytorch/boundary_conditions.py
+pinn_pytorch/derivatives.py
+pinn_pytorch/model.py
+pinn_pytorch/training_settings.py
+pinn_pytorch.egg-info/PKG-INFO
+pinn_pytorch.egg-info/SOURCES.txt
+pinn_pytorch.egg-info/dependency_links.txt
+pinn_pytorch.egg-info/not-zip-safe
+pinn_pytorch.egg-info/requires.txt
+pinn_pytorch.egg-info/top_level.txt
