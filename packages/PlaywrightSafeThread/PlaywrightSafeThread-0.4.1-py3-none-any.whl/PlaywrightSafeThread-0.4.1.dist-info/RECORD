@@ -1,0 +1,9 @@
+PlaywrightSafeThread/__init__.py,sha256=MSqN3bqkTMo3UW_8ScbzvswTS2nfq7ku8vylOEP2nZI,77
+PlaywrightSafeThread/browser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PlaywrightSafeThread/browser/plawright_shim.py,sha256=Gnn95syXCnJNhPqjSl2K88fe_tvnY_bzZjBTP-LvK9I,609
+PlaywrightSafeThread/browser/threadsafe_browser.py,sha256=8pH2jEkbFgw62he0qdAKiWowEm4mAWUUZqDhnsQoAEA,20386
+PlaywrightSafeThread-0.4.1.dist-info/LICENSE,sha256=DkxacmTWrM6IpPgfLTTCEeQCouY5PKfHpHn-0NwVT2c,1062
+PlaywrightSafeThread-0.4.1.dist-info/METADATA,sha256=2UxOeAEKWNPDl6CVeBFb2QuAsb8gv12TWSIY04U6xa4,1180
+PlaywrightSafeThread-0.4.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+PlaywrightSafeThread-0.4.1.dist-info/top_level.txt,sha256=o205RO2p5qEjW5vOT2FYsXVeuBN9iOtM_yq91tiTalQ,21
+PlaywrightSafeThread-0.4.1.dist-info/RECORD,,
