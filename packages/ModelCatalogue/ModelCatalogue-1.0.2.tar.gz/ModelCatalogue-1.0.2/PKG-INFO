@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ModelCatalogue
+Version: 1.0.2
+Summary: Convenient tools for the Data Science Subscriber team.
+Author: Huijae (Jay) Kim
+Author-email: huijae.kim@disneystreaming.com
+Requires-Python: >=3.7
+
+Check out the README.md!

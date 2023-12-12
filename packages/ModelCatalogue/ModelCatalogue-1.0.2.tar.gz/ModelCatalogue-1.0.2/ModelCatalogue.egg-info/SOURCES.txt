@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+ModelCatalogue/ModelCatalogue.py
+ModelCatalogue/__init__.py
+ModelCatalogue/constants.py
+ModelCatalogue.egg-info/PKG-INFO
+ModelCatalogue.egg-info/SOURCES.txt
+ModelCatalogue.egg-info/dependency_links.txt
+ModelCatalogue.egg-info/top_level.txt
