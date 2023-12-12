@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: python-core-utilities
+Version: 0.2.0
+Summary: A core utility suite written in Python
+License: MIT
+Author: Sean O'Leary
+Author-email: seamicole@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# python-core-utilities
+A core utility suite written in Python
+
