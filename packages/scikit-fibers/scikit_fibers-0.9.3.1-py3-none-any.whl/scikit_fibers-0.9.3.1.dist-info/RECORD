@@ -1,0 +1,15 @@
+skfibers/__init__.py,sha256=lv1gYTn7s72jO21OEXJINBrE0rix5l6dEiZURWwmnKo,209
+skfibers/fibers.py,sha256=pWMzKG0zEy-uErRuM1izmDPG2oh5Fr5X4UgkMfdg1Gw,19760
+skfibers/experiments/__init__.py,sha256=VCAg1d5tJbA7iZcdCFkhvRXyvKRTqHJ_HBsVOOOIk1k,135
+skfibers/experiments/datagen.py,sha256=taeXLWP1IpCbRURFGq3H-KUSl8F4uRrUUiOWFCKszy0,6794
+skfibers/experiments/test_experiments.py,sha256=PoF59JAJR5JDa-kpswQPyh-hwl1-fkfBuBvEl8KOqGs,7
+skfibers/methods/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skfibers/methods/algorithms.py,sha256=7Vd9M7OYDcUrG_0ECnAchqSRW3MoLcMXbXMBqX0kKeM,52223
+skfibers/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skfibers/tests/test_experiments.py,sha256=VYGo2wpkvVYJtJ0qEg6r3NWX1_15QguyJH2smqGvcCo,13941
+skfibers/tests/test_skfibers_stub.py,sha256=tQfy_HMa1uZJbyhvWoYQA7YIA6b1TL_Q9R9KsGSQjO0,7985
+scikit_fibers-0.9.3.1.dist-info/LICENSE,sha256=nt6upqNxbF9r7FlhZr7uNB_k9-UbeDmKRwM3yQLB7VQ,1072
+scikit_fibers-0.9.3.1.dist-info/METADATA,sha256=U7HHy-DazlqwdZWJJAVnGTWlUp-9WRqg50kOkbBxFSM,3222
+scikit_fibers-0.9.3.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+scikit_fibers-0.9.3.1.dist-info/top_level.txt,sha256=vrqTHC3orDirtbnLcKT-P4VbHusIJ2R_a2zSI-Tva-k,9
+scikit_fibers-0.9.3.1.dist-info/RECORD,,
