@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+sqpy/__init__.py
+sqpy/__main__.py
+sqpy.egg-info/PKG-INFO
+sqpy.egg-info/SOURCES.txt
+sqpy.egg-info/dependency_links.txt
+sqpy.egg-info/entry_points.txt
+sqpy.egg-info/requires.txt
+sqpy.egg-info/top_level.txt
+tests/__init__.py

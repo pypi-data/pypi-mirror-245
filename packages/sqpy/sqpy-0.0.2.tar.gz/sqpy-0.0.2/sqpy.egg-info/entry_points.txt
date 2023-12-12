@@ -1,0 +1,2 @@
+[console_scripts]
+sqpy = sqpy.__main__:entrypoint
