@@ -1,0 +1,15 @@
+crem
+tqdm
+numpy
+pandas
+pyyaml
+dill
+meeko>=0.4.0
+six
+bio
+rdkit>=2022.3.5
+scipy
+
+[dev]
+requests
+pytest
