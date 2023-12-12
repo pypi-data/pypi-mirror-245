@@ -1,0 +1,4 @@
+tqdm
+numpy
+torch>=1.6.0
+deepxde
