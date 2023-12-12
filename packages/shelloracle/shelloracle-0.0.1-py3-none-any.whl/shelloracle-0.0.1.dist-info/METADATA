@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: shelloracle
+Version: 0.0.1
+Summary: ShellOracle is a pluggable terminal utility that takes a natural language description of a command and substitutes it into your terminal buffer.
+Author-email: Daniel Copley <djcopley@users.noreply.github.com>
+Project-URL: Homepage, https://github.com/djcopley/ShellOracle
+Project-URL: Repository, https://github.com/djcopley/ShellOracle.git
+Project-URL: Issues, https://github.com/djcopley/ShellOracle/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: prompt-toolkit
+
+# ShellOracle 
+
+### Usage
+
+More streamlined installation and platforms coming soon so ⭐ and 👀️ to stay in the loop.
+
+Currently, ShellOracle only supports zsh on macOS. The installation process is not productized yet, so here are the
+general steps to get it up and running.
+
+1. Install [Ollama](https://ollama.ai/)
+2. Source the zsh configuration
+   ```zsh
+   source shell/shelloracle.zsh
+   ```
+3. Use ctrl+f to open the prompt
