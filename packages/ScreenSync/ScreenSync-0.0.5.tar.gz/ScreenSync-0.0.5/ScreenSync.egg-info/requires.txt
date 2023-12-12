@@ -1,0 +1,7 @@
+tinytuya>=1.2.0
+Pillow>=8.0.0
+paho-mqtt
+matplotlib
+mss
+platformdirs
+flux_led
