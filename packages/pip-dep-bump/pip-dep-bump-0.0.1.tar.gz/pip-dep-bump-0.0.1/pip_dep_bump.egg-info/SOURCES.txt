@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pip_dep_bump/__init__.py
+pip_dep_bump/__main__.py
+pip_dep_bump.egg-info/PKG-INFO
+pip_dep_bump.egg-info/SOURCES.txt
+pip_dep_bump.egg-info/dependency_links.txt
+pip_dep_bump.egg-info/entry_points.txt
+pip_dep_bump.egg-info/top_level.txt
