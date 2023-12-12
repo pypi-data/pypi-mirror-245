@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tf-plot-metrics
+Version: 0.1.0
+Summary: Opinionated performance plotting for TensorFlow models.
+Author: Raj Pulapakura
+Author-email: <raj.pulapakura@gmail.com>
+Keywords: python,first package,tensorflow
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: matplotlib
+
+Opinionated performance plotting for TensorFlow models.
