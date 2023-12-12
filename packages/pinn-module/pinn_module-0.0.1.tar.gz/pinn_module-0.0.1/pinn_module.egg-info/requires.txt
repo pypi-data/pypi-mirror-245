@@ -1,0 +1,5 @@
+tqdm
+numpy
+scikit-learn
+torch>=1.6.0
+deepxde

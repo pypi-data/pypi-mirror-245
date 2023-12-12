@@ -1,0 +1,12 @@
+setup.py
+pinn_module/__init__.py
+pinn_module/boundary_conditions.py
+pinn_module/derivatives.py
+pinn_module/model.py
+pinn_module/training_settings.py
+pinn_module.egg-info/PKG-INFO
+pinn_module.egg-info/SOURCES.txt
+pinn_module.egg-info/dependency_links.txt
+pinn_module.egg-info/not-zip-safe
+pinn_module.egg-info/requires.txt
+pinn_module.egg-info/top_level.txt
