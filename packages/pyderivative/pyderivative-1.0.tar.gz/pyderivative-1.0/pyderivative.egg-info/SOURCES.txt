@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pyderivative/__init__.py
+pyderivative/derivative.py
+pyderivative.egg-info/PKG-INFO
+pyderivative.egg-info/SOURCES.txt
+pyderivative.egg-info/dependency_links.txt
+pyderivative.egg-info/requires.txt
+pyderivative.egg-info/top_level.txt
