@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sample_test_package
+Version: 0.2.0
+Summary: this is a test package 
+Author: Suraj Patidar
+Author-email: Suraj Patidar <suraj.pysquad@gmail.com>
+Maintainer-email: Suraj Patidar <suraj.pysquad@gmail.com>
+Project-URL: Homepage, https://example.com
+Project-URL: Documentation, https://readthedocs.org
+Project-URL: Repository, https://github.com/me/spam.git
+Project-URL: Bug Tracker, https://github.com/me/spam/issues
+Project-URL: Changelog, https://github.com/me/spam/blob/master/CHANGELOG.md
+Keywords: egg,bacon,sausage,tomatoes,Lobster Thermidor
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+
+Sample Test Package
