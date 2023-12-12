@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_opencompass.egg-info/PKG-INFO
+yandex_opencompass.egg-info/SOURCES.txt
+yandex_opencompass.egg-info/dependency_links.txt
+yandex_opencompass.egg-info/top_level.txt
