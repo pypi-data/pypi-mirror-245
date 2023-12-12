@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: forgecloud
+Version: 0.0.9
+Summary: A package to connect and manage Forge apps with Google Cloud Functions
+Home-page: https://github.com/Ns85/forgecloud
+Author: Niclas Stoltenberg
+Author-email: niclasjensen@example.com
+Keywords: forge google-cloud-functions integration
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: firebase-functions
+Requires-Dist: firebase-admin
+
+# forgecloud
+
+pip install twine
+
+(delete old dist folder before creating new one, else twine upload will fail)
+
+Create wheel and dist:
+python setup.py sdist bdist_wheel
+
+upload with twine
+twine upload dist/*
+
+Set your username to __token__
+Set your password to the token value:
+
+API TOKEN
