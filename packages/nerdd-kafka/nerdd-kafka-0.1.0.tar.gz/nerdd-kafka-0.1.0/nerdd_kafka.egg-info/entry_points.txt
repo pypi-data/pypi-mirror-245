@@ -1,0 +1,2 @@
+[console_scripts]
+run_nerdd_server = nerdd_kafka.__main__:main
