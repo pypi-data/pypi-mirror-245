@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+xingpackage.egg-info/PKG-INFO
+xingpackage.egg-info/SOURCES.txt
+xingpackage.egg-info/dependency_links.txt
+xingpackage.egg-info/top_level.txt
